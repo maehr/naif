@@ -20,24 +20,25 @@ format:
   docposter-html:
     fill-page: true
     embed-resources: true
+    css: custom.css
 # csl: Resources/american-chemical-society.csl
-references:
-- id: dora
-  title: San Francisco Declaration on Research Assessment
-  URL: 'https://sfdora.org/'
-  type: webpage
-- id: coara
-  title: Coalition for Advancing Research Assessment
-  URL: 'https://coara.eu/'
-  type: webpage
-- id: leiden
-  title: Leiden Manifesto for Research Metrics
-  URL: 'http://www.leidenmanifesto.org/'
-  type: webpage
-- id: naif
-  title: NAIF Project
-  URL: 'https://eth-library.github.io/naif'
-  type: webpage
+# references:
+# - id: dora
+#   title: San Francisco Declaration on Research Assessment
+#   URL: 'https://sfdora.org/'
+#   type: webpage
+# - id: coara
+#   title: Coalition for Advancing Research Assessment
+#   URL: 'https://coara.eu/'
+#   type: webpage
+# - id: leiden
+#   title: Leiden Manifesto for Research Metrics
+#   URL: 'http://www.leidenmanifesto.org/'
+#   type: webpage
+# - id: naif
+#   title: NAIF Project
+#   URL: 'https://eth-library.github.io/naif'
+#   type: webpage
 ---
 
 
@@ -79,9 +80,7 @@ This poster presents results from a **workshop with 27 stakeholders** from Swiss
 | 🏛️ Assessment Level | Organizational monitoring preferred over individual |
 | 📊 Data Quality | Critical prerequisite for meaningful metrics |
 
-## 🏛️ {style="--header-color:#1e3a5f;"}
-
-### Acknowledgments {.fullwidth}
+## Acknowledgments {style="--header-color:#1e3a5f;"}
 
 We thank all workshop participants, Ginny Barbour (DORA Co-Chair), and the swissuniversities member libraries for their valuable contributions.
 
@@ -94,109 +93,66 @@ We thank all workshop participants, Ginny Barbour (DORA Co-Chair), and the swiss
 ### Partner Institutions {style="--header-color:#1e3a5f;"}
 
 <p style="text-align:center;">
-![NAIF Partner Institutions](../logos/all-logos.jpg){style="width:90%;"}
+![](../logos/all-logos.jpg){style="width:100%;"}
 </p>
 
-# {.col-2}
+# {.col-2 style="grid-row: span 2;"}
 
 ## ❓ Q1: How firmly is QSI embedded?
 
-### ✅ Adoption of Global Frameworks {.fullwidth}
+✅ **Adoption:** Significant momentum to align with DORA, CoARA, Leiden Manifesto
 
-Significant momentum to align with international reform initiatives:
+⚠️ **Challenge:** Struggle to translate declarations into appropriate QSI practices
 
-* 📜 **DORA** — Improving research evaluation practices
-* 🤝 **CoARA** — Collaborative reform agenda
-* 📊 **Leiden Manifesto** — Ten principles for research metrics
+💡 **Core Values:** Indicators must be transparent, contextual, and fair — complement, not replace, expert judgment
 
-### ⚠️ Implementation Challenges {.fullwidth}
 
-* Many institutions struggle to translate declarations into **appropriate QSI practices**
-* Gap between policy commitment and operational implementation
+## ❓ Q2: Where are QSI currently used?
 
-### 💡 Core Values {.fullwidth}
+🏛️ **Organizational over Individual:** QSI favored for university/departmental monitoring, *not* individual researcher output (ETH Zurich case study)
 
-Consensus that indicators must be:
+📊 **Use Cases:**
 
-* 🔍 **Transparent** — Clear methodology and limitations
-* 🎯 **Contextual** — Discipline and situation-specific
-* ⚖️ **Fair** — Complement, not replace, expert judgment
-
-## ❓ Q2: In what situations are QSI used?
-
-### 🏛️ Organizational over Individual {.fullwidth}
-
-Using **ETH Zurich** as primary case study, QSI are favored for:
-
-* ✅ University/departmental **monitoring and steering**
-* ❌ *Not* for quantifying individual researcher output
-
-### 📊 Specific Use Cases {.fullwidth}
-
-| Use Case | Application |
-|----------|-------------|
-| 🔬 **Research Profiles** | Topics researched, evolution over time |
-| 🌍 **Impact Analysis** | Citation patterns by discipline/country, societal relevance |
-| 🔗 **Network Analysis** | Collaboration patterns (internal/external, national/international) |
-| 📖 **Strategic Initiatives** | Open Access shares, funding source analysis |
+* 🔬 Research Profiles — Topics & evolution over time
+* 🌍 Impact Analysis — Citations by discipline/country
+* 🔗 Network Analysis — Collaboration patterns
+* 📖 Strategic Initiatives — OA shares, funding sources
 
 ## ❓ Q3: How important are QSI tools?
 
-### 📊 Data Quality as Prerequisite {.fullwidth}
+📊 **Data Quality First:** Metrics often flawed or misapplied — requires multiple sources and rigorous cleaning
 
-Workshop highlighted that quantitative metrics are often **flawed or misapplied**:
+🎯 **Context-Based:** Tools only useful when context-based — first understand how users engage, then define QSI
 
-* ✅ High importance on **data quality**
-* 🔄 Requires **multiple data sources**
-* 🧹 Rigorous **data cleaning** essential
-
-### 🎯 Contextual Relevance {.fullwidth}
-
-Tools are only useful when they are **context-based**:
-
-* First understand **how users engage** with data
-* Then define appropriate **QSI or tools**
-
-### 🤝 Diverse Methodologies {.fullwidth}
-
-Effective use requires collaboration between:
-
-* 📈 **Data specialists** — Collection and cleaning
-* 🔬 **Subject experts** — Contextual interpretation
+🤝 **Collaboration:** Data specialists + subject experts working together
 
 
-## ❓ Q4: How to promote responsible QSI?
+## ❓ Q4: Future of responsible QSI?
 
-### Four Pillars for Future Implementation {.fullwidth}
+### Four Pillars {.fullwidth}
+
+| | Pillar |
+|---|--------|
+| 🤝 | **Expert Collaboration** — Data + subject + methodology specialists |
+| 💬 | **Dialogue-Based** — Clarify purpose and limitations upfront |
+| 🎯 | **Context-First** — Build use cases, then define QSI |
+| 🌐 | **Holistic Scope** — Beyond citations: ORD, Open Science, media |
+
+
+## 📌 Conclusion & Key Takeaways
+
+The NAIF project will develop **guidelines** for Swiss HEIs applying transparent, context-specific research assessment aligned with international best practices.
 
 ::: {style="font-size: 0.95em;"}
 
-| Pillar | Description |
-|--------|-------------|
-| 🤝 **Collaboration of Experts** | Multi-layered approach: data specialists + subject experts + social research methodologists |
-| 💬 **Dialogue-Based Models** | Follow ETH Zurich model: prioritize dialogue to clarify purpose and limitations |
-| 🎯 **Context-First Approach** | Build use cases first, then define sensible QSI — avoid starting with the indicator |
-| 🌐 **Holistic Scope** | Expand beyond citations: ORD, Open Science, transdisciplinary collaboration, media response |
+| # | Takeaway |
+|---|----------|
+| 1 | **Start with context**, not indicators |
+| 2 | **Organizational monitoring** over individual assessment |
+| 3 | **Data quality** is non-negotiable |
+| 4 | **Multi-stakeholder dialogue** drives implementation |
 
 :::
-
-
-<!-- # {.col-2} -->
-
-## 📌 Conclusion
-
-The NAIF project will incorporate these insights to develop **guidelines** supporting Swiss HEIs in applying:
-
-* 🔍 **Transparent** research assessment
-* 🎯 **Context-specific** indicator selection
-* 🌍 **International best practices** alignment
-
-### Key Takeaways {.fullwidth}
-
-1. **Start with context**, not indicators
-2. **Organizational monitoring** over individual assessment
-3. **Data quality** is non-negotiable
-4. **Multi-stakeholder dialogue** drives responsible implementation
 
 
 <!-- ## 📚 References
