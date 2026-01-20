@@ -1,208 +1,207 @@
 ---
-title: "docposter: Prepare Academic Posters Using quarto"
+title: "On the Current and Future Uses of Quantitative Scientometric Indicators (QSI) in Swiss Higher Education Institutions"
 author:
-  #["<span class=\"presenter\">Ben Bucior<sup>1</sup></span>, &lt;Your name here&gt;<sup>2</sup><ol class=\"affiliations\"><li>Northwestern University, Evanston, IL, USA</li><li>Earth</li></ol>"]
-  - name: Ben Bucior
+  - name: Dr. Martin Jaekel
     affiliations:
-      - (footnotes or affiliations go here)
-  - name: "&lt;Your name here&gt;"
+      - ZHAW Zurich University of Applied Sciences
+  - name: Dr. David Johann
     affiliations:
-      - Earth
+      - ETH Library, ETH Zurich
+  - name: "<span class=\"presenter\">Dr. Moritz Mähr</span>"
+    affiliations:
+      - ETH Library, ETH Zurich
+  - name: Dr. Rüdiger Mutz
+    affiliations:
+      - CHESS, University of Zurich
+  - name: Dr. Elena Šimukovič
+    affiliations:
+      - ZHAW Zurich University of Applied Sciences
 format:
   docposter-html:
     fill-page: true
-    embed-resources: true  # self_contained flag is now deprecated in favor of embed-resources
-csl: Resources/american-chemical-society.csl
+    embed-resources: true
+# csl: Resources/american-chemical-society.csl
 references:
-- id: revealjs
-  URL: 'http://lab.hakim.se/reveal-js/#/'
+- id: dora
+  title: San Francisco Declaration on Research Assessment
+  URL: 'https://sfdora.org/'
   type: webpage
-- id: rstudio-reveal
-  URL: 'https://github.com/rstudio/revealjs'
+- id: coara
+  title: Coalition for Advancing Research Assessment
+  URL: 'https://coara.eu/'
   type: webpage
-- id: mdformats
-  URL: 'http://rmarkdown.rstudio.com/developer_custom_formats.html'
+- id: leiden
+  title: Leiden Manifesto for Research Metrics
+  URL: 'http://www.leidenmanifesto.org/'
   type: webpage
-- id: pandoc
-  URL: 'http://pandoc.org/'
+- id: naif
+  title: NAIF Project
+  URL: 'https://eth-library.github.io/naif'
   type: webpage
-- id: tikzposter
-  URL: 'https://www.ctan.org/pkg/tikzposter'
-  type: webpage
-- id: rstudio-bib
-  URL: 'http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html'
-  type: webpage
-- id: logo
-  URL: 'https://www.r-project.org/logo/'
-  type: webpage
-- id: stackoverflow-refs
-  URL: 'https://stackoverflow.com/questions/41532707/include-rmd-appendix-after-references'
-  type: webpage
-- id: csl-github
-  URL: 'https://github.com/citation-style-language/styles'
-  type: webpage
-- id: firefox-footnote
-  volume: "Limited testing shows that Firefox also works, but it doesn't yet apply experimental CSS rules for page size."
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)  # Hide code by default. Can override chunk-by-chunk
-```
-
-<!-- The name drposter came from a convoluted pun: it's a poster based on R, M.D. files (not a real doctor),
-and it also generates academic posters for PhD's and others. docposter is its evolution into quarto-based docs -->
 
 
 # {.col-2 style="grid-row: span 4;"}
-<!-- Span the first column for four rows, that way we can capture the usage block, two rows of template examples, and refs/footer information -->
 
-## Overview
+## 📋 Overview
 
-* Template for writing HTML/CSS posters using quarto
-* Same conventions as pandoc presentations (e.g. reveal.js)[@revealjs; @rstudio-reveal; @mdformats]
-* Separates content from presentation
-* Goal: automatically get consistent spacing from specifications instead of a manual layout
+The **NAIF** (National Approach for Interoperable repositories and Findable research results) project aims to increase the visibility and findability of Swiss research output.[@naif]
 
-<p style="text-align:center; flex: 25%;">
-![](Resources/sticker/docposter.png){style="width:60%;"}
+**Track 1** focuses on the **responsible use of quantitative indicators** for research assessment, aligned with:
+
+* 📜 **DORA** — Declaration on Research Assessment[@dora]
+* 🤝 **CoARA** — Coalition for Advancing Research Assessment[@coara]
+* 📊 **Leiden Manifesto** — Best practices for research metrics[@leiden]
+
+This poster presents results from a **workshop with 27 stakeholders** from Swiss Higher Education Institutions, including **Ginny Barbour** (DORA Co-Chair), and a **survey of swissuniversities member libraries**.
+
+
+## 🔬 Methods
+
+### Workshop Design {.fullwidth}
+
+* **Participants:** 27 stakeholders from Swiss HEIs, policy makers, and international experts
+* **Focus:** Four key questions on QSI implementation and responsible use
+* **Case Study:** ETH Zurich's approach to research monitoring
+
+### Survey {.fullwidth}
+
+* **Target:** swissuniversities member libraries
+* **Scope:** Current practices, tool importance, and future needs
+
+
+## 🎯 Key Findings at a Glance
+
+| Aspect | Current State |
+|--------|---------------|
+| 📈 Framework Adoption | Growing alignment with DORA, CoARA, Leiden |
+| ⚠️ Implementation | Struggles translating declarations into practice |
+| 🏛️ Assessment Level | Organizational monitoring preferred over individual |
+| 📊 Data Quality | Critical prerequisite for meaningful metrics |
+
+## 🏛️ {style="--header-color:#1e3a5f;"}
+
+### Acknowledgments {.fullwidth}
+
+We thank all workshop participants, Ginny Barbour (DORA Co-Chair), and the swissuniversities member libraries for their valuable contributions.
+
+### Contact {.fullwidth}
+
+**NAIF Track 1:** Responsible use of quantitative indicators
+
+🌐 [eth-library.github.io/naif](https://eth-library.github.io/naif)
+
+### Partner Institutions {style="--header-color:#1e3a5f;"}
+
+<p style="text-align:center;">
+![NAIF Partner Institutions](../logos/all-logos.jpg){style="width:90%;"}
 </p>
 
-
-## Rmarkdown structure
-
-<div class="fullwidth">See also the [source code](https://github.com/bbucior/docposter/tree/master/template.qmd) and [compiled pdf](https://github.com/bbucior/docposter/tree/master/Resources/example_poster.pdf) for this poster on GitHub.</div>
-
-```
----
-title: Title of your document within the YAML header
-format:
-  docposter-html:
-    <options_go_here>
----
-
-# {.col-3}
-## Overall document columns (`<h1>`)
-
-Content is organized using headers as sections.  Level 1
-sections define the overall layout of subblocks.  Use the
-`.col-x` class to use x columns for subblocks.
-
-## Another left column block
-
-You can place multiple subblocks within the same overall
-.col-x, for example to get a 3-column layout like this
-example code here.
-
-# {.col-3}
-## Individual content blocks (`<h2>`)
-
-Actual content goes within the level 2 blocks, which have
-two inner columns by default, e.g. for figures.
-
-![](path_to_figure.jpg)
-
-Most of the markdown commands seem to work, though there
-are probably still some that are untested.
-
-# {.col-3}
-## Use this div to write your references in a section:
-
-<div id="refs" class="references"></div>
-
-```
-
-## Licensing
-
-### 3rd party credits
-* Inspired by the reveal.js presentation framework[@revealjs] and its R package[@rstudio-reveal]
-* Short code snippets from `pagedown`, `decapitated`, `rmarkdown`, and `xfun`
-* Fonts under their respective licenses
-* Logo: thanks to Openclipart for the CC0 [graduation cap image](https://openclipart.org/detail/244447/minimliast-graduation-hat), [hexSticker](https://github.com/GuangchuangYu/hexSticker) for sticker generation, and [bcbioSmallRna](https://github.com/lpantano/bcbioSmallRna/blob/master/inst/sticker/sticker.R) for a helpful sticker example
-* See [CitationStyles.org](https://citationstyles.org/) and the CSL project[@csl-github] for more info about citation options (CC BY SA 3.0)
-
-### This package
-* docposter may be used under different licenses at your option
-* Entire template: GPLv3 (like [R markdown](https://github.com/rstudio/rmarkdown))
-* Files for the [drposter pandoc template](https://github.com/bbucior/drposter/tree/master/inst/rmarkdown/templates/drposter/skeleton/drposter_files): same conditions as the official [pandoc templates](https://github.com/jgm/pandoc/tree/master/data/templates)
-* Poster CSS: [CC0 public domain](https://creativecommons.org/publicdomain/zero/1.0/)
-
-
-## Community {style="--header-color:darkred; --other-color-for-h2-gradient:red;"}
-
-<p class="qr">
-![QR code](Resources/qr_code.svg)
-For more information, please visit the project page at <https://github.com/bbucior/docposter>.
-</p>
-
-
 # {.col-2}
 
-## How to use this package
+## ❓ Q1: How firmly is QSI embedded?
 
-### Installation and usage {.fullwidth}
+### ✅ Adoption of Global Frameworks {.fullwidth}
 
-* Run `quarto use template bbucior/docposter` to install the package in your local directory.
-* Run `quarto render` within your project to compile the poster to html and pdf.
+Significant momentum to align with international reform initiatives:
 
-### Customizing the template
+* 📜 **DORA** — Improving research evaluation practices
+* 🤝 **CoARA** — Collaborative reform agenda
+* 📊 **Leiden Manifesto** — Ten principles for research metrics
 
-* Avoid modifying `_extensions/`
-* Indirectly override those rules in your own `custom.css` or equivalent
-  * Easier to see and share your changes
-  * Decouples your modifications from the base docposter styles
-* Customize the format of the bibliography[@rstudio-bib;@stackoverflow-refs] using a CSL style[@csl-github]
+### ⚠️ Implementation Challenges {.fullwidth}
 
-### Export
+* Many institutions struggle to translate declarations into **appropriate QSI practices**
+* Gap between policy commitment and operational implementation
 
-* By default, the project will attempt to export your poster to PDF. You can also run this step manually be using the "print as PDF" option within Chrome[@firefox-footnote]  <!-- Note: the footnote used to be a bibtex "note," but the default ACS template doesn't include that field -->
-* Be sure to save a PDF (and possibly html with `embed-resources: true`) to archive your project at the end, in case there are changes in pandoc or web dependencies
-* You can also render the poster in other formats, such as a revealjs slide deck
+### 💡 Core Values {.fullwidth}
+
+Consensus that indicators must be:
+
+* 🔍 **Transparent** — Clear methodology and limitations
+* 🎯 **Contextual** — Discipline and situation-specific
+* ⚖️ **Fair** — Complement, not replace, expert judgment
+
+## ❓ Q2: In what situations are QSI used?
+
+### 🏛️ Organizational over Individual {.fullwidth}
+
+Using **ETH Zurich** as primary case study, QSI are favored for:
+
+* ✅ University/departmental **monitoring and steering**
+* ❌ *Not* for quantifying individual researcher output
+
+### 📊 Specific Use Cases {.fullwidth}
+
+| Use Case | Application |
+|----------|-------------|
+| 🔬 **Research Profiles** | Topics researched, evolution over time |
+| 🌍 **Impact Analysis** | Citation patterns by discipline/country, societal relevance |
+| 🔗 **Network Analysis** | Collaboration patterns (internal/external, national/international) |
+| 📖 **Strategic Initiatives** | Open Access shares, funding source analysis |
+
+## ❓ Q3: How important are QSI tools?
+
+### 📊 Data Quality as Prerequisite {.fullwidth}
+
+Workshop highlighted that quantitative metrics are often **flawed or misapplied**:
+
+* ✅ High importance on **data quality**
+* 🔄 Requires **multiple data sources**
+* 🧹 Rigorous **data cleaning** essential
+
+### 🎯 Contextual Relevance {.fullwidth}
+
+Tools are only useful when they are **context-based**:
+
+* First understand **how users engage** with data
+* Then define appropriate **QSI or tools**
+
+### 🤝 Diverse Methodologies {.fullwidth}
+
+Effective use requires collaboration between:
+
+* 📈 **Data specialists** — Collection and cleaning
+* 🔬 **Subject experts** — Contextual interpretation
 
 
-## Reproducible research
+## ❓ Q4: How to promote responsible QSI?
 
-### Directly include plots
+### Four Pillars for Future Implementation {.fullwidth}
 
-```{r, echo=FALSE}
-plot(cars)
-```
+::: {style="font-size: 0.95em;"}
 
-### Directly include stats
+| Pillar | Description |
+|--------|-------------|
+| 🤝 **Collaboration of Experts** | Multi-layered approach: data specialists + subject experts + social research methodologists |
+| 💬 **Dialogue-Based Models** | Follow ETH Zurich model: prioritize dialogue to clarify purpose and limitations |
+| 🎯 **Context-First Approach** | Build use cases first, then define sensible QSI — avoid starting with the indicator |
+| 🌐 **Holistic Scope** | Expand beyond citations: ORD, Open Science, transdisciplinary collaboration, media response |
 
-```{r cars_demo}
-summary(cars)
-```
-
-
-
-# {.col-2}
-
-## Customizable themes
-
-Note the features for theming.  If you had a special class attached to the .level1 or .slides/theme, you could use a general descendent selector to automatically get theming support, then break up these details into separate theme files.
-
-# {.col-4}
-
-## Default theme
-
-This is an example of the default theme.
-
-# {.col-4 .theme-minimalist}
-
-## Minimalist theme
-
-This is an example of the minimalist theme.
+:::
 
 
-# {.col-2}
+<!-- # {.col-2} -->
+
+## 📌 Conclusion
+
+The NAIF project will incorporate these insights to develop **guidelines** supporting Swiss HEIs in applying:
+
+* 🔍 **Transparent** research assessment
+* 🎯 **Context-specific** indicator selection
+* 🌍 **International best practices** alignment
+
+### Key Takeaways {.fullwidth}
+
+1. **Start with context**, not indicators
+2. **Organizational monitoring** over individual assessment
+3. **Data quality** is non-negotiable
+4. **Multi-stakeholder dialogue** drives responsible implementation
 
 
-## See also
+<!-- ## 📚 References
 
-* tikzposter latex template, and its example themes for inspiration <https://bitbucket.org/surmann/tikzposter/downloads/>
-* [Other R markdown templates](https://gist.github.com/Pakillo/4854e5d760351206084f6be8abe476b2) with their advantages/disadvantages (pdf compatibility, consistent syntax with flexdashboard, interactivity, etc.)
+<div id="refs" class="references"></div> -->
 
-
-## References
-<div id="refs" class="references"></div>
+<!-- # {.col-2} -->
 
