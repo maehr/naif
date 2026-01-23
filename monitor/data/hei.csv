@@ -1,0 +1,47 @@
+name,short_name,type,city,zip,lat,lon,coara_signatory,dora_signatory
+University of Basel,UNIBAS,University,Basel,4001,47.5584,7.5834,No,Yes
+University of Bern,UniBE,University,Bern,3012,46.9505,7.4381,No,Yes
+University of Fribourg,UniFr,University,Fribourg,1700,46.8065,7.1523,Yes,Yes
+University of Geneva,UNIGE,University,Genève,1211,46.2017,6.1430,Yes,Yes
+University of Lausanne,UNIL,University,Lausanne,1015,46.5213,6.5743,Yes,Yes
+University of Lucerne,UniLu,University,Luzern,6002,47.0494,8.3105,No,Yes
+University of Neuchâtel,UniNE,University,Neuchâtel,2000,46.9936,6.9387,No,Yes
+University of St. Gallen,HSG,University,St. Gallen,9000,47.4316,9.3746,No,No
+University of Zurich,UZH,University,Zürich,8006,47.3743,8.5484,Yes,Yes
+Università della Svizzera italiana,USI,University,Lugano,6900,46.0104,8.9582,No,Yes
+Swiss Federal Institute of Technology Lausanne,EPFL,University,Lausanne,1015,46.5191,6.5668,Yes,Yes
+Swiss Federal Institute of Technology Zurich,ETHZ,University,Zürich,8092,47.3763,8.5477,Yes,Yes
+Graduate Institute of International and Development Studies,IHEID,Univ. Inst.,Genève,1202,46.2232,6.1465,No,No
+Distance Learning University Switzerland,FernUni,Univ. Inst.,Brig,3900,46.3196,7.9889,No,Yes
+Franklin University Switzerland,FUS,Univ. Inst.,Lugano-Sorengo,6924,46.0022,8.9358,No,No
+Faculty of Theology of Lugano,FTL,Univ. Inst.,Lugano,6900,46.0108,8.9590,No,No
+Staatsunabhängige Theologische Hochschule Basel,STH Basel,Univ. Inst.,Riehen,4125,47.5878,7.6441,No,No
+Theologische Hochschule Chur,THC,Univ. Inst.,Chur,7000,46.8479,9.5362,No,No
+Bern University of Applied Sciences,BFH,UAS,Bern,3012,46.9530,7.4347,Yes,Yes
+University of Applied Sciences of the Grisons,FHGR,UAS,Chur,7000,46.8533,9.5133,No,No
+University of Applied Sciences Northwestern Switzerland,FHNW,UAS,Windisch,5210,47.4812,8.2127,Yes,Yes
+HES-SO University of Applied Sciences and Arts Western Switzerland,HES-SO,UAS,Lausanne,1007,46.5195,6.6322,Yes,Yes
+Lucerne University of Applied Sciences and Arts,HSLU,UAS,Luzern,6002,47.0468,8.3106,Yes,Yes
+Kalaidos University of Applied Sciences,Kalaidos,UAS,Zürich,8050,47.4116,8.5447,No,No
+OST - Eastern Switzerland University of Applied Sciences,OST,UAS,Rapperswil-Jona,8640,47.2233,8.8174,No,No
+University of Applied Sciences and Arts of Southern Switzerland,SUPSI,UAS,Manno,6928,46.0240,8.9177,No,No
+Zurich University of the Arts,ZHdK,UAS,Zürich,8005,47.3923,8.5118,Yes,No
+Zurich University of Applied Sciences,ZHAW,UAS,Winterthur,8400,47.5005,8.7247,Yes,Yes
+HWZ University of Applied Sciences in Business Administration,HWZ,UAS,Zürich,8021,47.3783,8.5327,No,No
+Swiss Federal University for Vocational Education and Training,SFUVET,UTE,Zollikofen,3052,46.9953,7.4566,No,No
+Haute école pédagogique - BEJUNE,HEP-BEJUNE,UTE,Biel/Bienne,2503,47.1364,7.2467,No,No
+University of Teacher Education Fribourg,HEP | PH FR,UTE,Fribourg,1700,46.8093,7.1528,No,Yes
+University of Teacher Education Vaud,HEP Vaud,UTE,Lausanne,1007,46.5160,6.6231,Yes,Yes
+University of Teacher Education in Special Needs,HfH,UTE,Zürich,8050,47.4114,8.5463,No,Yes
+University of Teacher Education Bern,PHBern,UTE,Bern,3012,46.9556,7.4191,No,Yes
+University of Teacher Education Graubünden,PHGR,UTE,Chur,7000,46.8587,9.5309,No,No
+University of Teacher Education Lucerne,PH Luzern,UTE,Luzern,6000,47.0511,8.3013,No,No
+University of Teacher Education Schaffhausen,PHSH,UTE,Schaffhausen,8200,47.6973,8.6366,No,No
+University of Teacher Education Schwyz,PHSZ,UTE,Goldau,6410,47.0493,8.5478,Yes,Yes
+St.Gallen University of Teacher Education,PHSG,UTE,St. Gallen,9000,47.4304,9.3855,Yes,No
+Thurgau University of Teacher Education,PHTG,UTE,Kreuzlingen,8280,47.6493,9.1772,No,No
+University of Teacher Education Valais,HEP-VS,UTE,St-Maurice,1890,46.2201,7.0033,No,Yes
+University of Teacher Education Zug,PH Zug,UTE,Zug,6300,47.1643,8.5161,No,No
+University of Teacher Education Zurich,PH Zurich,UTE,Zürich,8090,47.3792,8.5323,Yes,Yes
+Institute of Teacher Education PH NMS Bern,PH NMS Bern,UTE,Bern,3011,46.9507,7.4452,No,No
+University of Speech Therapy Eastern Switzerland,hlo,UTE,St. Gallen,9000,47.4232,9.3703,No,No

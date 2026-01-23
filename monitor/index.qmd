@@ -1,0 +1,195 @@
+---
+title: "Swiss Institutions Map"
+format:
+  dashboard:
+    orientation: rows
+    sidebar: true
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false
+---
+
+```{python}
+import os
+import pandas as pd
+import plotly.graph_objects as go
+import plotly.io as pio
+from IPython.display import HTML
+
+# ---------- Data ----------
+CSV_PATH = "data/hei.csv"
+df = pd.read_csv(CSV_PATH)
+
+# Robust parsing
+df["lat"] = pd.to_numeric(df["lat"], errors="coerce")
+df["lon"] = pd.to_numeric(df["lon"], errors="coerce")
+df = df.dropna(subset=["lat", "lon", "short_name", "name"]).copy()
+
+# Ensure strings for categorical fields
+for col in ["type", "city", "zip", "short_name", "name"]:
+    if col in df.columns:
+        df[col] = df[col].astype(str)
+
+# ---------- Figure builder ----------
+def make_map_figure(df: pd.DataFrame) -> go.Figure:
+    # Split into traces by type for filtering
+    types = sorted(df["type"].dropna().unique()) if "type" in df.columns else ["All"]
+
+    traces = []
+    if "type" in df.columns:
+        for t in types:
+            d = df[df["type"] == t]
+            traces.append(
+                go.Scattergeo(
+                    lon=d["lon"],
+                    lat=d["lat"],
+                    text=d["short_name"],
+                    mode="markers+text",
+                    textposition="top center",
+                    name=t,
+                    customdata=d[["name", "city", "zip"]] if all(c in d.columns for c in ["name","city","zip"]) else d[["name"]],
+                    hovertemplate=(
+                        "<b>%{customdata[0]}</b><br>"
+                        + ("City: %{customdata[1]}<br>ZIP: %{customdata[2]}<br>" if all(c in d.columns for c in ["city","zip"]) else "")
+                        + "Short: %{text}<br>"
+                        + "Lat: %{lat:.4f}, Lon: %{lon:.4f}"
+                        + "<extra></extra>"
+                    ),
+                    marker=dict(size=9, opacity=0.9),
+                    textfont=dict(family="Inter"),
+                )
+            )
+    else:
+        traces.append(
+            go.Scattergeo(
+                lon=df["lon"],
+                lat=df["lat"],
+                text=df["short_name"],
+                mode="markers+text",
+                textposition="top center",
+                name="Institutions",
+                customdata=df[["name"]],
+                hovertemplate="<b>%{customdata[0]}</b><br>Short: %{text}<br>Lat: %{lat:.4f}, Lon: %{lon:.4f}<extra></extra>",
+                marker=dict(size=9, opacity=0.9),
+                textfont=dict(family="Inter"),
+            )
+        )
+        types = ["Institutions"]
+
+    fig = go.Figure(data=traces)
+
+    # Switzerland-focused view box
+    fig.update_geos(
+        scope="europe",
+        projection_type="mercator",
+        center=dict(lat=46.8, lon=8.3),
+        lataxis_range=[45.75, 47.95],
+        lonaxis_range=[5.85, 10.75],
+        showland=True,
+        showcountries=True,
+        showsubunits=True,
+        resolution=50,
+    )
+
+    fig.update_layout(
+        height=700,
+        margin=dict(l=0, r=0, t=20, b=0),
+        font=dict(family="Inter", size=14),
+        legend_title_text="Type",
+        title=dict(text="Institutions (short_name labels)", x=0.0),
+    )
+
+    # --- Filter menu: type ---
+    type_buttons = [
+        dict(label="All types", method="update", args=[{"visible": [True] * len(types)}])
+    ]
+    for i, t in enumerate(types):
+        vis = [False] * len(types)
+        vis[i] = True
+        type_buttons.append(dict(label=t, method="update", args=[{"visible": vis}]))
+
+    # --- Toggle: labels on/off ---
+    label_buttons = [
+        dict(label="Labels on", method="restyle", args=[{"mode": "markers+text"}]),
+        dict(label="Labels off", method="restyle", args=[{"mode": "markers"}]),
+    ]
+
+    fig.update_layout(
+        updatemenus=[
+            dict(
+                buttons=type_buttons,
+                direction="down",
+                x=0.01, xanchor="left",
+                y=0.99, yanchor="top",
+                bgcolor="white",
+                bordercolor="rgba(0,0,0,0.2)",
+            ),
+            dict(
+                buttons=label_buttons,
+                direction="down",
+                x=0.24, xanchor="left",
+                y=0.99, yanchor="top",
+                bgcolor="white",
+                bordercolor="rgba(0,0,0,0.2)",
+            ),
+        ]
+    )
+
+    return fig
+
+fig = make_map_figure(df)
+
+# ---------- Render-time exports ----------
+os.makedirs("outputs", exist_ok=True)
+fig.write_image("outputs/institutions_map.png", scale=2)
+fig.write_image("outputs/institutions_map.svg")
+
+# ---------- In-browser export buttons (PNG + SVG) ----------
+# Plotly's default modebar is PNG-only; this adds explicit PNG/SVG download buttons.
+div_id = "swiss_map"
+
+html = pio.to_html(
+    fig,
+    include_plotlyjs="cdn",
+    full_html=False,
+    div_id=div_id,
+)
+
+buttons = f"""
+<div style="display:flex; gap:0.5rem; align-items:center; margin: 0.25rem 0 0.75rem 0;">
+  <button onclick="Plotly.downloadImage('{div_id}', {{format:'png', scale:2, filename:'institutions_map'}})">
+    Download PNG
+  </button>
+  <button onclick="Plotly.downloadImage('{div_id}', {{format:'svg', filename:'institutions_map'}})">
+    Download SVG
+  </button>
+  <span style="opacity:0.75; font-size: 0.9rem;">
+    (Type filter + labels toggle are in the map controls)
+  </span>
+</div>
+"""
+
+HTML(buttons + html)
+```
+
+::: {.sidebar}
+
+### Data controls and downloads
+
+* Use the map dropdowns to filter **by type** and toggle **labels on/off**.
+* Hover a point for details.
+
+**Render-time exports**
+
+* [Download PNG](outputs/institutions_map.png)
+* [Download SVG](outputs/institutions_map.svg)
+
+### Data table (filter/search)
+
+from itables import show
+cols = [c for c in ["name","short_name","type","city","zip","lat","lon"] if c in df.columns]
+show(df[cols], columnFilters=True, paging=True)
+
+:::
