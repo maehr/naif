@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Section headers with NAIF green */
-.level2 > h2 {
+.level2 > h2:not(.theme-minimalist) {
   background: linear-gradient(90deg, var(--naif-strong-highlight), var(--naif-light-highlight)) !important;
   color: var(--naif-body-color) !important;
   border-left: 4px solid var(--naif-strong-highlight);
