@@ -1,0 +1,19 @@
+---
+title: "Project start"
+date: 2025-07-01
+author: "NAIF"
+description: "NAIF launches to advance interoperability and standardisation across Swiss institutional repositories."
+categories:
+  - "Blog Post"
+tags:
+  - "Project"
+  - "Kick-off"
+  - "Switzerland"
+proofread: true
+image: "images/all-logos.jpg"
+toc: false
+---
+
+![NAIF consortium logos](images/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+
+We are pleased to announce the launch of the NAIF project.

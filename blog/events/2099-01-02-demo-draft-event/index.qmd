@@ -1,0 +1,29 @@
+---
+title: "Demo draft event"
+date: 2099-01-02
+author: "NAIF"
+description: "Draft demo used to preview event layout and metadata before publishing."
+categories:
+  - "Event"
+tags:
+  - "Draft"
+  - "Demo"
+  - "Event"
+proofread: false
+image: "images/all-logos.jpg"
+draft: true
+toc: true
+---
+
+![NAIF consortium logos](images/all-logos.jpg){fig-cap="Placeholder image. Rights: ETH Library."}
+
+## Details
+
+- Date:
+- Time:
+- Location:
+- Registration:
+
+## About
+
+This is a demo draft event used to preview formatting, metadata, and images.

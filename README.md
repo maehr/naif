@@ -1,1 +1,60 @@
-# naif
+# NAIF
+
+National Approach for Interoperable repositories and Findable research results (NAIF) is a project
+initiated and funded by eight Swiss Higher Education Institutions and co-funded by
+swissuniversities.
+
+- Website: https://eth-library.github.io/naif/
+- Repository: https://github.com/eth-library/naif
+
+## About
+
+This repository contains the source for the NAIF project website, built with
+[Quarto](https://quarto.org/) (`.qmd` + `_quarto.yml`).
+
+## Getting started
+
+### Requirements
+
+- Quarto
+- Node.js (for formatting Markdown with Prettier)
+
+### Install
+
+```bash
+npm install
+```
+
+### Format and build
+
+```bash
+npm run format
+quarto render
+```
+
+### Preview locally
+
+```bash
+quarto preview
+```
+
+## Content workflow
+
+- Blog entries live in `blog/posts/<yyyy-mm-dd>-<slug>/index.qmd` (and `blog/events/...` for event
+  entries).
+- Every blog entry has its own folder and keeps assets (images) in a local `images/` subfolder.
+- Reposts must include a clear source note and link back to the original publication.
+
+## Support
+
+- Bug reports / requests: https://github.com/eth-library/naif/issues
+- Security issues: see `SECURITY.md`
+
+## Contributing
+
+See `CONTRIBUTING.md`.
+
+## License
+
+- Code: GNU AGPLv3, see `LICENSE-AGPL.md`
+- Content (text and media unless noted otherwise): CC BY 4.0, see `LICENSE-CCBY.md`

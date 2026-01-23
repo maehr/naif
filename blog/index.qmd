@@ -1,0 +1,34 @@
+---
+title: "Blog"
+toc: false
+aliases:
+  - news.html
+listing:
+  contents:
+    - posts/*/index.qmd
+  sort: "date desc"
+  filter-ui:
+    - categories
+    - search
+  page-size: 12
+  fields:
+    - image
+    - title
+    - date
+    - author
+    - description
+    - categories
+---
+
+::: {.listing}
+:::
+
+## About
+
+Browse NAIF updates, progress reports, findings, and opinion pieces.
+
+Looking for event announcements and event pages? See: [Events](../events/index.qmd)
+
+::: {.callout-note}
+Reposts are clearly marked and link back to their original publication.
+:::

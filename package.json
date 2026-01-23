@@ -1,0 +1,12 @@
+{
+  "name": "naif-website",
+  "private": true,
+  "description": "NAIF project website (Quarto)",
+  "scripts": {
+    "format": "prettier --write \"**/*.md\"",
+    "check": "prettier --check \"**/*.md\""
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}

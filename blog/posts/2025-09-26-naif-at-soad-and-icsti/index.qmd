@@ -1,0 +1,27 @@
+---
+title: "NAIF at SOAD Day and ICSTI 2025"
+date: 2025-09-26
+author: "NAIF"
+description: "NAIF presented Track 4 at SOAD Day and shared technical work at the ICSTI 2025 annual conference."
+categories:
+  - "Blog Post"
+tags:
+  - "Track 4"
+  - "Presentations"
+  - "Community"
+proofread: true
+image: "images/all-logos.jpg"
+toc: true
+---
+
+![NAIF consortium logos](images/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+
+The month of September is marked by a series of events dedicated to Open Science, and we are proud to have contributed to the momentum.
+
+We had the pleasure of presenting Track 4 of the NAIF project at the first SOAD Day (Swiss Open Academic Data Day) on 10 September and showcasing the technical aspects of the project at the ICSTI 2025 Annual Conference (International Council for Scientific and Technical Information) on 19 September.
+
+We are thankful to the organizers and participants of both events for the opportunity to present the project and engage in insightful discussions.
+
+The slides of the SOAD Day presentation are available on Zenodo:
+
+- https://doi.org/10.5281/zenodo.17142628

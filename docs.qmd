@@ -1,0 +1,18 @@
+---
+title: "Docs"
+toc: false
+---
+
+NAIF deliverables are archived on Zenodo to ensure long-term access and citability (DOIs).
+
+- Zenodo community: https://zenodo.org/communities/naif
+
+## How to cite
+
+Use the DOI from Zenodo for any NAIF deliverable you reference.
+
+## What you will find on Zenodo
+
+- Reports and deliverables
+- Slides and presentations
+- Supporting materials referenced from blog posts

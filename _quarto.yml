@@ -1,18 +1,24 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "blog/**/index.qmd"
+    - "!blog/_template-*/**"
 
 website:
   title: "NAIF"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - news.qmd
-      - about.qmd
-      - team.qmd
-      - resources.qmd
-      - join.qmd
-      - contact.qmd
+      - text: Home
+        menu:
+          - text: Blog
+            href: blog/index.qmd
+          - text: Events
+            href: events/index.qmd
+      - href: about.qmd
+        text: About
+      - href: https://zenodo.org/communities/naif
+        text: Docs
     pinned: true
   page-footer:
     center:
@@ -36,8 +42,7 @@ format:
     link-external-newwindow: true
     footnotes-hover: true
     anchor-sections: false
-    include-after-body: traffic.html
+    include-after-body:
+      - traffic.html
+      - includes/get-involved.html
     email-obfuscation: references
-
-
-

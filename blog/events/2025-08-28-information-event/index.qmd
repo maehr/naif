@@ -1,0 +1,29 @@
+---
+title: "NAIF information event"
+date: 2025-08-28
+author: "NAIF"
+description: "Information event introducing NAIF and its goals."
+categories:
+  - "Event"
+tags:
+  - "Community"
+  - "Kick-off"
+  - "Event"
+proofread: true
+image: "images/all-logos.jpg"
+toc: true
+---
+
+![NAIF consortium logos](images/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+
+## Details
+
+- Date: Thursday, 28 August 2025
+- Time: 16:00
+- Location: Online
+
+Registration was not available.
+
+## Materials
+
+- Slides: https://github.com/eth-library/naif/raw/main/documents/2025-08-28_NAIF_information_event.pdf

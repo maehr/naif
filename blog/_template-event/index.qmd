@@ -1,0 +1,37 @@
+---
+title: "<Title (<= 70 chars)>"
+date: "YYYY-MM-DD"
+author: "<Author name>"
+description: "<Teaser (<= 280 chars)>"
+categories:
+  - "Event"
+tags:
+  - "<tag 1>"
+  - "<tag 2>"
+  - "<tag 3>"
+proofread: false
+image: "images/<listing-card-image>"
+toc: true
+---
+
+<!--
+Checklist (manual):
+- Title <= 70 characters
+- Text 500-3000 characters (guideline)
+- Teaser <= 280 characters
+- Exactly 1 category: Event
+- Exactly 3 tags
+- 1-3 images, each with alt text + caption + rights attribution
+- Proofread true/false is set
+-->
+
+## Details
+
+- Date:
+- Time:
+- Location:
+- Registration:
+
+## About
+
+<Describe the event>

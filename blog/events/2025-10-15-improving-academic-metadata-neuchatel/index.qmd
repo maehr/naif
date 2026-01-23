@@ -1,0 +1,27 @@
+---
+title: "Workshop: Improving academic metadata (Neuchatel)"
+date: 2025-10-15
+author: "NAIF"
+description: "Workshop on improving academic metadata for Swiss repositories and institutions (Track 4)."
+categories:
+  - "Event"
+tags:
+  - "Track 4"
+  - "Workshop"
+  - "Metadata"
+proofread: true
+image: "images/all-logos.jpg"
+toc: true
+---
+
+![NAIF consortium logos](images/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+
+## Details
+
+- Date: Wednesday, 15 October 2025
+- Location: University of Neuchatel
+- Registration: https://forms.gle/23kzvv1kubBDXpHp6
+
+## About
+
+This workshop is part of NAIF Track 4.

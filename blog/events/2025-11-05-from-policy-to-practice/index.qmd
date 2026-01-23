@@ -1,0 +1,28 @@
+---
+title: "From Policy to Practice: National ORI framework"
+date: 2025-11-05
+author: "NAIF"
+description: "Event on building a National Open Research Information framework in Switzerland (Track 2)."
+categories:
+  - "Event"
+tags:
+  - "Track 2"
+  - "Open research information"
+  - "Event"
+proofread: true
+image: "images/naif-event-image.png"
+toc: true
+---
+
+![NAIF event image](images/naif-event-image.png){fig-cap="Rights: Zurich University Library (UB Zurich)."}
+
+## Details
+
+- Date: Wednesday, 5 November 2025
+- Location: University of Zurich
+- Program (flyer): https://www.ub.uzh.ch/dam/jcr:5ee157b5-eba2-4b11-b1c9-d5bb7351d84c/Flyer_Panel-discussion_From-policy-to-practice.pdf
+- Registration: https://ema.uzh.ch/RLX4H
+
+## Related
+
+- Event review (repost): [/blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/](../../posts/2025-11-12-what-switzerland-can-learn-from-other-countries/)

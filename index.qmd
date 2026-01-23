@@ -1,5 +1,20 @@
 ---
 toc: false
+listing:
+  - id: home-events
+    contents: blog/events/*/index.qmd
+    sort: "date desc"
+    page-size: 3
+    fields: [image, title, date, description]
+    sort-ui: false
+    filter-ui: false
+  - id: home-posts
+    contents: blog/posts/*/index.qmd
+    sort: "date desc"
+    page-size: 3
+    fields: [image, title, date, description]
+    sort-ui: false
+    filter-ui: false
 ---
 
 ::: {.column-screen}
@@ -19,3 +34,17 @@ The project has started in July 2025 and will end in December 2026.
 <div id="logos">
 <div class="logo"><img src="logos/all-logos.jpg" width="600px"></div>
 </div>
+
+## Upcoming events
+
+Find all events on: [Events](events/index.qmd)
+
+::: {#home-events}
+:::
+
+## Latest blog entries
+
+Read more on: [Blog](blog/index.qmd)
+
+::: {#home-posts}
+:::

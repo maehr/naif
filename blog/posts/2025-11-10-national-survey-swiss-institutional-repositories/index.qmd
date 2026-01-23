@@ -1,0 +1,42 @@
+---
+title: "NAIF launches a national survey on Swiss repositories"
+date: 2025-11-10
+author: "NAIF"
+description: "National survey to map Swiss institutional repositories and identify needs for interoperability and shared standards."
+categories:
+  - "Blog Post"
+tags:
+  - "Track 3"
+  - "Survey"
+  - "Repositories"
+proofread: true
+image: "images/all-logos.jpg"
+toc: true
+---
+
+![NAIF consortium logos](images/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+
+We are launching a national survey to map and better understand the landscape of institutional repositories in Switzerland. The initiative aims to strengthen interoperability, standardisation, and coordination across the country's research information ecosystem.
+
+The survey explores how repositories are managed, described, and sustained, focusing on infrastructure, metadata practices, governance, and long-term strategies. It seeks to identify common strengths, gaps, and challenges, laying the groundwork for a national roadmap aligned with international standards and open science principles.
+
+The questionnaire is addressed to repository managers and service leads from Swiss higher education institutions operating repositories or CRIS systems. Each manager will be contacted directly to participate.
+
+To support respondents, two Q&A sessions will be organised:
+
+- Thursday, 20 November 2025, 11:00-12:00 (French)
+- Wednesday, 26 November 2025, 15:00-16:00 (German)
+
+The survey draws inspiration from major international efforts, including:
+
+- https://zenodo.org/records/10390626
+- https://zenodo.org/records/10255559
+- https://coar-repositories.org/news-updates/open-consultation-crafting-a-vision-for-european-repositories/
+- https://zenodo.org/records/15730917
+- https://barcelona-declaration.org/
+
+This will be the first national overview of repository maturity and practices in Switzerland. Findings will inform coordinated actions and shared services, and aggregated results will be published openly on Zenodo within the NAIF community.
+
+Deadline: 15 December 2025  
+Contact: mailto:naif-survey@library.ethz.ch  
+Take the survey: https://www.surveyhero.com/c/naif-repositories-2025

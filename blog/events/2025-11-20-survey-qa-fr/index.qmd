@@ -1,0 +1,24 @@
+---
+title: "Survey Q&A session (French)"
+date: 2025-11-20
+author: "NAIF"
+description: "Q&A session supporting the national survey on Swiss institutional repositories (Track 3)."
+categories:
+  - "Event"
+tags:
+  - "Track 3"
+  - "Survey"
+  - "Q&A"
+proofread: true
+image: "images/all-logos.jpg"
+toc: true
+---
+
+![NAIF consortium logos](images/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+
+## Details
+
+- Date: Thursday, 20 November 2025
+- Time: 11:00-12:00
+- Language: French
+- Contact: mailto:naif-survey@library.ethz.ch

@@ -1,0 +1,23 @@
+name: "📗 Report Docs Issue"
+description: "See a typo? Outdated or incorrect information? Let us know!"
+title: "<title>"
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping us keep the documentation accurate."
+  - type: input
+    id: link
+    attributes:
+      label: "Link to the page"
+  - type: textarea
+    id: issue
+    attributes:
+      label: "Describe the issue"
+  - type: dropdown
+    id: participate
+    attributes:
+      label: "Are you able to create a Pull Request with the fix?"
+      options:
+        - "Yes"
+        - "No"

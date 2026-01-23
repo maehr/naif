@@ -1,0 +1,25 @@
+---
+title: "Events"
+toc: false
+listing:
+  contents:
+    - ../blog/events/*/index.qmd
+  sort: "date desc"
+  filter-ui:
+    - search
+  page-size: 12
+  fields:
+    - image
+    - title
+    - date
+    - author
+    - description
+    - categories
+---
+
+All NAIF events in one place.
+
+## Upcoming and past
+
+::: {.listing}
+:::

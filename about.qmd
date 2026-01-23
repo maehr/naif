@@ -1,8 +1,14 @@
 ---
 title: "About"
+toc: true
+aliases:
+  - team.html
+  - resources.html
 ---
 
 <!-- ## Plain language description  -->
+
+## Project context
 
 National Approach for Interoperable repositories and Findable research results (NAIF) is a project initiated and funded by eight Swiss Higher Education Institutions (1) and co-funded by swissuniversities.
 The project aims to enable more interoperability and standardization across Swiss institutional repositories.
@@ -10,7 +16,7 @@ The project has started in July 2025 and will end in December 2026.
 
 \(1) The project partners are: ETH Library (ETH Zurich), University of Zurich, École Polytechnique Fédérale de Lausanne (EPFL), Zurich University of Applied Sciences (ZHAW), St.Gallen University of Teacher Education (PHSG), University of Fribourg, University of Neuchâtel and University of St.Gallen.
 
-## Project description
+## Background and objectives
 
 Compared to other countries, Switzerland lacks a systematic overview of the output (e.g., scientific publications) produced by researchers at Swiss Higher Education Institutions (HEIs).
 Most institutions have their own repositories in which a large number of their publications are listed.
@@ -27,7 +33,8 @@ To achieve these overarching goals, the project will work towards more standardi
 The project aims to create a basis for a national approach that considers both conceptual requirements and technical requirements.
 The project is divided in four tracks accompanied by a unified outcome providing a foundation for a national approach that is aligned with current trends in research assessment and open science practices, and a thorough understanding of the key factors that ensure the dissemination (i.e., integration of national output in global ecosystems) and findability (i.e., high-quality metadata) of the research outputs deposited in Swiss institutional repositories.
 
-## Conceptual requirements
+## Tracks
+
 ### Track 1: Responsible use of quantitative indicators
 *Responsible partners: ZHAW Zurich University of Applied Sciences, ETH Zurich, University of Zurich (CHESS)*
 
@@ -41,7 +48,6 @@ In particular, with the responsible use of quantitative indicators we seek a way
 This track will start with a structured, collaborative workshop format, inviting experts from countries with similar but also different frameworks to share insights and experiences. The workshop will facilitate a comparative analysis of national strategies. The focus will be on key governmental and institutional stakeholders, funding mechanisms, sustainability models, cost-effectiveness and technical solutions (e.g. federated vs. centralised systems). The findings will be reviewed to identify gaps and challenges specific to Switzerland.
 Then, engaging key national stakeholders will be essential to identify requirements, expectations, and challenges through consultations including roundtables and white papers. Based on these insights, a well-founded proposal will be drafted and refined in collaboration with all relevant stakeholders to ensure its feasibility and long-term success. Moreover, the introduction of a secondary publication right will be taken into account.
 
-## Technical requirements
 ### Track 3: Survey and analysis of Swiss institutional repositories
 *Responsible partners: ETH Zurich, EPFL*
 
@@ -77,3 +83,54 @@ Using the preliminary findings of the conceptual requirements identified by the 
 ## Open peer review
 
 The abstract and the review of the NAIF project proposal will be made available on the [swissuniversities website](https://www.swissuniversities.ch/en/topics/open-science/open-science-programme). 
+
+## Team
+
+### Project leaders
+
+Dr. David Johann (ETH Library, ETH Zurich)  
+
+### Project coordinator
+
+Dr. Moritz Mähr (ETH Library, ETH Zurich)
+
+### Work packages leaders
+
+Pascale Bouton (EPFL)  
+Dr. David Johann (ETH Library, ETH Zurich)  
+Dr. Martin Jaekel (ZHAW Zurich University of Applied Sciences)  
+Dr. Andrea Malits (University of Zurich)  
+Dr. Rüdiger Mutz (CHESS, University of Zurich)  
+Julien Sicot (EPFL)  
+Stefan Vogt (University of Zurich)  
+
+### Project contributors
+
+[list of contributors in preparation]
+
+## Resources
+
+### Project deliverables
+
+#### Talks and presentations
+
+- Slides: https://doi.org/10.5281/zenodo.17142628 ("Enhancing Open Academic Data through the NAIF Project", SOAD Day, 10 September 2025)
+- Slides: https://github.com/eth-library/naif/raw/main/documents/2025-08-28_NAIF_information_event.pdf ("Information event: NAIF", online, 28 August 2025)
+
+### Other projects and initiatives
+
+**COAR International Repositories Directory (IRD)**
+
+https://ird.coar-repositories.org/?lang=en
+
+**Swiss Open Access Monitor**
+
+https://oamonitor.ch/
+
+**Swiss Open Academic Data (SOAD)**
+
+https://soad.ch
+
+**Swiss Year of Scientometrics (SYoS)**
+
+https://yearofscientometrics.ethz.ch/
