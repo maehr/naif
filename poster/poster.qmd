@@ -38,7 +38,7 @@ This poster presents the results of the 6th SYoS workshop, attended by **27 stak
 * **Focus:** Four key questions on QSI implementation and responsible use
 * **Case Study:** ETH Zurich's approach to research monitoring
 
-### Survey
+### Planned Survey
 * **Target:** Swiss HEIs and relevant stakeholders (SNSF, SERI, etc.)
 * **Scope:** Current practices, tool importance, and future needs
 * **Format:** Questionnaire-guided expert interviews
