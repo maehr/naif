@@ -1,0 +1,33 @@
+---
+title: "Research on Research Event 2026 (RoR)"
+date: 2026-01-29
+author: "Center for Reproducible Science and Research Synthesis (CRS)"
+author-title: "Organizer"
+description: "Two-day Research on Research community event at the University of Zurich (29-30 January 2026)."
+categories:
+  - "NAIF related"
+tags:
+  - "Community"
+  - "Conference"
+  - "Research on Research"
+proofread: false
+image: "images/2Glasses_Blue.png"
+toc: true
+aliases:
+  - blog/events/2026-01-29-ror-event-2026/
+  - blog/events/2026-01-29-ror-event-2026/index.html
+---
+
+![Graphic for the Research on Research Event 2026](images/2Glasses_Blue.png){fig-cap="Research on Research Event 2026 graphic. Rights: Center for Reproducible Science and Research Synthesis (CRS), CC BY 4.0 (see event website)."}
+
+## Details
+
+- Date: 29-30 January 2026
+- Location: University of Zurich Main Building (KOL), Zurich, Switzerland
+- Registration: https://forms.office.com/e/kRp1pxgrX6
+- Programme: https://crsuzh.pages.uzh.ch/ror-event-2026/programme/
+- Event page: https://crsuzh.pages.uzh.ch/ror-event-2026/
+
+## About
+
+The Research on Research Event 2026 brings together the Swiss Research on Research community for two days of talks, discussion, and collaborative work.

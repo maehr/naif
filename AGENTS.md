@@ -26,16 +26,20 @@ quarto render
 ### Folder structure (required)
 
 - Blog posts: `blog/posts/<yyyy-mm-dd>-<slug>/index.qmd`
-- Events: `blog/events/<yyyy-mm-dd>-<slug>/index.qmd`
-- Assets live next to the entry: `blog/.../<entry>/images/*`
+- Events: `events/<yyyy-mm-dd>-<slug>/index.qmd`
+- Post assets live next to the entry: `blog/posts/<entry>/images/*`
+- Event assets live next to the entry: `events/<entry>/images/*`
 
 ### Front matter (recommended minimum)
 
 - `title`
 - `date`
-- `author`
+- `author` (for events: organizer)
+- `author-title` (for events: set to `Organizer`)
 - `description` (teaser)
-- `categories`: exactly one of `Blog Post` or `Event`
+- `categories`:
+  - Blog posts: exactly one: `Blog Post`
+  - Events: exactly one of `NAIF event`, `NAIF participation`, `NAIF related`
 - `tags`: exactly 3 tags
 - `proofread`: `true` or `false`
 - `image`: a local image path (used for listing cards)

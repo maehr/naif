@@ -2,9 +2,10 @@
 title: "Survey Q&A session (German)"
 date: 2025-11-26
 author: "NAIF"
+author-title: "Organizer"
 description: "Q&A session supporting the national survey on Swiss institutional repositories (Track 3)."
 categories:
-  - "Event"
+  - "NAIF event"
 tags:
   - "Track 3"
   - "Survey"
@@ -12,6 +13,9 @@ tags:
 proofread: true
 image: "images/all-logos.jpg"
 toc: true
+aliases:
+  - blog/events/2025-11-26-survey-qa-de/
+  - blog/events/2025-11-26-survey-qa-de/index.html
 ---
 
 ![NAIF consortium logos](images/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}

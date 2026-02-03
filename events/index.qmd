@@ -3,9 +3,10 @@ title: "Events"
 toc: false
 listing:
   contents:
-    - ../blog/events/*/index.qmd
+    - "*/index.qmd"
   sort: "date desc"
   filter-ui:
+    - categories
     - search
   page-size: 12
   fields:

@@ -2,7 +2,7 @@
 toc: false
 listing:
   - id: home-events
-    contents: blog/events/*/index.qmd
+    contents: events/*/index.qmd
     sort: "date desc"
     page-size: 3
     fields: [image, title, date, description]

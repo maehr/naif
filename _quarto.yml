@@ -3,6 +3,7 @@ project:
   render:
     - "*.qmd"
     - "blog/**/index.qmd"
+    - "events/**/index.qmd"
     - "!blog/_template-*/**"
 
 website:
@@ -26,7 +27,6 @@ website:
     right:
       - text: "Disclaimer"
         href: disclaimer.qmd
-
 
 format:
   html:

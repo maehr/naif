@@ -2,16 +2,20 @@
 title: "NAIF information event"
 date: 2025-08-28
 author: "NAIF"
+author-title: "Organizer"
 description: "Information event introducing NAIF and its goals."
 categories:
-  - "Event"
+  - "NAIF event"
 tags:
   - "Community"
   - "Kick-off"
-  - "Event"
+  - "Information session"
 proofread: true
 image: "images/all-logos.jpg"
 toc: true
+aliases:
+  - blog/events/2025-08-28-information-event/
+  - blog/events/2025-08-28-information-event/index.html
 ---
 
 ![NAIF consortium logos](images/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}

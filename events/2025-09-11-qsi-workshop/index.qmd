@@ -2,9 +2,10 @@
 title: "Workshop: Responsible use of indicators (Track 1)"
 date: 2025-09-11
 author: "NAIF"
+author-title: "Organizer"
 description: "Workshop on responsible use of quantitative scientometric indicators (QSI) in research assessment."
 categories:
-  - "Event"
+  - "NAIF event"
 tags:
   - "Track 1"
   - "Workshop"
@@ -12,6 +13,9 @@ tags:
 proofread: true
 image: "images/IMG_8727modified.jpeg"
 toc: true
+aliases:
+  - blog/events/2025-09-11-qsi-workshop/
+  - blog/events/2025-09-11-qsi-workshop/index.html
 ---
 
 ![group photo of syos workshop 6](images/IMG_8727modified.jpeg){fig-cap="Participants of the 6th SYoS workshop at ETH Zurich. Rights: ETH Zurich / Annette Guignard."}
@@ -24,4 +28,4 @@ toc: true
 
 ## Related
 
-- Workshop recap (repost): [/blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/](../../posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/)
+- Workshop recap (repost): [/blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/](../../blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/)
