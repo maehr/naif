@@ -21,109 +21,158 @@
     "text": "Upcoming and past"
   },
   {
-    "objectID": "disclaimer.html",
-    "href": "disclaimer.html",
-    "title": "Legal notice",
+    "objectID": "events/2026-01-29-ror-event-2026/index.html",
+    "href": "events/2026-01-29-ror-event-2026/index.html",
+    "title": "Research on Research Event 2026 (RoR)",
     "section": "",
-    "text": "ETH Library’s and ETH Zurich’s legal notices are in effect:\n\nDisclaimer & copyright\n\nData protection"
+    "text": "Graphic for the Research on Research Event 2026"
   },
   {
-    "objectID": "blog/posts/2025-11-10-national-survey-swiss-institutional-repositories/index.html",
-    "href": "blog/posts/2025-11-10-national-survey-swiss-institutional-repositories/index.html",
-    "title": "NAIF launches a national survey on Swiss repositories",
-    "section": "",
-    "text": "NAIF consortium logos\n\n\nWe are launching a national survey to map and better understand the landscape of institutional repositories in Switzerland. The initiative aims to strengthen interoperability, standardisation, and coordination across the country’s research information ecosystem.\nThe survey explores how repositories are managed, described, and sustained, focusing on infrastructure, metadata practices, governance, and long-term strategies. It seeks to identify common strengths, gaps, and challenges, laying the groundwork for a national roadmap aligned with international standards and open science principles.\nThe questionnaire is addressed to repository managers and service leads from Swiss higher education institutions operating repositories or CRIS systems. Each manager will be contacted directly to participate.\nTo support respondents, two Q&A sessions will be organised:\n\nThursday, 20 November 2025, 11:00-12:00 (French)\nWednesday, 26 November 2025, 15:00-16:00 (German)\n\nThe survey draws inspiration from major international efforts, including:\n\nhttps://zenodo.org/records/10390626\nhttps://zenodo.org/records/10255559\nhttps://coar-repositories.org/news-updates/open-consultation-crafting-a-vision-for-european-repositories/\nhttps://zenodo.org/records/15730917\nhttps://barcelona-declaration.org/\n\nThis will be the first national overview of repository maturity and practices in Switzerland. Findings will inform coordinated actions and shared services, and aggregated results will be published openly on Zenodo within the NAIF community.\nDeadline: 15 December 2025\nContact: mailto:naif-survey@library.ethz.ch\nTake the survey: https://www.surveyhero.com/c/naif-repositories-2025"
+    "objectID": "events/2026-01-29-ror-event-2026/index.html#details",
+    "href": "events/2026-01-29-ror-event-2026/index.html#details",
+    "title": "Research on Research Event 2026 (RoR)",
+    "section": "Details",
+    "text": "Details\n\nDate: 29-30 January 2026\nLocation: University of Zurich Main Building (KOL), Zurich, Switzerland\nRegistration: https://forms.office.com/e/kRp1pxgrX6\nProgramme: https://crsuzh.pages.uzh.ch/ror-event-2026/programme/\nEvent page: https://crsuzh.pages.uzh.ch/ror-event-2026/"
   },
   {
-    "objectID": "blog/posts/2025-09-26-naif-at-soad-and-icsti/index.html",
-    "href": "blog/posts/2025-09-26-naif-at-soad-and-icsti/index.html",
-    "title": "NAIF at SOAD Day and ICSTI 2025",
-    "section": "",
-    "text": "NAIF consortium logos\n\n\nThe month of September is marked by a series of events dedicated to Open Science, and we are proud to have contributed to the momentum.\nWe had the pleasure of presenting Track 4 of the NAIF project at the first SOAD Day (Swiss Open Academic Data Day) on 10 September and showcasing the technical aspects of the project at the ICSTI 2025 Annual Conference (International Council for Scientific and Technical Information) on 19 September.\nWe are thankful to the organizers and participants of both events for the opportunity to present the project and engage in insightful discussions.\nThe slides of the SOAD Day presentation are available on Zenodo:\n\nhttps://doi.org/10.5281/zenodo.17142628"
-  },
-  {
-    "objectID": "blog/index.html#about",
-    "href": "blog/index.html#about",
-    "title": "Blog",
+    "objectID": "events/2026-01-29-ror-event-2026/index.html#about",
+    "href": "events/2026-01-29-ror-event-2026/index.html#about",
+    "title": "Research on Research Event 2026 (RoR)",
     "section": "About",
-    "text": "About\nBrowse NAIF updates, progress reports, findings, and opinion pieces.\nLooking for event announcements and event pages? See: Events\n\n\n\n\n\n\nNote\n\n\n\nReposts are clearly marked and link back to their original publication."
+    "text": "About\nThe Research on Research Event 2026 brings together the Swiss Research on Research community for two days of talks, discussion, and collaborative work."
   },
   {
-    "objectID": "blog/events/2025-12-08-improving-academic-metadata-online/index.html",
-    "href": "blog/events/2025-12-08-improving-academic-metadata-online/index.html",
-    "title": "Workshop: Improving academic metadata (Track 4)",
+    "objectID": "events/2025-11-26-survey-qa-de/index.html",
+    "href": "events/2025-11-26-survey-qa-de/index.html",
+    "title": "Survey Q&A session (German)",
     "section": "",
     "text": "NAIF consortium logos"
   },
   {
-    "objectID": "blog/events/2025-12-08-improving-academic-metadata-online/index.html#details",
-    "href": "blog/events/2025-12-08-improving-academic-metadata-online/index.html#details",
-    "title": "Workshop: Improving academic metadata (Track 4)",
+    "objectID": "events/2025-11-26-survey-qa-de/index.html#details",
+    "href": "events/2025-11-26-survey-qa-de/index.html#details",
+    "title": "Survey Q&A session (German)",
     "section": "Details",
-    "text": "Details\n\nDate: Monday, 8 December 2025\nTime: 10:00-11:30\nLocation: Online\nRegistration: https://ethz.zoom.us/meeting/register/bxYnZz8ESKuSw9zi-VQYQg"
+    "text": "Details\n\nDate: Wednesday, 26 November 2025\nTime: 15:00-16:00\nLanguage: German\nContact: mailto:naif-survey@library.ethz.ch"
   },
   {
-    "objectID": "blog/events/2025-12-08-improving-academic-metadata-online/index.html#about",
-    "href": "blog/events/2025-12-08-improving-academic-metadata-online/index.html#about",
-    "title": "Workshop: Improving academic metadata (Track 4)",
-    "section": "About",
-    "text": "About\nThis workshop focuses on improving academic metadata for Swiss repositories and institutions as part of NAIF Track 4."
-  },
-  {
-    "objectID": "blog/events/2025-11-20-survey-qa-fr/index.html",
-    "href": "blog/events/2025-11-20-survey-qa-fr/index.html",
-    "title": "Survey Q&A session (French)",
+    "objectID": "events/2025-11-05-from-policy-to-practice/index.html",
+    "href": "events/2025-11-05-from-policy-to-practice/index.html",
+    "title": "From Policy to Practice: National ORI framework",
     "section": "",
-    "text": "NAIF consortium logos"
+    "text": "NAIF event image"
   },
   {
-    "objectID": "blog/events/2025-11-20-survey-qa-fr/index.html#details",
-    "href": "blog/events/2025-11-20-survey-qa-fr/index.html#details",
-    "title": "Survey Q&A session (French)",
+    "objectID": "events/2025-11-05-from-policy-to-practice/index.html#details",
+    "href": "events/2025-11-05-from-policy-to-practice/index.html#details",
+    "title": "From Policy to Practice: National ORI framework",
     "section": "Details",
-    "text": "Details\n\nDate: Thursday, 20 November 2025\nTime: 11:00-12:00\nLanguage: French\nContact: mailto:naif-survey@library.ethz.ch"
+    "text": "Details\n\nDate: Wednesday, 5 November 2025\nLocation: University of Zurich\nProgram (flyer): https://www.ub.uzh.ch/dam/jcr:5ee157b5-eba2-4b11-b1c9-d5bb7351d84c/Flyer_Panel-discussion_From-policy-to-practice.pdf\nRegistration: https://ema.uzh.ch/RLX4H"
   },
   {
-    "objectID": "blog/events/2025-10-15-improving-academic-metadata-neuchatel/index.html",
-    "href": "blog/events/2025-10-15-improving-academic-metadata-neuchatel/index.html",
-    "title": "Workshop: Improving academic metadata (Neuchatel)",
+    "objectID": "events/2025-11-05-from-policy-to-practice/index.html#related",
+    "href": "events/2025-11-05-from-policy-to-practice/index.html#related",
+    "title": "From Policy to Practice: National ORI framework",
+    "section": "Related",
+    "text": "Related\n\nEvent review (repost): /blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/"
+  },
+  {
+    "objectID": "events/2025-09-11-qsi-workshop/index.html",
+    "href": "events/2025-09-11-qsi-workshop/index.html",
+    "title": "Workshop: Responsible use of indicators (Track 1)",
     "section": "",
-    "text": "NAIF consortium logos"
+    "text": "group photo of syos workshop 6"
   },
   {
-    "objectID": "blog/events/2025-10-15-improving-academic-metadata-neuchatel/index.html#details",
-    "href": "blog/events/2025-10-15-improving-academic-metadata-neuchatel/index.html#details",
-    "title": "Workshop: Improving academic metadata (Neuchatel)",
+    "objectID": "events/2025-09-11-qsi-workshop/index.html#details",
+    "href": "events/2025-09-11-qsi-workshop/index.html#details",
+    "title": "Workshop: Responsible use of indicators (Track 1)",
     "section": "Details",
-    "text": "Details\n\nDate: Wednesday, 15 October 2025\nLocation: University of Neuchatel\nRegistration: https://forms.gle/23kzvv1kubBDXpHp6"
+    "text": "Details\n\nDate: Thursday, 11 September 2025\nLocation: ETH Zurich\nRegistration: https://yearofscientometrics.ethz.ch/mc-events/syos-workshop-no-6"
   },
   {
-    "objectID": "blog/events/2025-10-15-improving-academic-metadata-neuchatel/index.html#about",
-    "href": "blog/events/2025-10-15-improving-academic-metadata-neuchatel/index.html#about",
-    "title": "Workshop: Improving academic metadata (Neuchatel)",
-    "section": "About",
-    "text": "About\nThis workshop is part of NAIF Track 4."
+    "objectID": "events/2025-09-11-qsi-workshop/index.html#related",
+    "href": "events/2025-09-11-qsi-workshop/index.html#related",
+    "title": "Workshop: Responsible use of indicators (Track 1)",
+    "section": "Related",
+    "text": "Related\n\nWorkshop recap (repost): /blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/"
   },
   {
-    "objectID": "blog/events/2025-08-28-information-event/index.html",
-    "href": "blog/events/2025-08-28-information-event/index.html",
-    "title": "NAIF information event",
+    "objectID": "docs.html",
+    "href": "docs.html",
+    "title": "Docs",
     "section": "",
-    "text": "NAIF consortium logos"
+    "text": "NAIF deliverables are archived on Zenodo to ensure long-term access and citability (DOIs)."
   },
   {
-    "objectID": "blog/events/2025-08-28-information-event/index.html#details",
-    "href": "blog/events/2025-08-28-information-event/index.html#details",
-    "title": "NAIF information event",
-    "section": "Details",
-    "text": "Details\n\nDate: Thursday, 28 August 2025\nTime: 16:00\nLocation: Online\n\nRegistration was not available."
+    "objectID": "docs.html#how-to-cite",
+    "href": "docs.html#how-to-cite",
+    "title": "Docs",
+    "section": "How to cite",
+    "text": "How to cite\nUse the DOI from Zenodo for any NAIF deliverable you reference."
   },
   {
-    "objectID": "blog/events/2025-08-28-information-event/index.html#materials",
-    "href": "blog/events/2025-08-28-information-event/index.html#materials",
-    "title": "NAIF information event",
-    "section": "Materials",
-    "text": "Materials\n\nSlides: https://github.com/eth-library/naif/raw/main/documents/2025-08-28_NAIF_information_event.pdf"
+    "objectID": "docs.html#what-you-will-find-on-zenodo",
+    "href": "docs.html#what-you-will-find-on-zenodo",
+    "title": "Docs",
+    "section": "What you will find on Zenodo",
+    "text": "What you will find on Zenodo\n\nReports and deliverables\nSlides and presentations\nSupporting materials referenced from blog posts"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "If you have any questions, feedback or ideas, or if you would like to connect with us, feel free to reach out.\nEmail: naif@library.ethz.ch"
+  },
+  {
+    "objectID": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html",
+    "href": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html",
+    "title": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”",
+    "section": "",
+    "text": "Note\n\n\n\nOriginally published (12 November 2025) at: https://www.uzh.ch/blog/ub/2025/11/12/what-switzerland-can-learn-from-other-countries-review-of-the-event-from-policy-to-practice-building-a-national-open-research-information-framework-in-switzerland/?lang=en\nHow can we create an open research infrastructure in Switzerland that makes the entire research output of Switzerland visible? This question was explored at the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland,” which took place on Wednesday, November 5, 2025. The main part of the event focused on three reports from Denmark, the Netherlands, and Finland."
+  },
+  {
+    "objectID": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#why-are-we-discussing-this",
+    "href": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#why-are-we-discussing-this",
+    "title": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”",
+    "section": "Why are we discussing this?",
+    "text": "Why are we discussing this?\nThe background: Although institutional repositories exist at the local level in Switzerland, there is currently no networked overview (“hub”) at the national level that makes Switzerland’s entire research output visible and accessible for reuse. This is precisely where the NAIF project (National Approach for Interoperable Repositories and Findable Research Results), co-financed by swissuniversities, comes in. One work package of this project is now investigating how other European countries have approached such a joint hub, under what conditions they have achieved coordination and collaboration among institutional repositories at the national level, and what challenges they have had to overcome."
+  },
+  {
+    "objectID": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#international-inputs-what-can-we-learn",
+    "href": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#international-inputs-what-can-we-learn",
+    "title": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”",
+    "section": "International inputs — What can we learn?",
+    "text": "International inputs — What can we learn?\nThe event offered exciting insights from three countries: Denmark, the Netherlands, and Finland. The presentation slides can now be downloaded from the Zenodo community of the NAIF project.\n\nDenmark: Using a communication campaign to bring about cultural change\nKira Stine Hansen (Copenhagen University Library, Royal Danish Library) and Michael Svendsen (Copenhagen University Library) provided insights into the complex and, in some cases, functionally parallel research infrastructure landscape in Denmark. Copenhagen University Library thereby plays a leading role in governance and infrastructure for Open Science. The cultural shift towards Open Science has largely been made possible thanks to a forward-looking communication and marketing strategy that involves researchers in the ongoing decision-making processes. The core message of their input: Collaboration is necessary because only together can we make a difference and be resilient. And while institutions collaborate, it is important to keep the focus on the “why” and not deviate into the discussions of the “how”. A unified, consistent approach is just as important as the alignment of Open Science policies and cultural values.\n\n\n\nMichael Svendsen and Kira Stine Hansen\n\n\n\n\nThe Netherlands: Secondary publication right without administration for researchers\nArjan Schalken (Network of Dutch University Libraries and the Royal Library) and Wenneke Meerstadt (Utrecht University Library) also emphasized the importance of a uniform approach to implementing a national secondary publication right at the local level in the Netherlands. Under the motto “You share – we take care,” the library team entered researchers’ publications into the local repository in two initial phases. The implementation project is currently in its successful third phase (opt-out phase, in which researchers must notify the library if they do NOT wish to make use of the secondary publication right). Six success factors have contributed to the successful implementation in the Netherlands:\n\nAn executable (concrete) guideline was drawn up with the help of one (!) legal expert and presented to all institutions for implementation.\nThe university administrations were committed because they had to report to the ministry.\nThe right of secondary publication empowered senior management and libraries to archive and publish the institution’s own publications.\nAll institutions agreed that they would stand together in the event of legal action by publishers (no legal action has been taken to date).\nPilot projects (phase 1) helped generate support from researchers, identify adjustments for internal workflows, and gauge the reactions of publishers.\nThe administrative burden on researchers was extremely low. The repository managers took on most of the work.\n\n\n\n\nWenneke Meerstadt speaking\n\n\n\n\nFinland: Making research visible, interoperable, and reusable with research.fi\nJukka Hapaamäki (Ministry of Education & Culture) and Hanna-Mari Puuska (CSC – IT Center for Science) concluded by reporting on the Finnish research information hub research.fi, which provides an overview of all research output from Finnish universities. This platform was created by CSC on behalf of the Ministry of Education and Culture as a control mechanism for university funding. The publication figures, which are automatically compiled from local data sources, are particularly impressive, while other information – such as information on research data – still appears relatively sparse (which is partly due to the limited availability of information on research data).\nThe national catalog provides information on publications, research data, infrastructures, researchers, projects, research organizations, and groups, and it obtains its data from the institutions themselves as well as from research funding agencies, data services, ORCID, and national registers."
+  },
+  {
+    "objectID": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#key-take-aways",
+    "href": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#key-take-aways",
+    "title": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”",
+    "section": "Key take-aways",
+    "text": "Key take-aways\nAfter the three keynote speeches, the event concluded with a short discussion round. The most important stakeholders in the Swiss landscape had their say: it was once again made clear that collaborative and coordinated efforts are necessary, because only together can we achieve the goals we have set ourselves. Institutions should also not be afraid to learn from each other – as the example of the Netherlands has shown, this contributes significantly to success. And while some stakeholders already operate similar research information platforms (SNSF, SWITCH), they nevertheless expressed interest in a national project. Meanwhile, it is still unclear how such a national platform should be structured: should it be more of a monitoring tool for Open Science or a steering instrument for strategic decision-makers in the higher education and research system (e.g., university management, but also research funding bodies such as SNSF and/or SERI)? Should it be a platform or catalog that provides metadata or a repository where materials can also be stored (similar to institutional repositories)? Further discussions will be held in the coming months to find a solution for Switzerland – together.\nDownload presentations: from the NAIF-Zenodo community\nAbout the project: The NAIF project (2025–2026) is supported by eight Swiss universities and co-financed by swissuniversities. The project aims to enable greater interoperability and standardization between institutional repositories in Switzerland. The project is led by ETH Zurich / ETH Library. Other participants include: UZH / Zurich University Library, EPFL, ZHAW, PH St. Gallen, University of Fribourg, University of Neuchâtel, and the University of St. Gallen.\nDr. Melanie Röthlisberger, Open Science Services"
+  },
+  {
+    "objectID": "blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html",
+    "href": "blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html",
+    "title": "Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop",
+    "section": "",
+    "text": "Note\n\n\n\nOriginally published (31 October 2025) at: https://yearofscientometrics.ethz.ch/responsible-use-of-quantitative-scientometric-indicators-insights-from-the-6th-syos-workshop/\nMany institutions currently struggle with the appropriate and responsible use of quantitative scientometric indicators (QSI) while they are trying to implement the Declaration on Research Assessment (DORA) or an action plan for the Coalition for Advancing Research Assessment (CoARA). The 6th workshop of the Swiss Year of Scientometrics (SYoS) brought together 27 stakeholders and experts from Swiss Higher Education Institutions (HEI) to discuss the responsible QSI use in research assessment.\nThe workshop was jointly organised by Dr Martin Jaekel (ZHAW), Dr Rüdiger Mutz (CHESS, UZH), and Dr David Johann (ETH Library), and moderated by Dr Regine Maritz (SNSF). The event is a contribution to NAIF (National Approach for Interoperable repositories and Findable research results), a project supported by swissuniversities involving eight Swiss HEIs and was held at ETH Zurich on 11th of September 2025."
+  },
+  {
+    "objectID": "blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html#author",
+    "href": "blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html#author",
+    "title": "Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop",
+    "section": "Author",
+    "text": "Author\n\nMartin Jaekel holds a PhD from the University of Cambridge in Life Sciences and subsequently became a PI at the University of Cambridge. He then worked as Management Consultant in Paris with a focus on biotech / pharma before joining the Agence Nationale de la Rechere as International Affairs Mananger. Subsequently he worked in for an EU Programme as Programme Officer and is now Head of Research & Development and Technology Transfer at the Zurich University of Applied Sciences."
+  },
+  {
+    "objectID": "blog/posts/2025-07-01-project-start/index.html",
+    "href": "blog/posts/2025-07-01-project-start/index.html",
+    "title": "Project start",
+    "section": "",
+    "text": "NAIF consortium logos\n\n\nWe are pleased to announce the launch of the NAIF project."
   },
   {
     "objectID": "about.html",
@@ -175,137 +224,109 @@
     "text": "Resources\n\nProject deliverables\n\nTalks and presentations\n\nSlides: https://doi.org/10.5281/zenodo.17142628 (“Enhancing Open Academic Data through the NAIF Project”, SOAD Day, 10 September 2025)\nSlides: https://github.com/eth-library/naif/raw/main/documents/2025-08-28_NAIF_information_event.pdf (“Information event: NAIF”, online, 28 August 2025)\n\n\n\n\nOther projects and initiatives\nCOAR International Repositories Directory (IRD)\nhttps://ird.coar-repositories.org/?lang=en\nSwiss Open Access Monitor\nhttps://oamonitor.ch/\nSwiss Open Academic Data (SOAD)\nhttps://soad.ch\nSwiss Year of Scientometrics (SYoS)\nhttps://yearofscientometrics.ethz.ch/"
   },
   {
-    "objectID": "blog/events/2025-09-11-qsi-workshop/index.html",
-    "href": "blog/events/2025-09-11-qsi-workshop/index.html",
-    "title": "Workshop: Responsible use of indicators (Track 1)",
+    "objectID": "blog/index.html#about",
+    "href": "blog/index.html#about",
+    "title": "Blog",
+    "section": "About",
+    "text": "About\nBrowse NAIF updates, progress reports, findings, and opinion pieces.\nLooking for event announcements and event pages? See: Events\n\n\n\n\n\n\nNote\n\n\n\nReposts are clearly marked and link back to their original publication."
+  },
+  {
+    "objectID": "blog/posts/2025-09-26-naif-at-soad-and-icsti/index.html",
+    "href": "blog/posts/2025-09-26-naif-at-soad-and-icsti/index.html",
+    "title": "NAIF at SOAD Day and ICSTI 2025",
     "section": "",
-    "text": "group photo of syos workshop 6"
+    "text": "NAIF consortium logos\n\n\nThe month of September is marked by a series of events dedicated to Open Science, and we are proud to have contributed to the momentum.\nWe had the pleasure of presenting Track 4 of the NAIF project at the first SOAD Day (Swiss Open Academic Data Day) on 10 September and showcasing the technical aspects of the project at the ICSTI 2025 Annual Conference (International Council for Scientific and Technical Information) on 19 September.\nWe are thankful to the organizers and participants of both events for the opportunity to present the project and engage in insightful discussions.\nThe slides of the SOAD Day presentation are available on Zenodo:\n\nhttps://doi.org/10.5281/zenodo.17142628"
   },
   {
-    "objectID": "blog/events/2025-09-11-qsi-workshop/index.html#details",
-    "href": "blog/events/2025-09-11-qsi-workshop/index.html#details",
-    "title": "Workshop: Responsible use of indicators (Track 1)",
-    "section": "Details",
-    "text": "Details\n\nDate: Thursday, 11 September 2025\nLocation: ETH Zurich\nRegistration: https://yearofscientometrics.ethz.ch/mc-events/syos-workshop-no-6"
-  },
-  {
-    "objectID": "blog/events/2025-09-11-qsi-workshop/index.html#related",
-    "href": "blog/events/2025-09-11-qsi-workshop/index.html#related",
-    "title": "Workshop: Responsible use of indicators (Track 1)",
-    "section": "Related",
-    "text": "Related\n\nWorkshop recap (repost): /blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/"
-  },
-  {
-    "objectID": "blog/events/2025-11-05-from-policy-to-practice/index.html",
-    "href": "blog/events/2025-11-05-from-policy-to-practice/index.html",
-    "title": "From Policy to Practice: National ORI framework",
+    "objectID": "blog/posts/2025-11-10-national-survey-swiss-institutional-repositories/index.html",
+    "href": "blog/posts/2025-11-10-national-survey-swiss-institutional-repositories/index.html",
+    "title": "NAIF launches a national survey on Swiss repositories",
     "section": "",
-    "text": "NAIF event image"
+    "text": "NAIF consortium logos\n\n\nWe are launching a national survey to map and better understand the landscape of institutional repositories in Switzerland. The initiative aims to strengthen interoperability, standardisation, and coordination across the country’s research information ecosystem.\nThe survey explores how repositories are managed, described, and sustained, focusing on infrastructure, metadata practices, governance, and long-term strategies. It seeks to identify common strengths, gaps, and challenges, laying the groundwork for a national roadmap aligned with international standards and open science principles.\nThe questionnaire is addressed to repository managers and service leads from Swiss higher education institutions operating repositories or CRIS systems. Each manager will be contacted directly to participate.\nTo support respondents, two Q&A sessions will be organised:\n\nThursday, 20 November 2025, 11:00-12:00 (French)\nWednesday, 26 November 2025, 15:00-16:00 (German)\n\nThe survey draws inspiration from major international efforts, including:\n\nhttps://zenodo.org/records/10390626\nhttps://zenodo.org/records/10255559\nhttps://coar-repositories.org/news-updates/open-consultation-crafting-a-vision-for-european-repositories/\nhttps://zenodo.org/records/15730917\nhttps://barcelona-declaration.org/\n\nThis will be the first national overview of repository maturity and practices in Switzerland. Findings will inform coordinated actions and shared services, and aggregated results will be published openly on Zenodo within the NAIF community.\nDeadline: 15 December 2025\nContact: mailto:naif-survey@library.ethz.ch\nTake the survey: https://www.surveyhero.com/c/naif-repositories-2025"
   },
   {
-    "objectID": "blog/events/2025-11-05-from-policy-to-practice/index.html#details",
-    "href": "blog/events/2025-11-05-from-policy-to-practice/index.html#details",
-    "title": "From Policy to Practice: National ORI framework",
-    "section": "Details",
-    "text": "Details\n\nDate: Wednesday, 5 November 2025\nLocation: University of Zurich\nProgram (flyer): https://www.ub.uzh.ch/dam/jcr:5ee157b5-eba2-4b11-b1c9-d5bb7351d84c/Flyer_Panel-discussion_From-policy-to-practice.pdf\nRegistration: https://ema.uzh.ch/RLX4H"
+    "objectID": "disclaimer.html",
+    "href": "disclaimer.html",
+    "title": "Legal notice",
+    "section": "",
+    "text": "ETH Library’s and ETH Zurich’s legal notices are in effect:\n\nDisclaimer & copyright\n\nData protection"
   },
   {
-    "objectID": "blog/events/2025-11-05-from-policy-to-practice/index.html#related",
-    "href": "blog/events/2025-11-05-from-policy-to-practice/index.html#related",
-    "title": "From Policy to Practice: National ORI framework",
-    "section": "Related",
-    "text": "Related\n\nEvent review (repost): /blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/"
-  },
-  {
-    "objectID": "blog/events/2025-11-26-survey-qa-de/index.html",
-    "href": "blog/events/2025-11-26-survey-qa-de/index.html",
-    "title": "Survey Q&A session (German)",
+    "objectID": "events/2025-08-28-information-event/index.html",
+    "href": "events/2025-08-28-information-event/index.html",
+    "title": "NAIF information event",
     "section": "",
     "text": "NAIF consortium logos"
   },
   {
-    "objectID": "blog/events/2025-11-26-survey-qa-de/index.html#details",
-    "href": "blog/events/2025-11-26-survey-qa-de/index.html#details",
-    "title": "Survey Q&A session (German)",
+    "objectID": "events/2025-08-28-information-event/index.html#details",
+    "href": "events/2025-08-28-information-event/index.html#details",
+    "title": "NAIF information event",
     "section": "Details",
-    "text": "Details\n\nDate: Wednesday, 26 November 2025\nTime: 15:00-16:00\nLanguage: German\nContact: mailto:naif-survey@library.ethz.ch"
+    "text": "Details\n\nDate: Thursday, 28 August 2025\nTime: 16:00\nLocation: Online\n\nRegistration was not available."
   },
   {
-    "objectID": "blog/posts/2025-07-01-project-start/index.html",
-    "href": "blog/posts/2025-07-01-project-start/index.html",
-    "title": "Project start",
+    "objectID": "events/2025-08-28-information-event/index.html#materials",
+    "href": "events/2025-08-28-information-event/index.html#materials",
+    "title": "NAIF information event",
+    "section": "Materials",
+    "text": "Materials\n\nSlides: https://github.com/eth-library/naif/raw/main/documents/2025-08-28_NAIF_information_event.pdf"
+  },
+  {
+    "objectID": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html",
+    "href": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html",
+    "title": "Workshop: Improving academic metadata (Neuchatel)",
     "section": "",
-    "text": "NAIF consortium logos\n\n\nWe are pleased to announce the launch of the NAIF project."
+    "text": "NAIF consortium logos"
   },
   {
-    "objectID": "blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html",
-    "href": "blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html",
-    "title": "Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop",
+    "objectID": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html#details",
+    "href": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html#details",
+    "title": "Workshop: Improving academic metadata (Neuchatel)",
+    "section": "Details",
+    "text": "Details\n\nDate: Wednesday, 15 October 2025\nLocation: University of Neuchatel\nRegistration: https://forms.gle/23kzvv1kubBDXpHp6"
+  },
+  {
+    "objectID": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html#about",
+    "href": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html#about",
+    "title": "Workshop: Improving academic metadata (Neuchatel)",
+    "section": "About",
+    "text": "About\nThis workshop is part of NAIF Track 4."
+  },
+  {
+    "objectID": "events/2025-11-20-survey-qa-fr/index.html",
+    "href": "events/2025-11-20-survey-qa-fr/index.html",
+    "title": "Survey Q&A session (French)",
     "section": "",
-    "text": "Note\n\n\n\nOriginally published (31 October 2025) at: https://yearofscientometrics.ethz.ch/responsible-use-of-quantitative-scientometric-indicators-insights-from-the-6th-syos-workshop/\nMany institutions currently struggle with the appropriate and responsible use of quantitative scientometric indicators (QSI) while they are trying to implement the Declaration on Research Assessment (DORA) or an action plan for the Coalition for Advancing Research Assessment (CoARA). The 6th workshop of the Swiss Year of Scientometrics (SYoS) brought together 27 stakeholders and experts from Swiss Higher Education Institutions (HEI) to discuss the responsible QSI use in research assessment.\nThe workshop was jointly organised by Dr Martin Jaekel (ZHAW), Dr Rüdiger Mutz (CHESS, UZH), and Dr David Johann (ETH Library), and moderated by Dr Regine Maritz (SNSF). The event is a contribution to NAIF (National Approach for Interoperable repositories and Findable research results), a project supported by swissuniversities involving eight Swiss HEIs and was held at ETH Zurich on 11th of September 2025."
+    "text": "NAIF consortium logos"
   },
   {
-    "objectID": "blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html#author",
-    "href": "blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html#author",
-    "title": "Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop",
-    "section": "Author",
-    "text": "Author\n\nMartin Jaekel holds a PhD from the University of Cambridge in Life Sciences and subsequently became a PI at the University of Cambridge. He then worked as Management Consultant in Paris with a focus on biotech / pharma before joining the Agence Nationale de la Rechere as International Affairs Mananger. Subsequently he worked in for an EU Programme as Programme Officer and is now Head of Research & Development and Technology Transfer at the Zurich University of Applied Sciences."
+    "objectID": "events/2025-11-20-survey-qa-fr/index.html#details",
+    "href": "events/2025-11-20-survey-qa-fr/index.html#details",
+    "title": "Survey Q&A session (French)",
+    "section": "Details",
+    "text": "Details\n\nDate: Thursday, 20 November 2025\nTime: 11:00-12:00\nLanguage: French\nContact: mailto:naif-survey@library.ethz.ch"
   },
   {
-    "objectID": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html",
-    "href": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html",
-    "title": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”",
+    "objectID": "events/2025-12-08-improving-academic-metadata-online/index.html",
+    "href": "events/2025-12-08-improving-academic-metadata-online/index.html",
+    "title": "Workshop: Improving academic metadata (Track 4)",
     "section": "",
-    "text": "Note\n\n\n\nOriginally published (12 November 2025) at: https://www.uzh.ch/blog/ub/2025/11/12/what-switzerland-can-learn-from-other-countries-review-of-the-event-from-policy-to-practice-building-a-national-open-research-information-framework-in-switzerland/?lang=en\nHow can we create an open research infrastructure in Switzerland that makes the entire research output of Switzerland visible? This question was explored at the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland,” which took place on Wednesday, November 5, 2025. The main part of the event focused on three reports from Denmark, the Netherlands, and Finland."
+    "text": "NAIF consortium logos"
   },
   {
-    "objectID": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#why-are-we-discussing-this",
-    "href": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#why-are-we-discussing-this",
-    "title": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”",
-    "section": "Why are we discussing this?",
-    "text": "Why are we discussing this?\nThe background: Although institutional repositories exist at the local level in Switzerland, there is currently no networked overview (“hub”) at the national level that makes Switzerland’s entire research output visible and accessible for reuse. This is precisely where the NAIF project (National Approach for Interoperable Repositories and Findable Research Results), co-financed by swissuniversities, comes in. One work package of this project is now investigating how other European countries have approached such a joint hub, under what conditions they have achieved coordination and collaboration among institutional repositories at the national level, and what challenges they have had to overcome."
+    "objectID": "events/2025-12-08-improving-academic-metadata-online/index.html#details",
+    "href": "events/2025-12-08-improving-academic-metadata-online/index.html#details",
+    "title": "Workshop: Improving academic metadata (Track 4)",
+    "section": "Details",
+    "text": "Details\n\nDate: Monday, 8 December 2025\nTime: 10:00-11:30\nLocation: Online\nRegistration: https://ethz.zoom.us/meeting/register/bxYnZz8ESKuSw9zi-VQYQg"
   },
   {
-    "objectID": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#international-inputs-what-can-we-learn",
-    "href": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#international-inputs-what-can-we-learn",
-    "title": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”",
-    "section": "International inputs — What can we learn?",
-    "text": "International inputs — What can we learn?\nThe event offered exciting insights from three countries: Denmark, the Netherlands, and Finland. The presentation slides can now be downloaded from the Zenodo community of the NAIF project.\n\nDenmark: Using a communication campaign to bring about cultural change\nKira Stine Hansen (Copenhagen University Library, Royal Danish Library) and Michael Svendsen (Copenhagen University Library) provided insights into the complex and, in some cases, functionally parallel research infrastructure landscape in Denmark. Copenhagen University Library thereby plays a leading role in governance and infrastructure for Open Science. The cultural shift towards Open Science has largely been made possible thanks to a forward-looking communication and marketing strategy that involves researchers in the ongoing decision-making processes. The core message of their input: Collaboration is necessary because only together can we make a difference and be resilient. And while institutions collaborate, it is important to keep the focus on the “why” and not deviate into the discussions of the “how”. A unified, consistent approach is just as important as the alignment of Open Science policies and cultural values.\n\n\n\nMichael Svendsen and Kira Stine Hansen\n\n\n\n\nThe Netherlands: Secondary publication right without administration for researchers\nArjan Schalken (Network of Dutch University Libraries and the Royal Library) and Wenneke Meerstadt (Utrecht University Library) also emphasized the importance of a uniform approach to implementing a national secondary publication right at the local level in the Netherlands. Under the motto “You share – we take care,” the library team entered researchers’ publications into the local repository in two initial phases. The implementation project is currently in its successful third phase (opt-out phase, in which researchers must notify the library if they do NOT wish to make use of the secondary publication right). Six success factors have contributed to the successful implementation in the Netherlands:\n\nAn executable (concrete) guideline was drawn up with the help of one (!) legal expert and presented to all institutions for implementation.\nThe university administrations were committed because they had to report to the ministry.\nThe right of secondary publication empowered senior management and libraries to archive and publish the institution’s own publications.\nAll institutions agreed that they would stand together in the event of legal action by publishers (no legal action has been taken to date).\nPilot projects (phase 1) helped generate support from researchers, identify adjustments for internal workflows, and gauge the reactions of publishers.\nThe administrative burden on researchers was extremely low. The repository managers took on most of the work.\n\n\n\n\nWenneke Meerstadt speaking\n\n\n\n\nFinland: Making research visible, interoperable, and reusable with research.fi\nJukka Hapaamäki (Ministry of Education & Culture) and Hanna-Mari Puuska (CSC – IT Center for Science) concluded by reporting on the Finnish research information hub research.fi, which provides an overview of all research output from Finnish universities. This platform was created by CSC on behalf of the Ministry of Education and Culture as a control mechanism for university funding. The publication figures, which are automatically compiled from local data sources, are particularly impressive, while other information – such as information on research data – still appears relatively sparse (which is partly due to the limited availability of information on research data).\nThe national catalog provides information on publications, research data, infrastructures, researchers, projects, research organizations, and groups, and it obtains its data from the institutions themselves as well as from research funding agencies, data services, ORCID, and national registers."
-  },
-  {
-    "objectID": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#key-take-aways",
-    "href": "blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#key-take-aways",
-    "title": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”",
-    "section": "Key take-aways",
-    "text": "Key take-aways\nAfter the three keynote speeches, the event concluded with a short discussion round. The most important stakeholders in the Swiss landscape had their say: it was once again made clear that collaborative and coordinated efforts are necessary, because only together can we achieve the goals we have set ourselves. Institutions should also not be afraid to learn from each other – as the example of the Netherlands has shown, this contributes significantly to success. And while some stakeholders already operate similar research information platforms (SNSF, SWITCH), they nevertheless expressed interest in a national project. Meanwhile, it is still unclear how such a national platform should be structured: should it be more of a monitoring tool for Open Science or a steering instrument for strategic decision-makers in the higher education and research system (e.g., university management, but also research funding bodies such as SNSF and/or SERI)? Should it be a platform or catalog that provides metadata or a repository where materials can also be stored (similar to institutional repositories)? Further discussions will be held in the coming months to find a solution for Switzerland – together.\nDownload presentations: from the NAIF-Zenodo community\nAbout the project: The NAIF project (2025–2026) is supported by eight Swiss universities and co-financed by swissuniversities. The project aims to enable greater interoperability and standardization between institutional repositories in Switzerland. The project is led by ETH Zurich / ETH Library. Other participants include: UZH / Zurich University Library, EPFL, ZHAW, PH St. Gallen, University of Fribourg, University of Neuchâtel, and the University of St. Gallen.\nDr. Melanie Röthlisberger, Open Science Services"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "If you have any questions, feedback or ideas, or if you would like to connect with us, feel free to reach out.\nEmail: naif@library.ethz.ch"
-  },
-  {
-    "objectID": "docs.html",
-    "href": "docs.html",
-    "title": "Docs",
-    "section": "",
-    "text": "NAIF deliverables are archived on Zenodo to ensure long-term access and citability (DOIs)."
-  },
-  {
-    "objectID": "docs.html#how-to-cite",
-    "href": "docs.html#how-to-cite",
-    "title": "Docs",
-    "section": "How to cite",
-    "text": "How to cite\nUse the DOI from Zenodo for any NAIF deliverable you reference."
-  },
-  {
-    "objectID": "docs.html#what-you-will-find-on-zenodo",
-    "href": "docs.html#what-you-will-find-on-zenodo",
-    "title": "Docs",
-    "section": "What you will find on Zenodo",
-    "text": "What you will find on Zenodo\n\nReports and deliverables\nSlides and presentations\nSupporting materials referenced from blog posts"
+    "objectID": "events/2025-12-08-improving-academic-metadata-online/index.html#about",
+    "href": "events/2025-12-08-improving-academic-metadata-online/index.html#about",
+    "title": "Workshop: Improving academic metadata (Track 4)",
+    "section": "About",
+    "text": "About\nThis workshop focuses on improving academic metadata for Swiss repositories and institutions as part of NAIF Track 4."
   },
   {
     "objectID": "index.html",
@@ -319,7 +340,7 @@
     "href": "index.html#upcoming-events",
     "title": "\nNAIFNational Approach for Interoperable repositoriesand Findable research results\n",
     "section": "Upcoming events",
-    "text": "Upcoming events\nFind all events on: Events\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Track 4)\n\n\nOnline workshop on improving academic metadata for Swiss repositories and institutions.\n\n\n\n\n\nDec 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (German)\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (French)\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Policy to Practice: National ORI framework\n\n\nEvent on building a National Open Research Information framework in Switzerland (Track 2).\n\n\n\n\n\nNov 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Neuchatel)\n\n\nWorkshop on improving academic metadata for Swiss repositories and institutions (Track 4).\n\n\n\n\n\nOct 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Responsible use of indicators (Track 1)\n\n\nWorkshop on responsible use of quantitative scientometric indicators (QSI) in research assessment.\n\n\n\n\n\nSep 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF information event\n\n\nInformation event introducing NAIF and its goals.\n\n\n\n\n\nAug 28, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Upcoming events\nFind all events on: Events\n\n\n\n\n\n\n\n\n\n\nResearch on Research Event 2026 (RoR)\n\n\nTwo-day Research on Research community event at the University of Zurich (29-30 January 2026).\n\n\n\n\n\nJan 29, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Track 4)\n\n\nOnline workshop on improving academic metadata for Swiss repositories and institutions.\n\n\n\n\n\nDec 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (German)\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (French)\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Policy to Practice: National ORI framework\n\n\nEvent on building a National Open Research Information framework in Switzerland (Track 2).\n\n\n\n\n\nNov 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Neuchatel)\n\n\nWorkshop on improving academic metadata for Swiss repositories and institutions (Track 4).\n\n\n\n\n\nOct 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Responsible use of indicators (Track 1)\n\n\nWorkshop on responsible use of quantitative scientometric indicators (QSI) in research assessment.\n\n\n\n\n\nSep 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF information event\n\n\nInformation event introducing NAIF and its goals.\n\n\n\n\n\nAug 28, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#latest-blog-entries",
