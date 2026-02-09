@@ -2,7 +2,8 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "blog/**/index.qmd"
+    - "blog/index.qmd"
+    - "posts/**/index.qmd"
     - "events/**/index.qmd"
     - "!blog/_template-*/**"
 

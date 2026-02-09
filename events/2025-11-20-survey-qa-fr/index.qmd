@@ -13,9 +13,6 @@ tags:
 proofread: true
 image: "../../images/logos/all-logos.jpg"
 toc: true
-aliases:
-  - blog/events/2025-11-20-survey-qa-fr/
-  - blog/events/2025-11-20-survey-qa-fr/index.html
 ---
 
 ![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}

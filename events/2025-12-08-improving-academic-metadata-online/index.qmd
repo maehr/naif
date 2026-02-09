@@ -13,9 +13,6 @@ tags:
 proofread: true
 image: "../../images/logos/all-logos.jpg"
 toc: true
-aliases:
-  - blog/events/2025-12-08-improving-academic-metadata-online/
-  - blog/events/2025-12-08-improving-academic-metadata-online/index.html
 ---
 
 ![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}

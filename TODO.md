@@ -9,16 +9,16 @@
 ## Blog
 
 - [x] Create Blog hub with listing + category filter (Blog Post vs Event)
-- [x] Enforce folder-per-entry structure (`blog/posts/<date>-<slug>/`)
+- [x] Enforce folder-per-entry structure (`posts/<date>-<slug>/`)
 - [x] Add repost #1 (SYoS, 31 Oct 2025) with local images and attribution
 - [x] Add repost #2 (UZH, 12 Nov 2025) with local images and attribution
 - [x] Migrate remaining legacy content into individual entries
-- [ ] Decide whether to add RSS feed for Blog
+- [x] Decide whether to add RSS feed for Blog
 
 ## About
 
 - [x] Consolidate project context + Tracks 1-4 + Team into `about.qmd`
-- [ ] Review copy for plain-language tone and consistency
+- [x] Review copy for plain-language tone and consistency
 
 ## Docs
 

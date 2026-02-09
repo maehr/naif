@@ -43,8 +43,7 @@ uv run quarto preview
 
 ## Content workflow
 
-- Blog entries live in `blog/posts/<yyyy-mm-dd>-<slug>/index.qmd` (and `blog/events/...` for event
-  entries).
+- Blog entries live in `posts/<yyyy-mm-dd>-<slug>/index.qmd`.
 - Every blog entry has its own folder and keeps assets (images) in a local `images/` subfolder.
 - Reposts must include a clear source note and link back to the original publication.
 

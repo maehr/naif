@@ -10,11 +10,11 @@ tags:
   - "Demo"
   - "Template"
 proofread: false
-image: "../../../images/logos/all-logos.jpg"
+image: "../../images/logos/all-logos.jpg"
 draft: true
 toc: true
 ---
 
-![NAIF consortium logos](../../../images/logos/all-logos.jpg){fig-cap="Placeholder image. Rights: ETH Library."}
+![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="Placeholder image. Rights: ETH Library."}
 
 This is a demo draft blog post used to preview formatting, metadata, and images.

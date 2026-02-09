@@ -27,9 +27,9 @@ This public guide explains how to publish NAIF blog posts and event entries. It 
 
 ## Folder structure and filenames
 
-- Blog posts: `blog/posts/<yyyy-mm-dd>-<slug>/index.qmd`
+- Blog posts: `posts/<yyyy-mm-dd>-<slug>/index.qmd`
 - Events: `events/<yyyy-mm-dd>-<slug>/index.qmd`
-- Post assets: `blog/posts/<entry>/images/*`
+- Post assets: `posts/<entry>/images/*`
 - Event assets: `events/<entry>/images/*`
 - Rendered output lives in `_site/` (do not edit `_site/` manually).
 

@@ -14,9 +14,6 @@ proofread: false
 image: "../../images/logos/all-logos.jpg"
 draft: true
 toc: true
-aliases:
-  - blog/events/2099-01-02-demo-draft-event/
-  - blog/events/2099-01-02-demo-draft-event/index.html
 ---
 
 ![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="Placeholder image. Rights: ETH Library."}

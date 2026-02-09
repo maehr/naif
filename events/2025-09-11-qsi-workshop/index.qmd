@@ -13,9 +13,6 @@ tags:
 proofread: true
 image: "../../images/general/IMG_8727modified.jpeg"
 toc: true
-aliases:
-  - blog/events/2025-09-11-qsi-workshop/
-  - blog/events/2025-09-11-qsi-workshop/index.html
 ---
 
 ![group photo of syos workshop 6](../../images/general/IMG_8727modified.jpeg){fig-cap="Participants of the 6th SYoS workshop at ETH Zurich. Rights: ETH Zurich / Annette Guignard."}
@@ -32,4 +29,4 @@ This event has already taken place. Any registration information has been disabl
 
 ## Related
 
-- Workshop recap (repost): [/blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/](../../blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/)
+- Workshop recap (repost): [/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/](../../posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/)

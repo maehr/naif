@@ -13,9 +13,6 @@ tags:
 proofread: true
 image: "../../images/general/naif-event-image.png"
 toc: true
-aliases:
-  - blog/events/2025-11-05-from-policy-to-practice/
-  - blog/events/2025-11-05-from-policy-to-practice/index.html
 ---
 
 ![NAIF event image](../../images/general/naif-event-image.png){fig-cap="Rights: Zurich University Library (UB Zurich)."}
@@ -33,4 +30,4 @@ This event has already taken place. Any registration information has been disabl
 
 ## Related
 
-- Event review (repost): [/blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/](../../blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/)
+- Event review (repost): [/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/](../../posts/2025-11-12-what-switzerland-can-learn-from-other-countries/)

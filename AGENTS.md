@@ -93,9 +93,9 @@ uv run quarto render
 
 ### Folder structure (required)
 
-- Blog posts: `blog/posts/<yyyy-mm-dd>-<slug>/index.qmd`
+- Blog posts: `posts/<yyyy-mm-dd>-<slug>/index.qmd`
 - Events: `events/<yyyy-mm-dd>-<slug>/index.qmd`
-- Post assets live next to the entry: `blog/posts/<entry>/images/*`
+- Post assets live next to the entry: `posts/<entry>/images/*`
 - Event assets live next to the entry: `events/<entry>/images/*`
 
 ### Front matter (recommended minimum)

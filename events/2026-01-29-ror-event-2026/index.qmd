@@ -13,9 +13,6 @@ tags:
 proofread: false
 image: "images/2Glasses_Blue.png"
 toc: true
-aliases:
-  - blog/events/2026-01-29-ror-event-2026/
-  - blog/events/2026-01-29-ror-event-2026/index.html
 ---
 
 ![Graphic for the Research on Research Event 2026](images/2Glasses_Blue.png){fig-cap="Research on Research Event 2026 graphic. Rights: Center for Reproducible Science and Research Synthesis (CRS), CC BY 4.0 (see event website)."}

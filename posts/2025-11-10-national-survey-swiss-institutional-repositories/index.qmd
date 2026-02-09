@@ -10,11 +10,11 @@ tags:
   - "Survey"
   - "Repositories"
 proofread: true
-image: "../../../images/logos/all-logos.jpg"
+image: "../../images/logos/all-logos.jpg"
 toc: true
 ---
 
-![NAIF consortium logos](../../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
 
 We are launching a national survey to map and better understand the landscape of institutional repositories in Switzerland. The initiative aims to strengthen interoperability, standardisation, and coordination across the country's research information ecosystem.
 
