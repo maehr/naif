@@ -3,12 +3,10 @@ title: "Blog"
 subtitle: "Browse NAIF updates, progress reports, findings, and opinion pieces"
 description: "NAIF blog posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results."
 toc: false
-aliases:
-  - news.html
 listing:
   id: posts
   contents:
-    - ../posts/*/index.qmd
+    - posts/*/index.qmd
   sort: "date desc"
   feed:
     type: partial
@@ -30,7 +28,7 @@ listing:
 ::: {#posts}
 :::
 
-Looking for event announcements and event pages? See: [Events](../events/index.qmd)
+Looking for event announcements and event pages? See: [Events](events/index.qmd)
 
 ::: {.callout-note}
 Reposts are clearly marked and link back to their original publication.

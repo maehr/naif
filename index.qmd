@@ -43,7 +43,7 @@ Find all events on: [Events](events/index.qmd)
 
 ## Latest blog entries
 
-Read more on: [Blog](blog/index.qmd)
+Read more on: [Blog](blog.qmd)
 
 ::: {#home-posts}
 :::

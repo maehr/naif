@@ -101,13 +101,13 @@ Use an event entry for announcements and event documentation.
 ### Blog post template
 
 ```markdown
-{{< include blog/_template-post/index.qmd >}}
+{{< include posts/_template-post/index.qmd >}}
 ```
 
 ### Event template
 
 ```markdown
-{{< include blog/_template-event/index.qmd >}}
+{{< include events/_template-event/index.qmd >}}
 ```
 
 ## Code of conduct
