@@ -1,5 +1,7 @@
 # NAIF
 
+[![DOI](https://zenodo.org/badge/GITHUB_REPO_ID.svg)](https://zenodo.org/badge/latestdoi/ZENODO_RECORD)
+
 National Approach for Interoperable repositories and Findable research results (NAIF) is a project
 initiated and funded by eight Swiss Higher Education Institutions and co-funded by
 swissuniversities.
@@ -55,6 +57,10 @@ uv run quarto preview
 ## Contributing
 
 See `CONTRIBUTING.md`.
+
+## Citation
+
+If you reuse this repository's code or content, please cite it using `CITATION.cff`.
 
 ## License
 

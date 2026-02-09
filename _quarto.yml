@@ -2,7 +2,7 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "blog.qmd"
+    - "posts/index.qmd"
     - "posts/**/index.qmd"
     - "events/**/index.qmd"
     - "!posts/_template-*/**"
@@ -11,6 +11,10 @@ project:
 website:
   title: "NAIF"
   site-url: "https://eth-library.github.io/naif/"
+  repo-url: "https://github.com/eth-library/naif"
+  issue-url: "https://github.com/eth-library/naif/issues/new/choose"
+  repo-actions: [issue]
+  favicon: favicon.svg
   description:
     "National Approach for Interoperable repositories and Findable research results (NAIF):
     improving interoperability and metadata quality across Swiss institutional repositories."
@@ -22,7 +26,7 @@ website:
       - text: Home
         menu:
           - text: Blog
-            href: blog.qmd
+            href: posts/index.qmd
           - text: Events
             href: events/index.qmd
       - href: about.qmd
@@ -40,7 +44,7 @@ website:
 format:
   html:
     theme:
-      light: [cosmo, base_colors.scss, custom.scss]
+      light: [brand, cosmo, base_colors.scss, custom.scss]
     css: styles.css
     canonical-url: true
     toc: true

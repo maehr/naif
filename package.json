@@ -3,10 +3,25 @@
   "private": true,
   "description": "NAIF project website (Quarto)",
   "scripts": {
-    "format": "prettier --write \"**/*.md\"",
-    "check": "prettier --check \"**/*.md\""
+    "check": "prettier --check .",
+    "commit": "cz",
+    "format": "prettier --write .",
+    "prepare": "prek install",
+    "changelog": "npm exec git-cliff -- --config cliff.toml",
+    "lychee-check": "lychee --config .lycheerc.toml './*.md' './*.qmd' './blog/**/*.qmd' './events/**/*.qmd'"
   },
   "devDependencies": {
+    "@j178/prek": "^0.3.1",
+    "commitizen": "^4.3.1",
+    "cz": "^1.8.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "git-cliff": "^2.10.1",
     "prettier": "^3.6.2"
+  },
+  "type": "module",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

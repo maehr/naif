@@ -1,0 +1,128 @@
+---
+title: "Blog"
+subtitle: "Browse NAIF updates, progress reports, findings, and opinion pieces"
+description: "NAIF blog posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results."
+aliases:
+  - blog.html
+  - /blog/
+  - /blog.html
+toc: false
+listing:
+  id: posts
+  contents:
+    - "*/index.qmd"
+  sort: "date desc"
+  feed:
+    type: partial
+    items: 20
+    title: "NAIF Blog"
+  filter-ui:
+    - categories
+    - search
+  page-size: 12
+  fields:
+    - image
+    - title
+    - date
+    - author
+    - description
+    - categories
+---
+
+<div id="posts-category-filters" class="d-flex flex-wrap align-items-center gap-2 mb-3" role="group" aria-label="Filter posts by category"></div>
+
+::: {#posts}
+:::
+
+Looking for event announcements and event pages? See: [Events](../events/index.qmd)
+
+::: {.callout-note}
+Reposts are clearly marked and link back to their original publication.
+:::
+
+<script>
+window.document.addEventListener("DOMContentLoaded", function () {
+  const filterContainer = window.document.getElementById("posts-category-filters");
+  if (!filterContainer) {
+    return;
+  }
+
+  const encodeCategory = (category) => window.btoa(window.encodeURIComponent(category));
+
+  const setActiveButton = (category) => {
+    const buttons = filterContainer.querySelectorAll("button[data-category]");
+    for (const button of buttons) {
+      const isActive = (button.getAttribute("data-category") || "") === category;
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    }
+  };
+
+  const getCategoryFromHash = () => {
+    const rawHash = window.location.hash.startsWith("#")
+      ? window.location.hash.slice(1)
+      : window.location.hash;
+    if (!rawHash) {
+      return "";
+    }
+    const params = new window.URLSearchParams(rawHash);
+    return params.get("category") || "";
+  };
+
+  const createCategoryButton = (category, isActive) => {
+    const button = window.document.createElement("button");
+    button.type = "button";
+    button.className = "btn btn-sm btn-outline-secondary";
+    if (isActive) {
+      button.classList.add("active");
+    }
+    button.setAttribute("data-category", category);
+    button.setAttribute("aria-pressed", String(isActive));
+    button.textContent = category || "All categories";
+    return button;
+  };
+
+  filterContainer.appendChild(createCategoryButton("", true));
+
+  const listingCategories = Array.from(
+    window.document.querySelectorAll("#listing-posts .listing-category")
+  )
+    .map((el) => el.textContent ? el.textContent.trim() : "")
+    .filter((value) => value.length > 0);
+
+  const uniqueCategories = Array.from(new Set(listingCategories)).sort((a, b) =>
+    a.localeCompare(b)
+  );
+
+  for (const category of uniqueCategories) {
+    filterContainer.appendChild(createCategoryButton(category, false));
+  }
+
+  filterContainer.addEventListener("click", function (event) {
+    const target = event.target;
+    if (!(target instanceof window.HTMLButtonElement)) {
+      return;
+    }
+    const category = target.getAttribute("data-category") || "";
+    if (typeof window.quartoListingCategory === "function") {
+      window.quartoListingCategory(encodeCategory(category));
+    }
+  });
+
+  if (typeof window.quartoListingCategory === "function") {
+    const originalQuartoListingCategory = window.quartoListingCategory;
+    window.quartoListingCategory = function (encodedCategory) {
+      originalQuartoListingCategory(encodedCategory);
+      let decodedCategory = "";
+      try {
+        decodedCategory = window.decodeURIComponent(window.atob(encodedCategory || ""));
+      } catch (_error) {
+        decodedCategory = "";
+      }
+      setActiveButton(decodedCategory);
+    };
+  }
+
+  setActiveButton(getCategoryFromHash());
+});
+</script>

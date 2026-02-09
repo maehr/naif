@@ -39,6 +39,17 @@
 - [x] Add licenses (AGPLv3 for code, CC BY 4.0 for content)
 - [x] Add GitHub PR + Issue templates
 
+## Manual repository setup
+
+- [ ] Enable Dependabot alerts and security updates in GitHub repository settings
+- [ ] Add branch protection for `main` (require PR reviews + passing checks)
+- [ ] Ensure GitHub Pages is configured to deploy from GitHub Actions
+- [ ] Enable Zenodo-GitHub integration for automatic archival and DOI minting
+- [ ] Add DOI badge + DOI link in `README.md` once first Zenodo record exists
+- [ ] Replace DOI badge placeholders (`GITHUB_REPO_ID`, `ZENODO_RECORD`) with real Zenodo values
+- [ ] Add `CITATION.cff` authors with named contributors and ORCID (if available)
+- [ ] Verify first-interaction and CI workflows are enabled and passing on `main`
+
 ## Build
 
 - [x] Run `npm run format`

@@ -1,0 +1,10 @@
+{
+  "name": "NAIF Quarto",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postCreateCommand": "npm install && uv sync",
+  "customizations": {
+    "vscode": {
+      "extensions": ["quarto.quarto", "ms-python.python", "charliermarsh.ruff"]
+    }
+  }
+}

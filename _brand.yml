@@ -1,0 +1,22 @@
+meta:
+  name: NAIF
+
+color:
+  palette:
+    primary: "#A1AB71"
+    secondary: "#E8E1D0"
+    dark: "#181818"
+    accent: "#1F3A5F"
+    accent-dark: "#162A45"
+    white: "#FFFFFF"
+  primary: primary
+  secondary: secondary
+  foreground: dark
+  background: white
+
+typography:
+  fonts:
+    - family: Barlow
+      source: google
+  base: Barlow
+  headings: Barlow
