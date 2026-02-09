@@ -5,8 +5,12 @@
     <lastmod>2026-02-09T14:07:16.040Z</lastmod>
   </url>
   <url>
+    <loc>https://maehr.github.io/naif/posts/2026-02-09-naif-at-research-on-research/index.html</loc>
+    <lastmod>2026-02-09T15:35:17.138Z</lastmod>
+  </url>
+  <url>
     <loc>https://maehr.github.io/naif/posts/2025-11-10-national-survey-swiss-institutional-repositories/index.html</loc>
-    <lastmod>2026-02-09T14:15:21.539Z</lastmod>
+    <lastmod>2026-02-09T15:31:54.526Z</lastmod>
   </url>
   <url>
     <loc>https://maehr.github.io/naif/posts/2025-09-26-naif-at-soad-day/index.html</loc>
@@ -14,63 +18,75 @@
   </url>
   <url>
     <loc>https://maehr.github.io/naif/posts/2025-07-01-project-start/index.html</loc>
-    <lastmod>2026-02-09T13:55:20.903Z</lastmod>
+    <lastmod>2026-02-09T15:31:54.524Z</lastmod>
   </url>
   <url>
     <loc>https://maehr.github.io/naif/index.html</loc>
     <lastmod>2026-02-09T14:35:17.474Z</lastmod>
   </url>
   <url>
-    <loc>https://maehr.github.io/naif/events/2026-01-29-ror-event-2026/index.html</loc>
-    <lastmod>2026-02-09T13:56:11.125Z</lastmod>
+    <loc>https://maehr.github.io/naif/events/2026-03-11-soad-online-event/index.html</loc>
+    <lastmod>2026-02-09T15:36:20.949Z</lastmod>
   </url>
   <url>
-    <loc>https://maehr.github.io/naif/events/2025-11-26-survey-qa-de/index.html</loc>
-    <lastmod>2026-02-09T13:56:11.124Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maehr.github.io/naif/events/2025-11-05-from-policy-to-practice/index.html</loc>
-    <lastmod>2026-02-09T13:56:11.123Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maehr.github.io/naif/events/2025-09-10-soad-day/index.html</loc>
-    <lastmod>2026-02-09T14:20:25.922Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maehr.github.io/naif/docs.html</loc>
-    <lastmod>2026-02-09T08:59:07.015Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maehr.github.io/naif/contact.html</loc>
-    <lastmod>2026-02-09T08:59:04.030Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maehr.github.io/naif/about.html</loc>
-    <lastmod>2026-02-09T13:59:06.665Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maehr.github.io/naif/disclaimer.html</loc>
-    <lastmod>2026-02-09T08:59:10.717Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maehr.github.io/naif/events/2025-08-28-information-event/index.html</loc>
-    <lastmod>2026-02-09T13:56:11.122Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maehr.github.io/naif/events/2025-10-15-improving-academic-metadata-neuchatel/index.html</loc>
-    <lastmod>2026-02-09T13:56:11.123Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maehr.github.io/naif/events/2025-11-20-survey-qa-fr/index.html</loc>
-    <lastmod>2026-02-09T13:56:11.124Z</lastmod>
+    <loc>https://maehr.github.io/naif/events/2026-02-10-orcid-datacite-webinar/index.html</loc>
+    <lastmod>2026-02-09T15:36:42.706Z</lastmod>
   </url>
   <url>
     <loc>https://maehr.github.io/naif/events/2025-12-08-improving-academic-metadata-online/index.html</loc>
     <lastmod>2026-02-09T13:56:11.124Z</lastmod>
   </url>
   <url>
+    <loc>https://maehr.github.io/naif/events/2025-11-20-survey-qa-fr/index.html</loc>
+    <lastmod>2026-02-09T13:56:11.124Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maehr.github.io/naif/events/2025-10-15-improving-academic-metadata-neuchatel/index.html</loc>
+    <lastmod>2026-02-09T13:56:11.123Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maehr.github.io/naif/events/2025-08-28-information-event/index.html</loc>
+    <lastmod>2026-02-09T13:56:11.122Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maehr.github.io/naif/disclaimer.html</loc>
+    <lastmod>2026-02-09T08:59:10.717Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maehr.github.io/naif/about.html</loc>
+    <lastmod>2026-02-09T13:59:06.665Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maehr.github.io/naif/contact.html</loc>
+    <lastmod>2026-02-09T08:59:04.030Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maehr.github.io/naif/docs.html</loc>
+    <lastmod>2026-02-09T08:59:07.015Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maehr.github.io/naif/events/2025-09-10-soad-day/index.html</loc>
+    <lastmod>2026-02-09T15:36:20.950Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maehr.github.io/naif/events/2025-11-05-from-policy-to-practice/index.html</loc>
+    <lastmod>2026-02-09T13:56:11.123Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maehr.github.io/naif/events/2025-11-26-survey-qa-de/index.html</loc>
+    <lastmod>2026-02-09T13:56:11.124Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maehr.github.io/naif/events/2026-01-29-ror-event-2026/index.html</loc>
+    <lastmod>2026-02-09T13:56:11.125Z</lastmod>
+  </url>
+  <url>
     <loc>https://maehr.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/index.html</loc>
-    <lastmod>2026-02-05T10:52:53.411Z</lastmod>
+    <lastmod>2026-02-09T15:36:20.950Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maehr.github.io/naif/events/2026-03-25-orcid-community-town-hall-2026/index.html</loc>
+    <lastmod>2026-02-09T15:36:20.949Z</lastmod>
   </url>
   <url>
     <loc>https://maehr.github.io/naif/events/index.html</loc>
@@ -86,11 +102,11 @@
   </url>
   <url>
     <loc>https://maehr.github.io/naif/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html</loc>
-    <lastmod>2026-02-09T14:15:10.809Z</lastmod>
+    <lastmod>2026-02-09T15:31:54.525Z</lastmod>
   </url>
   <url>
     <loc>https://maehr.github.io/naif/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html</loc>
-    <lastmod>2026-02-09T14:15:41.603Z</lastmod>
+    <lastmod>2026-02-09T15:31:54.526Z</lastmod>
   </url>
   <url>
     <loc>https://maehr.github.io/naif/posts/index.html</loc>
