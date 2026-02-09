@@ -18,7 +18,75 @@ Before opening a PR:
 
 ```bash
 npm run format
-quarto render
+uv run quarto render
+```
+
+## Python tooling
+
+- Python version: `3.14` (see `.python-version`)
+- Environment manager: `uv`
+- Quarto execution support: `jupyter`, `ipykernel`
+- Dev tooling: `ruff`, `ty`, `pytest`, `pytest-cov`
+
+### Agents tooling specification
+
+This repository uses the following default Python tooling for agentic workflows.
+
+#### 1. Core development tooling (Astral + testing)
+
+- uv
+- ruff
+- ty
+- pytest
+- pytest-cov
+
+#### 2. Service and I/O
+
+- httpx
+
+#### 3. Data and models
+
+- pydantic
+- pydantic-settings
+- pandas
+
+#### 4. Interaction and orchestration
+
+- marimo
+
+#### 5. Observability
+
+- structlog
+
+#### 6. Visualisation
+
+- altair
+- matplotlib
+
+#### Coding guidelines
+
+- **Type safety:** use type hints throughout all code.
+- **Data structure:** use Pydantic models or Python dataclasses for structured data.
+- **Documentation:** include docstrings for all functions, including examples that serve as tests.
+- **Testing:** aim for and maintain 100% test coverage on core logic and tool definitions.
+- **Paradigm:** prefer functional programming patterns over object-oriented programming.
+
+#### Pyodide and runtime constraints
+
+- **Browser compatibility:** all simple applications and tools should be compatible with Pyodide
+  (WASM). Avoid libraries with heavy C-extensions or system-level dependencies not supported in
+  WASM.
+- **Development vs. runtime:** core development tooling is development-only; service, data,
+  interaction, observability, and visualisation libraries are runtime-usable.
+
+Common commands:
+
+```bash
+uv sync
+uv run ruff check .
+uv run ty check
+uv run pytest
+uv run quarto render
 ```
 
 ## Blog content model

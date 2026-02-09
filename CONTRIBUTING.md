@@ -15,8 +15,9 @@ Thanks for considering a contribution.
 
    ```bash
    npm install
+   uv sync
    npm run format
-   quarto render
+   uv run quarto render
    ```
 
 4. Open a pull request.

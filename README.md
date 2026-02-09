@@ -18,24 +18,27 @@ This repository contains the source for the NAIF project website, built with
 
 - Quarto
 - Node.js (for formatting Markdown with Prettier)
+- Python 3.14
+- uv
 
 ### Install
 
 ```bash
 npm install
+uv sync
 ```
 
 ### Format and build
 
 ```bash
 npm run format
-quarto render
+uv run quarto render
 ```
 
 ### Preview locally
 
 ```bash
-quarto preview
+uv run quarto preview
 ```
 
 ## Content workflow
