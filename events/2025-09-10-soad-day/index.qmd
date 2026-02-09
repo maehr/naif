@@ -1,0 +1,40 @@
+---
+title: "Swiss Open Academic Data Day (SOAD Day)"
+date: "2025-09-10"
+author: "ETH Library"
+author-title: "Organizer"
+description: "First Swiss Open Academic Data Day at ETH Zurich, featuring a NAIF lightning talk on enhancing academic metadata."
+categories:
+  - "NAIF participation"
+tags:
+  - "SOAD Day"
+  - "academic metadata"
+  - "open academic data"
+proofread: false
+image: "../../images/logos/all-logos.jpg"
+aliases:
+  - /events/2025-09-11-qsi-workshop/
+toc: true
+---
+
+![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
+
+## Details
+
+- Date: 10 September 2025
+- Time: 09:00-16:00
+- Location: ETH Zurich, Main Building, Rämistrasse 101, Zurich
+- Registration: ~~Registration form~~
+- Event page: <https://soad.ch>
+
+## About
+
+The first Swiss Open Academic Data (SOAD) Day brought together researchers, data scientists, and practitioners from across Switzerland to explore the potential and challenges of open academic data. The programme featured lightning talks and workshops with speakers from ETH Zurich, EPFL, the University of Zurich, TU Wien, SNF, Lib4RI, Crossref, and other institutions, presenting tools, applied methods, and innovative use cases around platforms such as OpenAlex, OpenAIRE, ORCID, and Crossref.
+
+NAIF contributed a lightning talk titled "Enhancing Open Academic Data through the NAIF Project," presented by Pascale Bouton, Jorge Rodrigues de Matos, and Julien Sicot (EPFL) together with Simon Willemin (ETH Zurich). The talk introduced Track 4 of the NAIF project, focusing on the enhancement of national and global academic data across four dimensions: organizational data, authorship data, funding data, and open access information. The presentation highlighted open questions and tasks that require collective effort across Swiss institutions.
+
+The presentation slides are available on Zenodo: Bouton, P., Rodrigues de Matos, J., Sicot, J., & Willemin, S. (2025). *Enhancing Open Academic Data through the NAIF Project*. Zenodo. [doi:10.5281/zenodo.17142628](https://doi.org/10.5281/zenodo.17142628).

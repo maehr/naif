@@ -29,10 +29,11 @@ To support respondents, two Q&A sessions will be organised:
 
 The survey draws inspiration from major international efforts, including:
 
-- https://zenodo.org/records/10390626
-- https://zenodo.org/records/10255559
+- https://doi.org/10.5281/zenodo.10390626
+- https://doi.org/10.5281/zenodo.10255559
 - https://coar-repositories.org/news-updates/open-consultation-crafting-a-vision-for-european-repositories/
-- https://zenodo.org/records/15730917
+- https://doi.org/10.5281/zenodo.15730917
+
 - https://barcelona-declaration.org/
 
 This will be the first national overview of repository maturity and practices in Switzerland. Findings will inform coordinated actions and shared services, and aggregated results will be published openly on Zenodo within the NAIF community.

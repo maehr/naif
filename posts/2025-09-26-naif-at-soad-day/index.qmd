@@ -1,0 +1,41 @@
+---
+title: "Enhancing Open Academic Data through NAIF Track 4"
+date: 2025-09-26
+author: "NAIF"
+description: "NAIF presented its Track 4 work on enhancing academic metadata at the first Swiss Open Academic Data Day at ETH Zurich."
+categories:
+  - "Blog Post"
+tags:
+  - "academic metadata"
+  - "SOAD Day"
+  - "persistent identifiers"
+proofread: false
+image: "../../images/logos/all-logos.jpg"
+aliases:
+  - /posts/2025-09-26-naif-at-soad-and-icsti/
+toc: true
+---
+
+![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+
+## Why it matters
+
+Institutional repositories across Switzerland hold valuable research content, but their metadata are often fragmented and heterogeneous. This limits the ability to track, connect, and reuse research information - both nationally and globally. Improving the quality of academic metadata is a prerequisite for making Swiss research truly findable and interoperable.
+
+## What we did
+
+On 10 September 2025, Pascale Bouton, Jorge Rodrigues de Matos, and Julien Sicot (EPFL) together with Simon Willemin (ETH Zurich) presented a lightning talk at the first Swiss Open Academic Data (SOAD) Day at ETH Zurich. The talk, titled "Enhancing Open Academic Data through the NAIF Project," introduced Track 4 of the NAIF project, which is dedicated to the enhancement of national and global academic data.
+
+The presentation addressed four critical dimensions of academic metadata: organizational data, authorship data, funding data, and open access information. For each dimension, the speakers highlighted the key challenges that Swiss institutions face today - from standardizing organizational structures and units, to ensuring reliable researcher identifiers, linking publications to funding sources, and capturing accurate open access metadata.
+
+## What we found
+
+Rather than presenting ready-made solutions, the talk foregrounded open questions and tasks that require collective effort across institutions. The core insight: good practices already exist at local level in many Swiss institutions, but scaling them nationally and exploring opportunities for harmonization remains a shared challenge. The SOAD Day audience - researchers, data scientists, and practitioners from across Switzerland - engaged actively with these questions, confirming that metadata quality is a widely felt concern.
+
+## What's next
+
+Track 4 will continue to develop measures, actions, and guidelines for improving academic data quality. The findings from the SOAD Day discussion feed directly into upcoming workshops on improving academic metadata, including sessions in Neuchatel (15 October 2025) and online (8 December 2025). All interested parties are welcome to participate.
+
+## What to reuse
+
+The presentation slides are openly available on Zenodo under a CC BY 4.0 licence: Bouton, P., Rodrigues de Matos, J., Sicot, J., & Willemin, S. (2025). *Enhancing Open Academic Data through the NAIF Project*. Zenodo. [doi:10.5281/zenodo.17142628](https://doi.org/10.5281/zenodo.17142628). Further NAIF deliverables are archived on the [NAIF Zenodo community](https://zenodo.org/communities/naif).

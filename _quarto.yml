@@ -2,10 +2,11 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "blog/index.qmd"
+    - "blog.qmd"
     - "posts/**/index.qmd"
     - "events/**/index.qmd"
-    - "!blog/_template-*/**"
+    - "!posts/_template-*/**"
+    - "!events/_template-*/**"
 
 website:
   title: "NAIF"
@@ -21,7 +22,7 @@ website:
       - text: Home
         menu:
           - text: Blog
-            href: blog/index.qmd
+            href: blog.qmd
           - text: Events
             href: events/index.qmd
       - href: about.qmd
