@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>NAIF Blog</title>
+<link>https://maehr.github.io/naif/blog/</link>
+<atom:link href="https://maehr.github.io/naif/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>NAIF blog posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results.</description>
+<image>
+<url>https://maehr.github.io/naif/images/logos/all-logos.jpg</url>
+<title>NAIF Blog</title>
+<link>https://maehr.github.io/naif/blog/</link>
+</image>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Tue, 11 Nov 2025 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”</title>
+  <dc:creator>Open Science Services (Zurich University Library)</dc:creator>
+  <link>https://maehr.github.io/naif/blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/</link>
+  <description><![CDATA[ Review of the NAIF event “From Policy to Practice” with inputs from Denmark, the Netherlands, and Finland. ]]></description>
+  <category>Track 2</category>
+  <guid>https://maehr.github.io/naif/blog/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/</guid>
+  <pubDate>Tue, 11 Nov 2025 23:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/images/general/naif-event-image.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>NAIF launches a national survey on Swiss repositories</title>
+  <dc:creator>NAIF </dc:creator>
+  <link>https://maehr.github.io/naif/blog/posts/2025-11-10-national-survey-swiss-institutional-repositories/</link>
+  <description><![CDATA[ National survey to map Swiss institutional repositories and identify needs for interoperability and shared standards. ]]></description>
+  <category>Track 3</category>
+  <guid>https://maehr.github.io/naif/blog/posts/2025-11-10-national-survey-swiss-institutional-repositories/</guid>
+  <pubDate>Sun, 09 Nov 2025 23:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/images/logos/all-logos.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop</title>
+  <dc:creator>Dr Martin Jaekel</dc:creator>
+  <link>https://maehr.github.io/naif/blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/</link>
+  <description><![CDATA[ Insights from the 6th Swiss Year of Scientometrics workshop on responsible use of quantitative scientometric indicators in research assessment. ]]></description>
+  <category>Track 1</category>
+  <guid>https://maehr.github.io/naif/blog/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/</guid>
+  <pubDate>Thu, 30 Oct 2025 23:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/images/general/IMG_8727modified.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>NAIF at SOAD Day and ICSTI 2025</title>
+  <dc:creator>NAIF </dc:creator>
+  <link>https://maehr.github.io/naif/blog/posts/2025-09-26-naif-at-soad-and-icsti/</link>
+  <description><![CDATA[ NAIF presented Track 4 at SOAD Day and shared technical work at the ICSTI 2025 annual conference. ]]></description>
+  <category>Track 4</category>
+  <guid>https://maehr.github.io/naif/blog/posts/2025-09-26-naif-at-soad-and-icsti/</guid>
+  <pubDate>Thu, 25 Sep 2025 22:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/images/logos/all-logos.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Project start</title>
+  <dc:creator>NAIF </dc:creator>
+  <link>https://maehr.github.io/naif/blog/posts/2025-07-01-project-start/</link>
+  <description><![CDATA[ NAIF launches to advance interoperability and standardisation across Swiss institutional repositories. ]]></description>
+  <category>General</category>
+  <guid>https://maehr.github.io/naif/blog/posts/2025-07-01-project-start/</guid>
+  <pubDate>Mon, 30 Jun 2025 22:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/images/logos/all-logos.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

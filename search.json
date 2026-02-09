@@ -1,24 +1,101 @@
 [
   {
-    "objectID": "join.html",
-    "href": "join.html",
-    "title": "Join",
+    "objectID": "publishing-guidelines.html",
+    "href": "publishing-guidelines.html",
+    "title": "Publishing guidelines",
     "section": "",
-    "text": "We welcome anyone interested in contributing to the project. Of particular relevance to the project are stakeholders from:\n\nAccredited Swiss Higher Education Institutions\nOther Swiss Higher Education Institutions and research institutes\nNational and international initiatives or projects\n\nIf you would like to join the project, please fill out the form."
+    "text": "This public guide explains how to publish NAIF blog posts and event entries. It is intended for project partners and anyone contributing content."
   },
   {
-    "objectID": "events/index.html",
-    "href": "events/index.html",
-    "title": "Events",
-    "section": "",
-    "text": "All NAIF events in one place."
+    "objectID": "publishing-guidelines.html#target-audiences-and-message-priorities",
+    "href": "publishing-guidelines.html#target-audiences-and-message-priorities",
+    "title": "Publishing guidelines",
+    "section": "Target audiences and message priorities",
+    "text": "Target audiences and message priorities\n\nPrimary audiences\n\nNAIF project partners: shared alignment, progress transparency, coordination signals (public-facing).\nSwissuniversities: accountable reporting, sector relevance, evidence of delivery against objectives.\nETH Board and governance stakeholders: strategic value, interoperability outcomes, sustainability pathway.\n\n\n\nSecondary audiences\n\nResearch staff, libraries, repository owners, open science infrastructure community, interested public.\n\n\n\nMessage architecture (use consistently)\n\nWhy it matters: interoperability, metadata quality, responsible indicators, findability of Swiss research.\nWhat we did: activities, methods, consultations, analyses.\nWhat we found: interim insights, constraints, recommendations.\nWhat’s next: planned actions, opportunities to engage, upcoming events.\nWhat to reuse: outputs with persistent identifiers (DOIs, ROR, ORCID references as relevant)."
   },
   {
-    "objectID": "events/index.html#upcoming-and-past",
-    "href": "events/index.html#upcoming-and-past",
-    "title": "Events",
-    "section": "Upcoming and past",
-    "text": "Upcoming and past"
+    "objectID": "publishing-guidelines.html#folder-structure-and-filenames",
+    "href": "publishing-guidelines.html#folder-structure-and-filenames",
+    "title": "Publishing guidelines",
+    "section": "Folder structure and filenames",
+    "text": "Folder structure and filenames\n\nBlog posts: blog/posts/&lt;yyyy-mm-dd&gt;-&lt;slug&gt;/index.qmd\nEvents: events/&lt;yyyy-mm-dd&gt;-&lt;slug&gt;/index.qmd\nPost assets: blog/posts/&lt;entry&gt;/images/*\nEvent assets: events/&lt;entry&gt;/images/*\nRendered output lives in _site/ (do not edit _site/ manually)."
+  },
+  {
+    "objectID": "publishing-guidelines.html#blog-post-guidance",
+    "href": "publishing-guidelines.html#blog-post-guidance",
+    "title": "Publishing guidelines",
+    "section": "Blog post guidance",
+    "text": "Blog post guidance\nUse a blog post for updates, progress reporting, findings, or opinion pieces.\nRequired front matter\n\ntitle (&lt;= 70 chars)\ndate (YYYY-MM-DD)\nauthor\ndescription (&lt;= 280 chars)\ncategories: exactly one: Blog Post\ntags: exactly 3 tags\nproofread: true or false\nimage: local image path (used for listing cards)\n\nContent structure\n\nStart with a short lead section.\nFollow the message architecture above.\nKeep the post concise (500-3000 chars as a guideline)."
+  },
+  {
+    "objectID": "publishing-guidelines.html#event-guidance",
+    "href": "publishing-guidelines.html#event-guidance",
+    "title": "Publishing guidelines",
+    "section": "Event guidance",
+    "text": "Event guidance\nUse an event entry for announcements and event documentation.\nRequired front matter\n\ntitle (&lt;= 70 chars)\ndate (YYYY-MM-DD)\nauthor (organizer name)\nauthor-title: Organizer\ndescription (&lt;= 280 chars)\ncategories: exactly one: NAIF event, NAIF participation, or NAIF related\ntags: exactly 3 tags\nproofread: true or false\nimage: local image path (used for listing cards)\n\nEvent details\n\nInclude Date, Time, Location, Registration, and Event page.\nFuture events: keep Registration and Event page as clickable links.\nPast events: render registration links as plain text and strike through, and add a short note that the event already took place."
+  },
+  {
+    "objectID": "publishing-guidelines.html#images-and-rights",
+    "href": "publishing-guidelines.html#images-and-rights",
+    "title": "Publishing guidelines",
+    "section": "Images and rights",
+    "text": "Images and rights\n\nUse 1-3 high-resolution images where possible.\nEvery image must have descriptive alt text, a caption, and rights attribution."
+  },
+  {
+    "objectID": "publishing-guidelines.html#reposts",
+    "href": "publishing-guidelines.html#reposts",
+    "title": "Publishing guidelines",
+    "section": "Reposts",
+    "text": "Reposts\n\nReposts are allowed only with permission.\nAdd a visible note near the top linking back to the original URL."
+  },
+  {
+    "objectID": "publishing-guidelines.html#drafts",
+    "href": "publishing-guidelines.html#drafts",
+    "title": "Publishing guidelines",
+    "section": "Drafts",
+    "text": "Drafts\n\nUse draft: true in the front matter for work-in-progress content.\nDrafts are visible in quarto preview only and excluded from quarto render outputs."
+  },
+  {
+    "objectID": "publishing-guidelines.html#reuse-and-identifiers",
+    "href": "publishing-guidelines.html#reuse-and-identifiers",
+    "title": "Publishing guidelines",
+    "section": "Reuse and identifiers",
+    "text": "Reuse and identifiers\n\nLink outputs with persistent identifiers (DOIs, ROR, ORCID references) whenever relevant.\nNAIF deliverables are archived on Zenodo: https://zenodo.org/communities/naif"
+  },
+  {
+    "objectID": "publishing-guidelines.html#templates",
+    "href": "publishing-guidelines.html#templates",
+    "title": "Publishing guidelines",
+    "section": "Templates",
+    "text": "Templates\n\nBlog post template\n---\ntitle: \"&lt;Title (&lt;= 70 chars)&gt;\"\ndate: \"YYYY-MM-DD\"\nauthor: \"&lt;Author name&gt;\"\ndescription: \"&lt;Teaser (&lt;= 280 chars)&gt;\"\ncategories:\n  - \"Blog Post\"\ntags:\n  - \"&lt;tag 1&gt;\"\n  - \"&lt;tag 2&gt;\"\n  - \"&lt;tag 3&gt;\"\nproofread: false\nimage: \"images/&lt;listing-card-image&gt;\"\ntoc: true\n---\n\n&lt;!--\nChecklist (manual):\n- Title &lt;= 70 characters\n- Text 500-3000 characters (guideline)\n- Teaser &lt;= 280 characters\n- Exactly 1 category: Blog Post\n- Exactly 3 tags\n- 1-3 images, each with alt text + caption + rights attribution\n- Proofread true/false is set\n- Optional: author portrait, institution portrait (&lt;= 280 chars each)\n- Optional: max. 3 literature references\n--&gt;\n\n## Lead\n\n&lt;Write the post&gt;\n\n![Alt text](images/&lt;image&gt;.jpg){fig-cap=\"Caption. Rights: ...\"}\n\n\nEvent template\n---\ntitle: \"&lt;Title (&lt;= 70 chars)&gt;\"\ndate: \"YYYY-MM-DD\"\nauthor: \"&lt;Organizer name&gt;\"\nauthor-title: \"Organizer\"\ndescription: \"&lt;Teaser (&lt;= 280 chars)&gt;\"\ncategories:\n  - \"NAIF event\" # or: NAIF participation, NAIF related\ntags:\n  - \"&lt;tag 1&gt;\"\n  - \"&lt;tag 2&gt;\"\n  - \"&lt;tag 3&gt;\"\nproofread: false\nimage: \"images/&lt;listing-card-image&gt;\"\ntoc: true\n---\n\n&lt;!--\nChecklist (manual):\n- Title &lt;= 70 characters\n- Text 500-3000 characters (guideline)\n- Teaser &lt;= 280 characters\n- Exactly 1 category: NAIF event, NAIF participation, or NAIF related\n- Exactly 3 tags\n- 1-3 images, each with alt text + caption + rights attribution\n- Proofread true/false is set\n--&gt;\n\n## Details\n\n- Date:\n- Time:\n- Location:\n- Registration: &lt;https://example.org/registration&gt;\n- Event page: &lt;https://example.org/event&gt;\n\n## About\n\n&lt;Describe the event&gt;"
+  },
+  {
+    "objectID": "publishing-guidelines.html#code-of-conduct",
+    "href": "publishing-guidelines.html#code-of-conduct",
+    "title": "Publishing guidelines",
+    "section": "Code of conduct",
+    "text": "Code of conduct\nAll contributors are expected to follow the Contributor Covenant code of conduct: https://www.contributor-covenant.org/version/3/0/code_of_conduct/"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\nNAIFNational Approach for Interoperable repositoriesand Findable research results\n",
+    "section": "",
+    "text": "NAIF is a project initiated and funded by eight Swiss Higher Education Institutions and co-funded by swissuniversities. The project aims to enable more interoperability and standardization across Swiss institutional repositories. The project has started in July 2025 and will end in December 2026."
+  },
+  {
+    "objectID": "index.html#upcoming-events",
+    "href": "index.html#upcoming-events",
+    "title": "\nNAIFNational Approach for Interoperable repositoriesand Findable research results\n",
+    "section": "Upcoming events",
+    "text": "Upcoming events\nFind all events on: Events\n\n\n\n\n\n\n\n\n\n\nCHESS-Workshop “Berufungsverfahren im Kontext von DORA und CoARA”\n\n\nWorkshop on appointment procedures in the context of DORA and CoARA (ETH Zurich, 4 March 2026).\n\n\n\n\n\nMar 4, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nResearch on Research Event 2026 (RoR)\n\n\nTwo-day Research on Research community event at the University of Zurich (29-30 January 2026).\n\n\n\n\n\nJan 29, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Track 4)\n\n\nOnline workshop on improving academic metadata for Swiss repositories and institutions.\n\n\n\n\n\nDec 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (German)\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (French)\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Policy to Practice: National ORI framework\n\n\nEvent on building a National Open Research Information framework in Switzerland (Track 2).\n\n\n\n\n\nNov 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Neuchatel)\n\n\nWorkshop on improving academic metadata for Swiss repositories and institutions (Track 4).\n\n\n\n\n\nOct 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Responsible use of indicators (Track 1)\n\n\nWorkshop on responsible use of quantitative scientometric indicators (QSI) in research assessment.\n\n\n\n\n\nSep 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF information event\n\n\nInformation event introducing NAIF and its goals.\n\n\n\n\n\nAug 28, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#latest-blog-entries",
+    "href": "index.html#latest-blog-entries",
+    "title": "\nNAIFNational Approach for Interoperable repositoriesand Findable research results\n",
+    "section": "Latest blog entries",
+    "text": "Latest blog entries\nRead more on: Blog\n\n\n\n\n\n\n\n\n\n\nWhat Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”\n\n\nReview of the NAIF event “From Policy to Practice” with inputs from Denmark, the Netherlands, and Finland.\n\n\n\n\n\nNov 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF launches a national survey on Swiss repositories\n\n\nNational survey to map Swiss institutional repositories and identify needs for interoperability and shared standards.\n\n\n\n\n\nNov 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResponsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop\n\n\nInsights from the 6th Swiss Year of Scientometrics workshop on responsible use of quantitative scientometric indicators in research assessment.\n\n\n\n\n\nOct 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF at SOAD Day and ICSTI 2025\n\n\nNAIF presented Track 4 at SOAD Day and shared technical work at the ICSTI 2025 annual conference.\n\n\n\n\n\nSep 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nProject start\n\n\nNAIF launches to advance interoperability and standardisation across Swiss institutional repositories.\n\n\n\n\n\nJul 1, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "events/2026-01-29-ror-event-2026/index.html",
@@ -179,28 +256,35 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "National Approach for Interoperable repositories and Findable research results (NAIF) is a project initiated and funded by eight Swiss Higher Education Institutions (1) and co-funded by swissuniversities. The project aims to enable more interoperability and standardization across Swiss institutional repositories. The project has started in July 2025 and will end in December 2026.\n(1) The project partners are: ETH Library (ETH Zurich), University of Zurich, École Polytechnique Fédérale de Lausanne (EPFL), Zurich University of Applied Sciences (ZHAW), St.Gallen University of Teacher Education (PHSG), University of Fribourg, University of Neuchâtel and University of St.Gallen."
+    "text": "NoteAt a glance\n\n\n\n\nDuration: July 2025 to December 2026\nFunding: Eight Swiss Higher Education Institutions and swissuniversities\nFocus: Interoperability and standardization across Swiss institutional repositories\nContact: naif@library.ethz.ch"
   },
   {
     "objectID": "about.html#project-context",
     "href": "about.html#project-context",
     "title": "About",
-    "section": "",
-    "text": "National Approach for Interoperable repositories and Findable research results (NAIF) is a project initiated and funded by eight Swiss Higher Education Institutions (1) and co-funded by swissuniversities. The project aims to enable more interoperability and standardization across Swiss institutional repositories. The project has started in July 2025 and will end in December 2026.\n(1) The project partners are: ETH Library (ETH Zurich), University of Zurich, École Polytechnique Fédérale de Lausanne (EPFL), Zurich University of Applied Sciences (ZHAW), St.Gallen University of Teacher Education (PHSG), University of Fribourg, University of Neuchâtel and University of St.Gallen."
+    "section": "Project context",
+    "text": "Project context\nNational Approach for Interoperable repositories and Findable research results (NAIF) is a project initiated and funded by eight Swiss Higher Education Institutions and co-funded by swissuniversities. It aims to enable more interoperability and standardization across Swiss institutional repositories. The project started in July 2025 and will end in December 2026.\nThe project partners are:\n\nETH Library (ETH Zurich)\nUniversity of Zurich\nEPFL\nZHAW Zurich University of Applied Sciences\nPHSG St.Gallen University of Teacher Education\nUniversity of Fribourg\nUniversity of Neuchatel\nUniversity of St.Gallen\n\n\n\n\nLogos of the NAIF partner institutions"
   },
   {
     "objectID": "about.html#background-and-objectives",
     "href": "about.html#background-and-objectives",
     "title": "About",
     "section": "Background and objectives",
-    "text": "Background and objectives\nCompared to other countries, Switzerland lacks a systematic overview of the output (e.g., scientific publications) produced by researchers at Swiss Higher Education Institutions (HEIs). Most institutions have their own repositories in which a large number of their publications are listed. However, these repositories differ in coverage of the institutional research outputs and completeness of metadata for the available publications. An Open Access (OA) monitor has been implemented in Switzerland, which provides a rough overview of the distribution of OA publications, amongst other things. While the implementation of this monitor was a step in the right direction, it does not allow standardized data analysis beyond answering simple questions. In sum, little information and data are available on research conducted at Swiss HEIs, with the consequence that Swiss research is less visible and Swiss policymakers still rely on traditional university rankings and external data providers for monitoring and steering, rather than consulting standardized, high-quality information provided by local HEIs. The project aims (1) to make research outputs by researchers at Swiss HEIs more visible, and (2) to optimize the data basis for monitoring and steering Swiss research in general and OA publications in particular. To achieve these overarching goals, the project will work towards more standardization and interoperability across repositories in Swiss HEIs and develop scenarios for a national approach to disseminate and reuse Swiss research results. In addition, the project aims (3) to promote the responsible use of indicators for research assessment on the basis of the national approach and standardized repositories.\nThe project aims to create a basis for a national approach that considers both conceptual requirements and technical requirements. The project is divided in four tracks accompanied by a unified outcome providing a foundation for a national approach that is aligned with current trends in research assessment and open science practices, and a thorough understanding of the key factors that ensure the dissemination (i.e., integration of national output in global ecosystems) and findability (i.e., high-quality metadata) of the research outputs deposited in Swiss institutional repositories."
+    "text": "Background and objectives\nSwiss Higher Education Institutions (HEIs) operate institutional repositories, but practices and metadata quality vary widely. This makes it hard to get a reliable, system-wide view of Swiss research outputs and limits meaningful, standardized analysis.\nNAIF addresses this by combining conceptual work (what a national approach should look like) with technical work (what interoperability requires in practice).\nObjectives\n\nMake research outputs by researchers at Swiss HEIs more visible.\nImprove the data basis for monitoring and steering Swiss research, with a focus on Open Access.\nPromote the responsible use of indicators in research assessment (aligned with DORA and CoARA).\n\nApproach\n\nWork towards shared standards and interoperability across repositories.\nDevelop scenarios for a national approach to disseminate and reuse Swiss research results.\nIdentify the factors that ensure dissemination (integration into global ecosystems) and findability (high-quality metadata)."
+  },
+  {
+    "objectID": "about.html#timeline-high-level",
+    "href": "about.html#timeline-high-level",
+    "title": "About",
+    "section": "Timeline (high level)",
+    "text": "Timeline (high level)\n\nJul 2025: Project start\n2025-2026: Track activities (workshops, inventories, consultations, recommendations)\nDec 2026: Project end"
   },
   {
     "objectID": "about.html#tracks",
     "href": "about.html#tracks",
     "title": "About",
     "section": "Tracks",
-    "text": "Tracks\n\nTrack 1: Responsible use of quantitative indicators\nResponsible partners: ZHAW Zurich University of Applied Sciences, ETH Zurich, University of Zurich (CHESS)\nThis track aims at promoting the responsible use of indicators for research assessment on the basis of the national approach (track 2) and standardized repositories (tracks 3-4). In particular, with the responsible use of quantitative indicators we seek a way that is compliant with the Declaration on Research Assessment (DORA) and the Coalition for Advancing Research Assessment (CoARA), and that takes into account current international trends in open science. Our work should help to prioritize standardization of metadata in repositories. We will involve participants of Swiss Year of Scientometrics (SYoS). SYoS brought together a community of experts from different organisations and at different levels to discuss research assessments, bibliometric methods and open science practices. An active participation of the Center for Higher Education and Science Studies (CHESS) is planned as well. We will also try to reach out to the CoARA Working group on Responsible Metrics and Indicators (RMI) to further strengthen connections with CoARA.\n\n\nTrack 2: Review of national approaches and development of scenarios for Switzerland\nResponsible partners: University of Zurich, ETH Zurich\nThis track will start with a structured, collaborative workshop format, inviting experts from countries with similar but also different frameworks to share insights and experiences. The workshop will facilitate a comparative analysis of national strategies. The focus will be on key governmental and institutional stakeholders, funding mechanisms, sustainability models, cost-effectiveness and technical solutions (e.g. federated vs. centralised systems). The findings will be reviewed to identify gaps and challenges specific to Switzerland. Then, engaging key national stakeholders will be essential to identify requirements, expectations, and challenges through consultations including roundtables and white papers. Based on these insights, a well-founded proposal will be drafted and refined in collaboration with all relevant stakeholders to ensure its feasibility and long-term success. Moreover, the introduction of a secondary publication right will be taken into account.\n\n\nTrack 3: Survey and analysis of Swiss institutional repositories\nResponsible partners: ETH Zurich, EPFL\nThis track focuses on the existing institutional repositories. The starting point will be a list of institutional repositories from institutions that are accredited by swissuniversities. Such an inventory aims to provide an in-depth analysis of repositories, and can be seen as a systematic extension of the broad overview given through the list of participating institutions in the Swiss Open Access Monitor. Part of these repositories will be investigated in terms of (a) already implemented standards and certifications (e.g., OpenAIRE guidelines, CoreTrustSeal) as well as repository software currently in use, (b) metadata availability, quality, and completeness, evaluating their alignment with international best practices (e.g., OpenAIRE, Dublin Core, DataCite), (c) technical requirements identifying existing barriers to seamless data exchange and integration. Because of the heterogeneity of the current landscape and the number of institutions (50+), some parts of the inventory may focus on a subset of institutions whose selection will partly depend on institutions’ willingness to participate. Once the inventory has been completed, a report featuring the results of the gap analysis will be prepared. The report will help to determine common denominators among institutional repositories to assess the feasibility of metadata harmonization. It may also provide feasible recommendations to enhance alignment with national and international frameworks (e.g., OpenAIRE guidelines), help building a shared and standardized metadata framework that takes the characteristics of Switzerland into account.\n\n\nTrack 4: Enhancement of national and global academic data\nResponsible partners: ETH Zurich, EPFL\nThis track focuses on data that have already been, or that will be, integrated into institutional repositories, but that are sourced elsewhere, such as identifiers for Swiss organizations (e.g., ROR), researchers active in Switzerland (e.g., ORCID), funding information for Swiss or international projects and OA information (OA type, document version, embargo, APCs). A workshop and a virtual session will gather stakeholders to determine which academic data are relevant, and which measures or actions could be taken to improve their findability or their quality. The workshop and the virtual session will also determine the selection of measures or actions that will be implemented. These translate into deliverables that could consist in guidelines or in concrete actions such as the establishment of a mapping of Swiss organizations or an authoritative list of researchers active in the country.\n\n\nUnified outcome: Creation of a working group\nResponsible partners: ETH Zurich, EPFL, ZHAW Zurich University of Applied Sciences, University of Zurich\nThis unified outcome aims to establish a working group that will make advancements towards more interoperability and standardization across institutional repositories in Switzerland. Using the preliminary findings of the conceptual requirements identified by the tracks responsible use of quantitative indicators and review of national approaches and development of scenarios for Switzerland as well as the technical recommendations of the tracks survey and analysis of Swiss institutional repositories and enhancement of national and global academic data, project participants will define the status of the working group, its organizational form, criteria of representativity, as well as goals, strategy, and actions to enhance the visibility of Swiss research results and to ensure smooth data dissemination."
+    "text": "Tracks\n\nTrack 1: Responsible use of quantitative indicators\nResponsible partners: ZHAW Zurich University of Applied Sciences, ETH Zurich, University of Zurich (CHESS)\nThis track promotes the responsible use of indicators for research assessment, building on the national approach (track 2) and standardized repositories (tracks 3-4).\n\nAlign guidance with DORA and CoARA.\nConnect indicator use to metadata standardization priorities.\nEngage the Swiss Year of Scientometrics (SYoS) community and CHESS.\n\n\n\nTrack 2: Review of national approaches and development of scenarios for Switzerland\nResponsible partners: University of Zurich, ETH Zurich\nThis track reviews international national approaches and develops scenarios for Switzerland.\n\nRun structured workshops with international experts.\nCompare stakeholder models, funding, sustainability, and technical solutions (federated vs. centralized).\nGather Swiss stakeholder requirements via consultations (e.g., roundtables, white papers).\nConsider secondary publication rights.\n\n\n\nTrack 3: Survey and analysis of Swiss institutional repositories\nResponsible partners: ETH Zurich, EPFL\nThis track focuses on the existing institutional repositories. The starting point will be a list of institutional repositories from institutions that are accredited by swissuniversities. Such an inventory aims to provide an in-depth analysis of repositories, and can be seen as a systematic extension of the broad overview given through the list of participating institutions in the Swiss Open Access Monitor. Part of these repositories will be investigated in terms of (a) already implemented standards and certifications (e.g., OpenAIRE guidelines, CoreTrustSeal) as well as repository software currently in use, (b) metadata availability, quality, and completeness, evaluating their alignment with international best practices (e.g., OpenAIRE, Dublin Core, DataCite), (c) technical requirements identifying existing barriers to seamless data exchange and integration. Because of the heterogeneity of the current landscape and the number of institutions (50+), some parts of the inventory may focus on a subset of institutions whose selection will partly depend on institutions’ willingness to participate. Once the inventory has been completed, a report featuring the results of the gap analysis will be prepared. The report will help to determine common denominators among institutional repositories to assess the feasibility of metadata harmonization. It may also provide feasible recommendations to enhance alignment with national and international frameworks (e.g., OpenAIRE guidelines), help building a shared and standardized metadata framework that takes the characteristics of Switzerland into account.\n\n\nTrack 4: Enhancement of national and global academic data\nResponsible partners: ETH Zurich, EPFL\nThis track focuses on data that have already been, or that will be, integrated into institutional repositories, but that are sourced elsewhere, such as identifiers for Swiss organizations (e.g., ROR), researchers active in Switzerland (e.g., ORCID), funding information for Swiss or international projects and OA information (OA type, document version, embargo, APCs). A workshop and a virtual session will gather stakeholders to determine which academic data are relevant, and which measures or actions could be taken to improve their findability or their quality. The workshop and the virtual session will also determine the selection of measures or actions that will be implemented. These translate into deliverables that could consist in guidelines or in concrete actions such as the establishment of a mapping of Swiss organizations or an authoritative list of researchers active in the country.\n\n\nUnified outcome: Creation of a working group\nResponsible partners: ETH Zurich, EPFL, ZHAW Zurich University of Applied Sciences, University of Zurich\nThis unified outcome aims to establish a working group that will make advancements towards more interoperability and standardization across institutional repositories in Switzerland. Using the preliminary findings of the conceptual requirements identified by the tracks responsible use of quantitative indicators and review of national approaches and development of scenarios for Switzerland as well as the technical recommendations of the tracks survey and analysis of Swiss institutional repositories and enhancement of national and global academic data, project participants will define the status of the working group, its organizational form, criteria of representativity, as well as goals, strategy, and actions to enhance the visibility of Swiss research results and to ensure smooth data dissemination."
   },
   {
     "objectID": "about.html#open-peer-review",
@@ -210,25 +294,32 @@
     "text": "Open peer review\nThe abstract and the review of the NAIF project proposal will be made available on the swissuniversities website."
   },
   {
+    "objectID": "about.html#publishing-guidelines",
+    "href": "about.html#publishing-guidelines",
+    "title": "About",
+    "section": "Publishing guidelines",
+    "text": "Publishing guidelines\nPublic guidance for project partners and contributors on how to write blog posts or event entries for this site: Publishing guidelines"
+  },
+  {
     "objectID": "about.html#team",
     "href": "about.html#team",
     "title": "About",
     "section": "Team",
-    "text": "Team\n\nProject leaders\nDr. David Johann (ETH Library, ETH Zurich)\n\n\nProject coordinator\nDr. Moritz Mähr (ETH Library, ETH Zurich)\n\n\nWork packages leaders\nPascale Bouton (EPFL)\nDr. David Johann (ETH Library, ETH Zurich)\nDr. Martin Jaekel (ZHAW Zurich University of Applied Sciences)\nDr. Andrea Malits (University of Zurich)\nDr. Rüdiger Mutz (CHESS, University of Zurich)\nJulien Sicot (EPFL)\nStefan Vogt (University of Zurich)\n\n\nProject contributors\n[list of contributors in preparation]"
+    "text": "Team\n\nProject leaders\n\nDr. David Johann (ETH Library, ETH Zurich)\n\n\n\nProject coordinator\n\nDr. Moritz Mähr (ETH Library, ETH Zurich)\n\n\n\nWork packages leaders\n\nPascale Bouton (EPFL)\nDr. David Johann (ETH Library, ETH Zurich)\nDr. Martin Jaekel (ZHAW Zurich University of Applied Sciences)\nDr. Andrea Malits (University of Zurich)\nDr. Rüdiger Mutz (CHESS, University of Zurich)\nJulien Sicot (EPFL)\nStefan Vogt (University of Zurich)\n\n\n\nProject contributors\n[list of contributors in preparation]"
   },
   {
     "objectID": "about.html#resources",
     "href": "about.html#resources",
     "title": "About",
     "section": "Resources",
-    "text": "Resources\n\nProject deliverables\n\nTalks and presentations\n\nSlides: https://doi.org/10.5281/zenodo.17142628 (“Enhancing Open Academic Data through the NAIF Project”, SOAD Day, 10 September 2025)\nSlides: https://github.com/eth-library/naif/raw/main/documents/2025-08-28_NAIF_information_event.pdf (“Information event: NAIF”, online, 28 August 2025)\n\n\n\n\nOther projects and initiatives\nCOAR International Repositories Directory (IRD)\nhttps://ird.coar-repositories.org/?lang=en\nSwiss Open Access Monitor\nhttps://oamonitor.ch/\nSwiss Open Academic Data (SOAD)\nhttps://soad.ch\nSwiss Year of Scientometrics (SYoS)\nhttps://yearofscientometrics.ethz.ch/"
+    "text": "Resources\n\nProject deliverables\n\nTalks and presentations\n\nSlides (Zenodo): Enhancing Open Academic Data through the NAIF Project (SOAD Day, 10 September 2025)\nSlides (PDF): Information event: NAIF (online, 28 August 2025)\n\n\n\n\nOther projects and initiatives\n\nCOAR International Repositories Directory (IRD)\nSwiss Open Access Monitor\nSwiss Open Academic Data (SOAD)\nSwiss Year of Scientometrics (SYoS)"
   },
   {
-    "objectID": "blog/index.html#about",
-    "href": "blog/index.html#about",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
     "title": "Blog",
-    "section": "About",
-    "text": "About\nBrowse NAIF updates, progress reports, findings, and opinion pieces.\nLooking for event announcements and event pages? See: Events\n\n\n\n\n\n\nNote\n\n\n\nReposts are clearly marked and link back to their original publication."
+    "section": "",
+    "text": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”\n\n\n\nTrack 2\n\n\n\nReview of the NAIF event “From Policy to Practice” with inputs from Denmark, the Netherlands, and Finland.\n\n\n\n\n\nNov 12, 2025\n\n\nOpen Science Services (Zurich University Library)\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF launches a national survey on Swiss repositories\n\n\n\nTrack 3\n\n\n\nNational survey to map Swiss institutional repositories and identify needs for interoperability and shared standards.\n\n\n\n\n\nNov 10, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nResponsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop\n\n\n\nTrack 1\n\n\n\nInsights from the 6th Swiss Year of Scientometrics workshop on responsible use of quantitative scientometric indicators in research assessment.\n\n\n\n\n\nOct 31, 2025\n\n\nDr Martin Jaekel\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF at SOAD Day and ICSTI 2025\n\n\n\nTrack 4\n\n\n\nNAIF presented Track 4 at SOAD Day and shared technical work at the ICSTI 2025 annual conference.\n\n\n\n\n\nSep 26, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nProject start\n\n\n\nGeneral\n\n\n\nNAIF launches to advance interoperability and standardisation across Swiss institutional repositories.\n\n\n\n\n\nJul 1, 2025\n\n\nNAIF\n\n\n\n\n\nNo matching items\n\nLooking for event announcements and event pages? See: Events\n\n\n\n\n\n\nNote\n\n\n\nReposts are clearly marked and link back to their original publication."
   },
   {
     "objectID": "blog/posts/2025-09-26-naif-at-soad-and-icsti/index.html",
@@ -329,24 +420,38 @@
     "text": "About\nThis workshop focuses on improving academic metadata for Swiss repositories and institutions as part of NAIF Track 4."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "\nNAIFNational Approach for Interoperable repositoriesand Findable research results\n",
+    "objectID": "events/2026-03-04-chess-workshop-dora-coara/index.html",
+    "href": "events/2026-03-04-chess-workshop-dora-coara/index.html",
+    "title": "CHESS-Workshop “Berufungsverfahren im Kontext von DORA und CoARA”",
     "section": "",
-    "text": "NAIF is a project initiated and funded by eight Swiss Higher Education Institutions and co-funded by swissuniversities. The project aims to enable more interoperability and standardization across Swiss institutional repositories. The project has started in July 2025 and will end in December 2026."
+    "text": "NAIF consortium logos\nSource: https://www.chess.uzh.ch/de/veranstalten.html"
   },
   {
-    "objectID": "index.html#upcoming-events",
-    "href": "index.html#upcoming-events",
-    "title": "\nNAIFNational Approach for Interoperable repositoriesand Findable research results\n",
-    "section": "Upcoming events",
-    "text": "Upcoming events\nFind all events on: Events\n\n\n\n\n\n\n\n\n\n\nResearch on Research Event 2026 (RoR)\n\n\nTwo-day Research on Research community event at the University of Zurich (29-30 January 2026).\n\n\n\n\n\nJan 29, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Track 4)\n\n\nOnline workshop on improving academic metadata for Swiss repositories and institutions.\n\n\n\n\n\nDec 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (German)\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (French)\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Policy to Practice: National ORI framework\n\n\nEvent on building a National Open Research Information framework in Switzerland (Track 2).\n\n\n\n\n\nNov 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Neuchatel)\n\n\nWorkshop on improving academic metadata for Swiss repositories and institutions (Track 4).\n\n\n\n\n\nOct 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Responsible use of indicators (Track 1)\n\n\nWorkshop on responsible use of quantitative scientometric indicators (QSI) in research assessment.\n\n\n\n\n\nSep 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF information event\n\n\nInformation event introducing NAIF and its goals.\n\n\n\n\n\nAug 28, 2025\n\n\n\n\n\nNo matching items"
+    "objectID": "events/2026-03-04-chess-workshop-dora-coara/index.html#details",
+    "href": "events/2026-03-04-chess-workshop-dora-coara/index.html#details",
+    "title": "CHESS-Workshop “Berufungsverfahren im Kontext von DORA und CoARA”",
+    "section": "Details",
+    "text": "Details\n\nDate: Wednesday, 4 March 2026\nTime: 15:00-17:00\nLocation: ETH HG E 42\nRegistration: david.johann@library.ethz.ch (registration required; limited number of participants)\nLanguages: German and English\nEvent page: https://www.chess.uzh.ch/de/veranstalten.html"
   },
   {
-    "objectID": "index.html#latest-blog-entries",
-    "href": "index.html#latest-blog-entries",
-    "title": "\nNAIFNational Approach for Interoperable repositoriesand Findable research results\n",
-    "section": "Latest blog entries",
-    "text": "Latest blog entries\nRead more on: Blog\n\n\n\n\n\n\n\n\n\n\nWhat Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”\n\n\nReview of the NAIF event “From Policy to Practice” with inputs from Denmark, the Netherlands, and Finland.\n\n\n\n\n\nNov 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF launches a national survey on Swiss repositories\n\n\nNational survey to map Swiss institutional repositories and identify needs for interoperability and shared standards.\n\n\n\n\n\nNov 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResponsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop\n\n\nInsights from the 6th Swiss Year of Scientometrics workshop on responsible use of quantitative scientometric indicators in research assessment.\n\n\n\n\n\nOct 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF at SOAD Day and ICSTI 2025\n\n\nNAIF presented Track 4 at SOAD Day and shared technical work at the ICSTI 2025 annual conference.\n\n\n\n\n\nSep 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nProject start\n\n\nNAIF launches to advance interoperability and standardisation across Swiss institutional repositories.\n\n\n\n\n\nJul 1, 2025\n\n\n\n\n\nNo matching items"
+    "objectID": "events/2026-03-04-chess-workshop-dora-coara/index.html#about",
+    "href": "events/2026-03-04-chess-workshop-dora-coara/index.html#about",
+    "title": "CHESS-Workshop “Berufungsverfahren im Kontext von DORA und CoARA”",
+    "section": "About",
+    "text": "About\nDer Workshop wird in Kooperation mit der ETH-Bibliothek organisiert.\nIn der Schweiz haben zahlreiche Hochschulen die San Francisco Declaration on Research Assessment (DORA) unterzeichnet und/oder sind Mitglied der Coalition for Advancing Research Assessment (CoARA) geworden. DORA und CoARA zielen auf eine Reform der Bewertung wissenschaftlicher Leistungen ab, die u.a. durch folgende Prinzipien gekennzeichnet ist: der Verzicht auf bestimmte als problematisch erachtete Metriken, die Priorisierung von Qualität vor Quantität sowie eine umfassendere Beurteilung von Forschenden anhand vielfältiger Kriterien - nicht nur aufgrund von Publikationsleistungen und Drittmittelakquise.\nDas Commitment, das Hochschulen mit der DORA-Unterzeichnung bzw. CoARA-Mitgliedschaft eingegangen sind, spiegelt sich zunehmend in angepassten Prozessen bei Berufungsverfahren und anderen Stellenbesetzungen wider. Der Workshop dient dem Erfahrungsaustausch und hat zum Ziel, Herausforderungen bei der Implementierung zu diskutieren, Tools und Best Practices zu identifizieren und Weiterentwicklungsansätze für die eigene Institution zu erarbeiten.\nUm von nationalen und internationalen Erfahrungen zu profitieren, werden drei Impulsvorträge angeboten:\nKarin Gilland Lutz und Mihaela Falub stellen das Projekt HI-FRAME vor, das darauf abzielte, die Berufungen von UZH-Professor:innen mit der Open-Science-Bewegung in Einklang zu bringen.\nKatrin Brugger und Andreas Raggautz stellen das Activity Framework der Universität Graz vor, welches die Leistungen von Forschenden differenzierter darzustellen versucht.\nPeter Kraker und Christoph Arthofer präsentieren VisConnect, ein Projekt, in dem Open Knowledge Maps gemeinsam mit der IT:U Interdisciplinary Transformation University Austria ein Tool entwickelt hat, das die Umgestaltung von Forschungsbewertungsprozessen unterstützt."
+  },
+  {
+    "objectID": "events/index.html",
+    "href": "events/index.html",
+    "title": "Events",
+    "section": "",
+    "text": "CHESS-Workshop “Berufungsverfahren im Kontext von DORA und CoARA”\n\n\n\nNAIF related\n\n\n\nWorkshop on appointment procedures in the context of DORA and CoARA (ETH Zurich, 4 March 2026).\n\n\n\n\n\nMar 4, 2026\n\n\nCHESS (UZH) & ETH Library\n\n\n\n\n\n\n\n\n\n\n\n\nResearch on Research Event 2026 (RoR)\n\n\n\nNAIF related\n\n\n\nTwo-day Research on Research community event at the University of Zurich (29-30 January 2026).\n\n\n\n\n\nJan 29, 2026\n\n\nCenter for Reproducible Science and Research Synthesis (CRS)\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Track 4)\n\n\n\nNAIF event\n\n\n\nOnline workshop on improving academic metadata for Swiss repositories and institutions.\n\n\n\n\n\nDec 8, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (German)\n\n\n\nNAIF event\n\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 26, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (French)\n\n\n\nNAIF event\n\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 20, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Policy to Practice: National ORI framework\n\n\n\nNAIF event\n\n\n\nEvent on building a National Open Research Information framework in Switzerland (Track 2).\n\n\n\n\n\nNov 5, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Neuchatel)\n\n\n\nNAIF event\n\n\n\nWorkshop on improving academic metadata for Swiss repositories and institutions (Track 4).\n\n\n\n\n\nOct 15, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Responsible use of indicators (Track 1)\n\n\n\nNAIF event\n\n\n\nWorkshop on responsible use of quantitative scientometric indicators (QSI) in research assessment.\n\n\n\n\n\nSep 11, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF information event\n\n\n\nNAIF event\n\n\n\nInformation event introducing NAIF and its goals.\n\n\n\n\n\nAug 28, 2025\n\n\nNAIF\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\nNote\n\n\n\nFor past events, registration links are disabled (shown struck through) and kept for reference only."
+  },
+  {
+    "objectID": "join.html",
+    "href": "join.html",
+    "title": "Join",
+    "section": "",
+    "text": "We welcome anyone interested in contributing to the project. Of particular relevance to the project are stakeholders from:\n\nAccredited Swiss Higher Education Institutions\nOther Swiss Higher Education Institutions and research institutes\nNational and international initiatives or projects\n\nIf you would like to join the project, please fill out the form."
   }
 ]
