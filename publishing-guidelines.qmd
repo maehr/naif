@@ -1,0 +1,116 @@
+---
+title: "Publishing guidelines"
+toc: true
+---
+
+This public guide explains how to publish NAIF blog posts and event entries. It is intended for project partners and anyone contributing content.
+
+## Target audiences and message priorities
+
+### Primary audiences
+
+- NAIF project partners: shared alignment, progress transparency, coordination signals (public-facing).
+- Swissuniversities: accountable reporting, sector relevance, evidence of delivery against objectives.
+- ETH Board and governance stakeholders: strategic value, interoperability outcomes, sustainability pathway.
+
+### Secondary audiences
+
+- Research staff, libraries, repository owners, open science infrastructure community, interested public.
+
+### Message architecture (use consistently)
+
+- **Why it matters**: interoperability, metadata quality, responsible indicators, findability of Swiss research.
+- **What we did**: activities, methods, consultations, analyses.
+- **What we found**: interim insights, constraints, recommendations.
+- **What's next**: planned actions, opportunities to engage, upcoming events.
+- **What to reuse**: outputs with persistent identifiers (DOIs, ROR, ORCID references as relevant).
+
+## Folder structure and filenames
+
+- Blog posts: `blog/posts/<yyyy-mm-dd>-<slug>/index.qmd`
+- Events: `events/<yyyy-mm-dd>-<slug>/index.qmd`
+- Post assets: `blog/posts/<entry>/images/*`
+- Event assets: `events/<entry>/images/*`
+- Rendered output lives in `_site/` (do not edit `_site/` manually).
+
+## Blog post guidance
+
+Use a blog post for updates, progress reporting, findings, or opinion pieces.
+
+**Required front matter**
+
+- `title` (<= 70 chars)
+- `date` (YYYY-MM-DD)
+- `author`
+- `description` (<= 280 chars)
+- `categories`: exactly one: `Blog Post`
+- `tags`: exactly 3 tags
+- `proofread`: `true` or `false`
+- `image`: local image path (used for listing cards)
+
+**Content structure**
+
+- Start with a short lead section.
+- Follow the message architecture above.
+- Keep the post concise (500-3000 chars as a guideline).
+
+## Event guidance
+
+Use an event entry for announcements and event documentation.
+
+**Required front matter**
+
+- `title` (<= 70 chars)
+- `date` (YYYY-MM-DD)
+- `author` (organizer name)
+- `author-title`: `Organizer`
+- `description` (<= 280 chars)
+- `categories`: exactly one: `NAIF event`, `NAIF participation`, or `NAIF related`
+- `tags`: exactly 3 tags
+- `proofread`: `true` or `false`
+- `image`: local image path (used for listing cards)
+
+**Event details**
+
+- Include Date, Time, Location, Registration, and Event page.
+- Future events: keep Registration and Event page as clickable links.
+- Past events: render registration links as plain text and strike through, and add a short note that the event already took place.
+
+## Images and rights
+
+- Use 1-3 high-resolution images where possible.
+- Every image must have descriptive alt text, a caption, and rights attribution.
+
+## Reposts
+
+- Reposts are allowed only with permission.
+- Add a visible note near the top linking back to the original URL.
+
+## Drafts
+
+- Use `draft: true` in the front matter for work-in-progress content.
+- Drafts are visible in `quarto preview` only and excluded from `quarto render` outputs.
+
+## Reuse and identifiers
+
+- Link outputs with persistent identifiers (DOIs, ROR, ORCID references) whenever relevant.
+- NAIF deliverables are archived on Zenodo: https://zenodo.org/communities/naif
+
+## Templates
+
+### Blog post template
+
+```markdown
+{{< include blog/_template-post/index.qmd >}}
+```
+
+### Event template
+
+```markdown
+{{< include blog/_template-event/index.qmd >}}
+```
+
+## Code of conduct
+
+All contributors are expected to follow the Contributor Covenant code of conduct:
+https://www.contributor-covenant.org/version/3/0/code_of_conduct/

@@ -84,6 +84,11 @@ Using the preliminary findings of the conceptual requirements identified by the 
 
 The abstract and the review of the NAIF project proposal will be made available on the [swissuniversities website](https://www.swissuniversities.ch/en/topics/open-science/open-science-programme). 
 
+## Publishing guidelines
+
+Public guidance for project partners and contributors on how to write blog posts or event entries for this site:
+[Publishing guidelines](publishing-guidelines.qmd)
+
 ## Team
 
 ### Project leaders
