@@ -106,7 +106,7 @@ uv run quarto render
 - `author-title` (for events: set to `Organizer`)
 - `description` (teaser)
 - `categories`:
-  - Blog posts: exactly one: `Blog Post`
+  - Blog posts: exactly one of: `Track 1`, `Track 2`, `Track 3`, `Track 4`, `General`
   - Events: exactly one of `NAIF event`, `NAIF participation`, `NAIF related`
 - `tags`: exactly 3 tags
 - `proofread`: `true` or `false`

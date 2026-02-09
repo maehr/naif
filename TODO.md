@@ -8,7 +8,7 @@
 
 ## Blog
 
-- [x] Create Blog hub with listing + category filter (Blog Post vs Event)
+- [x] Create Blog hub with listing + category filter (Track 1-4 + General)
 - [x] Enforce folder-per-entry structure (`posts/<date>-<slug>/`)
 - [x] Add repost #1 (SYoS, 31 Oct 2025) with local images and attribution
 - [x] Add repost #2 (UZH, 12 Nov 2025) with local images and attribution

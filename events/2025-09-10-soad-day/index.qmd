@@ -11,13 +11,11 @@ tags:
   - "academic metadata"
   - "open academic data"
 proofread: false
-image: "../../images/logos/all-logos.jpg"
+image: "../../images/general/event-placeholder.svg"
 aliases:
   - /events/2025-09-11-qsi-workshop/
 toc: true
 ---
-
-![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
 
 ::: {.callout-note}
 This event has already taken place. Any registration information has been disabled and is shown for reference only.

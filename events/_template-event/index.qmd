@@ -11,7 +11,7 @@ tags:
   - "<tag 2>"
   - "<tag 3>"
 proofread: false
-image: "images/<listing-card-image>"
+image: "images/<listing-card-image>" # For NAIF-run events you may use: ../../images/logos/all-logos.jpg
 toc: true
 ---
 

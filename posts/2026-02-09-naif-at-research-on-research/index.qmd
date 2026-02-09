@@ -1,0 +1,59 @@
+---
+title: "NAIF at the Research on Research Event 2026"
+date: "2026-02-09"
+author:
+  - name: "Moritz Mähr"
+    orcid: "0000-0002-1367-1618"
+    affiliation: "ETH Library, ETH Zurich"
+description: "Track 1 presented findings on quantitative scientometric indicators in Swiss higher education at the RoR Event 2026 in Zurich."
+categories:
+  - "Track 1"
+tags:
+  - "research assessment"
+  - "scientometrics"
+  - "poster"
+proofread: false
+# image: "images/poster.png"
+toc: true
+draft: true
+---
+
+<!--
+Checklist (manual):
+- Title <= 70 characters ✓ (50)
+- Text 500-6000 characters (guideline x2)
+- Teaser <= 280 characters ✓ (139)
+- Exactly 1 category: Track 1-4 or General ✓
+- Exactly 3 tags ✓
+- 1-3 images, each with alt text + caption + rights attribution
+- Proofread true/false is set ✓
+- Optional: max. 3 literature references
+-->
+
+## Lead
+
+On 29–30 January 2026, the [Center for Reproducible Science and Research Synthesis (CRS)](https://www.crs.uzh.ch/en.html) at the University of Zurich hosted the [Research on Research (RoR) Event 2026](https://crsuzh.pages.uzh.ch/ror-event-2026/programme/). NAIF Track 1 contributed a poster on the responsible use of quantitative scientometric indicators (QSI) in Swiss higher education institutions.
+
+## Why it matters
+
+Swiss higher education institutions are increasingly aligning with international frameworks for responsible research assessment, including [DORA](https://sfdora.org/), [CoARA](https://coara.eu/), and the [Leiden Manifesto](http://www.leidenmanifesto.org/). Yet translating these commitments into everyday practice remains a challenge. How institutions use quantitative indicators — and whether they do so responsibly — has direct consequences for research visibility, metadata standardization, and the interoperability goals at the heart of NAIF.
+
+## What we did
+
+We presented a poster titled *On the Current and Future Uses of Quantitative Scientometric Indicators (QSI) in Swiss Higher Education Institutions* during the poster flash talks and the dedicated poster session on Day 1 of the event. The poster was authored by [Moritz Mähr](https://orcid.org/0000-0002-1367-1618) (ETH Library, ETH Zurich), Martin Jaekel (ZHAW), David Johann (ETH Library, ETH Zurich), Rüdiger Mutz (CHESS, University of Zurich), and Elena Šimukovič (ZHAW).
+
+The poster synthesized results from the 6th Swiss Year of Scientometrics (SYoS) workshop held on 15 September 2025 with 27 stakeholders from Swiss HEIs, policy bodies, and international initiatives. It also outlined a planned qualitative survey targeting Swiss HEIs and stakeholders such as the SNSF and SERI.
+
+![Poster presented at the RoR Event 2026](images/poster.png){fig-cap="Poster: On the Current and Future Uses of Quantitative Scientometric Indicators (QSI) in Swiss Higher Education Institutions. Rights: CC BY 4.0, NAIF project."}
+
+## What we found
+
+The poster addressed four questions. First, QSI adoption is growing — 24 Swiss institutions have signed DORA and 16 are CoARA signatories — but stakeholders struggle to translate these declarations into appropriate practices. Second, indicators are primarily used at the organizational level for monitoring research profiles, collaboration networks, open access shares, and citation patterns, rather than for evaluating individual researchers (based on an ETH Zurich case study). Third, data quality emerged as a non-negotiable prerequisite: metrics are often flawed or misapplied, and meaningful analysis requires multiple sources with rigorous cleaning. Fourth, the future of responsible QSI lies in deeper expert collaboration, dialogue-based approaches, context-first design, and a broader scope that includes open research data, open science, and media visibility.
+
+## What's next
+
+Based on this work, NAIF will develop practical guidelines for Swiss higher education institutions to support transparent, context-specific research assessment aligned with international best practices by the end of 2026. A qualitative survey of Swiss HEIs is planned to complement the workshop findings.
+
+## What to reuse
+
+The poster and further information about the project are available on the [NAIF website](https://eth-library.github.io/naif/). NAIF deliverables are archived on [Zenodo](https://zenodo.org/communities/naif).

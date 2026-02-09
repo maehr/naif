@@ -43,7 +43,7 @@ Use a blog post for updates, progress reporting, findings, or opinion pieces.
 - `date` (YYYY-MM-DD)
 - `author`
 - `description` (<= 280 chars)
-- `categories`: exactly one: `Blog Post`
+- `categories`: exactly one of `Track 1`, `Track 2`, `Track 3`, `Track 4`, `General` (use `General` only for track-independent posts)
 - `tags`: exactly 3 tags
 - `proofread`: `true` or `false`
 - `image`: local image path (used for listing cards)

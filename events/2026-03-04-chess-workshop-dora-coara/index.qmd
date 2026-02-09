@@ -11,11 +11,9 @@ tags:
   - "CoARA"
   - "Research assessment"
 proofread: false
-image: "../../images/logos/all-logos.jpg"
+image: "../../images/general/event-placeholder.svg"
 toc: true
 ---
-
-![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
 
 Source: <https://www.chess.uzh.ch/de/veranstalten.html>
 

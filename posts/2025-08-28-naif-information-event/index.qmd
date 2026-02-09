@@ -4,7 +4,7 @@ date: 2025-08-28
 author: "NAIF"
 description: "The NAIF project held its first public information event on 28 August 2025, introducing the consortium's goals for Swiss research findability."
 categories:
-  - "Blog Post"
+  - "General"
 tags:
   - "Information Event"
   - "Findability"
@@ -19,7 +19,7 @@ Checklist (manual):
 - Title <= 70 characters ✓ (53 chars)
 - Text 500-3000 characters (guideline) ✓
 - Teaser <= 280 characters ✓
-- Exactly 1 category: Blog Post ✓
+- Exactly 1 category: Track 1-4 or General ✓
 - Exactly 3 tags ✓
 - 1-3 images, each with alt text + caption + rights attribution
 - Proofread true/false is set ✓

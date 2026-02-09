@@ -1,0 +1,33 @@
+---
+title: "SOAD Online Event: The Barcelona Declaration in Switzerland"
+date: 2026-03-11
+author: "Swiss Open Academic Data (SOAD)"
+author-title: "Organizer"
+description: "SOAD spring online event featuring Swiss signatories of the Barcelona Declaration (11 March 2026)."
+categories:
+  - "NAIF related"
+tags:
+  - "SOAD"
+  - "Barcelona Declaration"
+  - "Open research information"
+proofread: false
+image: "../../images/general/event-placeholder.svg"
+toc: true
+---
+
+Source: <https://soad.ch/soad-online-event/>
+
+## Details
+
+- Date: Wednesday, 11 March 2026
+- Time: 15:30-17:00 (CET)
+- Location: Online (Zoom)
+- Registration: <https://epfl.zoom.us/meeting/register/KKZKmKXNSlWk2ma9XllNPw#/registration>
+- One-pager (PDF): <http://soad.ch/wp-content/uploads/2026/01/2026-03-11_SOAD_Online_Event-2.pdf>
+- Event page: <https://soad.ch/soad-online-event/>
+
+## About
+
+This SOAD online event discusses the Barcelona Declaration and what Swiss signatories are doing to advance openness of research information in using, producing, and fostering it across platforms and infrastructures.
+
+Speakers include Melanie Rothlisberger (University Library Zurich), Anne Gentil-Beccot (CERN), and Daniel Stekhoven (Swiss Reproducibility Network). The session is moderated by Janina Radny (Lib4RI).

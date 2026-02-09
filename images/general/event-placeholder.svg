@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Abstract placeholder image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f7f5"/>
+      <stop offset="1" stop-color="#e7efea"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1f6f4a" stop-opacity="0.90"/>
+      <stop offset="1" stop-color="#2b8a5d" stop-opacity="0.90"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g filter="url(#soft)" opacity="0.9">
+    <circle cx="260" cy="220" r="160" fill="url(#accent)"/>
+    <circle cx="960" cy="190" r="140" fill="#0f3d2a" opacity="0.35"/>
+    <circle cx="900" cy="520" r="210" fill="#2b8a5d" opacity="0.35"/>
+  </g>
+
+  <g opacity="0.35" stroke="#0f3d2a" stroke-width="10" fill="none">
+    <path d="M 120 510 C 260 430, 360 420, 520 470 S 820 560, 1080 470"/>
+  </g>
+
+  <g opacity="0.16" fill="#0f3d2a">
+    <rect x="120" y="120" width="180" height="24" rx="12"/>
+    <rect x="120" y="160" width="300" height="18" rx="9"/>
+    <rect x="120" y="196" width="260" height="18" rx="9"/>
+  </g>
+</svg>

@@ -99,12 +99,13 @@ h2 {
 
 .naif-cta__inner {
   position: relative;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  color: #181818;
+  border: 1px solid #c8c8c8;
   border-radius: 14px;
   padding: 0.9rem 1rem;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+  background-image: none;
 }
 
 .naif-cta__close {
@@ -116,15 +117,15 @@ h2 {
   border: 0;
   border-radius: 999px;
   background: transparent;
-  color: rgba(0, 0, 0, 0.6);
+  color: #181818;
   font-size: 1.4rem;
   line-height: 1;
 }
 
 .naif-cta__close:hover,
 .naif-cta__close:focus {
-  background: rgba(0, 0, 0, 0.06);
-  color: rgba(0, 0, 0, 0.8);
+  background: #e5e5e5;
+  color: #181818;
 }
 
 .naif-cta__kicker {
@@ -193,12 +194,13 @@ h2 {
   }
 }
 .naif-cta__button--secondary {
-  background: rgba(31, 58, 95, 0.08);
-  color: #1f3a5f !important;
+  background: #e8e1d0;
+  color: #181818 !important;
+  border: 1px solid #181818;
 }
 
 .naif-cta__button--secondary:hover,
 .naif-cta__button--secondary:focus {
-  background: rgba(31, 58, 95, 0.14);
-  color: #162a45 !important;
+  background: #d9d0bc;
+  color: #181818 !important;
 }
