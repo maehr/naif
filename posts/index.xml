@@ -15,19 +15,7 @@
 <link>https://maehr.github.io/naif/posts/</link>
 </image>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Sun, 08 Feb 2026 23:00:00 GMT</lastBuildDate>
-<item>
-  <title>NAIF at the Research on Research Event 2026</title>
-  <dc:creator>Moritz Mähr</dc:creator>
-  <link>https://maehr.github.io/naif/posts/2026-02-09-naif-at-research-on-research/</link>
-  <description><![CDATA[ Track 1 presented a poster on the current and future uses of quantitative scientometric indicators in Swiss higher education institutions at the RoR Event 2026 in Zurich. ]]></description>
-  <category>event</category>
-  <category>poster</category>
-  <category>research assessment</category>
-  <category>scientometrics</category>
-  <guid>https://maehr.github.io/naif/posts/2026-02-09-naif-at-research-on-research/</guid>
-  <pubDate>Sun, 08 Feb 2026 23:00:00 GMT</pubDate>
-</item>
+<lastBuildDate>Tue, 11 Nov 2025 23:00:00 GMT</lastBuildDate>
 <item>
   <title>What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”</title>
   <dc:creator>Open Science Services (Zurich University Library)</dc:creator>
@@ -63,7 +51,7 @@
   <dc:creator>NAIF </dc:creator>
   <link>https://maehr.github.io/naif/posts/2025-09-26-naif-at-soad-day/</link>
   <description><![CDATA[ NAIF presented its Track 4 work on enhancing academic metadata at the first Swiss Open Academic Data Day at ETH Zurich. ]]></description>
-  <category>Blog Post</category>
+  <category>Track 4</category>
   <guid>https://maehr.github.io/naif/posts/2025-09-26-naif-at-soad-day/</guid>
   <pubDate>Thu, 25 Sep 2025 22:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/images/logos/all-logos.jpg" medium="image" type="image/jpeg"/>
@@ -73,7 +61,7 @@
   <dc:creator>NAIF </dc:creator>
   <link>https://maehr.github.io/naif/posts/2025-08-28-naif-information-event/</link>
   <description><![CDATA[ The NAIF project held its first public information event on 28 August 2025, introducing the consortium’s goals for Swiss research findability. ]]></description>
-  <category>Blog Post</category>
+  <category>General</category>
   <guid>https://maehr.github.io/naif/posts/2025-08-28-naif-information-event/</guid>
   <pubDate>Wed, 27 Aug 2025 22:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/images/logos/all-logos.jpg" medium="image" type="image/jpeg"/>
