@@ -4,7 +4,7 @@ date: 2099-01-01
 author: "NAIF"
 description: "Draft demo used to preview layout and metadata before publishing."
 categories:
-  - "Blog Post"
+  - "General"
 tags:
   - "Draft"
   - "Demo"

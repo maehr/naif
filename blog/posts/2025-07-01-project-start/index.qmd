@@ -4,7 +4,7 @@ date: 2025-07-01
 author: "NAIF"
 description: "NAIF launches to advance interoperability and standardisation across Swiss institutional repositories."
 categories:
-  - "Blog Post"
+  - "General"
 tags:
   - "Project"
   - "Kick-off"

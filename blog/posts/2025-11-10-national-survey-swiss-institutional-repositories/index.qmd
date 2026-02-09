@@ -4,9 +4,9 @@ date: 2025-11-10
 author: "NAIF"
 description: "National survey to map Swiss institutional repositories and identify needs for interoperability and shared standards."
 categories:
-  - "Blog Post"
-tags:
   - "Track 3"
+tags:
+  - "Interoperability"
   - "Survey"
   - "Repositories"
 proofread: true

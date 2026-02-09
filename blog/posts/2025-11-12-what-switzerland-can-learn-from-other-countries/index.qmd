@@ -4,7 +4,7 @@ date: 2025-11-12
 author: "Open Science Services (Zurich University Library)"
 description: "Review of the NAIF event \"From Policy to Practice\" with inputs from Denmark, the Netherlands, and Finland."
 categories:
-  - "Blog Post"
+  - "Track 2"
 tags:
   - "Open research information"
   - "National infrastructure"

@@ -4,7 +4,7 @@ date: 2025-10-31
 author: "Dr Martin Jaekel"
 description: "Insights from the 6th Swiss Year of Scientometrics workshop on responsible use of quantitative scientometric indicators in research assessment."
 categories:
-  - "Blog Post"
+  - "Track 1"
 tags:
   - "Research assessment"
   - "Indicators"
