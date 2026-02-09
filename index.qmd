@@ -32,7 +32,7 @@ The project aims to enable more interoperability and standardization across Swis
 The project has started in July 2025 and will end in December 2026.
 
 <div id="logos">
-<div class="logo"><img src="logos/all-logos.jpg" width="600px"></div>
+<div class="logo"><img src="images/logos/all-logos.jpg" width="600px"></div>
 </div>
 
 ## Upcoming events

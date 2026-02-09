@@ -10,11 +10,11 @@ tags:
   - "Presentations"
   - "Community"
 proofread: true
-image: "images/all-logos.jpg"
+image: "../../../images/logos/all-logos.jpg"
 toc: true
 ---
 
-![NAIF consortium logos](images/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+![NAIF consortium logos](../../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
 
 The month of September is marked by a series of events dedicated to Open Science, and we are proud to have contributed to the momentum.
 

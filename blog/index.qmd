@@ -1,9 +1,11 @@
 ---
 title: "Blog"
+subtitle: "Browse NAIF updates, progress reports, findings, and opinion pieces"
 toc: false
 aliases:
   - news.html
 listing:
+  id: posts
   contents:
     - posts/*/index.qmd
   sort: "date desc"
@@ -20,12 +22,8 @@ listing:
     - categories
 ---
 
-::: {.listing}
+::: {#posts}
 :::
-
-## About
-
-Browse NAIF updates, progress reports, findings, and opinion pieces.
 
 Looking for event announcements and event pages? See: [Events](../events/index.qmd)
 

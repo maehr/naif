@@ -31,7 +31,8 @@ Checklist (manual):
 - Date:
 - Time:
 - Location:
-- Registration:
+- Registration: <https://example.org/registration>
+- Event page: <https://example.org/event>
 
 ## About
 

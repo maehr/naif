@@ -10,10 +10,10 @@ tags:
   - "Kick-off"
   - "Switzerland"
 proofread: true
-image: "images/all-logos.jpg"
+image: "../../../images/logos/all-logos.jpg"
 toc: false
 ---
 
-![NAIF consortium logos](images/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+![NAIF consortium logos](../../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
 
 We are pleased to announce the launch of the NAIF project.

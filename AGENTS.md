@@ -57,6 +57,12 @@ quarto render
 - Reposts are allowed only with permission.
 - Add a visible note near the top linking back to the original URL.
 
+### Events: registration links
+
+- Future events: keep `Registration` and `Event page` as clickable links.
+- Past events: disable registration links (render as plain text and strikethrough) and add a short
+  note that the event already took place.
+
 ## Drafts (work-in-progress content)
 
 - Use `draft: true` in the front matter for work-in-progress posts/events.

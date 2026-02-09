@@ -20,11 +20,15 @@ aliases:
 
 ![Graphic for the Research on Research Event 2026](images/2Glasses_Blue.png){fig-cap="Research on Research Event 2026 graphic. Rights: Center for Reproducible Science and Research Synthesis (CRS), CC BY 4.0 (see event website)."}
 
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
+
 ## Details
 
 - Date: 29-30 January 2026
 - Location: University of Zurich Main Building (KOL), Zurich, Switzerland
-- Registration: https://forms.office.com/e/kRp1pxgrX6
+- Registration: ~~`https://forms.office.com/e/kRp1pxgrX6`~~
 - Programme: https://crsuzh.pages.uzh.ch/ror-event-2026/programme/
 - Event page: https://crsuzh.pages.uzh.ch/ror-event-2026/
 

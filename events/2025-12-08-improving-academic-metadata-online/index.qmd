@@ -11,21 +11,25 @@ tags:
   - "Workshop"
   - "Metadata"
 proofread: true
-image: "images/all-logos.jpg"
+image: "../../images/logos/all-logos.jpg"
 toc: true
 aliases:
   - blog/events/2025-12-08-improving-academic-metadata-online/
   - blog/events/2025-12-08-improving-academic-metadata-online/index.html
 ---
 
-![NAIF consortium logos](images/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
 
 ## Details
 
 - Date: Monday, 8 December 2025
 - Time: 10:00-11:30
 - Location: Online
-- Registration: https://ethz.zoom.us/meeting/register/bxYnZz8ESKuSw9zi-VQYQg
+- Registration: ~~`https://ethz.zoom.us/meeting/register/bxYnZz8ESKuSw9zi-VQYQg`~~
 
 ## About
 

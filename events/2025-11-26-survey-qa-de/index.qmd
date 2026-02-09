@@ -11,14 +11,18 @@ tags:
   - "Survey"
   - "Q&A"
 proofread: true
-image: "images/all-logos.jpg"
+image: "../../images/logos/all-logos.jpg"
 toc: true
 aliases:
   - blog/events/2025-11-26-survey-qa-de/
   - blog/events/2025-11-26-survey-qa-de/index.html
 ---
 
-![NAIF consortium logos](images/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
 
 ## Details
 

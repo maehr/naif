@@ -10,7 +10,7 @@ tags:
   - "Indicators"
   - "Workshop"
 proofread: true
-image: "images/IMG_8727modified.jpeg"
+image: "../../../images/general/IMG_8727modified.jpeg"
 source:
   url: "https://yearofscientometrics.ethz.ch/responsible-use-of-quantitative-scientometric-indicators-insights-from-the-6th-syos-workshop/"
   note: "Repost with permission. Originally published by Swiss Year of Scientometrics (SYoS)."
@@ -21,7 +21,7 @@ toc: true
 Originally published (31 October 2025) at: https://yearofscientometrics.ethz.ch/responsible-use-of-quantitative-scientometric-indicators-insights-from-the-6th-syos-workshop/
 :::
 
-![group photo of syos workshop 6](images/IMG_8727modified.jpeg){fig-cap="Participants of the 6th SYoS workshop at ETH Zurich. Rights: ETH Zurich / Annette Guignard."}
+![group photo of syos workshop 6](../../../images/general/IMG_8727modified.jpeg){fig-cap="Participants of the 6th SYoS workshop at ETH Zurich. Rights: ETH Zurich / Annette Guignard."}
 
 Many institutions currently struggle with the appropriate and responsible use of quantitative scientometric indicators (QSI) while they are trying to implement the Declaration on Research Assessment (DORA) or an action plan for the Coalition for Advancing Research Assessment (CoARA). The 6th workshop of the Swiss Year of Scientometrics (SYoS) brought together 27 stakeholders and experts from Swiss Higher Education Institutions (HEI) to discuss the responsible QSI use in research assessment.
 

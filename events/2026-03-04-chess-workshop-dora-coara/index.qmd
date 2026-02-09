@@ -1,0 +1,45 @@
+---
+title: "CHESS-Workshop \"Berufungsverfahren im Kontext von DORA und CoARA\""
+date: 2026-03-04
+author: "CHESS (UZH) & ETH Library"
+author-title: "Organizer"
+description: "Workshop on appointment procedures in the context of DORA and CoARA (ETH Zurich, 4 March 2026)."
+categories:
+  - "NAIF related"
+tags:
+  - "DORA"
+  - "CoARA"
+  - "Research assessment"
+proofread: false
+image: "../../images/logos/all-logos.jpg"
+toc: true
+---
+
+![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+
+Source: <https://www.chess.uzh.ch/de/veranstalten.html>
+
+## Details
+
+- Date: Wednesday, 4 March 2026
+- Time: 15:00-17:00
+- Location: ETH HG E 42
+- Registration: [david.johann@library.ethz.ch](mailto:david.johann@library.ethz.ch) (registration required; limited number of participants)
+- Languages: German and English
+- Event page: <https://www.chess.uzh.ch/de/veranstalten.html>
+
+## About
+
+Der Workshop wird in Kooperation mit der ETH-Bibliothek organisiert.
+
+In der Schweiz haben zahlreiche Hochschulen die San Francisco Declaration on Research Assessment (DORA) unterzeichnet und/oder sind Mitglied der Coalition for Advancing Research Assessment (CoARA) geworden. DORA und CoARA zielen auf eine Reform der Bewertung wissenschaftlicher Leistungen ab, die u.a. durch folgende Prinzipien gekennzeichnet ist: der Verzicht auf bestimmte als problematisch erachtete Metriken, die Priorisierung von Qualität vor Quantität sowie eine umfassendere Beurteilung von Forschenden anhand vielfältiger Kriterien - nicht nur aufgrund von Publikationsleistungen und Drittmittelakquise.
+
+Das Commitment, das Hochschulen mit der DORA-Unterzeichnung bzw. CoARA-Mitgliedschaft eingegangen sind, spiegelt sich zunehmend in angepassten Prozessen bei Berufungsverfahren und anderen Stellenbesetzungen wider. Der Workshop dient dem Erfahrungsaustausch und hat zum Ziel, Herausforderungen bei der Implementierung zu diskutieren, Tools und Best Practices zu identifizieren und Weiterentwicklungsansätze für die eigene Institution zu erarbeiten.
+
+Um von nationalen und internationalen Erfahrungen zu profitieren, werden drei Impulsvorträge angeboten:
+
+Karin Gilland Lutz und Mihaela Falub stellen das Projekt HI-FRAME vor, das darauf abzielte, die Berufungen von UZH-Professor:innen mit der Open-Science-Bewegung in Einklang zu bringen.
+
+Katrin Brugger und Andreas Raggautz stellen das Activity Framework der Universität Graz vor, welches die Leistungen von Forschenden differenzierter darzustellen versucht.
+
+Peter Kraker und Christoph Arthofer präsentieren VisConnect, ein Projekt, in dem Open Knowledge Maps gemeinsam mit der IT:U Interdisciplinary Transformation University Austria ein Tool entwickelt hat, das die Umgestaltung von Forschungsbewertungsprozessen unterstützt.

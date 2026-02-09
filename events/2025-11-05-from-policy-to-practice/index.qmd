@@ -11,21 +11,25 @@ tags:
   - "Open research information"
   - "National infrastructure"
 proofread: true
-image: "images/naif-event-image.png"
+image: "../../images/general/naif-event-image.png"
 toc: true
 aliases:
   - blog/events/2025-11-05-from-policy-to-practice/
   - blog/events/2025-11-05-from-policy-to-practice/index.html
 ---
 
-![NAIF event image](images/naif-event-image.png){fig-cap="Rights: Zurich University Library (UB Zurich)."}
+![NAIF event image](../../images/general/naif-event-image.png){fig-cap="Rights: Zurich University Library (UB Zurich)."}
+
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
 
 ## Details
 
 - Date: Wednesday, 5 November 2025
 - Location: University of Zurich
 - Program (flyer): https://www.ub.uzh.ch/dam/jcr:5ee157b5-eba2-4b11-b1c9-d5bb7351d84c/Flyer_Panel-discussion_From-policy-to-practice.pdf
-- Registration: https://ema.uzh.ch/RLX4H
+- Registration: ~~`https://ema.uzh.ch/RLX4H`~~
 
 ## Related
 

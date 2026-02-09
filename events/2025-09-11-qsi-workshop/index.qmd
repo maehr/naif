@@ -11,20 +11,24 @@ tags:
   - "Workshop"
   - "Research assessment"
 proofread: true
-image: "images/IMG_8727modified.jpeg"
+image: "../../images/general/IMG_8727modified.jpeg"
 toc: true
 aliases:
   - blog/events/2025-09-11-qsi-workshop/
   - blog/events/2025-09-11-qsi-workshop/index.html
 ---
 
-![group photo of syos workshop 6](images/IMG_8727modified.jpeg){fig-cap="Participants of the 6th SYoS workshop at ETH Zurich. Rights: ETH Zurich / Annette Guignard."}
+![group photo of syos workshop 6](../../images/general/IMG_8727modified.jpeg){fig-cap="Participants of the 6th SYoS workshop at ETH Zurich. Rights: ETH Zurich / Annette Guignard."}
+
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
 
 ## Details
 
 - Date: Thursday, 11 September 2025
 - Location: ETH Zurich
-- Registration: https://yearofscientometrics.ethz.ch/mc-events/syos-workshop-no-6
+- Registration: ~~`https://yearofscientometrics.ethz.ch/mc-events/syos-workshop-no-6`~~
 
 ## Related
 
