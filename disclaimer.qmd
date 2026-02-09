@@ -1,6 +1,7 @@
 ---
 title: Legal notice 
 toc: false
+description: "Legal notice and links to ETH Library and ETH Zurich disclaimer, copyright, and data protection information."
 --- 
 
 ETH Library's and ETH Zurich's legal notices are in effect:  

@@ -1,6 +1,7 @@
 ---
 title: "Docs"
 toc: false
+description: "NAIF deliverables and documentation on Zenodo, with guidance on how to cite project outputs."
 ---
 
 NAIF deliverables are archived on Zenodo to ensure long-term access and citability (DOIs).

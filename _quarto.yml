@@ -8,6 +8,13 @@ project:
 
 website:
   title: "NAIF"
+  site-url: "https://eth-library.github.io/naif/"
+  description:
+    "National Approach for Interoperable repositories and Findable research results (NAIF):
+    improving interoperability and metadata quality across Swiss institutional repositories."
+  image: "/images/logos/all-logos.jpg"
+  open-graph: true
+  twitter-card: true
   navbar:
     left:
       - text: Home
@@ -33,6 +40,7 @@ format:
     theme:
       light: [cosmo, base_colors.scss, custom.scss]
     css: styles.css
+    canonical-url: true
     toc: true
     toc-expand: true
     toc-title: " "

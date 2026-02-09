@@ -1,6 +1,7 @@
 ---
 title: "Blog"
 subtitle: "Browse NAIF updates, progress reports, findings, and opinion pieces"
+description: "NAIF blog posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results."
 toc: false
 aliases:
   - news.html
@@ -9,6 +10,10 @@ listing:
   contents:
     - posts/*/index.qmd
   sort: "date desc"
+  feed:
+    type: partial
+    items: 20
+    title: "NAIF Blog"
   filter-ui:
     - categories
     - search

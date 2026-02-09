@@ -1,12 +1,17 @@
 ---
 title: "Events"
 subtitle: "All NAIF events in one place"
+description: "Upcoming and past NAIF events: workshops, talks, and community sessions related to interoperable repositories and findable research results."
 toc: false
 listing:
   id: events
   contents:
     - "*/index.qmd"
   sort: "date desc"
+  feed:
+    type: metadata
+    items: 50
+    title: "NAIF Events"
   filter-ui:
     - categories
     - search

@@ -1,5 +1,6 @@
 ---
 title: "Join"
+description: "How to get involved with NAIF and contribute to improving interoperability and metadata quality across Swiss repositories."
 ---
 
 We welcome anyone interested in contributing to the project.
