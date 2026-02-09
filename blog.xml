@@ -6,13 +6,13 @@
       version="2.0">
 <channel>
 <title>NAIF Blog</title>
-<link>https://maehr.github.io/naif/blog/</link>
-<atom:link href="https://maehr.github.io/naif/blog/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://maehr.github.io/naif/blog.html</link>
+<atom:link href="https://maehr.github.io/naif/blog.xml" rel="self" type="application/rss+xml"/>
 <description>NAIF blog posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results.</description>
 <image>
 <url>https://maehr.github.io/naif/images/logos/all-logos.jpg</url>
 <title>NAIF Blog</title>
-<link>https://maehr.github.io/naif/blog/</link>
+<link>https://maehr.github.io/naif/blog.html</link>
 </image>
 <generator>quarto-1.8.27</generator>
 <lastBuildDate>Tue, 11 Nov 2025 23:00:00 GMT</lastBuildDate>
@@ -47,12 +47,12 @@
   <media:content url="https://maehr.github.io/naif/images/general/IMG_8727modified.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>NAIF at SOAD Day and ICSTI 2025</title>
+  <title>Enhancing Open Academic Data through NAIF Track 4</title>
   <dc:creator>NAIF </dc:creator>
-  <link>https://maehr.github.io/naif/posts/2025-09-26-naif-at-soad-and-icsti/</link>
-  <description><![CDATA[ NAIF presented Track 4 at SOAD Day and shared technical work at the ICSTI 2025 annual conference. ]]></description>
-  <category>Track 4</category>
-  <guid>https://maehr.github.io/naif/posts/2025-09-26-naif-at-soad-and-icsti/</guid>
+  <link>https://maehr.github.io/naif/posts/2025-09-26-naif-at-soad-day/</link>
+  <description><![CDATA[ NAIF presented its Track 4 work on enhancing academic metadata at the first Swiss Open Academic Data Day at ETH Zurich. ]]></description>
+  <category>Blog Post</category>
+  <guid>https://maehr.github.io/naif/posts/2025-09-26-naif-at-soad-day/</guid>
   <pubDate>Thu, 25 Sep 2025 22:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/images/logos/all-logos.jpg" medium="image" type="image/jpeg"/>
 </item>

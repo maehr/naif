@@ -87,14 +87,14 @@
   <media:content url="https://maehr.github.io/naif/images/logos/all-logos.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Workshop: Responsible use of indicators (Track 1)</title>
-  <dc:creator>NAIF </dc:creator>
-  <link>https://maehr.github.io/naif/events/2025-09-11-qsi-workshop/</link>
-  <description><![CDATA[ Workshop on responsible use of quantitative scientometric indicators (QSI) in research assessment. ]]></description>
-  <category>NAIF event</category>
-  <guid>https://maehr.github.io/naif/events/2025-09-11-qsi-workshop/</guid>
-  <pubDate>Wed, 10 Sep 2025 22:00:00 GMT</pubDate>
-  <media:content url="https://maehr.github.io/naif/images/general/IMG_8727modified.jpeg" medium="image" type="image/jpeg"/>
+  <title>Swiss Open Academic Data Day (SOAD Day)</title>
+  <dc:creator>ETH Library</dc:creator>
+  <link>https://maehr.github.io/naif/events/2025-09-10-soad-day/</link>
+  <description><![CDATA[ First Swiss Open Academic Data Day at ETH Zurich, featuring a NAIF lightning talk on enhancing academic metadata. ]]></description>
+  <category>NAIF participation</category>
+  <guid>https://maehr.github.io/naif/events/2025-09-10-soad-day/</guid>
+  <pubDate>Tue, 09 Sep 2025 22:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/images/logos/all-logos.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>NAIF information event</title>
