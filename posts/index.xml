@@ -6,13 +6,13 @@
       version="2.0">
 <channel>
 <title>NAIF Blog</title>
-<link>https://maehr.github.io/naif/blog.html</link>
-<atom:link href="https://maehr.github.io/naif/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://maehr.github.io/naif/posts/</link>
+<atom:link href="https://maehr.github.io/naif/posts/index.xml" rel="self" type="application/rss+xml"/>
 <description>NAIF blog posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results.</description>
 <image>
 <url>https://maehr.github.io/naif/images/logos/all-logos.jpg</url>
 <title>NAIF Blog</title>
-<link>https://maehr.github.io/naif/blog.html</link>
+<link>https://maehr.github.io/naif/posts/</link>
 </image>
 <generator>quarto-1.8.27</generator>
 <lastBuildDate>Tue, 11 Nov 2025 23:00:00 GMT</lastBuildDate>
