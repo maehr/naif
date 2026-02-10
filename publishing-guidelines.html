@@ -255,9 +255,10 @@
 </ul>
 <p><strong>Event details</strong></p>
 <ul>
-<li>Include Date, Time, Location, Registration, and Event page.</li>
-<li>Future events: keep Registration and Event page as clickable links.</li>
-<li>Past events: render registration links as plain text and strike through, and add a short note that the event already took place.</li>
+<li>Include Date and as many of the following as are available: Time, Location, Registration, Event page.</li>
+<li>Future events: keep Registration and Event page as clickable links when available.</li>
+<li>Past events: if a registration link existed, render it as plain text and strikethrough, and add a short note that the event already took place.</li>
+<li>If a detail is not available (for example no registration was offered), state this explicitly in plain text.</li>
 </ul>
 </section>
 <section id="images-and-rights" class="level2">
@@ -377,10 +378,10 @@
 <span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Details</span></span>
 <span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Date:</span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Time:</span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Location:</span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Registration: <span class="ot">&lt;https://example.org/registration&gt;</span></span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Event page: <span class="ot">&lt;https://example.org/event&gt;</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Time: <span class="dt">&lt;</span><span class="kw">optional</span><span class="dt">&gt;</span></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Location: <span class="dt">&lt;</span><span class="kw">optional</span><span class="dt">&gt;</span></span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Registration: <span class="ot">&lt;https://example.org/registration&gt;</span> (or plain text if not offered)</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Event page: <span class="ot">&lt;https://example.org/event&gt;</span> (if available)</span>
 <span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## About</span></span>
 <span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
@@ -389,7 +390,7 @@
 </section>
 <section id="code-of-conduct" class="level2">
 <h2 data-anchor-id="code-of-conduct">Code of conduct</h2>
-<p>All contributors are expected to follow the <a href="https://www.contributor-covenant.org/version/3/0/code_of_conduct/">Contributor Covenant code of conduct</a>.</p>
+<p>All contributors are expected to follow this repository’s code of conduct: <a href="CODE_OF_CONDUCT.md">CODE_OF_CONDUCT.md</a>.</p>
 
 
 </section>

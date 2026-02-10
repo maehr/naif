@@ -32,7 +32,7 @@
     "href": "publishing-guidelines.html#event-guidance",
     "title": "Publishing guidelines",
     "section": "Event guidance",
-    "text": "Event guidance\nUse an event entry for announcements and event documentation.\n\nBritish English is preferred for all non-repost event pages.\n\nRequired front matter\n\ntitle (&lt;= 70 chars)\ndate (YYYY-MM-DD)\nauthor (organizer name)\nauthor-title: Organizer\ndescription (&lt;= 280 chars)\nother-links (when there is a related post page)\ncategories: exactly one: Organised by NAIF, NAIF participation, or NAIF-related topic\ntags: exactly 3 tags\nproofread: true or false\nimage: local image path (used for listing cards)\n\nEvent details\n\nInclude Date, Time, Location, Registration, and Event page.\nFuture events: keep Registration and Event page as clickable links.\nPast events: render registration links as plain text and strike through, and add a short note that the event already took place."
+    "text": "Event guidance\nUse an event entry for announcements and event documentation.\n\nBritish English is preferred for all non-repost event pages.\n\nRequired front matter\n\ntitle (&lt;= 70 chars)\ndate (YYYY-MM-DD)\nauthor (organizer name)\nauthor-title: Organizer\ndescription (&lt;= 280 chars)\nother-links (when there is a related post page)\ncategories: exactly one: Organised by NAIF, NAIF participation, or NAIF-related topic\ntags: exactly 3 tags\nproofread: true or false\nimage: local image path (used for listing cards)\n\nEvent details\n\nInclude Date and as many of the following as are available: Time, Location, Registration, Event page.\nFuture events: keep Registration and Event page as clickable links when available.\nPast events: if a registration link existed, render it as plain text and strikethrough, and add a short note that the event already took place.\nIf a detail is not available (for example no registration was offered), state this explicitly in plain text."
   },
   {
     "objectID": "publishing-guidelines.html#images-and-rights",
@@ -67,21 +67,21 @@
     "href": "publishing-guidelines.html#templates",
     "title": "Publishing guidelines",
     "section": "Templates",
-    "text": "Templates\n\nNews post template\n---\ntitle: \"&lt;Title (&lt;= 70 chars)&gt;\"\ndate: \"YYYY-MM-DD\"\nauthor: \"&lt;Author name&gt;\"\ndescription: \"&lt;Teaser (&lt;= 280 chars)&gt;\"\nother-links:\n  - text: \"Related event: &lt;Event title&gt;\"\n    href: \"../../events/&lt;yyyy-mm-dd-slug&gt;/\"\ncategories:\n  - \"Track 1\" # or: Track 2, Track 3, Track 4, General\ntags:\n  - \"&lt;tag 1&gt;\"\n  - \"&lt;tag 2&gt;\"\n  - \"&lt;tag 3&gt;\"\nproofread: false\nimage: \"images/&lt;listing-card-image&gt;\"\nimage-alt: \"&lt;Describe the image for screen readers&gt;\"\nimage-caption: \"&lt;Caption with rights attribution&gt;\"\ntoc: true\n---\n\n&lt;!--\nChecklist (manual):\n- Title &lt;= 70 characters\n- Text 500-3000 characters (guideline)\n- British English spelling and style (unless this is a repost)\n- Teaser &lt;= 280 characters\n- Exactly 1 category: Track 1-4 or General\n- Exactly 3 tags\n- 1-3 images, each with alt text + caption + rights attribution\n- Proofread true/false is set\n- Optional: author portrait, institution portrait (&lt;= 280 chars each)\n- References section only when using Pandoc citeproc (`bibliography` + `[@key]`)\n--&gt;\n\n::: {.lead}\n&lt;Write a 1-2 paragraph lead without a `## Lead` heading&gt;\n:::\n\n## Why it matters\n\n&lt;Write the post&gt;\n\n![Alt text](images/&lt;image&gt;.jpg){fig-cap=\"Caption. Rights: ...\"}\n\n\nEvent template\n---\ntitle: \"&lt;Title (&lt;= 70 chars)&gt;\"\ndate: \"YYYY-MM-DD\"\nauthor: \"&lt;Organizer name&gt;\"\nauthor-title: \"Organizer\"\ndescription: \"&lt;Teaser (&lt;= 280 chars)&gt;\"\nother-links:\n  - text: \"Related post: &lt;Post title&gt;\"\n    href: \"../../posts/&lt;yyyy-mm-dd-slug&gt;/\"\ncategories:\n  - \"Organised by NAIF\" # or: NAIF participation, NAIF-related topic\ntags:\n  - \"&lt;tag 1&gt;\"\n  - \"&lt;tag 2&gt;\"\n  - \"&lt;tag 3&gt;\"\nproofread: false\nimage: \"images/&lt;listing-card-image&gt;\" # For NAIF-run events you may use: ../../images/logos/all-logos.jpg\nimage-alt: \"&lt;Describe the image for screen readers&gt;\"\nimage-caption: \"&lt;Caption with rights attribution&gt;\"\ntoc: true\n---\n\n&lt;!--\nChecklist (manual):\n- Title &lt;= 70 characters\n- Text 500-3000 characters (guideline)\n- British English spelling and style (unless this is a repost)\n- Teaser &lt;= 280 characters\n- Exactly 1 category: Organised by NAIF, NAIF participation, or NAIF-related topic\n- Exactly 3 tags\n- 1-3 images, each with alt text + caption + rights attribution\n- Proofread true/false is set\n--&gt;\n\n## Details\n\n- Date:\n- Time:\n- Location:\n- Registration: &lt;https://example.org/registration&gt;\n- Event page: &lt;https://example.org/event&gt;\n\n## About\n\n&lt;Describe the event&gt;"
+    "text": "Templates\n\nNews post template\n---\ntitle: \"&lt;Title (&lt;= 70 chars)&gt;\"\ndate: \"YYYY-MM-DD\"\nauthor: \"&lt;Author name&gt;\"\ndescription: \"&lt;Teaser (&lt;= 280 chars)&gt;\"\nother-links:\n  - text: \"Related event: &lt;Event title&gt;\"\n    href: \"../../events/&lt;yyyy-mm-dd-slug&gt;/\"\ncategories:\n  - \"Track 1\" # or: Track 2, Track 3, Track 4, General\ntags:\n  - \"&lt;tag 1&gt;\"\n  - \"&lt;tag 2&gt;\"\n  - \"&lt;tag 3&gt;\"\nproofread: false\nimage: \"images/&lt;listing-card-image&gt;\"\nimage-alt: \"&lt;Describe the image for screen readers&gt;\"\nimage-caption: \"&lt;Caption with rights attribution&gt;\"\ntoc: true\n---\n\n&lt;!--\nChecklist (manual):\n- Title &lt;= 70 characters\n- Text 500-3000 characters (guideline)\n- British English spelling and style (unless this is a repost)\n- Teaser &lt;= 280 characters\n- Exactly 1 category: Track 1-4 or General\n- Exactly 3 tags\n- 1-3 images, each with alt text + caption + rights attribution\n- Proofread true/false is set\n- Optional: author portrait, institution portrait (&lt;= 280 chars each)\n- References section only when using Pandoc citeproc (`bibliography` + `[@key]`)\n--&gt;\n\n::: {.lead}\n&lt;Write a 1-2 paragraph lead without a `## Lead` heading&gt;\n:::\n\n## Why it matters\n\n&lt;Write the post&gt;\n\n![Alt text](images/&lt;image&gt;.jpg){fig-cap=\"Caption. Rights: ...\"}\n\n\nEvent template\n---\ntitle: \"&lt;Title (&lt;= 70 chars)&gt;\"\ndate: \"YYYY-MM-DD\"\nauthor: \"&lt;Organizer name&gt;\"\nauthor-title: \"Organizer\"\ndescription: \"&lt;Teaser (&lt;= 280 chars)&gt;\"\nother-links:\n  - text: \"Related post: &lt;Post title&gt;\"\n    href: \"../../posts/&lt;yyyy-mm-dd-slug&gt;/\"\ncategories:\n  - \"Organised by NAIF\" # or: NAIF participation, NAIF-related topic\ntags:\n  - \"&lt;tag 1&gt;\"\n  - \"&lt;tag 2&gt;\"\n  - \"&lt;tag 3&gt;\"\nproofread: false\nimage: \"images/&lt;listing-card-image&gt;\" # For NAIF-run events you may use: ../../images/logos/all-logos.jpg\nimage-alt: \"&lt;Describe the image for screen readers&gt;\"\nimage-caption: \"&lt;Caption with rights attribution&gt;\"\ntoc: true\n---\n\n&lt;!--\nChecklist (manual):\n- Title &lt;= 70 characters\n- Text 500-3000 characters (guideline)\n- British English spelling and style (unless this is a repost)\n- Teaser &lt;= 280 characters\n- Exactly 1 category: Organised by NAIF, NAIF participation, or NAIF-related topic\n- Exactly 3 tags\n- 1-3 images, each with alt text + caption + rights attribution\n- Proofread true/false is set\n--&gt;\n\n## Details\n\n- Date:\n- Time: &lt;optional&gt;\n- Location: &lt;optional&gt;\n- Registration: &lt;https://example.org/registration&gt; (or plain text if not offered)\n- Event page: &lt;https://example.org/event&gt; (if available)\n\n## About\n\n&lt;Describe the event&gt;"
   },
   {
     "objectID": "publishing-guidelines.html#code-of-conduct",
     "href": "publishing-guidelines.html#code-of-conduct",
     "title": "Publishing guidelines",
     "section": "Code of conduct",
-    "text": "Code of conduct\nAll contributors are expected to follow the Contributor Covenant code of conduct."
+    "text": "Code of conduct\nAll contributors are expected to follow this repository’s code of conduct: CODE_OF_CONDUCT.md."
   },
   {
     "objectID": "posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html",
     "href": "posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html",
     "title": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”",
     "section": "",
-    "text": "How can we create an open research infrastructure in Switzerland that makes the entire research output of Switzerland visible? This question was explored at the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland,” which took place on Wednesday, November 5, 2025. The main part of the event focused on three reports from Denmark, the Netherlands, and Finland."
+    "text": "Michael Svendsen and Kira Stine Hansen in front of a full room. Rights: Zurich University Library (UB Zurich).\nHow can we create an open research infrastructure in Switzerland that makes the entire research output of Switzerland visible? This question was explored at the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland,” which took place on Wednesday, November 5, 2025. The main part of the event focused on three reports from Denmark, the Netherlands, and Finland."
   },
   {
     "objectID": "posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#why-are-we-discussing-this",
@@ -95,7 +95,7 @@
     "href": "posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#international-inputs-what-can-we-learn",
     "title": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”",
     "section": "International inputs — What can we learn?",
-    "text": "International inputs — What can we learn?\nThe event offered exciting insights from three countries: Denmark, the Netherlands, and Finland. The presentation slides are available on Zenodo (DOIs):\n\nOpen Science in the open - perspectives on the governance and infrastructure landscape in Denmark\nImplementing Secondary Publishing Rights in the Netherlands\nOpen Research Information in Finland: Research.fi\n\n\nDenmark: Using a communication campaign to bring about cultural change\nKira Stine Hansen (Copenhagen University Library, Royal Danish Library) and Michael Svendsen (Copenhagen University Library) provided insights into the complex and, in some cases, functionally parallel research infrastructure landscape in Denmark. Copenhagen University Library thereby plays a leading role in governance and infrastructure for Open Science. The cultural shift towards Open Science has largely been made possible thanks to a forward-looking communication and marketing strategy that involves researchers in the ongoing decision-making processes. The core message of their input: Collaboration is necessary because only together can we make a difference and be resilient. And while institutions collaborate, it is important to keep the focus on the “why” and not deviate into the discussions of the “how”. A unified, consistent approach is just as important as the alignment of Open Science policies and cultural values.\n\n\n\nMichael Svendsen and Kira Stine Hansen\n\n\n\n\nThe Netherlands: Secondary publication right without administration for researchers\nArjan Schalken (Network of Dutch University Libraries and the Royal Library) and Wenneke Meerstadt (Utrecht University Library) also emphasized the importance of a uniform approach to implementing a national secondary publication right at the local level in the Netherlands. Under the motto “You share – we take care,” the library team entered researchers’ publications into the local repository in two initial phases. The implementation project is currently in its successful third phase (opt-out phase, in which researchers must notify the library if they do NOT wish to make use of the secondary publication right). Six success factors have contributed to the successful implementation in the Netherlands:\n\nAn executable (concrete) guideline was drawn up with the help of one (!) legal expert and presented to all institutions for implementation.\nThe university administrations were committed because they had to report to the ministry.\nThe right of secondary publication empowered senior management and libraries to archive and publish the institution’s own publications.\nAll institutions agreed that they would stand together in the event of legal action by publishers (no legal action has been taken to date).\nPilot projects (phase 1) helped generate support from researchers, identify adjustments for internal workflows, and gauge the reactions of publishers.\nThe administrative burden on researchers was extremely low. The repository managers took on most of the work.\n\n\n\n\nWenneke Meerstadt speaking\n\n\n\n\nFinland: Making research visible, interoperable, and reusable with research.fi\nJukka Hapaamäki (Ministry of Education & Culture) and Hanna-Mari Puuska (CSC – IT Center for Science) concluded by reporting on the Finnish research information hub research.fi, which provides an overview of all research output from Finnish universities. This platform was created by CSC on behalf of the Ministry of Education and Culture as a control mechanism for university funding. The publication figures, which are automatically compiled from local data sources, are particularly impressive, while other information – such as information on research data – still appears relatively sparse (which is partly due to the limited availability of information on research data).\nThe national catalog provides information on publications, research data, infrastructures, researchers, projects, research organizations, and groups, and it obtains its data from the institutions themselves as well as from research funding agencies, data services, ORCID, and national registers."
+    "text": "International inputs — What can we learn?\nThe event offered exciting insights from three countries: Denmark, the Netherlands, and Finland. The presentation slides are available on Zenodo (DOIs):\n\nOpen Science in the open - perspectives on the governance and infrastructure landscape in Denmark\nImplementing Secondary Publishing Rights in the Netherlands\nOpen Research Information in Finland: Research.fi\n\n\nDenmark: Using a communication campaign to bring about cultural change\nKira Stine Hansen (Copenhagen University Library, Royal Danish Library) and Michael Svendsen (Copenhagen University Library) provided insights into the complex and, in some cases, functionally parallel research infrastructure landscape in Denmark. Copenhagen University Library thereby plays a leading role in governance and infrastructure for Open Science. The cultural shift towards Open Science has largely been made possible thanks to a forward-looking communication and marketing strategy that involves researchers in the ongoing decision-making processes. The core message of their input: Collaboration is necessary because only together can we make a difference and be resilient. And while institutions collaborate, it is important to keep the focus on the “why” and not deviate into the discussions of the “how”. A unified, consistent approach is just as important as the alignment of Open Science policies and cultural values.\n\n\nThe Netherlands: Secondary publication right without administration for researchers\nArjan Schalken (Network of Dutch University Libraries and the Royal Library) and Wenneke Meerstadt (Utrecht University Library) also emphasized the importance of a uniform approach to implementing a national secondary publication right at the local level in the Netherlands. Under the motto “You share – we take care,” the library team entered researchers’ publications into the local repository in two initial phases. The implementation project is currently in its successful third phase (opt-out phase, in which researchers must notify the library if they do NOT wish to make use of the secondary publication right). Six success factors have contributed to the successful implementation in the Netherlands:\n\nAn executable (concrete) guideline was drawn up with the help of one (!) legal expert and presented to all institutions for implementation.\nThe university administrations were committed because they had to report to the ministry.\nThe right of secondary publication empowered senior management and libraries to archive and publish the institution’s own publications.\nAll institutions agreed that they would stand together in the event of legal action by publishers (no legal action has been taken to date).\nPilot projects (phase 1) helped generate support from researchers, identify adjustments for internal workflows, and gauge the reactions of publishers.\nThe administrative burden on researchers was extremely low. The repository managers took on most of the work.\n\n\n\n\nWenneke Meerstadt speaking\n\n\n\n\nFinland: Making research visible, interoperable, and reusable with research.fi\nJukka Hapaamäki (Ministry of Education & Culture) and Hanna-Mari Puuska (CSC – IT Center for Science) concluded by reporting on the Finnish research information hub research.fi, which provides an overview of all research output from Finnish universities. This platform was created by CSC on behalf of the Ministry of Education and Culture as a control mechanism for university funding. The publication figures, which are automatically compiled from local data sources, are particularly impressive, while other information – such as information on research data – still appears relatively sparse (which is partly due to the limited availability of information on research data).\nThe national catalog provides information on publications, research data, infrastructures, researchers, projects, research organizations, and groups, and it obtains its data from the institutions themselves as well as from research funding agencies, data services, ORCID, and national registers."
   },
   {
     "objectID": "posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#key-take-aways",
@@ -109,7 +109,7 @@
     "href": "posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html",
     "title": "Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop",
     "section": "",
-    "text": "Many institutions currently struggle with the appropriate and responsible use of quantitative scientometric indicators (QSI) while they are trying to implement the Declaration on Research Assessment (DORA) or an action plan for the Coalition for Advancing Research Assessment (CoARA). The 6th workshop of the Swiss Year of Scientometrics (SYoS) brought together 27 stakeholders and experts from Swiss Higher Education Institutions (HEI) to discuss the responsible QSI use in research assessment.\nThe workshop was jointly organised by Dr Martin Jaekel (ZHAW), Dr Rüdiger Mutz (CHESS, UZH), and Dr David Johann (ETH Library), and moderated by Dr Regine Maritz (SNSF). The event is a contribution to NAIF (National Approach for Interoperable repositories and Findable research results), a project supported by swissuniversities involving eight Swiss HEIs and was held at ETH Zurich on 11th of September 2025."
+    "text": "Participants of the 6th SYoS workshop at ETH Zurich. Rights: ETH Zurich / Annette Guignard.\nMany institutions currently struggle with the appropriate and responsible use of quantitative scientometric indicators (QSI) while they are trying to implement the Declaration on Research Assessment (DORA) or an action plan for the Coalition for Advancing Research Assessment (CoARA). The 6th workshop of the Swiss Year of Scientometrics (SYoS) brought together 27 stakeholders and experts from Swiss Higher Education Institutions (HEI) to discuss the responsible QSI use in research assessment.\nThe workshop was jointly organised by Dr Martin Jaekel (ZHAW), Dr Rüdiger Mutz (CHESS, UZH), and Dr David Johann (ETH Library), and moderated by Dr Regine Maritz (SNSF). The event is a contribution to NAIF (National Approach for Interoperable repositories and Findable research results), a project supported by swissuniversities involving eight Swiss HEIs and was held at ETH Zurich on 11th of September 2025."
   },
   {
     "objectID": "posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html#author",
@@ -117,6 +117,13 @@
     "title": "Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop",
     "section": "Author",
     "text": "Author\n\nMartin Jaekel holds a PhD from the University of Cambridge in Life Sciences and subsequently became a PI at the University of Cambridge. He then worked as Management Consultant in Paris with a focus on biotech / pharma before joining the Agence Nationale de la Rechere as International Affairs Mananger. Subsequently he worked in for an EU Programme as Programme Officer and is now Head of Research & Development and Technology Transfer at the Zurich University of Applied Sciences."
+  },
+  {
+    "objectID": "posts/2025-08-28-naif-information-event/index.html",
+    "href": "posts/2025-08-28-naif-information-event/index.html",
+    "title": "Launching NAIF: A Look Back at the Information Event",
+    "section": "",
+    "text": "Screenshot of the ETH Zurich Staffnet page for the NAIF information event. Source: https://ethz.ch/staffnet/en/news-and-events/internal-news/archive/2025/08/naif-information-event-increasing-the-findability-of-swiss-research.html. Rights: ETH Zurich."
   },
   {
     "objectID": "posts/2025-08-28-naif-information-event/index.html#why-it-matters",
@@ -161,6 +168,13 @@
     "text": "ORCID Community Town Hall 2026\n\n\n\nNAIF-related topic\n\n\n\nTwo live webinar sessions where ORCID shares 2025 progress and previews plans for 2026.\n\n\n\n\n\nMar 25, 2026\n\n\nORCID\n\n\n\n\n\n\n\n\n\n\n\n\nSOAD Online Event: The Barcelona Declaration in Switzerland\n\n\n\nNAIF-related topic\n\n\n\nSOAD spring online event featuring Swiss signatories of the Barcelona Declaration (11 March 2026).\n\n\n\n\n\nMar 11, 2026\n\n\nSwiss Open Academic Data (SOAD)\n\n\n\n\n\n\n\n\n\n\n\n\nCHESS-Workshop “Berufungsverfahren im Kontext von DORA und CoARA”\n\n\n\nNAIF-related topic\n\n\n\nWorkshop on appointment procedures in the context of DORA and CoARA (ETH Zurich, 4 March 2026).\n\n\n\n\n\nMar 4, 2026\n\n\nCHESS (UZH) & ETH Library\n\n\n\n\n\n\n\n\n\n\n\n\nElevating your Research’s Impact and Visibility with ORCID and DataCite\n\n\n\nNAIF-related topic\n\n\n\nHands-on webinar on integrating ORCID and DataCite workflows (ORCID Search & Link and Auto-Update).\n\n\n\n\n\nFeb 10, 2026\n\n\nORCID & DataCite\n\n\n\n\n\n\n\n\n\n\n\n\nResearch on Research Event 2026 (RoR)\n\n\n\nNAIF participation\n\n\n\nTwo-day Research on Research community event at the University of Zurich (29-30 January 2026).\n\n\n\n\n\nJan 29, 2026\n\n\nCenter for Reproducible Science and Research Synthesis (CRS)\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Track 4)\n\n\n\nOrganised by NAIF\n\n\n\nOnline workshop on improving academic metadata for Swiss repositories and institutions.\n\n\n\n\n\nDec 8, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (German)\n\n\n\nOrganised by NAIF\n\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 26, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (French)\n\n\n\nOrganised by NAIF\n\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 20, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Policy to Practice: National ORI framework\n\n\n\nOrganised by NAIF\n\n\n\nEvent on building a National Open Research Information framework in Switzerland (Track 2).\n\n\n\n\n\nNov 5, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Neuchatel)\n\n\n\nOrganised by NAIF\n\n\n\nWorkshop on improving academic metadata for Swiss repositories and institutions (Track 4).\n\n\n\n\n\nOct 15, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nSwiss Open Academic Data Day (SOAD Day)\n\n\n\nNAIF participation\n\n\n\nFirst Swiss Open Academic Data Day at ETH Zurich, featuring a NAIF lightning talk on enhancing academic metadata.\n\n\n\n\n\nSep 10, 2025\n\n\nETH Library\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF information event\n\n\n\nOrganised by NAIF\n\n\n\nInformation event introducing NAIF and its goals.\n\n\n\n\n\nAug 28, 2025\n\n\nNAIF\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\nNote\n\n\n\nFor past events, registration links are disabled (shown struck through) and kept for reference only."
   },
   {
+    "objectID": "events/2026-03-25-orcid-community-town-hall-2026/index.html",
+    "href": "events/2026-03-25-orcid-community-town-hall-2026/index.html",
+    "title": "ORCID Community Town Hall 2026",
+    "section": "",
+    "text": "Event visual for the ORCID Community Town Hall 2026. Source: https://info.orcid.org/event/orcid-community-town-hall-2026/. Rights: ORCID."
+  },
+  {
     "objectID": "events/2026-03-25-orcid-community-town-hall-2026/index.html#details",
     "href": "events/2026-03-25-orcid-community-town-hall-2026/index.html#details",
     "title": "ORCID Community Town Hall 2026",
@@ -173,6 +187,13 @@
     "title": "ORCID Community Town Hall 2026",
     "section": "About",
     "text": "About\nORCID’s senior team shares progress from 2025 and previews plans for 2026, followed by Q&A and discussion."
+  },
+  {
+    "objectID": "events/2026-03-04-chess-workshop-dora-coara/index.html",
+    "href": "events/2026-03-04-chess-workshop-dora-coara/index.html",
+    "title": "CHESS-Workshop “Berufungsverfahren im Kontext von DORA und CoARA”",
+    "section": "",
+    "text": "Screenshot of the CHESS events page for the workshop on appointment procedures in the context of DORA and CoARA. Source: https://www.chess.uzh.ch/de/veranstalten.html. Rights: CHESS, University of Zurich."
   },
   {
     "objectID": "events/2026-03-04-chess-workshop-dora-coara/index.html#details",
@@ -189,6 +210,13 @@
     "text": "About\nDer Workshop wird in Kooperation mit der ETH-Bibliothek organisiert.\nIn der Schweiz haben zahlreiche Hochschulen die San Francisco Declaration on Research Assessment (DORA) unterzeichnet und/oder sind Mitglied der Coalition for Advancing Research Assessment (CoARA) geworden. DORA und CoARA zielen auf eine Reform der Bewertung wissenschaftlicher Leistungen ab, die u.a. durch folgende Prinzipien gekennzeichnet ist: der Verzicht auf bestimmte als problematisch erachtete Metriken, die Priorisierung von Qualität vor Quantität sowie eine umfassendere Beurteilung von Forschenden anhand vielfältiger Kriterien - nicht nur aufgrund von Publikationsleistungen und Drittmittelakquise.\nDas Commitment, das Hochschulen mit der DORA-Unterzeichnung bzw. CoARA-Mitgliedschaft eingegangen sind, spiegelt sich zunehmend in angepassten Prozessen bei Berufungsverfahren und anderen Stellenbesetzungen wider. Der Workshop dient dem Erfahrungsaustausch und hat zum Ziel, Herausforderungen bei der Implementierung zu diskutieren, Tools und Best Practices zu identifizieren und Weiterentwicklungsansätze für die eigene Institution zu erarbeiten.\nUm von nationalen und internationalen Erfahrungen zu profitieren, werden drei Impulsvorträge angeboten:\nKarin Gilland Lutz und Mihaela Falub stellen das Projekt HI-FRAME vor, das darauf abzielte, die Berufungen von UZH-Professor:innen mit der Open-Science-Bewegung in Einklang zu bringen.\nKatrin Brugger und Andreas Raggautz stellen das Activity Framework der Universität Graz vor, welches die Leistungen von Forschenden differenzierter darzustellen versucht.\nPeter Kraker und Christoph Arthofer präsentieren VisConnect, ein Projekt, in dem Open Knowledge Maps gemeinsam mit der IT:U Interdisciplinary Transformation University Austria ein Tool entwickelt hat, das die Umgestaltung von Forschungsbewertungsprozessen unterstützt."
   },
   {
+    "objectID": "events/2026-01-29-ror-event-2026/index.html",
+    "href": "events/2026-01-29-ror-event-2026/index.html",
+    "title": "Research on Research Event 2026 (RoR)",
+    "section": "",
+    "text": "Research on Research Event 2026 graphic. Rights: Center for Reproducible Science and Research Synthesis (CRS), CC BY 4.0 (see event website)."
+  },
+  {
     "objectID": "events/2026-01-29-ror-event-2026/index.html#details",
     "href": "events/2026-01-29-ror-event-2026/index.html#details",
     "title": "Research on Research Event 2026 (RoR)",
@@ -203,6 +231,13 @@
     "text": "About\nThe Research on Research Event 2026 brings together the Swiss Research on Research community for two days of talks, discussion, and collaborative work."
   },
   {
+    "objectID": "events/2025-11-26-survey-qa-de/index.html",
+    "href": "events/2025-11-26-survey-qa-de/index.html",
+    "title": "Survey Q&A session (German)",
+    "section": "",
+    "text": "Screenshot of the NAIF repositories survey page on SurveyHero. Source: https://www.surveyhero.com/c/naif-repositories-2025. Rights: SurveyHero / NAIF."
+  },
+  {
     "objectID": "events/2025-11-26-survey-qa-de/index.html#details",
     "href": "events/2025-11-26-survey-qa-de/index.html#details",
     "title": "Survey Q&A session (German)",
@@ -210,11 +245,25 @@
     "text": "Details\n\nDate: Wednesday, 26 November 2025\nTime: 15:00-16:00\nLanguage: German\nContact: mailto:naif-survey@library.ethz.ch"
   },
   {
+    "objectID": "events/2025-11-05-from-policy-to-practice/index.html",
+    "href": "events/2025-11-05-from-policy-to-practice/index.html",
+    "title": "From Policy to Practice: National ORI framework",
+    "section": "",
+    "text": "Panel speakers at the event ‘From Policy to Practice’. Rights: Zurich University Library (UB Zurich)."
+  },
+  {
     "objectID": "events/2025-11-05-from-policy-to-practice/index.html#details",
     "href": "events/2025-11-05-from-policy-to-practice/index.html#details",
     "title": "From Policy to Practice: National ORI framework",
     "section": "Details",
     "text": "Details\n\nDate: Wednesday, 5 November 2025\nLocation: University of Zurich\nProgram (flyer): Flyer PDF\nRegistration: https://ema.uzh.ch/RLX4H"
+  },
+  {
+    "objectID": "events/2025-09-10-soad-day/index.html",
+    "href": "events/2025-09-10-soad-day/index.html",
+    "title": "Swiss Open Academic Data Day (SOAD Day)",
+    "section": "",
+    "text": "Screenshot of the Swiss Open Academic Data (SOAD) website. Source: https://soad.ch. Rights: SOAD."
   },
   {
     "objectID": "events/2025-09-10-soad-day/index.html#details",
@@ -329,6 +378,13 @@
     "text": "ETH Library’s and ETH Zurich’s legal notices are in effect:\n\nDisclaimer & copyright\n\nData protection"
   },
   {
+    "objectID": "events/2025-08-28-information-event/index.html",
+    "href": "events/2025-08-28-information-event/index.html",
+    "title": "NAIF information event",
+    "section": "",
+    "text": "Screenshot of the ETH Zurich Staffnet page for the NAIF information event. Source: https://ethz.ch/staffnet/en/news-and-events/internal-news/archive/2025/08/naif-information-event-increasing-the-findability-of-swiss-research.html. Rights: ETH Zurich."
+  },
+  {
     "objectID": "events/2025-08-28-information-event/index.html#details",
     "href": "events/2025-08-28-information-event/index.html#details",
     "title": "NAIF information event",
@@ -341,6 +397,13 @@
     "title": "NAIF information event",
     "section": "Materials",
     "text": "Materials\n\nSlides: Slides PDF"
+  },
+  {
+    "objectID": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html",
+    "href": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html",
+    "title": "Workshop: Improving academic metadata (Neuchatel)",
+    "section": "",
+    "text": "Screenshot of the Zenodo record for the NAIF Track 4 presentation. Source: https://doi.org/10.5281/zenodo.17142628. Rights: Zenodo / NAIF authors."
   },
   {
     "objectID": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html#details",
@@ -357,11 +420,25 @@
     "text": "About\nThis workshop is part of NAIF Track 4."
   },
   {
+    "objectID": "events/2025-11-20-survey-qa-fr/index.html",
+    "href": "events/2025-11-20-survey-qa-fr/index.html",
+    "title": "Survey Q&A session (French)",
+    "section": "",
+    "text": "Screenshot of the NAIF repositories survey page on SurveyHero. Source: https://www.surveyhero.com/c/naif-repositories-2025. Rights: SurveyHero / NAIF."
+  },
+  {
     "objectID": "events/2025-11-20-survey-qa-fr/index.html#details",
     "href": "events/2025-11-20-survey-qa-fr/index.html#details",
     "title": "Survey Q&A session (French)",
     "section": "Details",
     "text": "Details\n\nDate: Thursday, 20 November 2025\nTime: 11:00-12:00\nLanguage: French\nContact: mailto:naif-survey@library.ethz.ch"
+  },
+  {
+    "objectID": "events/2025-12-08-improving-academic-metadata-online/index.html",
+    "href": "events/2025-12-08-improving-academic-metadata-online/index.html",
+    "title": "Workshop: Improving academic metadata (Track 4)",
+    "section": "",
+    "text": "Screenshot of the NAIF Track 4 Trello board used for workshop planning. Source: https://trello.com/b/QiVYYDdi/naif-track-4. Rights: NAIF contributors / Trello."
   },
   {
     "objectID": "events/2025-12-08-improving-academic-metadata-online/index.html#details",
@@ -378,6 +455,13 @@
     "text": "About\nThis workshop focuses on improving academic metadata for Swiss repositories and institutions as part of NAIF Track 4."
   },
   {
+    "objectID": "events/2026-02-10-orcid-datacite-webinar/index.html",
+    "href": "events/2026-02-10-orcid-datacite-webinar/index.html",
+    "title": "Elevating your Research’s Impact and Visibility with ORCID and DataCite",
+    "section": "",
+    "text": "Event page visual for ‘Elevating your Research’s Impact and Visibility with ORCID and DataCite’. Source: https://info.orcid.org/event/elevating-your-researchs-impact-and-visibility-with-orcid-and-datacite/. Rights: ORCID and DataCite."
+  },
+  {
     "objectID": "events/2026-02-10-orcid-datacite-webinar/index.html#details",
     "href": "events/2026-02-10-orcid-datacite-webinar/index.html#details",
     "title": "Elevating your Research’s Impact and Visibility with ORCID and DataCite",
@@ -390,6 +474,13 @@
     "title": "Elevating your Research’s Impact and Visibility with ORCID and DataCite",
     "section": "About",
     "text": "About\nThis hands-on webinar introduces ways to integrate ORCID and DataCite workflows to improve attribution, tracking, and metadata quality across systems. It focuses on two established integration methods: the ORCID Search & Link wizard and ORCID Auto-Update. Slides and recordings are expected to be shared after the webinar via the DataCite Zenodo Community and the DataCite YouTube channel."
+  },
+  {
+    "objectID": "events/2026-03-11-soad-online-event/index.html",
+    "href": "events/2026-03-11-soad-online-event/index.html",
+    "title": "SOAD Online Event: The Barcelona Declaration in Switzerland",
+    "section": "",
+    "text": "Promotional visual for the SOAD online event ‘The Barcelona Declaration in Switzerland’. Source: https://soad.ch/soad-online-event/. Rights: SOAD."
   },
   {
     "objectID": "events/2026-03-11-soad-online-event/index.html#details",
@@ -424,7 +515,14 @@
     "href": "posts/2025-07-01-project-start/index.html",
     "title": "Project start",
     "section": "",
-    "text": "NAIF project website homepage\n\n\nWe are pleased to announce the launch of the NAIF project."
+    "text": "Screenshot of the NAIF project website homepage. Source: https://eth-library.github.io/naif/. Rights: ETH Library / NAIF.\n  \n\n\n\nWe are pleased to announce the launch of the NAIF project."
+  },
+  {
+    "objectID": "posts/2025-09-26-naif-at-soad-day/index.html",
+    "href": "posts/2025-09-26-naif-at-soad-day/index.html",
+    "title": "Enhancing Open Academic Data through NAIF Track 4",
+    "section": "",
+    "text": "Screenshot of the Swiss Open Academic Data (SOAD) website. Source: https://soad.ch. Rights: SOAD."
   },
   {
     "objectID": "posts/2025-09-26-naif-at-soad-day/index.html#why-it-matters",
@@ -466,7 +564,7 @@
     "href": "posts/2025-11-10-national-survey-swiss-institutional-repositories/index.html",
     "title": "NAIF launches a national survey on Swiss repositories",
     "section": "",
-    "text": "Survey page for the NAIF repositories survey\n\n\nWe are launching a national survey to map and better understand the landscape of institutional repositories in Switzerland. The initiative aims to strengthen interoperability, standardisation, and coordination across the country’s research information ecosystem.\nThe survey explores how repositories are managed, described, and sustained, focusing on infrastructure, metadata practices, governance, and long-term strategies. It seeks to identify common strengths, gaps, and challenges, laying the groundwork for a national roadmap aligned with international standards and open science principles.\nThe questionnaire is addressed to repository managers and service leads from Swiss higher education institutions operating repositories or CRIS systems. Each manager will be contacted directly to participate.\nTo support respondents, two Q&A sessions will be organised:\n\nThursday, 20 November 2025, 11:00-12:00 (French)\nWednesday, 26 November 2025, 15:00-16:00 (German)\n\nThe survey draws inspiration from major international efforts, including:\n\nDOI 10.5281/zenodo.10390626\nDOI 10.5281/zenodo.10255559\nCOAR Open Consultation\nDOI 10.5281/zenodo.15730917\nBarcelona Declaration\n\nThis will be the first national overview of repository maturity and practices in Switzerland. Findings will inform coordinated actions and shared services, and aggregated results will be published openly on Zenodo within the NAIF community.\nDeadline: 15 December 2025\nContact: mailto:naif-survey@library.ethz.ch\nTake the survey: SurveyHero form"
+    "text": "Screenshot of the NAIF repositories survey page on SurveyHero. Source: https://www.surveyhero.com/c/naif-repositories-2025. Rights: SurveyHero / NAIF.\n  \n\n\n\nWe are launching a national survey to map and better understand the landscape of institutional repositories in Switzerland. The initiative aims to strengthen interoperability, standardisation, and coordination across the country’s research information ecosystem.\nThe survey explores how repositories are managed, described, and sustained, focusing on infrastructure, metadata practices, governance, and long-term strategies. It seeks to identify common strengths, gaps, and challenges, laying the groundwork for a national roadmap aligned with international standards and open science principles.\nThe questionnaire is addressed to repository managers and service leads from Swiss higher education institutions operating repositories or CRIS systems. Each manager will be contacted directly to participate.\nTo support respondents, two Q&A sessions will be organised:\n\nThursday, 20 November 2025, 11:00-12:00 (French)\nWednesday, 26 November 2025, 15:00-16:00 (German)\n\nThe survey draws inspiration from major international efforts, including:\n\nDOI 10.5281/zenodo.10390626\nDOI 10.5281/zenodo.10255559\nCOAR Open Consultation\nDOI 10.5281/zenodo.15730917\nBarcelona Declaration\n\nThis will be the first national overview of repository maturity and practices in Switzerland. Findings will inform coordinated actions and shared services, and aggregated results will be published openly on Zenodo within the NAIF community.\nDeadline: 15 December 2025\nContact: mailto:naif-survey@library.ethz.ch\nTake the survey: SurveyHero form"
   },
   {
     "objectID": "posts/index.html",
