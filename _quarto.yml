@@ -23,12 +23,10 @@ website:
   twitter-card: true
   navbar:
     left:
-      - text: Home
-        menu:
-          - text: Blog
-            href: posts/index.qmd
-          - text: Events
-            href: events/index.qmd
+      - text: News
+        href: posts/index.qmd
+      - text: Events
+        href: events/index.qmd
       - href: about.qmd
         text: About
       - href: https://zenodo.org/communities/naif
@@ -59,4 +57,5 @@ format:
     include-after-body:
       - traffic.html
       - includes/get-involved.html
+      - includes/listing-category-filters.html
     email-obfuscation: references

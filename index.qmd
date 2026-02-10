@@ -34,9 +34,9 @@ Find all events on: [Events](events/index.qmd)
 ::: {#home-events}
 :::
 
-## Latest blog entries
+## Latest news entries
 
-Read more on: [Blog](posts/index.qmd)
+Read more on: [News](posts/index.qmd)
 
 ::: {#home-posts}
 :::

@@ -1,11 +1,14 @@
 ---
-title: "Blog"
+title: "News"
 subtitle: "Browse NAIF updates, progress reports, findings, and opinion pieces"
-description: "NAIF blog posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results."
+description: "NAIF news posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results."
 aliases:
   - blog.html
   - /blog/
   - /blog.html
+  - news.html
+  - /news/
+  - /news.html
 toc: false
 listing:
   id: posts
@@ -15,7 +18,7 @@ listing:
   feed:
     type: partial
     items: 20
-    title: "NAIF Blog"
+    title: "NAIF News"
   filter-ui:
     - categories
     - search

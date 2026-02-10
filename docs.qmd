@@ -16,4 +16,4 @@ Use the DOI from Zenodo for any NAIF deliverable you reference.
 
 - Reports and deliverables
 - Slides and presentations
-- Supporting materials referenced from blog posts
+- Supporting materials referenced from news posts

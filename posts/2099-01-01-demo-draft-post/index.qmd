@@ -1,5 +1,5 @@
 ---
-title: "Demo draft blog post"
+title: "Demo draft news post"
 date: 2099-01-01
 author: "NAIF"
 description: "Draft demo used to preview layout and metadata before publishing."
@@ -17,4 +17,4 @@ toc: true
 
 ![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="Placeholder image. Rights: ETH Library."}
 
-This is a demo draft blog post used to preview formatting, metadata, and images.
+This is a demo draft news post used to preview formatting, metadata, and images.

@@ -3,7 +3,7 @@ title: "Publishing guidelines"
 toc: true
 ---
 
-This public guide explains how to publish NAIF blog posts and event entries. It is intended for project partners and anyone contributing content.
+This public guide explains how to publish NAIF news posts and event entries. It is intended for project partners and anyone contributing content.
 
 ## Target audiences and message priorities
 
@@ -27,15 +27,15 @@ This public guide explains how to publish NAIF blog posts and event entries. It 
 
 ## Folder structure and filenames
 
-- Blog posts: `posts/<yyyy-mm-dd>-<slug>/index.qmd`
+- News posts: `posts/<yyyy-mm-dd>-<slug>/index.qmd`
 - Events: `events/<yyyy-mm-dd>-<slug>/index.qmd`
 - Post assets: `posts/<entry>/images/*`
 - Event assets: `events/<entry>/images/*`
 - Rendered output lives in `_site/` (do not edit `_site/` manually).
 
-## Blog post guidance
+## News post guidance
 
-Use a blog post for updates, progress reporting, findings, or opinion pieces.
+Use a news post for updates, progress reporting, findings, or opinion pieces.
 
 **Required front matter**
 
@@ -98,7 +98,7 @@ Use an event entry for announcements and event documentation.
 
 ## Templates
 
-### Blog post template
+### News post template
 
 ```markdown
 {{< include posts/_template-post/index.qmd >}}
