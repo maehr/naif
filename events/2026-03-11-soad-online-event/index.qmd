@@ -15,7 +15,7 @@ image: "images/soad-online-event.png"
 toc: true
 ---
 
-Source: <https://soad.ch/soad-online-event/>
+<!-- Source: <https://soad.ch/soad-online-event/> -->
 
 ## Details
 

@@ -23,7 +23,7 @@ aliases:
 toc: true
 ---
 
-![Swiss Open Academic Data website](images/soad-website.png){fig-cap="Screenshot of the Swiss Open Academic Data (SOAD) website. Rights: SOAD."}
+![Swiss Open Academic Data website](images/soad-website.png){fig-cap="Screenshot of the Swiss Open Academic Data (SOAD) website. Source: https://soad.ch. Rights: SOAD."}
 
 ## Why it matters
 

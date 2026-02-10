@@ -157,9 +157,32 @@ uv run quarto render
   - descriptive alt text
   - a caption
   - rights attribution (in the caption)
+- For screenshots, include the source URL in the figure caption (`fig-cap`) where possible. If that
+  is not possible, keep the source line commented out in the page source.
 - If no suitable image is available on first try, add a screenshot of the relevant source page.
 - Use Playwright via `npx` for screenshots (do not rely on Python Playwright in this repo).
-- Example command:
+- Install screenshot tooling once per machine:
+
+```bash
+npm install
+npm run screenshot:install-browsers
+```
+
+- Screenshot outputs should be 16:9 by default.
+- Use the reusable clean-capture command to remove common cookie banners and overlays:
+
+```bash
+npm run screenshot:clean -- "https://example.org" "posts/<entry>/images/source-screenshot.png"
+```
+
+- Add custom selectors when a site-specific overlay still appears:
+
+```bash
+npm run screenshot:clean -- "https://example.org" "posts/<entry>/images/source-screenshot.png" --hide ".custom-overlay,#cookie-panel"
+```
+
+- Keep Python Playwright as a last-resort fallback only.
+- Legacy one-off command (kept for reference):
 
 ```bash
 npx -y playwright@1.52.0 screenshot --wait-for-timeout 6000 --full-page "https://example.org" "posts/<entry>/images/source-screenshot.png"

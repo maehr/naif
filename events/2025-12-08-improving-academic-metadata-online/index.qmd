@@ -16,11 +16,11 @@ tags:
   - "Workshop"
   - "Metadata"
 proofread: true
-image: "images/zoom-workshop-registration.png"
+image: "images/trello-track4-workshop-board.png"
 toc: true
 ---
 
-![Zoom registration page for the metadata workshop](images/zoom-workshop-registration.png){fig-cap="Screenshot of the Zoom registration page for the NAIF metadata workshop. Rights: Zoom / NAIF."}
+![NAIF Track 4 Trello board used for workshop planning](images/trello-track4-workshop-board.png){fig-cap="Screenshot of the NAIF Track 4 Trello board used for workshop planning. Source: https://trello.com/b/QiVYYDdi/naif-track-4. Rights: NAIF contributors / Trello."}
 
 ::: {.callout-note}
 This event has already taken place. Any registration information has been disabled and is shown for reference only.

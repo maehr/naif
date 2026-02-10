@@ -18,7 +18,7 @@ image: "images/surveyhero-naif-survey.png"
 toc: true
 ---
 
-![Survey page for the NAIF repositories survey](images/surveyhero-naif-survey.png){fig-cap="Screenshot of the NAIF repositories survey page on SurveyHero. Rights: SurveyHero / NAIF."}
+![Survey page for the NAIF repositories survey](images/surveyhero-naif-survey.png){fig-cap="Screenshot of the NAIF repositories survey page on SurveyHero. Source: https://www.surveyhero.com/c/naif-repositories-2025. Rights: SurveyHero / NAIF."}
 
 ::: {.callout-note}
 This event has already taken place. Any registration information has been disabled and is shown for reference only.

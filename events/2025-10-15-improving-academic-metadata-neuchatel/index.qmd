@@ -20,7 +20,7 @@ image: "images/zenodo-naif-track4-talk.png"
 toc: true
 ---
 
-![Zenodo record for the NAIF Track 4 SOAD presentation](images/zenodo-naif-track4-talk.png){fig-cap="Screenshot of the Zenodo record for the NAIF Track 4 presentation. Rights: Zenodo / NAIF authors."}
+![Zenodo record for the NAIF Track 4 SOAD presentation](images/zenodo-naif-track4-talk.png){fig-cap="Screenshot of the Zenodo record for the NAIF Track 4 presentation. Source: https://doi.org/10.5281/zenodo.17142628. Rights: Zenodo / NAIF authors."}
 
 ::: {.callout-note}
 This event has already taken place. Any registration information has been disabled and is shown for reference only.

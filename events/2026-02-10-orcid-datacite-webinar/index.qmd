@@ -15,7 +15,7 @@ image: "images/orcid-datacite-event.png"
 toc: true
 ---
 
-Source: <https://info.orcid.org/event/elevating-your-researchs-impact-and-visibility-with-orcid-and-datacite/>
+<!-- Source: <https://info.orcid.org/event/elevating-your-researchs-impact-and-visibility-with-orcid-and-datacite/> -->
 
 ## Details
 

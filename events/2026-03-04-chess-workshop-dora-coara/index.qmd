@@ -15,7 +15,7 @@ image: "images/chess-events-page.png"
 toc: true
 ---
 
-Source: <https://www.chess.uzh.ch/de/veranstalten.html>
+<!-- Source: <https://www.chess.uzh.ch/de/veranstalten.html> -->
 
 ## Details
 
