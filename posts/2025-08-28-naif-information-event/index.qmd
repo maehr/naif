@@ -10,7 +10,7 @@ tags:
   - "Findability"
   - "Interoperability"
 proofread: false
-image: "../../images/logos/all-logos.jpg"
+image: "images/eth-news-naif-info-event.png"
 toc: true
 ---
 
@@ -25,7 +25,7 @@ Checklist (manual):
 - Proofread true/false is set ✓
 -->
 
-![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+![ETH Library news page about the NAIF information event](images/eth-news-naif-info-event.png){fig-cap="Screenshot of the ETH Library news page for the NAIF information event. Rights: ETH Library."}
 
 ## Why it matters
 

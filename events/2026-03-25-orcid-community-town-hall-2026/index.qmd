@@ -11,7 +11,7 @@ tags:
   - "Community"
   - "Webinar"
 proofread: false
-image: "../../images/general/event-placeholder.svg"
+image: "images/orcid-townhall-2026.png"
 toc: true
 ---
 

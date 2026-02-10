@@ -11,7 +11,7 @@ tags:
   - "DataCite"
   - "Persistent identifiers"
 proofread: false
-image: "../../images/general/event-placeholder.svg"
+image: "images/orcid-datacite-event.png"
 toc: true
 ---
 

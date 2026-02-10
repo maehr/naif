@@ -119,6 +119,13 @@ uv run quarto render
   - descriptive alt text
   - a caption
   - rights attribution (in the caption)
+- If no suitable image is available on first try, add a screenshot of the relevant source page.
+- Use Playwright via `npx` for screenshots (do not rely on Python Playwright in this repo).
+- Example command:
+
+```bash
+npx -y playwright@1.52.0 screenshot --wait-for-timeout 6000 --full-page "https://example.org" "posts/<entry>/images/source-screenshot.png"
+```
 
 ### Reposts
 

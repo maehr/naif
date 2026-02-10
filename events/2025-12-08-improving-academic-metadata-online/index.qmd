@@ -11,11 +11,11 @@ tags:
   - "Workshop"
   - "Metadata"
 proofread: true
-image: "../../images/logos/all-logos.jpg"
+image: "images/zoom-workshop-registration.png"
 toc: true
 ---
 
-![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+![Zoom registration page for the metadata workshop](images/zoom-workshop-registration.png){fig-cap="Screenshot of the Zoom registration page for the NAIF metadata workshop. Rights: Zoom / NAIF."}
 
 ::: {.callout-note}
 This event has already taken place. Any registration information has been disabled and is shown for reference only.

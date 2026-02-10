@@ -11,7 +11,7 @@ tags:
   - "CoARA"
   - "Research assessment"
 proofread: false
-image: "../../images/general/event-placeholder.svg"
+image: "images/chess-events-page.png"
 toc: true
 ---
 

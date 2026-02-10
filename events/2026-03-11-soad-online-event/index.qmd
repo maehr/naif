@@ -11,7 +11,7 @@ tags:
   - "Barcelona Declaration"
   - "Open research information"
 proofread: false
-image: "../../images/general/event-placeholder.svg"
+image: "images/soad-online-event.png"
 toc: true
 ---
 

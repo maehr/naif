@@ -10,13 +10,13 @@ tags:
   - "SOAD Day"
   - "persistent identifiers"
 proofread: false
-image: "../../images/logos/all-logos.jpg"
+image: "images/soad-website.png"
 aliases:
   - /posts/2025-09-26-naif-at-soad-and-icsti/
 toc: true
 ---
 
-![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+![Swiss Open Academic Data website](images/soad-website.png){fig-cap="Screenshot of the Swiss Open Academic Data (SOAD) website. Rights: SOAD."}
 
 ## Why it matters
 

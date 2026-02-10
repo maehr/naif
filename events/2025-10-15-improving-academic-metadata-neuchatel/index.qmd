@@ -11,11 +11,11 @@ tags:
   - "Workshop"
   - "Metadata"
 proofread: true
-image: "../../images/logos/all-logos.jpg"
+image: "images/zenodo-naif-track4-talk.png"
 toc: true
 ---
 
-![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="NAIF consortium logos. Rights: ETH Library."}
+![Zenodo record for the NAIF Track 4 SOAD presentation](images/zenodo-naif-track4-talk.png){fig-cap="Screenshot of the Zenodo record for the NAIF Track 4 presentation. Rights: Zenodo / NAIF authors."}
 
 ::: {.callout-note}
 This event has already taken place. Any registration information has been disabled and is shown for reference only.
