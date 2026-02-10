@@ -5,13 +5,13 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>NAIF Blog</title>
+<title>NAIF News</title>
 <link>https://maehr.github.io/naif/posts/</link>
 <atom:link href="https://maehr.github.io/naif/posts/index.xml" rel="self" type="application/rss+xml"/>
-<description>NAIF blog posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results.</description>
+<description>NAIF news posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results.</description>
 <image>
 <url>https://maehr.github.io/naif/images/logos/all-logos.jpg</url>
-<title>NAIF Blog</title>
+<title>NAIF News</title>
 <link>https://maehr.github.io/naif/posts/</link>
 </image>
 <generator>quarto-1.8.27</generator>
