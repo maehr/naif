@@ -28,16 +28,16 @@ uv run quarto render
 - Quarto execution support: `jupyter`, `ipykernel`
 - Dev tooling: `ruff`, `ty`, `pytest`, `pytest-cov`
 
-### Agents tooling specification
+### Agent tooling specification
 
-This repository uses the following default Python tooling for agentic workflows.
+This repository is a Quarto website project with lightweight Python support.
 
 ### Agentic content policy
 
 - When generating or editing blog posts and event entries, use British English spelling and style.
 - Exception: reposts may retain original wording when needed for faithful attribution.
 
-#### 1. Core development tooling (Astral + testing)
+#### 1. Core development tooling
 
 - uv
 - ruff
@@ -45,44 +45,27 @@ This repository uses the following default Python tooling for agentic workflows.
 - pytest
 - pytest-cov
 
-#### 2. Service and I/O
+#### 2. Quarto execution support
 
-- httpx
+- jupyter
+- ipykernel
 
-#### 3. Data and models
+#### 3. Mapping/visualisation support
 
-- pydantic
-- pydantic-settings
-- pandas
-
-#### 4. Interaction and orchestration
-
-- marimo
-
-#### 5. Observability
-
-- structlog
-
-#### 6. Visualisation
-
-- altair
-- matplotlib
+- folium
 
 #### Coding guidelines
 
 - **Type safety:** use type hints throughout all code.
 - **Data structure:** use Pydantic models or Python dataclasses for structured data.
-- **Documentation:** include docstrings for all functions, including examples that serve as tests.
-- **Testing:** aim for and maintain 100% test coverage on core logic and tool definitions.
+- **Documentation:** include docstrings for non-trivial Python functions.
+- **Testing:** add or update tests for non-trivial logic.
 - **Paradigm:** prefer functional programming patterns over object-oriented programming.
 
-#### Pyodide and runtime constraints
+#### Runtime constraints
 
-- **Browser compatibility:** all simple applications and tools should be compatible with Pyodide
-  (WASM). Avoid libraries with heavy C-extensions or system-level dependencies not supported in
-  WASM.
-- **Development vs. runtime:** core development tooling is development-only; service, data,
-  interaction, observability, and visualisation libraries are runtime-usable.
+- Keep Python tooling compatible with the project environment (`uv`, Python 3.14, Quarto/Jupyter).
+- Prefer lightweight dependencies and avoid unnecessary system-level runtime requirements.
 
 Common commands:
 

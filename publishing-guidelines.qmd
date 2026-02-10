@@ -86,9 +86,10 @@ Use an event entry for announcements and event documentation.
 
 **Event details**
 
-- Include Date, Time, Location, Registration, and Event page.
-- Future events: keep Registration and Event page as clickable links.
-- Past events: render registration links as plain text and strike through, and add a short note that the event already took place.
+- Include Date and as many of the following as are available: Time, Location, Registration, Event page.
+- Future events: keep Registration and Event page as clickable links when available.
+- Past events: if a registration link existed, render it as plain text and strikethrough, and add a short note that the event already took place.
+- If a detail is not available (for example no registration was offered), state this explicitly in plain text.
 
 ## Images and rights
 
@@ -127,4 +128,4 @@ Use an event entry for announcements and event documentation.
 
 ## Code of conduct
 
-All contributors are expected to follow the [Contributor Covenant code of conduct](https://www.contributor-covenant.org/version/3/0/code_of_conduct/).
+All contributors are expected to follow this repository's code of conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).

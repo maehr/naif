@@ -35,10 +35,10 @@ Checklist (manual):
 ## Details
 
 - Date:
-- Time:
-- Location:
-- Registration: <https://example.org/registration>
-- Event page: <https://example.org/event>
+- Time: <optional>
+- Location: <optional>
+- Registration: <https://example.org/registration> (or plain text if not offered)
+- Event page: <https://example.org/event> (if available)
 
 ## About
 
