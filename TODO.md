@@ -2,27 +2,50 @@
 
 ## Navigation
 
-- [x] Reduce top navigation to: Home, Blog, About, Docs
-- [x] Keep Join + Contact as a persistent CTA (sidebar card)
 - [ ] Add redirect/stub pages for renamed routes (`news` -> Blog, `resources` -> Docs)
 
-## Blog
+## Image backlog (replace generic images)
 
-- [x] Create Blog hub with listing + category filter (Track 1-4 + General)
-- [x] Enforce folder-per-entry structure (`posts/<date>-<slug>/`)
-- [x] Add repost #1 (SYoS, 31 Oct 2025) with local images and attribution
-- [x] Add repost #2 (UZH, 12 Nov 2025) with local images and attribution
-- [x] Migrate remaining legacy content into individual entries
-- [x] Decide whether to add RSS feed for Blog
-
-## About
-
-- [x] Consolidate project context + Tracks 1-4 + Team into `about.qmd`
-- [x] Review copy for plain-language tone and consistency
+- [ ] Add dedicated local image for `posts/2025-07-01-project-start` (currently uses
+      `../../images/logos/all-logos.jpg`)
+- [ ] Add dedicated local image for `posts/2025-08-28-naif-information-event` (currently uses
+      `../../images/logos/all-logos.jpg`)
+- [ ] Add dedicated local image for `posts/2025-09-26-naif-at-soad-day` (currently uses
+      `../../images/logos/all-logos.jpg`)
+- [ ] Add dedicated local image for
+      `posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators` (currently uses
+      `../../images/general/IMG_8727modified.jpeg`)
+- [ ] Add dedicated local image for
+      `posts/2025-11-10-national-survey-swiss-institutional-repositories` (currently uses
+      `../../images/logos/all-logos.jpg`)
+- [ ] Add dedicated local image for
+      `posts/2025-11-12-what-switzerland-can-learn-from-other-countries` (currently uses
+      `../../images/general/naif-event-image.png`)
+- [ ] Add dedicated local image for `events/2025-08-28-information-event` (currently uses
+      `../../images/logos/all-logos.jpg`)
+- [ ] Add dedicated local image for `events/2025-09-10-soad-day` (currently uses
+      `../../images/general/event-placeholder.svg`)
+- [ ] Add dedicated local image for `events/2025-10-15-improving-academic-metadata-neuchatel`
+      (currently uses `../../images/logos/all-logos.jpg`)
+- [ ] Add dedicated local image for `events/2025-11-05-from-policy-to-practice` (currently uses
+      `../../images/general/naif-event-image.png`)
+- [ ] Add dedicated local image for `events/2025-11-20-survey-qa-fr` (currently uses
+      `../../images/logos/all-logos.jpg`)
+- [ ] Add dedicated local image for `events/2025-11-26-survey-qa-de` (currently uses
+      `../../images/logos/all-logos.jpg`)
+- [ ] Add dedicated local image for `events/2025-12-08-improving-academic-metadata-online`
+      (currently uses `../../images/logos/all-logos.jpg`)
+- [ ] Add dedicated local image for `events/2026-02-10-orcid-datacite-webinar` (currently uses
+      `../../images/general/event-placeholder.svg`)
+- [ ] Add dedicated local image for `events/2026-03-04-chess-workshop-dora-coara` (currently uses
+      `../../images/general/event-placeholder.svg`)
+- [ ] Add dedicated local image for `events/2026-03-11-soad-online-event` (currently uses
+      `../../images/general/event-placeholder.svg`)
+- [ ] Add dedicated local image for `events/2026-03-25-orcid-community-town-hall-2026` (currently
+      uses `../../images/general/event-placeholder.svg`)
 
 ## Docs
 
-- [x] Replace Resources with Docs (Zenodo portal)
 - [ ] Curate a short list of “key deliverables” (DOI-first) to feature on Docs
 
 ## Zenodo uploads
@@ -31,13 +54,6 @@
       replace links in `about.qmd` and `events/2025-08-28-information-event/index.qmd` with the DOI
 - [ ] Upload `documents/naif-repositories-survey-2025.pdf` to the NAIF Zenodo community (add DOI
       link where it is referenced)
-
-## Repo hygiene
-
-- [x] Add Prettier for Markdown formatting (`npm run format`)
-- [x] Add `AGENTS.md`, `CONTRIBUTING.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md`, `CHANGELOG.md`
-- [x] Add licenses (AGPLv3 for code, CC BY 4.0 for content)
-- [x] Add GitHub PR + Issue templates
 
 ## Manual repository setup
 
@@ -49,8 +65,3 @@
 - [ ] Replace DOI badge placeholders (`GITHUB_REPO_ID`, `ZENODO_RECORD`) with real Zenodo values
 - [ ] Add `CITATION.cff` authors with named contributors and ORCID (if available)
 - [ ] Verify first-interaction and CI workflows are enabled and passing on `main`
-
-## Build
-
-- [x] Run `npm run format`
-- [x] Run `quarto render`

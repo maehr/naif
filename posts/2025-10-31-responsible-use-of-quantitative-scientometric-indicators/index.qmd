@@ -1,7 +1,10 @@
 ---
 title: "Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop"
 date: 2025-10-31
-author: "Dr Martin Jaekel"
+author:
+  - name: "Dr Martin Jaekel"
+    orcid: "0000-0001-8445-949X"
+    affiliation: "ZHAW Zurich University of Applied Sciences"
 description: "Insights from the 6th Swiss Year of Scientometrics workshop on responsible use of quantitative scientometric indicators in research assessment."
 categories:
   - "Track 1"

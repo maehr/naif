@@ -13,7 +13,7 @@ tags:
   - "scientometrics"
   - "poster"
 proofread: false
-# image: "images/poster.png"
+image: "images/poster.png"
 toc: true
 draft: true
 ---
@@ -44,11 +44,137 @@ We presented a poster titled *On the Current and Future Uses of Quantitative Sci
 
 The poster synthesized results from the 6th Swiss Year of Scientometrics (SYoS) workshop held on 15 September 2025 with 27 stakeholders from Swiss HEIs, policy bodies, and international initiatives. It also outlined a planned qualitative survey targeting Swiss HEIs and stakeholders such as the SNSF and SERI.
 
-![Poster presented at the RoR Event 2026](images/poster.png){fig-cap="Poster: On the Current and Future Uses of Quantitative Scientometric Indicators (QSI) in Swiss Higher Education Institutions. Rights: CC BY 4.0, NAIF project."}
+![Screenshot of the RoR Event 2026 programme page](images/poster.png){fig-cap="Screenshot of the RoR Event 2026 programme page (captured for illustration). Rights: University of Zurich CRS website."}
 
 ## What we found
 
 The poster addressed four questions. First, QSI adoption is growing — 24 Swiss institutions have signed DORA and 16 are CoARA signatories — but stakeholders struggle to translate these declarations into appropriate practices. Second, indicators are primarily used at the organizational level for monitoring research profiles, collaboration networks, open access shares, and citation patterns, rather than for evaluating individual researchers (based on an ETH Zurich case study). Third, data quality emerged as a non-negotiable prerequisite: metrics are often flawed or misapplied, and meaningful analysis requires multiple sources with rigorous cleaning. Fourth, the future of responsible QSI lies in deeper expert collaboration, dialogue-based approaches, context-first design, and a broader scope that includes open research data, open science, and media visibility.
+
+```{python}
+#| echo: false
+#| label: fig-dora-map
+#| fig-cap: "DORA signatories among Swiss higher education institutions (24 of 46)."
+import folium
+
+TYPE_COLOURS = {
+    "University": "#F97B22",
+    "UAS": "#FEE8B0",
+    "UTE": "#9CA777",
+    "Univ. Inst.": "#7C9070",
+}
+
+dora = [
+    {"s": "UNIBAS", "n": "University of Basel", "t": "University", "la": 47.5584, "lo": 7.5834, "c": "Basel"},
+    {"s": "UniBE", "n": "University of Bern", "t": "University", "la": 46.9505, "lo": 7.4381, "c": "Bern"},
+    {"s": "UniFr", "n": "University of Fribourg", "t": "University", "la": 46.8065, "lo": 7.1523, "c": "Fribourg"},
+    {"s": "UNIGE", "n": "University of Geneva", "t": "University", "la": 46.2017, "lo": 6.1430, "c": "Geneva"},
+    {"s": "UNIL", "n": "University of Lausanne", "t": "University", "la": 46.5213, "lo": 6.5743, "c": "Lausanne"},
+    {"s": "UniLu", "n": "University of Lucerne", "t": "University", "la": 47.0494, "lo": 8.3105, "c": "Lucerne"},
+    {"s": "UniNE", "n": "University of Neuchâtel", "t": "University", "la": 46.9936, "lo": 6.9387, "c": "Neuchâtel"},
+    {"s": "UZH", "n": "University of Zurich", "t": "University", "la": 47.3743, "lo": 8.5484, "c": "Zurich"},
+    {"s": "USI", "n": "Università della Svizzera italiana", "t": "University", "la": 46.0104, "lo": 8.9582, "c": "Lugano"},
+    {"s": "EPFL", "n": "Swiss Federal Institute of Technology Lausanne", "t": "University", "la": 46.5191, "lo": 6.5668, "c": "Lausanne"},
+    {"s": "ETHZ", "n": "Swiss Federal Institute of Technology Zurich", "t": "University", "la": 47.3763, "lo": 8.5477, "c": "Zurich"},
+    {"s": "FernUni", "n": "Distance Learning University Switzerland", "t": "Univ. Inst.", "la": 46.3196, "lo": 7.9889, "c": "Brig"},
+    {"s": "BFH", "n": "Bern University of Applied Sciences", "t": "UAS", "la": 46.9530, "lo": 7.4347, "c": "Bern"},
+    {"s": "FHNW", "n": "University of Applied Sciences Northwestern Switzerland", "t": "UAS", "la": 47.4812, "lo": 8.2127, "c": "Windisch"},
+    {"s": "HES-SO", "n": "HES-SO University of Applied Sciences and Arts Western Switzerland", "t": "UAS", "la": 47.3653, "lo": 7.3575, "c": "Delémont"},
+    {"s": "HSLU", "n": "Lucerne University of Applied Sciences and Arts", "t": "UAS", "la": 47.0468, "lo": 8.3106, "c": "Lucerne"},
+    {"s": "ZHAW", "n": "Zurich University of Applied Sciences", "t": "UAS", "la": 47.5005, "lo": 8.7247, "c": "Winterthur"},
+    {"s": "HEP | PH FR", "n": "University of Teacher Education Fribourg", "t": "UTE", "la": 46.8093, "lo": 7.1528, "c": "Fribourg"},
+    {"s": "HEP Vaud", "n": "University of Teacher Education Vaud", "t": "UTE", "la": 46.5160, "lo": 6.6231, "c": "Lausanne"},
+    {"s": "HfH", "n": "University of Teacher Education in Special Needs", "t": "UTE", "la": 47.4114, "lo": 8.5463, "c": "Zurich"},
+    {"s": "PHBern", "n": "University of Teacher Education Bern", "t": "UTE", "la": 46.9556, "lo": 7.4191, "c": "Bern"},
+    {"s": "PHSZ", "n": "University of Teacher Education Schwyz", "t": "UTE", "la": 47.0493, "lo": 8.5478, "c": "Goldau"},
+    {"s": "HEP-VS", "n": "University of Teacher Education Valais", "t": "UTE", "la": 46.2201, "lo": 7.0033, "c": "Brig"},
+    {"s": "PH Zurich", "n": "University of Teacher Education Zurich", "t": "UTE", "la": 47.3792, "lo": 8.5323, "c": "Zurich"},
+]
+
+m = folium.Map(location=[46.8, 8.3], zoom_start=8, control_scale=True, tiles="cartodbpositron")
+for r in dora:
+    folium.CircleMarker(
+        location=[r["la"], r["lo"]],
+        radius=8,
+        color="#333333",
+        weight=1,
+        fill=True,
+        fill_color=TYPE_COLOURS.get(r["t"], "#7C9070"),
+        fill_opacity=1.0,
+        tooltip=r["s"],
+        popup=f"<b>{r['n']}</b><br>Type: {r['t']}<br>{r['c']}",
+    ).add_to(m)
+
+legend_html = """
+<div style="position: fixed; top: 10px; left: 50px; background: white; padding: 10px; border-radius: 5px; font-family: sans-serif; font-size: 12px; z-index: 9999;">
+    <div><span style="background:#F97B22;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>Universities</div>
+    <div><span style="background:#FEE8B0;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>Universities of Applied Sciences</div>
+    <div><span style="background:#9CA777;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>Teacher Education</div>
+    <div><span style="background:#7C9070;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>University Institutes</div>
+</div>
+"""
+m.get_root().html.add_child(folium.Element(legend_html))
+m
+```
+
+```{python}
+#| echo: false
+#| label: fig-coara-map
+#| fig-cap: "CoARA signatories among Swiss higher education institutions (16 of 46). Asterisk (*) indicates CoARA members."
+import folium
+
+TYPE_COLOURS = {
+    "University": "#F97B22",
+    "UAS": "#FEE8B0",
+    "UTE": "#9CA777",
+    "Univ. Inst.": "#7C9070",
+}
+
+coara = [
+    {"s": "UniFr", "n": "University of Fribourg", "t": "University", "la": 46.8065, "lo": 7.1523, "c": "Fribourg", "m": True},
+    {"s": "UNIGE", "n": "University of Geneva", "t": "University", "la": 46.2017, "lo": 6.1430, "c": "Geneva", "m": False},
+    {"s": "UNIL", "n": "University of Lausanne", "t": "University", "la": 46.5213, "lo": 6.5743, "c": "Lausanne", "m": False},
+    {"s": "UZH", "n": "University of Zurich", "t": "University", "la": 47.3743, "lo": 8.5484, "c": "Zurich", "m": False},
+    {"s": "EPFL", "n": "Swiss Federal Institute of Technology Lausanne", "t": "University", "la": 46.5191, "lo": 6.5668, "c": "Lausanne", "m": False},
+    {"s": "ETHZ", "n": "Swiss Federal Institute of Technology Zurich", "t": "University", "la": 47.3763, "lo": 8.5477, "c": "Zurich", "m": True},
+    {"s": "BFH", "n": "Bern University of Applied Sciences", "t": "UAS", "la": 46.9530, "lo": 7.4347, "c": "Bern", "m": True},
+    {"s": "FHNW", "n": "University of Applied Sciences Northwestern Switzerland", "t": "UAS", "la": 47.4812, "lo": 8.2127, "c": "Windisch", "m": True},
+    {"s": "HES-SO", "n": "HES-SO University of Applied Sciences and Arts Western Switzerland", "t": "UAS", "la": 47.3653, "lo": 7.3575, "c": "Delémont", "m": True},
+    {"s": "HSLU", "n": "Lucerne University of Applied Sciences and Arts", "t": "UAS", "la": 47.0468, "lo": 8.3106, "c": "Lucerne", "m": True},
+    {"s": "ZHdK", "n": "Zurich University of the Arts", "t": "UAS", "la": 47.3923, "lo": 8.5118, "c": "Zurich", "m": True},
+    {"s": "ZHAW", "n": "Zurich University of Applied Sciences", "t": "UAS", "la": 47.5005, "lo": 8.7247, "c": "Winterthur", "m": True},
+    {"s": "HEP Vaud", "n": "University of Teacher Education Vaud", "t": "UTE", "la": 46.5160, "lo": 6.6231, "c": "Lausanne", "m": True},
+    {"s": "PHSZ", "n": "University of Teacher Education Schwyz", "t": "UTE", "la": 47.0493, "lo": 8.5478, "c": "Goldau", "m": False},
+    {"s": "PHSG", "n": "St.Gallen University of Teacher Education", "t": "UTE", "la": 47.4304, "lo": 9.3855, "c": "Saint Gallen", "m": False},
+    {"s": "PH Zurich", "n": "University of Teacher Education Zurich", "t": "UTE", "la": 47.3792, "lo": 8.5323, "c": "Zurich", "m": True},
+]
+
+m = folium.Map(location=[46.8, 8.3], zoom_start=8, control_scale=True, tiles="cartodbpositron")
+for r in coara:
+    label = r["s"] + ("*" if r["m"] else "")
+    member_text = "Yes" if r["m"] else "No"
+    folium.CircleMarker(
+        location=[r["la"], r["lo"]],
+        radius=8,
+        color="#333333",
+        weight=1,
+        fill=True,
+        fill_color=TYPE_COLOURS.get(r["t"], "#7C9070"),
+        fill_opacity=1.0,
+        tooltip=label,
+        popup=f"<b>{r['n']}</b><br>Type: {r['t']}<br>{r['c']}<br>CoARA Member: {member_text}",
+    ).add_to(m)
+
+legend_html = """
+<div style="position: fixed; top: 10px; left: 50px; background: white; padding: 10px; border-radius: 5px; font-family: sans-serif; font-size: 12px; z-index: 9999;">
+    <div><span style="background:#F97B22;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>Universities</div>
+    <div><span style="background:#FEE8B0;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>Universities of Applied Sciences</div>
+    <div><span style="background:#9CA777;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>Teacher Education</div>
+    <div style="margin-top: 5px;">* CoARA Member</div>
+</div>
+"""
+m.get_root().html.add_child(folium.Element(legend_html))
+m
+```
 
 ## What's next
 

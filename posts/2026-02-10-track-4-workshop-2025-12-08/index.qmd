@@ -1,0 +1,55 @@
+---
+title: "Prioritising Actions for Better Academic Metadata"
+date: "2025-12-08"
+author:
+  - name: "Moritz Mähr"
+    orcid: "0000-0002-1367-1618"
+    affiliation: "ETH Library, ETH Zurich"
+description: "NAIF Track 4 held its second workshop to classify and prioritise 18 proposed actions for improving academic metadata in Swiss repositories using the Agreement & Certainty Matrix."
+categories:
+  - "Blog Post"
+tags:
+  - "metadata"
+  - "workshops"
+  - "interoperability"
+proofread: false
+image: "images/acm-matrix.png"
+toc: true
+draft: true
+---
+
+## From ideas to action
+
+On 15 October 2025, the first NAIF Track 4 workshop brought together repository managers, data stewards, and open science specialists from across Switzerland to explore four families of academic metadata: organisational data, authorship and researcher data, funding information, and open access and licensing data. That workshop produced a rich set of exploratory maps and proposed actions, compiled on the [NAIF Track 4 Trello board](https://trello.com/b/QiVYYDdi/naif-track-4) by Jorge Rodrigues de Matos (EPFL). What was still missing was a shared sense of priority — which proposals are ready to act on, and which need more groundwork first?
+
+Workshop #2 on 8 December 2025 set out to answer that question. Seventeen participants from eleven institutions — including ETH Zurich, EPFL, University of Zurich, ZHAW, CERN, University of Fribourg, University of Neuchâtel, Lib4RI, Berner Fachhochschule, Pädagogische Hochschule St. Gallen, and SLSP — joined a 90-minute online session to classify and advance the proposed actions.
+
+## The method: Agreement & Certainty Matrix
+
+We used the Agreement & Certainty Matrix (ACM) to move beyond simple voting. The ACM asks two questions about each proposed action: how much do stakeholders agree on the problem and solution direction, and how predictable is it that a chosen intervention will succeed in our context? Crossing these two dimensions produces four domains — Simple, Complicated, Complex, and Chaos — each suggesting a different style of action.
+
+Participants first reviewed the 18 action cards on the Trello board individually, then rated up to five actions using emoji on a shared [Miro board](https://miro.com/app/board/uXjVJtPnUzU=/): handshakes or thumbs-down for agreement, 💯 or shrugs for certainty. The resulting placement gave us a visual landscape of where the community stands.
+
+## What we found
+
+Several actions landed firmly in the **Simple** quadrant — high agreement, high certainty — signalling that they are ready for direct implementation or straightforward process changes. These include action A1 (ORCID promotion in Switzerland), A2 (DSpace–ORCID alignment), F1 (standard metadata for funding information), OA3 (enhancing repository metadata for the Swiss Open Access Repository Monitor), O1 (establishing an open working group on organisational data), and O7 (defining a framework to describe organisational hierarchies).
+
+A cluster of actions fell into the **Complicated** zone, where certainty drops but agreement remains: O2 (Swiss HEIs ROR Alignment & Curation Pilot), O3 (a lightweight shared registry linking local structures to global identifiers such as ROR, OpenOrgs, and Wikidata), and O6 (curating Wikidata entries for all Swiss HEIs). These require expert analysis and structured process change, but the direction is clear.
+
+The **Complex** quadrant — lower agreement, lower certainty — captured the more ambitious proposals: OA1 (alignment with GOAL / opengoal.ch), OA2 (alignment with the new "OA Cost Monitoring" project led by ZHAW), A3 (making relevant systems ORCID-ready), F2 (awareness and incentives for providing funding information), O4 (publishing curated organisational data in machine-readable formats via the OpenAIRE Graph), O5 (a collaborative stewardship mechanism for data quality), and O8 (an interface guiding researchers to use correct institutional names with automatic ROR ID attachment). For these, the ACM recommends convening stakeholders and examining patterns before committing to large-scale implementation.
+
+No action was placed in the Chaos domain, which is an encouraging sign of the community's shared understanding of the problem space.
+
+## Breakout discussions
+
+After a short break, participants split into breakout groups organised by data family. Each group validated the ACM placement of its actions, then picked one action to develop further — identifying potential owners, a realistic timeline, and concrete evaluation measures. Results were documented directly as comments on the corresponding Trello cards. In the plenary reconciliation, each group presented its findings and other participants expressed interest in collaborating.
+
+Notably, Annette Guignard flagged the new "OA Cost Monitor" project (led by ZHAW with several HEIs) as a relevant partner initiative, while Christian Muheim pointed to the existing OA Monitor as a potential vehicle for action within NAIF. These cross-connections between actions and external projects will be important for avoiding duplication and maximising impact.
+
+## What's next
+
+Action owners are now expected to take the lead and begin work. A deadline of one week after the workshop was set for participants to confirm their ownership of or involvement in specific actions. A follow-up meeting in person is planned for the end of February 2026, likely in Bern, where groups will share progress and exchange experiences. Participants were asked to indicate their availability via a [Doodle poll](https://doodle.com/group-poll/participate/dLBoQJXa).
+
+The first draft of the Track 4 report for swissuniversities is due in November 2026. Between now and then, the prioritised action set from this workshop provides a clear roadmap: start with the Simple items to build momentum, invest analytical effort in the Complicated ones, and convene broadly around the Complex challenges that will shape the future of academic metadata interoperability in Switzerland.
+
+All workshop materials — the Trello board, Miro board, and presentation slides — remain accessible to participants and the wider NAIF community.
