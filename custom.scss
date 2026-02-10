@@ -52,6 +52,11 @@ h2 {
     font-size: smaller;
 }
 
+figcaption,
+.figure-caption {
+    color: $body-color;
+}
+
 #quarto-document-content {
     margin-top: 0;
     padding-top: 0;

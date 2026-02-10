@@ -94,7 +94,7 @@ Use an event entry for announcements and event documentation.
 ## Reuse and identifiers
 
 - Link outputs with persistent identifiers (DOIs, ROR, ORCID references) whenever relevant.
-- NAIF deliverables are archived on Zenodo: https://zenodo.org/communities/naif
+- NAIF deliverables are archived on Zenodo: [Zenodo community](https://zenodo.org/communities/naif)
 
 ## Templates
 
@@ -112,5 +112,4 @@ Use an event entry for announcements and event documentation.
 
 ## Code of conduct
 
-All contributors are expected to follow the Contributor Covenant code of conduct:
-https://www.contributor-covenant.org/version/3/0/code_of_conduct/
+All contributors are expected to follow the [Contributor Covenant code of conduct](https://www.contributor-covenant.org/version/3/0/code_of_conduct/).

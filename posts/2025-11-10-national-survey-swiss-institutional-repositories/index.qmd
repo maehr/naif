@@ -29,15 +29,15 @@ To support respondents, two Q&A sessions will be organised:
 
 The survey draws inspiration from major international efforts, including:
 
-- https://doi.org/10.5281/zenodo.10390626
-- https://doi.org/10.5281/zenodo.10255559
-- https://coar-repositories.org/news-updates/open-consultation-crafting-a-vision-for-european-repositories/
-- https://doi.org/10.5281/zenodo.15730917
+- [DOI 10.5281/zenodo.10390626](https://doi.org/10.5281/zenodo.10390626)
+- [DOI 10.5281/zenodo.10255559](https://doi.org/10.5281/zenodo.10255559)
+- [COAR Open Consultation](https://coar-repositories.org/news-updates/open-consultation-crafting-a-vision-for-european-repositories/)
+- [DOI 10.5281/zenodo.15730917](https://doi.org/10.5281/zenodo.15730917)
 
-- https://barcelona-declaration.org/
+- [Barcelona Declaration](https://barcelona-declaration.org/)
 
 This will be the first national overview of repository maturity and practices in Switzerland. Findings will inform coordinated actions and shared services, and aggregated results will be published openly on Zenodo within the NAIF community.
 
 Deadline: 15 December 2025  
 Contact: mailto:naif-survey@library.ethz.ch  
-Take the survey: https://www.surveyhero.com/c/naif-repositories-2025
+Take the survey: [SurveyHero form](https://www.surveyhero.com/c/naif-repositories-2025)

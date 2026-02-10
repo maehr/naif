@@ -31,4 +31,4 @@ Registration was not available.
 
 ## Materials
 
-- Slides: https://github.com/eth-library/naif/raw/main/documents/2025-08-28_NAIF_information_event.pdf
+- Slides: [Slides PDF](https://github.com/eth-library/naif/raw/main/documents/2025-08-28_NAIF_information_event.pdf)

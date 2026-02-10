@@ -6,7 +6,7 @@ description: "NAIF deliverables and documentation on Zenodo, with guidance on ho
 
 NAIF deliverables are archived on Zenodo to ensure long-term access and citability (DOIs).
 
-- Zenodo community: https://zenodo.org/communities/naif
+- [Zenodo community](https://zenodo.org/communities/naif)
 
 ## How to cite
 

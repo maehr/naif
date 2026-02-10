@@ -21,7 +21,7 @@ toc: true
 ---
 
 ::: {.callout-note}
-Originally published (31 October 2025) at: https://yearofscientometrics.ethz.ch/responsible-use-of-quantitative-scientometric-indicators-insights-from-the-6th-syos-workshop/
+Originally published (31 October 2025) at: [Swiss Year of Scientometrics blog](https://yearofscientometrics.ethz.ch/responsible-use-of-quantitative-scientometric-indicators-insights-from-the-6th-syos-workshop/)
 :::
 
 ![Participants discussing in groups at the 6th SYoS workshop](images/IMG_8754.jpeg){fig-cap="Participants of the 6th SYoS workshop at ETH Zurich. Rights: ETH Zurich / Annette Guignard."}
