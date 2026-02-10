@@ -67,7 +67,7 @@
     "href": "publishing-guidelines.html#templates",
     "title": "Publishing guidelines",
     "section": "Templates",
-    "text": "Templates\n\nNews post template\n---\ntitle: \"&lt;Title (&lt;= 70 chars)&gt;\"\ndate: \"YYYY-MM-DD\"\nauthor: \"&lt;Author name&gt;\"\ndescription: \"&lt;Teaser (&lt;= 280 chars)&gt;\"\nother-links:\n  - text: \"Related event: &lt;Event title&gt;\"\n    href: \"../../events/&lt;yyyy-mm-dd-slug&gt;/\"\ncategories:\n  - \"Track 1\" # or: Track 2, Track 3, Track 4, General\ntags:\n  - \"&lt;tag 1&gt;\"\n  - \"&lt;tag 2&gt;\"\n  - \"&lt;tag 3&gt;\"\nproofread: false\nimage: \"images/&lt;listing-card-image&gt;\"\ntoc: true\n---\n\n&lt;!--\nChecklist (manual):\n- Title &lt;= 70 characters\n- Text 500-3000 characters (guideline)\n- British English spelling and style (unless this is a repost)\n- Teaser &lt;= 280 characters\n- Exactly 1 category: Track 1-4 or General\n- Exactly 3 tags\n- 1-3 images, each with alt text + caption + rights attribution\n- Proofread true/false is set\n- Optional: author portrait, institution portrait (&lt;= 280 chars each)\n- References section only when using Pandoc citeproc (`bibliography` + `[@key]`)\n--&gt;\n\n::: {.lead}\n&lt;Write a 1-2 paragraph lead without a `## Lead` heading&gt;\n:::\n\n## Why it matters\n\n&lt;Write the post&gt;\n\n![Alt text](images/&lt;image&gt;.jpg){fig-cap=\"Caption. Rights: ...\"}\n\n\nEvent template\n---\ntitle: \"&lt;Title (&lt;= 70 chars)&gt;\"\ndate: \"YYYY-MM-DD\"\nauthor: \"&lt;Organizer name&gt;\"\nauthor-title: \"Organizer\"\ndescription: \"&lt;Teaser (&lt;= 280 chars)&gt;\"\nother-links:\n  - text: \"Related post: &lt;Post title&gt;\"\n    href: \"../../posts/&lt;yyyy-mm-dd-slug&gt;/\"\ncategories:\n  - \"Organised by NAIF\" # or: NAIF participation, NAIF-related topic\ntags:\n  - \"&lt;tag 1&gt;\"\n  - \"&lt;tag 2&gt;\"\n  - \"&lt;tag 3&gt;\"\nproofread: false\nimage: \"images/&lt;listing-card-image&gt;\" # For NAIF-run events you may use: ../../images/logos/all-logos.jpg\ntoc: true\n---\n\n&lt;!--\nChecklist (manual):\n- Title &lt;= 70 characters\n- Text 500-3000 characters (guideline)\n- British English spelling and style (unless this is a repost)\n- Teaser &lt;= 280 characters\n- Exactly 1 category: Organised by NAIF, NAIF participation, or NAIF-related topic\n- Exactly 3 tags\n- 1-3 images, each with alt text + caption + rights attribution\n- Proofread true/false is set\n--&gt;\n\n## Details\n\n- Date:\n- Time:\n- Location:\n- Registration: &lt;https://example.org/registration&gt;\n- Event page: &lt;https://example.org/event&gt;\n\n## About\n\n&lt;Describe the event&gt;"
+    "text": "Templates\n\nNews post template\n---\ntitle: \"&lt;Title (&lt;= 70 chars)&gt;\"\ndate: \"YYYY-MM-DD\"\nauthor: \"&lt;Author name&gt;\"\ndescription: \"&lt;Teaser (&lt;= 280 chars)&gt;\"\nother-links:\n  - text: \"Related event: &lt;Event title&gt;\"\n    href: \"../../events/&lt;yyyy-mm-dd-slug&gt;/\"\ncategories:\n  - \"Track 1\" # or: Track 2, Track 3, Track 4, General\ntags:\n  - \"&lt;tag 1&gt;\"\n  - \"&lt;tag 2&gt;\"\n  - \"&lt;tag 3&gt;\"\nproofread: false\nimage: \"images/&lt;listing-card-image&gt;\"\nimage-alt: \"&lt;Describe the image for screen readers&gt;\"\nimage-caption: \"&lt;Caption with rights attribution&gt;\"\ntoc: true\n---\n\n&lt;!--\nChecklist (manual):\n- Title &lt;= 70 characters\n- Text 500-3000 characters (guideline)\n- British English spelling and style (unless this is a repost)\n- Teaser &lt;= 280 characters\n- Exactly 1 category: Track 1-4 or General\n- Exactly 3 tags\n- 1-3 images, each with alt text + caption + rights attribution\n- Proofread true/false is set\n- Optional: author portrait, institution portrait (&lt;= 280 chars each)\n- References section only when using Pandoc citeproc (`bibliography` + `[@key]`)\n--&gt;\n\n::: {.lead}\n&lt;Write a 1-2 paragraph lead without a `## Lead` heading&gt;\n:::\n\n## Why it matters\n\n&lt;Write the post&gt;\n\n![Alt text](images/&lt;image&gt;.jpg){fig-cap=\"Caption. Rights: ...\"}\n\n\nEvent template\n---\ntitle: \"&lt;Title (&lt;= 70 chars)&gt;\"\ndate: \"YYYY-MM-DD\"\nauthor: \"&lt;Organizer name&gt;\"\nauthor-title: \"Organizer\"\ndescription: \"&lt;Teaser (&lt;= 280 chars)&gt;\"\nother-links:\n  - text: \"Related post: &lt;Post title&gt;\"\n    href: \"../../posts/&lt;yyyy-mm-dd-slug&gt;/\"\ncategories:\n  - \"Organised by NAIF\" # or: NAIF participation, NAIF-related topic\ntags:\n  - \"&lt;tag 1&gt;\"\n  - \"&lt;tag 2&gt;\"\n  - \"&lt;tag 3&gt;\"\nproofread: false\nimage: \"images/&lt;listing-card-image&gt;\" # For NAIF-run events you may use: ../../images/logos/all-logos.jpg\nimage-alt: \"&lt;Describe the image for screen readers&gt;\"\nimage-caption: \"&lt;Caption with rights attribution&gt;\"\ntoc: true\n---\n\n&lt;!--\nChecklist (manual):\n- Title &lt;= 70 characters\n- Text 500-3000 characters (guideline)\n- British English spelling and style (unless this is a repost)\n- Teaser &lt;= 280 characters\n- Exactly 1 category: Organised by NAIF, NAIF participation, or NAIF-related topic\n- Exactly 3 tags\n- 1-3 images, each with alt text + caption + rights attribution\n- Proofread true/false is set\n--&gt;\n\n## Details\n\n- Date:\n- Time:\n- Location:\n- Registration: &lt;https://example.org/registration&gt;\n- Event page: &lt;https://example.org/event&gt;\n\n## About\n\n&lt;Describe the event&gt;"
   },
   {
     "objectID": "publishing-guidelines.html#code-of-conduct",
@@ -81,7 +81,7 @@
     "href": "posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html",
     "title": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”",
     "section": "",
-    "text": "Note\n\n\n\nOriginally published (12 November 2025) at: Zurich University Library blog\nHow can we create an open research infrastructure in Switzerland that makes the entire research output of Switzerland visible? This question was explored at the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland,” which took place on Wednesday, November 5, 2025. The main part of the event focused on three reports from Denmark, the Netherlands, and Finland."
+    "text": "How can we create an open research infrastructure in Switzerland that makes the entire research output of Switzerland visible? This question was explored at the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland,” which took place on Wednesday, November 5, 2025. The main part of the event focused on three reports from Denmark, the Netherlands, and Finland."
   },
   {
     "objectID": "posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html#why-are-we-discussing-this",
@@ -109,7 +109,7 @@
     "href": "posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html",
     "title": "Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop",
     "section": "",
-    "text": "Note\n\n\n\nOriginally published (31 October 2025) at: Swiss Year of Scientometrics blog\nMany institutions currently struggle with the appropriate and responsible use of quantitative scientometric indicators (QSI) while they are trying to implement the Declaration on Research Assessment (DORA) or an action plan for the Coalition for Advancing Research Assessment (CoARA). The 6th workshop of the Swiss Year of Scientometrics (SYoS) brought together 27 stakeholders and experts from Swiss Higher Education Institutions (HEI) to discuss the responsible QSI use in research assessment.\nThe workshop was jointly organised by Dr Martin Jaekel (ZHAW), Dr Rüdiger Mutz (CHESS, UZH), and Dr David Johann (ETH Library), and moderated by Dr Regine Maritz (SNSF). The event is a contribution to NAIF (National Approach for Interoperable repositories and Findable research results), a project supported by swissuniversities involving eight Swiss HEIs and was held at ETH Zurich on 11th of September 2025."
+    "text": "Many institutions currently struggle with the appropriate and responsible use of quantitative scientometric indicators (QSI) while they are trying to implement the Declaration on Research Assessment (DORA) or an action plan for the Coalition for Advancing Research Assessment (CoARA). The 6th workshop of the Swiss Year of Scientometrics (SYoS) brought together 27 stakeholders and experts from Swiss Higher Education Institutions (HEI) to discuss the responsible QSI use in research assessment.\nThe workshop was jointly organised by Dr Martin Jaekel (ZHAW), Dr Rüdiger Mutz (CHESS, UZH), and Dr David Johann (ETH Library), and moderated by Dr Regine Maritz (SNSF). The event is a contribution to NAIF (National Approach for Interoperable repositories and Findable research results), a project supported by swissuniversities involving eight Swiss HEIs and was held at ETH Zurich on 11th of September 2025."
   },
   {
     "objectID": "posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html#author",
@@ -117,13 +117,6 @@
     "title": "Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop",
     "section": "Author",
     "text": "Author\n\nMartin Jaekel holds a PhD from the University of Cambridge in Life Sciences and subsequently became a PI at the University of Cambridge. He then worked as Management Consultant in Paris with a focus on biotech / pharma before joining the Agence Nationale de la Rechere as International Affairs Mananger. Subsequently he worked in for an EU Programme as Programme Officer and is now Head of Research & Development and Technology Transfer at the Zurich University of Applied Sciences."
-  },
-  {
-    "objectID": "posts/2025-08-28-naif-information-event/index.html",
-    "href": "posts/2025-08-28-naif-information-event/index.html",
-    "title": "Launching NAIF: A Look Back at the Information Event",
-    "section": "",
-    "text": "ETH Zurich Staffnet news page about the NAIF information event"
   },
   {
     "objectID": "posts/2025-08-28-naif-information-event/index.html#why-it-matters",
@@ -168,18 +161,11 @@
     "text": "ORCID Community Town Hall 2026\n\n\n\nNAIF-related topic\n\n\n\nTwo live webinar sessions where ORCID shares 2025 progress and previews plans for 2026.\n\n\n\n\n\nMar 25, 2026\n\n\nORCID\n\n\n\n\n\n\n\n\n\n\n\n\nSOAD Online Event: The Barcelona Declaration in Switzerland\n\n\n\nNAIF-related topic\n\n\n\nSOAD spring online event featuring Swiss signatories of the Barcelona Declaration (11 March 2026).\n\n\n\n\n\nMar 11, 2026\n\n\nSwiss Open Academic Data (SOAD)\n\n\n\n\n\n\n\n\n\n\n\n\nCHESS-Workshop “Berufungsverfahren im Kontext von DORA und CoARA”\n\n\n\nNAIF-related topic\n\n\n\nWorkshop on appointment procedures in the context of DORA and CoARA (ETH Zurich, 4 March 2026).\n\n\n\n\n\nMar 4, 2026\n\n\nCHESS (UZH) & ETH Library\n\n\n\n\n\n\n\n\n\n\n\n\nElevating your Research’s Impact and Visibility with ORCID and DataCite\n\n\n\nNAIF-related topic\n\n\n\nHands-on webinar on integrating ORCID and DataCite workflows (ORCID Search & Link and Auto-Update).\n\n\n\n\n\nFeb 10, 2026\n\n\nORCID & DataCite\n\n\n\n\n\n\n\n\n\n\n\n\nResearch on Research Event 2026 (RoR)\n\n\n\nNAIF participation\n\n\n\nTwo-day Research on Research community event at the University of Zurich (29-30 January 2026).\n\n\n\n\n\nJan 29, 2026\n\n\nCenter for Reproducible Science and Research Synthesis (CRS)\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Track 4)\n\n\n\nOrganised by NAIF\n\n\n\nOnline workshop on improving academic metadata for Swiss repositories and institutions.\n\n\n\n\n\nDec 8, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (German)\n\n\n\nOrganised by NAIF\n\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 26, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey Q&A session (French)\n\n\n\nOrganised by NAIF\n\n\n\nQ&A session supporting the national survey on Swiss institutional repositories (Track 3).\n\n\n\n\n\nNov 20, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Policy to Practice: National ORI framework\n\n\n\nOrganised by NAIF\n\n\n\nEvent on building a National Open Research Information framework in Switzerland (Track 2).\n\n\n\n\n\nNov 5, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop: Improving academic metadata (Neuchatel)\n\n\n\nOrganised by NAIF\n\n\n\nWorkshop on improving academic metadata for Swiss repositories and institutions (Track 4).\n\n\n\n\n\nOct 15, 2025\n\n\nNAIF\n\n\n\n\n\n\n\n\n\n\n\n\nSwiss Open Academic Data Day (SOAD Day)\n\n\n\nNAIF participation\n\n\n\nFirst Swiss Open Academic Data Day at ETH Zurich, featuring a NAIF lightning talk on enhancing academic metadata.\n\n\n\n\n\nSep 10, 2025\n\n\nETH Library\n\n\n\n\n\n\n\n\n\n\n\n\nNAIF information event\n\n\n\nOrganised by NAIF\n\n\n\nInformation event introducing NAIF and its goals.\n\n\n\n\n\nAug 28, 2025\n\n\nNAIF\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\nNote\n\n\n\nFor past events, registration links are disabled (shown struck through) and kept for reference only."
   },
   {
-    "objectID": "events/2026-03-25-orcid-community-town-hall-2026/index.html",
-    "href": "events/2026-03-25-orcid-community-town-hall-2026/index.html",
-    "title": "ORCID Community Town Hall 2026",
-    "section": "",
-    "text": "Date: Wednesday, 25 March 2026\nLocation: Online (webinar)\nSession 1 (APAC): 01:00 UTC (02:00 CET)\nSession 2 (EMEA/Americas): 15:00 UTC (16:00 CET)\nRegistration (APAC): https://orcid-org.zoom.us/webinar/register/7417655591587/WN_OxReoANURY-S4WI3Ln5Nyw\nRegistration (EMEA/Americas): https://orcid-org.zoom.us/webinar/register/WN_Hc5KHx2tTniRrMmgR_7BkA\nEvent page: https://info.orcid.org/event/orcid-community-town-hall-2026/"
-  },
-  {
     "objectID": "events/2026-03-25-orcid-community-town-hall-2026/index.html#details",
     "href": "events/2026-03-25-orcid-community-town-hall-2026/index.html#details",
     "title": "ORCID Community Town Hall 2026",
-    "section": "",
-    "text": "Date: Wednesday, 25 March 2026\nLocation: Online (webinar)\nSession 1 (APAC): 01:00 UTC (02:00 CET)\nSession 2 (EMEA/Americas): 15:00 UTC (16:00 CET)\nRegistration (APAC): https://orcid-org.zoom.us/webinar/register/7417655591587/WN_OxReoANURY-S4WI3Ln5Nyw\nRegistration (EMEA/Americas): https://orcid-org.zoom.us/webinar/register/WN_Hc5KHx2tTniRrMmgR_7BkA\nEvent page: https://info.orcid.org/event/orcid-community-town-hall-2026/"
+    "section": "Details",
+    "text": "Details\n\nDate: Wednesday, 25 March 2026\nLocation: Online (webinar)\nSession 1 (APAC): 01:00 UTC (02:00 CET)\nSession 2 (EMEA/Americas): 15:00 UTC (16:00 CET)\nRegistration (APAC): https://orcid-org.zoom.us/webinar/register/7417655591587/WN_OxReoANURY-S4WI3Ln5Nyw\nRegistration (EMEA/Americas): https://orcid-org.zoom.us/webinar/register/WN_Hc5KHx2tTniRrMmgR_7BkA\nEvent page: https://info.orcid.org/event/orcid-community-town-hall-2026/"
   },
   {
     "objectID": "events/2026-03-25-orcid-community-town-hall-2026/index.html#about",
@@ -189,18 +175,11 @@
     "text": "About\nORCID’s senior team shares progress from 2025 and previews plans for 2026, followed by Q&A and discussion."
   },
   {
-    "objectID": "events/2026-03-04-chess-workshop-dora-coara/index.html",
-    "href": "events/2026-03-04-chess-workshop-dora-coara/index.html",
-    "title": "CHESS-Workshop “Berufungsverfahren im Kontext von DORA und CoARA”",
-    "section": "",
-    "text": "Date: Wednesday, 4 March 2026\nTime: 15:00-17:00\nLocation: ETH HG E 42\nRegistration: david.johann@library.ethz.ch (registration required; limited number of participants)\nLanguages: German and English\nEvent page: https://www.chess.uzh.ch/de/veranstalten.html"
-  },
-  {
     "objectID": "events/2026-03-04-chess-workshop-dora-coara/index.html#details",
     "href": "events/2026-03-04-chess-workshop-dora-coara/index.html#details",
     "title": "CHESS-Workshop “Berufungsverfahren im Kontext von DORA und CoARA”",
-    "section": "",
-    "text": "Date: Wednesday, 4 March 2026\nTime: 15:00-17:00\nLocation: ETH HG E 42\nRegistration: david.johann@library.ethz.ch (registration required; limited number of participants)\nLanguages: German and English\nEvent page: https://www.chess.uzh.ch/de/veranstalten.html"
+    "section": "Details",
+    "text": "Details\n\nDate: Wednesday, 4 March 2026\nTime: 15:00-17:00\nLocation: ETH HG E 42\nRegistration: david.johann@library.ethz.ch (registration required; limited number of participants)\nLanguages: German and English\nEvent page: https://www.chess.uzh.ch/de/veranstalten.html"
   },
   {
     "objectID": "events/2026-03-04-chess-workshop-dora-coara/index.html#about",
@@ -208,13 +187,6 @@
     "title": "CHESS-Workshop “Berufungsverfahren im Kontext von DORA und CoARA”",
     "section": "About",
     "text": "About\nDer Workshop wird in Kooperation mit der ETH-Bibliothek organisiert.\nIn der Schweiz haben zahlreiche Hochschulen die San Francisco Declaration on Research Assessment (DORA) unterzeichnet und/oder sind Mitglied der Coalition for Advancing Research Assessment (CoARA) geworden. DORA und CoARA zielen auf eine Reform der Bewertung wissenschaftlicher Leistungen ab, die u.a. durch folgende Prinzipien gekennzeichnet ist: der Verzicht auf bestimmte als problematisch erachtete Metriken, die Priorisierung von Qualität vor Quantität sowie eine umfassendere Beurteilung von Forschenden anhand vielfältiger Kriterien - nicht nur aufgrund von Publikationsleistungen und Drittmittelakquise.\nDas Commitment, das Hochschulen mit der DORA-Unterzeichnung bzw. CoARA-Mitgliedschaft eingegangen sind, spiegelt sich zunehmend in angepassten Prozessen bei Berufungsverfahren und anderen Stellenbesetzungen wider. Der Workshop dient dem Erfahrungsaustausch und hat zum Ziel, Herausforderungen bei der Implementierung zu diskutieren, Tools und Best Practices zu identifizieren und Weiterentwicklungsansätze für die eigene Institution zu erarbeiten.\nUm von nationalen und internationalen Erfahrungen zu profitieren, werden drei Impulsvorträge angeboten:\nKarin Gilland Lutz und Mihaela Falub stellen das Projekt HI-FRAME vor, das darauf abzielte, die Berufungen von UZH-Professor:innen mit der Open-Science-Bewegung in Einklang zu bringen.\nKatrin Brugger und Andreas Raggautz stellen das Activity Framework der Universität Graz vor, welches die Leistungen von Forschenden differenzierter darzustellen versucht.\nPeter Kraker und Christoph Arthofer präsentieren VisConnect, ein Projekt, in dem Open Knowledge Maps gemeinsam mit der IT:U Interdisciplinary Transformation University Austria ein Tool entwickelt hat, das die Umgestaltung von Forschungsbewertungsprozessen unterstützt."
-  },
-  {
-    "objectID": "events/2026-01-29-ror-event-2026/index.html",
-    "href": "events/2026-01-29-ror-event-2026/index.html",
-    "title": "Research on Research Event 2026 (RoR)",
-    "section": "",
-    "text": "Graphic for the Research on Research Event 2026"
   },
   {
     "objectID": "events/2026-01-29-ror-event-2026/index.html#details",
@@ -231,13 +203,6 @@
     "text": "About\nThe Research on Research Event 2026 brings together the Swiss Research on Research community for two days of talks, discussion, and collaborative work."
   },
   {
-    "objectID": "events/2025-11-26-survey-qa-de/index.html",
-    "href": "events/2025-11-26-survey-qa-de/index.html",
-    "title": "Survey Q&A session (German)",
-    "section": "",
-    "text": "Survey page for the NAIF repositories survey"
-  },
-  {
     "objectID": "events/2025-11-26-survey-qa-de/index.html#details",
     "href": "events/2025-11-26-survey-qa-de/index.html#details",
     "title": "Survey Q&A session (German)",
@@ -245,25 +210,11 @@
     "text": "Details\n\nDate: Wednesday, 26 November 2025\nTime: 15:00-16:00\nLanguage: German\nContact: mailto:naif-survey@library.ethz.ch"
   },
   {
-    "objectID": "events/2025-11-05-from-policy-to-practice/index.html",
-    "href": "events/2025-11-05-from-policy-to-practice/index.html",
-    "title": "From Policy to Practice: National ORI framework",
-    "section": "",
-    "text": "Panel speakers at the policy-to-practice event"
-  },
-  {
     "objectID": "events/2025-11-05-from-policy-to-practice/index.html#details",
     "href": "events/2025-11-05-from-policy-to-practice/index.html#details",
     "title": "From Policy to Practice: National ORI framework",
     "section": "Details",
     "text": "Details\n\nDate: Wednesday, 5 November 2025\nLocation: University of Zurich\nProgram (flyer): Flyer PDF\nRegistration: https://ema.uzh.ch/RLX4H"
-  },
-  {
-    "objectID": "events/2025-09-10-soad-day/index.html",
-    "href": "events/2025-09-10-soad-day/index.html",
-    "title": "Swiss Open Academic Data Day (SOAD Day)",
-    "section": "",
-    "text": "Note\n\n\n\nThis event has already taken place. Any registration information has been disabled and is shown for reference only."
   },
   {
     "objectID": "events/2025-09-10-soad-day/index.html#details",
@@ -378,13 +329,6 @@
     "text": "ETH Library’s and ETH Zurich’s legal notices are in effect:\n\nDisclaimer & copyright\n\nData protection"
   },
   {
-    "objectID": "events/2025-08-28-information-event/index.html",
-    "href": "events/2025-08-28-information-event/index.html",
-    "title": "NAIF information event",
-    "section": "",
-    "text": "ETH Zurich Staffnet news page about the NAIF information event"
-  },
-  {
     "objectID": "events/2025-08-28-information-event/index.html#details",
     "href": "events/2025-08-28-information-event/index.html#details",
     "title": "NAIF information event",
@@ -397,13 +341,6 @@
     "title": "NAIF information event",
     "section": "Materials",
     "text": "Materials\n\nSlides: Slides PDF"
-  },
-  {
-    "objectID": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html",
-    "href": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html",
-    "title": "Workshop: Improving academic metadata (Neuchatel)",
-    "section": "",
-    "text": "Zenodo record for the NAIF Track 4 SOAD presentation"
   },
   {
     "objectID": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html#details",
@@ -420,25 +357,11 @@
     "text": "About\nThis workshop is part of NAIF Track 4."
   },
   {
-    "objectID": "events/2025-11-20-survey-qa-fr/index.html",
-    "href": "events/2025-11-20-survey-qa-fr/index.html",
-    "title": "Survey Q&A session (French)",
-    "section": "",
-    "text": "Survey page for the NAIF repositories survey"
-  },
-  {
     "objectID": "events/2025-11-20-survey-qa-fr/index.html#details",
     "href": "events/2025-11-20-survey-qa-fr/index.html#details",
     "title": "Survey Q&A session (French)",
     "section": "Details",
     "text": "Details\n\nDate: Thursday, 20 November 2025\nTime: 11:00-12:00\nLanguage: French\nContact: mailto:naif-survey@library.ethz.ch"
-  },
-  {
-    "objectID": "events/2025-12-08-improving-academic-metadata-online/index.html",
-    "href": "events/2025-12-08-improving-academic-metadata-online/index.html",
-    "title": "Workshop: Improving academic metadata (Track 4)",
-    "section": "",
-    "text": "NAIF Track 4 Trello board used for workshop planning"
   },
   {
     "objectID": "events/2025-12-08-improving-academic-metadata-online/index.html#details",
@@ -455,18 +378,11 @@
     "text": "About\nThis workshop focuses on improving academic metadata for Swiss repositories and institutions as part of NAIF Track 4."
   },
   {
-    "objectID": "events/2026-02-10-orcid-datacite-webinar/index.html",
-    "href": "events/2026-02-10-orcid-datacite-webinar/index.html",
-    "title": "Elevating your Research’s Impact and Visibility with ORCID and DataCite",
-    "section": "",
-    "text": "Date: Tuesday, 10 February 2026\nTime: 11:00-12:00 EST (17:00-18:00 CET)\nLocation: Online (webinar)\nRegistration: https://datacite.zoom.us/webinar/register/3017679637295/WN_H5S9VYLZSKqE1g2-XEaR8Q#/registration\nEvent page: https://info.orcid.org/event/elevating-your-researchs-impact-and-visibility-with-orcid-and-datacite/"
-  },
-  {
     "objectID": "events/2026-02-10-orcid-datacite-webinar/index.html#details",
     "href": "events/2026-02-10-orcid-datacite-webinar/index.html#details",
     "title": "Elevating your Research’s Impact and Visibility with ORCID and DataCite",
-    "section": "",
-    "text": "Date: Tuesday, 10 February 2026\nTime: 11:00-12:00 EST (17:00-18:00 CET)\nLocation: Online (webinar)\nRegistration: https://datacite.zoom.us/webinar/register/3017679637295/WN_H5S9VYLZSKqE1g2-XEaR8Q#/registration\nEvent page: https://info.orcid.org/event/elevating-your-researchs-impact-and-visibility-with-orcid-and-datacite/"
+    "section": "Details",
+    "text": "Details\n\nDate: Tuesday, 10 February 2026\nTime: 11:00-12:00 EST (17:00-18:00 CET)\nLocation: Online (webinar)\nRegistration: https://datacite.zoom.us/webinar/register/3017679637295/WN_H5S9VYLZSKqE1g2-XEaR8Q#/registration\nEvent page: https://info.orcid.org/event/elevating-your-researchs-impact-and-visibility-with-orcid-and-datacite/"
   },
   {
     "objectID": "events/2026-02-10-orcid-datacite-webinar/index.html#about",
@@ -476,18 +392,11 @@
     "text": "About\nThis hands-on webinar introduces ways to integrate ORCID and DataCite workflows to improve attribution, tracking, and metadata quality across systems. It focuses on two established integration methods: the ORCID Search & Link wizard and ORCID Auto-Update. Slides and recordings are expected to be shared after the webinar via the DataCite Zenodo Community and the DataCite YouTube channel."
   },
   {
-    "objectID": "events/2026-03-11-soad-online-event/index.html",
-    "href": "events/2026-03-11-soad-online-event/index.html",
-    "title": "SOAD Online Event: The Barcelona Declaration in Switzerland",
-    "section": "",
-    "text": "Date: Wednesday, 11 March 2026\nTime: 15:30-17:00 (CET)\nLocation: Online (Zoom)\nRegistration: https://epfl.zoom.us/meeting/register/KKZKmKXNSlWk2ma9XllNPw#/registration\nOne-pager (PDF): http://soad.ch/wp-content/uploads/2026/01/2026-03-11_SOAD_Online_Event-2.pdf\nEvent page: https://soad.ch/soad-online-event/"
-  },
-  {
     "objectID": "events/2026-03-11-soad-online-event/index.html#details",
     "href": "events/2026-03-11-soad-online-event/index.html#details",
     "title": "SOAD Online Event: The Barcelona Declaration in Switzerland",
-    "section": "",
-    "text": "Date: Wednesday, 11 March 2026\nTime: 15:30-17:00 (CET)\nLocation: Online (Zoom)\nRegistration: https://epfl.zoom.us/meeting/register/KKZKmKXNSlWk2ma9XllNPw#/registration\nOne-pager (PDF): http://soad.ch/wp-content/uploads/2026/01/2026-03-11_SOAD_Online_Event-2.pdf\nEvent page: https://soad.ch/soad-online-event/"
+    "section": "Details",
+    "text": "Details\n\nDate: Wednesday, 11 March 2026\nTime: 15:30-17:00 (CET)\nLocation: Online (Zoom)\nRegistration: https://epfl.zoom.us/meeting/register/KKZKmKXNSlWk2ma9XllNPw#/registration\nOne-pager (PDF): http://soad.ch/wp-content/uploads/2026/01/2026-03-11_SOAD_Online_Event-2.pdf\nEvent page: https://soad.ch/soad-online-event/"
   },
   {
     "objectID": "events/2026-03-11-soad-online-event/index.html#about",
@@ -516,13 +425,6 @@
     "title": "Project start",
     "section": "",
     "text": "NAIF project website homepage\n\n\nWe are pleased to announce the launch of the NAIF project."
-  },
-  {
-    "objectID": "posts/2025-09-26-naif-at-soad-day/index.html",
-    "href": "posts/2025-09-26-naif-at-soad-day/index.html",
-    "title": "Enhancing Open Academic Data through NAIF Track 4",
-    "section": "",
-    "text": "Swiss Open Academic Data website"
   },
   {
     "objectID": "posts/2025-09-26-naif-at-soad-day/index.html#why-it-matters",
