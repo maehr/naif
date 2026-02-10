@@ -13,7 +13,7 @@ tags:
   - "Indicators"
   - "Workshop"
 proofread: true
-image: "images/IMG_8754.jpeg"
+image: "images/IMG_8727modified.jpeg"
 source:
   url: "https://yearofscientometrics.ethz.ch/responsible-use-of-quantitative-scientometric-indicators-insights-from-the-6th-syos-workshop/"
   note: "Repost with permission. Originally published by Swiss Year of Scientometrics (SYoS)."
@@ -24,7 +24,7 @@ toc: true
 Originally published (31 October 2025) at: [Swiss Year of Scientometrics blog](https://yearofscientometrics.ethz.ch/responsible-use-of-quantitative-scientometric-indicators-insights-from-the-6th-syos-workshop/)
 :::
 
-![Participants discussing in groups at the 6th SYoS workshop](images/IMG_8754.jpeg){fig-cap="Participants of the 6th SYoS workshop at ETH Zurich. Rights: ETH Zurich / Annette Guignard."}
+![Participants discussing in groups at the 6th SYoS workshop](images/IMG_8727modified.jpeg){fig-cap="Participants of the 6th SYoS workshop at ETH Zurich. Rights: ETH Zurich / Annette Guignard."}
 
 Many institutions currently struggle with the appropriate and responsible use of quantitative scientometric indicators (QSI) while they are trying to implement the Declaration on Research Assessment (DORA) or an action plan for the Coalition for Advancing Research Assessment (CoARA). The 6th workshop of the Swiss Year of Scientometrics (SYoS) brought together 27 stakeholders and experts from Swiss Higher Education Institutions (HEI) to discuss the responsible QSI use in research assessment.
 
@@ -34,7 +34,7 @@ The workshop was jointly organised by Dr Martin Jaekel (ZHAW), Dr Rüdiger Mutz 
 
 ![Audience watching Ginny Barbour giving her online lightning talk](images/IMG_8717modified2.jpeg){fig-cap="Ginny Barbour giving her online lightning talk. Rights: ETH Zurich / Annette Guignard."}
 
-Professor Ginny Barbour, Co-Chair of the Declaration on Research Assessment (DORA) opened the workshop with a lightning talk on [Using Quantitative Indicators Responsibly in Research Assessment](https://doi.org/10.5281/zenodo.17481395). She outlined why quantitative metrics were often flawed or misapplied, despite being widely used. Barbour emphasized that indicators should be transparent, contextual, and fair, and complement expert qualitative assessment, as opposed to replacing them. She also introduced DORA’s new Practical Guide to Responsible Research Assessment. The guide provides feasible steps for institutions to develop fair evaluation strategies accounting for the specific context.
+Professor Ginny Barbour, Co-Chair of the Declaration on Research Assessment (DORA), opened the workshop with a lightning talk on [Using Quantitative Indicators Responsibly in Research Assessment](https://doi.org/10.5281/zenodo.17481395). She outlined why quantitative metrics were often flawed or misapplied, despite being widely used. Barbour emphasized that indicators should be transparent, contextual, and fair, and complement expert qualitative assessment, as opposed to replacing them. She also introduced DORA’s new Practical Guide to Responsible Research Assessment. The guide provides feasible steps for institutions to develop fair evaluation strategies accounting for the specific context.
 
 Barbour’s input but also global frameworks, such as the Leiden Manifesto, highlighted that there is a global momentum for reforming research assessment and reducing reliance on journal-based metrics, such as Journal Impact Factors or the h-index.
 

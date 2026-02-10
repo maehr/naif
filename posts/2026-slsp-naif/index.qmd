@@ -3,11 +3,11 @@ title: "SLSP Strategy 2026–2029: Where NAIF connects"
 date: 2026-02-09
 draft: true
 authors:
-  - name: Moritz Mähr
+  - name: Dr Moritz Mähr
     orcid: 0000-0002-1367-1618
     affiliations:
       - name: ETH Zurich
-  - name: David Johann
+  - name: Dr David Johann
     orcid: 0000-0002-8970-9686
     affiliations:
       - name: ETH Zurich
@@ -36,11 +36,11 @@ Checklist (manual):
 - Optional: max. 3 literature references
 -->
 
-## Lead
-
+::: {.lead}
 In January 2026, the [Swiss Library Service Platform (SLSP)](https://slsp.ch/) published its [strategy for the period 2026–2029](https://slsp.ch/en/strategy/). The document outlines how SLSP plans to evolve from a library management infrastructure into a platform for academic information that is user-oriented, data- and AI-driven, interoperable, and open. NAIF operates in a different space — repository interoperability and metadata standardization — but several strategic themes overlap in ways worth noting.
 
 This post maps the areas of alignment and explains how we see the relationship between the two initiatives going forward.
+:::
 
 ## Why it matters
 
@@ -66,7 +66,7 @@ That said, the areas of alignment are real and worth acting on. We already see c
 
 We welcome continued dialogue — whether through our [events](https://maehr.github.io/naif/events/index.html), through the [working group](https://maehr.github.io/naif/about.html#unified-outcome-creation-of-a-working-group) we are establishing, or informally. If you are involved with SLSP or its member libraries and want to stay in touch with NAIF's progress, you can [fill out our contact form](https://forms.gle/hAQwHaitKDZ3Cf846) or reach us at [naif@library.ethz.ch](mailto:naif@library.ethz.ch).
 
-## References
+## Sources
 
 - SLSP. (2025). *Strategy 2026 to 2029*. <https://slsp.ch/en/strategy/>
 - Barcelona Declaration on Open Research Information. <https://barcelona-declaration.org/>

@@ -5,7 +5,7 @@ author: "ORCID"
 author-title: "Organizer"
 description: "Two live webinar sessions where ORCID shares 2025 progress and previews plans for 2026."
 categories:
-  - "NAIF related"
+  - "NAIF-related topic"
 tags:
   - "ORCID"
   - "Community"

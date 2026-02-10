@@ -32,6 +32,11 @@ uv run quarto render
 
 This repository uses the following default Python tooling for agentic workflows.
 
+### Agentic content policy
+
+- When generating or editing blog posts and event entries, use British English spelling and style.
+- Exception: reposts may retain original wording when needed for faithful attribution.
+
 #### 1. Core development tooling (Astral + testing)
 
 - uv
@@ -107,10 +112,43 @@ uv run quarto render
 - `description` (teaser)
 - `categories`:
   - Blog posts: exactly one of: `Track 1`, `Track 2`, `Track 3`, `Track 4`, `General`
-  - Events: exactly one of `NAIF event`, `NAIF participation`, `NAIF related`
+  - Events: exactly one of `Organised by NAIF`, `NAIF participation`, `NAIF-related topic`
 - `tags`: exactly 3 tags
 - `proofread`: `true` or `false`
 - `image`: a local image path (used for listing cards)
+
+### Language and spelling
+
+- Blog posts and event pages must use British English.
+- Exception: reposts may preserve source-language wording where necessary.
+
+### Cross-linking posts and events
+
+- Use Quarto front matter `other-links` to connect related pages.
+- Add links in both directions whenever there is a clear relation (event page <-> post recap).
+- Prefer relative links:
+  - from posts: `../../events/<yyyy-mm-dd-slug>/`
+  - from events: `../../posts/<yyyy-mm-dd-slug>/`
+
+### Author names and titles
+
+- Keep author names and mentions consistent across pages.
+- Use academic titles (`Dr`, `Prof`, etc.) consistently for people where the title is known.
+- Do not mix titled and untitled variants of the same person across pages.
+
+### Post structure and references
+
+- Do not use an explicit `## Lead` heading.
+- Start posts with a lead paragraph block:
+
+```markdown
+::: {.lead} Introductory paragraph(s). :::
+```
+
+- Use `## References` only when references are generated with Pandoc citeproc (`bibliography` +
+  citation keys such as `[@key]`).
+- If citeproc is not used, include links inline in the text or in a `## Sources` /
+  `## Further reading` section.
 
 ### Images
 

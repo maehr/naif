@@ -129,19 +129,19 @@ Public guidance for project partners and contributors on how to write news posts
 
 ### Project leaders
 
-- [Dr. David Johann](https://yearofscientometrics.ethz.ch/author/4021650ethz-ch/) (ETH Library, ETH Zurich)
+- [Dr David Johann](https://yearofscientometrics.ethz.ch/author/4021650ethz-ch/) (ETH Library, ETH Zurich)
 
 ### Project coordinator
 
-- [Dr. Moritz Mähr](https://moritzmaehr.ch/) (ETH Library, ETH Zurich)
+- [Dr Moritz Mähr](https://moritzmaehr.ch/) (ETH Library, ETH Zurich)
 
 ### Work packages leaders
 
 - [Pascale Bouton](https://people.epfl.ch/pascale.bouton) (EPFL)
-- [Dr. David Johann](https://yearofscientometrics.ethz.ch/author/4021650ethz-ch/) (ETH Library, ETH Zurich)
-- [Dr. Martin Jaekel](https://www.zhaw.ch/en/about-us/person/jaek) (ZHAW Zurich University of Applied Sciences)
-- [Dr. Andrea Malits](https://www.ub.uzh.ch/en/ueber-die-ub/ub_organisation/ub_mitarbeitende/andrea_malits.html) (University of Zurich)
-- [Dr. Rüdiger Mutz](https://www.chess.uzh.ch/en/en-about/geschaeftsstelle/Project-Managments/rmutz.html) (CHESS, University of Zurich)
+- [Dr David Johann](https://yearofscientometrics.ethz.ch/author/4021650ethz-ch/) (ETH Library, ETH Zurich)
+- [Dr Martin Jaekel](https://www.zhaw.ch/en/about-us/person/jaek) (ZHAW Zurich University of Applied Sciences)
+- [Dr Andrea Malits](https://www.ub.uzh.ch/en/ueber-die-ub/ub_organisation/ub_mitarbeitende/andrea_malits.html) (University of Zurich)
+- [Dr Rüdiger Mutz](https://www.chess.uzh.ch/en/en-about/geschaeftsstelle/Project-Managments/rmutz.html) (CHESS, University of Zurich)
 - [Julien Sicot](https://people.epfl.ch/julien.sicot) (EPFL)
 - Stefan Vogt (University of Zurich)
 

@@ -4,8 +4,11 @@ date: "YYYY-MM-DD"
 author: "<Organizer name>"
 author-title: "Organizer"
 description: "<Teaser (<= 280 chars)>"
+other-links:
+  - text: "Related post: <Post title>"
+    href: "../../posts/<yyyy-mm-dd-slug>/"
 categories:
-  - "NAIF event" # or: NAIF participation, NAIF related
+  - "Organised by NAIF" # or: NAIF participation, NAIF-related topic
 tags:
   - "<tag 1>"
   - "<tag 2>"
@@ -19,8 +22,9 @@ toc: true
 Checklist (manual):
 - Title <= 70 characters
 - Text 500-3000 characters (guideline)
+- British English spelling and style (unless this is a repost)
 - Teaser <= 280 characters
-- Exactly 1 category: NAIF event, NAIF participation, or NAIF related
+- Exactly 1 category: Organised by NAIF, NAIF participation, or NAIF-related topic
 - Exactly 3 tags
 - 1-3 images, each with alt text + caption + rights attribution
 - Proofread true/false is set

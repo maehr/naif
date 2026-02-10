@@ -47,6 +47,7 @@ uv run quarto preview
 
 - Blog entries live in `posts/<yyyy-mm-dd>-<slug>/index.qmd`.
 - Every blog entry has its own folder and keeps assets (images) in a local `images/` subfolder.
+- Posts and event pages use British English by default.
 - Reposts must include a clear source note and link back to the original publication.
 
 ## Support

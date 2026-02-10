@@ -4,8 +4,11 @@ date: 2025-11-05
 author: "NAIF"
 author-title: "Organizer"
 description: "Event on building a National Open Research Information framework in Switzerland (Track 2)."
+other-links:
+  - text: "Related post: What Switzerland Can Learn from Other Countries"
+    href: "../../posts/2025-11-12-what-switzerland-can-learn-from-other-countries/"
 categories:
-  - "NAIF event"
+  - "Organised by NAIF"
 tags:
   - "Track 2"
   - "Open research information"
@@ -27,7 +30,3 @@ This event has already taken place. Any registration information has been disabl
 - Location: University of Zurich
 - Program (flyer): [Flyer PDF](https://www.ub.uzh.ch/dam/jcr:5ee157b5-eba2-4b11-b1c9-d5bb7351d84c/Flyer_Panel-discussion_From-policy-to-practice.pdf)
 - Registration: ~~`https://ema.uzh.ch/RLX4H`~~
-
-## Related
-
-- Event review (repost): [/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/](../../posts/2025-11-12-what-switzerland-can-learn-from-other-countries/)

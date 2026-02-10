@@ -2,10 +2,15 @@
 title: "Prioritising Actions for Better Academic Metadata"
 date: "2025-12-08"
 author:
-  - name: "Moritz Mähr"
+  - name: "Dr Moritz Mähr"
     orcid: "0000-0002-1367-1618"
     affiliation: "ETH Library, ETH Zurich"
 description: "NAIF Track 4 held its second workshop to classify and prioritise 18 proposed actions for improving academic metadata in Swiss repositories using the Agreement & Certainty Matrix."
+other-links:
+  - text: "Related event: Workshop Improving academic metadata (Neuchatel)"
+    href: "../../events/2025-10-15-improving-academic-metadata-neuchatel/"
+  - text: "Related event: Workshop Improving academic metadata (Track 4)"
+    href: "../../events/2025-12-08-improving-academic-metadata-online/"
 categories:
   - "Track 4"
 tags:

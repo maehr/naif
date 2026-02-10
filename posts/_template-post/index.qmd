@@ -3,6 +3,9 @@ title: "<Title (<= 70 chars)>"
 date: "YYYY-MM-DD"
 author: "<Author name>"
 description: "<Teaser (<= 280 chars)>"
+other-links:
+  - text: "Related event: <Event title>"
+    href: "../../events/<yyyy-mm-dd-slug>/"
 categories:
   - "Track 1" # or: Track 2, Track 3, Track 4, General
 tags:
@@ -18,16 +21,21 @@ toc: true
 Checklist (manual):
 - Title <= 70 characters
 - Text 500-3000 characters (guideline)
+- British English spelling and style (unless this is a repost)
 - Teaser <= 280 characters
 - Exactly 1 category: Track 1-4 or General
 - Exactly 3 tags
 - 1-3 images, each with alt text + caption + rights attribution
 - Proofread true/false is set
 - Optional: author portrait, institution portrait (<= 280 chars each)
-- Optional: max. 3 literature references
+- References section only when using Pandoc citeproc (`bibliography` + `[@key]`)
 -->
 
-## Lead
+::: {.lead}
+<Write a 1-2 paragraph lead without a `## Lead` heading>
+:::
+
+## Why it matters
 
 <Write the post>
 

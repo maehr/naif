@@ -3,6 +3,9 @@ title: "What Switzerland Can Learn from Other Countries: Review of the event \"F
 date: 2025-11-12
 author: "Open Science Services (Zurich University Library)"
 description: "Review of the NAIF event \"From Policy to Practice\" with inputs from Denmark, the Netherlands, and Finland."
+other-links:
+  - text: "Related event: From Policy to Practice"
+    href: "../../events/2025-11-05-from-policy-to-practice/"
 categories:
   - "Track 2"
 tags:
@@ -70,4 +73,4 @@ Further NAIF deliverables: [Zenodo community](https://zenodo.org/communities/nai
 
 **About the project**: The [NAIF project](https://eth-library.github.io/naif/) (2025–2026) is supported by eight Swiss universities and co-financed by swissuniversities. The project aims to enable greater interoperability and standardization between institutional repositories in Switzerland. The project is led by ETH Zurich / ETH Library. Other participants include: UZH / Zurich University Library, EPFL, ZHAW, PH St. Gallen, University of Fribourg, University of Neuchâtel, and the University of St. Gallen.
 
-*Dr. Melanie Röthlisberger, Open Science Services*
+*Dr Melanie Röthlisberger, Open Science Services*

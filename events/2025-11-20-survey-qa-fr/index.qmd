@@ -4,8 +4,11 @@ date: 2025-11-20
 author: "NAIF"
 author-title: "Organizer"
 description: "Q&A session supporting the national survey on Swiss institutional repositories (Track 3)."
+other-links:
+  - text: "Related post: NAIF launches a national survey on Swiss repositories"
+    href: "../../posts/2025-11-10-national-survey-swiss-institutional-repositories/"
 categories:
-  - "NAIF event"
+  - "Organised by NAIF"
 tags:
   - "Track 3"
   - "Survey"

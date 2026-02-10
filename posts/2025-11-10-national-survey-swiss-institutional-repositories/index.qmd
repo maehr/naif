@@ -3,6 +3,11 @@ title: "NAIF launches a national survey on Swiss repositories"
 date: 2025-11-10
 author: "NAIF"
 description: "National survey to map Swiss institutional repositories and identify needs for interoperability and shared standards."
+other-links:
+  - text: "Related event: Survey Q&A session (French)"
+    href: "../../events/2025-11-20-survey-qa-fr/"
+  - text: "Related event: Survey Q&A session (German)"
+    href: "../../events/2025-11-26-survey-qa-de/"
 categories:
   - "Track 3"
 tags:

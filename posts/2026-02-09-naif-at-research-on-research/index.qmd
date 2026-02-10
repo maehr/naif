@@ -2,10 +2,13 @@
 title: "NAIF at the Research on Research Event 2026"
 date: "2026-02-09"
 author:
-  - name: "Moritz Mähr"
+  - name: "Dr Moritz Mähr"
     orcid: "0000-0002-1367-1618"
     affiliation: "ETH Library, ETH Zurich"
 description: "Track 1 presented findings on quantitative scientometric indicators in Swiss higher education at the RoR Event 2026 in Zurich."
+other-links:
+  - text: "Related event: Research on Research Event 2026"
+    href: "../../events/2026-01-29-ror-event-2026/"
 categories:
   - "Track 1"
 tags:
@@ -30,9 +33,9 @@ Checklist (manual):
 - Optional: max. 3 literature references
 -->
 
-## Lead
-
+::: {.lead}
 On 29–30 January 2026, the [Center for Reproducible Science and Research Synthesis (CRS)](https://www.crs.uzh.ch/en.html) at the University of Zurich hosted the [Research on Research (RoR) Event 2026](https://crsuzh.pages.uzh.ch/ror-event-2026/programme/). NAIF Track 1 contributed a poster on the responsible use of quantitative scientometric indicators (QSI) in Swiss higher education institutions.
+:::
 
 ## Why it matters
 
@@ -40,7 +43,7 @@ Swiss higher education institutions are increasingly aligning with international
 
 ## What we did
 
-We presented a poster titled *On the Current and Future Uses of Quantitative Scientometric Indicators (QSI) in Swiss Higher Education Institutions* during the poster flash talks and the dedicated poster session on Day 1 of the event. The poster was authored by [Moritz Mähr](https://orcid.org/0000-0002-1367-1618) (ETH Library, ETH Zurich), Martin Jaekel (ZHAW), David Johann (ETH Library, ETH Zurich), Rüdiger Mutz (CHESS, University of Zurich), and Elena Šimukovič (ZHAW).
+We presented a poster titled *On the Current and Future Uses of Quantitative Scientometric Indicators (QSI) in Swiss Higher Education Institutions* during the poster flash talks and the dedicated poster session on Day 1 of the event. The poster was authored by [Dr Moritz Mähr](https://orcid.org/0000-0002-1367-1618) (ETH Library, ETH Zurich), Dr Martin Jaekel (ZHAW), Dr David Johann (ETH Library, ETH Zurich), Dr Rüdiger Mutz (CHESS, University of Zurich), and Elena Šimukovič (ZHAW).
 
 The poster synthesized results from the 6th Swiss Year of Scientometrics (SYoS) workshop held on 15 September 2025 with 27 stakeholders from Swiss HEIs, policy bodies, and international initiatives. It also outlined a planned qualitative survey targeting Swiss HEIs and stakeholders such as the SNSF and SERI.
 

@@ -4,8 +4,11 @@ date: 2025-08-28
 author: "NAIF"
 author-title: "Organizer"
 description: "Information event introducing NAIF and its goals."
+other-links:
+  - text: "Related post: Launching NAIF"
+    href: "../../posts/2025-08-28-naif-information-event/"
 categories:
-  - "NAIF event"
+  - "Organised by NAIF"
 tags:
   - "Community"
   - "Kick-off"

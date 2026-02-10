@@ -5,7 +5,7 @@ author: "NAIF"
 author-title: "Organizer"
 description: "Draft demo used to preview event layout and metadata before publishing."
 categories:
-  - "NAIF event"
+  - "Organised by NAIF"
 tags:
   - "Draft"
   - "Demo"

@@ -4,8 +4,13 @@ date: 2025-12-08
 author: "NAIF"
 author-title: "Organizer"
 description: "Online workshop on improving academic metadata for Swiss repositories and institutions."
+other-links:
+  - text: "Related post: Enhancing Open Academic Data through NAIF Track 4"
+    href: "../../posts/2025-09-26-naif-at-soad-day/"
+  - text: "Related post: Prioritising Actions for Better Academic Metadata"
+    href: "../../posts/2026-02-10-track-4-workshop-2025-12-08/"
 categories:
-  - "NAIF event"
+  - "Organised by NAIF"
 tags:
   - "Track 4"
   - "Workshop"

@@ -25,4 +25,6 @@ Thanks for considering a contribution.
 ## Content contributions
 
 - Blog entries must follow the folder-per-entry structure described in `AGENTS.md`.
+- British English is preferred for posts and event pages, except reposts where source wording may be
+  preserved.
 - Keep images local to the entry folder and include alt text, caption, and rights attribution.

@@ -4,6 +4,9 @@ date: 2026-01-29
 author: "Center for Reproducible Science and Research Synthesis (CRS)"
 author-title: "Organizer"
 description: "Two-day Research on Research community event at the University of Zurich (29-30 January 2026)."
+other-links:
+  - text: "Related post: NAIF at the Research on Research Event 2026"
+    href: "../../posts/2026-02-09-naif-at-research-on-research/"
 categories:
   - "NAIF participation"
 tags:
