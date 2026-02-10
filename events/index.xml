@@ -21,7 +21,7 @@
   <dc:creator>ORCID </dc:creator>
   <link>https://maehr.github.io/naif/events/2026-03-25-orcid-community-town-hall-2026/</link>
   <description><![CDATA[ Two live webinar sessions where ORCID shares 2025 progress and previews plans for 2026. ]]></description>
-  <category>NAIF related</category>
+  <category>NAIF-related topic</category>
   <guid>https://maehr.github.io/naif/events/2026-03-25-orcid-community-town-hall-2026/</guid>
   <pubDate>Tue, 24 Mar 2026 23:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2026-03-25-orcid-community-town-hall-2026/images/orcid-townhall-2026.png" medium="image" type="image/png" height="108" width="144"/>
@@ -31,7 +31,7 @@
   <dc:creator>Swiss Open Academic Data (SOAD)</dc:creator>
   <link>https://maehr.github.io/naif/events/2026-03-11-soad-online-event/</link>
   <description><![CDATA[ SOAD spring online event featuring Swiss signatories of the Barcelona Declaration (11 March 2026). ]]></description>
-  <category>NAIF related</category>
+  <category>NAIF-related topic</category>
   <guid>https://maehr.github.io/naif/events/2026-03-11-soad-online-event/</guid>
   <pubDate>Tue, 10 Mar 2026 23:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2026-03-11-soad-online-event/images/soad-online-event.png" medium="image" type="image/png" height="108" width="144"/>
@@ -41,7 +41,7 @@
   <dc:creator>CHESS (UZH) &amp; ETH Library</dc:creator>
   <link>https://maehr.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/</link>
   <description><![CDATA[ Workshop on appointment procedures in the context of DORA and CoARA (ETH Zurich, 4 March 2026). ]]></description>
-  <category>NAIF related</category>
+  <category>NAIF-related topic</category>
   <guid>https://maehr.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/</guid>
   <pubDate>Tue, 03 Mar 2026 23:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/images/chess-events-page.png" medium="image" type="image/png" height="108" width="144"/>
@@ -51,7 +51,7 @@
   <dc:creator>ORCID &amp; DataCite</dc:creator>
   <link>https://maehr.github.io/naif/events/2026-02-10-orcid-datacite-webinar/</link>
   <description><![CDATA[ Hands-on webinar on integrating ORCID and DataCite workflows (ORCID Search & Link and Auto-Update). ]]></description>
-  <category>NAIF related</category>
+  <category>NAIF-related topic</category>
   <guid>https://maehr.github.io/naif/events/2026-02-10-orcid-datacite-webinar/</guid>
   <pubDate>Mon, 09 Feb 2026 23:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2026-02-10-orcid-datacite-webinar/images/orcid-datacite-event.png" medium="image" type="image/png" height="108" width="144"/>
@@ -71,7 +71,7 @@
   <dc:creator>NAIF </dc:creator>
   <link>https://maehr.github.io/naif/events/2025-12-08-improving-academic-metadata-online/</link>
   <description><![CDATA[ Online workshop on improving academic metadata for Swiss repositories and institutions. ]]></description>
-  <category>NAIF event</category>
+  <category>Organised by NAIF</category>
   <guid>https://maehr.github.io/naif/events/2025-12-08-improving-academic-metadata-online/</guid>
   <pubDate>Sun, 07 Dec 2025 23:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2025-12-08-improving-academic-metadata-online/images/zoom-workshop-registration.png" medium="image" type="image/png" height="108" width="144"/>
@@ -81,7 +81,7 @@
   <dc:creator>NAIF </dc:creator>
   <link>https://maehr.github.io/naif/events/2025-11-26-survey-qa-de/</link>
   <description><![CDATA[ Q&A session supporting the national survey on Swiss institutional repositories (Track 3). ]]></description>
-  <category>NAIF event</category>
+  <category>Organised by NAIF</category>
   <guid>https://maehr.github.io/naif/events/2025-11-26-survey-qa-de/</guid>
   <pubDate>Tue, 25 Nov 2025 23:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2025-11-26-survey-qa-de/images/surveyhero-naif-survey.png" medium="image" type="image/png" height="108" width="144"/>
@@ -91,7 +91,7 @@
   <dc:creator>NAIF </dc:creator>
   <link>https://maehr.github.io/naif/events/2025-11-20-survey-qa-fr/</link>
   <description><![CDATA[ Q&A session supporting the national survey on Swiss institutional repositories (Track 3). ]]></description>
-  <category>NAIF event</category>
+  <category>Organised by NAIF</category>
   <guid>https://maehr.github.io/naif/events/2025-11-20-survey-qa-fr/</guid>
   <pubDate>Wed, 19 Nov 2025 23:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2025-11-20-survey-qa-fr/images/surveyhero-naif-survey.png" medium="image" type="image/png" height="108" width="144"/>
@@ -101,7 +101,7 @@
   <dc:creator>NAIF </dc:creator>
   <link>https://maehr.github.io/naif/events/2025-11-05-from-policy-to-practice/</link>
   <description><![CDATA[ Event on building a National Open Research Information framework in Switzerland (Track 2). ]]></description>
-  <category>NAIF event</category>
+  <category>Organised by NAIF</category>
   <guid>https://maehr.github.io/naif/events/2025-11-05-from-policy-to-practice/</guid>
   <pubDate>Tue, 04 Nov 2025 23:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2025-11-05-from-policy-to-practice/images/panel-discussion-kira-michael.jpg" medium="image" type="image/jpeg"/>
@@ -111,7 +111,7 @@
   <dc:creator>NAIF </dc:creator>
   <link>https://maehr.github.io/naif/events/2025-10-15-improving-academic-metadata-neuchatel/</link>
   <description><![CDATA[ Workshop on improving academic metadata for Swiss repositories and institutions (Track 4). ]]></description>
-  <category>NAIF event</category>
+  <category>Organised by NAIF</category>
   <guid>https://maehr.github.io/naif/events/2025-10-15-improving-academic-metadata-neuchatel/</guid>
   <pubDate>Tue, 14 Oct 2025 22:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2025-10-15-improving-academic-metadata-neuchatel/images/zenodo-naif-track4-talk.png" medium="image" type="image/png" height="108" width="144"/>
@@ -131,7 +131,7 @@
   <dc:creator>NAIF </dc:creator>
   <link>https://maehr.github.io/naif/events/2025-08-28-information-event/</link>
   <description><![CDATA[ Information event introducing NAIF and its goals. ]]></description>
-  <category>NAIF event</category>
+  <category>Organised by NAIF</category>
   <guid>https://maehr.github.io/naif/events/2025-08-28-information-event/</guid>
   <pubDate>Wed, 27 Aug 2025 22:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2025-08-28-information-event/images/eth-news-naif-info-event.png" medium="image" type="image/png" height="108" width="144"/>
