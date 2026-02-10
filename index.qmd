@@ -26,13 +26,6 @@ listing:
 
 :::
 
-NAIF is a project initiated and funded by eight Swiss Higher Education Institutions and co-funded by swissuniversities.
-The project aims to enable more interoperability and standardization across Swiss institutional repositories.
-The project has started in July 2025 and will end in December 2026.
-
-<div id="logos">
-<div class="logo"><img src="images/logos/all-logos.jpg" width="600" alt="Logos of the NAIF consortium partners" loading="lazy" decoding="async"></div>
-</div>
 
 ## Upcoming events
 
@@ -47,3 +40,13 @@ Read more on: [Blog](posts/index.qmd)
 
 ::: {#home-posts}
 :::
+
+
+
+NAIF is a project initiated and funded by eight Swiss Higher Education Institutions and co-funded by swissuniversities.
+The project aims to enable more interoperability and standardization across Swiss institutional repositories.
+The project has started in July 2025 and will end in December 2026.
+
+<div id="logos">
+<div class="logo"><img src="images/logos/all-logos.jpg" width="600" alt="Logos of the NAIF consortium partners" loading="lazy" decoding="async"></div>
+</div>

@@ -7,7 +7,7 @@ author:
     affiliation: "ETH Library, ETH Zurich"
 description: "NAIF Track 4 held its second workshop to classify and prioritise 18 proposed actions for improving academic metadata in Swiss repositories using the Agreement & Certainty Matrix."
 categories:
-  - "Blog Post"
+  - "Track 4"
 tags:
   - "metadata"
   - "workshops"

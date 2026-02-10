@@ -25,6 +25,15 @@ listing:
     - categories
 ---
 
+<div
+  id="events-category-filters"
+  class="d-flex flex-wrap align-items-center gap-2 mb-3"
+  role="group"
+  aria-label="Filter events by category"
+  data-listing-filter-buttons="true"
+  data-listing-id="events"
+></div>
+
 ::: {#events}
 :::
 
