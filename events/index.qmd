@@ -3,6 +3,7 @@ title: "Events"
 subtitle: "All NAIF events in one place"
 description: "Upcoming and past NAIF events: workshops, talks, and community sessions related to interoperable repositories and findable research results."
 toc: false
+show-page-image: false
 listing:
   id: events
   contents:

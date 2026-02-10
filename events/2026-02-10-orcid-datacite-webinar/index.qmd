@@ -12,6 +12,8 @@ tags:
   - "Persistent identifiers"
 proofread: false
 image: "images/orcid-datacite-event.png"
+image-alt: "Event graphic for the ORCID and DataCite webinar"
+image-caption: "Event page visual for 'Elevating your Research's Impact and Visibility with ORCID and DataCite'. Source: https://info.orcid.org/event/elevating-your-researchs-impact-and-visibility-with-orcid-and-datacite/. Rights: ORCID and DataCite."
 toc: true
 ---
 

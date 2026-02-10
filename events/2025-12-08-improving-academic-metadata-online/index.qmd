@@ -17,10 +17,11 @@ tags:
   - "Metadata"
 proofread: true
 image: "images/trello-track4-workshop-board.png"
+image-alt: 'NAIF Track 4 Trello board used for workshop planning'
+image-caption: 'Screenshot of the NAIF Track 4 Trello board used for workshop planning. Source: https://trello.com/b/QiVYYDdi/naif-track-4. Rights: NAIF contributors / Trello.'
 toc: true
 ---
 
-![NAIF Track 4 Trello board used for workshop planning](images/trello-track4-workshop-board.png){fig-cap="Screenshot of the NAIF Track 4 Trello board used for workshop planning. Source: https://trello.com/b/QiVYYDdi/naif-track-4. Rights: NAIF contributors / Trello."}
 
 ::: {.callout-note}
 This event has already taken place. Any registration information has been disabled and is shown for reference only.

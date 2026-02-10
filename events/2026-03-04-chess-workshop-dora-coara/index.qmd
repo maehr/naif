@@ -12,6 +12,8 @@ tags:
   - "Research assessment"
 proofread: false
 image: "images/chess-events-page.png"
+image-alt: "CHESS events page with workshop information"
+image-caption: "Screenshot of the CHESS events page for the workshop on appointment procedures in the context of DORA and CoARA. Source: https://www.chess.uzh.ch/de/veranstalten.html. Rights: CHESS, University of Zurich."
 toc: true
 ---
 

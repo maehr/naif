@@ -15,10 +15,11 @@ tags:
   - "National infrastructure"
 proofread: true
 image: "images/panel-discussion-kira-michael.jpg"
+image-alt: 'Panel speakers at the policy-to-practice event'
+image-caption: 'Panel speakers at the event ''From Policy to Practice''. Rights: Zurich University Library (UB Zurich).'
 toc: true
 ---
 
-![Panel speakers at the policy-to-practice event](images/panel-discussion-kira-michael.jpg){fig-cap="Panel speakers at the event 'From Policy to Practice'. Rights: Zurich University Library (UB Zurich)."}
 
 ::: {.callout-note}
 This event has already taken place. Any registration information has been disabled and is shown for reference only.

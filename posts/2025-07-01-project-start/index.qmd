@@ -11,9 +11,10 @@ tags:
   - "Switzerland"
 proofread: true
 image: "images/naif-homepage.png"
+image-alt: 'NAIF project website homepage'
+image-caption: 'Screenshot of the NAIF project website homepage. Source: https://eth-library.github.io/naif/. Rights: ETH Library / NAIF.'
 toc: false
 ---
 
-![NAIF project website homepage](images/naif-homepage.png){fig-cap="Screenshot of the NAIF project website homepage. Source: https://eth-library.github.io/naif/. Rights: ETH Library / NAIF."}
 
 We are pleased to announce the launch of the NAIF project.

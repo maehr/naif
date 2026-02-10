@@ -14,6 +14,8 @@ tags:
   - "Interoperability"
 proofread: false
 image: "images/eth-news-naif-info-event.png"
+image-alt: 'ETH Zurich Staffnet news page about the NAIF information event'
+image-caption: 'Screenshot of the ETH Zurich Staffnet page for the NAIF information event. Source: https://ethz.ch/staffnet/en/news-and-events/internal-news/archive/2025/08/naif-information-event-increasing-the-findability-of-swiss-research.html. Rights: ETH Zurich.'
 toc: true
 ---
 
@@ -28,7 +30,6 @@ Checklist (manual):
 - Proofread true/false is set ✓
 -->
 
-![ETH Zurich Staffnet news page about the NAIF information event](images/eth-news-naif-info-event.png){fig-cap="Screenshot of the ETH Zurich Staffnet page for the NAIF information event. Source: https://ethz.ch/staffnet/en/news-and-events/internal-news/archive/2025/08/naif-information-event-increasing-the-findability-of-swiss-research.html. Rights: ETH Zurich."}
 
 ## Why it matters
 

@@ -16,10 +16,11 @@ tags:
   - "Repositories"
 proofread: true
 image: "images/surveyhero-naif-survey.png"
+image-alt: 'Survey page for the NAIF repositories survey'
+image-caption: 'Screenshot of the NAIF repositories survey page on SurveyHero. Source: https://www.surveyhero.com/c/naif-repositories-2025. Rights: SurveyHero / NAIF.'
 toc: true
 ---
 
-![Survey page for the NAIF repositories survey](images/surveyhero-naif-survey.png){fig-cap="Screenshot of the NAIF repositories survey page on SurveyHero. Source: https://www.surveyhero.com/c/naif-repositories-2025. Rights: SurveyHero / NAIF."}
 
 We are launching a national survey to map and better understand the landscape of institutional repositories in Switzerland. The initiative aims to strengthen interoperability, standardisation, and coordination across the country's research information ecosystem.
 

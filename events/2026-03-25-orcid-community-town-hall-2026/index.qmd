@@ -12,6 +12,8 @@ tags:
   - "Webinar"
 proofread: false
 image: "images/orcid-townhall-2026.png"
+image-alt: "ORCID Community Town Hall 2026 event visual"
+image-caption: "Event visual for the ORCID Community Town Hall 2026. Source: https://info.orcid.org/event/orcid-community-town-hall-2026/. Rights: ORCID."
 toc: true
 ---
 

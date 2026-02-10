@@ -12,6 +12,8 @@ tags:
   - "Open research information"
 proofread: false
 image: "images/soad-online-event.png"
+image-alt: "SOAD online event announcement for the Barcelona Declaration session"
+image-caption: "Promotional visual for the SOAD online event 'The Barcelona Declaration in Switzerland'. Source: https://soad.ch/soad-online-event/. Rights: SOAD."
 toc: true
 ---
 

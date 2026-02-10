@@ -10,6 +10,7 @@ aliases:
   - /news/
   - /news.html
 toc: false
+show-page-image: false
 listing:
   id: posts
   contents:

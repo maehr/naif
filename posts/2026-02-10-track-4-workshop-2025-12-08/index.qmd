@@ -19,6 +19,8 @@ tags:
   - "interoperability"
 proofread: false
 image: "images/acm-matrix.png"
+image-alt: "Agreement & Certainty Matrix from NAIF Track 4 workshop outcomes"
+image-caption: "Agreement & Certainty Matrix used in NAIF Track 4 workshop #2 to prioritise actions. Source: NAIF workshop materials (Miro board and slides). Rights: NAIF contributors."
 toc: true
 draft: true
 ---

@@ -18,12 +18,14 @@ tags:
   - "persistent identifiers"
 proofread: false
 image: "images/soad-website.png"
+image-alt: 'Swiss Open Academic Data website'
+image-caption: 'Screenshot of the Swiss Open Academic Data (SOAD) website. Source: https://soad.ch. Rights: SOAD.'
 aliases:
   - /posts/2025-09-26-naif-at-soad-and-icsti/
+
 toc: true
 ---
 
-![Swiss Open Academic Data website](images/soad-website.png){fig-cap="Screenshot of the Swiss Open Academic Data (SOAD) website. Source: https://soad.ch. Rights: SOAD."}
 
 ## Why it matters
 

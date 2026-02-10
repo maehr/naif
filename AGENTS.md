@@ -153,12 +153,15 @@ uv run quarto render
 ### Images
 
 - Use 1-3 high-resolution images where possible.
-- Every image must have:
-  - descriptive alt text
-  - a caption
-  - rights attribution (in the caption)
-- For screenshots, include the source URL in the figure caption (`fig-cap`) where possible. If that
-  is not possible, keep the source line commented out in the page source.
+- The page hero image is rendered from front matter (Quarto title-block partial). For posts and
+  events, set:
+  - `image` (local path)
+  - `image-alt` (descriptive alt text)
+  - `image-caption` (caption including rights attribution, and source URL where relevant)
+- If you add manual inline images in the body, also provide alt text and a caption with rights
+  attribution.
+- For screenshot-based inline figures, include the source URL in the figure caption (`fig-cap`)
+  where possible. If that is not possible, keep the source line commented out in the page source.
 - If no suitable image is available on first try, add a screenshot of the relevant source page.
 - Use Playwright via `npx` for screenshots (do not rely on Python Playwright in this repo).
 - Install screenshot tooling once per machine:

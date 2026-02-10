@@ -28,3 +28,12 @@ Thanks for considering a contribution.
 - British English is preferred for posts and event pages, except reposts where source wording may be
   preserved.
 - Keep images local to the entry folder and include alt text, caption, and rights attribution.
+- Posts and events inherit a fallback card image via `posts/_metadata.yml` and
+  `events/_metadata.yml`; set a page-level `image:` in each entry to override this default.
+- Post and event pages show the front-matter `image:` near the page title via a Quarto template
+  partial.
+- Use `image-alt:` for accessibility; if omitted, the page title is used as fallback alt text.
+- Use `image-caption:` for the on-page image caption, including source and rights attribution;
+  directory metadata provides a generic fallback caption.
+- To avoid duplicate page images, set `show-page-image: false` in front matter when you add your own
+  manual image(s) in the body content.

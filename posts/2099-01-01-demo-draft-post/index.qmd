@@ -11,10 +11,12 @@ tags:
   - "Template"
 proofread: false
 image: "../../images/logos/all-logos.jpg"
+image-alt: 'NAIF consortium logos'
+image-caption: 'Placeholder image. Rights: ETH Library.'
 draft: true
+
 toc: true
 ---
 
-![NAIF consortium logos](../../images/logos/all-logos.jpg){fig-cap="Placeholder image. Rights: ETH Library."}
 
 This is a demo draft news post used to preview formatting, metadata, and images.

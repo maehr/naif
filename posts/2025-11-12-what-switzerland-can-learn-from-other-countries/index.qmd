@@ -14,9 +14,12 @@ tags:
   - "Events"
 proofread: true
 image: "images/kira-michael.jpg"
+image-alt: 'Michael Svendsen and Kira Stine Hansen'
+image-caption: 'Michael Svendsen and Kira Stine Hansen in front of a full room. Rights: Zurich University Library (UB Zurich).'
 source:
   url: "https://www.uzh.ch/blog/ub/2025/11/12/what-switzerland-can-learn-from-other-countries-review-of-the-event-from-policy-to-practice-building-a-national-open-research-information-framework-in-switzerland/?lang=en"
   note: "Repost with permission. Originally published by Zurich University Library."
+
 toc: true
 ---
 
@@ -24,7 +27,6 @@ toc: true
 Originally published (12 November 2025) at: [Zurich University Library blog](https://www.uzh.ch/blog/ub/2025/11/12/what-switzerland-can-learn-from-other-countries-review-of-the-event-from-policy-to-practice-building-a-national-open-research-information-framework-in-switzerland/?lang=en)
 :::
 
-![Panel speakers at the NAIF policy-to-practice event](images/kira-michael.jpg){fig-cap="Speakers at the event 'From Policy to Practice'. Rights: Zurich University Library (UB Zurich)."}
 
 **How can we create an open research infrastructure in Switzerland that makes the entire research output of Switzerland visible? This question was explored at the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland,” which took place on Wednesday, November 5, 2025. The main part of the event focused on three reports from Denmark, the Netherlands, and Finland.**
 
@@ -44,7 +46,6 @@ The event offered exciting insights from three countries: Denmark, the Netherlan
 
 [Kira Stine Hansen](https://kub.ku.dk/english/about_kub/management/) (Copenhagen University Library, Royal Danish Library) and [Michael Svendsen](https://kub.ku.dk/english/about_kub/management/) (Copenhagen University Library) provided insights into the complex and, in some cases, functionally parallel research infrastructure landscape in Denmark. Copenhagen University Library thereby plays a leading role in governance and infrastructure for Open Science. The cultural shift towards Open Science has largely been made possible thanks to a forward-looking communication and marketing strategy that involves researchers in the ongoing decision-making processes. The core message of their input: Collaboration is necessary because only together can we make a difference and be resilient. And while institutions collaborate, it is important to keep the focus on the “why” and not deviate into the discussions of the “how”. A unified, consistent approach is just as important as the alignment of Open Science policies and cultural values.
 
-![Michael Svendsen and Kira Stine Hansen](images/kira-michael.jpg){fig-cap="Michael Svendsen and Kira Stine Hansen in front of a full room. Rights: Zurich University Library (UB Zurich)."}
 
 ### The Netherlands: Secondary publication right without administration for researchers
 
