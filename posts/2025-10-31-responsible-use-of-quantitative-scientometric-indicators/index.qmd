@@ -52,7 +52,7 @@ The workshop participants had the opportunity to delve deeper into the topic in 
 
 Key insights from each group session were shared with the plenary and underlined several important aspects of the responsible use of QSI:
 
-**Collaboration of experts** – Given the multi-layers nature, the establishment of responsible QSI processes requires collaboration between specialists in data collection, cleaning, processing, and analysis as well as experts on the subject area, who are able to add context to the analysis. In addition, methodologists focusing on social research could be consulted to help assess the wider impact of evaluations and thus minimize unintended side effects.
+**Collaboration of experts** – Given the multi-layers nature, the establishment of responsible QSI processes requires collaboration between specialists in data collection, cleaning, processing, and analysis as well as experts on the subject area, who are able to add context to the analysis. In addition, methodologists focusing on social research could be consulted to help assess the wider impact of evaluations and thus minimise unintended side effects.
 
 **ETH Zurich practice serving as a model** – Participants perceived that current practice at the ETH Zurich may serve as viable model for other HEIs. ETH Zurich includes dialogue with QSI users, clarifying the purpose and limitations of indicators, suggesting alternatives, and embedding results in the appropriate context.
 

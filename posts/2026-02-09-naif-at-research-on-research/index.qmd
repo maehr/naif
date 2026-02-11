@@ -17,8 +17,8 @@ tags:
   - "poster"
 proofread: false
 image: "images/poster.png"
-image-alt: 'Poster summarizing findings on the use of quantitative scientometric indicators in Swiss higher education institutions.'
-image-caption: 'Poster summarizing findings on the use of quantitative scientometric indicators in Swiss higher education institutions. Rights: Authors, used with permission.'
+image-alt: 'Poster summarising findings on the use of quantitative scientometric indicators in Swiss higher education institutions.'
+image-caption: 'Poster summarising findings on the use of quantitative scientometric indicators in Swiss higher education institutions. Rights: Authors, used with permission.'
 toc: true
 draft: true
 ---
@@ -47,7 +47,7 @@ Swiss HEIs are increasingly aligning with international frameworks for responsib
 
 We presented a poster titled *On the Current and Future Uses of Quantitative Scientometric Indicators (QSI) in Swiss Higher Education Institutions* during the poster flash talks and the dedicated poster session on Day 1 of the event. The poster was authored by [Dr Moritz Mähr](https://orcid.org/0000-0002-1367-1618) (ETH Library, ETH Zurich), Dr Martin Jaekel (ZHAW), Dr David Johann (ETH Library, ETH Zurich), Dr Rüdiger Mutz (CHESS, University of Zurich), and Elena Šimukovič (ZHAW).
 
-The poster synthesized results from the 6th Swiss Year of Scientometrics (SYoS) workshop held on 15 September 2025 with 27 stakeholders from Swiss HEIs, policy bodies, and international initiatives. It also outlined a planned qualitative survey targeting Swiss HEIs and other stakeholders such as the Swiss National Science Foundation (SNSF) and the State Secretariat for Education, Research and Innovation (SERI).
+The poster synthesised results from the 6th Swiss Year of Scientometrics (SYoS) workshop held on 15 September 2025 with 27 stakeholders from Swiss HEIs, policy bodies, and international initiatives. It also outlined a planned qualitative survey targeting Swiss HEIs and other stakeholders such as the Swiss National Science Foundation (SNSF) and the State Secretariat for Education, Research and Innovation (SERI).
 
 
 ## What we found
