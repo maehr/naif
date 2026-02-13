@@ -1,0 +1,326 @@
+---
+title: "DORA & CoARA in Swiss Higher Education"
+format: dashboard
+author: "Dr. Moritz Mähr"
+description: "An interactive dashboard showcasing the adoption of DORA and CoARA among Swiss higher education institutions."
+date: today
+draft: true
+resources:
+  - hei.csv
+---
+
+```{=html}
+<style>
+/* Improve tab text contrast for WCAG readability */
+.panel-tabset .nav-tabs .nav-link,
+.nav-tabs .nav-link {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.panel-tabset .nav-tabs .nav-link:hover,
+.panel-tabset .nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  color: #111827;
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.panel-tabset .nav-tabs .nav-link.active,
+.panel-tabset .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #111827;
+  background-color: #ffffff;
+  border-color: #6b7280 #6b7280 #ffffff;
+}
+</style>
+```
+
+```{python}
+#| echo: false
+import pandas as pd
+import folium
+from IPython.display import HTML, display
+
+df = pd.read_csv("hei.csv")
+
+TYPE_COLOURS = {
+    "University": "#B54708",
+    "UAS": "#0F766E",
+    "UTE": "#1D4ED8",
+    "Univ. Inst.": "#7C2D12",
+}
+
+LEGEND_LABELS = {
+    "University": "Universities",
+    "UAS": "Universities of Applied Sciences",
+    "UTE": "Teacher Education",
+    "Univ. Inst.": "University Institutes",
+}
+
+MARKER_STROKE_COLOUR = "#111827"
+LEGEND_STYLE = (
+    "position: fixed; top: 10px; left: 50px; background: #ffffff; "
+    "padding: 10px; border-radius: 5px; border: 1px solid #1f2937; "
+    "box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); font-family: sans-serif; "
+    "font-size: 13px; color: #111827; z-index: 9999;"
+)
+
+total = len(df)
+dora_count = int((df["dora_signatory"] == "Yes").sum())
+coara_count = int((df["coara_signatory"] == "Yes").sum())
+coara_member_count = int((df["coara_member"] == "Yes").sum())
+
+both_count = int(
+    ((df["dora_signatory"] == "Yes") & (df["coara_signatory"] == "Yes")).sum()
+)
+dora_only_count = int(
+    ((df["dora_signatory"] == "Yes") & (df["coara_signatory"] == "No")).sum()
+)
+coara_only_count = int(
+    ((df["dora_signatory"] == "No") & (df["coara_signatory"] == "Yes")).sum()
+)
+neither_count = int(
+    ((df["dora_signatory"] == "No") & (df["coara_signatory"] == "No")).sum()
+)
+
+
+def pct(value: int, denominator: int) -> str:
+    return f"{(100 * value / denominator):.1f}%"
+
+
+def make_link(url: str, label: str) -> str:
+    return f'<a href="{url}" target="_blank" rel="noopener noreferrer">{label}</a>'
+
+
+def link_ror(value: object) -> str:
+    if pd.isna(value):
+        return "-"
+    return make_link(str(value), str(value))
+
+
+def link_wikidata(value: object) -> str:
+    if pd.isna(value):
+        return "-"
+    v = str(value)
+    return make_link(f"https://www.wikidata.org/wiki/{v}", v)
+
+
+def link_isni(value: object) -> str:
+    if pd.isna(value):
+        return "-"
+    v = str(value)
+    compact = v.replace(" ", "")
+    return make_link(f"https://isni.org/isni/{compact}", v)
+
+
+def link_crossref_funder(value: object) -> str:
+    if pd.isna(value):
+        return "-"
+    v = str(value)
+    return make_link(f"https://api.crossref.org/funders/{v}", v)
+
+
+def link_geonames(value: object) -> str:
+    if pd.isna(value):
+        return "-"
+    v = str(value)
+    return make_link(f"https://www.geonames.org/{v}", v)
+```
+
+## Row {height=20%}
+
+```{python}
+#| content: valuebox
+#| title: "Total HEIs"
+dict(icon="building", color="light", value=total)
+```
+
+```{python}
+#| content: valuebox
+#| title: "DORA Signatories"
+dict(icon="pen", color="primary", value=dora_count)
+```
+
+```{python}
+#| content: valuebox
+#| title: "CoARA Signatories"
+dict(icon="globe", color="info", value=coara_count)
+```
+
+## Row {height=80%}
+
+### Column {.tabset}
+
+#### DORA Signatories
+
+```{python}
+#| echo: false
+dora_df = df[df["dora_signatory"] == "Yes"]
+
+m = folium.Map(
+    location=[46.8, 8.3],
+    zoom_start=8,
+    control_scale=True,
+    tiles="cartodbpositron",
+)
+
+for _, r in dora_df.iterrows():
+    marker = folium.CircleMarker(
+        location=[r["lat"], r["lon"]],
+        radius=8,
+        color=MARKER_STROKE_COLOUR,
+        weight=2,
+        fill=True,
+        fill_color=TYPE_COLOURS.get(r["type"], "#7C9070"),
+        fill_opacity=1.0,
+        tooltip=r["short_name"],
+        popup=f"<b>{r['name']}</b><br>Type: {r['type']}<br>{r['town']}",
+    )
+    _ = marker.add_to(m)
+
+legend_html = f'<div style="{LEGEND_STYLE}">'
+for t, c in TYPE_COLOURS.items():
+    legend_html += f'<div><span style="background:{c};width:12px;height:12px;display:inline-block;border-radius:50%;border:1px solid #111827;margin-right:6px;"></span>{LEGEND_LABELS[t]}</div>'
+legend_html += "</div>"
+legend = folium.Element(legend_html)
+_ = m.get_root().html.add_child(legend)
+
+display(m)
+```
+
+#### CoARA Signatories
+
+```{python}
+#| echo: false
+coara_df = df[df["coara_signatory"] == "Yes"]
+
+m = folium.Map(
+    location=[46.8, 8.3],
+    zoom_start=8,
+    control_scale=True,
+    tiles="cartodbpositron",
+)
+
+for _, r in coara_df.iterrows():
+    is_member = r["coara_member"] == "Yes"
+    label = r["short_name"] + ("*" if is_member else "")
+    member_text = "Yes" if is_member else "No"
+    marker = folium.CircleMarker(
+        location=[r["lat"], r["lon"]],
+        radius=8,
+        color=MARKER_STROKE_COLOUR,
+        weight=2,
+        fill=True,
+        fill_color=TYPE_COLOURS.get(r["type"], "#7C9070"),
+        fill_opacity=1.0,
+        tooltip=label,
+        popup=f"<b>{r['name']}</b><br>Type: {r['type']}<br>{r['town']}<br>CoARA Member: {member_text}",
+    )
+    _ = marker.add_to(m)
+
+legend_html = f'<div style="{LEGEND_STYLE}">'
+for t, c in TYPE_COLOURS.items():
+    legend_html += f'<div><span style="background:{c};width:12px;height:12px;display:inline-block;border-radius:50%;border:1px solid #111827;margin-right:6px;"></span>{LEGEND_LABELS[t]}</div>'
+legend_html += '<div style="margin-top: 5px;">* CoARA Member</div>'
+legend_html += "</div>"
+legend = folium.Element(legend_html)
+_ = m.get_root().html.add_child(legend)
+
+display(m)
+```
+
+#### Statistics
+
+```{python}
+#| echo: false
+stats_df = pd.DataFrame(
+    [
+        ["DORA signatories", dora_count, pct(dora_count, total)],
+        ["CoARA signatories", coara_count, pct(coara_count, total)],
+        ["CoARA members", coara_member_count, pct(coara_member_count, total)],
+        ["DORA + CoARA", both_count, pct(both_count, total)],
+        ["DORA only", dora_only_count, pct(dora_only_count, total)],
+        ["CoARA only", coara_only_count, pct(coara_only_count, total)],
+        ["Neither", neither_count, pct(neither_count, total)],
+    ],
+    columns=["Metric", "Count", "Share"],
+)
+display(stats_df)
+```
+
+```{python}
+#| echo: false
+type_stats = (
+    df.groupby("type", dropna=False)
+    .agg(
+        Institutions=("name", "size"),
+        DORA=("dora_signatory", lambda s: int((s == "Yes").sum())),
+        CoARA=("coara_signatory", lambda s: int((s == "Yes").sum())),
+        CoARA_members=("coara_member", lambda s: int((s == "Yes").sum())),
+    )
+    .reset_index()
+)
+type_stats["DORA %"] = (100 * type_stats["DORA"] / type_stats["Institutions"]).map(
+    lambda x: f"{x:.1f}%"
+)
+type_stats["CoARA %"] = (
+    100 * type_stats["CoARA"] / type_stats["Institutions"]
+).map(lambda x: f"{x:.1f}%")
+type_stats["CoARA member %"] = (
+    100 * type_stats["CoARA_members"] / type_stats["Institutions"]
+).map(lambda x: f"{x:.1f}%")
+
+type_stats = type_stats.rename(columns={"CoARA_members": "CoARA members"})
+
+display(type_stats)
+```
+
+#### All Institutions
+
+```{python}
+#| echo: false
+all_institutions = df[
+    [
+        "name",
+        "short_name",
+        "type",
+        "town",
+        "dora_signatory",
+        "coara_signatory",
+        "coara_member",
+        "ror_id",
+        "wikidata_id",
+        "isni_id",
+        "crossref_funder_id",
+        "geonames_id",
+    ]
+].copy()
+
+all_institutions["ror_id"] = all_institutions["ror_id"].apply(link_ror)
+all_institutions["wikidata_id"] = all_institutions["wikidata_id"].apply(link_wikidata)
+all_institutions["isni_id"] = all_institutions["isni_id"].apply(link_isni)
+all_institutions["crossref_funder_id"] = all_institutions["crossref_funder_id"].apply(
+    link_crossref_funder
+)
+all_institutions["geonames_id"] = all_institutions["geonames_id"].apply(link_geonames)
+
+all_institutions = all_institutions.sort_values(["type", "town", "name"]).reset_index(
+    drop=True
+)
+
+display(HTML(all_institutions.to_html(escape=False, index=False)))
+```
+
+#### Download Data
+
+```{python}
+#| echo: false
+download_html = (
+    '<p>Download the full dataset used in this dashboard:</p>'
+    '<p><a class="btn btn-primary" href="hei.csv" download="hei.csv">Download CSV</a></p>'
+)
+display(HTML(download_html))
+```

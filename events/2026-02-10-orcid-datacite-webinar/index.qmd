@@ -5,7 +5,7 @@ author: "ORCID & DataCite"
 author-title: "Organizer"
 description: "Hands-on webinar on integrating ORCID and DataCite workflows (ORCID Search & Link and Auto-Update)."
 categories:
-  - "NAIF-related topic"
+  - "Related Topic"
 tags:
   - "ORCID"
   - "DataCite"

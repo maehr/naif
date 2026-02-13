@@ -8,7 +8,7 @@ other-links:
   - text: "Related post: NAIF at the Research on Research Event 2026"
     href: "../../posts/2026-02-09-naif-at-research-on-research/"
 categories:
-  - "NAIF participation"
+  - "Participation by NAIF"
 tags:
   - "Community"
   - "Conference"

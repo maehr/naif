@@ -1,0 +1,37 @@
+---
+title: "Improving visibility of my institution's research"
+date: 2026-03-09
+author: "Bibliosuisse"
+author-title: "Organizer"
+description: "One-day Bibliosuisse training in Lausanne on research visibility, metadata curation, and researcher engagement."
+categories:
+  - "Participation by NAIF"
+tags:
+  - "Training"
+  - "Research visibility"
+  - "Metadata"
+proofread: false
+image: "images/bibliosuisse-event-984.png"
+image-alt: "Bibliosuisse event page for the training on improving institutional research visibility"
+image-caption: "Screenshot of the Bibliosuisse event page for the course on improving institutional research visibility. Source: https://www.bibliosuisse.ch/angebote/detail?eventid=984. Rights: Bibliosuisse."
+toc: true
+---
+
+<!-- Source: <https://www.bibliosuisse.ch/angebote/detail?eventid=984> -->
+
+## Details
+
+- Date: Monday, 9 March 2026
+- Time: 09:00-17:00
+- Location: Bibliomedia Suisse, Cesar-Roux 34, 1005 Lausanne
+- Language: French
+- Registration deadline: One week before the course date
+- Registration: <https://bibliosuisse.ch/angebote/anmeldung?eventid=984>
+- Event page: <https://www.bibliosuisse.ch/angebote/detail?eventid=984>
+- Document: [Venue map (PDF)](https://bis.tocco.ch/32bd7aa/185678/931---WBVD-20260309---Am%C3%A9liorer-la-visibilit%C3%A9-de-la-recherche-de-mon-institution-Lageplan.pdf?version=3&locale=de)
+
+## About
+
+This one-day course focuses on how academic libraries can improve the visibility of institutional research output. Participants work on dissemination strategies, metadata curation practices, and approaches for supporting researchers in making their work easier to find.
+
+The course is led by Simon Willemin and Julien Sicot, and is aimed at library staff from higher education and research institutions.

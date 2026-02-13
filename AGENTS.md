@@ -14,6 +14,10 @@ This repository contains the NAIF project website.
 
 ## Required commands (always run)
 
+**Always use `uv run` to invoke Quarto** (e.g. `uv run quarto render`, `uv run quarto preview`).
+Never call `quarto` directly — the project venv managed by `uv` provides the correct Python
+environment with Jupyter and all dependencies.
+
 Before opening a PR:
 
 ```bash
@@ -95,7 +99,7 @@ uv run quarto render
 - `description` (teaser)
 - `categories`:
   - Blog posts: exactly one of: `Track 1`, `Track 2`, `Track 3`, `Track 4`, `General`
-  - Events: exactly one of `Organised by NAIF`, `NAIF participation`, `NAIF-related topic`
+  - Events: exactly one of `Organised by NAIF`, `Participation by NAIF`, `Related Topic`
 - `tags`: exactly 3 tags
 - `proofread`: `true` or `false`
 - `image`: a local image path (used for listing cards)

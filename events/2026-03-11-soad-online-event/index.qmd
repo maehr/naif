@@ -5,7 +5,7 @@ author: "Swiss Open Academic Data (SOAD)"
 author-title: "Organizer"
 description: "SOAD spring online event featuring Swiss signatories of the Barcelona Declaration (11 March 2026)."
 categories:
-  - "NAIF-related topic"
+  - "Related Topic"
 tags:
   - "SOAD"
   - "Barcelona Declaration"

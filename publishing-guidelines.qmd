@@ -79,7 +79,7 @@ Use an event entry for announcements and event documentation.
 - `author-title`: `Organizer`
 - `description` (<= 280 chars)
 - `other-links` (when there is a related post page)
-- `categories`: exactly one: `Organised by NAIF`, `NAIF participation`, or `NAIF-related topic`
+- `categories`: exactly one: `Organised by NAIF`, `Participation by NAIF`, or `Related Topic`
 - `tags`: exactly 3 tags
 - `proofread`: `true` or `false`
 - `image`: local image path (used for listing cards)

@@ -5,7 +5,7 @@ author: "CHESS (UZH) & ETH Library"
 author-title: "Organizer"
 description: "Workshop on appointment procedures in the context of DORA and CoARA (ETH Zurich, 4 March 2026)."
 categories:
-  - "NAIF-related topic"
+  - "Related Topic"
 tags:
   - "DORA"
   - "CoARA"
