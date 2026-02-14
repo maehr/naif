@@ -1,8 +1,0 @@
----
-title: "Contact"
-description: "Contact NAIF: questions, feedback, ideas, and collaboration requests."
----
-
-If you have any questions, feedback or ideas, or if you would like to connect with us, feel free to reach out. 
-
-Email: [naif@library.ethz.ch](mailto:naif@library.ethz.ch)
