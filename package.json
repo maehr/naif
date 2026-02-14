@@ -6,7 +6,7 @@
     "changelog": "npm exec git-cliff -- --config cliff.toml",
     "check": "prettier --check .",
     "commit": "cz",
-    "deploy": "npm run quarto:render && npm run jampack && npm run quarto:publish",
+    "deploy": "npm run render && npm run jampack && npm run publish",
     "docx": "uv run quarto render --profile docx",
     "format": "prettier --write .",
     "jampack": "npx @divriots/jampack _site",
@@ -23,7 +23,7 @@
     "test": "uv run pytest",
     "test:cov": "uv run pytest --cov",
     "typecheck": "uv run ty check",
-    "validate": "npm run check && npm run lint && npm run typecheck && npm run test && npm run quarto:render"
+    "validate": "npm run check && npm run lint && npm run typecheck && npm run test && npm run render"
   },
   "devDependencies": {
     "@j178/prek": "^0.3.1",
