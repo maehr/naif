@@ -27,10 +27,12 @@ website:
         href: posts/index.qmd
       - text: Events
         href: events/index.qmd
-      - href: about.qmd
-        text: About
-      - href: https://zenodo.org/communities/naif
-        text: Docs
+      # - href: dashboard/index.qmd
+      #   text: Dashboard
+      - text: About
+        href: about.qmd
+      - text: Docs
+        href: https://zenodo.org/communities/naif
     pinned: true
   page-footer:
     center:
