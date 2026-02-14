@@ -40,6 +40,7 @@ Use a news post for updates, progress reporting, findings, or opinion pieces in 
 **Required front matter**
 
 - `title` (<= 70 chars)
+- `subtitle` (optional; concise one-line context)
 - `date` (YYYY-MM-DD)
 - `author`
 - `description` (<= 280 chars)
@@ -51,13 +52,8 @@ Use a news post for updates, progress reporting, findings, or opinion pieces in 
 
 **Content structure**
 
-- Start with a short lead section.
-- Do not add an explicit `## Lead` heading. Use a lead paragraph block instead:
-  ```markdown
-  ::: {.lead}
-  Introductory paragraph(s).
-  :::
-  ```
+- Put the lead text in the `description` front matter field.
+- Do not add an explicit `## Lead` heading or a lead paragraph block in the body.
 - Follow the message architecture above.
 - Keep the post concise (500-3000 chars as a guideline).
 - Use `## References` only with Pandoc citeproc (`bibliography` + citation keys like `[@key]`).

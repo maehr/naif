@@ -1,8 +1,9 @@
 ---
 title: "<Title (<= 70 chars)>"
+subtitle: "<Short one-line subtitle (optional)>"
 date: "YYYY-MM-DD"
 author: "<Author name>"
-description: "<Teaser (<= 280 chars)>"
+description: "<Lead / teaser (<= 280 chars)>"
 other-links:
   - text: "Related event: <Event title>"
     href: "../../events/<yyyy-mm-dd-slug>/"
@@ -24,6 +25,7 @@ Checklist (manual):
 - Title <= 70 characters
 - Text 500-3000 characters (guideline)
 - British English spelling and style (unless this is a repost)
+- Optional subtitle: concise one-line context
 - Teaser <= 280 characters
 - Exactly 1 category: Track 1-4 or General
 - Exactly 3 tags
@@ -32,10 +34,6 @@ Checklist (manual):
 - Optional: author portrait, institution portrait (<= 280 chars each)
 - References section only when using Pandoc citeproc (`bibliography` + `[@key]`)
 -->
-
-::: {.lead}
-<Write a 1-2 paragraph lead without a `## Lead` heading>
-:::
 
 ## Why it matters
 

@@ -1,5 +1,6 @@
 ---
 title: "What Switzerland Can Learn from Other Countries: Review of the event \"From Policy to Practice: Building a National Open Research Information Framework in Switzerland\""
+subtitle: "Review of the NAIF event \"From Policy to Practice\" with inputs from Denmark, the Netherlands, and Finland."
 date: 2025-11-12
 author: "Open Science Services (Zurich University Library)"
 description: "Review of the NAIF event \"From Policy to Practice\" with inputs from Denmark, the Netherlands, and Finland."

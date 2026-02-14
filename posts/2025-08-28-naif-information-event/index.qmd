@@ -1,5 +1,6 @@
 ---
 title: "Launching NAIF: A Look Back at the Information Event"
+subtitle: "The NAIF project held its first public information event on 28 August 2025, introducing the consortium's goals for Swiss research findability."
 date: 2025-08-28
 author: "NAIF"
 description: "The NAIF project held its first public information event on 28 August 2025, introducing the consortium's goals for Swiss research findability."

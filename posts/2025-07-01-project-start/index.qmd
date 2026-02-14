@@ -1,8 +1,9 @@
 ---
 title: "Project start"
+subtitle: "NAIF launches to advance interoperability and standardisation across Swiss institutional repositories."
 date: 2025-07-01
 author: "NAIF"
-description: "NAIF launches to advance interoperability and standardisation across Swiss institutional repositories."
+description: "We are pleased to announce the launch of the NAIF project. NAIF is also listed among the approved projects in the swissuniversities Programme Open Science II call \"Supporting Green Open Access\" (decision: 23 June 2025)."
 categories:
   - "General"
 tags:
@@ -15,10 +16,6 @@ image-alt: 'NAIF project website homepage'
 image-caption: 'Screenshot of the NAIF project website homepage. Source: https://eth-library.github.io/naif/. Rights: ETH Library / NAIF.'
 toc: false
 ---
-
-::: {.lead}
-We are pleased to announce the launch of the NAIF project. NAIF is also listed among the approved projects in the swissuniversities Programme Open Science II call "Supporting Green Open Access" (decision: 23 June 2025).
-:::
 
 ## Approved project listing
 

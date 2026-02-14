@@ -1,7 +1,7 @@
 ---
 title: "About"
 subtitle: "What NAIF is, why it matters, and who is involved"
-description: "NAIF is a swissuniversities-funded collaboration to improve interoperability and metadata quality across Swiss institutional repositories."
+description: "NAIF (National Approach for Interoperable repositories and Findable research results) is a swissuniversities-funded collaboration that strengthens interoperability and metadata quality across Swiss institutional repositories. By aligning policy, governance, and technical practice, the project improves the visibility and reusability of Swiss research outputs."
 other-links:
   - text: "News"
     href: posts/index.qmd
@@ -19,10 +19,6 @@ aliases:
   - join.html
   - docs.html
 ---
-
-::: {.lead}
-NAIF (National Approach for Interoperable repositories and Findable research results) is a swissuniversities-funded collaboration that strengthens interoperability and metadata quality across Swiss institutional repositories. By aligning policy, governance, and technical practice, the project improves the visibility and reusability of Swiss research outputs.
-:::
 
 ::: {.callout-note}
 ## At a glance

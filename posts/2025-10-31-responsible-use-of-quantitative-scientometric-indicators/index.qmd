@@ -1,5 +1,6 @@
 ---
 title: "Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop"
+subtitle: "Insights from the 6th Swiss Year of Scientometrics workshop on responsible use of quantitative scientometric indicators in research assessment."
 date: 2025-10-31
 author:
   - name: "Dr Martin Jaekel"

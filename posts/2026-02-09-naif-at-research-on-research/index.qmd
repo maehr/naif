@@ -1,11 +1,12 @@
 ---
 title: "NAIF at the Research on Research Event 2026"
+subtitle: "Track 1 presented findings on quantitative scientometric indicators in Swiss higher education at the RoR Event 2026 in Zurich."
 date: "2026-02-09"
 author:
   - name: "Dr Moritz Mähr"
     orcid: "0000-0002-1367-1618"
     affiliation: "ETH Library, ETH Zurich"
-description: "Track 1 presented findings on quantitative scientometric indicators in Swiss higher education at the RoR Event 2026 in Zurich."
+description: "On 29-30 January 2026, the Center for Reproducible Science and Research Synthesis (CRS) at the University of Zurich hosted the Research on Research (RoR) Event 2026. NAIF Track 1 contributed a poster on the responsible use of quantitative scientometric indicators (QSI) in Swiss Higher Education Institutions (HEI)."
 other-links:
   - text: "Related event: Research on Research Event 2026"
     href: "../../events/2026-01-29-ror-event-2026/"
@@ -34,10 +35,6 @@ Checklist (manual):
 - Proofread true/false is set ✓
 - Optional: max. 3 literature references
 -->
-
-::: {.lead}
-On 29–30 January 2026, the [Center for Reproducible Science and Research Synthesis (CRS)](https://www.crs.uzh.ch/en.html) at the University of Zurich hosted the [Research on Research (RoR) Event 2026](https://crsuzh.pages.uzh.ch/ror-event-2026/programme/). NAIF Track 1 contributed a poster on the responsible use of quantitative scientometric indicators (QSI) in Swiss Higher Education Institutions (HEI).
-:::
 
 ## Why it matters
 
