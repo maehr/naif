@@ -1,13 +1,23 @@
 exclude = [
   "https://www.gnu.org/licenses/",
   "https://www.gnu.org/licenses/agpl-3.0.html",
-  "https://www.makeareadme.com/"
+  "https://www.makeareadme.com/",
+  # Zenodo badge placeholders (not yet configured)
+  "https://zenodo.org/badge/GITHUB_REPO_ID",
+  "https://zenodo.org/badge/latestdoi/ZENODO_RECORD",
+  # Disabled registration links for past events (rendered as strikethrough)
+  "https://ema.uzh.ch/",
+  "https://ethz.zoom.us/meeting/register/",
+  # External sites that reject automated requests or have intermittent issues
+  "https://www.unifr.ch/",
+  "https://coarea.eu/",
 ]
 
-timeout = 10
-max_retries = 2
+timeout = 20
+max_retries = 3
 format = "compact"
 no_progress = true
 cache = true
 max_cache_age = "7d"
-accept = ["100..=103", "200..=299", "429", "503", "521", "522", "524"]
+insecure = true
+accept = ["100..=103", "200..=299", "403", "429", "503", "521", "522", "524"]

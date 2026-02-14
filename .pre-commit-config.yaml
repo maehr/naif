@@ -6,3 +6,8 @@ repos:
         entry: npm run check
         language: system
         stages: [pre-commit]
+      - id: lychee-check
+        name: Lychee link check
+        entry: npm run lychee-check
+        language: system
+        stages: [pre-commit]
