@@ -1,6 +1,6 @@
 ---
 title: "What Switzerland Can Learn from Other Countries: Review of the event \"From Policy to Practice: Building a National Open Research Information Framework in Switzerland\""
-subtitle: "Review of the NAIF event \"From Policy to Practice\" with inputs from Denmark, the Netherlands, and Finland."
+subtitle: "International case studies show governance and collaboration models relevant for Switzerland."
 date: 2025-11-12
 author: "Open Science Services (Zurich University Library)"
 description: "Review of the NAIF event \"From Policy to Practice\" with inputs from Denmark, the Netherlands, and Finland."
@@ -16,7 +16,7 @@ tags:
 proofread: true
 image: "images/kira-michael.jpg"
 image-alt: 'Michael Svendsen and Kira Stine Hansen'
-image-caption: 'Michael Svendsen and Kira Stine Hansen in front of a full room. Rights: Zurich University Library (UB Zurich).'
+image-caption: 'Michael Svendsen and Kira Stine Hansen in front of a full room.'
 source:
   url: "https://www.uzh.ch/blog/ub/2025/11/12/what-switzerland-can-learn-from-other-countries-review-of-the-event-from-policy-to-practice-building-a-national-open-research-information-framework-in-switzerland/?lang=en"
   note: "Repost with permission. Originally published by Zurich University Library."
@@ -37,11 +37,7 @@ The background: Although institutional repositories exist at the local level in 
 
 ## International inputs — What can we learn?
 
-The event offered exciting insights from three countries: Denmark, the Netherlands, and Finland. The presentation slides are available on Zenodo (DOIs):
-
-- [Open Science in the open - perspectives on the governance and infrastructure landscape in Denmark](https://doi.org/10.5281/zenodo.17634339)
-- [Implementing Secondary Publishing Rights in the Netherlands](https://doi.org/10.5281/zenodo.17634431)
-- [Open Research Information in Finland: Research.fi](https://doi.org/10.5281/zenodo.17634492)
+The event offered exciting insights from three countries: Denmark, the Netherlands, and Finland. The presentation slides can now be downloaded from the [Zenodo community of the NAIF project](https://zenodo.org/communities/naif).
 
 ### Denmark: Using a communication campaign to bring about cultural change
 
@@ -59,7 +55,7 @@ The event offered exciting insights from three countries: Denmark, the Netherlan
 5. Pilot projects (phase 1) helped generate support from researchers, identify adjustments for internal workflows, and gauge the reactions of publishers.
 6. The administrative burden on researchers was extremely low. The repository managers took on most of the work.
 
-![Wenneke Meerstadt speaking](images/wenneke-meerstadt.jpg){fig-cap="Wenneke Meerstadt reports on the implementation of the secondary publication right at Utrecht University. Rights: Zurich University Library (UB Zurich)."}
+![Wenneke Meerstadt speaking](images/wenneke-meerstadt.jpg){fig-cap="Wenneke Meerstadt reports on the implementation of the secondary publication right at Utrecht University."}
 
 ### Finland: Making research visible, interoperable, and reusable with *research.fi*
 
@@ -71,8 +67,8 @@ The national catalog provides information on publications, research data, infras
 
 After the three keynote speeches, the event concluded with a short discussion round. The most important stakeholders in the Swiss landscape had their say: it was once again made clear that collaborative and coordinated efforts are necessary, because only together can we achieve the goals we have set ourselves. Institutions should also not be afraid to learn from each other – as the example of the Netherlands has shown, this contributes significantly to success. And while some stakeholders already operate similar research information platforms (SNSF, SWITCH), they nevertheless expressed interest in a national project. Meanwhile, it is still unclear how such a national platform should be structured: should it be more of a monitoring tool for Open Science or a steering instrument for strategic decision-makers in the higher education and research system (e.g., university management, but also research funding bodies such as SNSF and/or SERI)? Should it be a platform or catalog that provides metadata or a repository where materials can also be stored (similar to institutional repositories)? Further discussions will be held in the coming months to find a solution for Switzerland – together.
 
-Further NAIF deliverables: [Zenodo community](https://zenodo.org/communities/naif)
+Download presentations: from the [NAIF-Zenodo community](https://zenodo.org/communities/naif)
 
 **About the project**: The [NAIF project](https://eth-library.github.io/naif/) (2025–2026) is supported by eight Swiss universities and co-financed by swissuniversities. The project aims to enable greater interoperability and standardization between institutional repositories in Switzerland. The project is led by ETH Zurich / ETH Library. Other participants include: UZH / Zurich University Library, EPFL, ZHAW, PH St. Gallen, University of Fribourg, University of Neuchâtel, and the University of St. Gallen.
 
-*Dr Melanie Röthlisberger, Open Science Services*
+*Dr. Melanie Röthlisberger, Open Science Services*

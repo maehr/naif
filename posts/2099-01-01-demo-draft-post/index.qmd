@@ -1,6 +1,6 @@
 ---
 title: "Demo draft news post"
-subtitle: "Draft demo used to preview layout and metadata before publishing."
+subtitle: "Internal example entry for checking draft presentation and listing behaviour."
 date: 2099-01-01
 author: "NAIF"
 description: "Draft demo used to preview layout and metadata before publishing."

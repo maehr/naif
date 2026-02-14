@@ -1,6 +1,6 @@
 ---
 title: "NAIF launches a national survey on Swiss repositories"
-subtitle: "National survey to map Swiss institutional repositories and identify needs for interoperability and shared standards."
+subtitle: "Repository managers are invited to contribute evidence for a national interoperability roadmap."
 date: 2025-11-10
 author: "NAIF"
 description: "National survey to map Swiss institutional repositories and identify needs for interoperability and shared standards."

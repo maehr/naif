@@ -1,6 +1,6 @@
 ---
 title: "Enhancing Open Academic Data through NAIF Track 4"
-subtitle: "NAIF presented its Track 4 work on enhancing academic metadata at the first Swiss Open Academic Data Day at ETH Zurich."
+subtitle: "Track 4 shared practical metadata challenges and next steps with the SOAD community."
 date: 2025-09-26
 author: "NAIF"
 description: "NAIF presented its Track 4 work on enhancing academic metadata at the first Swiss Open Academic Data Day at ETH Zurich."

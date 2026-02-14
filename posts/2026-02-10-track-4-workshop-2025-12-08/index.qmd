@@ -1,6 +1,6 @@
 ---
 title: "Prioritising Actions for Better Academic Metadata"
-subtitle: "NAIF Track 4 held its second workshop to classify and prioritise 18 proposed actions for improving academic metadata in Swiss repositories using the Agreement & Certainty Matrix."
+subtitle: "Workshop participants used the ACM method to decide which metadata actions are ready now."
 date: "2025-12-08"
 author:
   - name: "Dr Moritz Mähr"
