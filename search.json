@@ -151,7 +151,7 @@
     "href": "posts/2025-08-28-naif-information-event/index.html#whats-next",
     "title": "Launching NAIF: A Look Back at the Information Event",
     "section": "What’s next",
-    "text": "What’s next\nThe NAIF project, which runs from July 2025 to December 2026, will continue with a series of workshops and consultations across all four tracks. Upcoming activities include workshops on the responsible use of quantitative scientometric indicators, academic metadata improvement, and a national survey of Swiss institutional repositories. All interested parties are welcome to follow the project’s progress and get involved.\nFor additional context, see the original announcement on the ETH Library website."
+    "text": "What’s next\nThe NAIF project, which runs from July 2025 to December 2026, will continue with a series of workshops and consultations across all four tracks. Upcoming activities include workshops on the responsible use of quantitative scientometric indicators, academic metadata improvement, and a national survey of Swiss institutional repositories. All interested parties are welcome to follow the project’s progress and get involved.\nFor additional context, see the original announcement on the ETH Library website.\nSlides from the information event are available on Zenodo: Information event: NAIF (DOI: 10.5281/zenodo.18633495)."
   },
   {
     "objectID": "index.html#upcoming-events",
@@ -378,11 +378,11 @@
     "text": "Team\n\nProject leaders\n\nDr David Johann (ETH Library, ETH Zurich)\n\n\n\nProject coordinator\n\nDr Moritz Mähr (ETH Library, ETH Zurich)\n\n\n\nWork packages leaders\n\nPascale Bouton (EPFL)\nDr David Johann (ETH Library, ETH Zurich)\nDr Martin Jaekel (ZHAW Zurich University of Applied Sciences)\nDr Andrea Malits (University of Zurich)\nDr Rüdiger Mutz (CHESS, University of Zurich)\nJulien Sicot (EPFL)\nStefan Vogt (University of Zurich)\n\n\n\nProject contributors\n[list of contributors in preparation]"
   },
   {
-    "objectID": "about.html#resources",
-    "href": "about.html#resources",
+    "objectID": "about.html#other-projects-and-initiatives",
+    "href": "about.html#other-projects-and-initiatives",
     "title": "About",
-    "section": "Resources",
-    "text": "Resources\n\nProject deliverables\n\nTalks and presentations\n\nSlides (Zenodo): Enhancing Open Academic Data through the NAIF Project (SOAD Day, 10 September 2025)\nSlides (PDF): Information event: NAIF (online, 28 August 2025)\n\n\n\n\nOther projects and initiatives\nCOAR International Repositories Directory (IRD)\nCOAR International Repositories Directory (IRD). The IRD provides information about the current repository landscape.\nSwiss Open Access Monitor\nSwiss Open Access Monitor. The Swiss Open Access Monitor is a tool to monitor the progress of the implementation of Open Access at the national level in Switzerland. It contains a Journal Monitor based on OpenAlex and other data sources, as well as a Repository Monitor based on the publication lists delivered by participating institutions.\nSwiss Open Academic Data (SOAD)\nSwiss Open Academic Data (SOAD). The Swiss Open Academic Data (SOAD) community gathers researchers and practitioners around open academic data in Switzerland.\nSwiss Year of Scientometrics (SYoS)\nSwiss Year of Scientometrics (SYoS). Swiss Year of Scientometrics (SYoS) is a series of Lectures and Workshops organized by the ETH Library to promote responsible research assessment in Switzerland."
+    "section": "Other projects and initiatives",
+    "text": "Other projects and initiatives\nCOAR International Repositories Directory (IRD)\nCOAR International Repositories Directory (IRD). The IRD provides information about the current repository landscape.\nSwiss Open Access Monitor\nSwiss Open Access Monitor. The Swiss Open Access Monitor is a tool to monitor the progress of the implementation of Open Access at the national level in Switzerland. It contains a Journal Monitor based on OpenAlex and other data sources, as well as a Repository Monitor based on the publication lists delivered by participating institutions.\nSwiss Open Academic Data (SOAD)\nSwiss Open Academic Data (SOAD). The Swiss Open Academic Data (SOAD) community gathers researchers and practitioners around open academic data in Switzerland.\nSwiss Year of Scientometrics (SYoS)\nSwiss Year of Scientometrics (SYoS). Swiss Year of Scientometrics (SYoS) is a series of Lectures and Workshops organized by the ETH Library to promote responsible research assessment in Switzerland."
   },
   {
     "objectID": "disclaimer.html",
