@@ -4,6 +4,7 @@ subtitle: "Track 4 shared practical metadata challenges and next steps with the 
 date: 2025-09-26
 author: "NAIF"
 description: "NAIF presented its Track 4 work on enhancing academic metadata at the first Swiss Open Academic Data Day at ETH Zurich."
+doi: "10.5281/zenodo.17142628"
 other-links:
   - text: "Related event: Swiss Open Academic Data Day (SOAD Day)"
     href: "../../events/2025-09-10-soad-day/"

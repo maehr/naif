@@ -165,16 +165,7 @@ If you have any questions, feedback or ideas, or if you would like to connect wi
 
 [list of contributors in preparation]
 
-## Resources
-
-### Project deliverables
-
-#### Talks and presentations
-
-- [Slides (Zenodo): Enhancing Open Academic Data through the NAIF Project](https://doi.org/10.5281/zenodo.17142628) (SOAD Day, 10 September 2025)
-- [Slides (PDF): Information event: NAIF](https://github.com/eth-library/naif/raw/main/documents/2025-08-28_NAIF_information_event.pdf) (online, 28 August 2025)
-
-### Other projects and initiatives
+## Other projects and initiatives
 
 **COAR International Repositories Directory (IRD)**
 

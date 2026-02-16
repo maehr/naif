@@ -7,6 +7,7 @@ author:
     orcid: "0000-0002-1367-1618"
     affiliation: "ETH Library, ETH Zurich"
 description: "On 29-30 January 2026, the Center for Reproducible Science and Research Synthesis (CRS) at the University of Zurich hosted the Research on Research (RoR) Event 2026. NAIF Track 1 contributed a poster on the responsible use of quantitative scientometric indicators (QSI) in Swiss Higher Education Institutions (HEI)."
+doi: "10.5281/zenodo.18656169"
 other-links:
   - text: "Related event: Research on Research Event 2026"
     href: "../../events/2026-01-29-ror-event-2026/"
@@ -42,7 +43,7 @@ Swiss HEIs are increasingly aligning with international frameworks for responsib
 
 ## What we did
 
-We presented a poster titled *On the Current and Future Uses of Quantitative Scientometric Indicators (QSI) in Swiss Higher Education Institutions* during the poster flash talks and the dedicated poster session on Day 1 of the event. The poster was authored by [Dr Moritz Mähr](https://orcid.org/0000-0002-1367-1618) (ETH Library, ETH Zurich), Dr Martin Jaekel (ZHAW), Dr David Johann (ETH Library, ETH Zurich), Dr Rüdiger Mutz (CHESS, University of Zurich), and Elena Šimukovič (ZHAW).
+We presented a poster titled [*On the Current and Future Uses of Quantitative Scientometric Indicators (QSI) in Swiss Higher Education Institutions*](https://zenodo.org/records/18656169) ([DOI: 10.5281/zenodo.18656169](https://doi.org/10.5281/zenodo.18656169)) during the poster flash talks and the dedicated poster session on Day 1 of the event. The poster was authored by [Dr Moritz Mähr](https://orcid.org/0000-0002-1367-1618) (ETH Library, ETH Zurich), Dr Martin Jaekel (ZHAW), Dr David Johann (ETH Library, ETH Zurich), Dr Rüdiger Mutz (CHESS, University of Zurich), and Elena Šimukovič (ZHAW).
 
 The poster synthesised results from the 6th Swiss Year of Scientometrics (SYoS) workshop held on 15 September 2025 with 27 stakeholders from Swiss HEIs, policy bodies, and international initiatives. It also outlined a planned qualitative survey targeting Swiss HEIs and other stakeholders such as the Swiss National Science Foundation (SNSF) and the State Secretariat for Education, Research and Innovation (SERI).
 
