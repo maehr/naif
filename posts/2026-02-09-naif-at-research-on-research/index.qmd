@@ -182,6 +182,8 @@ m
 
 Based on this work, NAIF will develop practical guidelines for Swiss higher education institutions to support transparent, context-specific research assessment aligned with international best practices by the end of 2026. A qualitative survey of Swiss HEIs is planned to complement the workshop findings.
 
+As a follow-up to the event, the organisers published the presentation slides on Zenodo ([doi:10.5281/zenodo.18478818](https://doi.org/10.5281/zenodo.18478818)) and announced the **CRS Seed Grants**, a funding call for Swiss researchers launching collaborative Research on Research projects ([call for proposals](https://www.crs.uzh.ch/en/news/2026-News/CRS-Seed-Grants.html)).
+
 ## What to reuse
 
 The poster and further information about the project are available on the [NAIF website](https://eth-library.github.io/naif/). NAIF deliverables are archived on [Zenodo](https://zenodo.org/communities/naif).

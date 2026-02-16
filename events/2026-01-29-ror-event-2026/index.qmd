@@ -36,3 +36,5 @@ This event has already taken place. Any registration information has been disabl
 ## About
 
 The Research on Research Event 2026 brings together the Swiss Research on Research community for two days of talks, discussion, and collaborative work.
+
+Following the event, the organisers shared the presentation slides on Zenodo ([doi:10.5281/zenodo.18478818](https://doi.org/10.5281/zenodo.18478818)). The CRS also launched the **CRS Seed Grants**, a funding opportunity for Swiss researchers to initiate collaborative Research on Research projects ([call for proposals](https://www.crs.uzh.ch/en/news/2026-News/CRS-Seed-Grants.html)).
