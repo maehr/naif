@@ -27,6 +27,16 @@
   <media:content url="https://maehr.github.io/naif/events/2026-05-26-dariah-annual-event-2026/images/dariah-annual-event-2026.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>BiblioCon 2026</title>
+  <dc:creator>BiblioCon 2026 Organising Committee</dc:creator>
+  <link>https://maehr.github.io/naif/events/2026-05-19-bibliocon-2026/</link>
+  <description><![CDATA[ BiblioCon 2026 in Berlin (19-22 May 2026), where NAIF contributes a poster on interoperability and academic metadata. ]]></description>
+  <category>Participation by NAIF</category>
+  <guid>https://maehr.github.io/naif/events/2026-05-19-bibliocon-2026/</guid>
+  <pubDate>Mon, 18 May 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/events/2026-05-19-bibliocon-2026/images/bibliocon-2026-homepage.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>ORCID Community Town Hall 2026</title>
   <dc:creator>ORCID </dc:creator>
   <link>https://maehr.github.io/naif/events/2026-03-25-orcid-community-town-hall-2026/</link>
