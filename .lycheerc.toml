@@ -13,6 +13,10 @@ exclude = [
   "https://coarea.eu/",
 ]
 
+exclude_path = [
+  "dashboard/hei.csv"
+]
+
 timeout = 20
 max_retries = 3
 format = "compact"
