@@ -8,9 +8,6 @@ exclude = [
   # Disabled registration links for past events (rendered as strikethrough)
   "https://ema.uzh.ch/",
   "https://ethz.zoom.us/meeting/register/",
-  # External sites that reject automated requests or have intermittent issues
-  "https://www.unifr.ch/",
-  "https://coarea.eu/",
 ]
 
 exclude_path = [

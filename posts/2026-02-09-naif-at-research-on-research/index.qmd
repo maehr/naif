@@ -39,7 +39,7 @@ Checklist (manual):
 
 ## Why it matters
 
-Swiss HEIs are increasingly aligning with international frameworks for responsible research assessment, including [DORA](https://sfdora.org/), [CoARA](https://coarea.eu/), and the [Leiden Manifesto](http://www.leidenmanifesto.org/). Yet translating these commitments into everyday practice remains a challenge. The relationship is reciprocal: the indicators institutions choose shape the metadata they collect and curate, while the quality of that underlying data determines which indicators can be computed responsibly. Getting either side wrong — adopting metrics without adequate data infrastructure, or maintaining rich metadata that nobody acts on — undermines research visibility and the interoperability goals at the heart of NAIF.
+Swiss HEIs are increasingly aligning with international frameworks for responsible research assessment, including [DORA](https://sfdora.org/), [CoARA](https://www.coara.org/), and the [Leiden Manifesto](http://www.leidenmanifesto.org/). Yet translating these commitments into everyday practice remains a challenge. The relationship is reciprocal: the indicators institutions choose shape the metadata they collect and curate, while the quality of that underlying data determines which indicators can be computed responsibly. Getting either side wrong — adopting metrics without adequate data infrastructure, or maintaining rich metadata that nobody acts on — undermines research visibility and the interoperability goals at the heart of NAIF.
 
 ## What we did
 

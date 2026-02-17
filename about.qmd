@@ -44,7 +44,7 @@ The project partners are:
 - [EPFL](https://www.epfl.ch/en/)
 - [ZHAW Zurich University of Applied Sciences](https://www.zhaw.ch/en/university/)
 - [PHSG St.Gallen University of Teacher Education](https://www.phsg.ch/en/)
-- [University of Fribourg](https://www.unifr.ch/en/)
+- [University of Fribourg](https://www.unifr.ch/home/en/)
 - [University of Neuchatel](https://www.unine.ch/)
 - [University of St.Gallen](https://www.unisg.ch/en/)
 
