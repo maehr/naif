@@ -13,3 +13,4 @@ htmlcov/
 
 **/*.quarto_ipynb
 .jampack/
+.lycheecache

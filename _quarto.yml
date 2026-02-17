@@ -7,6 +7,10 @@ project:
     - "events/**/index.qmd"
     - "!posts/_template-*/**"
     - "!events/_template-*/**"
+  resources:
+    - robots.txt
+    - site.webmanifest
+    - llms.txt
 
 website:
   title: "NAIF"
