@@ -35,7 +35,8 @@ This public guide explains how to publish NAIF news posts and event entries. It 
 
 ## News post guidance
 
-Use a news post for updates, progress reporting, findings, or opinion pieces in British English.
+Use a news post for updates, progress reporting, findings, or opinion pieces.
+Use British English.
 
 **Required front matter**
 
@@ -63,9 +64,7 @@ Use a news post for updates, progress reporting, findings, or opinion pieces in 
 
 ## Event guidance
 
-Use an event entry for announcements and event documentation.
-
-- British English is preferred for all non-repost event pages.
+Use an event entry for announcements and event documentation. Use British English.
 
 **Required front matter**
 
@@ -94,7 +93,7 @@ Use an event entry for announcements and event documentation.
 
 ## Reposts
 
-- Reposts are allowed only with permission.
+- Republishing articles that have already been published requires explicit permission.
 - Add a visible note near the top linking back to the original URL.
 - Reposts may retain original wording and spelling when needed for faithful attribution.
 
