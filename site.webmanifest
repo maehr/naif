@@ -1,0 +1,15 @@
+{
+  "name": "NAIF",
+  "short_name": "NAIF",
+  "start_url": "https://eth-library.github.io/naif/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#A1AB71",
+  "icons": [
+    {
+      "src": "/naif/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
