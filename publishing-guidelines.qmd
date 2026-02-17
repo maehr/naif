@@ -33,10 +33,14 @@ This public guide explains how to publish NAIF news posts and event entries. It 
 - Event assets: `events/<entry>/images/*`
 - Rendered output lives in `_site/` (do not edit `_site/` manually).
 
+## Language and spelling
+
+- Use British English for news posts and non-repost event pages.
+- Reposts may retain original wording and spelling when needed for faithful attribution.
+
 ## News post guidance
 
 Use a news post for updates, progress reporting, findings, or opinion pieces.
-Use British English.
 
 **Required front matter**
 
@@ -64,7 +68,7 @@ Use British English.
 
 ## Event guidance
 
-Use an event entry for announcements and event documentation. Use British English.
+Use an event entry for announcements and event documentation.
 
 **Required front matter**
 
@@ -91,11 +95,10 @@ Use an event entry for announcements and event documentation. Use British Englis
 - Use 1-3 high-resolution images where possible.
 - Every image must have descriptive alt text, a caption, and rights attribution.
 
-## Reposts
+## Reposts of external content
 
-- Republishing articles that have already been published requires explicit permission.
+- Republishing articles that have already been published requires explicit permission by the original publisher.
 - Add a visible note near the top linking back to the original URL.
-- Reposts may retain original wording and spelling when needed for faithful attribution.
 
 ## Drafts
 
