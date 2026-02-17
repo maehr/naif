@@ -1,0 +1,41 @@
+---
+title: "General Assembly of SLiNER"
+date: 2026-03-25
+author: "SLiNER"
+author-title: "Organizer"
+description: "SLiNER's general assembly in Bern, with a workshop session where NAIF contributes to cross-institutional exchange among Swiss academic libraries."
+categories:
+  - "Participation by NAIF"
+tags:
+  - "SLiNER"
+  - "Workshop"
+  - "Academic libraries"
+proofread: false
+image: "images/sliner-page.png"
+image-alt: "Swissuniversities page for the Swiss Library Network for Education and Research (SLiNER)"
+image-caption: "Screenshot of the swissuniversities page for the Swiss Library Network for Education and Research (SLiNER). Source: https://www.swissuniversities.ch/organisation/gremien/netzwerke-und-vertretungen/swiss-library-network-for-education-and-research. Rights: swissuniversities."
+toc: true
+draft: true
+---
+
+## Details
+
+- Date: Wednesday, 25 March 2026
+- Time: 13:00-16:00 (workshop programme)
+- Location: Bern, Switzerland
+- Registration: By invitation (SLiNER members)
+- Event page: <https://www.swissuniversities.ch/organisation/gremien/netzwerke-und-vertretungen/swiss-library-network-for-education-and-research>
+
+## About
+
+The General Assembly of SLiNER (Swiss Library Network for Education and Research) includes an afternoon workshop for library directors and leaders from Swiss higher education institutions.
+
+NAIF plans to contribute to this workshop as a participating project, with a focus on exchange across institutions and practical collaboration opportunities for academic libraries.
+
+The provisional workshop schedule is:
+
+- 13:00-13:10: Introduction by the organising committee
+- 13:10-13:50: Keynote / project presentation(s)
+- 13:50-14:05: Q&A
+- 14:05-15:40: Workshop sessions according to the selected format
+- 15:40-16:00: World Cafe wrap-up (plenary)
