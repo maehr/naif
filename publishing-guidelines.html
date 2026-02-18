@@ -232,8 +232,8 @@
 </ul>
 <p><strong>Content structure</strong></p>
 <ul>
-<li>Put the lead text in the <code>description</code> front matter field.</li>
-<li>Do not add an explicit <code>## Lead</code> heading or a lead paragraph block in the body.</li>
+<li>Put the teaser text in the <code>description</code> front matter field.</li>
+<li>Use the front matter <code>description</code> as the teaser shown in the Quarto title block.</li>
 <li>Follow the message architecture above.</li>
 <li>Keep the post concise (500-3000 chars as a guideline).</li>
 <li>Use <code>## References</code> only with Pandoc citeproc (<code>bibliography</code> + citation keys like <code>[@key]</code>). Otherwise, add links inline or use <code>## Sources</code> / <code>## Further reading</code>.</li>
@@ -301,7 +301,7 @@
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "&lt;Short one-line subtitle (optional)&gt;"</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "YYYY-MM-DD"</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "&lt;Author name&gt;"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "&lt;Lead / teaser (&lt;= 280 chars)&gt;"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "&lt;Description / teaser (&lt;= 280 chars)&gt;"</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">other-links:</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - text: "Related event: &lt;Event title&gt;"</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    href: "../../events/&lt;yyyy-mm-dd-slug&gt;/"</span></span>
