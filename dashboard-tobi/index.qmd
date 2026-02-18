@@ -9,6 +9,19 @@ resources:
   - tobi.csv
 ---
 
+```{=html}
+<style>
+.quarto-dashboard .navbar-brand-container {
+  display: none !important;
+}
+
+.quarto-dashboard footer.footer,
+.quarto-dashboard .nav-footer {
+  display: none !important;
+}
+</style>
+```
+
 ```{python}
 #| echo: false
 import pandas as pd
@@ -94,7 +107,7 @@ dimensions_findable = int(df["tobi_findable_dim"].eq("Yes").sum())
 openalex_outputs = int(df["tobi_total_outputs_openalex_2012_2022"].fillna(0).sum())
 ```
 
-## Row {height=20%}
+## Row {height=15%}
 
 ```{python}
 #| content: valuebox
@@ -126,7 +139,7 @@ dict(icon="diagram-3", color="primary", value=f"{dimensions_findable} ({pct(dime
 dict(icon="bar-chart", color="success", value=f"{openalex_outputs:,}")
 ```
 
-## Row {height=80%}
+## Row {height=85%}
 
 ### Column {.tabset}
 

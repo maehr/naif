@@ -31,12 +31,16 @@ website:
         href: posts/index.qmd
       - text: Events
         href: events/index.qmd
-      # - href: dashboard/index.qmd
-      #   text: Dashboard
       - text: About
         href: about.qmd
       - text: Docs
         href: https://zenodo.org/communities/naif
+      # - text: Data
+      #   menu:
+      #    - text: NAIF
+      #      href: dashboard/index.qmd
+      #    - text: TOBI
+      #      href: dashboard-tobi/index.qmd
     pinned: true
   page-footer:
     center:

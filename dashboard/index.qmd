@@ -38,6 +38,15 @@ resources:
 .dashboard-table-wrap {
   overflow-x: auto;
 }
+
+.quarto-dashboard .navbar-brand-container {
+  display: none !important;
+}
+
+.quarto-dashboard footer.footer,
+.quarto-dashboard .nav-footer {
+  display: none !important;
+}
 </style>
 ```
 
@@ -220,7 +229,7 @@ neither_count = int(
 )
 ```
 
-## Row {height=20%}
+## Row {height=15%}
 
 ```{python}
 #| content: valuebox
@@ -246,7 +255,7 @@ dict(icon="globe", color="info", value=coara_count)
 dict(icon="people", color="success", value=coara_member_count)
 ```
 
-## Row {height=80%}
+## Row {height=85%}
 
 ### Column {.tabset}
 
