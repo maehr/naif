@@ -11,7 +11,6 @@ resources:
 
 ```{=html}
 <style>
-/* Improve tab text contrast for WCAG readability */
 .panel-tabset .nav-tabs .nav-link,
 .nav-tabs .nav-link {
   color: #1f2937;
@@ -35,13 +34,18 @@ resources:
   background-color: #ffffff;
   border-color: #6b7280 #6b7280 #ffffff;
 }
+
+.dashboard-table-wrap {
+  overflow-x: auto;
+}
 </style>
 ```
 
 ```{python}
 #| echo: false
-import pandas as pd
 import folium
+import pandas as pd
+from folium.plugins import MarkerCluster
 from IPython.display import HTML, display
 
 df = pd.read_csv("hei.csv")
@@ -49,6 +53,7 @@ df = pd.read_csv("hei.csv")
 TYPE_COLOURS = {
     "University": "#B54708",
     "UAS": "#0F766E",
+    "UAS Inst.": "#0369A1",
     "UTE": "#1D4ED8",
     "Univ. Inst.": "#7C2D12",
 }
@@ -56,6 +61,7 @@ TYPE_COLOURS = {
 LEGEND_LABELS = {
     "University": "Universities",
     "UAS": "Universities of Applied Sciences",
+    "UAS Inst.": "UAS Institutes",
     "UTE": "Teacher Education",
     "Univ. Inst.": "University Institutes",
 }
@@ -67,27 +73,49 @@ LEGEND_STYLE = (
     "box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); font-family: sans-serif; "
     "font-size: 13px; color: #111827; z-index: 9999;"
 )
+WIKIDATA_BASE = "https://www.wikidata.org"
+WIKIDATA_PATH = "/wiki/"
+CROSSREF_BASE = "https://api.crossref.org"
+CROSSREF_FUNDER_PATH = "/funders/"
+GEONAMES_BASE = "https://www.geonames.org"
+GEONAMES_PATH = "/"
 
-total = len(df)
-dora_count = int((df["dora_signatory"] == "Yes").sum())
-coara_count = int((df["coara_signatory"] == "Yes").sum())
-coara_member_count = int((df["coara_member"] == "Yes").sum())
 
-both_count = int(
-    ((df["dora_signatory"] == "Yes") & (df["coara_signatory"] == "Yes")).sum()
-)
-dora_only_count = int(
-    ((df["dora_signatory"] == "Yes") & (df["coara_signatory"] == "No")).sum()
-)
-coara_only_count = int(
-    ((df["dora_signatory"] == "No") & (df["coara_signatory"] == "Yes")).sum()
-)
-neither_count = int(
-    ((df["dora_signatory"] == "No") & (df["coara_signatory"] == "No")).sum()
-)
+def normalise_yes_no(value: object) -> str:
+    """Normalise status values to Yes/No/Unknown."""
+    if pd.isna(value):
+        return "Unknown"
+    text = str(value).strip().lower()
+    if text in {"yes", "true", "1"}:
+        return "Yes"
+    if text in {"no", "false", "0"}:
+        return "No"
+    return "Unknown"
+
+
+def format_identifier(value: object) -> str:
+    """Convert IDs to stable strings and remove float artefacts."""
+    if pd.isna(value):
+        return ""
+
+    text = str(value).strip()
+    if not text:
+        return ""
+
+    if text.endswith(".0"):
+        try:
+            numeric_value = float(text)
+            if numeric_value.is_integer():
+                return str(int(numeric_value))
+        except ValueError:
+            return text
+
+    return text
 
 
 def pct(value: int, denominator: int) -> str:
+    if denominator == 0:
+        return "0.0%"
     return f"{(100 * value / denominator):.1f}%"
 
 
@@ -96,38 +124,100 @@ def make_link(url: str, label: str) -> str:
 
 
 def link_ror(value: object) -> str:
-    if pd.isna(value):
+    identifier = format_identifier(value)
+    if not identifier:
         return "-"
-    return make_link(str(value), str(value))
+    return make_link(identifier, identifier)
 
 
 def link_wikidata(value: object) -> str:
-    if pd.isna(value):
+    identifier = format_identifier(value)
+    if not identifier:
         return "-"
-    v = str(value)
-    return make_link(f"https://www.wikidata.org/wiki/{v}", v)
+    if not identifier.startswith("Q"):
+        identifier = f"Q{identifier}"
+    url = f"{WIKIDATA_BASE}{WIKIDATA_PATH}{identifier}"
+    return make_link(url, identifier)
 
 
 def link_isni(value: object) -> str:
-    if pd.isna(value):
+    identifier = format_identifier(value)
+    if not identifier:
         return "-"
-    v = str(value)
-    compact = v.replace(" ", "")
-    return make_link(f"https://isni.org/isni/{compact}", v)
+    compact = identifier.replace(" ", "")
+    return make_link(f"https://isni.org/isni/{compact}", identifier)
 
 
 def link_crossref_funder(value: object) -> str:
-    if pd.isna(value):
+    identifier = format_identifier(value)
+    if not identifier:
         return "-"
-    v = str(value)
-    return make_link(f"https://api.crossref.org/funders/{v}", v)
+    url = f"{CROSSREF_BASE}{CROSSREF_FUNDER_PATH}{identifier}"
+    return make_link(url, identifier)
 
 
 def link_geonames(value: object) -> str:
-    if pd.isna(value):
+    identifier = format_identifier(value)
+    if not identifier:
         return "-"
-    v = str(value)
-    return make_link(f"https://www.geonames.org/{v}", v)
+    url = f"{GEONAMES_BASE}{GEONAMES_PATH}{identifier}"
+    return make_link(url, identifier)
+
+
+def add_type_legend(
+    map_obj: folium.Map, visible_types: set[str], extra_note: str | None = None
+) -> None:
+    """Attach a type legend to a Folium map."""
+    legend_html = f'<div style="{LEGEND_STYLE}">'
+    for institution_type in TYPE_COLOURS:
+        if institution_type not in visible_types:
+            continue
+        colour = TYPE_COLOURS[institution_type]
+        label = LEGEND_LABELS[institution_type]
+        legend_html += (
+            "<div>"
+            f'<span style="background:{colour};width:12px;height:12px;display:inline-block;'
+            'border-radius:50%;border:1px solid #111827;margin-right:6px;"></span>'
+            f"{label}"
+            "</div>"
+        )
+
+    if extra_note:
+        legend_html += f'<div style="margin-top: 5px;">{extra_note}</div>'
+
+    legend_html += "</div>"
+    _ = map_obj.get_root().html.add_child(folium.Element(legend_html))
+
+
+def display_html_table(dataframe: pd.DataFrame) -> None:
+    """Render a dataframe in a horizontally scrollable container."""
+    table_html = dataframe.to_html(escape=False, index=False)
+    display(HTML(f'<div class="dashboard-table-wrap">{table_html}</div>'))
+
+
+status_columns = ["dora_signatory", "coara_signatory", "coara_member"]
+
+for column in status_columns:
+    if column in df.columns:
+        df[column] = df[column].map(normalise_yes_no)
+
+total = len(df)
+dora_count = int(df["dora_signatory"].eq("Yes").sum())
+coara_count = int(df["coara_signatory"].eq("Yes").sum())
+coara_member_count = int(df["coara_member"].eq("Yes").sum())
+
+both_count = int(
+    (df["dora_signatory"].eq("Yes") & df["coara_signatory"].eq("Yes")).sum()
+)
+dora_only_count = int(
+    (df["dora_signatory"].eq("Yes") & df["coara_signatory"].eq("No")).sum()
+)
+coara_only_count = int(
+    (df["dora_signatory"].eq("No") & df["coara_signatory"].eq("Yes")).sum()
+)
+neither_count = int(
+    (df["dora_signatory"].eq("No") & df["coara_signatory"].eq("No")).sum()
+)
 ```
 
 ## Row {height=20%}
@@ -150,6 +240,12 @@ dict(icon="pen", color="primary", value=dora_count)
 dict(icon="globe", color="info", value=coara_count)
 ```
 
+```{python}
+#| content: valuebox
+#| title: "CoARA Members"
+dict(icon="people", color="success", value=coara_member_count)
+```
+
 ## Row {height=80%}
 
 ### Column {.tabset}
@@ -158,7 +254,9 @@ dict(icon="globe", color="info", value=coara_count)
 
 ```{python}
 #| echo: false
-dora_df = df[df["dora_signatory"] == "Yes"]
+dora_df = df[
+    (df["dora_signatory"] == "Yes") & df["lat"].notna() & df["lon"].notna()
+].copy()
 
 m = folium.Map(
     location=[46.8, 8.3],
@@ -166,6 +264,9 @@ m = folium.Map(
     control_scale=True,
     tiles="cartodbpositron",
 )
+
+cluster = MarkerCluster(disableClusteringAtZoom=10)
+_ = cluster.add_to(m)
 
 for _, r in dora_df.iterrows():
     marker = folium.CircleMarker(
@@ -177,16 +278,16 @@ for _, r in dora_df.iterrows():
         fill_color=TYPE_COLOURS.get(r["type"], "#7C9070"),
         fill_opacity=1.0,
         tooltip=r["short_name"],
-        popup=f"<b>{r['name']}</b><br>Type: {r['type']}<br>{r['town']}",
+        popup=(
+            f"<b>{r['name']}</b><br>"
+            f"Type: {r['type']}<br>"
+            f"Town: {r['town']}<br>"
+            f"CoARA: {r['coara_signatory']}"
+        ),
     )
-    _ = marker.add_to(m)
+    _ = marker.add_to(cluster)
 
-legend_html = f'<div style="{LEGEND_STYLE}">'
-for t, c in TYPE_COLOURS.items():
-    legend_html += f'<div><span style="background:{c};width:12px;height:12px;display:inline-block;border-radius:50%;border:1px solid #111827;margin-right:6px;"></span>{LEGEND_LABELS[t]}</div>'
-legend_html += "</div>"
-legend = folium.Element(legend_html)
-_ = m.get_root().html.add_child(legend)
+add_type_legend(m, set(dora_df["type"].dropna().tolist()))
 
 display(m)
 ```
@@ -195,7 +296,9 @@ display(m)
 
 ```{python}
 #| echo: false
-coara_df = df[df["coara_signatory"] == "Yes"]
+coara_df = df[
+    (df["coara_signatory"] == "Yes") & df["lat"].notna() & df["lon"].notna()
+].copy()
 
 m = folium.Map(
     location=[46.8, 8.3],
@@ -203,6 +306,9 @@ m = folium.Map(
     control_scale=True,
     tiles="cartodbpositron",
 )
+
+cluster = MarkerCluster(disableClusteringAtZoom=10)
+_ = cluster.add_to(m)
 
 for _, r in coara_df.iterrows():
     is_member = r["coara_member"] == "Yes"
@@ -217,17 +323,21 @@ for _, r in coara_df.iterrows():
         fill_color=TYPE_COLOURS.get(r["type"], "#7C9070"),
         fill_opacity=1.0,
         tooltip=label,
-        popup=f"<b>{r['name']}</b><br>Type: {r['type']}<br>{r['town']}<br>CoARA Member: {member_text}",
+        popup=(
+            f"<b>{r['name']}</b><br>"
+            f"Type: {r['type']}<br>"
+            f"Town: {r['town']}<br>"
+            f"DORA: {r['dora_signatory']}<br>"
+            f"CoARA Member: {member_text}"
+        ),
     )
-    _ = marker.add_to(m)
+    _ = marker.add_to(cluster)
 
-legend_html = f'<div style="{LEGEND_STYLE}">'
-for t, c in TYPE_COLOURS.items():
-    legend_html += f'<div><span style="background:{c};width:12px;height:12px;display:inline-block;border-radius:50%;border:1px solid #111827;margin-right:6px;"></span>{LEGEND_LABELS[t]}</div>'
-legend_html += '<div style="margin-top: 5px;">* CoARA Member</div>'
-legend_html += "</div>"
-legend = folium.Element(legend_html)
-_ = m.get_root().html.add_child(legend)
+add_type_legend(
+    m,
+    set(coara_df["type"].dropna().tolist()),
+    extra_note="* CoARA Member",
+)
 
 display(m)
 ```
@@ -263,6 +373,7 @@ type_stats = (
     )
     .reset_index()
 )
+
 type_stats["DORA %"] = (100 * type_stats["DORA"] / type_stats["Institutions"]).map(
     lambda x: f"{x:.1f}%"
 )
@@ -273,9 +384,11 @@ type_stats["CoARA member %"] = (
     100 * type_stats["CoARA_members"] / type_stats["Institutions"]
 ).map(lambda x: f"{x:.1f}%")
 
-type_stats = type_stats.rename(columns={"CoARA_members": "CoARA members"})
+type_stats = type_stats.rename(columns={"CoARA_members": "CoARA members"}).sort_values(
+    ["Institutions", "type"], ascending=[False, True]
+)
 
-display(type_stats)
+display(type_stats.reset_index(drop=True))
 ```
 
 #### All Institutions
@@ -291,6 +404,9 @@ all_institutions = df[
         "dora_signatory",
         "coara_signatory",
         "coara_member",
+        "swissuniversities_name",
+        "openalex_ids",
+        "openorgs_ids",
         "ror_id",
         "wikidata_id",
         "isni_id",
@@ -307,11 +423,31 @@ all_institutions["crossref_funder_id"] = all_institutions["crossref_funder_id"].
 )
 all_institutions["geonames_id"] = all_institutions["geonames_id"].apply(link_geonames)
 
-all_institutions = all_institutions.sort_values(["type", "town", "name"]).reset_index(
+all_institutions = all_institutions.rename(
+    columns={
+        "name": "Institution",
+        "short_name": "Short",
+        "type": "Type",
+        "town": "Town",
+        "dora_signatory": "DORA",
+        "coara_signatory": "CoARA",
+        "coara_member": "CoARA member",
+        "swissuniversities_name": "swissuniversities name",
+        "openalex_ids": "OpenAlex IDs",
+        "openorgs_ids": "OpenOrgs IDs",
+        "ror_id": "ROR",
+        "wikidata_id": "Wikidata",
+        "isni_id": "ISNI",
+        "crossref_funder_id": "Crossref funder",
+        "geonames_id": "GeoNames",
+    }
+)
+
+all_institutions = all_institutions.sort_values(["Type", "Town", "Institution"]).reset_index(
     drop=True
 )
 
-display(HTML(all_institutions.to_html(escape=False, index=False)))
+display_html_table(all_institutions)
 ```
 
 #### Download Data

@@ -1,0 +1,70 @@
+---
+title: "How NAIF Continues TOBI's Work in Switzerland"
+subtitle: "From diagnostics to implementation: where NAIF carries TOBI forward."
+date: "2025-12-15"
+author: "Dr Moritz Mähr"
+description: "TOBI built a strong evidence base on open bibliometric data quality for Swiss higher education institutions. NAIF continues that work by turning insights into coordinated interoperability and metadata improvements across repositories."
+categories:
+  - "General"
+tags:
+  - "TOBI"
+  - "Interoperability"
+  - "Metadata quality"
+proofread: false
+image: "images/tobi-homepage.png"
+image-alt: "Screenshot of the TOBI project homepage"
+image-caption: "TOBI project homepage. Source: https://eth-library.github.io/tobi/. Rights: ETH Library / TOBI."
+toc: true
+draft: true
+---
+
+::: {.lead}
+TOBI (Towards Open Bibliometric Indicators) provided Switzerland with a robust baseline: where open bibliometric data already works, where quality and coverage gaps remain, and which practical recommendations can improve visibility of institutional research output. NAIF does not restart this work; it continues it with a wider interoperability scope, stronger coordination across repositories, and a focus on implementation.
+:::
+
+## Why this continuity matters
+
+When projects end, there is always a risk that findings remain static reports rather than becoming shared practice. TOBI closed in July 2025 with analyses, tools, and recommendations that are directly relevant to Swiss institutional repositories. NAIF, launched in July 2025, can carry these outputs into the next phase: coordinated action across institutions.
+
+In that sense, NAIF should be understood as a continuation in function rather than a copy in design. TOBI concentrated on evaluating open bibliometric data and indicator foundations. NAIF expands to the broader repository interoperability landscape, where these data-quality questions become operational requirements.
+
+## Which aspects of TOBI NAIF continues
+
+### 1) Data quality as infrastructure, not an afterthought
+
+TOBI made the case that open indicators are only as credible as the underlying metadata. NAIF continues this principle in Track 3 and Track 4 by analysing metadata availability and quality in Swiss repositories and by prioritising concrete improvement actions.
+
+This includes persistent gaps that TOBI already highlighted in practice: inconsistent organisational naming, incomplete affiliation links, and uneven metadata completeness across systems.
+
+### 2) Identifier-oriented improvement (for example ROR and ORCID)
+
+TOBI repeatedly showed that findability depends on disambiguation and consistent identifiers. NAIF continues this with explicit work on organisational and researcher identifiers, including ROR and ORCID alignment in repository workflows.
+
+The key shift is from diagnosing identifier problems in external databases to supporting local and national processes that prevent these problems at source.
+
+### 3) Responsible indicators linked to open science practice
+
+TOBI was framed by DORA-compatible transparency principles for data and methods. NAIF continues that orientation through its responsible-indicator work (Track 1) while connecting indicator use more directly to interoperability and metadata standards.
+
+This helps move from general endorsement of responsible assessment to a clearer operational question: what data conditions must be met before indicators are interpreted or compared?
+
+### 4) Reuse of outputs and community-building
+
+TOBI delivered reusable assets, including publications, datasets, code resources, and practical recommendations. NAIF continues this reuse-first approach through workshops, cross-institution dialogue, and openly shared deliverables.
+
+Importantly, NAIF adds a governance perspective: findings from the four tracks are designed to feed into a national working-group model that can sustain coordination after the project period.
+
+## What changes with NAIF
+
+TOBI primarily answered: *How reliable are open bibliometric sources for Swiss higher education institutions, and what should improve?*
+
+NAIF adds: *How do Swiss repositories and stakeholders coordinate these improvements so that national findability and interoperability become durable rather than project-bound?*
+
+That transition from evidence generation to coordinated implementation is the central form of continuity.
+
+## Sources
+
+- TOBI project homepage: <https://eth-library.github.io/tobi/>
+- TOBI, "About": <https://eth-library.github.io/tobi/about.html>
+- TOBI, "Resources": <https://eth-library.github.io/tobi/resources.html>
+- NAIF "About": <https://eth-library.github.io/naif/about.html>

@@ -1,0 +1,322 @@
+---
+title: "TOBI Data Dashboard"
+format: dashboard
+author: "Dr. Moritz Mähr"
+description: "TOBI findability and output coverage for Swiss higher education institutions."
+date: today
+draft: true
+resources:
+  - tobi.csv
+---
+
+```{python}
+#| echo: false
+import pandas as pd
+from IPython.display import HTML, display
+
+df = pd.read_csv("tobi.csv")
+
+TOBI_SOURCES = [
+    (
+        "Dimensions",
+        "tobi_findable_dim",
+        "tobi_total_outputs_dim_2012_2022",
+        "tobi_retrieval_date_dim",
+    ),
+    (
+        "Scopus",
+        "tobi_findable_scopus",
+        "tobi_total_outputs_scopus_2012_2022",
+        "tobi_retrieval_date_scopus",
+    ),
+    (
+        "Web of Science",
+        "tobi_findable_wos",
+        "tobi_total_outputs_wos_2012_2022",
+        "tobi_retrieval_date_wos",
+    ),
+    (
+        "OpenAIRE",
+        "tobi_findable_openaire",
+        "tobi_total_outputs_openaire_2012_2022",
+        "tobi_retrieval_date_openaire",
+    ),
+    (
+        "OpenAlex",
+        "tobi_findable_openalex",
+        "tobi_total_outputs_openalex_2012_2022",
+        "tobi_retrieval_date_openalex",
+    ),
+]
+
+
+def normalise_yes_no(value: object) -> str:
+    if pd.isna(value):
+        return "Unknown"
+    text = str(value).strip().lower()
+    if text in {"yes", "true", "1"}:
+        return "Yes"
+    if text in {"no", "false", "0"}:
+        return "No"
+    return "Unknown"
+
+
+def pct(value: int, denominator: int) -> str:
+    if denominator == 0:
+        return "0.0%"
+    return f"{(100 * value / denominator):.1f}%"
+
+
+def display_html_table(dataframe: pd.DataFrame) -> None:
+    table_html = dataframe.to_html(escape=False, index=False)
+    display(HTML(f'<div style="overflow-x:auto;">{table_html}</div>'))
+
+
+for _, findability_column, output_column, _ in TOBI_SOURCES:
+    if findability_column in df.columns:
+        df[findability_column] = df[findability_column].map(normalise_yes_no)
+    if output_column in df.columns:
+        df[output_column] = pd.to_numeric(df[output_column], errors="coerce")
+
+findability_columns = [c for _, c, _, _ in TOBI_SOURCES if c in df.columns]
+output_columns = [c for _, _, c, _ in TOBI_SOURCES if c in df.columns]
+
+total = len(df)
+any_tobi = int(
+    (
+        df[findability_columns].ne("Unknown").any(axis=1)
+        | df[output_columns].notna().any(axis=1)
+    ).sum()
+)
+
+openalex_findable = int(df["tobi_findable_openalex"].eq("Yes").sum())
+dimensions_findable = int(df["tobi_findable_dim"].eq("Yes").sum())
+openalex_outputs = int(df["tobi_total_outputs_openalex_2012_2022"].fillna(0).sum())
+```
+
+## Row {height=20%}
+
+```{python}
+#| content: valuebox
+#| title: "Total HEIs"
+dict(icon="building", color="light", value=total)
+```
+
+```{python}
+#| content: valuebox
+#| title: "HEIs with TOBI data"
+dict(icon="database", color="warning", value=f"{any_tobi} ({pct(any_tobi, total)})")
+```
+
+```{python}
+#| content: valuebox
+#| title: "OpenAlex Findable"
+dict(icon="search", color="info", value=f"{openalex_findable} ({pct(openalex_findable, total)})")
+```
+
+```{python}
+#| content: valuebox
+#| title: "Dimensions Findable"
+dict(icon="diagram-3", color="primary", value=f"{dimensions_findable} ({pct(dimensions_findable, total)})")
+```
+
+```{python}
+#| content: valuebox
+#| title: "OpenAlex Outputs (2012-2022)"
+dict(icon="bar-chart", color="success", value=f"{openalex_outputs:,}")
+```
+
+## Row {height=80%}
+
+### Column {.tabset}
+
+#### TOBI Findability
+
+```{python}
+#| echo: false
+findability_rows = []
+for source, findability_column, _, retrieval_column in TOBI_SOURCES:
+    yes_count = int(df[findability_column].eq("Yes").sum())
+    no_count = int(df[findability_column].eq("No").sum())
+    unknown_count = int(df[findability_column].eq("Unknown").sum())
+    known_count = yes_count + no_count
+
+    latest_retrieval = pd.to_datetime(df[retrieval_column], errors="coerce").dropna().max()
+    latest_retrieval_text = (
+        latest_retrieval.strftime("%Y-%m-%d") if pd.notna(latest_retrieval) else "-"
+    )
+
+    findability_rows.append(
+        [
+            source,
+            yes_count,
+            no_count,
+            unknown_count,
+            pct(yes_count, total),
+            pct(yes_count, known_count) if known_count else "-",
+            latest_retrieval_text,
+        ]
+    )
+
+findability_summary = pd.DataFrame(
+    findability_rows,
+    columns=[
+        "Source",
+        "Findable",
+        "Not findable",
+        "Unknown",
+        "Findable share (all HEIs)",
+        "Findable share (known only)",
+        "Latest retrieval",
+    ],
+)
+display(findability_summary)
+```
+
+```{python}
+#| echo: false
+type_findability_rows = []
+for institution_type, group in df.groupby("type", dropna=False):
+    row = {"Type": institution_type, "Institutions": len(group)}
+    for source, findability_column, _, _ in TOBI_SOURCES:
+        findable_count = int(group[findability_column].eq("Yes").sum())
+        row[f"{source} findable"] = findable_count
+        row[f"{source} %"] = pct(findable_count, len(group))
+    type_findability_rows.append(row)
+
+type_findability = pd.DataFrame(type_findability_rows).sort_values(
+    ["Institutions", "Type"], ascending=[False, True]
+)
+display(type_findability.reset_index(drop=True))
+```
+
+#### TOBI Outputs (2012-2022)
+
+```{python}
+#| echo: false
+output_rows = []
+for source, _, output_column, retrieval_column in TOBI_SOURCES:
+    values = df[output_column]
+    institutions_with_values = int(values.notna().sum())
+    total_outputs = int(values.fillna(0).sum())
+    median_outputs = int(values.dropna().median()) if institutions_with_values else 0
+
+    latest_retrieval = pd.to_datetime(df[retrieval_column], errors="coerce").dropna().max()
+    latest_retrieval_text = (
+        latest_retrieval.strftime("%Y-%m-%d") if pd.notna(latest_retrieval) else "-"
+    )
+
+    output_rows.append(
+        [
+            source,
+            institutions_with_values,
+            total_outputs,
+            median_outputs,
+            latest_retrieval_text,
+        ]
+    )
+
+output_summary = pd.DataFrame(
+    output_rows,
+    columns=[
+        "Source",
+        "HEIs with output data",
+        "Total outputs",
+        "Median outputs per HEI",
+        "Latest retrieval",
+    ],
+)
+display(output_summary)
+```
+
+```{python}
+#| echo: false
+output_column_names = [output_column for _, _, output_column, _ in TOBI_SOURCES]
+output_rename = {
+    "tobi_total_outputs_dim_2012_2022": "Dimensions",
+    "tobi_total_outputs_scopus_2012_2022": "Scopus",
+    "tobi_total_outputs_wos_2012_2022": "Web of Science",
+    "tobi_total_outputs_openaire_2012_2022": "OpenAIRE",
+    "tobi_total_outputs_openalex_2012_2022": "OpenAlex",
+}
+
+top_outputs = df[["name", "short_name", "type", *output_column_names]].copy()
+top_outputs["Largest source count"] = top_outputs[output_column_names].max(
+    axis=1, skipna=True
+)
+top_outputs = top_outputs[top_outputs["Largest source count"].notna()]
+top_outputs = top_outputs.sort_values("Largest source count", ascending=False).head(15)
+top_outputs = top_outputs.rename(
+    columns={
+        "name": "Institution",
+        "short_name": "Short",
+        "type": "Type",
+        **output_rename,
+    }
+)
+
+for column in [
+    "Dimensions",
+    "Scopus",
+    "Web of Science",
+    "OpenAIRE",
+    "OpenAlex",
+    "Largest source count",
+]:
+    top_outputs[column] = top_outputs[column].map(
+        lambda value: f"{int(value):,}" if pd.notna(value) else "-"
+    )
+
+display_html_table(top_outputs.reset_index(drop=True))
+```
+
+#### All Institutions (TOBI)
+
+```{python}
+#| echo: false
+all_institutions = df[
+    [
+        "name",
+        "short_name",
+        "type",
+        "town",
+        "swissuniversities_name",
+        "openalex_ids",
+        "openorgs_ids",
+        "tobi_findable_dim",
+        "tobi_findable_scopus",
+        "tobi_findable_wos",
+        "tobi_findable_openaire",
+        "tobi_findable_openalex",
+        "tobi_total_outputs_openalex_2012_2022",
+    ]
+].copy()
+
+all_institutions["tobi_total_outputs_openalex_2012_2022"] = all_institutions[
+    "tobi_total_outputs_openalex_2012_2022"
+].map(lambda value: f"{int(value):,}" if pd.notna(value) else "-")
+
+all_institutions = all_institutions.rename(
+    columns={
+        "name": "Institution",
+        "short_name": "Short",
+        "type": "Type",
+        "town": "Town",
+        "swissuniversities_name": "swissuniversities name",
+        "openalex_ids": "OpenAlex IDs",
+        "openorgs_ids": "OpenOrgs IDs",
+        "tobi_findable_dim": "Dimensions",
+        "tobi_findable_scopus": "Scopus",
+        "tobi_findable_wos": "Web of Science",
+        "tobi_findable_openaire": "OpenAIRE",
+        "tobi_findable_openalex": "OpenAlex",
+        "tobi_total_outputs_openalex_2012_2022": "OpenAlex outputs (2012-2022)",
+    }
+)
+
+all_institutions = all_institutions.sort_values(["Type", "Town", "Institution"]).reset_index(
+    drop=True
+)
+
+display_html_table(all_institutions)
+```
