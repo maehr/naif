@@ -3,7 +3,7 @@ title: "How NAIF Continues TOBI's Work in Switzerland"
 subtitle: "From diagnostics to implementation: where NAIF carries TOBI forward."
 date: "2025-12-15"
 author: "Dr Moritz Mähr"
-description: "TOBI built a strong evidence base on open bibliometric data quality for Swiss higher education institutions. NAIF continues that work by turning insights into coordinated interoperability and metadata improvements across repositories."
+description: "TOBI (Towards Open Bibliometric Indicators) provided Switzerland with a robust baseline: where open bibliometric data already works, where quality and coverage gaps remain, and which practical recommendations can improve visibility of institutional research output. NAIF does not restart this work; it continues it with a wider interoperability scope, stronger coordination across repositories, and a focus on implementation."
 categories:
   - "General"
 tags:
@@ -17,10 +17,6 @@ image-caption: "TOBI project homepage. Source: https://eth-library.github.io/tob
 toc: true
 draft: true
 ---
-
-::: {.lead}
-TOBI (Towards Open Bibliometric Indicators) provided Switzerland with a robust baseline: where open bibliometric data already works, where quality and coverage gaps remain, and which practical recommendations can improve visibility of institutional research output. NAIF does not restart this work; it continues it with a wider interoperability scope, stronger coordination across repositories, and a focus on implementation.
-:::
 
 ## Why this continuity matters
 

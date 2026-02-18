@@ -125,12 +125,7 @@ uv run quarto render
 
 ### Post structure and references
 
-- Do not use an explicit `## Lead` heading.
-- Start posts with a lead paragraph block:
-
-```markdown
-::: {.lead} Introductory paragraph(s). :::
-```
+- Use the front matter `description` as the post teaser shown in the Quarto title block.
 
 - Use `## References` only when references are generated with Pandoc citeproc (`bibliography` +
   citation keys such as `[@key]`).

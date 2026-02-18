@@ -142,6 +142,7 @@ npm run screenshot:clean -- "https://example.org" "posts/<entry>/images/shot.png
 - Every blog entry has its own folder and keeps assets (images) in a local `images/` subfolder.
 - Posts and event pages use British English by default.
 - Reposts must include a clear source note and link back to the original publication.
+- Use front-matter `description` as the teaser shown in the Quarto title block.
 
 ## Support
 
