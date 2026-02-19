@@ -20,8 +20,8 @@ tags:
   - "persistent identifiers"
 proofread: false
 image: "images/soad-website.png"
-image-alt: 'Swiss Open Academic Data website'
-image-caption: 'Screenshot of the Swiss Open Academic Data (SOAD) website. Source: https://soad.ch. Rights: SOAD.'
+image-alt: "ETH Zurich Staffnet article about Swiss Open Academic Data Day (SOAD)"
+image-caption: "Screenshot of the ETH Zurich Staffnet article on Swiss Open Academic Data Day (SOAD). Source: https://ethz.ch/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2025/07/swiss-open-academic-data-day-soad.html. Rights: ETH Zurich."
 aliases:
   - /posts/2025-09-26-naif-at-soad-and-icsti/
 

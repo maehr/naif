@@ -126,7 +126,6 @@ uv run quarto render
 ### Post structure and references
 
 - Use the front matter `description` as the post teaser shown in the Quarto title block.
-
 - Use `## References` only when references are generated with Pandoc citeproc (`bibliography` +
   citation keys such as `[@key]`).
 - If citeproc is not used, include links inline in the text or in a `## Sources` /
