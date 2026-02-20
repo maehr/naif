@@ -20,8 +20,8 @@ image-caption: 'Participants of the 6th SYoS workshop at ETH Zurich (ETH Zurich 
 source:
   url: "https://yearofscientometrics.ethz.ch/responsible-use-of-quantitative-scientometric-indicators-insights-from-the-6th-syos-workshop/"
   note: "Repost with permission. Originally published by Swiss Year of Scientometrics (SYoS)."
-
 toc: true
+draft: false
 ---
 
 ::: {.callout-note}

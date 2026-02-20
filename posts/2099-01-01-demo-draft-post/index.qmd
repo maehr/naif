@@ -2,7 +2,13 @@
 title: "Demo draft news post"
 subtitle: "Internal example entry for checking draft presentation and listing behaviour."
 date: 2099-01-01
-author: "NAIF"
+author:
+  - name: "Dr David Johann"
+    orcid: "0000-0002-8970-9686"
+    affiliation: "ETH Zurich"
+  - name: "Dr Moritz Mähr"
+    orcid: "0000-0002-1367-1618"
+    affiliation: "ETH Zurich"
 description: "Draft demo used to preview layout and metadata before publishing."
 categories:
   - "General"

@@ -5,7 +5,7 @@ date: "2026-02-09"
 author:
   - name: "Dr Moritz Mähr"
     orcid: "0000-0002-1367-1618"
-    affiliation: "ETH Library, ETH Zurich"
+    affiliation: "ETH Zurich"
 description: "On 29-30 January 2026, the Center for Reproducible Science and Research Synthesis (CRS) at the University of Zurich hosted the Research on Research (RoR) Event 2026. NAIF Track 1 contributed a poster on the responsible use of quantitative scientometric indicators (QSI) in Swiss Higher Education Institutions (HEI)."
 doi: "10.5281/zenodo.18656169"
 other-links:

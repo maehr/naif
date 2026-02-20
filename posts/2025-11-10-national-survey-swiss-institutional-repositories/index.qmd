@@ -2,7 +2,13 @@
 title: "NAIF launches a national survey on Swiss repositories"
 subtitle: "Repository managers are invited to contribute evidence for a national interoperability roadmap."
 date: 2025-11-10
-author: "NAIF"
+author:
+  - name: "Julien Sicot"
+    orcid: "0000-0002-9457-6638"
+    affiliation: "EPFL"
+  - name: "Simon Willemin"
+    orcid: "0009-0003-5802-9113"
+    affiliation: "ETH Zurich"
 description: "National survey to map Swiss institutional repositories and identify needs for interoperability and shared standards."
 other-links:
   - text: "Related event: Survey Q&A session (French)"
@@ -20,6 +26,7 @@ image: "images/surveyhero-naif-survey.png"
 image-alt: 'Survey page for the NAIF repositories survey'
 image-caption: 'Screenshot of the NAIF repositories survey page on SurveyHero. Source: https://www.surveyhero.com/c/naif-repositories-2025. Rights: SurveyHero / NAIF.'
 toc: true
+draft: true
 ---
 
 

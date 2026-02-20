@@ -5,11 +5,11 @@ type: software
 authors:
   - given-names: "Moritz"
     family-names: "Maehr"
-    affiliation: "ETH Library"
+    affiliation: "ETH Zurich"
     website: "https://github.com/maehr"
   - given-names: "Germano"
     family-names: "Giuliani"
-    affiliation: "ETH Library"
+    affiliation: "ETH Zurich"
     website: "https://ethz.ch/staffnet/de/organisation/abteilungen/eth-bibliothek/mitarbeitende-der-eth-bibliothek/profil.OTQyNTU=.TGlzdC80OTkzLC0xODY3NDg1NDE=.html"
   - given-names: "Simon"
     family-names: "Willemin"

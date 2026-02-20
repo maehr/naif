@@ -2,7 +2,13 @@
 title: "Launching NAIF: A Look Back at the Information Event"
 subtitle: "Kick-off webinar highlights NAIF's roadmap for repository interoperability in Switzerland."
 date: 2025-08-28
-author: "NAIF"
+author:
+  - name: "Dr David Johann"
+    orcid: "0000-0002-8970-9686"
+    affiliation: "ETH Zurich"
+  - name: "Simon Willemin"
+    orcid: "0009-0003-5802-9113"
+    affiliation: "ETH Zurich"
 description: "The NAIF project held its first public information event on 28 August 2025, introducing the consortium's goals for Swiss research findability."
 doi: "10.5281/zenodo.18633495"
 other-links:
@@ -19,6 +25,7 @@ image: "images/eth-news-naif-info-event.png"
 image-alt: 'ETH Zurich Staffnet news page about the NAIF information event'
 image-caption: 'Screenshot of the ETH Zurich Staffnet page for the NAIF information event. Source: https://ethz.ch/staffnet/en/news-and-events/internal-news/archive/2025/08/naif-information-event-increasing-the-findability-of-swiss-research.html. Rights: ETH Zurich.'
 toc: true
+draft: false
 ---
 
 <!--

@@ -2,7 +2,10 @@
 title: "<Title (<= 70 chars)>"
 subtitle: "<Short one-line subtitle (optional)>"
 date: "YYYY-MM-DD"
-author: "<Author name>"
+author:
+  - name: "<Author name>"
+    orcid: "<0000-0000-0000-0000>"
+    affiliation: "<Affiliation>"
 description: "<Description / teaser (<= 280 chars)>"
 other-links:
   - text: "Related event: <Event title>"

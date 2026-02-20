@@ -5,7 +5,7 @@ date: "2026-02-19"
 author:
   - name: "Dr Moritz Mähr"
     orcid: "0000-0002-1367-1618"
-    affiliation: "ETH Library, ETH Zurich"
+    affiliation: "ETH Zurich"
 description: "Thoth Open Metadata's new framework for OA books and NAIF's Swiss repository work approach the same interoperability challenge from opposite directions. This post compares both models and outlines how they can reinforce each other."
 categories:
   - "General"

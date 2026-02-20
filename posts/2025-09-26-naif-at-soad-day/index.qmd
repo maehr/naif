@@ -2,7 +2,10 @@
 title: "Enhancing Open Academic Data through NAIF Track 4"
 subtitle: "Track 4 shared practical metadata challenges and next steps with the SOAD community."
 date: 2025-09-26
-author: "NAIF"
+author:
+  - name: "Dr Moritz Mähr"
+    orcid: "0000-0002-1367-1618"
+    affiliation: "ETH Zurich"
 description: "NAIF presented its Track 4 work on enhancing academic metadata at the first Swiss Open Academic Data Day at ETH Zurich."
 doi: "10.5281/zenodo.17142628"
 other-links:
@@ -24,8 +27,8 @@ image-alt: "ETH Zurich Staffnet article about Swiss Open Academic Data Day (SOAD
 image-caption: "Screenshot of the ETH Zurich Staffnet article on Swiss Open Academic Data Day (SOAD). Source: https://ethz.ch/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2025/07/swiss-open-academic-data-day-soad.html. Rights: ETH Zurich."
 aliases:
   - /posts/2025-09-26-naif-at-soad-and-icsti/
-
 toc: true
+draft: false
 ---
 
 

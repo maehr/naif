@@ -20,8 +20,8 @@ image-caption: 'Michael Svendsen and Kira Stine Hansen in front of a full room.'
 source:
   url: "https://www.uzh.ch/blog/ub/2025/11/12/what-switzerland-can-learn-from-other-countries-review-of-the-event-from-policy-to-practice-building-a-national-open-research-information-framework-in-switzerland/?lang=en"
   note: "Repost with permission. Originally published by Zurich University Library."
-
 toc: true
+draft: false
 ---
 
 ::: {.callout-note}
