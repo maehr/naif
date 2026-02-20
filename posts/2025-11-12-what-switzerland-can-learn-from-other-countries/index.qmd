@@ -2,7 +2,10 @@
 title: "What Switzerland Can Learn from Other Countries: Review of the event \"From Policy to Practice: Building a National Open Research Information Framework in Switzerland\""
 subtitle: "International case studies show governance and collaboration models relevant for Switzerland."
 date: 2025-11-12
-author: "Open Science Services (Zurich University Library)"
+author:
+  - name: "Dr Melanie Röthlisberger"
+    orcid: "0000-0002-1959-174X"
+    affiliation: "University of Zurich"
 description: "Review of the NAIF event \"From Policy to Practice\" with inputs from Denmark, the Netherlands, and Finland."
 other-links:
   - text: "Related event: From Policy to Practice"
@@ -70,5 +73,3 @@ After the three keynote speeches, the event concluded with a short discussion ro
 Download presentations: from the [NAIF-Zenodo community](https://zenodo.org/communities/naif)
 
 **About the project**: The [NAIF project](https://eth-library.github.io/naif/) (2025–2026) is supported by eight Swiss universities and co-financed by swissuniversities. The project aims to enable greater interoperability and standardization between institutional repositories in Switzerland. The project is led by ETH Zurich / ETH Library. Other participants include: UZH / Zurich University Library, EPFL, ZHAW, PH St. Gallen, University of Fribourg, University of Neuchâtel, and the University of St. Gallen.
-
-*Dr. Melanie Röthlisberger, Open Science Services*
