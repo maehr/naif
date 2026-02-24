@@ -1,0 +1,27 @@
+---
+title: "Team"
+---
+
+## Project leader
+Dr. David Johann (ETH Library, ETH Zurich)  
+
+## Project coordinator
+Dr. Moritz Mähr (ETH Library, ETH Zurich)  
+
+## Work packages leaders
+Pascale Bouton (EPFL)  
+Dr. David Johann (ETH Library, ETH Zurich)  
+Dr. Martin Jaekel (ZHAW Zurich University of Applied Sciences)  
+Dr. Moritz Mähr (ETH Library, ETH Zurich)  
+Dr. Andrea Malits (University of Zurich)  
+Dr. Rüdiger Mutz (CHESS, University of Zurich)  
+Dr. Efraín Ochoa (University of Fribourg)  
+Julien Sicot (EPFL)  
+Stefan Vogt (University of Zurich)  
+
+## Project contributors
+[list of contributors in preparation]
+
+## Former team members
+
+Simon Willemin (ETH Library, ETH Zurich), co-lead until end of 2025
