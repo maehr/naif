@@ -9,6 +9,10 @@ other-links:
     href: "../../posts/2025-09-26-naif-at-soad-day/"
   - text: "Related post: Prioritising Actions for Better Academic Metadata"
     href: "../../posts/2026-02-10-track-4-workshop-2025-12-08/"
+  - text: "Workshop #2 slides on Zenodo (DOI)"
+    href: "https://doi.org/10.5281/zenodo.18709342"
+  - text: "Workshop #1 slides on Zenodo (DOI)"
+    href: "https://doi.org/10.5281/zenodo.18709127"
 categories:
   - "Organised by NAIF"
 tags:
@@ -37,3 +41,11 @@ This event has already taken place. Any registration information has been disabl
 ## About
 
 This workshop focuses on improving academic metadata for Swiss repositories and institutions as part of NAIF Track 4.
+
+The workshop outcomes are documented in [Prioritising Actions for Better Academic Metadata](../../posts/2026-02-10-track-4-workshop-2025-12-08/).
+
+## Materials
+
+- Workshop #2 slides (Zenodo): https://doi.org/10.5281/zenodo.18709342
+- Workshop #2 citation DOI (all versions): https://doi.org/10.5281/zenodo.18709341
+- Related workshop #1 slides (Zenodo): https://doi.org/10.5281/zenodo.18709127

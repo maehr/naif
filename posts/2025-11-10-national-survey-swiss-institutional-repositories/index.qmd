@@ -10,6 +10,7 @@ author:
     orcid: "0009-0003-5802-9113"
     affiliation: "ETH Zurich"
 description: "National survey to map Swiss institutional repositories and identify needs for interoperability and shared standards."
+# TODO: add frontmatter DOI when the survey output is uploaded and citable.
 other-links:
   - text: "Related event: Survey Q&A session (French)"
     href: "../../events/2025-11-20-survey-qa-fr/"

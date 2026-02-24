@@ -32,9 +32,9 @@ The listing reports total project costs of **CHF 588,000** and requested funds o
 
 ## Project abstract
 
-Compared to other countries, Switzerland lacks a systematic overview of the output (e.g. scientific publications) produced by researchers at Swiss Higher Education Institutions (HEIs). Most institutions have their own repositories in which a large number of their publications are listed. However, these repositories differ in coverage of the institutional research outputs and completeness of metadata for the available publications.
+Compared to other countries, Switzerland lacks a systematic overview of the outputs (e.g. scientific publications) produced by researchers at Swiss Higher Education Institutions (HEIs). Most institutions host their own repositories which list most of their publications. However, these repositories differ in terms of the coverage of institutional research outputs and the completeness of the corresponding metadata.
 
-The project aims (1) to make research outputs by researchers at Swiss HEIs more visible, and (2) to optimise the data basis for monitoring and steering Swiss research in general and OA publications in particular. To achieve these overarching goals, the project will work towards more standardisation and interoperability across repositories in Swiss HEIs and develop scenarios for a national approach to disseminate and reuse Swiss research results. In addition, the project aims (3) to promote the responsible use of indicators for research assessment on the basis of the national approach and standardised repositories.
+The project aims (1) to make research outputs of researchers at Swiss HEIs more visible, and (2) to optimise the data basis for monitoring and steering Swiss research, in general, and OA publications, in particular. To achieve these overarching goals, the project will work towards standardisation and interoperability across repositories in Swiss HEIs, and develop scenarios for a national approach to disseminate and reuse Swiss research results. In addition, the project aims (3) to promote the responsible use of indicators for research assessment based on the developed national approach and its standardised repositories.
 
 ## Sources
 

@@ -9,6 +9,8 @@ other-links:
     href: "../../posts/2025-09-26-naif-at-soad-day/"
   - text: "Related post: Prioritising Actions for Better Academic Metadata"
     href: "../../posts/2026-02-10-track-4-workshop-2025-12-08/"
+  - text: "Workshop slides on Zenodo (DOI)"
+    href: "https://doi.org/10.5281/zenodo.18709127"
 categories:
   - "Organised by NAIF"
 tags:
@@ -36,3 +38,10 @@ This event has already taken place. Any registration information has been disabl
 ## About
 
 This workshop is part of NAIF Track 4.
+
+For context and follow-up, see [Enhancing Open Academic Data through NAIF Track 4](../../posts/2025-09-26-naif-at-soad-day/) and [Prioritising Actions for Better Academic Metadata](../../posts/2026-02-10-track-4-workshop-2025-12-08/).
+
+## Materials
+
+- Workshop slides (Zenodo): https://doi.org/10.5281/zenodo.18709127
+- Citation DOI (all versions): https://doi.org/10.5281/zenodo.18709126

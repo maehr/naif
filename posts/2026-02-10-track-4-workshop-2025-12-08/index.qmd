@@ -7,11 +7,16 @@ author:
     orcid: "0000-0002-1367-1618"
     affiliation: "ETH Zurich"
 description: "NAIF Track 4 held its second workshop to classify and prioritise 18 proposed actions for improving academic metadata in Swiss repositories using the Agreement & Certainty Matrix."
+doi: 10.5281/zenodo.18709127
 other-links:
   - text: "Related event: Workshop Improving academic metadata (Neuchatel)"
     href: "../../events/2025-10-15-improving-academic-metadata-neuchatel/"
   - text: "Related event: Workshop Improving academic metadata (Track 4)"
     href: "../../events/2025-12-08-improving-academic-metadata-online/"
+  - text: "Workshop 1 slides on Zenodo (DOI)"
+    href: "https://doi.org/10.5281/zenodo.18709127"
+  - text: "Workshop 2 slides on Zenodo (DOI)"
+    href: "https://doi.org/10.5281/zenodo.18709342"
 categories:
   - "Track 4"
 tags:
@@ -28,7 +33,7 @@ draft: true
 
 ## From ideas to action
 
-On 15 October 2025, the first NAIF Track 4 workshop brought together repository managers, data stewards, and open science specialists from across Switzerland to explore four families of academic metadata: organisational data, authorship and researcher data, funding information, and open access and licensing data. That workshop produced a rich set of exploratory maps and proposed actions, compiled on the [NAIF Track 4 Trello board](https://trello.com/b/QiVYYDdi/naif-track-4) by Jorge Rodrigues de Matos (EPFL). What was still missing was a shared sense of priority — which proposals are ready to act on, and which need more groundwork first?
+On 15 October 2025, the first NAIF Track 4 workshop brought together repository managers, data stewards, and open science specialists from across Switzerland to explore four families of academic metadata: organisational data, authorship and researcher data, funding information, and open access and licensing data. The workshop presentation is openly archived on Zenodo ([doi:10.5281/zenodo.18709127](https://doi.org/10.5281/zenodo.18709127)). That workshop produced a rich set of exploratory maps and proposed actions, compiled on the [NAIF Track 4 Trello board](https://trello.com/b/QiVYYDdi/naif-track-4) by Jorge Rodrigues de Matos (EPFL). What was still missing was a shared sense of priority — which proposals are ready to act on, and which need more groundwork first?
 
 Workshop #2 on 8 December 2025 set out to answer that question. Seventeen participants from eleven institutions — including ETH Zurich, EPFL, University of Zurich, ZHAW, CERN, University of Fribourg, University of Neuchâtel, Lib4RI, Berner Fachhochschule, Pädagogische Hochschule St. Gallen, and SLSP — joined a 90-minute online session to classify and advance the proposed actions.
 
@@ -60,4 +65,4 @@ Action owners are now expected to take the lead and begin work. A deadline of on
 
 The first draft of the Track 4 report for swissuniversities is due in November 2026. Between now and then, the prioritised action set from this workshop provides a clear roadmap: start with the Simple items to build momentum, invest analytical effort in the Complicated ones, and convene broadly around the Complex challenges that will shape the future of academic metadata interoperability in Switzerland.
 
-All workshop materials — the Trello board, Miro board, and presentation slides — remain accessible to participants and the wider NAIF community.
+All workshop materials — the Trello board, Miro board, and presentation slides — remain accessible to participants and the wider NAIF community, including the first workshop deck on Zenodo ([doi:10.5281/zenodo.18709127](https://doi.org/10.5281/zenodo.18709127)) and the second workshop deck ([doi:10.5281/zenodo.18709342](https://doi.org/10.5281/zenodo.18709342)).

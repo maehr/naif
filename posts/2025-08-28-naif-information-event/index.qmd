@@ -9,7 +9,7 @@ author:
   - name: "Simon Willemin"
     orcid: "0009-0003-5802-9113"
     affiliation: "ETH Zurich"
-description: "The NAIF project held its first public information event on 28 August 2025, introducing the consortium's goals for Swiss research findability."
+description: "The NAIF project held its first public information event on 28 August 2025, introducing its goals for Swiss research findability."
 doi: "10.5281/zenodo.18633495"
 other-links:
   - text: "Related event: NAIF information event"
@@ -42,21 +42,21 @@ Checklist (manual):
 
 ## Why it matters
 
-Switzerland currently lacks a systematic overview of the research output produced at its Higher Education Institutions. Most institutions maintain their own repositories, but these differ considerably in terms of coverage, completeness, and technical standards. This fragmentation severely limits the possibilities for evaluation, analysis, and strategic steering of Swiss research at the national level.
+Switzerland currently lacks a systematic overview of the research outputs produced at its Higher Education Institutions. Most institutions maintain their own repositories, but these differ considerably in terms of coverage, completeness, and technical standards. This fragmentation severely limits the possibilities for evaluation, analysis, and strategic steering of Swiss research at the national level.
 
 ## What we did
 
-On Thursday, 28 August 2025, the ETH Library and its seven partner institutions hosted the first official NAIF information event online. The event was open to anyone interested in the future of Swiss research infrastructure and served as a public introduction to NAIF - the National Approach for Interoperable repositories and Findable research results.
+On Thursday, 28 August 2025, the ETH Library and its seven partner institutions hosted the first official NAIF information event online. The event was open to anyone interested in the future of the Swiss research infrastructure and served as a first public introduction of NAIF - the National Approach for Interoperable repositories and Findable research results.
 
-The session presented the project's four key objectives. First, it outlined the goal of promoting the responsible use of quantitative indicators in research assessment, supporting the prioritisation of metadata standardisation within repositories. Second, the project will compare national approaches across Europe and develop feasible scenarios for Switzerland by engaging key stakeholders. Third, a comprehensive survey and analysis of Swiss institutional repositories will lay the groundwork for greater standardisation and interoperability. Fourth, the project aims to enhance national and global academic data through measures such as the consistent use of persistent identifiers for organisations, researchers, and funding.
+During the session, the project's four key objectives were presented. First, it outlined the goal of promoting the responsible use of quantitative indicators in research assessment, supporting the notion to prioritise metadata standardisation within repositories. Second, the project compares national approaches to open research infrastructures across Europe and develops possible and feasible scenarios for Switzerland by engaging key stakeholders. Third, a comprehensive survey and analysis of Swiss institutional repositories will lay the foundation for greater standardisation and interoperability. Fourth, the project aims to enhance national and global academic data through measures, such as the consistent use of persistent identifiers for organisations, researchers, and funding.
 
 ## What we found
 
-The event highlighted broad interest in the topic, with participants joining from across the Swiss higher education landscape. The discussion reinforced that making Swiss research output more visible is not just a technical challenge but also a question of governance, collaboration, and cultural change.
+The event highlighted broad interest in the topic, with participants joining from the full range of the Swiss Higher Education landscape. The discussion reinforced the idea that making Swiss research outputs more visible is not only a technical challenge, but also a question of governance, collaboration, and cultural change.
 
 ## What's next
 
-The NAIF project, which runs from July 2025 to December 2026, will continue with a series of workshops and consultations across all four tracks. Upcoming activities include workshops on the responsible use of quantitative scientometric indicators, academic metadata improvement, and a national survey of Swiss institutional repositories. All interested parties are welcome to follow the project's progress and get involved.
+NAIF runs from July 2025 to December 2026. The project will continue with a series of workshops and consultations across all four tracks. Upcoming activities include workshops on the responsible use of quantitative scientometric indicators, improvement of academic metadata, and a national survey of Swiss institutional repositories. All interested parties are welcome to follow the project's progress and to get involved.
 
 For additional context, see the original announcement on the [ETH Library website](https://library.ethz.ch/en/news-and-courses/news/news-articles/2025/08/naif-information-event-increasing-the-findability-of-swiss-research.html).
 

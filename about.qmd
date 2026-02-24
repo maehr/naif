@@ -97,7 +97,7 @@ This track reviews international national approaches and develops options for Sw
 
 ### Track 3: Survey of Swiss repositories
 
-*Responsible partners: ETH Zurich, EPFL*
+*Responsible partners: EPFL*
 
 This track analyses Swiss institutional repositories, starting from the list of [accredited institutions by swissuniversities](https://www.swissuniversities.ch/en/topics/studying/accredited-swiss-higher-education-institutions-1), and extends context from the [Swiss Open Access Monitor](https://oamonitor.ch/wiki/participating-institutions-repo-monitor/).
 
@@ -108,7 +108,7 @@ This track analyses Swiss institutional repositories, starting from the list of 
 
 ### Track 4: Enhancement of national and global academic data
 
-*Responsible partners: ETH Zurich, EPFL*
+*Responsible partners: ETH Zurich, University of Fribourg*
 
 This track focuses on enrichment data used in repositories, including identifiers and contextual metadata.
 
