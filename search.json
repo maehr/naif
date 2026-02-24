@@ -137,28 +137,28 @@
     "href": "posts/2025-08-28-naif-information-event/index.html#why-it-matters",
     "title": "Launching NAIF: A Look Back at the Information Event",
     "section": "Why it matters",
-    "text": "Why it matters\nSwitzerland currently lacks a systematic overview of the research output produced at its Higher Education Institutions. Most institutions maintain their own repositories, but these differ considerably in terms of coverage, completeness, and technical standards. This fragmentation severely limits the possibilities for evaluation, analysis, and strategic steering of Swiss research at the national level."
+    "text": "Why it matters\nSwitzerland currently lacks a systematic overview of the research outputs produced at its Higher Education Institutions. Most institutions maintain their own repositories, but these differ considerably in terms of coverage, completeness, and technical standards. This fragmentation severely limits the possibilities for evaluation, analysis, and strategic steering of Swiss research at the national level."
   },
   {
     "objectID": "posts/2025-08-28-naif-information-event/index.html#what-we-did",
     "href": "posts/2025-08-28-naif-information-event/index.html#what-we-did",
     "title": "Launching NAIF: A Look Back at the Information Event",
     "section": "What we did",
-    "text": "What we did\nOn Thursday, 28 August 2025, the ETH Library and its seven partner institutions hosted the first official NAIF information event online. The event was open to anyone interested in the future of Swiss research infrastructure and served as a public introduction to NAIF - the National Approach for Interoperable repositories and Findable research results.\nThe session presented the project’s four key objectives. First, it outlined the goal of promoting the responsible use of quantitative indicators in research assessment, supporting the prioritisation of metadata standardisation within repositories. Second, the project will compare national approaches across Europe and develop feasible scenarios for Switzerland by engaging key stakeholders. Third, a comprehensive survey and analysis of Swiss institutional repositories will lay the groundwork for greater standardisation and interoperability. Fourth, the project aims to enhance national and global academic data through measures such as the consistent use of persistent identifiers for organisations, researchers, and funding."
+    "text": "What we did\nOn Thursday, 28 August 2025, the ETH Library and its seven partner institutions hosted the first official NAIF information event online. The event was open to anyone interested in the future of the Swiss research infrastructure and served as a first public introduction of NAIF - the National Approach for Interoperable repositories and Findable research results.\nDuring the session, the project’s four key objectives were presented. First, it outlined the goal of promoting the responsible use of quantitative indicators in research assessment, supporting the notion to prioritise metadata standardisation within repositories. Second, the project compares national approaches to open research infrastructures across Europe and develops possible and feasible scenarios for Switzerland by engaging key stakeholders. Third, a comprehensive survey and analysis of Swiss institutional repositories will lay the foundation for greater standardisation and interoperability. Fourth, the project aims to enhance national and global academic data through measures, such as the consistent use of persistent identifiers for organisations, researchers, and funding."
   },
   {
     "objectID": "posts/2025-08-28-naif-information-event/index.html#what-we-found",
     "href": "posts/2025-08-28-naif-information-event/index.html#what-we-found",
     "title": "Launching NAIF: A Look Back at the Information Event",
     "section": "What we found",
-    "text": "What we found\nThe event highlighted broad interest in the topic, with participants joining from across the Swiss higher education landscape. The discussion reinforced that making Swiss research output more visible is not just a technical challenge but also a question of governance, collaboration, and cultural change."
+    "text": "What we found\nThe event highlighted broad interest in the topic, with participants joining from the full range of the Swiss Higher Education landscape. The discussion reinforced the idea that making Swiss research outputs more visible is not only a technical challenge, but also a question of governance, collaboration, and cultural change."
   },
   {
     "objectID": "posts/2025-08-28-naif-information-event/index.html#whats-next",
     "href": "posts/2025-08-28-naif-information-event/index.html#whats-next",
     "title": "Launching NAIF: A Look Back at the Information Event",
     "section": "What’s next",
-    "text": "What’s next\nThe NAIF project, which runs from July 2025 to December 2026, will continue with a series of workshops and consultations across all four tracks. Upcoming activities include workshops on the responsible use of quantitative scientometric indicators, academic metadata improvement, and a national survey of Swiss institutional repositories. All interested parties are welcome to follow the project’s progress and get involved.\nFor additional context, see the original announcement on the ETH Library website.\nSlides from the information event are available on Zenodo: Information event: NAIF (DOI: 10.5281/zenodo.18633495)."
+    "text": "What’s next\nNAIF runs from July 2025 to December 2026. The project will continue with a series of workshops and consultations across all four tracks. Upcoming activities include workshops on the responsible use of quantitative scientometric indicators, improvement of academic metadata, and a national survey of Swiss institutional repositories. All interested parties are welcome to follow the project’s progress and to get involved.\nFor additional context, see the original announcement on the ETH Library website.\nSlides from the information event are available on Zenodo: Information event: NAIF (DOI: 10.5281/zenodo.18633495)."
   },
   {
     "objectID": "events/index.html",
@@ -445,7 +445,14 @@
     "href": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html#about",
     "title": "Workshop: Improving academic metadata (Neuchatel)",
     "section": "About",
-    "text": "About\nThis workshop is part of NAIF Track 4."
+    "text": "About\nThis workshop is part of NAIF Track 4.\nFor context and follow-up, see Enhancing Open Academic Data through NAIF Track 4 and Prioritising Actions for Better Academic Metadata."
+  },
+  {
+    "objectID": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html#materials",
+    "href": "events/2025-10-15-improving-academic-metadata-neuchatel/index.html#materials",
+    "title": "Workshop: Improving academic metadata (Neuchatel)",
+    "section": "Materials",
+    "text": "Materials\n\nWorkshop slides (Zenodo): https://doi.org/10.5281/zenodo.18709127\nCitation DOI (all versions): https://doi.org/10.5281/zenodo.18709126"
   },
   {
     "objectID": "events/2025-11-20-survey-qa-fr/index.html",
@@ -480,7 +487,14 @@
     "href": "events/2025-12-08-improving-academic-metadata-online/index.html#about",
     "title": "Workshop: Improving academic metadata (Track 4)",
     "section": "About",
-    "text": "About\nThis workshop focuses on improving academic metadata for Swiss repositories and institutions as part of NAIF Track 4."
+    "text": "About\nThis workshop focuses on improving academic metadata for Swiss repositories and institutions as part of NAIF Track 4.\nThe workshop outcomes are documented in Prioritising Actions for Better Academic Metadata."
+  },
+  {
+    "objectID": "events/2025-12-08-improving-academic-metadata-online/index.html#materials",
+    "href": "events/2025-12-08-improving-academic-metadata-online/index.html#materials",
+    "title": "Workshop: Improving academic metadata (Track 4)",
+    "section": "Materials",
+    "text": "Materials\n\nWorkshop #2 slides (Zenodo): https://doi.org/10.5281/zenodo.18709342\nWorkshop #2 citation DOI (all versions): https://doi.org/10.5281/zenodo.18709341\nRelated workshop #1 slides (Zenodo): https://doi.org/10.5281/zenodo.18709127"
   },
   {
     "objectID": "events/2026-02-10-orcid-datacite-webinar/index.html",
@@ -557,7 +571,7 @@
     "href": "index.html#latest-news-entries",
     "title": "\nNAIFNational Approach for Interoperable repositoriesand Findable research results\n",
     "section": "Latest news entries",
-    "text": "Latest news entries\nRead more on: News\n\n\n\n\n\n\n\n\n\n\nWhat Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”\n\n\nReview of the NAIF event “From Policy to Practice” with inputs from Denmark, the Netherlands, and Finland.\n\n\n\n\n\nNov 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResponsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop\n\n\nInsights from the 6th Swiss Year of Scientometrics workshop on responsible use of quantitative scientometric indicators in research assessment.\n\n\n\n\n\nOct 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEnhancing Open Academic Data through NAIF Track 4\n\n\nNAIF presented its Track 4 work on enhancing academic metadata at the first Swiss Open Academic Data Day at ETH Zurich.\n\n\n\n\n\nSep 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLaunching NAIF: A Look Back at the Information Event\n\n\nThe NAIF project held its first public information event on 28 August 2025, introducing the consortium’s goals for Swiss research findability.\n\n\n\n\n\nAug 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nProject start\n\n\nWe are pleased to announce the launch of the NAIF project. NAIF is also listed among the approved projects in the swissuniversities Programme Open Science II call “Supporting Green Open Access” (decision: 23 June 2025).\n\n\n\n\n\nJul 1, 2025\n\n\n\n\n\nNo matching items\n\n  \n\n\nNAIF is a project initiated and funded by eight Swiss Higher Education Institutions and co-funded by swissuniversities. The project aims to enable more interoperability and standardization across Swiss institutional repositories. The project has started in July 2025 and will end in December 2026."
+    "text": "Latest news entries\nRead more on: News\n\n\n\n\n\n\n\n\n\n\nWhat Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”\n\n\nReview of the NAIF event “From Policy to Practice” with inputs from Denmark, the Netherlands, and Finland.\n\n\n\n\n\nNov 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResponsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop\n\n\nInsights from the 6th Swiss Year of Scientometrics workshop on responsible use of quantitative scientometric indicators in research assessment.\n\n\n\n\n\nOct 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nEnhancing Open Academic Data through NAIF Track 4\n\n\nNAIF presented its Track 4 work on enhancing academic metadata at the first Swiss Open Academic Data Day at ETH Zurich.\n\n\n\n\n\nSep 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLaunching NAIF: A Look Back at the Information Event\n\n\nThe NAIF project held its first public information event on 28 August 2025, introducing its goals for Swiss research findability.\n\n\n\n\n\nAug 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nProject start\n\n\nWe are pleased to announce the launch of the NAIF project. NAIF is also listed among the approved projects in the swissuniversities Programme Open Science II call “Supporting Green Open Access” (decision: 23 June 2025).\n\n\n\n\n\nJul 1, 2025\n\n\n\n\n\nNo matching items\n\n  \n\n\nNAIF is a project initiated and funded by eight Swiss Higher Education Institutions and co-funded by swissuniversities. The project aims to enable more interoperability and standardization across Swiss institutional repositories. The project has started in July 2025 and will end in December 2026."
   },
   {
     "objectID": "posts/2025-07-01-project-start/index.html",
@@ -578,7 +592,7 @@
     "href": "posts/2025-07-01-project-start/index.html#project-abstract",
     "title": "Project start",
     "section": "Project abstract",
-    "text": "Project abstract\nCompared to other countries, Switzerland lacks a systematic overview of the output (e.g. scientific publications) produced by researchers at Swiss Higher Education Institutions (HEIs). Most institutions have their own repositories in which a large number of their publications are listed. However, these repositories differ in coverage of the institutional research outputs and completeness of metadata for the available publications.\nThe project aims (1) to make research outputs by researchers at Swiss HEIs more visible, and (2) to optimise the data basis for monitoring and steering Swiss research in general and OA publications in particular. To achieve these overarching goals, the project will work towards more standardisation and interoperability across repositories in Swiss HEIs and develop scenarios for a national approach to disseminate and reuse Swiss research results. In addition, the project aims (3) to promote the responsible use of indicators for research assessment on the basis of the national approach and standardised repositories."
+    "text": "Project abstract\nCompared to other countries, Switzerland lacks a systematic overview of the outputs (e.g. scientific publications) produced by researchers at Swiss Higher Education Institutions (HEIs). Most institutions host their own repositories which list most of their publications. However, these repositories differ in terms of the coverage of institutional research outputs and the completeness of the corresponding metadata.\nThe project aims (1) to make research outputs of researchers at Swiss HEIs more visible, and (2) to optimise the data basis for monitoring and steering Swiss research, in general, and OA publications, in particular. To achieve these overarching goals, the project will work towards standardisation and interoperability across repositories in Swiss HEIs, and develop scenarios for a national approach to disseminate and reuse Swiss research results. In addition, the project aims (3) to promote the responsible use of indicators for research assessment based on the developed national approach and its standardised repositories."
   },
   {
     "objectID": "posts/2025-07-01-project-start/index.html#sources",
@@ -599,41 +613,34 @@
     "href": "posts/2025-09-26-naif-at-soad-day/index.html#why-it-matters",
     "title": "Enhancing Open Academic Data through NAIF Track 4",
     "section": "Why it matters",
-    "text": "Why it matters\nInstitutional repositories across Switzerland hold valuable research content, but their metadata are often fragmented and heterogeneous. This limits the ability to track, connect, and reuse research information - both nationally and globally. Improving the quality of academic metadata is a prerequisite for making Swiss research truly findable and interoperable."
+    "text": "Why it matters\nInstitutional repositories across Switzerland hold valuable research content, but their metadata are often fragmented and heterogeneous. This limits the ability to track, connect, and reuse research information - both nationally and globally. Improving the quality of academic metadata is a prerequisite for making Swiss research actually findable and interoperable."
   },
   {
     "objectID": "posts/2025-09-26-naif-at-soad-day/index.html#what-we-did",
     "href": "posts/2025-09-26-naif-at-soad-day/index.html#what-we-did",
     "title": "Enhancing Open Academic Data through NAIF Track 4",
     "section": "What we did",
-    "text": "What we did\nOn 10 September 2025, Pascale Bouton, Jorge Rodrigues de Matos, and Julien Sicot (EPFL) together with Simon Willemin (ETH Zurich) presented a lightning talk at the first Swiss Open Academic Data (SOAD) Day at ETH Zurich. The talk, titled “Enhancing Open Academic Data through the NAIF Project,” introduced Track 4 of the NAIF project, which is dedicated to the enhancement of national and global academic data.\nThe presentation addressed four critical dimensions of academic metadata: organisational data, authorship data, funding data, and open access information. For each dimension, the speakers highlighted the key challenges that Swiss institutions face today - from standardising organisational structures and units, to ensuring reliable researcher identifiers, linking publications to funding sources, and capturing accurate open access metadata."
+    "text": "What we did\nOn 10 September 2025, Pascale Bouton, Jorge Rodrigues de Matos, and Julien Sicot (EPFL) in collaboration with Simon Willemin (ETH Zurich) presented a lightning talk at the first Swiss Open Academic Data (SOAD) Day at ETH Zurich. The talk, titled “Enhancing Open Academic Data through the NAIF Project,” introduced Track 4 of NAIF, a project which is dedicated to the enhancement of national and global academic data.\nThe presentation addressed four critical dimensions of academic metadata: organisational and funding data as well as authorship and open access information. For each dimension, the speakers highlighted the key challenges that Swiss institutions face today - from standardising organisational structures and units, to ensuring reliable researcher identifiers, linking publications to funding sources, and capturing accurate open access metadata."
   },
   {
     "objectID": "posts/2025-09-26-naif-at-soad-day/index.html#what-we-found",
     "href": "posts/2025-09-26-naif-at-soad-day/index.html#what-we-found",
     "title": "Enhancing Open Academic Data through NAIF Track 4",
     "section": "What we found",
-    "text": "What we found\nRather than presenting ready-made solutions, the talk foregrounded open questions and tasks that require collective effort across institutions. The core insight: good practices already exist at local level in many Swiss institutions, but scaling them nationally and exploring opportunities for harmonisation remains a shared challenge. The SOAD Day audience - researchers, data scientists, and practitioners from across Switzerland - engaged actively with these questions, confirming that metadata quality is a widely felt concern."
+    "text": "What we found\nAs opposed to presenting ready-made solutions, the talk promoted open questions and tasks that require collective efforts across institutions. The core insight of the session was that good practices already existed at local level in many Swiss institutions but scaling them nationally and exploring opportunities for harmonisation remained a challenge. The SOAD Day audience - researchers, data scientists, and practitioners across Switzerland - engaged actively with these questions, suggesting that metadata quality was widely perceived as a concern."
   },
   {
     "objectID": "posts/2025-09-26-naif-at-soad-day/index.html#whats-next",
     "href": "posts/2025-09-26-naif-at-soad-day/index.html#whats-next",
     "title": "Enhancing Open Academic Data through NAIF Track 4",
     "section": "What’s next",
-    "text": "What’s next\nTrack 4 will continue to develop measures, actions, and guidelines for improving academic data quality. The findings from the SOAD Day discussion feed directly into upcoming workshops on improving academic metadata, including sessions in Neuchatel (15 October 2025) and online (8 December 2025). All interested parties are welcome to participate."
-  },
-  {
-    "objectID": "posts/2025-09-26-naif-at-soad-day/index.html#what-to-reuse",
-    "href": "posts/2025-09-26-naif-at-soad-day/index.html#what-to-reuse",
-    "title": "Enhancing Open Academic Data through NAIF Track 4",
-    "section": "What to reuse",
-    "text": "What to reuse\nThe presentation slides are openly available on Zenodo under a CC BY 4.0 licence: Bouton, P., Rodrigues de Matos, J., Sicot, J., & Willemin, S. (2025). Enhancing Open Academic Data through the NAIF Project. Zenodo. doi:10.5281/zenodo.17142628. Further NAIF deliverables are archived on the NAIF Zenodo community."
+    "text": "What’s next\nTrack 4 will continue to develop measures, actions, and guidelines for improving academic data quality. The findings from the SOAD Day discussion feed directly into upcoming workshops on improving academic metadata, including Workshop: Improving academic metadata (Neuchatel) and Workshop: Improving academic metadata (Track 4). All interested parties are welcome to participate."
   },
   {
     "objectID": "posts/index.html",
     "href": "posts/index.html",
     "title": "News",
     "section": "",
-    "text": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”\n\n\n\nTrack 2\n\n\n\nReview of the NAIF event “From Policy to Practice” with inputs from Denmark, the Netherlands, and Finland.\n\n\n\n\n\nNov 12, 2025\n\n\nDr Melanie Röthlisberger\n\n\n\n\n\n\n\n\n\n\n\n\nResponsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop\n\n\n\nTrack 1\n\n\n\nInsights from the 6th Swiss Year of Scientometrics workshop on responsible use of quantitative scientometric indicators in research assessment.\n\n\n\n\n\nOct 31, 2025\n\n\nDr Martin Jaekel\n\n\n\n\n\n\n\n\n\n\n\n\nEnhancing Open Academic Data through NAIF Track 4\n\n\n\nTrack 4\n\n\n\nNAIF presented its Track 4 work on enhancing academic metadata at the first Swiss Open Academic Data Day at ETH Zurich.\n\n\n\n\n\nSep 26, 2025\n\n\nDr Moritz Mähr\n\n\n\n\n\n\n\n\n\n\n\n\nLaunching NAIF: A Look Back at the Information Event\n\n\n\nGeneral\n\n\n\nThe NAIF project held its first public information event on 28 August 2025, introducing the consortium’s goals for Swiss research findability.\n\n\n\n\n\nAug 28, 2025\n\n\nDr David Johann, Simon Willemin\n\n\n\n\n\n\n\n\n\n\n\n\nProject start\n\n\n\nGeneral\n\n\n\nWe are pleased to announce the launch of the NAIF project. NAIF is also listed among the approved projects in the swissuniversities Programme Open Science II call “Supporting Green Open Access” (decision: 23 June 2025).\n\n\n\n\n\nJul 1, 2025\n\n\nDr David Johann, Simon Willemin\n\n\n\n\n\nNo matching items\n\nLooking for event announcements and event pages? See: Events\n\n\n\n\n\n\nNote\n\n\n\nReposts are clearly marked and link back to their original publication."
+    "text": "What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”\n\n\n\nTrack 2\n\n\n\nReview of the NAIF event “From Policy to Practice” with inputs from Denmark, the Netherlands, and Finland.\n\n\n\n\n\nNov 12, 2025\n\n\nDr Melanie Röthlisberger\n\n\n\n\n\n\n\n\n\n\n\n\nResponsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop\n\n\n\nTrack 1\n\n\n\nInsights from the 6th Swiss Year of Scientometrics workshop on responsible use of quantitative scientometric indicators in research assessment.\n\n\n\n\n\nOct 31, 2025\n\n\nDr Martin Jaekel\n\n\n\n\n\n\n\n\n\n\n\n\nEnhancing Open Academic Data through NAIF Track 4\n\n\n\nTrack 4\n\n\n\nNAIF presented its Track 4 work on enhancing academic metadata at the first Swiss Open Academic Data Day at ETH Zurich.\n\n\n\n\n\nSep 26, 2025\n\n\nDr Moritz Mähr\n\n\n\n\n\n\n\n\n\n\n\n\nLaunching NAIF: A Look Back at the Information Event\n\n\n\nGeneral\n\n\n\nThe NAIF project held its first public information event on 28 August 2025, introducing its goals for Swiss research findability.\n\n\n\n\n\nAug 28, 2025\n\n\nDr David Johann, Simon Willemin\n\n\n\n\n\n\n\n\n\n\n\n\nProject start\n\n\n\nGeneral\n\n\n\nWe are pleased to announce the launch of the NAIF project. NAIF is also listed among the approved projects in the swissuniversities Programme Open Science II call “Supporting Green Open Access” (decision: 23 June 2025).\n\n\n\n\n\nJul 1, 2025\n\n\nDr David Johann, Simon Willemin\n\n\n\n\n\nNo matching items\n\nLooking for event announcements and event pages? See: Events\n\n\n\n\n\n\nNote\n\n\n\nReposts are clearly marked and link back to their original publication."
   }
 ]
