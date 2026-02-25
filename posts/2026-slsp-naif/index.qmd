@@ -3,15 +3,13 @@ title: "SLSP Strategy 2026–2029: Where NAIF connects"
 subtitle: "SLSP published its strategy for 2026–2029. We see shared ground on open science, metadata quality, and interoperability — and room for coordination."
 date: 2026-02-09
 draft: true
-authors:
-  - name: Dr Moritz Mähr
-    orcid: 0000-0002-1367-1618
-    affiliations:
-      - name: ETH Zurich
-  - name: Dr David Johann
-    orcid: 0000-0002-8970-9686
-    affiliations:
-      - name: ETH Zurich
+author:
+  - name: "Dr Moritz Mähr"
+    orcid: "0000-0002-1367-1618"
+    affiliation: "ETH Zurich"
+  - name: "Dr David Johann"
+    orcid: "0000-0002-8970-9686"
+    affiliation: "ETH Zurich"
 description: "In January 2026, the Swiss Library Service Platform (SLSP) published its strategy for the period 2026-2029. The document outlines how SLSP plans to evolve from a library management infrastructure into a platform for academic information that is user-oriented, data- and AI-driven, interoperable, and open."
 categories:
   - "General"

@@ -1,7 +1,7 @@
 ---
 title: "TOBI Data Dashboard"
 format: dashboard
-author: "Dr. Moritz Mähr"
+author: "Dr Moritz Mähr"
 description: "TOBI findability and output coverage for Swiss higher education institutions."
 date: today
 draft: true
@@ -333,3 +333,12 @@ all_institutions = all_institutions.sort_values(["Type", "Town", "Institution"])
 
 display_html_table(all_institutions)
 ```
+
+#### Data sources and credits
+
+This dashboard reuses TOBI project data on Swiss higher education institutions and presents it in a compact NAIF format.
+
+- Data basis and methodology: Dederke, J., Koch, M., & Willemin, S. (2024). *The Representation of Swiss Higher Education Institutions in Five Bibliometric Databases*. <https://doi.org/10.3929/ethz-b-000726102>
+- Project context: TOBI (Towards Open Bibliometric Indicators), ETH Library. <https://eth-library.github.io/tobi/>
+- Data providers represented in this dashboard: Dimensions, Scopus, Web of Science, OpenAIRE, and OpenAlex.
+- Dashboard adaptation and maintenance: Dr Moritz Mähr (NAIF project).
