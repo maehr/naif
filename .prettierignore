@@ -1,0 +1,9 @@
+_site/
+.quarto/
+**/*.qmd
+**/*.html
+**/*.css
+**/*.scss
+documents/
+logos/
+site_libs/

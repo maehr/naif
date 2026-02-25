@@ -1,0 +1,56 @@
+project:
+  type: book
+  output-dir: _site-docx
+  render:
+    - index.qmd
+    - about.qmd
+    - disclaimer.qmd
+    - publishing-guidelines.qmd
+    - dashboard/index.qmd
+    - posts/index.qmd
+    - posts/**/index.qmd
+    - events/index.qmd
+    - events/**/index.qmd
+    - "!posts/_template-*/**"
+    - "!events/_template-*/**"
+
+draft-mode: visible
+
+book:
+  title: "NAIF Website Export"
+  date: last-modified
+  chapters:
+    - index.qmd
+    - about.qmd
+    - disclaimer.qmd
+    - publishing-guidelines.qmd
+    - dashboard/index.qmd
+    - posts/index.qmd
+    - posts/2026-slsp-naif/index.qmd
+    - posts/2026-02-10-track-4-workshop-2025-12-08/index.qmd
+    - posts/2026-02-09-naif-at-research-on-research/index.qmd
+    - posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.qmd
+    - posts/2025-11-10-national-survey-swiss-institutional-repositories/index.qmd
+    - posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.qmd
+    - posts/2025-09-26-naif-at-soad-day/index.qmd
+    - posts/2025-08-28-naif-information-event/index.qmd
+    - posts/2025-07-01-project-start/index.qmd
+    - posts/2099-01-01-demo-draft-post/index.qmd
+    - events/index.qmd
+    - events/2026-05-26-dariah-annual-event-2026/index.qmd
+    - events/2026-03-25-orcid-community-town-hall-2026/index.qmd
+    - events/2026-03-11-soad-online-event/index.qmd
+    - events/2026-03-09-improving-research-visibility/index.qmd
+    - events/2026-03-04-chess-workshop-dora-coara/index.qmd
+    - events/2026-02-10-orcid-datacite-webinar/index.qmd
+    - events/2026-01-29-ror-event-2026/index.qmd
+    - events/2025-12-08-improving-academic-metadata-online/index.qmd
+    - events/2025-11-26-survey-qa-de/index.qmd
+    - events/2025-11-20-survey-qa-fr/index.qmd
+    - events/2025-11-05-from-policy-to-practice/index.qmd
+    - events/2025-10-15-improving-academic-metadata-neuchatel/index.qmd
+    - events/2025-09-10-soad-day/index.qmd
+    - events/2025-08-28-information-event/index.qmd
+    - events/2099-01-02-demo-draft-event/index.qmd
+
+format: docx

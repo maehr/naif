@@ -1,0 +1,41 @@
+---
+title: "Project start"
+subtitle: "NAIF launches to advance interoperability and standardisation across Swiss institutional repositories."
+date: 2025-07-01
+author:
+  - name: "Dr David Johann"
+    orcid: "0000-0002-8970-9686"
+    affiliation: "ETH Zurich"
+  - name: "Simon Willemin"
+    orcid: "0009-0003-5802-9113"
+    affiliation: "ETH Zurich"
+description: "We are pleased to announce the launch of the NAIF project. NAIF is also listed among the approved projects in the swissuniversities Programme Open Science II call \"Supporting Green Open Access\" (decision: 23 June 2025)."
+categories:
+  - "General"
+tags:
+  - "Project"
+  - "Kick-off"
+  - "Switzerland"
+proofread: true
+image: "images/naif-homepage.png"
+image-alt: 'NAIF project website homepage'
+image-caption: 'Screenshot of the NAIF project website homepage. Source: https://eth-library.github.io/naif/. Rights: ETH Library / NAIF.'
+toc: false
+draft: false
+---
+
+## Approved project listing
+
+According to the official list of approved projects, **NAIF (National Approach for Interoperable repositories and Findable research results)** is led by **ETH Library / ETH Zurich**, with partner institutions **UZH, EPFL, ZHAW, PHSG, UNIFR, UNINE, and HSG**.
+
+The listing reports total project costs of **CHF 588,000** and requested funds of **CHF 293,000**.
+
+## Project abstract
+
+Compared to other countries, Switzerland lacks a systematic overview of the outputs (e.g. scientific publications) produced by researchers at Swiss Higher Education Institutions (HEIs). Most institutions host their own repositories which list most of their publications. However, these repositories differ in terms of the coverage of institutional research outputs and the completeness of the corresponding metadata.
+
+The project aims (1) to make research outputs of researchers at Swiss HEIs more visible, and (2) to optimise the data basis for monitoring and steering Swiss research, in general, and OA publications, in particular. To achieve these overarching goals, the project will work towards standardisation and interoperability across repositories in Swiss HEIs, and develop scenarios for a national approach to disseminate and reuse Swiss research results. In addition, the project aims (3) to promote the responsible use of indicators for research assessment based on the developed national approach and its standardised repositories.
+
+## Sources
+
+- swissuniversities, *Programme Open Science II - Call for proposals: Supporting Green Open Access, List of Approved Projects* (2025): [2025_Approved_Projects_Green_OA.pdf](https://www.swissuniversities.ch/fileadmin/swissuniversities/Dokumente/Hochschulpolitik/Open_Science/2025/2025_Approved_Projects_Green_OA.pdf)

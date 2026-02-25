@@ -1,0 +1,38 @@
+---
+title: "NAIF information event"
+date: 2025-08-28
+author: "NAIF"
+author-title: "Organizer"
+description: "Information event introducing NAIF and its goals."
+other-links:
+  - text: "Related post: Launching NAIF"
+    href: "../../posts/2025-08-28-naif-information-event/"
+categories:
+  - "Organised by NAIF"
+tags:
+  - "Community"
+  - "Kick-off"
+  - "Information session"
+proofread: true
+image: "images/eth-news-naif-info-event.png"
+image-alt: 'ETH Zurich Staffnet news page about the NAIF information event'
+image-caption: 'Screenshot of the ETH Zurich Staffnet page for the NAIF information event. Source: https://ethz.ch/staffnet/en/news-and-events/internal-news/archive/2025/08/naif-information-event-increasing-the-findability-of-swiss-research.html. Rights: ETH Zurich.'
+toc: true
+---
+
+
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
+
+## Details
+
+- Date: Thursday, 28 August 2025
+- Time: 16:00
+- Location: Online
+
+Registration was not available.
+
+## Materials
+
+- Slides: [Slides PDF](https://github.com/eth-library/naif/raw/main/documents/2025-08-28_NAIF_information_event.pdf)

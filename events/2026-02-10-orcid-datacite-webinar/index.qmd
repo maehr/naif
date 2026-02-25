@@ -1,0 +1,34 @@
+---
+title: "Elevating your Research's Impact and Visibility with ORCID and DataCite"
+date: 2026-02-10
+author: "ORCID & DataCite"
+author-title: "Organizer"
+description: "Hands-on webinar on integrating ORCID and DataCite workflows (ORCID Search & Link and Auto-Update)."
+categories:
+  - "Related Topic"
+tags:
+  - "ORCID"
+  - "DataCite"
+  - "Persistent identifiers"
+proofread: false
+image: "images/orcid-datacite-event.png"
+image-alt: "Event graphic for the ORCID and DataCite webinar"
+image-caption: "Event page visual for 'Elevating your Research's Impact and Visibility with ORCID and DataCite'. Source: https://info.orcid.org/event/elevating-your-researchs-impact-and-visibility-with-orcid-and-datacite/. Rights: ORCID and DataCite."
+toc: true
+---
+
+<!-- Source: <https://info.orcid.org/event/elevating-your-researchs-impact-and-visibility-with-orcid-and-datacite/> -->
+
+## Details
+
+- Date: Tuesday, 10 February 2026
+- Time: 11:00-12:00 EST (17:00-18:00 CET)
+- Location: Online (webinar)
+- Registration: <https://datacite.zoom.us/webinar/register/3017679637295/WN_H5S9VYLZSKqE1g2-XEaR8Q#/registration>
+- Event page: <https://info.orcid.org/event/elevating-your-researchs-impact-and-visibility-with-orcid-and-datacite/>
+
+## About
+
+This hands-on webinar introduces ways to integrate ORCID and DataCite workflows to improve attribution, tracking, and metadata quality across systems.
+It focuses on two established integration methods: the ORCID Search & Link wizard and ORCID Auto-Update.
+Slides and recordings are expected to be shared after the webinar via the DataCite Zenodo Community and the DataCite YouTube channel.

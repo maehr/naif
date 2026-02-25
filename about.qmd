@@ -1,79 +1,184 @@
 ---
 title: "About"
+subtitle: "What NAIF is, why it matters, and who is involved"
+description: "NAIF (National Approach for Interoperable repositories and Findable research results) is a swissuniversities-funded collaboration that strengthens interoperability and metadata quality across Swiss institutional repositories. By aligning policy, governance, and technical practice, the project improves the visibility and reusability of Swiss research outputs."
+other-links:
+  - text: "News"
+    href: posts/index.qmd
+  - text: "Events"
+    href: events/index.qmd
+  - text: "Publishing guidelines"
+    href: publishing-guidelines.qmd
+  - text: "Project documents (Zenodo)"
+    href: https://zenodo.org/communities/naif
+image: images/general/naif-event-image.png
+aliases:
+  - team.html
+  - resources.html
+  - contact.html
+  - join.html
+  - docs.html
 ---
 
-<!-- ## Plain language description  -->
+::: {.callout-note}
+## At a glance
 
-National Approach for Interoperable repositories and Findable research results (NAIF) is a project initiated and funded by eight Swiss Higher Education Institutions (1) and co-funded by swissuniversities.
-The project aims to enable more interoperability and standardization across Swiss institutional repositories.
-The project has started in July 2025 and will end in December 2026.
+- **Duration:** July 2025 to December 2026
+- **Funding:** Eight Swiss Higher Education Institutions and swissuniversities
+- **Focus:** Interoperability and standardisation across Swiss institutional repositories
+- **Contact:** [naif@library.ethz.ch](mailto:naif@library.ethz.ch)
+:::
 
-\(1) The project partners are: ETH Library (ETH Zurich), University of Zurich, École Polytechnique Fédérale de Lausanne (EPFL), Zurich University of Applied Sciences (ZHAW), St.Gallen University of Teacher Education (PHSG), University of Fribourg, University of Neuchâtel and University of St.Gallen.
+## Project in brief
 
-## Project description
+Swiss Higher Education Institutions operate institutional repositories with varying practices and metadata quality. This fragmentation makes national-level discovery, monitoring, and analysis difficult.
 
-Compared to other countries, Switzerland lacks a systematic overview of the output (e.g., scientific publications) produced by researchers at Swiss Higher Education Institutions (HEIs).
-Most institutions have their own repositories in which a large number of their publications are listed.
-However, these repositories differ in coverage of the institutional research outputs and completeness of metadata for the available publications.
-An Open Access (OA) monitor has been implemented in Switzerland, which provides a rough overview of the distribution of OA
-publications, amongst other things.
-While the implementation of this monitor was a step in the right direction, it does not allow standardized data analysis beyond answering simple questions.
-In sum, little information and data are available on research conducted at Swiss HEIs, with the consequence that Swiss research is less visible and Swiss policymakers still rely on traditional university rankings and external data providers for monitoring and steering, rather than consulting standardized, high-quality information provided by local HEIs.
-The project aims
-(1) to make research outputs by researchers at Swiss HEIs more visible, and
-(2) to optimize the data basis for monitoring and steering Swiss research in general and OA publications in particular.
-To achieve these overarching goals, the project will work towards more standardization and interoperability across repositories in Swiss HEIs and develop scenarios for a national approach to disseminate and reuse Swiss research results. In addition, the project aims (3) to promote the responsible use of indicators for research assessment on the basis of the national approach and standardized repositories.
+NAIF addresses this by combining conceptual design (national scenarios and governance choices) with technical implementation work (metadata harmonisation and interoperability requirements).
 
-The project aims to create a basis for a national approach that considers both conceptual requirements and technical requirements.
-The project is divided in four tracks accompanied by a unified outcome providing a foundation for a national approach that is aligned with current trends in research assessment and open science practices, and a thorough understanding of the key factors that ensure the dissemination (i.e., integration of national output in global ecosystems) and findability (i.e., high-quality metadata) of the research outputs deposited in Swiss institutional repositories.
+### Partners
 
-## Conceptual requirements
+The project partners are:
+
+- [ETH Library (ETH Zurich)](https://library.ethz.ch/en/)
+- [University of Zurich](https://www.uzh.ch/en.html)
+- [EPFL](https://www.epfl.ch/en/)
+- [ZHAW Zurich University of Applied Sciences](https://www.zhaw.ch/en/university/)
+- [PHSG St.Gallen University of Teacher Education](https://www.phsg.ch/en/)
+- [University of Fribourg](https://www.unifr.ch/home/en/)
+- [University of Neuchatel](https://www.unine.ch/)
+- [University of St.Gallen](https://www.unisg.ch/en/)
+
+![Logos of the NAIF partner institutions](images/logos/all-logos.jpg){fig-cap="Partner institutions. Rights: logos are trademarks of the respective institutions."}
+
+## Objectives
+
+- Make research outputs by researchers at Swiss HEIs more visible.
+- Improve the data basis for monitoring and steering Swiss research, with a focus on Open Access.
+- Promote the responsible use of indicators in research assessment, aligned with DORA and CoARA.
+
+## Approach
+
+- Work towards shared standards and interoperability across repositories.
+- Develop scenarios for a national approach to disseminate and reuse Swiss research results.
+- Identify the factors that ensure dissemination (integration into global ecosystems) and findability (high-quality metadata).
+
+## Timeline
+
+| Period | Milestone |
+|---|---|
+| July 2025 | Project start |
+| 2025-2026 | Track activities: workshops, inventories, consultations, recommendations |
+| December 2026 | Project end |
+
+## Tracks
+
+NAIF is organised into four coordinated tracks plus one cross-track outcome.
+
 ### Track 1: Responsible use of quantitative indicators
+
 *Responsible partners: ZHAW Zurich University of Applied Sciences, ETH Zurich, University of Zurich (CHESS)*
 
-This track aims at promoting the responsible use of indicators for research assessment on the basis of the national approach (track 2) and standardized repositories (tracks 3-4).
-In particular, with the responsible use of quantitative indicators we seek a way that is compliant with the Declaration on Research Assessment (DORA) and the Coalition for Advancing Research Assessment (CoARA), and that takes into account current international trends in open science. Our work should help to prioritize standardization of metadata in repositories. We will involve participants of Swiss Year of Scientometrics (SYoS). SYoS brought together a community of experts from different organisations and at different levels to discuss research assessments, bibliometric methods and open science practices. An active participation of the Center for Higher Education and Science Studies (CHESS) is planned as well. We will also try to reach out to the CoARA Working group on Responsible Metrics and Indicators (RMI) to further strengthen connections with CoARA.
+This track promotes responsible use of indicators for research assessment and links indicator practice with repository interoperability.
 
+- Align guidance with DORA and CoARA.
+- Connect indicator use to metadata standardisation priorities.
+- Engage the Swiss Year of Scientometrics (SYoS) community and CHESS.
 
-### Track 2: Review of national approaches and development of scenarios for Switzerland
+### Track 2: National scenarios for Switzerland
+
 *Responsible partners: University of Zurich, ETH Zurich*
 
-This track will start with a structured, collaborative workshop format, inviting experts from countries with similar but also different frameworks to share insights and experiences. The workshop will facilitate a comparative analysis of national strategies. The focus will be on key governmental and institutional stakeholders, funding mechanisms, sustainability models, cost-effectiveness and technical solutions (e.g. federated vs. centralised systems). The findings will be reviewed to identify gaps and challenges specific to Switzerland.
-Then, engaging key national stakeholders will be essential to identify requirements, expectations, and challenges through consultations including roundtables and white papers. Based on these insights, a well-founded proposal will be drafted and refined in collaboration with all relevant stakeholders to ensure its feasibility and long-term success. Moreover, the introduction of a secondary publication right will be taken into account.
+This track reviews international national approaches and develops options for Switzerland.
 
-## Technical requirements
-### Track 3: Survey and analysis of Swiss institutional repositories
-*Responsible partners: ETH Zurich, EPFL*
+- Run structured workshops with international experts.
+- Compare governance models, funding, sustainability, and technical setups (federated vs centralised).
+- Gather Swiss stakeholder requirements through consultations (for example roundtables and white papers).
+- Consider secondary publication rights.
 
-This track focuses on the existing institutional repositories.
-The starting point will be a list of institutional repositories from [institutions that are accredited by swissuniversities](https://www.swissuniversities.ch/en/topics/studying/accredited-swiss-higher-education-institutions-1).
-Such an inventory aims to provide an in-depth analysis of repositories, and can be seen as a systematic extension of the broad overview given through the
-list of participating institutions in the [Swiss Open Access Monitor](https://oamonitor.ch/wiki/participating-institutions-repo-monitor/).
-Part of these repositories will be investigated in terms of
-(a) already implemented standards and certifications (e.g., OpenAIRE guidelines, CoreTrustSeal) as well as repository software currently in use,
-(b) metadata availability, quality, and completeness, evaluating their alignment with international best practices
-(e.g., OpenAIRE, Dublin Core, DataCite), 
-(c) technical requirements identifying existing barriers to seamless data exchange and integration.
-Because of the heterogeneity of the current landscape and the number of institutions (50+), some parts of the inventory may focus on a subset of institutions whose selection will partly depend on institutions' willingness to participate.
-Once the inventory has been completed, a report featuring the results of the gap analysis will be prepared.
-The report will help to determine common denominators among institutional repositories to assess the feasibility of metadata harmonization.
-It may also provide feasible recommendations to enhance alignment with national and international frameworks (e.g., OpenAIRE guidelines), help building a shared and standardized metadata framework that takes the characteristics of Switzerland into account.
+### Track 3: Survey of Swiss repositories
 
+*Responsible partners: EPFL*
+
+This track analyses Swiss institutional repositories, starting from the list of [accredited institutions by swissuniversities](https://www.swissuniversities.ch/en/topics/studying/accredited-swiss-higher-education-institutions-1), and extends context from the [Swiss Open Access Monitor](https://oamonitor.ch/wiki/participating-institutions-repo-monitor/).
+
+- Assess standards, certifications, and repository software (for example OpenAIRE guidelines and CoreTrustSeal).
+- Evaluate metadata availability, quality, and completeness against international practices (OpenAIRE, Dublin Core, DataCite).
+- Identify technical barriers to seamless data exchange and integration.
+- Produce a gap-analysis report with recommendations for harmonisation and alignment.
 
 ### Track 4: Enhancement of national and global academic data
-*Responsible partners: ETH Zurich, EPFL*
 
-This track focuses on data that have already been, or that will be, integrated into institutional repositories, but that are sourced elsewhere, such as identifiers for Swiss organizations (e.g., ROR), researchers active in Switzerland (e.g., ORCID), funding information for Swiss or international projects and OA information (OA type, document version, embargo, APCs). A workshop and a virtual session will gather stakeholders to determine which academic data are relevant, and which measures or actions could be taken to improve their findability or their quality.
-The workshop and the virtual session will also determine the selection of measures or actions that will be implemented. These translate into deliverables that could consist in guidelines or in concrete actions such as the establishment of a mapping of Swiss organizations or an authoritative list of researchers active in the country.
+*Responsible partners: ETH Zurich, University of Fribourg*
 
+This track focuses on enrichment data used in repositories, including identifiers and contextual metadata.
 
-### Unified outcome: Creation of a working group
+- Address organisation identifiers (for example ROR), researcher identifiers (for example ORCID), funding data, and Open Access metadata.
+- Use workshops and virtual sessions to prioritise relevant data improvements.
+- Convert priorities into practical deliverables, such as mappings, authoritative lists, and implementation guidance.
+
+### Unified outcome: National working group
+
 *Responsible partners: ETH Zurich, EPFL, ZHAW Zurich University of Applied Sciences, University of Zurich*
 
-This unified outcome aims to establish a working group that will make advancements towards more interoperability and standardization across institutional repositories in Switzerland.
-Using the preliminary findings of the conceptual requirements identified by the tracks *responsible use of quantitative indicators* and *review of national approaches and development of scenarios for Switzerland* as well as the technical recommendations of the tracks *survey and analysis of Swiss institutional repositories* and *enhancement of national and global academic data*, project participants will define the status of the working group, its organizational form, criteria of representativity, as well as goals, strategy, and actions to enhance the visibility of Swiss research results and to ensure smooth data dissemination.
+Findings across all tracks feed into a shared national working group model.
 
+- Define status, organisational form, and representativeness criteria.
+- Set shared strategy, goals, and actions for dissemination and findability of Swiss research outputs.
+- Sustain interoperability progress beyond the project period.
 
 ## Open peer review
 
-The abstract and the review of the NAIF project proposal will be made available on the [swissuniversities website](https://www.swissuniversities.ch/en/topics/open-science/open-science-programme). 
+The abstract and review of the NAIF project proposal are available on the [swissuniversities website](https://www.swissuniversities.ch/en/topics/open-science/open-science-programme).
+
+## Publishing guidelines
+
+Public guidance for project partners and contributors on how to write news posts or event entries for this site:
+[Publishing guidelines](publishing-guidelines.qmd)
+
+## Contact
+
+If you have any questions, feedback or ideas, or if you would like to connect with us, feel free to reach out:
+
+- Email: [naif@library.ethz.ch](mailto:naif@library.ethz.ch)
+
+## Team
+
+### Project leaders
+
+- [Dr David Johann](https://yearofscientometrics.ethz.ch/author/4021650ethz-ch/) (ETH Library, ETH Zurich)
+
+### Project coordinator
+
+- [Dr Moritz Mähr](https://moritzmaehr.ch/) (ETH Library, ETH Zurich)
+
+### Work packages leaders
+
+- [Pascale Bouton](https://people.epfl.ch/pascale.bouton) (EPFL)
+- [Dr David Johann](https://yearofscientometrics.ethz.ch/author/4021650ethz-ch/) (ETH Library, ETH Zurich)
+- [Dr Martin Jaekel](https://www.zhaw.ch/en/about-us/person/jaek) (ZHAW Zurich University of Applied Sciences)
+- [Dr Andrea Malits](https://www.ub.uzh.ch/en/ueber-die-ub/ub_organisation/ub_mitarbeitende/andrea_malits.html) (University of Zurich)
+- [Dr Rüdiger Mutz](https://www.chess.uzh.ch/en/en-about/geschaeftsstelle/Project-Managments/rmutz.html) (CHESS, University of Zurich)
+- [Julien Sicot](https://people.epfl.ch/julien.sicot) (EPFL)
+- Stefan Vogt (University of Zurich)
+
+### Project contributors
+
+[list of contributors in preparation]
+
+## Other projects and initiatives
+
+**COAR International Repositories Directory (IRD)**
+
+[COAR International Repositories Directory (IRD)](https://ird.coar-repositories.org/?lang=en). The IRD provides information about the current repository landscape.
+
+**Swiss Open Access Monitor**
+
+[Swiss Open Access Monitor](https://oamonitor.ch/). The Swiss Open Access Monitor is a tool to monitor the progress of the implementation of Open Access at the national level in Switzerland. It contains a Journal Monitor based on OpenAlex and other data sources, as well as a Repository Monitor based on the publication lists delivered by participating institutions.
+
+**Swiss Open Academic Data (SOAD)**
+
+[Swiss Open Academic Data (SOAD)](https://soad.ch/). The Swiss Open Academic Data (SOAD) community gathers researchers and practitioners around open academic data in Switzerland.
+
+**Swiss Year of Scientometrics (SYoS)**
+
+[Swiss Year of Scientometrics (SYoS)](https://yearofscientometrics.ethz.ch/). Swiss Year of Scientometrics (SYoS) is a series of Lectures and Workshops organized by the ETH Library to promote responsible research assessment in Switzerland.

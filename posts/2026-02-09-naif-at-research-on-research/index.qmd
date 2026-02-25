@@ -1,0 +1,189 @@
+---
+title: "NAIF at the Research on Research Event 2026"
+subtitle: "Track 1 presented findings on quantitative scientometric indicators in Swiss higher education at the RoR Event 2026 in Zurich."
+date: "2026-02-09"
+author:
+  - name: "Dr Moritz Mähr"
+    orcid: "0000-0002-1367-1618"
+    affiliation: "ETH Zurich"
+description: "On 29-30 January 2026, the Center for Reproducible Science and Research Synthesis (CRS) at the University of Zurich hosted the Research on Research (RoR) Event 2026. NAIF Track 1 contributed a poster on the responsible use of quantitative scientometric indicators (QSI) in Swiss Higher Education Institutions (HEI)."
+doi: "10.5281/zenodo.18656169"
+other-links:
+  - text: "Related event: Research on Research Event 2026"
+    href: "../../events/2026-01-29-ror-event-2026/"
+categories:
+  - "Track 1"
+tags:
+  - "research assessment"
+  - "scientometrics"
+  - "poster"
+proofread: false
+image: "images/poster.png"
+image-alt: 'Poster summarising findings on the use of quantitative scientometric indicators in Swiss higher education institutions.'
+image-caption: 'Poster summarising findings on the use of quantitative scientometric indicators in Swiss higher education institutions. Rights: Authors, used with permission.'
+toc: true
+draft: true
+---
+
+<!--
+Checklist (manual):
+- Title <= 70 characters ✓ (50)
+- Text 500-6000 characters (guideline x2)
+- Teaser <= 280 characters ✓ (139)
+- Exactly 1 category: Track 1-4 or General ✓
+- Exactly 3 tags ✓
+- 1-3 images, each with alt text + caption + rights attribution
+- Proofread true/false is set ✓
+- Optional: max. 3 literature references
+-->
+
+## Why it matters
+
+Swiss HEIs are increasingly aligning with international frameworks for responsible research assessment, including [DORA](https://sfdora.org/), [CoARA](https://www.coara.org/), and the [Leiden Manifesto](http://www.leidenmanifesto.org/). Yet translating these commitments into everyday practice remains a challenge. The relationship is reciprocal: the indicators institutions choose shape the metadata they collect and curate, while the quality of that underlying data determines which indicators can be computed responsibly. Getting either side wrong — adopting metrics without adequate data infrastructure, or maintaining rich metadata that nobody acts on — undermines research visibility and the interoperability goals at the heart of NAIF.
+
+## What we did
+
+We presented a poster titled [*On the Current and Future Uses of Quantitative Scientometric Indicators (QSI) in Swiss Higher Education Institutions*](https://zenodo.org/records/18656169) ([DOI: 10.5281/zenodo.18656169](https://doi.org/10.5281/zenodo.18656169)) during the poster flash talks and the dedicated poster session on Day 1 of the event. The poster was authored by [Dr Moritz Mähr](https://orcid.org/0000-0002-1367-1618) (ETH Library, ETH Zurich), Dr Martin Jaekel (ZHAW), Dr David Johann (ETH Library, ETH Zurich), Dr Rüdiger Mutz (CHESS, University of Zurich), and Elena Šimukovič (ZHAW).
+
+The poster synthesised results from the 6th Swiss Year of Scientometrics (SYoS) workshop held on 15 September 2025 with 27 stakeholders from Swiss HEIs, policy bodies, and international initiatives. It also outlined a planned qualitative survey targeting Swiss HEIs and other stakeholders such as the Swiss National Science Foundation (SNSF) and the State Secretariat for Education, Research and Innovation (SERI).
+
+
+## What we found
+
+The poster addressed four questions. First, QSI adoption is growing — 24 Swiss institutions have signed DORA and 16 are CoARA signatories — but stakeholders struggle to translate these declarations into appropriate practices. Second, indicators are primarily used at the organisational level for monitoring research profiles, collaboration networks, open access shares, and citation patterns, rather than for evaluating individual researchers (based on an ETH Zurich case study). Third, data quality emerged as a non-negotiable prerequisite: metrics are often flawed or misapplied, and meaningful analysis requires multiple sources with rigorous cleaning. Fourth, the future of responsible QSI lies in deeper expert collaboration, dialogue-based approaches, context-first design, and a broader scope that includes open research data, open science, and media visibility.
+
+```{python}
+#| echo: false
+#| label: fig-dora-map
+#| fig-cap: "DORA signatories among Swiss higher education institutions (24 of 46)."
+import folium
+
+TYPE_COLOURS = {
+    "University": "#F97B22",
+    "UAS": "#FEE8B0",
+    "UTE": "#9CA777",
+    "Univ. Inst.": "#7C9070",
+}
+
+dora = [
+    {"s": "UNIBAS", "n": "University of Basel", "t": "University", "la": 47.5584, "lo": 7.5834, "c": "Basel"},
+    {"s": "UniBE", "n": "University of Bern", "t": "University", "la": 46.9505, "lo": 7.4381, "c": "Bern"},
+    {"s": "UniFr", "n": "University of Fribourg", "t": "University", "la": 46.8065, "lo": 7.1523, "c": "Fribourg"},
+    {"s": "UNIGE", "n": "University of Geneva", "t": "University", "la": 46.2017, "lo": 6.1430, "c": "Geneva"},
+    {"s": "UNIL", "n": "University of Lausanne", "t": "University", "la": 46.5213, "lo": 6.5743, "c": "Lausanne"},
+    {"s": "UniLu", "n": "University of Lucerne", "t": "University", "la": 47.0494, "lo": 8.3105, "c": "Lucerne"},
+    {"s": "UniNE", "n": "University of Neuchâtel", "t": "University", "la": 46.9936, "lo": 6.9387, "c": "Neuchâtel"},
+    {"s": "UZH", "n": "University of Zurich", "t": "University", "la": 47.3743, "lo": 8.5484, "c": "Zurich"},
+    {"s": "USI", "n": "Università della Svizzera italiana", "t": "University", "la": 46.0104, "lo": 8.9582, "c": "Lugano"},
+    {"s": "EPFL", "n": "Swiss Federal Institute of Technology Lausanne", "t": "University", "la": 46.5191, "lo": 6.5668, "c": "Lausanne"},
+    {"s": "ETHZ", "n": "Swiss Federal Institute of Technology Zurich", "t": "University", "la": 47.3763, "lo": 8.5477, "c": "Zurich"},
+    {"s": "FernUni", "n": "Distance Learning University Switzerland", "t": "Univ. Inst.", "la": 46.3196, "lo": 7.9889, "c": "Brig"},
+    {"s": "BFH", "n": "Bern University of Applied Sciences", "t": "UAS", "la": 46.9530, "lo": 7.4347, "c": "Bern"},
+    {"s": "FHNW", "n": "University of Applied Sciences Northwestern Switzerland", "t": "UAS", "la": 47.4812, "lo": 8.2127, "c": "Windisch"},
+    {"s": "HES-SO", "n": "HES-SO University of Applied Sciences and Arts Western Switzerland", "t": "UAS", "la": 47.3653, "lo": 7.3575, "c": "Delémont"},
+    {"s": "HSLU", "n": "Lucerne University of Applied Sciences and Arts", "t": "UAS", "la": 47.0468, "lo": 8.3106, "c": "Lucerne"},
+    {"s": "ZHAW", "n": "Zurich University of Applied Sciences", "t": "UAS", "la": 47.5005, "lo": 8.7247, "c": "Winterthur"},
+    {"s": "HEP | PH FR", "n": "University of Teacher Education Fribourg", "t": "UTE", "la": 46.8093, "lo": 7.1528, "c": "Fribourg"},
+    {"s": "HEP Vaud", "n": "University of Teacher Education Vaud", "t": "UTE", "la": 46.5160, "lo": 6.6231, "c": "Lausanne"},
+    {"s": "HfH", "n": "University of Teacher Education in Special Needs", "t": "UTE", "la": 47.4114, "lo": 8.5463, "c": "Zurich"},
+    {"s": "PHBern", "n": "University of Teacher Education Bern", "t": "UTE", "la": 46.9556, "lo": 7.4191, "c": "Bern"},
+    {"s": "PHSZ", "n": "University of Teacher Education Schwyz", "t": "UTE", "la": 47.0493, "lo": 8.5478, "c": "Goldau"},
+    {"s": "HEP-VS", "n": "University of Teacher Education Valais", "t": "UTE", "la": 46.2201, "lo": 7.0033, "c": "Brig"},
+    {"s": "PH Zurich", "n": "University of Teacher Education Zurich", "t": "UTE", "la": 47.3792, "lo": 8.5323, "c": "Zurich"},
+]
+
+m = folium.Map(location=[46.8, 8.3], zoom_start=8, control_scale=True, tiles="cartodbpositron")
+for r in dora:
+    folium.CircleMarker(
+        location=[r["la"], r["lo"]],
+        radius=8,
+        color="#333333",
+        weight=1,
+        fill=True,
+        fill_color=TYPE_COLOURS.get(r["t"], "#7C9070"),
+        fill_opacity=1.0,
+        tooltip=r["s"],
+        popup=f"<b>{r['n']}</b><br>Type: {r['t']}<br>{r['c']}",
+    ).add_to(m)
+
+legend_html = """
+<div style="position: fixed; top: 10px; left: 50px; background: white; padding: 10px; border-radius: 5px; font-family: sans-serif; font-size: 12px; z-index: 9999;">
+    <div><span style="background:#F97B22;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>Universities</div>
+    <div><span style="background:#FEE8B0;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>Universities of Applied Sciences</div>
+    <div><span style="background:#9CA777;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>Teacher Education</div>
+    <div><span style="background:#7C9070;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>University Institutes</div>
+</div>
+"""
+m.get_root().html.add_child(folium.Element(legend_html))
+m
+```
+
+```{python}
+#| echo: false
+#| label: fig-coara-map
+#| fig-cap: "CoARA signatories among Swiss higher education institutions (16 of 46). Asterisk (*) indicates CoARA members."
+import folium
+
+TYPE_COLOURS = {
+    "University": "#F97B22",
+    "UAS": "#FEE8B0",
+    "UTE": "#9CA777",
+    "Univ. Inst.": "#7C9070",
+}
+
+coara = [
+    {"s": "UniFr", "n": "University of Fribourg", "t": "University", "la": 46.8065, "lo": 7.1523, "c": "Fribourg", "m": True},
+    {"s": "UNIGE", "n": "University of Geneva", "t": "University", "la": 46.2017, "lo": 6.1430, "c": "Geneva", "m": False},
+    {"s": "UNIL", "n": "University of Lausanne", "t": "University", "la": 46.5213, "lo": 6.5743, "c": "Lausanne", "m": False},
+    {"s": "UZH", "n": "University of Zurich", "t": "University", "la": 47.3743, "lo": 8.5484, "c": "Zurich", "m": False},
+    {"s": "EPFL", "n": "Swiss Federal Institute of Technology Lausanne", "t": "University", "la": 46.5191, "lo": 6.5668, "c": "Lausanne", "m": False},
+    {"s": "ETHZ", "n": "Swiss Federal Institute of Technology Zurich", "t": "University", "la": 47.3763, "lo": 8.5477, "c": "Zurich", "m": True},
+    {"s": "BFH", "n": "Bern University of Applied Sciences", "t": "UAS", "la": 46.9530, "lo": 7.4347, "c": "Bern", "m": True},
+    {"s": "FHNW", "n": "University of Applied Sciences Northwestern Switzerland", "t": "UAS", "la": 47.4812, "lo": 8.2127, "c": "Windisch", "m": True},
+    {"s": "HES-SO", "n": "HES-SO University of Applied Sciences and Arts Western Switzerland", "t": "UAS", "la": 47.3653, "lo": 7.3575, "c": "Delémont", "m": True},
+    {"s": "HSLU", "n": "Lucerne University of Applied Sciences and Arts", "t": "UAS", "la": 47.0468, "lo": 8.3106, "c": "Lucerne", "m": True},
+    {"s": "ZHdK", "n": "Zurich University of the Arts", "t": "UAS", "la": 47.3923, "lo": 8.5118, "c": "Zurich", "m": True},
+    {"s": "ZHAW", "n": "Zurich University of Applied Sciences", "t": "UAS", "la": 47.5005, "lo": 8.7247, "c": "Winterthur", "m": True},
+    {"s": "HEP Vaud", "n": "University of Teacher Education Vaud", "t": "UTE", "la": 46.5160, "lo": 6.6231, "c": "Lausanne", "m": True},
+    {"s": "PHSZ", "n": "University of Teacher Education Schwyz", "t": "UTE", "la": 47.0493, "lo": 8.5478, "c": "Goldau", "m": False},
+    {"s": "PHSG", "n": "St.Gallen University of Teacher Education", "t": "UTE", "la": 47.4304, "lo": 9.3855, "c": "Saint Gallen", "m": False},
+    {"s": "PH Zurich", "n": "University of Teacher Education Zurich", "t": "UTE", "la": 47.3792, "lo": 8.5323, "c": "Zurich", "m": True},
+]
+
+m = folium.Map(location=[46.8, 8.3], zoom_start=8, control_scale=True, tiles="cartodbpositron")
+for r in coara:
+    label = r["s"] + ("*" if r["m"] else "")
+    member_text = "Yes" if r["m"] else "No"
+    folium.CircleMarker(
+        location=[r["la"], r["lo"]],
+        radius=8,
+        color="#333333",
+        weight=1,
+        fill=True,
+        fill_color=TYPE_COLOURS.get(r["t"], "#7C9070"),
+        fill_opacity=1.0,
+        tooltip=label,
+        popup=f"<b>{r['n']}</b><br>Type: {r['t']}<br>{r['c']}<br>CoARA Member: {member_text}",
+    ).add_to(m)
+
+legend_html = """
+<div style="position: fixed; top: 10px; left: 50px; background: white; padding: 10px; border-radius: 5px; font-family: sans-serif; font-size: 12px; z-index: 9999;">
+    <div><span style="background:#F97B22;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>Universities</div>
+    <div><span style="background:#FEE8B0;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>Universities of Applied Sciences</div>
+    <div><span style="background:#9CA777;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;"></span>Teacher Education</div>
+    <div style="margin-top: 5px;">* CoARA Member</div>
+</div>
+"""
+m.get_root().html.add_child(folium.Element(legend_html))
+m
+```
+
+## What's next
+
+Based on this work, NAIF will develop practical guidelines for Swiss higher education institutions to support transparent, context-specific research assessment aligned with international best practices by the end of 2026. A qualitative survey of Swiss HEIs is planned to complement the workshop findings.
+
+As a follow-up to the event, the organisers published the presentation slides on Zenodo ([doi:10.5281/zenodo.18478818](https://doi.org/10.5281/zenodo.18478818)) and announced the **CRS Seed Grants**, a funding call for Swiss researchers launching collaborative Research on Research projects ([call for proposals](https://www.crs.uzh.ch/en/news/2026-News/CRS-Seed-Grants.html)).
+
+## What to reuse
+
+The poster and further information about the project are available on the [NAIF website](https://eth-library.github.io/naif/). NAIF deliverables are archived on [Zenodo](https://zenodo.org/communities/naif).

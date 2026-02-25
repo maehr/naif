@@ -1,0 +1,76 @@
+---
+title: "Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop"
+subtitle: "Stakeholders from Swiss HEIs discussed how to apply metrics transparently, fairly, and in context."
+date: 2025-10-31
+author:
+  - name: "Dr Martin Jaekel"
+    orcid: "0000-0001-8445-949X"
+    affiliation: "ZHAW Zurich University of Applied Sciences"
+description: "Insights from the 6th Swiss Year of Scientometrics workshop on responsible use of quantitative scientometric indicators in research assessment."
+categories:
+  - "Track 1"
+tags:
+  - "Research assessment"
+  - "Indicators"
+  - "Workshop"
+proofread: true
+image: "images/IMG_8727modified.jpeg"
+image-alt: 'Participants discussing in groups at the 6th SYoS workshop'
+image-caption: 'Participants of the 6th SYoS workshop at ETH Zurich (ETH Zurich / Annette Guignard)'
+source:
+  url: "https://yearofscientometrics.ethz.ch/responsible-use-of-quantitative-scientometric-indicators-insights-from-the-6th-syos-workshop/"
+  note: "Repost with permission. Originally published by Swiss Year of Scientometrics (SYoS)."
+toc: true
+draft: false
+---
+
+::: {.callout-note}
+Originally published (31 October 2025) at: [Swiss Year of Scientometrics blog](https://yearofscientometrics.ethz.ch/responsible-use-of-quantitative-scientometric-indicators-insights-from-the-6th-syos-workshop/)
+:::
+
+
+Many institutions currently struggle with the appropriate and responsible use of quantitative scientometric indicators (QSI) while they are trying to implement the Declaration on Research Assessment (DORA) or an action plan for the Coalition for Advancing Research Assessment (CoARA). The 6th workshop of the Swiss Year of Scientometrics (SYoS) brought together 27 stakeholders and experts from Swiss Higher Education Institutions (HEI) to discuss the responsible QSI use in research assessment.
+
+The workshop was jointly organised by Dr Martin Jaekel (ZHAW), Dr Rüdiger Mutz (CHESS, UZH), and Dr David Johann (ETH Library), and moderated by Dr Regine Maritz (SNSF). The event is a contribution to [NAIF](https://eth-library.github.io/naif/) (National Approach for Interoperable repositories and Findable research results), a project supported by swissuniversities involving eight Swiss HEIs and was held at ETH Zurich on 11th of September 2025.
+
+##### **Setting the stage: responsible metrics in research assessment**
+
+![Audience watching Ginny Barbour giving her online lightning talk](images/IMG_8717modified2.jpeg){fig-cap="Ginny Barbour giving her online lightning talk (ETH Zurich / Annette Guignard)"}
+
+Professor Ginny Barbour, Co-Chair of the Declaration on Research Assessment (DORA) opened the workshop with a lightning talk on [Using Quantitative Indicators Responsibly in Research Assessment](https://zenodo.org/records/17481395). She outlined why quantitative metrics were often flawed or misapplied, despite being widely used. Barbour emphasized that indicators should be transparent, contextual, and fair, and complement expert qualitative assessment, as opposed to replacing them. She also introduced DORA’s new Practical Guide to Responsible Research Assessment. The guide provides feasible steps for institutions to develop fair evaluation strategies accounting for the specific context.
+
+Barbour’s input but also global frameworks, such as the Leiden Manifesto, highlighted that there is a global momentum for reforming research assessment and reducing reliance on journal-based metrics, such as Journal Impact Factors or the h-index.
+
+##### **Delving deeper into the topic in small group discussions**
+
+The workshop participants had the opportunity to delve deeper into the topic in small discussion groups. These allowed exploring three topics, in particular:
+
+1. values and conflicts of QSI
+2. status quo and vision for the future
+3. implementation of the vision
+
+![Two discussion groups in a large room.](images/IMG_8754.jpeg){fig-cap="Stimulating discussions in small groups (ETH Zurich / Annette Guignard)"}
+
+Key insights from each group session were shared with the plenary and underlined several important aspects of the responsible use of QSI:
+
+**Collaboration of experts** – Given the multi-layers nature, the establishment of responsible QSI processes requires collaboration between specialists in data collection, cleaning, processing, and analysis as well as experts on the subject area, who are able to add context to the analysis. In addition, methodologists focusing on social research could be consulted to help assess the wider impact of evaluations and thus minimize unintended side effects.
+
+**ETH Zurich practice serving as a model** – Participants perceived that current practice at the ETH Zurich may serve as viable model for other HEIs. ETH Zurich includes dialogue with QSI users, clarifying the purpose and limitations of indicators, suggesting alternatives, and embedding results in the appropriate context.
+
+**Establishing a context-based use case of QSI** – As opposed to starting with indicators, participants agreed that it is essential to understand how users engage with QSI, first. Only when building on a context-based use case, the sensible use of one particular or several QSI can be precisely defined and appropriately explained.
+
+**Alignment with wider global frameworks** – The workshop confirmed that it is essential to consider initiatives, such as DORA and CoARA, emphasising alignment of national and international efforts to promote responsible research assessment.
+
+**Expanding the scope of QSI** – Participants also highlighted the potential to consider measures such as Open Research Data (ORD), Open Science practices, transdisciplinary collaboration, and media responses. These had the potential to support institutions to capture a holistic view of research impact and quality.
+
+##### **Moving Forward**
+
+NAIF will incorporate the insights gained from this workshop and consider them when developing recommendations for the responsible use of QSI. These should be considered guidelines that are intended to support Swiss HEIs in applying transparent and context-specific research assessment following international best practices and standards.
+
+*The author acknowledges helpful comments on the blog post by Dr Kathrin Thomas (University of Aberdeen).* 
+
+## Author
+
+![](images/portrait-martin-jaekel.jpg){fig-alt="Portrait of Dr Martin Jaekel" width="120"}
+
+Martin Jaekel holds a PhD from the University of Cambridge in Life Sciences and subsequently became a PI at the University of Cambridge. He then worked as Management Consultant in Paris with a focus on biotech / pharma before joining the Agence Nationale de la Rechere as International Affairs Mananger. Subsequently he worked in for an EU Programme as Programme Officer and is now Head of Research & Development and Technology Transfer at the Zurich University of Applied Sciences.

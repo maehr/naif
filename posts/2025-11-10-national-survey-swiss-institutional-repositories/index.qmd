@@ -1,0 +1,58 @@
+---
+title: "NAIF launches a national survey on Swiss repositories"
+subtitle: "Repository managers are invited to contribute evidence for a national interoperability roadmap."
+date: 2025-11-10
+author:
+  - name: "Julien Sicot"
+    orcid: "0000-0002-9457-6638"
+    affiliation: "EPFL"
+  - name: "Simon Willemin"
+    orcid: "0009-0003-5802-9113"
+    affiliation: "ETH Zurich"
+description: "National survey to map Swiss institutional repositories and identify needs for interoperability and shared standards."
+# TODO: add frontmatter DOI when the survey output is uploaded and citable.
+other-links:
+  - text: "Related event: Survey Q&A session (French)"
+    href: "../../events/2025-11-20-survey-qa-fr/"
+  - text: "Related event: Survey Q&A session (German)"
+    href: "../../events/2025-11-26-survey-qa-de/"
+categories:
+  - "Track 3"
+tags:
+  - "Interoperability"
+  - "Survey"
+  - "Repositories"
+proofread: true
+image: "images/surveyhero-naif-survey.png"
+image-alt: 'Survey page for the NAIF repositories survey'
+image-caption: 'Screenshot of the NAIF repositories survey page on SurveyHero. Source: https://www.surveyhero.com/c/naif-repositories-2025. Rights: SurveyHero / NAIF.'
+toc: true
+draft: true
+---
+
+
+We are launching a national survey to map and better understand the landscape of institutional repositories in Switzerland. The initiative aims to strengthen interoperability, standardisation, and coordination across the country's research information ecosystem.
+
+The survey explores how repositories are managed, described, and sustained, focusing on infrastructure, metadata practices, governance, and long-term strategies. It seeks to identify common strengths, gaps, and challenges, laying the groundwork for a national roadmap aligned with international standards and open science principles.
+
+The questionnaire is addressed to repository managers and service leads from Swiss higher education institutions operating repositories or CRIS systems. Each manager will be contacted directly to participate.
+
+To support respondents, two Q&A sessions will be organised:
+
+- Thursday, 20 November 2025, 11:00-12:00 (French)
+- Wednesday, 26 November 2025, 15:00-16:00 (German)
+
+The survey draws inspiration from major international efforts, including:
+
+- [DOI 10.5281/zenodo.10390626](https://doi.org/10.5281/zenodo.10390626)
+- [DOI 10.5281/zenodo.10255559](https://doi.org/10.5281/zenodo.10255559)
+- [COAR Open Consultation](https://coar-repositories.org/news-updates/open-consultation-crafting-a-vision-for-european-repositories/)
+- [DOI 10.5281/zenodo.15730917](https://doi.org/10.5281/zenodo.15730917)
+
+- [Barcelona Declaration](https://barcelona-declaration.org/)
+
+This will be the first national overview of repository maturity and practices in Switzerland. Findings will inform coordinated actions and shared services, and aggregated results will be published openly on Zenodo within the NAIF community.
+
+Deadline: 15 December 2025  
+Contact: mailto:naif-survey@library.ethz.ch  
+Take the survey: [SurveyHero form](https://www.surveyhero.com/c/naif-repositories-2025)

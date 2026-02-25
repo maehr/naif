@@ -1,0 +1,40 @@
+---
+title: "Research on Research Event 2026 (RoR)"
+date: 2026-01-29
+author: "Center for Reproducible Science and Research Synthesis (CRS)"
+author-title: "Organizer"
+description: "Two-day Research on Research community event at the University of Zurich (29-30 January 2026)."
+other-links:
+  - text: "Related post: NAIF at the Research on Research Event 2026"
+    href: "../../posts/2026-02-09-naif-at-research-on-research/"
+categories:
+  - "Participation by NAIF"
+tags:
+  - "Community"
+  - "Conference"
+  - "Research on Research"
+proofread: false
+image: "images/2Glasses_Blue.png"
+image-alt: 'Graphic for the Research on Research Event 2026'
+image-caption: 'Research on Research Event 2026 graphic. Rights: Center for Reproducible Science and Research Synthesis (CRS), CC BY 4.0 (see event website).'
+toc: true
+---
+
+
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
+
+## Details
+
+- Date: 29-30 January 2026
+- Location: University of Zurich Main Building (KOL), Zurich, Switzerland
+- Registration: ~~`https://forms.office.com/e/kRp1pxgrX6`~~
+- [Programme](https://crsuzh.pages.uzh.ch/ror-event-2026/programme/)
+- [Event page](https://crsuzh.pages.uzh.ch/ror-event-2026/)
+
+## About
+
+The Research on Research Event 2026 brings together the Swiss Research on Research community for two days of talks, discussion, and collaborative work.
+
+Following the event, the organisers shared the presentation slides on Zenodo ([doi:10.5281/zenodo.18478818](https://doi.org/10.5281/zenodo.18478818)). The CRS also launched the **CRS Seed Grants**, a funding opportunity for Swiss researchers to initiate collaborative Research on Research projects ([call for proposals](https://www.crs.uzh.ch/en/news/2026-News/CRS-Seed-Grants.html)).

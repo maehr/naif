@@ -1,0 +1,33 @@
+---
+title: "Survey Q&A session (French)"
+date: 2025-11-20
+author: "NAIF"
+author-title: "Organizer"
+description: "Q&A session supporting the national survey on Swiss institutional repositories (Track 3)."
+other-links:
+  - text: "Related post: NAIF launches a national survey on Swiss repositories"
+    href: "../../posts/2025-11-10-national-survey-swiss-institutional-repositories/"
+categories:
+  - "Organised by NAIF"
+tags:
+  - "Track 3"
+  - "Survey"
+  - "Q&A"
+proofread: true
+image: "images/surveyhero-naif-survey.png"
+image-alt: 'Survey page for the NAIF repositories survey'
+image-caption: 'Screenshot of the NAIF repositories survey page on SurveyHero. Source: https://www.surveyhero.com/c/naif-repositories-2025. Rights: SurveyHero / NAIF.'
+toc: true
+---
+
+
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
+
+## Details
+
+- Date: Thursday, 20 November 2025
+- Time: 11:00-12:00
+- Language: French
+- Contact: mailto:naif-survey@library.ethz.ch

@@ -1,21 +1,52 @@
 ---
 toc: false
+description: "NAIF (National Approach for Interoperable repositories and Findable research results) is a Swiss project improving interoperability and metadata quality across institutional repositories."
+listing:
+  - id: home-events
+    contents: events/*/index.qmd
+    sort: "date desc"
+    page-size: 3
+    fields: [image, title, date, description]
+    sort-ui: false
+    filter-ui: false
+  - id: home-posts
+    contents: posts/*/index.qmd
+    sort: "date desc"
+    page-size: 3
+    fields: [image, title, date, description]
+    sort-ui: false
+    filter-ui: false
 ---
 
 ::: {.column-screen}
 
 <div id="main_title">
-<h1>NAIF</br>National Approach for Interoperable repositories</br>and Findable research results</h1>
+<h1>NAIF<br>National Approach for Interoperable repositories<br>and Findable research results</h1>
 </div>
 
 :::
 
-</br>
+
+## Upcoming events
+
+Find all events on: [Events](events/index.qmd)
+
+::: {#home-events}
+:::
+
+## Latest news entries
+
+Read more on: [News](posts/index.qmd)
+
+::: {#home-posts}
+:::
+
+
 
 NAIF is a project initiated and funded by eight Swiss Higher Education Institutions and co-funded by swissuniversities.
 The project aims to enable more interoperability and standardization across Swiss institutional repositories.
 The project has started in July 2025 and will end in December 2026.
 
 <div id="logos">
-<div class="logo"><img src="logos/all-logos.jpg" width="600px"></div>
+<div class="logo"><img src="images/logos/all-logos.jpg" width="600" alt="Logos of the NAIF consortium partners" loading="lazy" decoding="async"></div>
 </div>

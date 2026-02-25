@@ -1,0 +1,46 @@
+<div class="naif-cta" role="complementary" aria-label="Get involved" data-naif-cta>
+  <div class="naif-cta__inner">
+    <button class="naif-cta__close" type="button" aria-label="Close" data-naif-cta-close>
+      &times;
+    </button>
+    <div class="naif-cta__kicker">Get involved</div>
+    <div class="naif-cta__title">Join NAIF</div>
+    <div class="naif-cta__body">Interested in contributing to the project or staying in touch?</div>
+    <div class="naif-cta__actions">
+      <a
+        class="naif-cta__button"
+        href="https://forms.gle/hAQwHaitKDZ3Cf846"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Fill out the form</a>
+      <a class="naif-cta__button naif-cta__button--secondary" href="mailto:naif@library.ethz.ch">
+        Contact us
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var KEY = "naif_cta_closed";
+    var cta = document.querySelector("[data-naif-cta]");
+    if (!cta) return;
+
+    try {
+      if (window.localStorage && window.localStorage.getItem(KEY) === "1") {
+        cta.style.display = "none";
+        return;
+      }
+    } catch (e) {}
+
+    var close = cta.querySelector("[data-naif-cta-close]");
+    if (!close) return;
+
+    close.addEventListener("click", function () {
+      cta.style.display = "none";
+      try {
+        if (window.localStorage) window.localStorage.setItem(KEY, "1");
+      } catch (e) {}
+    });
+  })();
+</script>

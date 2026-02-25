@@ -57,7 +57,8 @@ Use a news post for updates, progress reporting, findings, or opinion pieces.
 
 **Content structure**
 
-- Put the lead text in the `description` front matter field.
+- Put the teaser text in the `description` front matter field.
+- Use the front matter `description` as the teaser shown in the Quarto title block.
 - Do not add an explicit `## Lead` heading or a lead paragraph block in the body.
 - Follow the message architecture above.
 - Keep the post concise (500-3000 chars as a guideline).

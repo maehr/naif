@@ -1,0 +1,19 @@
+[project]
+name = "naif-website"
+version = "0.1.0"
+description = "NAIF project website tooling"
+requires-python = ">=3.14"
+dependencies = [
+  "folium>=0.20.0",
+  "ipykernel>=7.0.0",
+  "jupyter>=1.1.1",
+  "pandas>=2.0,<3",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.4.1",
+  "pytest-cov>=7.0.0",
+  "ruff>=0.13.2",
+  "ty>=0.0.1a17",
+]

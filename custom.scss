@@ -52,6 +52,11 @@ h2 {
     font-size: smaller;
 }
 
+figcaption,
+.figure-caption {
+    color: $body-color;
+}
+
 #quarto-document-content {
     margin-top: 0;
     padding-top: 0;
@@ -85,4 +90,122 @@ h2 {
 #logos .logo{
     flex-grow: 1;
     text-align: center;
+}
+// --- NAIF sidebar CTA --------------------------------------------------------
+// Injected via `includes/get-involved.html`.
+
+.naif-cta {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 999;
+  width: min(22rem, calc(100vw - 2rem));
+}
+
+.naif-cta__inner {
+  position: relative;
+  background: #ffffff;
+  color: #181818;
+  border: 1px solid #c8c8c8;
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+  background-image: none;
+}
+
+.naif-cta__close {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.45rem;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #181818;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.naif-cta__close:hover,
+.naif-cta__close:focus {
+  background: #e5e5e5;
+  color: #181818;
+}
+
+.naif-cta__kicker {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.naif-cta__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.15rem;
+}
+
+.naif-cta__body {
+  font-size: 0.95rem;
+  margin-top: 0.35rem;
+  opacity: 0.9;
+}
+
+.naif-cta__actions {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  margin-top: 0.7rem;
+}
+
+.naif-cta__button {
+  display: inline-block;
+  text-align: center;
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+  background: #1f3a5f;
+  color: #ffffff !important;
+  text-decoration: none;
+  flex: 1;
+}
+
+.naif-cta__button:hover,
+.naif-cta__button:focus {
+  background: #162a45;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.naif-cta__link {
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.naif-cta__link:hover,
+.naif-cta__link:focus {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .naif-cta {
+    position: static;
+    width: auto;
+    margin: 1rem 0;
+  }
+
+  .naif-cta__actions {
+    flex-direction: column;
+  }
+}
+.naif-cta__button--secondary {
+  background: #e8e1d0;
+  color: #181818 !important;
+  border: 1px solid #181818;
+}
+
+.naif-cta__button--secondary:hover,
+.naif-cta__button--secondary:focus {
+  background: #d9d0bc;
+  color: #181818 !important;
 }

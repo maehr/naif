@@ -1,0 +1,130 @@
+---
+title: "From Books to Repositories: Two Sides of Open Metadata"
+subtitle: "What Thoth's new report and NAIF reveal about interoperable scholarly infrastructure."
+date: "2026-02-19"
+author:
+  - name: "Dr Moritz Mähr"
+    orcid: "0000-0002-1367-1618"
+    affiliation: "ETH Zurich"
+description: "Thoth Open Metadata's new framework for OA books and NAIF's Swiss repository work approach the same interoperability challenge from opposite directions. This post compares both models and outlines how they can reinforce each other."
+categories:
+  - "General"
+tags:
+  - "metadata"
+  - "interoperability"
+  - "open scholarship"
+proofread: false
+image: "images/thoth-report-page.png"
+image-alt: "Screenshot of the Thoth Open Metadata blog page announcing the 2026 international metadata recommendations report"
+image-caption: "Thoth Open Metadata blog announcement for the report DOI 10.70950/phru7413. Source: https://thoth.pub/blog/10.70950/phru7413. Rights: Thoth Open Metadata (CC BY 4.0 where indicated)."
+toc: true
+draft: true
+---
+
+## Why it matters
+
+Metadata debates are often framed as if they were purely technical: a matter of choosing fields, schemas, and exchange formats. In practice, metadata is infrastructural and political. It shapes what becomes visible, what remains discoverable over time, and what can be reused for research, funding, assessment, and policy. When metadata quality is low or distribution channels are fragmented, the effects are not neutral. Smaller publishers lose reach, repositories lose interoperability, and public investment in open scholarship delivers less value than it could.
+
+This broader perspective is what makes the current moment so interesting. Thoth Open Metadata recently published a substantial report on international metadata recommendations and platform-specific requirements for open access books and chapters. In parallel, NAIF has been building a Swiss national approach to repository interoperability and findability across institutional contexts. At first glance, these look like separate initiatives: one focused on books and chapters in global dissemination pipelines, the other focused on Swiss repositories and national coordination. On closer reading, they are addressing two ends of the same infrastructure problem.
+
+Thoth starts from the publisher as the authoritative source of metadata and asks how that metadata survives through complex downstream systems without degradation. NAIF starts from repository and governance realities and asks how distributed institutional practices can be harmonised so that research outputs are discoverable and reusable at national scale. Put differently: Thoth concentrates on the supply side of metadata creation and dissemination, while NAIF concentrates on the demand side of metadata aggregation and strategic reuse. The ecosystem needs both.
+
+## What we did
+
+To compare both approaches, we examined the framing and recommendations in the Thoth report against NAIF's publicly documented objectives, track structure, and interoperability priorities. The focus was not whether one model should replace the other, but where assumptions align, where they differ, and where practical cooperation could raise quality for the whole scholarly communication chain.
+
+The diagram below summarises the relationship between both perspectives.
+
+```{mermaid}
+flowchart LR
+  subgraph Supply["Supply side: creation and dissemination"]
+    P["OA book and chapter publishers"]
+    T["Thoth Open Metadata<br/>open model and exports"]
+    A["Aggregators and platforms<br/>(OAPEN, DOAB, JSTOR, Google Books, etc.)"]
+    P --> T --> A
+  end
+
+  subgraph Demand["Demand side: curation and strategic reuse"]
+    R["Swiss institutional repositories"]
+    N["NAIF coordination<br/>Tracks 1-4 and governance"]
+    M["National discovery and monitoring<br/>(OA monitoring, policy reporting)"]
+    R --> N --> M
+  end
+
+  A --> R
+  M -. feedback on gaps .-> P
+```
+
+The key point is not the exact sequence, but the loop: metadata quality must travel across systems and then feed back into local practice. If the loop breaks, repositories and publishers both absorb avoidable clean-up work.
+
+## What we found
+
+### Parallel ambitions, different entry points
+
+The strongest overlap between Thoth and NAIF is conceptual. Both treat metadata as shared infrastructure rather than a by-product of content management.
+
+First, both emphasise interoperability as a condition for visibility and reuse. Thoth does this by addressing the fragmentation of long-form publishing metadata across ONIX, MARC, KBART, platform-specific templates, and API requirements. NAIF does this by addressing variation across Swiss repository practices and by working towards harmonisation that supports dissemination and findability.
+
+Second, both use graduated implementation logic. Thoth's two-tier framework distinguishes essential metadata from desirable enrichment. This is pragmatic: it defines a realistic baseline while still offering a direction of travel. NAIF applies an analogous logic across tracks by separating immediate harmonisation needs from longer-term enrichment work around identifiers, governance, and advanced interoperability use cases.
+
+Third, both treat persistent identifiers as connective tissue. Thoth's baseline includes identifiers at book and chapter level and encourages richer PID coverage where possible. NAIF's track work similarly foregrounds ORCID, ROR, and related identifier practice as prerequisites for cleaner linking across people, organisations, and outputs.
+
+Fourth, both challenge closed metadata cultures. Thoth explicitly argues for permissive reuse of metadata records, ideally under public-domain dedication. NAIF is anchored in an open science policy environment that also depends on metadata being reusable across institutional and national boundaries.
+
+Finally, both favour community-led governance over proprietary lock-in. Their governance forms differ, but the principle is shared: open infrastructure should remain accountable to research communities rather than controlled by opaque commercial intermediaries.
+
+### Key differences and why they matter
+
+Where the projects differ, they do so productively. The differences are less about disagreement than about mandate.
+
+| Dimension | Thoth report | NAIF |
+|---|---|---|
+| Scope | Global, format-agnostic framework for OA books and chapters | National (Switzerland), repository interoperability across output types |
+| Primary actors | Publishers, especially independent and scholar-led presses | Institutional repositories, universities, and national stakeholders |
+| Direction of intervention | Bottom-up: from authoritative publisher metadata to downstream dissemination systems | Coordinated harmonisation: from shared priorities to local implementation across repositories |
+| Output focus | Long-form publications (books and chapters) | Broader research output landscape with strong repository and monitoring relevance |
+| Policy emphasis | International metadata requirements, legal/accessibility obligations, and platform compliance | Swiss open science priorities, interoperability governance, and responsible assessment alignment |
+| Technical emphasis | Cross-format distribution and platform-specific delivery requirements | Cross-repository alignment, standards mapping, and national coordination mechanisms |
+
+This distinction matters because most operational friction sits between these layers. Publishers may create rich metadata that is transformed poorly downstream. Repositories may ingest records that are technically valid but semantically inconsistent. National monitoring systems may then expose the residual inconsistencies as if they were local failures. A supply-side model without demand-side coordination will plateau. A demand-side model without supply-side realism will overestimate what can be achieved by policy alone.
+
+### Lessons across the divide
+
+The comparison becomes useful when translated into practical lessons.
+
+For NAIF, Thoth offers a concrete model for documenting the downstream reality of metadata circulation. One of the report's strengths is that it does not stay at the level of abstract standards: it tracks platform-specific requirements and identifies where information is lost or transformed along the way. NAIF's repository-focused analysis can adopt this perspective by not only auditing local metadata practice, but also tracing how Swiss records are interpreted in external systems used by libraries, aggregators, and discovery services.
+
+For Thoth, NAIF highlights the strategic importance of metadata for responsible research assessment and national governance. Thoth's framework is strong on discoverability and distribution, but NAIF's work adds another layer: metadata quality determines what can be interpreted responsibly in institutional and policy contexts. As DORA and CoARA continue to influence assessment reform, metadata design should anticipate not only retrieval and access use cases, but also responsible contextual interpretation.
+
+Both can learn from the multilingual challenge. In many settings multilingual metadata is framed as desirable enrichment. In Switzerland, multilingualism is not peripheral: it is structurally required for equitable visibility across linguistic communities. NAIF's context therefore provides an operational test bed for multilingual metadata workflows that could inform broader international practice, including book metadata ecosystems where language fields are often unevenly populated.
+
+Another shared lesson concerns stewardship capacity. Neither model succeeds through standards alone. The bottleneck is sustained maintenance work: curation, validation, mapping updates, and governance routines that survive project cycles and staff turnover. This is where both communities can benefit from explicit role definitions, lightweight maintenance agreements, and shared quality indicators that are actionable for small teams.
+
+## What's next
+
+If we take convergence seriously, the next step is not another high-level declaration but a small set of coordinated experiments. A practical roadmap could include five actions.
+
+1. **Joint requirements workshop:** Bring together Swiss repository managers, library publishers, and Thoth contributors to compare mandatory and optional fields across real workflows.
+2. **Crosswalk stress test:** Run a pilot mapping from a sample set of OA books through publisher metadata, Thoth-style exports, repository ingestion, and national monitoring views.
+3. **Shared minimum profile:** Define a compact, implementable baseline for book and chapter metadata in Swiss repositories, aligned with both Thoth's essential tier and NAIF interoperability needs.
+4. **Multilingual implementation guidance:** Produce practical recommendations for language fields, translated titles/abstracts, and controlled vocabularies in multilingual settings.
+5. **Stewardship model:** Establish responsibilities for ongoing maintenance, quality checks, and revision cycles so that alignment persists after project milestones.
+
+These are deliberately modest interventions. Their value is cumulative. Each one creates shared evidence, reduces duplication, and makes it easier to move from conceptual agreement to operational interoperability.
+
+The wider opportunity is clear. If publisher-side metadata quality and repository-side harmonisation are treated as one connected system, the scholarly ecosystem gains resilience. OA books and chapters become easier to discover and evaluate in context. Repositories spend less effort on ad hoc correction. Policy reporting becomes more credible because the underlying data is cleaner and more transparent. And smaller institutions can participate without being forced into expensive proprietary workflows.
+
+In that sense, Thoth and NAIF are not parallel stories. They are complementary parts of a single infrastructure transition: from fragmented metadata handling to coordinated, open, and reusable metadata commons.
+
+## What to reuse
+
+- The supply-side versus demand-side framing for workshop discussion and stakeholder communication.
+- The Mermaid flow diagram as a reusable visual for presentations and documentation.
+- The five-step convergence roadmap as a starting agenda for a pilot on book metadata interoperability.
+
+## Sources
+
+- Thoth Open Metadata blog announcement: <https://thoth.pub/blog/10.70950/phru7413>
+- Steiner, T., Arias, J., Bennett, M., Booth, E., Edmunds, J., Gatti, R., Higman, R., Hillen, H., Laakso, M., Nason, M., O'Connell, B., Pogačnik, A., Rabar, U., Ramalho, A., Stone, G., van Gerven Oei, V. W. J., & Wake Hyde, Z. (2026). *International Metadata Recommendations, and Platform-Specific Requirements for Open Access Books and Chapters* (1.0). Thoth Open Metadata. <https://doi.org/10.5281/zenodo.18173982>
+- NAIF project website (About): <https://eth-library.github.io/naif/about.html>
+- Thoth Open Metadata platform: <https://thoth.pub>

@@ -1,0 +1,33 @@
+---
+title: "BiblioCon 2026"
+date: 2026-05-19
+author: "BiblioCon 2026 Organising Committee"
+author-title: "Organizer"
+description: "BiblioCon 2026 in Berlin (19-22 May 2026), where NAIF contributes a poster on interoperability and academic metadata."
+categories:
+  - "Participation by NAIF"
+tags:
+  - "BiblioCon"
+  - "Poster"
+  - "Academic metadata"
+proofread: false
+image: "images/bibliocon-2026-homepage.png"
+image-alt: "BiblioCon 2026 website header with conference title"
+image-caption: "Screenshot of the BiblioCon 2026 website. Source: https://2026.bibliocon.de/. Rights: BiblioCon 2026 organisers."
+toc: true
+---
+
+<!-- Source: <https://2026.bibliocon.de/> -->
+
+## Details
+
+- Date: 19-22 May 2026
+- Location: Estrel Congress Center Berlin, Germany
+- Registration: <https://2026.bibliocon.de/registrierung/>
+- Event page: <https://2026.bibliocon.de/>
+
+## About
+
+BiblioCon 2026 is the largest library congress in the German-speaking region and is held under the theme "Analog trifft Algorithmus".
+
+NAIF participates with a poster contribution focused on interoperability and the improvement of academic metadata quality across institutional and national infrastructures.

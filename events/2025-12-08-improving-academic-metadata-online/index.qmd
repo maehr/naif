@@ -1,0 +1,51 @@
+---
+title: "Workshop: Improving academic metadata (Track 4)"
+date: 2025-12-08
+author: "NAIF"
+author-title: "Organizer"
+description: "Online workshop on improving academic metadata for Swiss repositories and institutions."
+other-links:
+  - text: "Related post: Enhancing Open Academic Data through NAIF Track 4"
+    href: "../../posts/2025-09-26-naif-at-soad-day/"
+  - text: "Related post: Prioritising Actions for Better Academic Metadata"
+    href: "../../posts/2026-02-10-track-4-workshop-2025-12-08/"
+  - text: "Workshop #2 slides on Zenodo (DOI)"
+    href: "https://doi.org/10.5281/zenodo.18709342"
+  - text: "Workshop #1 slides on Zenodo (DOI)"
+    href: "https://doi.org/10.5281/zenodo.18709127"
+categories:
+  - "Organised by NAIF"
+tags:
+  - "Track 4"
+  - "Workshop"
+  - "Metadata"
+proofread: true
+image: "images/trello-track4-workshop-board.png"
+image-alt: 'NAIF Track 4 Trello board used for workshop planning'
+image-caption: 'Screenshot of the NAIF Track 4 Trello board used for workshop planning. Source: https://trello.com/b/QiVYYDdi/naif-track-4. Rights: NAIF contributors / Trello.'
+toc: true
+---
+
+
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
+
+## Details
+
+- Date: Monday, 8 December 2025
+- Time: 10:00-11:30
+- Location: Online
+- Registration: ~~`https://ethz.zoom.us/meeting/register/bxYnZz8ESKuSw9zi-VQYQg`~~
+
+## About
+
+This workshop focuses on improving academic metadata for Swiss repositories and institutions as part of NAIF Track 4.
+
+The workshop outcomes are documented in [Prioritising Actions for Better Academic Metadata](../../posts/2026-02-10-track-4-workshop-2025-12-08/).
+
+## Materials
+
+- Workshop #2 slides (Zenodo): https://doi.org/10.5281/zenodo.18709342
+- Workshop #2 citation DOI (all versions): https://doi.org/10.5281/zenodo.18709341
+- Related workshop #1 slides (Zenodo): https://doi.org/10.5281/zenodo.18709127

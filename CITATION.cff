@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "NAIF project website"
+message: "If you use this website content or code, please cite this repository."
+type: software
+authors:
+  - given-names: "Moritz"
+    family-names: "Maehr"
+    affiliation: "ETH Zurich"
+    website: "https://github.com/maehr"
+  - given-names: "Germano"
+    family-names: "Giuliani"
+    affiliation: "ETH Zurich"
+    website: "https://ethz.ch/staffnet/de/organisation/abteilungen/eth-bibliothek/mitarbeitende-der-eth-bibliothek/profil.OTQyNTU=.TGlzdC80OTkzLC0xODY3NDg1NDE=.html"
+  - given-names: "Simon"
+    family-names: "Willemin"
+    affiliation: "University of Bern"
+    website: "https://www.dh.unibe.ch/ueber_uns/personen/willemin_simon/index_ger.html"
+repository-code: "https://github.com/eth-library/naif"
+url: "https://eth-library.github.io/naif/"
+license: "AGPL-3.0-or-later"

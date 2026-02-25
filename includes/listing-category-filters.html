@@ -1,0 +1,108 @@
+<script>
+window.document.addEventListener("DOMContentLoaded", function () {
+  const filterContainers = Array.from(
+    window.document.querySelectorAll("[data-listing-filter-buttons='true']")
+  );
+  if (filterContainers.length === 0) {
+    return;
+  }
+
+  const encodeCategory = (category) => window.btoa(window.encodeURIComponent(category));
+
+  const getCategoryFromHash = () => {
+    const rawHash = window.location.hash.startsWith("#")
+      ? window.location.hash.slice(1)
+      : window.location.hash;
+    if (!rawHash) {
+      return "";
+    }
+    const params = new window.URLSearchParams(rawHash);
+    return params.get("category") || "";
+  };
+
+  const createCategoryButton = (category, isActive, allLabel) => {
+    const button = window.document.createElement("button");
+    button.type = "button";
+    button.className = "btn btn-sm btn-outline-secondary";
+    if (isActive) {
+      button.classList.add("active");
+    }
+    button.setAttribute("data-category", category);
+    button.setAttribute("aria-pressed", String(isActive));
+    button.textContent = category || allLabel;
+    return button;
+  };
+
+  const filterGroups = [];
+
+  for (const filterContainer of filterContainers) {
+    const listingId = filterContainer.dataset.listingId || "";
+    if (!listingId) {
+      continue;
+    }
+
+    const allLabel = filterContainer.dataset.allLabel || "All categories";
+
+    const setActiveButton = (category) => {
+      const buttons = filterContainer.querySelectorAll("button[data-category]");
+      for (const button of buttons) {
+        const isActive = (button.getAttribute("data-category") || "") === category;
+        button.classList.toggle("active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      }
+    };
+
+    filterContainer.appendChild(createCategoryButton("", true, allLabel));
+
+    const listingCategories = Array.from(
+      window.document.querySelectorAll(`#listing-${listingId} .listing-category`)
+    )
+      .map((el) => (el.textContent ? el.textContent.trim() : ""))
+      .filter((value) => value.length > 0);
+
+    const uniqueCategories = Array.from(new Set(listingCategories)).sort((a, b) =>
+      a.localeCompare(b)
+    );
+
+    for (const category of uniqueCategories) {
+      filterContainer.appendChild(createCategoryButton(category, false, allLabel));
+    }
+
+    filterContainer.addEventListener("click", function (event) {
+      const target = event.target;
+      if (!(target instanceof window.HTMLButtonElement)) {
+        return;
+      }
+      const category = target.getAttribute("data-category") || "";
+      if (typeof window.quartoListingCategory === "function") {
+        window.quartoListingCategory(encodeCategory(category));
+      }
+    });
+
+    filterGroups.push({ setActiveButton });
+  }
+
+  const setAllActiveButtons = (category) => {
+    for (const group of filterGroups) {
+      group.setActiveButton(category);
+    }
+  };
+
+  if (typeof window.quartoListingCategory === "function" && !window.__naifCategoryButtonsPatched) {
+    const originalQuartoListingCategory = window.quartoListingCategory;
+    window.quartoListingCategory = function (encodedCategory) {
+      originalQuartoListingCategory(encodedCategory);
+      let decodedCategory = "";
+      try {
+        decodedCategory = window.decodeURIComponent(window.atob(encodedCategory || ""));
+      } catch (_error) {
+        decodedCategory = "";
+      }
+      setAllActiveButtons(decodedCategory);
+    };
+    window.__naifCategoryButtonsPatched = true;
+  }
+
+  setAllActiveButtons(getCategoryFromHash());
+});
+</script>

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: NAIF website
+    url: https://eth-library.github.io/naif/
+    about: Visit the public NAIF website.
+  - name: Discussions
+    url: https://github.com/eth-library/naif/discussions
+    about: Ask questions and discuss ideas with the community.

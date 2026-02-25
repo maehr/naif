@@ -1,18 +1,46 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "posts/index.qmd"
+    - "posts/**/index.qmd"
+    - "events/**/index.qmd"
+    - "!posts/_template-*/**"
+    - "!events/_template-*/**"
+  resources:
+    - robots.txt
+    - site.webmanifest
+    - llms.txt
 
 website:
   title: "NAIF"
+  site-url: "https://eth-library.github.io/naif/"
+  repo-url: "https://github.com/eth-library/naif"
+  issue-url: "https://github.com/eth-library/naif/issues/new/choose"
+  repo-actions: [issue]
+  favicon: favicon.svg
+  description:
+    "National Approach for Interoperable repositories and Findable research results (NAIF):
+    improving interoperability and metadata quality across Swiss institutional repositories."
+  image: "/images/logos/all-logos.jpg"
+  open-graph: true
+  twitter-card: true
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - news.qmd
-      - about.qmd
-      - team.qmd
-      - resources.qmd
-      - join.qmd
-      - contact.qmd
+      - text: News
+        href: posts/index.qmd
+      - text: Events
+        href: events/index.qmd
+      - text: About
+        href: about.qmd
+      - text: Docs
+        href: https://zenodo.org/communities/naif
+      # - text: Data
+      #   menu:
+      #    - text: NAIF
+      #      href: dashboard/index.qmd
+      #    - text: TOBI
+      #      href: dashboard-tobi/index.qmd
     pinned: true
   page-footer:
     center:
@@ -21,12 +49,14 @@ website:
       - text: "Disclaimer"
         href: disclaimer.qmd
 
-
 format:
   html:
+    template-partials:
+      - partials/title-block.html
     theme:
-      light: [cosmo, base_colors.scss, custom.scss]
+      light: [brand, cosmo, base_colors.scss, custom.scss]
     css: styles.css
+    canonical-url: true
     toc: true
     toc-expand: true
     toc-title: " "
@@ -36,8 +66,8 @@ format:
     link-external-newwindow: true
     footnotes-hover: true
     anchor-sections: false
-    include-after-body: traffic.html
+    include-after-body:
+      - traffic.html
+      - includes/get-involved.html
+      - includes/listing-category-filters.html
     email-obfuscation: references
-
-
-

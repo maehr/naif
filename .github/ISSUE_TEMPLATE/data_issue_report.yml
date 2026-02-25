@@ -1,0 +1,42 @@
+name: Data issue report
+description: Report metadata or data-quality issues in published NAIF outputs.
+title: "[Data issue]: "
+labels: ["data", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve NAIF data quality.
+
+  - type: input
+    id: location
+    attributes:
+      label: Where is the issue?
+      description: URL, DOI, or page where the issue appears.
+      placeholder: https://eth-library.github.io/naif/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What seems wrong?
+      description: Describe the issue and why it matters.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should be shown instead?
+      description: If possible, include a suggested correction.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Screenshots, references, or related links.
+    validations:
+      required: false

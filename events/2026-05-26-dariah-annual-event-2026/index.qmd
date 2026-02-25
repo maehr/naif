@@ -1,0 +1,34 @@
+---
+title: "DARIAH Annual Event 2026"
+date: 2026-05-26
+author: "DARIAH ERIC"
+author-title: "Organizer"
+description: "In-person DARIAH Annual Event in Rome (26-29 May 2026) on infrastructures of engagement in digital arts and humanities."
+categories:
+  - "Related Topic"
+tags:
+  - "DARIAH"
+  - "Conference"
+  - "Digital humanities"
+proofread: false
+image: "images/dariah-annual-event-2026.png"
+image-alt: "Homepage visual for the DARIAH Annual Event 2026 in Rome"
+image-caption: "Screenshot of the DARIAH Annual Event 2026 homepage. Source: https://annualevent.dariah.eu/. Rights: DARIAH ERIC; site content licensed under CC BY where noted."
+toc: true
+---
+
+<!-- Source: <https://annualevent.dariah.eu/> -->
+
+## Details
+
+- Date: 26-29 May 2026
+- Location: Universita degli Studi Roma Tre - Dipartimento di Studi Umanistici, Via Ostiense 234, Rome, Italy
+- Registration: <https://annualevent.dariah.eu/registration/>
+- Call for papers: <https://annualevent.dariah.eu/call-for-papers/>
+- Event page: <https://annualevent.dariah.eu/>
+
+## About
+
+The DARIAH Annual Event 2026 focuses on "Digital Arts and Humanities With and For Society: Building Infrastructures of Engagement". The event brings together researchers and practitioners from arts, humanities, cultural heritage, and information sciences to exchange work on digitally enabled research and collaboration.
+
+The programme includes DARIAH internal meetings on 26 May and the main conference from 27 to 29 May.
