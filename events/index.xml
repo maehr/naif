@@ -6,165 +6,165 @@
       version="2.0">
 <channel>
 <title>NAIF Events</title>
-<link>https://eth-library.github.io/naif/events/</link>
-<atom:link href="https://eth-library.github.io/naif/events/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://maehr.github.io/naif/events/</link>
+<atom:link href="https://maehr.github.io/naif/events/index.xml" rel="self" type="application/rss+xml"/>
 <description>Upcoming and past NAIF events: workshops, talks, and community sessions related to interoperable repositories and findable research results.</description>
 <image>
-<url>https://eth-library.github.io/naif/images/logos/all-logos.jpg</url>
+<url>https://maehr.github.io/naif/images/logos/all-logos.jpg</url>
 <title>NAIF Events</title>
-<link>https://eth-library.github.io/naif/events/</link>
+<link>https://maehr.github.io/naif/events/</link>
 </image>
 <generator>quarto-1.8.27</generator>
 <lastBuildDate>Mon, 25 May 2026 22:00:00 GMT</lastBuildDate>
 <item>
   <title>DARIAH Annual Event 2026</title>
   <dc:creator>DARIAH ERIC</dc:creator>
-  <link>https://eth-library.github.io/naif/events/2026-05-26-dariah-annual-event-2026/</link>
+  <link>https://maehr.github.io/naif/events/2026-05-26-dariah-annual-event-2026/</link>
   <description><![CDATA[ In-person DARIAH Annual Event in Rome (26-29 May 2026) on infrastructures of engagement in digital arts and humanities. ]]></description>
   <category>Related Topic</category>
-  <guid>https://eth-library.github.io/naif/events/2026-05-26-dariah-annual-event-2026/</guid>
+  <guid>https://maehr.github.io/naif/events/2026-05-26-dariah-annual-event-2026/</guid>
   <pubDate>Mon, 25 May 2026 22:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2026-05-26-dariah-annual-event-2026/images/dariah-annual-event-2026.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2026-05-26-dariah-annual-event-2026/images/dariah-annual-event-2026.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>BiblioCon 2026</title>
   <dc:creator>BiblioCon 2026 Organising Committee</dc:creator>
-  <link>https://eth-library.github.io/naif/events/2026-05-19-bibliocon-2026/</link>
+  <link>https://maehr.github.io/naif/events/2026-05-19-bibliocon-2026/</link>
   <description><![CDATA[ BiblioCon 2026 in Berlin (19-22 May 2026), where NAIF contributes a poster on interoperability and academic metadata. ]]></description>
   <category>Participation by NAIF</category>
-  <guid>https://eth-library.github.io/naif/events/2026-05-19-bibliocon-2026/</guid>
+  <guid>https://maehr.github.io/naif/events/2026-05-19-bibliocon-2026/</guid>
   <pubDate>Mon, 18 May 2026 22:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2026-05-19-bibliocon-2026/images/bibliocon-2026-homepage.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2026-05-19-bibliocon-2026/images/bibliocon-2026-homepage.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>ORCID Community Town Hall 2026</title>
   <dc:creator>ORCID </dc:creator>
-  <link>https://eth-library.github.io/naif/events/2026-03-25-orcid-community-town-hall-2026/</link>
+  <link>https://maehr.github.io/naif/events/2026-03-25-orcid-community-town-hall-2026/</link>
   <description><![CDATA[ Two live webinar sessions where ORCID shares 2025 progress and previews plans for 2026. ]]></description>
   <category>Related Topic</category>
-  <guid>https://eth-library.github.io/naif/events/2026-03-25-orcid-community-town-hall-2026/</guid>
+  <guid>https://maehr.github.io/naif/events/2026-03-25-orcid-community-town-hall-2026/</guid>
   <pubDate>Tue, 24 Mar 2026 23:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2026-03-25-orcid-community-town-hall-2026/images/orcid-townhall-2026.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2026-03-25-orcid-community-town-hall-2026/images/orcid-townhall-2026.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>SOAD Online Event: The Barcelona Declaration in Switzerland</title>
   <dc:creator>Swiss Open Academic Data (SOAD)</dc:creator>
-  <link>https://eth-library.github.io/naif/events/2026-03-11-soad-online-event/</link>
+  <link>https://maehr.github.io/naif/events/2026-03-11-soad-online-event/</link>
   <description><![CDATA[ SOAD spring online event featuring Swiss signatories of the Barcelona Declaration (11 March 2026). ]]></description>
   <category>Related Topic</category>
-  <guid>https://eth-library.github.io/naif/events/2026-03-11-soad-online-event/</guid>
+  <guid>https://maehr.github.io/naif/events/2026-03-11-soad-online-event/</guid>
   <pubDate>Tue, 10 Mar 2026 23:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2026-03-11-soad-online-event/images/soad-online-event.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2026-03-11-soad-online-event/images/soad-online-event.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Improving visibility of my institution’s research</title>
   <dc:creator>Bibliosuisse </dc:creator>
-  <link>https://eth-library.github.io/naif/events/2026-03-09-improving-research-visibility/</link>
+  <link>https://maehr.github.io/naif/events/2026-03-09-improving-research-visibility/</link>
   <description><![CDATA[ One-day Bibliosuisse training in Lausanne on research visibility, metadata curation, and researcher engagement. ]]></description>
   <category>Participation by NAIF</category>
-  <guid>https://eth-library.github.io/naif/events/2026-03-09-improving-research-visibility/</guid>
+  <guid>https://maehr.github.io/naif/events/2026-03-09-improving-research-visibility/</guid>
   <pubDate>Sun, 08 Mar 2026 23:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2026-03-09-improving-research-visibility/images/bibliosuisse-event-984.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2026-03-09-improving-research-visibility/images/bibliosuisse-event-984.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>CHESS-Workshop “Berufungsverfahren im Kontext von DORA und CoARA”</title>
   <dc:creator>CHESS (UZH) &amp; ETH Library</dc:creator>
-  <link>https://eth-library.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/</link>
+  <link>https://maehr.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/</link>
   <description><![CDATA[ Workshop on appointment procedures in the context of DORA and CoARA (ETH Zurich, 4 March 2026). ]]></description>
   <category>Related Topic</category>
-  <guid>https://eth-library.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/</guid>
+  <guid>https://maehr.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/</guid>
   <pubDate>Tue, 03 Mar 2026 23:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/images/chess-events-page.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/images/chess-events-page.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Elevating your Research’s Impact and Visibility with ORCID and DataCite</title>
   <dc:creator>ORCID &amp; DataCite</dc:creator>
-  <link>https://eth-library.github.io/naif/events/2026-02-10-orcid-datacite-webinar/</link>
+  <link>https://maehr.github.io/naif/events/2026-02-10-orcid-datacite-webinar/</link>
   <description><![CDATA[ Hands-on webinar on integrating ORCID and DataCite workflows (ORCID Search & Link and Auto-Update). ]]></description>
   <category>Related Topic</category>
-  <guid>https://eth-library.github.io/naif/events/2026-02-10-orcid-datacite-webinar/</guid>
+  <guid>https://maehr.github.io/naif/events/2026-02-10-orcid-datacite-webinar/</guid>
   <pubDate>Mon, 09 Feb 2026 23:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2026-02-10-orcid-datacite-webinar/images/orcid-datacite-event.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2026-02-10-orcid-datacite-webinar/images/orcid-datacite-event.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Research on Research Event 2026 (RoR)</title>
   <dc:creator>Center for Reproducible Science and Research Synthesis (CRS)</dc:creator>
-  <link>https://eth-library.github.io/naif/events/2026-01-29-ror-event-2026/</link>
+  <link>https://maehr.github.io/naif/events/2026-01-29-ror-event-2026/</link>
   <description><![CDATA[ Two-day Research on Research community event at the University of Zurich (29-30 January 2026). ]]></description>
   <category>Participation by NAIF</category>
-  <guid>https://eth-library.github.io/naif/events/2026-01-29-ror-event-2026/</guid>
+  <guid>https://maehr.github.io/naif/events/2026-01-29-ror-event-2026/</guid>
   <pubDate>Wed, 28 Jan 2026 23:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2026-01-29-ror-event-2026/images/2Glasses_Blue.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2026-01-29-ror-event-2026/images/2Glasses_Blue.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Workshop: Improving academic metadata (Track 4)</title>
   <dc:creator>NAIF </dc:creator>
-  <link>https://eth-library.github.io/naif/events/2025-12-08-improving-academic-metadata-online/</link>
+  <link>https://maehr.github.io/naif/events/2025-12-08-improving-academic-metadata-online/</link>
   <description><![CDATA[ Online workshop on improving academic metadata for Swiss repositories and institutions. ]]></description>
   <category>Organised by NAIF</category>
-  <guid>https://eth-library.github.io/naif/events/2025-12-08-improving-academic-metadata-online/</guid>
+  <guid>https://maehr.github.io/naif/events/2025-12-08-improving-academic-metadata-online/</guid>
   <pubDate>Sun, 07 Dec 2025 23:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2025-12-08-improving-academic-metadata-online/images/trello-track4-workshop-board.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2025-12-08-improving-academic-metadata-online/images/trello-track4-workshop-board.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Survey Q&amp;A session (German)</title>
   <dc:creator>NAIF </dc:creator>
-  <link>https://eth-library.github.io/naif/events/2025-11-26-survey-qa-de/</link>
+  <link>https://maehr.github.io/naif/events/2025-11-26-survey-qa-de/</link>
   <description><![CDATA[ Q&A session supporting the national survey on Swiss institutional repositories (Track 3). ]]></description>
   <category>Organised by NAIF</category>
-  <guid>https://eth-library.github.io/naif/events/2025-11-26-survey-qa-de/</guid>
+  <guid>https://maehr.github.io/naif/events/2025-11-26-survey-qa-de/</guid>
   <pubDate>Tue, 25 Nov 2025 23:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2025-11-26-survey-qa-de/images/surveyhero-naif-survey.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2025-11-26-survey-qa-de/images/surveyhero-naif-survey.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Survey Q&amp;A session (French)</title>
   <dc:creator>NAIF </dc:creator>
-  <link>https://eth-library.github.io/naif/events/2025-11-20-survey-qa-fr/</link>
+  <link>https://maehr.github.io/naif/events/2025-11-20-survey-qa-fr/</link>
   <description><![CDATA[ Q&A session supporting the national survey on Swiss institutional repositories (Track 3). ]]></description>
   <category>Organised by NAIF</category>
-  <guid>https://eth-library.github.io/naif/events/2025-11-20-survey-qa-fr/</guid>
+  <guid>https://maehr.github.io/naif/events/2025-11-20-survey-qa-fr/</guid>
   <pubDate>Wed, 19 Nov 2025 23:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2025-11-20-survey-qa-fr/images/surveyhero-naif-survey.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2025-11-20-survey-qa-fr/images/surveyhero-naif-survey.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>From Policy to Practice: National ORI framework</title>
   <dc:creator>NAIF </dc:creator>
-  <link>https://eth-library.github.io/naif/events/2025-11-05-from-policy-to-practice/</link>
+  <link>https://maehr.github.io/naif/events/2025-11-05-from-policy-to-practice/</link>
   <description><![CDATA[ Event on building a National Open Research Information framework in Switzerland (Track 2). ]]></description>
   <category>Organised by NAIF</category>
-  <guid>https://eth-library.github.io/naif/events/2025-11-05-from-policy-to-practice/</guid>
+  <guid>https://maehr.github.io/naif/events/2025-11-05-from-policy-to-practice/</guid>
   <pubDate>Tue, 04 Nov 2025 23:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2025-11-05-from-policy-to-practice/images/panel-discussion-kira-michael.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://maehr.github.io/naif/events/2025-11-05-from-policy-to-practice/images/panel-discussion-kira-michael.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Workshop: Improving academic metadata (Neuchatel)</title>
   <dc:creator>NAIF </dc:creator>
-  <link>https://eth-library.github.io/naif/events/2025-10-15-improving-academic-metadata-neuchatel/</link>
+  <link>https://maehr.github.io/naif/events/2025-10-15-improving-academic-metadata-neuchatel/</link>
   <description><![CDATA[ Workshop on improving academic metadata for Swiss repositories and institutions (Track 4). ]]></description>
   <category>Organised by NAIF</category>
-  <guid>https://eth-library.github.io/naif/events/2025-10-15-improving-academic-metadata-neuchatel/</guid>
+  <guid>https://maehr.github.io/naif/events/2025-10-15-improving-academic-metadata-neuchatel/</guid>
   <pubDate>Tue, 14 Oct 2025 22:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2025-10-15-improving-academic-metadata-neuchatel/images/zenodo-naif-track4-talk.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2025-10-15-improving-academic-metadata-neuchatel/images/zenodo-naif-track4-talk.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Swiss Open Academic Data Day (SOAD Day)</title>
   <dc:creator>ETH Library</dc:creator>
-  <link>https://eth-library.github.io/naif/events/2025-09-10-soad-day/</link>
+  <link>https://maehr.github.io/naif/events/2025-09-10-soad-day/</link>
   <description><![CDATA[ First Swiss Open Academic Data Day at ETH Zurich, featuring a NAIF lightning talk on enhancing academic metadata. ]]></description>
   <category>Participation by NAIF</category>
-  <guid>https://eth-library.github.io/naif/events/2025-09-10-soad-day/</guid>
+  <guid>https://maehr.github.io/naif/events/2025-09-10-soad-day/</guid>
   <pubDate>Tue, 09 Sep 2025 22:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2025-09-10-soad-day/images/soad-website.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2025-09-10-soad-day/images/soad-website.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>NAIF information event</title>
   <dc:creator>NAIF </dc:creator>
-  <link>https://eth-library.github.io/naif/events/2025-08-28-information-event/</link>
+  <link>https://maehr.github.io/naif/events/2025-08-28-information-event/</link>
   <description><![CDATA[ Information event introducing NAIF and its goals. ]]></description>
   <category>Organised by NAIF</category>
-  <guid>https://eth-library.github.io/naif/events/2025-08-28-information-event/</guid>
+  <guid>https://maehr.github.io/naif/events/2025-08-28-information-event/</guid>
   <pubDate>Wed, 27 Aug 2025 22:00:00 GMT</pubDate>
-  <media:content url="https://eth-library.github.io/naif/events/2025-08-28-information-event/images/eth-news-naif-info-event.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://maehr.github.io/naif/events/2025-08-28-information-event/images/eth-news-naif-info-event.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
