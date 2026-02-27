@@ -1,7 +1,7 @@
 <div class="naif-cta" role="complementary" aria-label="Get involved" data-naif-cta>
   <div class="naif-cta__inner">
     <button class="naif-cta__close" type="button" aria-label="Close" data-naif-cta-close>
-      &times;
+      <span class="naif-cta__close-icon" aria-hidden="true">&times;</span>
     </button>
     <div class="naif-cta__kicker">Get involved</div>
     <div class="naif-cta__title">Join NAIF</div>
@@ -36,11 +36,13 @@
     var close = cta.querySelector("[data-naif-cta-close]");
     if (!close) return;
 
-    close.addEventListener("click", function () {
+    function closeCta() {
       cta.style.display = "none";
       try {
         if (window.localStorage) window.localStorage.setItem(KEY, "1");
       } catch (e) {}
-    });
+    }
+
+    close.addEventListener("click", closeCta);
   })();
 </script>

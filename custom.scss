@@ -115,22 +115,41 @@ figcaption,
 
 .naif-cta__close {
   position: absolute;
-  top: 0.35rem;
-  right: 0.45rem;
-  width: 2rem;
-  height: 2rem;
+  top: 0;
+  right: 0;
+  width: 3.2rem;
+  height: 3.2rem;
   border: 0;
   border-radius: 999px;
   background: transparent;
   color: #181818;
-  font-size: 1.4rem;
+  padding: 0;
+  font-size: 1.45rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.naif-cta__close-icon {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.6rem;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
   line-height: 1;
+  pointer-events: none;
 }
 
 .naif-cta__close:hover,
 .naif-cta__close:focus {
-  background: #e5e5e5;
   color: #181818;
+}
+
+.naif-cta__close:hover .naif-cta__close-icon,
+.naif-cta__close:focus .naif-cta__close-icon {
+  background: #e5e5e5;
 }
 
 .naif-cta__kicker {

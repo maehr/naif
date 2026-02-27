@@ -71,6 +71,11 @@ NAIF will incorporate the insights gained from this workshop and consider them w
 
 ## Author
 
-![](images/portrait-martin-jaekel.jpg){fig-alt="Portrait of Dr Martin Jaekel" width="120"}
-
-Martin Jaekel holds a PhD from the University of Cambridge in Life Sciences and subsequently became a PI at the University of Cambridge. He then worked as Management Consultant in Paris with a focus on biotech / pharma before joining the Agence Nationale de la Rechere as International Affairs Mananger. Subsequently he worked in for an EU Programme as Programme Officer and is now Head of Research & Development and Technology Transfer at the Zurich University of Applied Sciences.
+::: {.columns}
+::: {.column width="80%"}
+[Martin Jaekel](https://yearofscientometrics.ethz.ch/author/martinjaekel/) holds a PhD from the University of Cambridge in Life Sciences and subsequently became a PI at the University of Cambridge. He then worked as Management Consultant in Paris with a focus on biotech / pharma before joining the Agence Nationale de la Recherche as International Affairs Manager. Subsequently he worked in for an EU Programme as Programme Officer and is now Head of Research & Development and Technology Transfer at the Zurich University of Applied Sciences.
+:::
+::: {.column width="20%"}
+![Portrait of Dr Martin Jaekel](images/portrait-martin-jaekel.jpg){fig-alt="Portrait of Dr Martin Jaekel" fig-cap="Dr Martin Jaekel, Head of Research & Development and Technology Transfer at ZHAW." fig-attr="Image: Courtesy of Dr Martin Jaekel." width="100%"}
+:::
+:::
