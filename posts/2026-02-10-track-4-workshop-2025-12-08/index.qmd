@@ -9,7 +9,7 @@ author:
 description: "NAIF Track 4 held its second workshop to classify and prioritise 16 proposed actions for improving academic metadata in Swiss repositories using the Agreement & Certainty Matrix."
 doi: 10.5281/zenodo.18709127
 other-links:
-  - text: "Related event: Workshop Improving academic metadata (Neuchatel)"
+  - text: "Related event: Workshop Improving academic metadata (Neuchâtel)"
     href: "../../events/2025-10-15-improving-academic-metadata-neuchatel/"
   - text: "Related event: Workshop Improving academic metadata (Track 4)"
     href: "../../events/2025-12-08-improving-academic-metadata-online/"
@@ -35,7 +35,7 @@ draft: false
 
 On 15 October 2025, the first NAIF Track 4 workshop brought together repository managers, data stewards, and open science specialists from across Switzerland to explore four families of academic metadata: organisational data, authorship and researcher data, funding information, and open access and licensing data.
 
-![Group photo of participants from the first NAIF Track 4 workshop at Lake Neuchatel.](images/group-photo.jpg){fig-cap="Participants of the first NAIF Track 4 workshop at Lake Neuchatel. Photo: ETH Zurich, Annette Guignard. Rights: NAIF contributors."}
+![Group photo of participants from the first NAIF Track 4 workshop at Lake Neuchâtel.](images/group-photo.jpg){fig-cap="Participants of the first NAIF Track 4 workshop at Lake Neuchâtel. Photo: ETH Zurich, Annette Guignard. Rights: NAIF contributors."}
 
 During the workshop, participants produced an extensive set of exploratory maps and proposed actions, which have been compiled on the [NAIF Track 4 Trello board](https://trello.com/b/QiVYYDdi/naif-track-4) by Jorge Rodrigues de Matos (EPFL).
 

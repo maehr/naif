@@ -11,7 +11,7 @@ doi: "10.5281/zenodo.17142628"
 other-links:
   - text: "Related event: Swiss Open Academic Data Day (SOAD Day)"
     href: "../../events/2025-09-10-soad-day/"
-  - text: "Related event: Workshop Improving academic metadata (Neuchatel)"
+  - text: "Related event: Workshop Improving academic metadata (Neuchâtel)"
     href: "../../events/2025-10-15-improving-academic-metadata-neuchatel/"
   - text: "Related event: Workshop Improving academic metadata (Track 4)"
     href: "../../events/2025-12-08-improving-academic-metadata-online/"
@@ -48,4 +48,4 @@ As opposed to presenting ready-made solutions, the talk promoted open questions 
 
 ## What's next
 
-Track 4 will continue to develop measures, actions, and guidelines for improving academic data quality. The findings from the SOAD Day discussion feed directly into upcoming workshops on improving academic metadata, including [Workshop: Improving academic metadata (Neuchatel)](../../events/2025-10-15-improving-academic-metadata-neuchatel/) and [Workshop: Improving academic metadata (Track 4)](../../events/2025-12-08-improving-academic-metadata-online/). All interested parties are welcome to participate.
+Track 4 will continue to develop measures, actions, and guidelines for improving academic data quality. The findings from the SOAD Day discussion feed directly into upcoming workshops on improving academic metadata, including [Workshop: Improving academic metadata (Neuchâtel)](../../events/2025-10-15-improving-academic-metadata-neuchatel/) and [Workshop: Improving academic metadata (Track 4)](../../events/2025-12-08-improving-academic-metadata-online/). All interested parties are welcome to participate.
