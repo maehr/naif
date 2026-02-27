@@ -6,7 +6,7 @@ author:
   - name: "Dr Moritz Mähr"
     orcid: "0000-0002-1367-1618"
     affiliation: "ETH Zurich"
-description: "NAIF Track 4 held its second workshop to classify and prioritise 18 proposed actions for improving academic metadata in Swiss repositories using the Agreement & Certainty Matrix."
+description: "NAIF Track 4 held its second workshop to classify and prioritise 16 proposed actions for improving academic metadata in Swiss repositories using the Agreement & Certainty Matrix."
 doi: 10.5281/zenodo.18709127
 other-links:
   - text: "Related event: Workshop Improving academic metadata (Neuchatel)"
@@ -23,46 +23,58 @@ tags:
   - "metadata"
   - "workshops"
   - "interoperability"
-proofread: false
+proofread: true
 image: "images/acm-matrix.png"
 image-alt: "Agreement & Certainty Matrix from NAIF Track 4 workshop outcomes"
 image-caption: "Agreement & Certainty Matrix used in NAIF Track 4 workshop #2 to prioritise actions. Source: NAIF workshop materials (Miro board and slides). Rights: NAIF contributors."
 toc: true
-draft: true
+draft: false
 ---
 
 ## From ideas to action
 
-On 15 October 2025, the first NAIF Track 4 workshop brought together repository managers, data stewards, and open science specialists from across Switzerland to explore four families of academic metadata: organisational data, authorship and researcher data, funding information, and open access and licensing data. The workshop presentation is openly archived on Zenodo ([doi:10.5281/zenodo.18709127](https://doi.org/10.5281/zenodo.18709127)). That workshop produced a rich set of exploratory maps and proposed actions, compiled on the [NAIF Track 4 Trello board](https://trello.com/b/QiVYYDdi/naif-track-4) by Jorge Rodrigues de Matos (EPFL). What was still missing was a shared sense of priority — which proposals are ready to act on, and which need more groundwork first?
+On 15 October 2025, the first NAIF Track 4 workshop brought together repository managers, data stewards, and open science specialists from across Switzerland to explore four families of academic metadata: organisational data, authorship and researcher data, funding information, and open access and licensing data.
 
-Workshop #2 on 8 December 2025 set out to answer that question. Seventeen participants from eleven institutions — including ETH Zurich, EPFL, University of Zurich, ZHAW, CERN, University of Fribourg, University of Neuchâtel, Lib4RI, Berner Fachhochschule, Pädagogische Hochschule St. Gallen, and SLSP — joined a 90-minute online session to classify and advance the proposed actions.
+During the workshop, participants produced an extensive set of exploratory maps and proposed actions, which have been compiled on the [NAIF Track 4 Trello board](https://trello.com/b/QiVYYDdi/naif-track-4) by Jorge Rodrigues de Matos (EPFL).
+
+What was still missing was a shared sense of priority: which proposed actions are ready to be implemented, and which require additional groundwork?
+
+To address this question, a second workshop took place on 8 December 2025 as a 90-minute online session. Twenty-one participants from fifteen institutions --- including ETH Zurich, EPFL, University of Zurich, ZHAW, University of Fribourg, University of Neuchâtel, University of St. Gallen, Lib4RI, Berner Fachhochschule, Pädagogische Hochschule St. Gallen, and SLSP --- met to classify and refine the proposed actions.
 
 ## The method: Agreement & Certainty Matrix
 
-We used the Agreement & Certainty Matrix (ACM) to move beyond simple voting. The ACM asks two questions about each proposed action: how much do stakeholders agree on the problem and solution direction, and how predictable is it that a chosen intervention will succeed in our context? Crossing these two dimensions produces four domains — Simple, Complicated, Complex, and Chaos — each suggesting a different style of action.
+The Agreement & Certainty Matrix (ACM) was used to move beyond simple voting. The ACM asks two questions about each proposed action: how much do stakeholders agree on the problem and the direction of the solution, and how predictable is it that a chosen intervention will succeed in our context? Crossing these two dimensions produces four domains --- Simple, Complicated, Complex, and Chaos --- each suggesting a different style of action.
 
-Participants first reviewed the 18 action cards on the Trello board individually, then rated up to five actions using emoji on a shared [Miro board](https://miro.com/app/board/uXjVJtPnUzU=/): handshakes or thumbs-down for agreement, 💯 or shrugs for certainty. The resulting placement gave us a visual landscape of where the community stands.
+Participants first reviewed the 16 action cards on the Trello board individually, then rated up to five actions using emoji on a shared [Miro board](https://miro.com/app/board/uXjVJtPnUzU=/): 🤝 or 👎 for agreement, 💯 or 🤷‍♀️ for certainty. The resulting placement provided a visual landscape of the participants' assessment.
 
 ## What we found
 
-Several actions landed firmly in the **Simple** quadrant — high agreement, high certainty — signalling that they are ready for direct implementation or straightforward process changes. These include action A1 (ORCID promotion in Switzerland), A2 (DSpace–ORCID alignment), F1 (standard metadata for funding information), OA3 (enhancing repository metadata for the Swiss Open Access Repository Monitor), O1 (establishing an open working group on organisational data), and O7 (defining a framework to describe organisational hierarchies).
+Several actions landed firmly in the **Simple** quadrant --- high agreement, high certainty --- signalling that they are ready for direct implementation or straightforward process changes. These include action A1 (ORCID promotion at institutional level), A2 (DSpace--ORCID alignment), F1 (standard metadata for funding information), OA3 (enhancing repository metadata for the Swiss Open Access Repository Monitor), O1 (establishing an open working group on organisational data), and O7 (defining a framework to describe organisational hierarchies).
 
-A cluster of actions fell into the **Complicated** zone, where certainty drops but agreement remains: O2 (Swiss HEIs ROR Alignment & Curation Pilot), O3 (a lightweight shared registry linking local structures to global identifiers such as ROR, OpenOrgs, and Wikidata), and O6 (curating Wikidata entries for all Swiss HEIs). These require expert analysis and structured process change, but the direction is clear.
+A cluster of actions fell into the **Complicated** zone, where certainty decreases but agreement remains strong: O2 (Swiss HEIs ROR Alignment & Curation Pilot), O3 (a lightweight shared registry linking local structures to global identifiers such as ROR, OpenOrgs, and Wikidata), and O6 (curating Wikidata entries for all Swiss HEIs). These require expert analysis and structured process change, but the direction is clear.
 
-The **Complex** quadrant — lower agreement, lower certainty — captured the more ambitious proposals: OA1 (alignment with GOAL / opengoal.ch), OA2 (alignment with the new "OA Cost Monitoring" project led by ZHAW), A3 (making relevant systems ORCID-ready), F2 (awareness and incentives for providing funding information), O4 (publishing curated organisational data in machine-readable formats via the OpenAIRE Graph), O5 (a collaborative stewardship mechanism for data quality), and O8 (an interface guiding researchers to use correct institutional names with automatic ROR ID attachment). For these, the ACM recommends convening stakeholders and examining patterns before committing to large-scale implementation.
+The **Complex** quadrant --- lower agreement, lower certainty --- captured the more ambitious proposals: OA1 (alignment with GOAL / opengoal.ch), OA2 (alignment with the new "OA Cost Monitoring" project led by ZHAW), A3 (making relevant systems ORCID-ready), F2 (awareness and incentives for providing funding information), O4 (publishing curated organisational data in machine-readable formats via the OpenAIRE Graph), O5 (a collaborative stewardship mechanism for data quality), and O8 (an interface guiding researchers to use correct institutional names with automatic ROR ID attachment). For these, the ACM recommends convening stakeholders and examining patterns before committing to large-scale implementation.
 
-No action was placed in the Chaos domain, which is an encouraging sign of the community's shared understanding of the problem space.
+No actions were placed in the **Chaos** domain, which is an encouraging sign of the community's shared understanding of the problem space.
 
 ## Breakout discussions
 
-After a short break, participants split into breakout groups organised by data family. Each group validated the ACM placement of its actions, then picked one action to develop further — identifying potential owners, a realistic timeline, and concrete evaluation measures. Results were documented directly as comments on the corresponding Trello cards. In the plenary reconciliation, each group presented its findings and other participants expressed interest in collaborating.
+After a short break, participants split into breakout groups organised by data family. Each group validated the ACM placement of its actions before selecting one action for further discussion, identifying potential owners and a provisional timeline. Where possible, results were documented as comments on the corresponding Trello cards. During the plenary discussion, each group presented its findings, and other participants could express their interest in collaborating.
 
-Notably, Annette Guignard flagged the new "OA Cost Monitor" project (led by ZHAW with several HEIs) as a relevant partner initiative, while Christian Muheim pointed to the existing OA Monitor as a potential vehicle for action within NAIF. These cross-connections between actions and external projects will be important for avoiding duplication and maximising impact.
+Christian Muheim pointed to the existing OA Monitor as a potential vehicle for action within NAIF, while Annette Guignard mentioned the new "OA Cost Monitor" project (led by ZHAW with several HEIs) as a relevant partner initiative. These cross-connections between actions and external projects will be important for avoiding duplication and maximising impact.
 
 ## What's next
 
-Action owners are now expected to take the lead and begin work. A deadline of one week after the workshop was set for participants to confirm their ownership of or involvement in specific actions. A follow-up meeting in person is planned for the end of February 2026, likely in Bern, where groups will share progress and exchange experiences. Participants were asked to indicate their availability via a [Doodle poll](https://doodle.com/group-poll/participate/dLBoQJXa).
+An in-person follow-up meeting is planned for spring, likely in Bern, to continue developing the action plan.
 
-The first draft of the Track 4 report for swissuniversities is due in November 2026. Between now and then, the prioritised action set from this workshop provides a clear roadmap: start with the Simple items to build momentum, invest analytical effort in the Complicated ones, and convene broadly around the Complex challenges that will shape the future of academic metadata interoperability in Switzerland.
+The first draft of the Track 4 report for swissuniversities is due in November 2026. Until then, the prioritised set of actions from this workshop provides the framework for the roadmap: starting with the Simple items to build momentum, dedicating analytical effort to the Complicated ones, and convening broadly around the Complex challenges.
 
-All workshop materials — the Trello board, Miro board, and presentation slides — remain accessible to participants and the wider NAIF community, including the first workshop deck on Zenodo ([doi:10.5281/zenodo.18709127](https://doi.org/10.5281/zenodo.18709127)) and the second workshop deck ([doi:10.5281/zenodo.18709342](https://doi.org/10.5281/zenodo.18709342)).
+All workshop materials --- the Trello board, Miro board, and presentation slides --- remain accessible to participants and the wider NAIF community.
+
+Track 4 is a collaborative effort. Thanks are extended to all workshop participants for their valuable contributions to Track 4's progress to date, as well as to our colleagues for organising and facilitating the workshops and for their ongoing commitment to Track 4.
+
+- Laurent Gobin and Quentin Gallis, University of Neuchâtel
+- Pascale Bouton, Julien Sicot and Jorge Rodrigues de Matos, EPFL
+- Christian Schlumpf, University of St. Gallen
+- Christian Muheim, St. Gallen University of Teacher Education
+- Simon Willemin and Annette Guignard, ETH Zurich
