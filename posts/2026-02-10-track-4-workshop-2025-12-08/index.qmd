@@ -1,6 +1,6 @@
 ---
 title: "Prioritising Actions for Better Academic Metadata"
-subtitle: "Workshop participants used the ACM method to decide which metadata actions are ready now."
+subtitle: "Workshop participants used the ACM method to prioritise actions for metadata improvement."
 date: "2025-12-08"
 author:
   - name: "Dr Moritz Mähr"
@@ -24,9 +24,9 @@ tags:
   - "workshops"
   - "interoperability"
 proofread: true
-image: "images/acm-matrix.png"
-image-alt: "Agreement & Certainty Matrix from NAIF Track 4 workshop outcomes"
-image-caption: "Agreement & Certainty Matrix used in NAIF Track 4 workshop #2 to prioritise actions. Source: NAIF workshop materials (Miro board and slides). Rights: NAIF contributors."
+image: "images/trello-track4-workshop-board.png"
+image-alt: "NAIF Track 4 Trello board with exploratory maps and proposed actions"
+image-caption: "NAIF Track 4 Trello board with exploratory maps and proposed actions from Workshop #1. Source: https://trello.com/b/QiVYYDdi/naif-track-4. Rights: NAIF contributors."
 toc: true
 draft: false
 ---
@@ -34,6 +34,8 @@ draft: false
 ## From ideas to action
 
 On 15 October 2025, the first NAIF Track 4 workshop brought together repository managers, data stewards, and open science specialists from across Switzerland to explore four families of academic metadata: organisational data, authorship and researcher data, funding information, and open access and licensing data.
+
+![Group photo of participants from the first NAIF Track 4 workshop at Lake Neuchatel.](images/group-photo.jpg){fig-cap="Participants of the first NAIF Track 4 workshop at Lake Neuchatel. Photo: ETH Zurich, Annette Guignard. Rights: NAIF contributors."}
 
 During the workshop, participants produced an extensive set of exploratory maps and proposed actions, which have been compiled on the [NAIF Track 4 Trello board](https://trello.com/b/QiVYYDdi/naif-track-4) by Jorge Rodrigues de Matos (EPFL).
 
@@ -46,6 +48,8 @@ To address this question, a second workshop took place on 8 December 2025 as a 9
 The Agreement & Certainty Matrix (ACM) was used to move beyond simple voting. The ACM asks two questions about each proposed action: how much do stakeholders agree on the problem and the direction of the solution, and how predictable is it that a chosen intervention will succeed in our context? Crossing these two dimensions produces four domains --- Simple, Complicated, Complex, and Chaos --- each suggesting a different style of action.
 
 Participants first reviewed the 16 action cards on the Trello board individually, then rated up to five actions using emoji on a shared [Miro board](https://miro.com/app/board/uXjVJtPnUzU=/): 🤝 or 👎 for agreement, 💯 or 🤷‍♀️ for certainty. The resulting placement provided a visual landscape of the participants' assessment.
+
+![Action cards placed in the Agreement and Certainty Matrix after participant ratings.](images/acm-matrix.png){fig-cap="Agreement and Certainty Matrix from Workshop #2 showing the placement of proposed actions. Source: NAIF workshop materials (Miro board and slides). Rights: NAIF contributors."}
 
 ## What we found
 
@@ -71,6 +75,7 @@ The first draft of the Track 4 report for swissuniversities is due in November 2
 
 All workshop materials --- the Trello board, Miro board, and presentation slides --- remain accessible to participants and the wider NAIF community.
 
+::: {.callout-note title="Acknowledgements"}
 Track 4 is a collaborative effort. Thanks are extended to all workshop participants for their valuable contributions to Track 4's progress to date, as well as to our colleagues for organising and facilitating the workshops and for their ongoing commitment to Track 4.
 
 - Laurent Gobin and Quentin Gallis, University of Neuchâtel
@@ -78,3 +83,4 @@ Track 4 is a collaborative effort. Thanks are extended to all workshop participa
 - Christian Schlumpf, University of St. Gallen
 - Christian Muheim, St. Gallen University of Teacher Education
 - Simon Willemin and Annette Guignard, ETH Zurich
+:::
