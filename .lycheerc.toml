@@ -1,6 +1,8 @@
 exclude = [
   "https://www.gnu.org/licenses/",
   "https://www.gnu.org/licenses/agpl-3.0.html",
+  # AGPL verbatim license header URL intermittently fails TLS handshakes on CI
+  "https://fsf.org/",
   "https://www.makeareadme.com/",
   # Zenodo badge placeholders (not yet configured)
   "https://zenodo.org/badge/GITHUB_REPO_ID",
