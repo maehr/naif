@@ -31,9 +31,9 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-27eaa8f94fc6f75fd83a451ed0a494ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-112e5cb95348921d61161b57fcca8935.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-27eaa8f94fc6f75fd83a451ed0a494ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3a3cba847ba537c84da2f5c7d558611d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-fc5990792a126729486f5b8bc59df59b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3a3cba847ba537c84da2f5c7d558611d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -212,7 +212,7 @@ Note
 <div class="naif-cta" role="complementary" aria-label="Get involved" data-naif-cta="">
   <div class="naif-cta__inner">
     <button class="naif-cta__close" type="button" aria-label="Close" data-naif-cta-close="">
-      ×
+      <span class="naif-cta__close-icon" aria-hidden="true">×</span>
     </button>
     <div class="naif-cta__kicker">Get involved</div>
     <div class="naif-cta__title">Join NAIF</div>
@@ -226,7 +226,7 @@ Note
   </div>
 </div>
 
-<script>(function(){var t="naif_cta_closed",e=document.querySelector("[data-naif-cta]");if(e){try{if(window.localStorage&&window.localStorage.getItem(t)==="1"){e.style.display="none";return}}catch{}var a=e.querySelector("[data-naif-cta-close]");a&&a.addEventListener("click",function(){e.style.display="none";try{window.localStorage&&window.localStorage.setItem(t,"1")}catch{}})}})();
+<script>(function(){var t="naif_cta_closed",e=document.querySelector("[data-naif-cta]");if(!e)return;try{if(window.localStorage&&window.localStorage.getItem(t)==="1"){e.style.display="none";return}}catch{}var a=e.querySelector("[data-naif-cta-close]");if(!a)return;function c(){e.style.display="none";try{window.localStorage&&window.localStorage.setItem(t,"1")}catch{}}a.addEventListener("click",c)})();
 </script>
 <script>window.document.addEventListener("DOMContentLoaded",function(){const s=Array.from(window.document.querySelectorAll("[data-listing-filter-buttons='true']"));if(s.length===0)return;const g=t=>window.btoa(window.encodeURIComponent(t)),w=()=>{const t=window.location.hash.startsWith("#")?window.location.hash.slice(1):window.location.hash;return t&&new window.URLSearchParams(t).get("category")||""},c=(t,e,a)=>{const n=window.document.createElement("button");return n.type="button",n.className="btn btn-sm btn-outline-secondary",e&&n.classList.add("active"),n.setAttribute("data-category",t),n.setAttribute("aria-pressed",String(e)),n.textContent=t||a,n},d=[];for(const t of s){const e=t.dataset.listingId||"";if(!e)continue;const a=t.dataset.allLabel||"All categories",n=o=>{const i=t.querySelectorAll("button[data-category]");for(const r of i){const l=(r.getAttribute("data-category")||"")===o;r.classList.toggle("active",l),r.setAttribute("aria-pressed",String(l))}};t.appendChild(c("",!0,a));const f=Array.from(window.document.querySelectorAll(`#listing-${e} .listing-category`)).map(o=>o.textContent?o.textContent.trim():"").filter(o=>o.length>0),y=Array.from(new Set(f)).sort((o,i)=>o.localeCompare(i));for(const o of y)t.appendChild(c(o,!1,a));t.addEventListener("click",function(o){const i=o.target;if(!(i instanceof window.HTMLButtonElement))return;const r=i.getAttribute("data-category")||"";typeof window.quartoListingCategory=="function"&&window.quartoListingCategory(g(r))}),d.push({setActiveButton:n})}const u=t=>{for(const e of d)e.setActiveButton(t)};if(typeof window.quartoListingCategory=="function"&&!window.__naifCategoryButtonsPatched){const t=window.quartoListingCategory;window.quartoListingCategory=function(e){t(e);let a="";try{a=window.decodeURIComponent(window.atob(e||""))}catch{a=""}u(a)},window.__naifCategoryButtonsPatched=!0}u(w())});
 </script>
