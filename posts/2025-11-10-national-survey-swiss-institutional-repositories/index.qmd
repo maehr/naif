@@ -27,7 +27,7 @@ image: "images/surveyhero-naif-survey.png"
 image-alt: 'Survey page for the NAIF repositories survey'
 image-caption: 'Screenshot of the NAIF repositories survey page on SurveyHero. Source: https://www.surveyhero.com/c/naif-repositories-2025. Rights: SurveyHero / NAIF.'
 toc: true
-draft: true
+draft: false
 ---
 
 
