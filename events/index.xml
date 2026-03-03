@@ -37,6 +37,16 @@
   <media:content url="https://maehr.github.io/naif/events/2026-05-19-bibliocon-2026/images/bibliocon-2026-homepage.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>General Assembly of SLiNER</title>
+  <dc:creator>SLiNER </dc:creator>
+  <link>https://maehr.github.io/naif/events/2026-03-25-general-assembly-sliner/</link>
+  <description><![CDATA[ SLiNER’s general assembly in Bern, with a workshop session where NAIF contributes to cross-institutional exchange among Swiss academic libraries. ]]></description>
+  <category>Participation by NAIF</category>
+  <guid>https://maehr.github.io/naif/events/2026-03-25-general-assembly-sliner/</guid>
+  <pubDate>Tue, 24 Mar 2026 23:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/events/2026-03-25-general-assembly-sliner/images/sliner-page.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>ORCID Community Town Hall 2026</title>
   <dc:creator>ORCID </dc:creator>
   <link>https://maehr.github.io/naif/events/2026-03-25-orcid-community-town-hall-2026/</link>
