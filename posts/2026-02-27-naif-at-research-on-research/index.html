@@ -252,7 +252,7 @@ Checklist (manual):
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_64dce0483c7484293099f04a450b6dcc {
+                #map_801e9f394794623be5788736766538c1 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -290,14 +290,14 @@ Checklist (manual):
     
     <div style=&quot;position: fixed; top: 10px; left: 50px; background: #ffffff; padding: 10px; border-radius: 5px; font-family: sans-serif; font-size: 12px; z-index: 9999;&quot;><div><span style=&quot;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;background:#F97B22;&quot;></span>Universities</div><div><span style=&quot;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;background:#FEE8B0;&quot;></span>Universities of Applied Sciences</div><div><span style=&quot;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;background:#9CA777;&quot;></span>Teacher Education</div><div><span style=&quot;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;background:#7C9070;&quot;></span>University Institutes</div></div>
     
-            <div class=&quot;folium-map&quot; id=&quot;map_64dce0483c7484293099f04a450b6dcc&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_801e9f394794623be5788736766538c1&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_64dce0483c7484293099f04a450b6dcc = L.map(
-                &quot;map_64dce0483c7484293099f04a450b6dcc&quot;,
+            var map_801e9f394794623be5788736766538c1 = L.map(
+                &quot;map_801e9f394794623be5788736766538c1&quot;,
                 {
                     center: [46.8, 8.3],
                     crs: L.CRS.EPSG3857,
@@ -309,13 +309,13 @@ Checklist (manual):
 
                 }
             );
-            L.control.scale().addTo(map_64dce0483c7484293099f04a450b6dcc);
+            L.control.scale().addTo(map_801e9f394794623be5788736766538c1);
 
             
 
         
     
-            var tile_layer_81a1162bd6e05d4e244a0db2a823ede2 = L.tileLayer(
+            var tile_layer_6e2d4db983d723af6dd3cca7b70c0baa = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -332,33 +332,33 @@ Checklist (manual):
             );
         
     
-            tile_layer_81a1162bd6e05d4e244a0db2a823ede2.addTo(map_64dce0483c7484293099f04a450b6dcc);
+            tile_layer_6e2d4db983d723af6dd3cca7b70c0baa.addTo(map_801e9f394794623be5788736766538c1);
         
     
-            var circle_marker_2dc169d27ed5321448983efef318c44a = L.circleMarker(
+            var circle_marker_4ce60b0873365017484af0e9ff55001c = L.circleMarker(
                 [47.5584, 7.5834],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_18bf93d5162dff7a982f0585caa9e2f6 = L.popup({
+        var popup_e896cb7825cf6946c920a3b7b84f8076 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_21139b6b1f65fa5e72b596608ed2284c = $(`<div id=&quot;html_21139b6b1f65fa5e72b596608ed2284c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Basel</b><br>Type: University<br>Basel</div>`)[0];
-                popup_18bf93d5162dff7a982f0585caa9e2f6.setContent(html_21139b6b1f65fa5e72b596608ed2284c);
+                var html_3b11415427ced16eacba93e13fd0267b = $(`<div id=&quot;html_3b11415427ced16eacba93e13fd0267b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Basel</b><br>Type: University<br>Basel</div>`)[0];
+                popup_e896cb7825cf6946c920a3b7b84f8076.setContent(html_3b11415427ced16eacba93e13fd0267b);
             
         
 
-        circle_marker_2dc169d27ed5321448983efef318c44a.bindPopup(popup_18bf93d5162dff7a982f0585caa9e2f6)
+        circle_marker_4ce60b0873365017484af0e9ff55001c.bindPopup(popup_e896cb7825cf6946c920a3b7b84f8076)
         ;
 
         
     
     
-            circle_marker_2dc169d27ed5321448983efef318c44a.bindTooltip(
+            circle_marker_4ce60b0873365017484af0e9ff55001c.bindTooltip(
                 `<div>
                      UNIBAS
                  </div>`,
@@ -368,30 +368,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_6db4e4b0f23a147cf8c21d9ed83c4688 = L.circleMarker(
+            var circle_marker_00ff28f6f95f812401200d19e2ea911f = L.circleMarker(
                 [46.9505, 7.4381],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_dda21c3a571ddc5d905a87c3f716e371 = L.popup({
+        var popup_fe858963f600b965fd70394996c7ebab = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_55195987056c2d6c87b03e60e7570718 = $(`<div id=&quot;html_55195987056c2d6c87b03e60e7570718&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Bern</b><br>Type: University<br>Bern</div>`)[0];
-                popup_dda21c3a571ddc5d905a87c3f716e371.setContent(html_55195987056c2d6c87b03e60e7570718);
+                var html_59a216c36fd51c6e2d4ddfc852538b8c = $(`<div id=&quot;html_59a216c36fd51c6e2d4ddfc852538b8c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Bern</b><br>Type: University<br>Bern</div>`)[0];
+                popup_fe858963f600b965fd70394996c7ebab.setContent(html_59a216c36fd51c6e2d4ddfc852538b8c);
             
         
 
-        circle_marker_6db4e4b0f23a147cf8c21d9ed83c4688.bindPopup(popup_dda21c3a571ddc5d905a87c3f716e371)
+        circle_marker_00ff28f6f95f812401200d19e2ea911f.bindPopup(popup_fe858963f600b965fd70394996c7ebab)
         ;
 
         
     
     
-            circle_marker_6db4e4b0f23a147cf8c21d9ed83c4688.bindTooltip(
+            circle_marker_00ff28f6f95f812401200d19e2ea911f.bindTooltip(
                 `<div>
                      UniBE
                  </div>`,
@@ -401,30 +401,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_63764e1df42863b017b84c6c18a37324 = L.circleMarker(
+            var circle_marker_36f717a99c6ae98adee558045616b215 = L.circleMarker(
                 [46.8065, 7.1523],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_f6ddd802cf3e7be45f06c803481ad639 = L.popup({
+        var popup_29b5d9d532bed2a5f6c20b4518982b17 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_7c611219faf5e96eb0ab216f490ef3d5 = $(`<div id=&quot;html_7c611219faf5e96eb0ab216f490ef3d5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Fribourg</b><br>Type: University<br>Fribourg</div>`)[0];
-                popup_f6ddd802cf3e7be45f06c803481ad639.setContent(html_7c611219faf5e96eb0ab216f490ef3d5);
+                var html_342cb4ae4ea2ce90750dc4393b8dc17e = $(`<div id=&quot;html_342cb4ae4ea2ce90750dc4393b8dc17e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Fribourg</b><br>Type: University<br>Fribourg</div>`)[0];
+                popup_29b5d9d532bed2a5f6c20b4518982b17.setContent(html_342cb4ae4ea2ce90750dc4393b8dc17e);
             
         
 
-        circle_marker_63764e1df42863b017b84c6c18a37324.bindPopup(popup_f6ddd802cf3e7be45f06c803481ad639)
+        circle_marker_36f717a99c6ae98adee558045616b215.bindPopup(popup_29b5d9d532bed2a5f6c20b4518982b17)
         ;
 
         
     
     
-            circle_marker_63764e1df42863b017b84c6c18a37324.bindTooltip(
+            circle_marker_36f717a99c6ae98adee558045616b215.bindTooltip(
                 `<div>
                      UniFr
                  </div>`,
@@ -434,30 +434,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_cf88e57115f8b89ce3c10228f7e5497f = L.circleMarker(
+            var circle_marker_8a3a29d0080ec6f45ea5ead8cc4fe32b = L.circleMarker(
                 [46.2017, 6.143],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_9cd9b56383934da1397a3329adf63cac = L.popup({
+        var popup_094f4bf1c14cbc44f82c2d7cbb74dca5 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_a3539fd7f22b55bf29d00ac37a2336f5 = $(`<div id=&quot;html_a3539fd7f22b55bf29d00ac37a2336f5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Geneva</b><br>Type: University<br>Geneva</div>`)[0];
-                popup_9cd9b56383934da1397a3329adf63cac.setContent(html_a3539fd7f22b55bf29d00ac37a2336f5);
+                var html_cf522f0d83ae446b90858c0f4a9d6289 = $(`<div id=&quot;html_cf522f0d83ae446b90858c0f4a9d6289&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Geneva</b><br>Type: University<br>Geneva</div>`)[0];
+                popup_094f4bf1c14cbc44f82c2d7cbb74dca5.setContent(html_cf522f0d83ae446b90858c0f4a9d6289);
             
         
 
-        circle_marker_cf88e57115f8b89ce3c10228f7e5497f.bindPopup(popup_9cd9b56383934da1397a3329adf63cac)
+        circle_marker_8a3a29d0080ec6f45ea5ead8cc4fe32b.bindPopup(popup_094f4bf1c14cbc44f82c2d7cbb74dca5)
         ;
 
         
     
     
-            circle_marker_cf88e57115f8b89ce3c10228f7e5497f.bindTooltip(
+            circle_marker_8a3a29d0080ec6f45ea5ead8cc4fe32b.bindTooltip(
                 `<div>
                      UNIGE
                  </div>`,
@@ -467,30 +467,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_c730c78756d54bec32b0788819b276f3 = L.circleMarker(
+            var circle_marker_0df06444ba501ebab40768520debc6ac = L.circleMarker(
                 [46.5213, 6.5743],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_a968c15c606561b392333251f3f1d2dd = L.popup({
+        var popup_6cca3b4dd597769a444b126f7adfe398 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_aa22e975a77a77f66e042ee95eee99cc = $(`<div id=&quot;html_aa22e975a77a77f66e042ee95eee99cc&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Lausanne</b><br>Type: University<br>Lausanne</div>`)[0];
-                popup_a968c15c606561b392333251f3f1d2dd.setContent(html_aa22e975a77a77f66e042ee95eee99cc);
+                var html_2d46dcc0c43f79af40c43e019f477160 = $(`<div id=&quot;html_2d46dcc0c43f79af40c43e019f477160&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Lausanne</b><br>Type: University<br>Lausanne</div>`)[0];
+                popup_6cca3b4dd597769a444b126f7adfe398.setContent(html_2d46dcc0c43f79af40c43e019f477160);
             
         
 
-        circle_marker_c730c78756d54bec32b0788819b276f3.bindPopup(popup_a968c15c606561b392333251f3f1d2dd)
+        circle_marker_0df06444ba501ebab40768520debc6ac.bindPopup(popup_6cca3b4dd597769a444b126f7adfe398)
         ;
 
         
     
     
-            circle_marker_c730c78756d54bec32b0788819b276f3.bindTooltip(
+            circle_marker_0df06444ba501ebab40768520debc6ac.bindTooltip(
                 `<div>
                      UNIL
                  </div>`,
@@ -500,30 +500,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_84208b975c0860771a2e65e481edc8e6 = L.circleMarker(
+            var circle_marker_a19b917ea8046066faa1d54896a9d5a7 = L.circleMarker(
                 [47.0494, 8.3105],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_fa788fc25c764ca2d7a2a230597b1d5d = L.popup({
+        var popup_f200d105485a071a6faed4ce79224667 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_90be0731524ea0c1911a8b186a3e769b = $(`<div id=&quot;html_90be0731524ea0c1911a8b186a3e769b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Lucerne</b><br>Type: University<br>Lucerne</div>`)[0];
-                popup_fa788fc25c764ca2d7a2a230597b1d5d.setContent(html_90be0731524ea0c1911a8b186a3e769b);
+                var html_0c31f90ec5452a7229e7fbfaa3060d0e = $(`<div id=&quot;html_0c31f90ec5452a7229e7fbfaa3060d0e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Lucerne</b><br>Type: University<br>Lucerne</div>`)[0];
+                popup_f200d105485a071a6faed4ce79224667.setContent(html_0c31f90ec5452a7229e7fbfaa3060d0e);
             
         
 
-        circle_marker_84208b975c0860771a2e65e481edc8e6.bindPopup(popup_fa788fc25c764ca2d7a2a230597b1d5d)
+        circle_marker_a19b917ea8046066faa1d54896a9d5a7.bindPopup(popup_f200d105485a071a6faed4ce79224667)
         ;
 
         
     
     
-            circle_marker_84208b975c0860771a2e65e481edc8e6.bindTooltip(
+            circle_marker_a19b917ea8046066faa1d54896a9d5a7.bindTooltip(
                 `<div>
                      UniLu
                  </div>`,
@@ -533,30 +533,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_9f9e5ef0b39734a05c9e797327e51bc7 = L.circleMarker(
+            var circle_marker_d4516cd6409840bd59b603facf0ba1e2 = L.circleMarker(
                 [46.9936, 6.9387],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_70c79b5a8e0d03d7fd1348e4a1a098d8 = L.popup({
+        var popup_bc88fb7e780f3f2cbdb12948792904c1 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_75dd433eb0d0e938dc24c82c4252a86e = $(`<div id=&quot;html_75dd433eb0d0e938dc24c82c4252a86e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Neuchâtel</b><br>Type: University<br>Neuchâtel</div>`)[0];
-                popup_70c79b5a8e0d03d7fd1348e4a1a098d8.setContent(html_75dd433eb0d0e938dc24c82c4252a86e);
+                var html_4e17d4f8b60277ad2f5b6cb7b3fec653 = $(`<div id=&quot;html_4e17d4f8b60277ad2f5b6cb7b3fec653&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Neuchâtel</b><br>Type: University<br>Neuchâtel</div>`)[0];
+                popup_bc88fb7e780f3f2cbdb12948792904c1.setContent(html_4e17d4f8b60277ad2f5b6cb7b3fec653);
             
         
 
-        circle_marker_9f9e5ef0b39734a05c9e797327e51bc7.bindPopup(popup_70c79b5a8e0d03d7fd1348e4a1a098d8)
+        circle_marker_d4516cd6409840bd59b603facf0ba1e2.bindPopup(popup_bc88fb7e780f3f2cbdb12948792904c1)
         ;
 
         
     
     
-            circle_marker_9f9e5ef0b39734a05c9e797327e51bc7.bindTooltip(
+            circle_marker_d4516cd6409840bd59b603facf0ba1e2.bindTooltip(
                 `<div>
                      UniNE
                  </div>`,
@@ -566,30 +566,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_cbb2b5cce0d66b32dc05782f4e170a14 = L.circleMarker(
+            var circle_marker_8bb9673d1d815a69d961bd7200bbbba8 = L.circleMarker(
                 [47.3743, 8.5484],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_3371d05eb28455f520d705e7841a208f = L.popup({
+        var popup_20a317c29bfb17cc90f5b381708c6759 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_ddfbaf0797501bfc563891a60f470f41 = $(`<div id=&quot;html_ddfbaf0797501bfc563891a60f470f41&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Zurich</b><br>Type: University<br>Zurich</div>`)[0];
-                popup_3371d05eb28455f520d705e7841a208f.setContent(html_ddfbaf0797501bfc563891a60f470f41);
+                var html_fc8ee5520eee790a2f983fd7ea0178f8 = $(`<div id=&quot;html_fc8ee5520eee790a2f983fd7ea0178f8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Zurich</b><br>Type: University<br>Zurich</div>`)[0];
+                popup_20a317c29bfb17cc90f5b381708c6759.setContent(html_fc8ee5520eee790a2f983fd7ea0178f8);
             
         
 
-        circle_marker_cbb2b5cce0d66b32dc05782f4e170a14.bindPopup(popup_3371d05eb28455f520d705e7841a208f)
+        circle_marker_8bb9673d1d815a69d961bd7200bbbba8.bindPopup(popup_20a317c29bfb17cc90f5b381708c6759)
         ;
 
         
     
     
-            circle_marker_cbb2b5cce0d66b32dc05782f4e170a14.bindTooltip(
+            circle_marker_8bb9673d1d815a69d961bd7200bbbba8.bindTooltip(
                 `<div>
                      UZH
                  </div>`,
@@ -599,30 +599,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_a5e6e0c63502e6c89ab9ec43b2711c6e = L.circleMarker(
+            var circle_marker_50b0974fac31a96b227cd51c61372adc = L.circleMarker(
                 [46.0104, 8.9582],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_7a914b7dd27c79212cd885ba60661f23 = L.popup({
+        var popup_9493f2bb66684e2d6ec29e6c1e5086c9 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_706c32a767634a8047a53f11ec52b4b6 = $(`<div id=&quot;html_706c32a767634a8047a53f11ec52b4b6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Università della Svizzera italiana</b><br>Type: University<br>Lugano</div>`)[0];
-                popup_7a914b7dd27c79212cd885ba60661f23.setContent(html_706c32a767634a8047a53f11ec52b4b6);
+                var html_2ab9b813fe236c94fa2efc5eb0cc8695 = $(`<div id=&quot;html_2ab9b813fe236c94fa2efc5eb0cc8695&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Università della Svizzera italiana</b><br>Type: University<br>Lugano</div>`)[0];
+                popup_9493f2bb66684e2d6ec29e6c1e5086c9.setContent(html_2ab9b813fe236c94fa2efc5eb0cc8695);
             
         
 
-        circle_marker_a5e6e0c63502e6c89ab9ec43b2711c6e.bindPopup(popup_7a914b7dd27c79212cd885ba60661f23)
+        circle_marker_50b0974fac31a96b227cd51c61372adc.bindPopup(popup_9493f2bb66684e2d6ec29e6c1e5086c9)
         ;
 
         
     
     
-            circle_marker_a5e6e0c63502e6c89ab9ec43b2711c6e.bindTooltip(
+            circle_marker_50b0974fac31a96b227cd51c61372adc.bindTooltip(
                 `<div>
                      USI
                  </div>`,
@@ -632,30 +632,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_60228d61b79933c5e02eaa4edf561888 = L.circleMarker(
+            var circle_marker_f1a4fb47a1d66b3b8eb96c4c0f267790 = L.circleMarker(
                 [46.5191, 6.5668],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_1e5fc93368f1a9f083c016acbc2af8fa = L.popup({
+        var popup_166e03d15dffb5629e34addb7ba38f36 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_cd6333b1ca852a2e84511358bfb360b0 = $(`<div id=&quot;html_cd6333b1ca852a2e84511358bfb360b0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Swiss Federal Institute of Technology Lausanne</b><br>Type: University<br>Lausanne</div>`)[0];
-                popup_1e5fc93368f1a9f083c016acbc2af8fa.setContent(html_cd6333b1ca852a2e84511358bfb360b0);
+                var html_16e13b3d97d82d0ec4b6149282bdf326 = $(`<div id=&quot;html_16e13b3d97d82d0ec4b6149282bdf326&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Swiss Federal Institute of Technology Lausanne</b><br>Type: University<br>Lausanne</div>`)[0];
+                popup_166e03d15dffb5629e34addb7ba38f36.setContent(html_16e13b3d97d82d0ec4b6149282bdf326);
             
         
 
-        circle_marker_60228d61b79933c5e02eaa4edf561888.bindPopup(popup_1e5fc93368f1a9f083c016acbc2af8fa)
+        circle_marker_f1a4fb47a1d66b3b8eb96c4c0f267790.bindPopup(popup_166e03d15dffb5629e34addb7ba38f36)
         ;
 
         
     
     
-            circle_marker_60228d61b79933c5e02eaa4edf561888.bindTooltip(
+            circle_marker_f1a4fb47a1d66b3b8eb96c4c0f267790.bindTooltip(
                 `<div>
                      EPFL
                  </div>`,
@@ -665,30 +665,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_a2d5863a7349a27eb74c6ff27adafb4b = L.circleMarker(
+            var circle_marker_a6f37b968b548810fda2803e48444808 = L.circleMarker(
                 [47.3763, 8.5477],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_32725e677418faf0fc92951796952e70 = L.popup({
+        var popup_00938e1000274964f9f51ce8c4d4f5ab = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_d3161ae84668f441d5c69696af68d81f = $(`<div id=&quot;html_d3161ae84668f441d5c69696af68d81f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Swiss Federal Institute of Technology Zurich</b><br>Type: University<br>Zurich</div>`)[0];
-                popup_32725e677418faf0fc92951796952e70.setContent(html_d3161ae84668f441d5c69696af68d81f);
+                var html_a12fecff415df09e62c4416d4e9111cb = $(`<div id=&quot;html_a12fecff415df09e62c4416d4e9111cb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Swiss Federal Institute of Technology Zurich</b><br>Type: University<br>Zurich</div>`)[0];
+                popup_00938e1000274964f9f51ce8c4d4f5ab.setContent(html_a12fecff415df09e62c4416d4e9111cb);
             
         
 
-        circle_marker_a2d5863a7349a27eb74c6ff27adafb4b.bindPopup(popup_32725e677418faf0fc92951796952e70)
+        circle_marker_a6f37b968b548810fda2803e48444808.bindPopup(popup_00938e1000274964f9f51ce8c4d4f5ab)
         ;
 
         
     
     
-            circle_marker_a2d5863a7349a27eb74c6ff27adafb4b.bindTooltip(
+            circle_marker_a6f37b968b548810fda2803e48444808.bindTooltip(
                 `<div>
                      ETHZ
                  </div>`,
@@ -698,30 +698,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_b91b1a760aff493d00aefaf67bc08d9d = L.circleMarker(
+            var circle_marker_1262e37fd51b510013f05968b999fc3a = L.circleMarker(
                 [46.3196, 7.9889],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#7C9070&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_2ae4ce3c31bd9d419e1ce181d6d74ae4 = L.popup({
+        var popup_c094894eecd2bf4153595a4193b4a700 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_d48e534459bf4a939f8fd7ddba76d916 = $(`<div id=&quot;html_d48e534459bf4a939f8fd7ddba76d916&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Distance Learning University Switzerland</b><br>Type: Univ. Inst.<br>Brig</div>`)[0];
-                popup_2ae4ce3c31bd9d419e1ce181d6d74ae4.setContent(html_d48e534459bf4a939f8fd7ddba76d916);
+                var html_f28dbb9cbf9b82d938a77a53c85764bd = $(`<div id=&quot;html_f28dbb9cbf9b82d938a77a53c85764bd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Distance Learning University Switzerland</b><br>Type: Univ. Inst.<br>Brig</div>`)[0];
+                popup_c094894eecd2bf4153595a4193b4a700.setContent(html_f28dbb9cbf9b82d938a77a53c85764bd);
             
         
 
-        circle_marker_b91b1a760aff493d00aefaf67bc08d9d.bindPopup(popup_2ae4ce3c31bd9d419e1ce181d6d74ae4)
+        circle_marker_1262e37fd51b510013f05968b999fc3a.bindPopup(popup_c094894eecd2bf4153595a4193b4a700)
         ;
 
         
     
     
-            circle_marker_b91b1a760aff493d00aefaf67bc08d9d.bindTooltip(
+            circle_marker_1262e37fd51b510013f05968b999fc3a.bindTooltip(
                 `<div>
                      FernUni
                  </div>`,
@@ -731,30 +731,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_bc7421551eeef225624d8c33f68f7260 = L.circleMarker(
+            var circle_marker_cc61432495c6bcd5b6f6974897bcb251 = L.circleMarker(
                 [46.953, 7.4347],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#FEE8B0&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_4ffa2b40ff38045fd29b82efe0c99197 = L.popup({
+        var popup_13af0941dbdd5b65da989f0f55b67aaa = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_71090de8fc6b9984907bf13c5e7ec92b = $(`<div id=&quot;html_71090de8fc6b9984907bf13c5e7ec92b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Bern University of Applied Sciences</b><br>Type: UAS<br>Bern</div>`)[0];
-                popup_4ffa2b40ff38045fd29b82efe0c99197.setContent(html_71090de8fc6b9984907bf13c5e7ec92b);
+                var html_446c2bed6ce5046638de1c219d3f9ebf = $(`<div id=&quot;html_446c2bed6ce5046638de1c219d3f9ebf&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Bern University of Applied Sciences</b><br>Type: UAS<br>Bern</div>`)[0];
+                popup_13af0941dbdd5b65da989f0f55b67aaa.setContent(html_446c2bed6ce5046638de1c219d3f9ebf);
             
         
 
-        circle_marker_bc7421551eeef225624d8c33f68f7260.bindPopup(popup_4ffa2b40ff38045fd29b82efe0c99197)
+        circle_marker_cc61432495c6bcd5b6f6974897bcb251.bindPopup(popup_13af0941dbdd5b65da989f0f55b67aaa)
         ;
 
         
     
     
-            circle_marker_bc7421551eeef225624d8c33f68f7260.bindTooltip(
+            circle_marker_cc61432495c6bcd5b6f6974897bcb251.bindTooltip(
                 `<div>
                      BFH
                  </div>`,
@@ -764,30 +764,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_03685689b97b8420e0ec89a983dae515 = L.circleMarker(
+            var circle_marker_7ee58037bebb9e66d3dc99aa66e0ad8a = L.circleMarker(
                 [47.4812, 8.2127],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#FEE8B0&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_4072bd5f8a1008185a290c272ea2ed08 = L.popup({
+        var popup_1dd63f85482b5194a286733adeacda3a = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_b3ee9384bb8f1b63e00e05537e778b64 = $(`<div id=&quot;html_b3ee9384bb8f1b63e00e05537e778b64&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Applied Sciences Northwestern Switzerland</b><br>Type: UAS<br>Windisch</div>`)[0];
-                popup_4072bd5f8a1008185a290c272ea2ed08.setContent(html_b3ee9384bb8f1b63e00e05537e778b64);
+                var html_3728d395bb9a2f6c1e7b33cb9a79cbc1 = $(`<div id=&quot;html_3728d395bb9a2f6c1e7b33cb9a79cbc1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Applied Sciences Northwestern Switzerland</b><br>Type: UAS<br>Windisch</div>`)[0];
+                popup_1dd63f85482b5194a286733adeacda3a.setContent(html_3728d395bb9a2f6c1e7b33cb9a79cbc1);
             
         
 
-        circle_marker_03685689b97b8420e0ec89a983dae515.bindPopup(popup_4072bd5f8a1008185a290c272ea2ed08)
+        circle_marker_7ee58037bebb9e66d3dc99aa66e0ad8a.bindPopup(popup_1dd63f85482b5194a286733adeacda3a)
         ;
 
         
     
     
-            circle_marker_03685689b97b8420e0ec89a983dae515.bindTooltip(
+            circle_marker_7ee58037bebb9e66d3dc99aa66e0ad8a.bindTooltip(
                 `<div>
                      FHNW
                  </div>`,
@@ -797,30 +797,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_3f423103b806d68d3a5a83f2e7acb4c5 = L.circleMarker(
+            var circle_marker_725c5b32e3dacc053c9de109c7338318 = L.circleMarker(
                 [47.3653, 7.3575],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#FEE8B0&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_c58cee2184cf3f623dc1a9c676289452 = L.popup({
+        var popup_3fc8e2ce221249e70b64847ac1ae464c = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_3f34be35b6f3e8c786e19868fd80c057 = $(`<div id=&quot;html_3f34be35b6f3e8c786e19868fd80c057&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>HES-SO University of Applied Sciences and Arts Western Switzerland</b><br>Type: UAS<br>Delémont</div>`)[0];
-                popup_c58cee2184cf3f623dc1a9c676289452.setContent(html_3f34be35b6f3e8c786e19868fd80c057);
+                var html_bbe563e6a9df80bb126a7038cb4ec4f2 = $(`<div id=&quot;html_bbe563e6a9df80bb126a7038cb4ec4f2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>HES-SO University of Applied Sciences and Arts Western Switzerland</b><br>Type: UAS<br>Delémont</div>`)[0];
+                popup_3fc8e2ce221249e70b64847ac1ae464c.setContent(html_bbe563e6a9df80bb126a7038cb4ec4f2);
             
         
 
-        circle_marker_3f423103b806d68d3a5a83f2e7acb4c5.bindPopup(popup_c58cee2184cf3f623dc1a9c676289452)
+        circle_marker_725c5b32e3dacc053c9de109c7338318.bindPopup(popup_3fc8e2ce221249e70b64847ac1ae464c)
         ;
 
         
     
     
-            circle_marker_3f423103b806d68d3a5a83f2e7acb4c5.bindTooltip(
+            circle_marker_725c5b32e3dacc053c9de109c7338318.bindTooltip(
                 `<div>
                      HES-SO
                  </div>`,
@@ -830,30 +830,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_9d173f20b607a1d6de2898032ccc54fc = L.circleMarker(
+            var circle_marker_c687d7c3f85dba5308ca686a2c9c9a56 = L.circleMarker(
                 [47.0468, 8.3106],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#FEE8B0&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_fc1a7c38448ee920ce1794be239d27d2 = L.popup({
+        var popup_724ba75bc9a56437e9cf38f75529c65e = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_b1e7e44a476555fc440d7f78ef9f252d = $(`<div id=&quot;html_b1e7e44a476555fc440d7f78ef9f252d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Lucerne University of Applied Sciences and Arts</b><br>Type: UAS<br>Lucerne</div>`)[0];
-                popup_fc1a7c38448ee920ce1794be239d27d2.setContent(html_b1e7e44a476555fc440d7f78ef9f252d);
+                var html_b026613d173358ccf136fb0ae5dab904 = $(`<div id=&quot;html_b026613d173358ccf136fb0ae5dab904&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Lucerne University of Applied Sciences and Arts</b><br>Type: UAS<br>Lucerne</div>`)[0];
+                popup_724ba75bc9a56437e9cf38f75529c65e.setContent(html_b026613d173358ccf136fb0ae5dab904);
             
         
 
-        circle_marker_9d173f20b607a1d6de2898032ccc54fc.bindPopup(popup_fc1a7c38448ee920ce1794be239d27d2)
+        circle_marker_c687d7c3f85dba5308ca686a2c9c9a56.bindPopup(popup_724ba75bc9a56437e9cf38f75529c65e)
         ;
 
         
     
     
-            circle_marker_9d173f20b607a1d6de2898032ccc54fc.bindTooltip(
+            circle_marker_c687d7c3f85dba5308ca686a2c9c9a56.bindTooltip(
                 `<div>
                      HSLU
                  </div>`,
@@ -863,30 +863,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_10fdcc5a6f9e633f005897a7a4b71c6f = L.circleMarker(
+            var circle_marker_9c51b14e7ee55a0aa6ca0d56b807a0ff = L.circleMarker(
                 [47.5005, 8.7247],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#FEE8B0&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_1b78aa9139c635aaf3516702ada7d6dc = L.popup({
+        var popup_cf058a6b3ae5dd09b916e60b61ba88a1 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_3588a3652ec7cc96e7702520b449ee69 = $(`<div id=&quot;html_3588a3652ec7cc96e7702520b449ee69&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Zurich University of Applied Sciences</b><br>Type: UAS<br>Winterthur</div>`)[0];
-                popup_1b78aa9139c635aaf3516702ada7d6dc.setContent(html_3588a3652ec7cc96e7702520b449ee69);
+                var html_582ab0199cad277bbb71df4259562fb1 = $(`<div id=&quot;html_582ab0199cad277bbb71df4259562fb1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Zurich University of Applied Sciences</b><br>Type: UAS<br>Winterthur</div>`)[0];
+                popup_cf058a6b3ae5dd09b916e60b61ba88a1.setContent(html_582ab0199cad277bbb71df4259562fb1);
             
         
 
-        circle_marker_10fdcc5a6f9e633f005897a7a4b71c6f.bindPopup(popup_1b78aa9139c635aaf3516702ada7d6dc)
+        circle_marker_9c51b14e7ee55a0aa6ca0d56b807a0ff.bindPopup(popup_cf058a6b3ae5dd09b916e60b61ba88a1)
         ;
 
         
     
     
-            circle_marker_10fdcc5a6f9e633f005897a7a4b71c6f.bindTooltip(
+            circle_marker_9c51b14e7ee55a0aa6ca0d56b807a0ff.bindTooltip(
                 `<div>
                      ZHAW
                  </div>`,
@@ -896,30 +896,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_812b658647220ab1e9c462a8a6ef0ba7 = L.circleMarker(
+            var circle_marker_8c7ec3bd1bb865d81172f771c9c16085 = L.circleMarker(
                 [46.8093, 7.1528],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#9CA777&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_7f627882a78517b4bb62154bbf4bbd83 = L.popup({
+        var popup_fc472652dc00d81bf4cefc6cc976f383 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_38091dfa4f38560493e583f8ad38b40a = $(`<div id=&quot;html_38091dfa4f38560493e583f8ad38b40a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Fribourg</b><br>Type: UTE<br>Fribourg</div>`)[0];
-                popup_7f627882a78517b4bb62154bbf4bbd83.setContent(html_38091dfa4f38560493e583f8ad38b40a);
+                var html_f842c21817dfa403726971f486bb32f1 = $(`<div id=&quot;html_f842c21817dfa403726971f486bb32f1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Fribourg</b><br>Type: UTE<br>Fribourg</div>`)[0];
+                popup_fc472652dc00d81bf4cefc6cc976f383.setContent(html_f842c21817dfa403726971f486bb32f1);
             
         
 
-        circle_marker_812b658647220ab1e9c462a8a6ef0ba7.bindPopup(popup_7f627882a78517b4bb62154bbf4bbd83)
+        circle_marker_8c7ec3bd1bb865d81172f771c9c16085.bindPopup(popup_fc472652dc00d81bf4cefc6cc976f383)
         ;
 
         
     
     
-            circle_marker_812b658647220ab1e9c462a8a6ef0ba7.bindTooltip(
+            circle_marker_8c7ec3bd1bb865d81172f771c9c16085.bindTooltip(
                 `<div>
                      HEP | PH FR
                  </div>`,
@@ -929,30 +929,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_7460acf8bfe0cc3eda8f82180e830cdc = L.circleMarker(
+            var circle_marker_ef2a48df25b877e66da996cb130d16f6 = L.circleMarker(
                 [46.516, 6.6231],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#9CA777&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_d12bd3ad98209e46e101fff8d1c3295b = L.popup({
+        var popup_f66dd059dd077e87ed7ff38949e223b4 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_20f49ae7e25011a47463ee219ec33917 = $(`<div id=&quot;html_20f49ae7e25011a47463ee219ec33917&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Vaud</b><br>Type: UTE<br>Lausanne</div>`)[0];
-                popup_d12bd3ad98209e46e101fff8d1c3295b.setContent(html_20f49ae7e25011a47463ee219ec33917);
+                var html_938bf80581863f0708d4df3f0acf8787 = $(`<div id=&quot;html_938bf80581863f0708d4df3f0acf8787&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Vaud</b><br>Type: UTE<br>Lausanne</div>`)[0];
+                popup_f66dd059dd077e87ed7ff38949e223b4.setContent(html_938bf80581863f0708d4df3f0acf8787);
             
         
 
-        circle_marker_7460acf8bfe0cc3eda8f82180e830cdc.bindPopup(popup_d12bd3ad98209e46e101fff8d1c3295b)
+        circle_marker_ef2a48df25b877e66da996cb130d16f6.bindPopup(popup_f66dd059dd077e87ed7ff38949e223b4)
         ;
 
         
     
     
-            circle_marker_7460acf8bfe0cc3eda8f82180e830cdc.bindTooltip(
+            circle_marker_ef2a48df25b877e66da996cb130d16f6.bindTooltip(
                 `<div>
                      HEP Vaud
                  </div>`,
@@ -962,30 +962,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_73731125ea1d6fe75b3bb9a9f7836059 = L.circleMarker(
+            var circle_marker_e8d5f09a02c6d2d5b3b59b528b2ccc9e = L.circleMarker(
                 [47.4114, 8.5463],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#9CA777&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_89d41e84b4cf1591cfcb4339e200a97b = L.popup({
+        var popup_a960de4ab39bf0cccc54df5dac1a2e22 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_00c6471d451bb1e87058d0ffd617f248 = $(`<div id=&quot;html_00c6471d451bb1e87058d0ffd617f248&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education in Special Needs</b><br>Type: UTE<br>Zurich</div>`)[0];
-                popup_89d41e84b4cf1591cfcb4339e200a97b.setContent(html_00c6471d451bb1e87058d0ffd617f248);
+                var html_34089bd30f738dfb2f50ee7e770ab95d = $(`<div id=&quot;html_34089bd30f738dfb2f50ee7e770ab95d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education in Special Needs</b><br>Type: UTE<br>Zurich</div>`)[0];
+                popup_a960de4ab39bf0cccc54df5dac1a2e22.setContent(html_34089bd30f738dfb2f50ee7e770ab95d);
             
         
 
-        circle_marker_73731125ea1d6fe75b3bb9a9f7836059.bindPopup(popup_89d41e84b4cf1591cfcb4339e200a97b)
+        circle_marker_e8d5f09a02c6d2d5b3b59b528b2ccc9e.bindPopup(popup_a960de4ab39bf0cccc54df5dac1a2e22)
         ;
 
         
     
     
-            circle_marker_73731125ea1d6fe75b3bb9a9f7836059.bindTooltip(
+            circle_marker_e8d5f09a02c6d2d5b3b59b528b2ccc9e.bindTooltip(
                 `<div>
                      HfH
                  </div>`,
@@ -995,30 +995,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_efd17cb83bfe2a708a450904ad0b3d17 = L.circleMarker(
+            var circle_marker_4fb38775214e7d4ce155d2b50afb3514 = L.circleMarker(
                 [46.9556, 7.4191],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#9CA777&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_aa6393de9a8a6b2e210fa2ce30b94e80 = L.popup({
+        var popup_9b0763cf874d55509de67da6e6ef508e = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_e67f0ce03b5f6d802c40bff74b032ed9 = $(`<div id=&quot;html_e67f0ce03b5f6d802c40bff74b032ed9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Bern</b><br>Type: UTE<br>Bern</div>`)[0];
-                popup_aa6393de9a8a6b2e210fa2ce30b94e80.setContent(html_e67f0ce03b5f6d802c40bff74b032ed9);
+                var html_8a38f92b99342024653ee641a7372717 = $(`<div id=&quot;html_8a38f92b99342024653ee641a7372717&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Bern</b><br>Type: UTE<br>Bern</div>`)[0];
+                popup_9b0763cf874d55509de67da6e6ef508e.setContent(html_8a38f92b99342024653ee641a7372717);
             
         
 
-        circle_marker_efd17cb83bfe2a708a450904ad0b3d17.bindPopup(popup_aa6393de9a8a6b2e210fa2ce30b94e80)
+        circle_marker_4fb38775214e7d4ce155d2b50afb3514.bindPopup(popup_9b0763cf874d55509de67da6e6ef508e)
         ;
 
         
     
     
-            circle_marker_efd17cb83bfe2a708a450904ad0b3d17.bindTooltip(
+            circle_marker_4fb38775214e7d4ce155d2b50afb3514.bindTooltip(
                 `<div>
                      PHBern
                  </div>`,
@@ -1028,30 +1028,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_bb743ddb8c331ac08cc7fe2aa9809b30 = L.circleMarker(
+            var circle_marker_b9a78b6912541fbdc21dec0ab8c94476 = L.circleMarker(
                 [47.0493, 8.5478],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#9CA777&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_b556b76244d08925a60d00529f9ad3cf = L.popup({
+        var popup_d3cb1b0ae1e63263f35c6678fb9f61ea = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_b0b100938a4d011925313c128673ad56 = $(`<div id=&quot;html_b0b100938a4d011925313c128673ad56&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Schwyz</b><br>Type: UTE<br>Goldau</div>`)[0];
-                popup_b556b76244d08925a60d00529f9ad3cf.setContent(html_b0b100938a4d011925313c128673ad56);
+                var html_5343046225c8ced4347701689e59a8f8 = $(`<div id=&quot;html_5343046225c8ced4347701689e59a8f8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Schwyz</b><br>Type: UTE<br>Goldau</div>`)[0];
+                popup_d3cb1b0ae1e63263f35c6678fb9f61ea.setContent(html_5343046225c8ced4347701689e59a8f8);
             
         
 
-        circle_marker_bb743ddb8c331ac08cc7fe2aa9809b30.bindPopup(popup_b556b76244d08925a60d00529f9ad3cf)
+        circle_marker_b9a78b6912541fbdc21dec0ab8c94476.bindPopup(popup_d3cb1b0ae1e63263f35c6678fb9f61ea)
         ;
 
         
     
     
-            circle_marker_bb743ddb8c331ac08cc7fe2aa9809b30.bindTooltip(
+            circle_marker_b9a78b6912541fbdc21dec0ab8c94476.bindTooltip(
                 `<div>
                      PHSZ
                  </div>`,
@@ -1061,30 +1061,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_91f8ceabc0166f937e86008f0d9b8c50 = L.circleMarker(
+            var circle_marker_9135e91a45c2aea4505ea7e4df7a1422 = L.circleMarker(
                 [46.2201, 7.0033],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#9CA777&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_c9f4c7eb1eb5e87e9ea832afc9ddde98 = L.popup({
+        var popup_7614a07f435d051ed926b94c2268851d = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_5d04b4d7a3706aa78c086215d5ea48d9 = $(`<div id=&quot;html_5d04b4d7a3706aa78c086215d5ea48d9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Valais</b><br>Type: UTE<br>Brig</div>`)[0];
-                popup_c9f4c7eb1eb5e87e9ea832afc9ddde98.setContent(html_5d04b4d7a3706aa78c086215d5ea48d9);
+                var html_fc415ff68ccee829885ed5871dedfe88 = $(`<div id=&quot;html_fc415ff68ccee829885ed5871dedfe88&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Valais</b><br>Type: UTE<br>Brig</div>`)[0];
+                popup_7614a07f435d051ed926b94c2268851d.setContent(html_fc415ff68ccee829885ed5871dedfe88);
             
         
 
-        circle_marker_91f8ceabc0166f937e86008f0d9b8c50.bindPopup(popup_c9f4c7eb1eb5e87e9ea832afc9ddde98)
+        circle_marker_9135e91a45c2aea4505ea7e4df7a1422.bindPopup(popup_7614a07f435d051ed926b94c2268851d)
         ;
 
         
     
     
-            circle_marker_91f8ceabc0166f937e86008f0d9b8c50.bindTooltip(
+            circle_marker_9135e91a45c2aea4505ea7e4df7a1422.bindTooltip(
                 `<div>
                      HEP-VS
                  </div>`,
@@ -1094,30 +1094,30 @@ Checklist (manual):
             );
         
     
-            var circle_marker_b069305172a6072d0ead4ccb6bd3a9f8 = L.circleMarker(
+            var circle_marker_e0b09a040b9f1ffb8a27dad2154768fd = L.circleMarker(
                 [47.3792, 8.5323],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#9CA777&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_64dce0483c7484293099f04a450b6dcc);
+            ).addTo(map_801e9f394794623be5788736766538c1);
         
     
-        var popup_41fb54cad7f4b650d016887b8773e12e = L.popup({
+        var popup_52946126db68707f0aa00f2b6f08426b = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_d7068d0c6c67b1eaba397f9b9c35f927 = $(`<div id=&quot;html_d7068d0c6c67b1eaba397f9b9c35f927&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Zurich</b><br>Type: UTE<br>Zurich</div>`)[0];
-                popup_41fb54cad7f4b650d016887b8773e12e.setContent(html_d7068d0c6c67b1eaba397f9b9c35f927);
+                var html_50b7b099ab5ca62f5e7c6fd77771ceb7 = $(`<div id=&quot;html_50b7b099ab5ca62f5e7c6fd77771ceb7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Zurich</b><br>Type: UTE<br>Zurich</div>`)[0];
+                popup_52946126db68707f0aa00f2b6f08426b.setContent(html_50b7b099ab5ca62f5e7c6fd77771ceb7);
             
         
 
-        circle_marker_b069305172a6072d0ead4ccb6bd3a9f8.bindPopup(popup_41fb54cad7f4b650d016887b8773e12e)
+        circle_marker_e0b09a040b9f1ffb8a27dad2154768fd.bindPopup(popup_52946126db68707f0aa00f2b6f08426b)
         ;
 
         
     
     
-            circle_marker_b069305172a6072d0ead4ccb6bd3a9f8.bindTooltip(
+            circle_marker_e0b09a040b9f1ffb8a27dad2154768fd.bindTooltip(
                 `<div>
                      PH Zurich
                  </div>`,
@@ -1158,7 +1158,7 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_b6b40a4da4f5e662a7a367a9d6cbfacb {
+                #map_09d57685a653cea069b5743df6e43f43 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -1196,14 +1196,14 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
     
     <div style=&quot;position: fixed; top: 10px; left: 50px; background: #ffffff; padding: 10px; border-radius: 5px; font-family: sans-serif; font-size: 12px; z-index: 9999;&quot;><div><span style=&quot;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;background:#F97B22;&quot;></span>Universities</div><div><span style=&quot;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;background:#FEE8B0;&quot;></span>Universities of Applied Sciences</div><div><span style=&quot;width:12px;height:12px;display:inline-block;border-radius:50%;margin-right:5px;background:#9CA777;&quot;></span>Teacher Education</div><div style=&quot;margin-top: 5px;&quot;>* CoARA Member</div></div>
     
-            <div class=&quot;folium-map&quot; id=&quot;map_b6b40a4da4f5e662a7a367a9d6cbfacb&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_09d57685a653cea069b5743df6e43f43&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_b6b40a4da4f5e662a7a367a9d6cbfacb = L.map(
-                &quot;map_b6b40a4da4f5e662a7a367a9d6cbfacb&quot;,
+            var map_09d57685a653cea069b5743df6e43f43 = L.map(
+                &quot;map_09d57685a653cea069b5743df6e43f43&quot;,
                 {
                     center: [46.8, 8.3],
                     crs: L.CRS.EPSG3857,
@@ -1215,13 +1215,13 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
 
                 }
             );
-            L.control.scale().addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            L.control.scale().addTo(map_09d57685a653cea069b5743df6e43f43);
 
             
 
         
     
-            var tile_layer_ff54c65677721eacfa828906eec8f671 = L.tileLayer(
+            var tile_layer_7478ad3639144c0aa603fc457bf9e0e6 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1238,33 +1238,33 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            tile_layer_ff54c65677721eacfa828906eec8f671.addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            tile_layer_7478ad3639144c0aa603fc457bf9e0e6.addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-            var circle_marker_fd6bd0c7aa01d708fe7f9637e3205e57 = L.circleMarker(
+            var circle_marker_9444967827723eac6083078717817172 = L.circleMarker(
                 [46.8065, 7.1523],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_3915c805aa76e9750b0f2deab020a4b5 = L.popup({
+        var popup_1d532906cf859cac5113230869a37c7d = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_b15660c3c8f9614c83b68b76bf725c80 = $(`<div id=&quot;html_b15660c3c8f9614c83b68b76bf725c80&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Fribourg</b><br>Type: University<br>Fribourg<br>CoARA Member: Yes</div>`)[0];
-                popup_3915c805aa76e9750b0f2deab020a4b5.setContent(html_b15660c3c8f9614c83b68b76bf725c80);
+                var html_729ad3237e2c08b6b920790f4cc4255c = $(`<div id=&quot;html_729ad3237e2c08b6b920790f4cc4255c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Fribourg</b><br>Type: University<br>Fribourg<br>CoARA Member: Yes</div>`)[0];
+                popup_1d532906cf859cac5113230869a37c7d.setContent(html_729ad3237e2c08b6b920790f4cc4255c);
             
         
 
-        circle_marker_fd6bd0c7aa01d708fe7f9637e3205e57.bindPopup(popup_3915c805aa76e9750b0f2deab020a4b5)
+        circle_marker_9444967827723eac6083078717817172.bindPopup(popup_1d532906cf859cac5113230869a37c7d)
         ;
 
         
     
     
-            circle_marker_fd6bd0c7aa01d708fe7f9637e3205e57.bindTooltip(
+            circle_marker_9444967827723eac6083078717817172.bindTooltip(
                 `<div>
                      UniFr*
                  </div>`,
@@ -1274,30 +1274,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_2aa64fdccdf5de21db8795ccbac51f53 = L.circleMarker(
+            var circle_marker_cbe06b549753b5152a7243d712fae1fb = L.circleMarker(
                 [46.2017, 6.143],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_fe3fa01faa74cbde44e8caeaa5b7f1b0 = L.popup({
+        var popup_668163219f7df8c7460ca723a0833d60 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_cd6e6b50a78c0ea16a08c4122483f75b = $(`<div id=&quot;html_cd6e6b50a78c0ea16a08c4122483f75b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Geneva</b><br>Type: University<br>Geneva<br>CoARA Member: No</div>`)[0];
-                popup_fe3fa01faa74cbde44e8caeaa5b7f1b0.setContent(html_cd6e6b50a78c0ea16a08c4122483f75b);
+                var html_9cb37888ed42e5f18e6da54983f8a8a9 = $(`<div id=&quot;html_9cb37888ed42e5f18e6da54983f8a8a9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Geneva</b><br>Type: University<br>Geneva<br>CoARA Member: No</div>`)[0];
+                popup_668163219f7df8c7460ca723a0833d60.setContent(html_9cb37888ed42e5f18e6da54983f8a8a9);
             
         
 
-        circle_marker_2aa64fdccdf5de21db8795ccbac51f53.bindPopup(popup_fe3fa01faa74cbde44e8caeaa5b7f1b0)
+        circle_marker_cbe06b549753b5152a7243d712fae1fb.bindPopup(popup_668163219f7df8c7460ca723a0833d60)
         ;
 
         
     
     
-            circle_marker_2aa64fdccdf5de21db8795ccbac51f53.bindTooltip(
+            circle_marker_cbe06b549753b5152a7243d712fae1fb.bindTooltip(
                 `<div>
                      UNIGE
                  </div>`,
@@ -1307,30 +1307,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_867c21604e408a9bc524b23eb6763893 = L.circleMarker(
+            var circle_marker_8196a008c617afe28fd0b45a22b378b0 = L.circleMarker(
                 [46.5213, 6.5743],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_2d5ff166cef7b022bea2416debbcaab1 = L.popup({
+        var popup_eb98bb6bfa75724a69a32c3d6b1ebe7f = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_d12e08d42f19d0762f4851d0c924d5ef = $(`<div id=&quot;html_d12e08d42f19d0762f4851d0c924d5ef&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Lausanne</b><br>Type: University<br>Lausanne<br>CoARA Member: No</div>`)[0];
-                popup_2d5ff166cef7b022bea2416debbcaab1.setContent(html_d12e08d42f19d0762f4851d0c924d5ef);
+                var html_c6808d98678d681e1a42cf0a1ee41c6e = $(`<div id=&quot;html_c6808d98678d681e1a42cf0a1ee41c6e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Lausanne</b><br>Type: University<br>Lausanne<br>CoARA Member: No</div>`)[0];
+                popup_eb98bb6bfa75724a69a32c3d6b1ebe7f.setContent(html_c6808d98678d681e1a42cf0a1ee41c6e);
             
         
 
-        circle_marker_867c21604e408a9bc524b23eb6763893.bindPopup(popup_2d5ff166cef7b022bea2416debbcaab1)
+        circle_marker_8196a008c617afe28fd0b45a22b378b0.bindPopup(popup_eb98bb6bfa75724a69a32c3d6b1ebe7f)
         ;
 
         
     
     
-            circle_marker_867c21604e408a9bc524b23eb6763893.bindTooltip(
+            circle_marker_8196a008c617afe28fd0b45a22b378b0.bindTooltip(
                 `<div>
                      UNIL
                  </div>`,
@@ -1340,30 +1340,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_920e154fefb2b4569c81e0ef61135001 = L.circleMarker(
+            var circle_marker_58c56fbe40ea48185aae643f580a042e = L.circleMarker(
                 [47.3743, 8.5484],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_4fbfe03e30922f9c2dfa24e59b17f26b = L.popup({
+        var popup_2728a2161b2f268ae64ae3dd5b98a8d1 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_8461493badc0d22b09254e78a432e5e5 = $(`<div id=&quot;html_8461493badc0d22b09254e78a432e5e5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Zurich</b><br>Type: University<br>Zurich<br>CoARA Member: No</div>`)[0];
-                popup_4fbfe03e30922f9c2dfa24e59b17f26b.setContent(html_8461493badc0d22b09254e78a432e5e5);
+                var html_50f2cd20fa8d57f4ae8b4f1269b72b06 = $(`<div id=&quot;html_50f2cd20fa8d57f4ae8b4f1269b72b06&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Zurich</b><br>Type: University<br>Zurich<br>CoARA Member: No</div>`)[0];
+                popup_2728a2161b2f268ae64ae3dd5b98a8d1.setContent(html_50f2cd20fa8d57f4ae8b4f1269b72b06);
             
         
 
-        circle_marker_920e154fefb2b4569c81e0ef61135001.bindPopup(popup_4fbfe03e30922f9c2dfa24e59b17f26b)
+        circle_marker_58c56fbe40ea48185aae643f580a042e.bindPopup(popup_2728a2161b2f268ae64ae3dd5b98a8d1)
         ;
 
         
     
     
-            circle_marker_920e154fefb2b4569c81e0ef61135001.bindTooltip(
+            circle_marker_58c56fbe40ea48185aae643f580a042e.bindTooltip(
                 `<div>
                      UZH
                  </div>`,
@@ -1373,30 +1373,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_9a8846d32911706d2bf9f72d311cb1a0 = L.circleMarker(
+            var circle_marker_a4e797b77435f6bf2719899f0d0eefeb = L.circleMarker(
                 [46.5191, 6.5668],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_b6f1717598a38b69ee98c6fcfcea0075 = L.popup({
+        var popup_2c19ba804725eb268c2e2308b246a646 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_04f365c0edf321850d12d86e833b25a9 = $(`<div id=&quot;html_04f365c0edf321850d12d86e833b25a9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Swiss Federal Institute of Technology Lausanne</b><br>Type: University<br>Lausanne<br>CoARA Member: No</div>`)[0];
-                popup_b6f1717598a38b69ee98c6fcfcea0075.setContent(html_04f365c0edf321850d12d86e833b25a9);
+                var html_da1045a7f5cbdaeee4af4d2305235d2a = $(`<div id=&quot;html_da1045a7f5cbdaeee4af4d2305235d2a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Swiss Federal Institute of Technology Lausanne</b><br>Type: University<br>Lausanne<br>CoARA Member: No</div>`)[0];
+                popup_2c19ba804725eb268c2e2308b246a646.setContent(html_da1045a7f5cbdaeee4af4d2305235d2a);
             
         
 
-        circle_marker_9a8846d32911706d2bf9f72d311cb1a0.bindPopup(popup_b6f1717598a38b69ee98c6fcfcea0075)
+        circle_marker_a4e797b77435f6bf2719899f0d0eefeb.bindPopup(popup_2c19ba804725eb268c2e2308b246a646)
         ;
 
         
     
     
-            circle_marker_9a8846d32911706d2bf9f72d311cb1a0.bindTooltip(
+            circle_marker_a4e797b77435f6bf2719899f0d0eefeb.bindTooltip(
                 `<div>
                      EPFL
                  </div>`,
@@ -1406,30 +1406,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_9db5b1233306b6dc8d40bff2b3c20472 = L.circleMarker(
+            var circle_marker_7189e68504e309d41ef515453f36e4f6 = L.circleMarker(
                 [47.3763, 8.5477],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#F97B22&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_347667393b03bedda6a03c58d9c67a7f = L.popup({
+        var popup_7c05010f195174dfd03337c263dbddae = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_5825895ad9d4d03202bd4e12a4035443 = $(`<div id=&quot;html_5825895ad9d4d03202bd4e12a4035443&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Swiss Federal Institute of Technology Zurich</b><br>Type: University<br>Zurich<br>CoARA Member: Yes</div>`)[0];
-                popup_347667393b03bedda6a03c58d9c67a7f.setContent(html_5825895ad9d4d03202bd4e12a4035443);
+                var html_88a608b3c59581d84f89acd577768d18 = $(`<div id=&quot;html_88a608b3c59581d84f89acd577768d18&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Swiss Federal Institute of Technology Zurich</b><br>Type: University<br>Zurich<br>CoARA Member: Yes</div>`)[0];
+                popup_7c05010f195174dfd03337c263dbddae.setContent(html_88a608b3c59581d84f89acd577768d18);
             
         
 
-        circle_marker_9db5b1233306b6dc8d40bff2b3c20472.bindPopup(popup_347667393b03bedda6a03c58d9c67a7f)
+        circle_marker_7189e68504e309d41ef515453f36e4f6.bindPopup(popup_7c05010f195174dfd03337c263dbddae)
         ;
 
         
     
     
-            circle_marker_9db5b1233306b6dc8d40bff2b3c20472.bindTooltip(
+            circle_marker_7189e68504e309d41ef515453f36e4f6.bindTooltip(
                 `<div>
                      ETHZ*
                  </div>`,
@@ -1439,30 +1439,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_d1546f0893c3b65b374c9dae6d8782b4 = L.circleMarker(
+            var circle_marker_e6aa95b31cbf96842a95d8fc26b02699 = L.circleMarker(
                 [46.953, 7.4347],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#FEE8B0&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_e85fbf1a5be5384523000c5c834df089 = L.popup({
+        var popup_4c3c14bfee35107281ec9dc3699da253 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_bcd6a2451001213290c7e6acf1fe081f = $(`<div id=&quot;html_bcd6a2451001213290c7e6acf1fe081f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Bern University of Applied Sciences</b><br>Type: UAS<br>Bern<br>CoARA Member: Yes</div>`)[0];
-                popup_e85fbf1a5be5384523000c5c834df089.setContent(html_bcd6a2451001213290c7e6acf1fe081f);
+                var html_8643092f58e93d4e1fa3e8040498ccdb = $(`<div id=&quot;html_8643092f58e93d4e1fa3e8040498ccdb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Bern University of Applied Sciences</b><br>Type: UAS<br>Bern<br>CoARA Member: Yes</div>`)[0];
+                popup_4c3c14bfee35107281ec9dc3699da253.setContent(html_8643092f58e93d4e1fa3e8040498ccdb);
             
         
 
-        circle_marker_d1546f0893c3b65b374c9dae6d8782b4.bindPopup(popup_e85fbf1a5be5384523000c5c834df089)
+        circle_marker_e6aa95b31cbf96842a95d8fc26b02699.bindPopup(popup_4c3c14bfee35107281ec9dc3699da253)
         ;
 
         
     
     
-            circle_marker_d1546f0893c3b65b374c9dae6d8782b4.bindTooltip(
+            circle_marker_e6aa95b31cbf96842a95d8fc26b02699.bindTooltip(
                 `<div>
                      BFH*
                  </div>`,
@@ -1472,30 +1472,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_e2c834b035350bc1cac40476ce99e8f3 = L.circleMarker(
+            var circle_marker_81bd134deb9946fee8e6ab10aed167c9 = L.circleMarker(
                 [47.4812, 8.2127],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#FEE8B0&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_3cb561a131ae28f897277f8a315df47d = L.popup({
+        var popup_64b96e07431d019acec7f11046bd87e2 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_c791b3bb060da60df8c7b38e6f2386bd = $(`<div id=&quot;html_c791b3bb060da60df8c7b38e6f2386bd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Applied Sciences Northwestern Switzerland</b><br>Type: UAS<br>Windisch<br>CoARA Member: Yes</div>`)[0];
-                popup_3cb561a131ae28f897277f8a315df47d.setContent(html_c791b3bb060da60df8c7b38e6f2386bd);
+                var html_b501b66216a62933b4b0245163903057 = $(`<div id=&quot;html_b501b66216a62933b4b0245163903057&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Applied Sciences Northwestern Switzerland</b><br>Type: UAS<br>Windisch<br>CoARA Member: Yes</div>`)[0];
+                popup_64b96e07431d019acec7f11046bd87e2.setContent(html_b501b66216a62933b4b0245163903057);
             
         
 
-        circle_marker_e2c834b035350bc1cac40476ce99e8f3.bindPopup(popup_3cb561a131ae28f897277f8a315df47d)
+        circle_marker_81bd134deb9946fee8e6ab10aed167c9.bindPopup(popup_64b96e07431d019acec7f11046bd87e2)
         ;
 
         
     
     
-            circle_marker_e2c834b035350bc1cac40476ce99e8f3.bindTooltip(
+            circle_marker_81bd134deb9946fee8e6ab10aed167c9.bindTooltip(
                 `<div>
                      FHNW*
                  </div>`,
@@ -1505,30 +1505,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_ee1017138c0e6376d06508e32bcc5994 = L.circleMarker(
+            var circle_marker_6b8e925d3ebe6aebd2fcf51258cb263d = L.circleMarker(
                 [47.3653, 7.3575],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#FEE8B0&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_7899d721625b133f8476cf765020f27c = L.popup({
+        var popup_35269614937ab7d30b2edd3f4faa1f17 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_a2c39681131ebe59707cd1f1972067d8 = $(`<div id=&quot;html_a2c39681131ebe59707cd1f1972067d8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>HES-SO University of Applied Sciences and Arts Western Switzerland</b><br>Type: UAS<br>Delémont<br>CoARA Member: Yes</div>`)[0];
-                popup_7899d721625b133f8476cf765020f27c.setContent(html_a2c39681131ebe59707cd1f1972067d8);
+                var html_3e12f8b70f6964f85310dc6ea1cdf23a = $(`<div id=&quot;html_3e12f8b70f6964f85310dc6ea1cdf23a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>HES-SO University of Applied Sciences and Arts Western Switzerland</b><br>Type: UAS<br>Delémont<br>CoARA Member: Yes</div>`)[0];
+                popup_35269614937ab7d30b2edd3f4faa1f17.setContent(html_3e12f8b70f6964f85310dc6ea1cdf23a);
             
         
 
-        circle_marker_ee1017138c0e6376d06508e32bcc5994.bindPopup(popup_7899d721625b133f8476cf765020f27c)
+        circle_marker_6b8e925d3ebe6aebd2fcf51258cb263d.bindPopup(popup_35269614937ab7d30b2edd3f4faa1f17)
         ;
 
         
     
     
-            circle_marker_ee1017138c0e6376d06508e32bcc5994.bindTooltip(
+            circle_marker_6b8e925d3ebe6aebd2fcf51258cb263d.bindTooltip(
                 `<div>
                      HES-SO*
                  </div>`,
@@ -1538,30 +1538,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_83abfdcf54aaea244d934ea15df665e2 = L.circleMarker(
+            var circle_marker_1fd53d3c49046bafc4b04fa161dc46e8 = L.circleMarker(
                 [47.0468, 8.3106],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#FEE8B0&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_57d7c4b4fc76414f2933d92b192bc9eb = L.popup({
+        var popup_f72ad6eb1e3b398efc89117a4f556b3b = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_c2175b711658e368e89628bf714499e3 = $(`<div id=&quot;html_c2175b711658e368e89628bf714499e3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Lucerne University of Applied Sciences and Arts</b><br>Type: UAS<br>Lucerne<br>CoARA Member: Yes</div>`)[0];
-                popup_57d7c4b4fc76414f2933d92b192bc9eb.setContent(html_c2175b711658e368e89628bf714499e3);
+                var html_27dbac969fc7b91d07ee734e87548810 = $(`<div id=&quot;html_27dbac969fc7b91d07ee734e87548810&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Lucerne University of Applied Sciences and Arts</b><br>Type: UAS<br>Lucerne<br>CoARA Member: Yes</div>`)[0];
+                popup_f72ad6eb1e3b398efc89117a4f556b3b.setContent(html_27dbac969fc7b91d07ee734e87548810);
             
         
 
-        circle_marker_83abfdcf54aaea244d934ea15df665e2.bindPopup(popup_57d7c4b4fc76414f2933d92b192bc9eb)
+        circle_marker_1fd53d3c49046bafc4b04fa161dc46e8.bindPopup(popup_f72ad6eb1e3b398efc89117a4f556b3b)
         ;
 
         
     
     
-            circle_marker_83abfdcf54aaea244d934ea15df665e2.bindTooltip(
+            circle_marker_1fd53d3c49046bafc4b04fa161dc46e8.bindTooltip(
                 `<div>
                      HSLU*
                  </div>`,
@@ -1571,30 +1571,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_1b1b79d62a1926eeaec4e28a3053a905 = L.circleMarker(
+            var circle_marker_8c9c792dfd700f1a8d3b10c325c924b6 = L.circleMarker(
                 [47.3923, 8.5118],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#FEE8B0&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_054f9358e7ade73e93e072a626976397 = L.popup({
+        var popup_d8f9424dccc946622a15cbd9b604a402 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_db4ee6b702e423e40d22f7c18e440201 = $(`<div id=&quot;html_db4ee6b702e423e40d22f7c18e440201&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Zurich University of the Arts</b><br>Type: UAS<br>Zurich<br>CoARA Member: Yes</div>`)[0];
-                popup_054f9358e7ade73e93e072a626976397.setContent(html_db4ee6b702e423e40d22f7c18e440201);
+                var html_fa634df683259397a795b05b714e3d5a = $(`<div id=&quot;html_fa634df683259397a795b05b714e3d5a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Zurich University of the Arts</b><br>Type: UAS<br>Zurich<br>CoARA Member: Yes</div>`)[0];
+                popup_d8f9424dccc946622a15cbd9b604a402.setContent(html_fa634df683259397a795b05b714e3d5a);
             
         
 
-        circle_marker_1b1b79d62a1926eeaec4e28a3053a905.bindPopup(popup_054f9358e7ade73e93e072a626976397)
+        circle_marker_8c9c792dfd700f1a8d3b10c325c924b6.bindPopup(popup_d8f9424dccc946622a15cbd9b604a402)
         ;
 
         
     
     
-            circle_marker_1b1b79d62a1926eeaec4e28a3053a905.bindTooltip(
+            circle_marker_8c9c792dfd700f1a8d3b10c325c924b6.bindTooltip(
                 `<div>
                      ZHdK*
                  </div>`,
@@ -1604,30 +1604,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_5ee678bd065fc274238a42406c1dc797 = L.circleMarker(
+            var circle_marker_cb521904baf2440332d51e17b78e8b53 = L.circleMarker(
                 [47.5005, 8.7247],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#FEE8B0&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_bd62036fc9d805c95b86b55e1367e9a2 = L.popup({
+        var popup_217b6d972f44b4c30b50b99371291d8d = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_b6bc219d9a7f0bed3c5230d4df288266 = $(`<div id=&quot;html_b6bc219d9a7f0bed3c5230d4df288266&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Zurich University of Applied Sciences</b><br>Type: UAS<br>Winterthur<br>CoARA Member: Yes</div>`)[0];
-                popup_bd62036fc9d805c95b86b55e1367e9a2.setContent(html_b6bc219d9a7f0bed3c5230d4df288266);
+                var html_7d2622311150d5ab7dcef83a010ad2e1 = $(`<div id=&quot;html_7d2622311150d5ab7dcef83a010ad2e1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Zurich University of Applied Sciences</b><br>Type: UAS<br>Winterthur<br>CoARA Member: Yes</div>`)[0];
+                popup_217b6d972f44b4c30b50b99371291d8d.setContent(html_7d2622311150d5ab7dcef83a010ad2e1);
             
         
 
-        circle_marker_5ee678bd065fc274238a42406c1dc797.bindPopup(popup_bd62036fc9d805c95b86b55e1367e9a2)
+        circle_marker_cb521904baf2440332d51e17b78e8b53.bindPopup(popup_217b6d972f44b4c30b50b99371291d8d)
         ;
 
         
     
     
-            circle_marker_5ee678bd065fc274238a42406c1dc797.bindTooltip(
+            circle_marker_cb521904baf2440332d51e17b78e8b53.bindTooltip(
                 `<div>
                      ZHAW*
                  </div>`,
@@ -1637,30 +1637,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_34ceced0936364d3eec4c2bc0bd617bd = L.circleMarker(
+            var circle_marker_b868bf838d0ee3aaf101da7c28d59dce = L.circleMarker(
                 [46.516, 6.6231],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#9CA777&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_939f9cd977d0373458631b58f45f7852 = L.popup({
+        var popup_a2461c0568e862eca55fd6dbf776cdba = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_1b04dbcaf8c28d2b7345703968295f8e = $(`<div id=&quot;html_1b04dbcaf8c28d2b7345703968295f8e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Vaud</b><br>Type: UTE<br>Lausanne<br>CoARA Member: Yes</div>`)[0];
-                popup_939f9cd977d0373458631b58f45f7852.setContent(html_1b04dbcaf8c28d2b7345703968295f8e);
+                var html_24bc00d2017db1a5c3af437c8dc48aa1 = $(`<div id=&quot;html_24bc00d2017db1a5c3af437c8dc48aa1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Vaud</b><br>Type: UTE<br>Lausanne<br>CoARA Member: Yes</div>`)[0];
+                popup_a2461c0568e862eca55fd6dbf776cdba.setContent(html_24bc00d2017db1a5c3af437c8dc48aa1);
             
         
 
-        circle_marker_34ceced0936364d3eec4c2bc0bd617bd.bindPopup(popup_939f9cd977d0373458631b58f45f7852)
+        circle_marker_b868bf838d0ee3aaf101da7c28d59dce.bindPopup(popup_a2461c0568e862eca55fd6dbf776cdba)
         ;
 
         
     
     
-            circle_marker_34ceced0936364d3eec4c2bc0bd617bd.bindTooltip(
+            circle_marker_b868bf838d0ee3aaf101da7c28d59dce.bindTooltip(
                 `<div>
                      HEP Vaud*
                  </div>`,
@@ -1670,30 +1670,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_609db974a7cfabaf77cc3e47a0c81666 = L.circleMarker(
+            var circle_marker_a67a7a014e32d7d4147752c1ccf3a396 = L.circleMarker(
                 [47.0493, 8.5478],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#9CA777&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_566846f32705ade40922fdbc87abec1e = L.popup({
+        var popup_e94fe14f29d1a0d336d747801170692e = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_53845f83a424ad670adfa675a223e6fe = $(`<div id=&quot;html_53845f83a424ad670adfa675a223e6fe&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Schwyz</b><br>Type: UTE<br>Goldau<br>CoARA Member: No</div>`)[0];
-                popup_566846f32705ade40922fdbc87abec1e.setContent(html_53845f83a424ad670adfa675a223e6fe);
+                var html_86b1bc5ca677c952f1908674de377ad5 = $(`<div id=&quot;html_86b1bc5ca677c952f1908674de377ad5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Schwyz</b><br>Type: UTE<br>Goldau<br>CoARA Member: No</div>`)[0];
+                popup_e94fe14f29d1a0d336d747801170692e.setContent(html_86b1bc5ca677c952f1908674de377ad5);
             
         
 
-        circle_marker_609db974a7cfabaf77cc3e47a0c81666.bindPopup(popup_566846f32705ade40922fdbc87abec1e)
+        circle_marker_a67a7a014e32d7d4147752c1ccf3a396.bindPopup(popup_e94fe14f29d1a0d336d747801170692e)
         ;
 
         
     
     
-            circle_marker_609db974a7cfabaf77cc3e47a0c81666.bindTooltip(
+            circle_marker_a67a7a014e32d7d4147752c1ccf3a396.bindTooltip(
                 `<div>
                      PHSZ
                  </div>`,
@@ -1703,30 +1703,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_4a58182d696c6e2da3740ba0cea14608 = L.circleMarker(
+            var circle_marker_4f320487a52935c6b1d5abdc639c318f = L.circleMarker(
                 [47.4304, 9.3855],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#9CA777&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_4fc47a4b336d43d6f5eac5bb8cb08fb9 = L.popup({
+        var popup_823356ae4a018a211a0a760ee2565cc0 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_1ef16f2a0f62a247b30d53597deb75e6 = $(`<div id=&quot;html_1ef16f2a0f62a247b30d53597deb75e6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>St.Gallen University of Teacher Education</b><br>Type: UTE<br>Saint Gallen<br>CoARA Member: No</div>`)[0];
-                popup_4fc47a4b336d43d6f5eac5bb8cb08fb9.setContent(html_1ef16f2a0f62a247b30d53597deb75e6);
+                var html_f01d60ccea4acc08329989ca3cddf84f = $(`<div id=&quot;html_f01d60ccea4acc08329989ca3cddf84f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>St.Gallen University of Teacher Education</b><br>Type: UTE<br>Saint Gallen<br>CoARA Member: No</div>`)[0];
+                popup_823356ae4a018a211a0a760ee2565cc0.setContent(html_f01d60ccea4acc08329989ca3cddf84f);
             
         
 
-        circle_marker_4a58182d696c6e2da3740ba0cea14608.bindPopup(popup_4fc47a4b336d43d6f5eac5bb8cb08fb9)
+        circle_marker_4f320487a52935c6b1d5abdc639c318f.bindPopup(popup_823356ae4a018a211a0a760ee2565cc0)
         ;
 
         
     
     
-            circle_marker_4a58182d696c6e2da3740ba0cea14608.bindTooltip(
+            circle_marker_4f320487a52935c6b1d5abdc639c318f.bindTooltip(
                 `<div>
                      PHSG
                  </div>`,
@@ -1736,30 +1736,30 @@ Figure&nbsp;1: DORA signatories among Swiss higher education institutions (24 of
             );
         
     
-            var circle_marker_c1e82d7da5dfe3b35270148bb7556e93 = L.circleMarker(
+            var circle_marker_054e9d9d048bc2bf6b94fc1b414fca84 = L.circleMarker(
                 [47.3792, 8.5323],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#333333&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#9CA777&quot;, &quot;fillOpacity&quot;: 1.0, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 8, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_b6b40a4da4f5e662a7a367a9d6cbfacb);
+            ).addTo(map_09d57685a653cea069b5743df6e43f43);
         
     
-        var popup_2ec7e33ba64315f080f7a09fc3ef7308 = L.popup({
+        var popup_a566880f542471081be2aac8d7342c05 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_fd3f6b1cbaf6f54294aca300006a6a3f = $(`<div id=&quot;html_fd3f6b1cbaf6f54294aca300006a6a3f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Zurich</b><br>Type: UTE<br>Zurich<br>CoARA Member: Yes</div>`)[0];
-                popup_2ec7e33ba64315f080f7a09fc3ef7308.setContent(html_fd3f6b1cbaf6f54294aca300006a6a3f);
+                var html_6e9a546f52b38c8bd663804ae811c7fa = $(`<div id=&quot;html_6e9a546f52b38c8bd663804ae811c7fa&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>University of Teacher Education Zurich</b><br>Type: UTE<br>Zurich<br>CoARA Member: Yes</div>`)[0];
+                popup_a566880f542471081be2aac8d7342c05.setContent(html_6e9a546f52b38c8bd663804ae811c7fa);
             
         
 
-        circle_marker_c1e82d7da5dfe3b35270148bb7556e93.bindPopup(popup_2ec7e33ba64315f080f7a09fc3ef7308)
+        circle_marker_054e9d9d048bc2bf6b94fc1b414fca84.bindPopup(popup_a566880f542471081be2aac8d7342c05)
         ;
 
         
     
     
-            circle_marker_c1e82d7da5dfe3b35270148bb7556e93.bindTooltip(
+            circle_marker_054e9d9d048bc2bf6b94fc1b414fca84.bindTooltip(
                 `<div>
                      PH Zurich*
                  </div>`,
