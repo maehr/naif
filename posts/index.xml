@@ -15,7 +15,17 @@
 <link>https://maehr.github.io/naif/posts/</link>
 </image>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Thu, 26 Feb 2026 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 23 Mar 2026 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>How NAIF Builds on TOBI’s Results in Switzerland</title>
+  <dc:creator>Dr Moritz Mähr</dc:creator>
+  <link>https://maehr.github.io/naif/posts/2026-03-24-naif-continues-tobi/</link>
+  <description><![CDATA[ TOBI (Towards Open Bibliometric Indicators) produced a practical evidence base on open scholarly metadata in Switzerland: where data quality and coverage already support analysis, where systematic gaps remain, and which interventions improve visibility of institutional research outputs. NAIF builds on these results with a broader interoperability scope and stronger cross-institution coordination. ]]></description>
+  <category>General</category>
+  <guid>https://maehr.github.io/naif/posts/2026-03-24-naif-continues-tobi/</guid>
+  <pubDate>Mon, 23 Mar 2026 23:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/posts/2026-03-24-naif-continues-tobi/images/tobi-homepage.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>NAIF at the Research on Research Event 2026</title>
   <dc:creator>Dr Moritz Mähr</dc:creator>
@@ -45,6 +55,17 @@
   <guid>https://maehr.github.io/naif/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/</guid>
   <pubDate>Tue, 11 Nov 2025 23:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/posts/2025-11-12-what-switzerland-can-learn-from-other-countries/images/kira-michael.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>NAIF launches a national survey on Swiss repositories</title>
+  <dc:creator>Julien Sicot</dc:creator>
+  <dc:creator>Simon Willemin</dc:creator>
+  <link>https://maehr.github.io/naif/posts/2025-11-10-national-survey-swiss-institutional-repositories/</link>
+  <description><![CDATA[ National survey to map Swiss institutional repositories and identify needs for interoperability and shared standards. ]]></description>
+  <category>Track 3</category>
+  <guid>https://maehr.github.io/naif/posts/2025-11-10-national-survey-swiss-institutional-repositories/</guid>
+  <pubDate>Sun, 09 Nov 2025 23:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/posts/2025-11-10-national-survey-swiss-institutional-repositories/images/surveyhero-naif-survey.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop</title>
