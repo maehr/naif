@@ -32,9 +32,9 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d102f8c60d1ca4b5f90365e9a894ed4a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-d25f47f6cda653efd19e75202fb43144.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-d102f8c60d1ca4b5f90365e9a894ed4a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-de2e1b13ba49f8600af6153dd773f137.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e3e41428b64b496537f6e3eda81424ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-de2e1b13ba49f8600af6153dd773f137.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-dashboard/quarto-dashboard.js"></script>
 <script src="../../site_libs/quarto-dashboard/stickythead.js"></script>
 
@@ -76,6 +76,7 @@
 </script>
 
 
+<link rel="stylesheet" href="../dashboard-common.css">
 <meta property="og:title" content="TOBI Data Dashboard – NAIF">
 <meta property="og:description" content="TOBI findability and output coverage for Swiss higher education institutions.">
 <meta property="og:image" content="https://maehr.github.io/naif//images/logos/all-logos.jpg">
@@ -153,9 +154,8 @@
 <!-- margin-sidebar -->
 <!-- main -->
 
-<style class="html-fill-item bslib-grid-item">.quarto-dashboard .navbar-brand-container,.quarto-dashboard footer.footer,.quarto-dashboard .nav-footer{display:none!important}</style>
-<div class="html-fill-item bslib-grid bslib-grid-item" data-layout="fill" style="grid-template-rows:minmax(3em,15fr) minmax(3em,85fr);grid-auto-columns:minmax(0,1fr);display:grid">
-<div class="bslib-grid" style="grid-template-columns:minmax(3em,1fr) minmax(3em,1fr) minmax(3em,1fr) minmax(3em,1fr) minmax(3em,1fr);grid-auto-rows:minmax(0,1fr);display:grid">
+<div class="html-fill-item bslib-grid bslib-grid-item" data-layout="fill" style="grid-template-rows:minmax(3em,11fr) minmax(3em,11fr) minmax(3em,78fr);grid-auto-columns:minmax(0,1fr);display:grid">
+<div class="bslib-grid" style="grid-template-columns:minmax(3em,1fr) minmax(3em,1fr) minmax(3em,1fr);grid-auto-rows:minmax(0,1fr);display:grid">
 <div class="html-fill-container bslib-card card cell bslib-value-box showcase-left-center valuebox bg-light" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="html-fill-container html-fill-item card-body">
 <div data-icon="building" class="html-fill-container html-fill-item value-box-grid">
@@ -204,7 +204,10 @@ OpenAlex Findable
 </div>
 </div>
 </div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="html-fill-container bslib-card card cell bslib-value-box showcase-left-center valuebox bg-primary" data-bslib-card-init="" data-require-bs-caller="card()">
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+<div class="bslib-grid" style="grid-template-columns:minmax(3em,1fr) minmax(3em,1fr);grid-auto-rows:minmax(0,1fr);display:grid">
+<div class="html-fill-container bslib-card card cell bslib-value-box showcase-left-center valuebox bg-primary" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="html-fill-container html-fill-item card-body">
 <div data-icon="diagram-3" class="html-fill-container html-fill-item value-box-grid">
 <div class="html-fill-container html-fill-item value-box-showcase">
@@ -228,7 +231,7 @@ Dimensions Findable
 <i class="bi bi-bar-chart"></i></div>
 <div class="value-box-area">
 <p class="value-box-title">
-OpenAlex Outputs (2012-2022)
+OpenAlex Outputs
 </p>
 <p class="value-box-value">
 518,396
@@ -519,7 +522,7 @@ OpenAlex Outputs (2012-2022)
 <div class="html-fill-container html-fill-item bslib-card card cell" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="html-fill-container html-fill-item card-body">
 <div class="html-fill-container html-fill-item cell-output cell-output-display">
-<div style="overflow-x:auto" class="html-fill-container html-fill-item">
+<div class="html-fill-container html-fill-item dashboard-table-wrap">
 <table class="caption-top dataframe small table table-sm table-striped" data-border="1">
 <thead>
 <tr class="header">
@@ -717,7 +720,7 @@ OpenAlex Outputs (2012-2022)
 <div class="html-fill-container html-fill-item bslib-card card cell" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="html-fill-container html-fill-item card-body">
 <div class="html-fill-container html-fill-item cell-output cell-output-display">
-<div style="overflow-x:auto" class="html-fill-container html-fill-item">
+<div class="html-fill-container html-fill-item dashboard-table-wrap">
 <table class="caption-top dataframe small table table-sm table-striped" data-border="1">
 <thead>
 <tr class="header">

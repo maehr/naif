@@ -15,7 +15,17 @@
 <link>https://maehr.github.io/naif/events/</link>
 </image>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Mon, 25 May 2026 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 08 Sep 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>STI-ENID 2026 Conference</title>
+  <dc:creator>ECOOM at University of Antwerp, KU Leuven, and VUB</dc:creator>
+  <link>https://maehr.github.io/naif/events/2026-09-09-sti-enid-2026/</link>
+  <description><![CDATA[ The 30th Annual International Conference on Science and Technology Indicators explores responsible research futures in Antwerp. ]]></description>
+  <category>Related Topic</category>
+  <guid>https://maehr.github.io/naif/events/2026-09-09-sti-enid-2026/</guid>
+  <pubDate>Tue, 08 Sep 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/events/2026-09-09-sti-enid-2026/images/sti-enid-2026-homepage.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>DARIAH Annual Event 2026</title>
   <dc:creator>DARIAH ERIC</dc:creator>
@@ -35,6 +45,16 @@
   <guid>https://maehr.github.io/naif/events/2026-05-19-bibliocon-2026/</guid>
   <pubDate>Mon, 18 May 2026 22:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2026-05-19-bibliocon-2026/images/bibliocon-2026-homepage.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>COMET Community Meeting 22 April</title>
+  <dc:creator>DataCite </dc:creator>
+  <link>https://maehr.github.io/naif/events/2026-04-22-comet-community-meeting/</link>
+  <description><![CDATA[ Community meeting with roadmap updates, demonstrations, and discussion from the COMET team and members. ]]></description>
+  <category>Related Topic</category>
+  <guid>https://maehr.github.io/naif/events/2026-04-22-comet-community-meeting/</guid>
+  <pubDate>Tue, 21 Apr 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/events/2026-04-22-comet-community-meeting/images/comet-community-meeting.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>General Assembly of SLiNER</title>
