@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eth-library.github.io/naif/sitemap.xml

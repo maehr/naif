@@ -1,0 +1,39 @@
+# NAIF
+
+
+> NAIF (National Approach for Interoperable repositories and Findable
+> research results) is a Swiss collaboration improving interoperability
+> and metadata quality across institutional repositories.
+
+Use this file as a curated map of the public NAIF website. Prioritise
+pages under About, News, and Events for project context and current
+activities.
+
+## Core pages
+
+- [Home](.): Project landing page with latest updates and upcoming
+  events.
+- [About](./about.html): Project scope, objectives, tracks, governance,
+  and team.
+- [News index](./posts/): Listing of NAIF news posts and progress
+  updates.
+- [Events index](./events/): Listing of upcoming and past NAIF events.
+- [Publishing guidelines](./publishing-guidelines.html): Public guidance
+  for creating NAIF posts and event entries.
+
+## Data and policy links
+
+- [Zenodo NAIF community](https://zenodo.org/communities/naif): Archived
+  NAIF outputs and project documents.
+- [GitHub repository](https://github.com/eth-library/naif): Source code
+  and issue tracker for the website.
+- [Disclaimer](./disclaimer.html): Legal notice and data protection
+  links.
+
+## Optional
+
+- [News RSS feed](./posts.xml): Metadata and summaries from recent news
+  entries.
+- [Events RSS feed](./events.xml): Metadata and summaries from event
+  entries.
+- [Sitemap](./sitemap.xml): Full list of publicly published pages.
