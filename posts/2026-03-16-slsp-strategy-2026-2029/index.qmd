@@ -60,7 +60,7 @@ NAIF and SLSP solve different problems. NAIF is a time-limited project focused o
 
 That said, the areas of alignment are real and worth acting on. Colleagues from SLSP and member libraries participated in several NAIF events, which is a welcome signal. Going forward, we see opportunities for exchange and coordination especially around metadata standardisation, open access monitoring, and the governance structures both initiatives are developing.
 
-We welcome continued dialogue - whether through our [events](https://maehr.github.io/naif/events/index.html), through the [working group](https://maehr.github.io/naif/about.html#unified-outcome-creation-of-a-working-group) we are establishing, or informally. If you are involved with SLSP or its member libraries as an information science and library science specialist and want to stay in touch with NAIF's progress, you can [fill out our contact form](https://forms.gle/hAQwHaitKDZ3Cf846) or reach us at [naif@library.ethz.ch](mailto:naif@library.ethz.ch).
+We welcome continued dialogue - whether through our [events](https://maehr.github.io/naif/events/index.html), through the [working group](https://maehr.github.io/naif/about.html#unified-outcome-creation-of-a-working-group) we are establishing, or informally. If you are involved with SLSP or its member libraries as an information science and library science specialist and want to stay in touch with NAIF's progress, you can reach us at [naif@library.ethz.ch](mailto:naif@library.ethz.ch).
 
 ## Sources
 

@@ -5,7 +5,7 @@ author: "CHESS (UZH) & ETH Library"
 author-title: "Organizer"
 description: "Workshop on appointment procedures in the context of DORA and CoARA (ETH Zurich, 4 March 2026)."
 categories:
-  - "Related Topic"
+  - "Organised by NAIF"
 tags:
   - "DORA"
   - "CoARA"
@@ -19,12 +19,16 @@ toc: true
 
 <!-- Source: <https://www.chess.uzh.ch/de/veranstalten.html> -->
 
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
+
 ## Details
 
 - Date: Wednesday, 4 March 2026
 - Time: 15:00-17:00
 - Location: ETH HG E 42
-- Registration: [david.johann@library.ethz.ch](mailto:david.johann@library.ethz.ch) (registration required; limited number of participants)
+- Registration: ~~`david.johann@library.ethz.ch`~~ (registration required; limited number of participants)
 - Languages: German and English
 - Event page: <https://www.chess.uzh.ch/de/veranstalten.html>
 
