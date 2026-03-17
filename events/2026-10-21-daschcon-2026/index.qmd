@@ -1,0 +1,37 @@
+---
+title: "DaSCHCon 2026: AI in practice"
+date: 2026-10-21
+author: "DaSCH - Swiss National Data and Service Center for the Humanities"
+author-title: "Organizer"
+description: "DaSCHCon 2026 explores practical AI use in research and cultural heritage, with clear relevance to NAIF's interests in metadata, interoperability, and responsible infrastructure."
+categories:
+  - "Related Topic"
+tags:
+  - "AI"
+  - "Digital humanities"
+  - "Metadata"
+proofread: false
+image: "images/daschcon-2026-page.png"
+image-alt: "DaSCHCon 2026 event page on the DaSCH website"
+image-caption: "Screenshot of the DaSCHCon 2026 event page. Source: https://dasch.swiss/news/daschcon5. Rights: DaSCH - Swiss National Data and Service Center for the Humanities."
+toc: true
+---
+
+<!-- Source: <https://dasch.swiss/news/daschcon5> -->
+
+## Details
+
+- Date: Wednesday, 21 October 2026
+- Time: 09:45-16:45
+- Location: University of Bern and online
+- Registration: <https://forms.gle/u7pT5XW1akHfSjN8A>
+- Event page: <https://dasch.swiss/news/daschcon5>
+- Call for contributions: Abstract submissions by 31 July 2026; workshop topic proposals by 21 September 2026
+
+## About
+
+DaSCHCon 2026 is dedicated to "AI in Practice: Experiences, Workflows, and Platforms". The event invites researchers, data specialists, and cultural heritage professionals to present how they use AI in scholarly workflows, collections-based work, and institutional settings.
+
+The programme combines project presentations, short contributed talks, and a workshop session focused on practical exchange. The call highlights themes such as metadata enrichment, reproducibility, sustainability, transparency, and responsible AI use.
+
+For NAIF, the event is relevant as a related topic rather than a direct project activity. Its focus on how AI depends on well-structured data, sustainable workflows, and research infrastructure aligns with NAIF's broader interest in interoperability and high-quality scholarly metadata.
