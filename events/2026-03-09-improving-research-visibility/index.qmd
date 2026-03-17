@@ -19,6 +19,10 @@ toc: true
 
 <!-- Source: <https://www.bibliosuisse.ch/angebote/detail?eventid=984> -->
 
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
+
 ## Details
 
 - Date: Monday, 9 March 2026
@@ -26,7 +30,7 @@ toc: true
 - Location: Bibliomedia Suisse, Cesar-Roux 34, 1005 Lausanne
 - Language: French
 - Registration deadline: One week before the course date
-- Registration: <https://bibliosuisse.ch/angebote/anmeldung?eventid=984>
+- Registration: ~~`https://bibliosuisse.ch/angebote/anmeldung?eventid=984`~~
 - Event page: <https://www.bibliosuisse.ch/angebote/detail?eventid=984>
 
 ## About
