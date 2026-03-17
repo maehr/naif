@@ -53,6 +53,10 @@ The survey draws inspiration from major international efforts, including:
 
 This will be the first national overview of repository maturity and practices in Switzerland. Findings will inform coordinated actions and shared services, and aggregated results will be published openly on Zenodo within the NAIF community.
 
-Deadline: 15 December 2025  
+The survey document is also available as a local PDF: [naif-repositories-survey-2025.pdf](naif-repositories-survey-2025.pdf).
+
+The survey deadline has passed. The submission link is kept for reference only.
+
+Deadline: ~~15 December 2025~~  
 Contact: mailto:naif-survey@library.ethz.ch  
-Take the survey: [SurveyHero form](https://www.surveyhero.com/c/naif-repositories-2025)
+Take the survey: ~~SurveyHero form~~

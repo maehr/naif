@@ -2,10 +2,9 @@
 
 ## Zenodo uploads
 
-- [ ] Upload `documents/2025-08-28_NAIF_information_event.pdf` to the NAIF Zenodo community and
-      replace links in `about.qmd` and `events/2025-08-28-information-event/index.qmd` with the DOI
-- [ ] Upload `documents/naif-repositories-survey-2025.pdf` to the NAIF Zenodo community (add DOI
-      link where it is referenced)
+- [ ] Upload
+      `posts/2025-11-10-national-survey-swiss-institutional-repositories/naif-repositories-survey-2025.pdf`
+      to the NAIF Zenodo community (add DOI link where it is referenced)
 
 ## Manual repository setup
 

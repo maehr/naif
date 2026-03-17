@@ -38,4 +38,4 @@ The project aims (1) to make research outputs of researchers at Swiss HEIs more 
 
 ## Sources
 
-- swissuniversities, *Programme Open Science II - Call for proposals: Supporting Green Open Access, List of Approved Projects* (2025): [2025_Approved_Projects_Green_OA.pdf](https://www.swissuniversities.ch/fileadmin/swissuniversities/Dokumente/Hochschulpolitik/Open_Science/2025/2025_Approved_Projects_Green_OA.pdf)
+- swissuniversities, *Programme Open Science II - Call for proposals: Supporting Green Open Access, List of Approved Projects* (2025): [2025_Approved_Projects_Green_OA.pdf](2025_Approved_Projects_Green_OA.pdf)
