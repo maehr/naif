@@ -10,6 +10,8 @@ __pycache__/
 .coverage
 htmlcov/
 .ipynb_checkpoints/
+.env
+_quarto-local.yml
 
 **/*.quarto_ipynb
 .jampack/
