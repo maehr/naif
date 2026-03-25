@@ -48,7 +48,7 @@ The evidence clearly demonstrates that findability depends on disambiguation and
 
 ## What's next
 
-While TOBI primarily answered the question how reliable open bibliometric sources are for Swiss Higher Education Institutions, NAIF asks: *How do Swiss repositories and stakeholders coordinate these improvements so that national findability and interoperability become durable rather than project-bound?*
+While TOBI primarily answered how reliable open bibliometric sources are for Swiss Higher Education Institutions, NAIF asks: *How do Swiss repositories and stakeholders coordinate these improvements so that national findability and interoperability become durable rather than project-bound?*
 
 The key shift is from evidence generation to implementation design: defining what data needs to be updated, who does it, which systems and standards are used, and what kinds of feedback loops are needed.
 
