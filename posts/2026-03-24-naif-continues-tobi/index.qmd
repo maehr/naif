@@ -23,9 +23,9 @@ draft: true
 
 ## Why it matters
 
-TOBI (Towards Open Bibliometric Indicators) closed in July 2025 having established an important premise: despite the project name, TOBI focused primarily on the quality, coverage, and usability of open scholarly **data** rather than on promoting indicators as an end in themselves. Data quality is not a technical afterthought; it is the core infrastructure required for credible analysis and fair representation. 
+TOBI (Towards Open Bibliometric Indicators) closed in July 2025 having established an important premise: despite its name, the project focused primarily on the quality, coverage, and usability of open scholarly **data** rather than on promoting indicators as an end in themselves. Data quality is not a technical afterthought, but a fundamental prerequisite for credible analyses and fair representation.
 
-NAIF continues from that same premise, but places it in a wider interoperability context. Under NAIF, the data quality conditions evaluated by TOBI become operational requirements across Swiss repositories, directly ensuring the findability and visibility of Swiss research.
+NAIF continues from that same premise, but places it in a wider interoperability context. Within NAIF, the data quality conditions evaluated by TOBI become operational requirements across Swiss repositories, directly ensuring the findability and visibility of Swiss research.
 
 ::: {.callout-note}
 ## Explore the TOBI dashboard
@@ -34,25 +34,25 @@ View the interactive TOBI data dashboard here: [TOBI Data Dashboard](../../dashb
 
 ## What we did
 
-TOBI delivered comparative analyses, methods, tools, and curation work that can be reused by Swiss institutions. Using transparency principles aligned with DORA, it evaluated data provenance and methodological openness across open and commercial databases.
+TOBI delivered comparative analyses, methods, tools, and curation work that can be reused by Swiss institutions. Using open science principles aligned with CoARA, it evaluated data provenance and methodological openness across open and commercial databases.
 
-Building on these foundations, NAIF continues TOBI's focus in Track 3 and Track 4 by actively assessing metadata availability and quality in Swiss repositories and prioritising concrete improvement actions. To address disambiguation, NAIF actively integrates organisational and researcher identifiers—including [ROR](https://ror.org/) and [ORCID](https://orcid.org/) alignment—directly into repository workflows.
+Building on these foundations, NAIF continues TOBI's focus in Track 3 and Track 4 by actively assessing the availability and quality of metadata in Swiss repositories and prioritising concrete improvement actions.
 
 ## What we found
 
-TOBI’s analyses showed that coverage and metadata quality differ substantially across institution types and sizes in Switzerland. Key recurring issues remain: inconsistent organisation names, incomplete affiliation links, and uneven metadata completeness across systems.
+TOBI's analyses showed that coverage and metadata quality differ substantially across institution types and sizes in Switzerland. Key recurring issues remain: inconsistent organisation names, incomplete affiliation links, and uneven completeness of metadata across systems.
 
-The evidence clearly demonstrates that findability depends on disambiguation and consistent identifiers. Consequently, NAIF’s implementation work operates on the finding that we must shift from diagnosing identifier problems in external databases to supporting local and national processes that prevent these problems at the source.
+The evidence clearly demonstrates that findability depends on disambiguation and consistent identifiers. Consequently, NAIF's conceptual work is based on the realisation that we must move away from diagnosing identifier problems in external databases towards supporting local and national processes that prevent these problems at source.
 
 ![TOBI project poster presented at WOOC2025: *A 2-year retrospective into the open information landscape: Learnings from the TOBI project*.](images/tobi-poster-wooc2025.png){fig-alt="TOBI project poster titled A 2-year retrospective into the open information landscape: Learnings from the TOBI project" fig-cap="TOBI project poster presented at WOOC2025: *A 2-year retrospective into the open information landscape: Learnings from the TOBI project*. DOI: 10.5281/zenodo.15807578. Rights: Kubacka, Willemin, and Dederke (2025), CC BY 4.0."}
 
 ## What's next
 
-While TOBI primarily answered how reliable open bibliometric sources are for Swiss Higher Education Institutions, NAIF asks: *How do Swiss repositories and stakeholders coordinate these improvements so that national findability and interoperability become durable rather than project-bound?*
+While TOBI primarily answered the question how reliable open bibliometric sources are for Swiss Higher Education Institutions, NAIF asks: *How do Swiss repositories and stakeholders coordinate these improvements so that national findability and interoperability become durable rather than project-bound?*
 
-The key shift is from evidence generation to implementation design: defining who updates what data, in which systems, with which standards, and with what feedback loops. 
+The key shift is from evidence generation to implementation design: defining what data needs to be updated, who does it, which systems and standards are used, and what kinds of feedback loops are needed.
 
-Moving forward, NAIF will maintain a strong analytical distinction between data readiness and indicator interpretation (Track 1) to determine what conditions must be met before indicators are compared. Findings from the four NAIF tracks are designed to feed into a national working-group model that will sustain coordination long after the project period.
+Moving forward, NAIF will maintain a strong analytical distinction between data readiness and indicator interpretation to determine what conditions must be met before indicators are compared. Findings from the four NAIF tracks are designed to feed into a national working-group model that will ensure sustained coordination beyond the project period.
 
 ## What to reuse
 
