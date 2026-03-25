@@ -19,14 +19,18 @@ toc: true
 
 <!-- Source: <https://info.orcid.org/event/orcid-community-town-hall-2026/> -->
 
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
+
 ## Details
 
 - Date: Wednesday, 25 March 2026
 - Location: Online (webinar)
 - Session 1 (APAC): 01:00 UTC (02:00 CET)
 - Session 2 (EMEA/Americas): 15:00 UTC (16:00 CET)
-- Registration (APAC): <https://orcid-org.zoom.us/webinar/register/7417655591587/WN_OxReoANURY-S4WI3Ln5Nyw>
-- Registration (EMEA/Americas): <https://orcid-org.zoom.us/webinar/register/WN_Hc5KHx2tTniRrMmgR_7BkA>
+- Registration (APAC): ~~`https://orcid-org.zoom.us/webinar/register/7417655591587/WN_OxReoANURY-S4WI3Ln5Nyw`~~
+- Registration (EMEA/Americas): ~~`https://orcid-org.zoom.us/webinar/register/WN_Hc5KHx2tTniRrMmgR_7BkA`~~
 - Event page: <https://info.orcid.org/event/orcid-community-town-hall-2026/>
 
 ## About

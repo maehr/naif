@@ -13,11 +13,11 @@ tags:
 proofread: false
 image: "images/bibliosuisse-event-984.png"
 image-alt: "Bibliosuisse event page for the training on improving institutional research visibility"
-image-caption: "Screenshot of the Bibliosuisse event page for the course on improving institutional research visibility. Source: https://www.bibliosuisse.ch/angebote/detail?eventid=984. Rights: Bibliosuisse."
+image-caption: "Screenshot of the Bibliosuisse event page for the course on improving institutional research visibility. Source: https://bibliosuisse.ch/angebote/detail?eventid=984. Rights: Bibliosuisse."
 toc: true
 ---
 
-<!-- Source: <https://www.bibliosuisse.ch/angebote/detail?eventid=984> -->
+<!-- Source: <https://bibliosuisse.ch/angebote/detail?eventid=984> -->
 
 ::: {.callout-note}
 This event has already taken place. Any registration information has been disabled and is shown for reference only.
@@ -31,7 +31,7 @@ This event has already taken place. Any registration information has been disabl
 - Language: French
 - Registration deadline: One week before the course date
 - Registration: ~~`https://bibliosuisse.ch/angebote/anmeldung?eventid=984`~~
-- Event page: <https://www.bibliosuisse.ch/angebote/detail?eventid=984>
+- Event page: <https://bibliosuisse.ch/angebote/detail?eventid=984>
 
 ## About
 
