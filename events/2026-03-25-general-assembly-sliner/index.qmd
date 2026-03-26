@@ -18,12 +18,16 @@ toc: true
 draft: false
 ---
 
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
+
 ## Details
 
 - Date: Wednesday, 25 March 2026
 - Time: 13:00-16:00 (workshop programme)
 - Location: Bern, Switzerland
-- Registration: By invitation (SLiNER members)
+- Registration: ~~By invitation (SLiNER members)~~
 - Event page: <https://www.swissuniversities.ch/organisation/gremien/netzwerke-und-vertretungen/swiss-library-network-for-education-and-research>
 
 ## About
