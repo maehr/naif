@@ -1,0 +1,70 @@
+---
+title: "First insights from the Swiss institutional repository survey"
+subtitle: "Initial results from NAIF Track 3's first national survey of Swiss repositories."
+date: 2026-04-02
+lang: en-UK
+author:
+  - name: "Pascale Bouton"
+    orcid: "0000-0002-0373-8081"
+    affiliation: "EPFL Library"
+  - name: "Julien Sicot"
+    orcid: "0000-0002-9457-6638"
+    affiliation: "EPFL Library"
+description: "Early results from NAIF Track 3's first national survey of Swiss institutional repositories show a diverse landscape with strong technical foundations, uneven metadata alignment, and clear priorities for coordinated harmonisation."
+categories:
+  - "Track 3"
+tags:
+  - "Repositories"
+  - "Survey"
+  - "Interoperability"
+proofread: false
+image: "images/repository-survey-hero.jpeg"
+image-alt: "Stylised illustration of Switzerland with linked repository nodes"
+image-caption: "Institutional repositories in Switzerland. AI-generated image (OpenAI, 2026), concept and prompt design by Pascale Bouton. This synthetic and non-geographically accurate illustration was created for explanatory purposes. Rights: CC BY 4.0."
+toc: true
+draft: false
+---
+
+## Why it matters
+
+Track 3 of the NAIF project focuses on mapping and analysing Swiss institutional repositories, including their infrastructure, metadata practices, governance, and sustainability. To support this work, a comprehensive survey with 113 questions was conducted in late 2025 and addressed to repository managers and service leads across Swiss higher education.
+
+The first results already provide a useful national picture. We received 35 responses, including shared submissions covering multiple services, which together represent **39 institutions and repositories across the Swiss higher education landscape**.
+
+The respondents reflect a broad institutional mix: universities (31%), universities of teacher education (31%), universities of applied sciences (26%), and research institutes and other higher education institutions (12%).
+
+## What the first analysis shows
+
+### A diverse and active landscape
+
+The Swiss repository landscape spans more than two decades of development, with a median establishment year of **2015**. Three platform families dominate the landscape: the DSpace family (**46%**), Invenio / InvenioRDM (**20%**), and Zenodo or third-party platforms (**23%**). Together, these account for **86%** of surveyed repositories and show the pragmatic diversity of approaches across the sector.
+
+Open Access content is present in **100%** of repositories. Collections range from fewer than 100 records to nearly 300,000, illustrating the very different institutional missions and scales represented in the survey.
+
+### Strong foundations and shared opportunities
+
+A solid metadata baseline is already in place across all repositories. Persistent identifiers are seen as highly important, and DOIs are assigned by 89% of participants, although DOI workflows differ considerably. OAI-PMH is exposed by 89% of repositories and REST APIs by 66%, providing a strong technical basis for national and international aggregation.
+
+Interoperability is also a widely shared priority, with 63% of respondents rating it at the maximum level of importance.
+
+At the same time, the survey highlights shared opportunities for improvement. Alignment with international metadata application profiles remains uneven. Deposit workflows are still largely manual across the sector. ORCID and ROR identifiers are increasingly present, but their level of integration varies considerably. These are all areas where NAIF's harmonisation work can make a practical contribution.
+
+### The human dimension
+
+One of the clearest findings concerns the people behind repository services. Teams are delivering a broad and growing range of services with lean resources, with a median of 0.8 FTE dedicated to management, curation, technical support, and user services.
+
+Libraries lead governance in the large majority of institutions, and 80% of repositories are recognised as trusted institutional sources. At the same time, 69% of respondents identify resource constraints as a current challenge. Notably, 66% also flag AI bots and scrapers as a growing operational concern, showing how quickly repository management conditions are changing.
+
+## What comes next
+
+These findings are only the beginning of a broader discussion. A full gap analysis covering all five thematic areas, including detailed findings, cross-institutional patterns, and prioritised recommendations, will be published later in 2026.
+
+In the meantime, the survey questionnaire and anonymised dataset are already openly available on Zenodo.
+
+## Open materials
+
+- Bouton, P., Fritschi, M., Gallis, Q., Mähr, M., Muheim, C., Rodrigues de Matos, J., Sicot, J., & Willemin, S. (2026). *Mapping Swiss institutional repositories: A national survey dataset (NAIF Track 3)* (v1.0). Zenodo. <https://doi.org/10.5281/zenodo.19365107>
+
+## Contact
+
+For questions or further information, contact the NAIF Track 3 team at [naif-survey@library.ethz.ch](mailto:naif-survey@library.ethz.ch).
