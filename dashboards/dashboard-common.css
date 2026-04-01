@@ -4,8 +4,68 @@
   display: none;
 }
 
+.quarto-dashboard {
+  --dashboard-surface: #f3f4f6;
+  --dashboard-surface-strong: #e5e7eb;
+  --dashboard-border: #cbd5e1;
+  --dashboard-text: #111827;
+  --dashboard-muted: #475569;
+}
+
+.quarto-dashboard #quarto-dashboard-header .navbar {
+  background: linear-gradient(180deg, #f3f4f6 0%, #e5e7eb 100%) !important;
+  border-bottom: 1px solid var(--dashboard-border);
+}
+
+.quarto-dashboard #quarto-dashboard-header .navbar-title-text a,
+.quarto-dashboard #quarto-dashboard-header .navbar-author {
+  color: #374151 !important;
+}
+
+.quarto-dashboard #quarto-dashboard-header .navbar-title-text a {
+  font-weight: 700;
+}
+
 .quarto-dashboard .dashboard-table-wrap {
-  overflow-x: auto;
+  height: 100%;
+  overflow: auto;
+  border: 1px solid var(--dashboard-border);
+  border-radius: 0.9rem;
+  background: #ffffff;
+}
+
+.quarto-dashboard .dashboard-table-wrap table {
+  width: 100%;
+  margin-bottom: 0;
+  table-layout: auto;
+}
+
+.quarto-dashboard .dashboard-table-wrap thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #f8fafc;
+}
+
+.quarto-dashboard .dashboard-table-wrap th,
+.quarto-dashboard .dashboard-table-wrap td {
+  vertical-align: top;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.quarto-dashboard .dashboard-table-wrap a {
+  overflow-wrap: anywhere;
+}
+
+.quarto-dashboard .dashboard-id-list,
+.quarto-dashboard .dashboard-id-token {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.quarto-dashboard .dashboard-id-sep {
+  color: #94a3b8;
 }
 
 .quarto-dashboard .nav-tabs {
@@ -19,6 +79,22 @@
 
 .quarto-dashboard .nav-tabs .nav-link {
   font-weight: 600;
+  background: var(--dashboard-surface-strong);
+}
+
+.quarto-dashboard .nav-tabs .nav-link:not(.active) {
+  border-color: transparent;
+}
+
+.quarto-dashboard .bslib-value-box {
+  background: var(--dashboard-surface) !important;
+  border: 1px solid var(--dashboard-border);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  color: var(--dashboard-text);
+}
+
+.quarto-dashboard .bslib-value-box .value-box-showcase {
+  color: var(--dashboard-muted);
 }
 
 .quarto-dashboard .bslib-value-box .value-box-title {
@@ -29,4 +105,28 @@
 .quarto-dashboard .bslib-value-box .value-box-value {
   font-size: clamp(1.35rem, 2.2vw, 2.4rem);
   line-height: 1.05;
+}
+
+.quarto-dashboard .dashboard-about {
+  max-width: 72ch;
+  color: var(--dashboard-text);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.quarto-dashboard .dashboard-subheading {
+  margin: 0 0 0.75rem;
+  color: var(--dashboard-text);
+}
+
+.quarto-dashboard .dashboard-download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.quarto-dashboard .dashboard-download-note {
+  max-width: 60ch;
+  color: var(--dashboard-muted);
 }

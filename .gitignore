@@ -14,5 +14,6 @@ htmlcov/
 _quarto-local.yml
 
 **/*.quarto_ipynb
+**/*.quarto_ipynb_*
 .jampack/
 .lycheecache
