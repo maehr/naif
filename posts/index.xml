@@ -5,17 +5,48 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>NAIF News</title>
+<title>NAIF news</title>
 <link>https://maehr.github.io/naif/posts/</link>
 <atom:link href="https://maehr.github.io/naif/posts/index.xml" rel="self" type="application/rss+xml"/>
 <description>NAIF news posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results.</description>
 <image>
 <url>https://maehr.github.io/naif/images/logos/all-logos.jpg</url>
-<title>NAIF News</title>
+<title>NAIF news</title>
 <link>https://maehr.github.io/naif/posts/</link>
 </image>
-<generator>quarto-1.8.27</generator>
-<lastBuildDate>Thu, 26 Feb 2026 23:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.36</generator>
+<lastBuildDate>Wed, 01 Apr 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>First insights from the Swiss institutional repository survey</title>
+  <dc:creator>Pascale Bouton</dc:creator>
+  <dc:creator>Julien Sicot</dc:creator>
+  <link>https://maehr.github.io/naif/posts/2026-04-02-first-insights-swiss-repository-survey/</link>
+  <description><![CDATA[ Early results from NAIF Track 3’s first national survey of Swiss institutional repositories show a diverse landscape with strong technical foundations, uneven metadata alignment, and clear priorities for coordinated harmonisation. ]]></description>
+  <category>Track 3</category>
+  <guid>https://maehr.github.io/naif/posts/2026-04-02-first-insights-swiss-repository-survey/</guid>
+  <pubDate>Wed, 01 Apr 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/posts/2026-04-02-first-insights-swiss-repository-survey/images/repository-survey-hero.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>How NAIF builds on TOBI’s results in Switzerland</title>
+  <dc:creator>Dr Moritz Mähr</dc:creator>
+  <link>https://maehr.github.io/naif/posts/2026-03-25-naif-continues-tobi/</link>
+  <description><![CDATA[ TOBI produced a practical evidence base on open scholarly metadata in Switzerland. NAIF builds on these results by shifting from evidence generation to a broader interoperability scope, focusing on operational requirements and stronger cross-institution coordination. ]]></description>
+  <category>General</category>
+  <guid>https://maehr.github.io/naif/posts/2026-03-25-naif-continues-tobi/</guid>
+  <pubDate>Tue, 24 Mar 2026 23:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/posts/2026-03-25-naif-continues-tobi/images/tobi-homepage.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>SLSP strategy 2026–2029</title>
+  <dc:creator>Dr Moritz Mähr</dc:creator>
+  <link>https://maehr.github.io/naif/posts/2026-03-16-slsp-strategy-2026-2029/</link>
+  <description><![CDATA[ In January 2026, the Swiss Library Service Platform (SLSP) published its strategy for the period 2026-2029. The document outlines how SLSP plans to evolve from a library management infrastructure into a platform for academic information that is user-oriented, data- and AI-driven, interoperable, and open. NAIF operates in a different space, but several strategic themes overlap in ways worth noting. ]]></description>
+  <category>General</category>
+  <guid>https://maehr.github.io/naif/posts/2026-03-16-slsp-strategy-2026-2029/</guid>
+  <pubDate>Sun, 15 Mar 2026 23:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/posts/2026-03-16-slsp-strategy-2026-2029/images/slsp-strategy-announcement.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>NAIF at the Research on Research Event 2026</title>
   <dc:creator>Dr Moritz Mähr</dc:creator>
@@ -27,7 +58,7 @@
   <media:content url="https://maehr.github.io/naif/posts/2026-02-27-naif-at-research-on-research/images/poster.png" medium="image" type="image/png" height="204" width="144"/>
 </item>
 <item>
-  <title>Prioritising Actions for Better Academic Metadata</title>
+  <title>Prioritising actions for better academic metadata</title>
   <dc:creator>Dr Moritz Mähr</dc:creator>
   <link>https://maehr.github.io/naif/posts/2026-02-10-track-4-workshop-2025-12-08/</link>
   <description><![CDATA[ NAIF Track 4 held its second workshop to classify and prioritise 16 proposed actions for improving academic metadata in Swiss repositories using the Agreement & Certainty Matrix. ]]></description>
@@ -68,7 +99,7 @@
   <media:content url="https://maehr.github.io/naif/posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/images/IMG_8727modified.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Enhancing Open Academic Data through NAIF Track 4</title>
+  <title>Enhancing open academic data through NAIF Track 4</title>
   <dc:creator>Dr Moritz Mähr</dc:creator>
   <link>https://maehr.github.io/naif/posts/2025-09-26-naif-at-soad-day/</link>
   <description><![CDATA[ NAIF presented its Track 4 work on enhancing academic metadata at the first Swiss Open Academic Data Day at ETH Zurich. ]]></description>
@@ -78,7 +109,7 @@
   <media:content url="https://maehr.github.io/naif/posts/2025-09-26-naif-at-soad-day/images/soad-website.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
-  <title>Launching NAIF: A Look Back at the Information Event</title>
+  <title>Launching NAIF: a look back at the information event</title>
   <dc:creator>Dr David Johann</dc:creator>
   <dc:creator>Simon Willemin</dc:creator>
   <link>https://maehr.github.io/naif/posts/2025-08-28-naif-information-event/</link>

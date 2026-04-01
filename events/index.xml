@@ -5,17 +5,27 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>NAIF Events</title>
+<title>NAIF events</title>
 <link>https://maehr.github.io/naif/events/</link>
 <atom:link href="https://maehr.github.io/naif/events/index.xml" rel="self" type="application/rss+xml"/>
 <description>Upcoming and past NAIF events: workshops, talks, and community sessions related to interoperable repositories and findable research results.</description>
 <image>
 <url>https://maehr.github.io/naif/images/logos/all-logos.jpg</url>
-<title>NAIF Events</title>
+<title>NAIF events</title>
 <link>https://maehr.github.io/naif/events/</link>
 </image>
-<generator>quarto-1.8.27</generator>
-<lastBuildDate>Tue, 08 Sep 2026 22:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.36</generator>
+<lastBuildDate>Tue, 20 Oct 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>DaSCHCon 2026: AI in practice</title>
+  <dc:creator>DaSCH - Swiss National Data and Service Center for the Humanities</dc:creator>
+  <link>https://maehr.github.io/naif/events/2026-10-21-daschcon-2026/</link>
+  <description><![CDATA[ DaSCHCon 2026 explores practical AI use in research and cultural heritage, with clear relevance to NAIF’s interests in metadata, interoperability, and responsible infrastructure. ]]></description>
+  <category>Related Topic</category>
+  <guid>https://maehr.github.io/naif/events/2026-10-21-daschcon-2026/</guid>
+  <pubDate>Tue, 20 Oct 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/events/2026-10-21-daschcon-2026/images/daschcon-2026-page.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>STI-ENID 2026 Conference</title>
   <dc:creator>ECOOM at University of Antwerp, KU Leuven, and VUB</dc:creator>
@@ -30,8 +40,8 @@
   <title>DARIAH Annual Event 2026</title>
   <dc:creator>DARIAH ERIC</dc:creator>
   <link>https://maehr.github.io/naif/events/2026-05-26-dariah-annual-event-2026/</link>
-  <description><![CDATA[ In-person DARIAH Annual Event in Rome (26-29 May 2026) on infrastructures of engagement in digital arts and humanities. ]]></description>
-  <category>Related Topic</category>
+  <description><![CDATA[ NAIF participates in the DARIAH Annual Event in Rome (26-29 May 2026), where Dr Moritz Mähr presents a poster on Track 1 and Track 4. ]]></description>
+  <category>Participation by NAIF</category>
   <guid>https://maehr.github.io/naif/events/2026-05-26-dariah-annual-event-2026/</guid>
   <pubDate>Mon, 25 May 2026 22:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2026-05-26-dariah-annual-event-2026/images/dariah-annual-event-2026.png" medium="image" type="image/png" height="81" width="144"/>
@@ -45,6 +55,16 @@
   <guid>https://maehr.github.io/naif/events/2026-05-19-bibliocon-2026/</guid>
   <pubDate>Mon, 18 May 2026 22:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2026-05-19-bibliocon-2026/images/bibliocon-2026-homepage.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>CoARA Experiments in Assessment: idea catalogue platform launch</title>
+  <dc:creator>CoARA Experiments in Assessment Working Group</dc:creator>
+  <link>https://maehr.github.io/naif/events/2026-04-27-coara-idea-catalogue-platform/</link>
+  <description><![CDATA[ Public online launch webinar for the CoARA Experiments in Assessment Idea Catalogue Platform on 27 April 2026. ]]></description>
+  <category>Related Topic</category>
+  <guid>https://maehr.github.io/naif/events/2026-04-27-coara-idea-catalogue-platform/</guid>
+  <pubDate>Sun, 26 Apr 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://maehr.github.io/naif/events/2026-04-27-coara-idea-catalogue-platform/images/teams-event-page.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>COMET Community Meeting 22 April</title>
@@ -101,7 +121,7 @@
   <dc:creator>CHESS (UZH) &amp; ETH Library</dc:creator>
   <link>https://maehr.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/</link>
   <description><![CDATA[ Workshop on appointment procedures in the context of DORA and CoARA (ETH Zurich, 4 March 2026). ]]></description>
-  <category>Related Topic</category>
+  <category>Organised by NAIF</category>
   <guid>https://maehr.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/</guid>
   <pubDate>Tue, 03 Mar 2026 23:00:00 GMT</pubDate>
   <media:content url="https://maehr.github.io/naif/events/2026-03-04-chess-workshop-dora-coara/images/chess-events-page.png" medium="image" type="image/png" height="81" width="144"/>
@@ -127,7 +147,7 @@
   <media:content url="https://maehr.github.io/naif/events/2026-01-29-ror-event-2026/images/2Glasses_Blue.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
-  <title>Workshop: Improving academic metadata (Track 4)</title>
+  <title>Workshop: improving academic metadata (Track 4)</title>
   <dc:creator>NAIF </dc:creator>
   <link>https://maehr.github.io/naif/events/2025-12-08-improving-academic-metadata-online/</link>
   <description><![CDATA[ Online workshop on improving academic metadata for Swiss repositories and institutions. ]]></description>
@@ -167,7 +187,7 @@
   <media:content url="https://maehr.github.io/naif/events/2025-11-05-from-policy-to-practice/images/panel-discussion-kira-michael.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
-  <title>Workshop: Improving academic metadata (Neuchatel)</title>
+  <title>Workshop: improving academic metadata (Neuchatel)</title>
   <dc:creator>NAIF </dc:creator>
   <link>https://maehr.github.io/naif/events/2025-10-15-improving-academic-metadata-neuchatel/</link>
   <description><![CDATA[ Workshop on improving academic metadata for Swiss repositories and institutions (Track 4). ]]></description>

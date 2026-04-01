@@ -1,15 +1,15 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta charset="utf-8"><style>:where(img[jampack-sized]){max-width:100%;height:auto}</style>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK"><head><meta charset="utf-8"><style>@layer __jampack__{:where(img[jampack-sized]){max-width:100%;height:auto}}</style>
 
 
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 
 <meta name="author" content="Dr Moritz Mähr">
-<meta name="dcterms.date" content="2026-03-03">
-<meta name="description" content="TOBI findability and output coverage for Swiss higher education institutions.">
+<meta name="dcterms.date" content="2026-04-01">
+<meta name="description" content="TOBI findability and output coverage for Swiss Higher Education Institutions.">
 
-<title>TOBI Data Dashboard – NAIF</title>
+<title>TOBI data dashboard – NAIF</title>
 <style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}</style>
 
 
@@ -22,19 +22,18 @@
 <link href="../../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-7f7343e51becdf072a7b838969fd48e9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-d92318ea0225bfb0f00b9e7cea35dda4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-7f7343e51becdf072a7b838969fd48e9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ccc81663ae351f5691a9e53177e06319.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-0b1fb459b7ac2ed3073b28e807036635.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ccc81663ae351f5691a9e53177e06319.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-dashboard/quarto-dashboard.js"></script>
 <script src="../../site_libs/quarto-dashboard/stickythead.js"></script>
 
@@ -77,13 +76,19 @@
 
 
 <link rel="stylesheet" href="../dashboard-common.css">
-<meta property="og:title" content="TOBI Data Dashboard – NAIF">
-<meta property="og:description" content="TOBI findability and output coverage for Swiss higher education institutions.">
-<meta property="og:image" content="https://maehr.github.io/naif//images/logos/all-logos.jpg">
+<meta property="og:title" content="TOBI data dashboard – NAIF">
+<meta property="og:description" content="TOBI findability and output coverage for Swiss Higher Education Institutions.">
+<meta property="og:image" content="https://maehr.github.io/naif/dashboards/tobi/images/dashboard-screenshot.png">
 <meta property="og:site_name" content="NAIF">
-<meta name="twitter:title" content="TOBI Data Dashboard – NAIF">
-<meta name="twitter:description" content="TOBI findability and output coverage for Swiss higher education institutions.">
-<meta name="twitter:image" content="https://maehr.github.io/naif//images/logos/all-logos.jpg">
+<meta property="og:image:height" content="768">
+<meta property="og:image:width" content="1366">
+<meta property="og:image:alt" content="Screenshot of the TOBI dashboard with value boxes and summary tables">
+<meta name="twitter:title" content="TOBI data dashboard – NAIF">
+<meta name="twitter:description" content="TOBI findability and output coverage for Swiss Higher Education Institutions.">
+<meta name="twitter:image" content="https://maehr.github.io/naif/dashboards/tobi/images/dashboard-screenshot.png">
+<meta name="twitter:image-height" content="768">
+<meta name="twitter:image-width" content="1366">
+<meta name="twitter:image:alt" content="Screenshot of the TOBI dashboard with value boxes and summary tables">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -140,7 +145,7 @@
 
 
       <div class="navbar-title">
-        <div class="navbar-title-text"><a href="#">TOBI Data Dashboard</a></div>
+        <div class="navbar-title-text"><a href="#">TOBI data dashboard</a></div>
         
         <div class="navbar-author">Dr Moritz Mähr</div>
       </div>
@@ -154,25 +159,9 @@
 <!-- margin-sidebar -->
 <!-- main -->
 
-<div class="html-fill-item bslib-grid bslib-grid-item" data-layout="fill" style="grid-template-rows:minmax(3em,11fr) minmax(3em,11fr) minmax(3em,78fr);grid-auto-columns:minmax(0,1fr);display:grid">
-<div class="bslib-grid" style="grid-template-columns:minmax(3em,1fr) minmax(3em,1fr) minmax(3em,1fr);grid-auto-rows:minmax(0,1fr);display:grid">
-<div class="html-fill-container bslib-card card cell bslib-value-box showcase-left-center valuebox bg-light" data-bslib-card-init="" data-require-bs-caller="card()">
-<div class="html-fill-container html-fill-item card-body">
-<div data-icon="building" class="html-fill-container html-fill-item value-box-grid">
-<div class="html-fill-container html-fill-item value-box-showcase">
-
-<i class="bi bi-building"></i></div>
-<div class="value-box-area">
-<p class="value-box-title">
-Total HEIs
-</p>
-<p class="value-box-value">
-55
-</p>
-</div>
-</div>
-</div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="html-fill-container bslib-card card cell bslib-value-box showcase-left-center valuebox bg-warning" data-bslib-card-init="" data-require-bs-caller="card()">
+<div class="html-fill-item bslib-grid bslib-grid-item" data-layout="fill" style="grid-template-rows:minmax(3em,12fr) minmax(3em,88fr);grid-auto-columns:minmax(0,1fr);display:grid">
+<div class="bslib-grid" style="grid-template-columns:minmax(3em,1fr) minmax(3em,1fr) minmax(3em,1fr) minmax(3em,1fr);grid-auto-rows:minmax(0,1fr);display:grid">
+<div class="html-fill-container bslib-card card cell bslib-value-box showcase-left-center valuebox bg-warning" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="html-fill-container html-fill-item card-body">
 <div data-icon="database" class="html-fill-container html-fill-item value-box-grid">
 <div class="html-fill-container html-fill-item value-box-showcase">
@@ -183,7 +172,7 @@ Total HEIs
 HEIs with TOBI data
 </p>
 <p class="value-box-value">
-51 (92.7%)
+92.7%
 </p>
 </div>
 </div>
@@ -199,15 +188,12 @@ HEIs with TOBI data
 OpenAlex Findable
 </p>
 <p class="value-box-value">
-45 (81.8%)
+81.8%
 </p>
 </div>
 </div>
 </div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-</div>
-<div class="bslib-grid" style="grid-template-columns:minmax(3em,1fr) minmax(3em,1fr);grid-auto-rows:minmax(0,1fr);display:grid">
-<div class="html-fill-container bslib-card card cell bslib-value-box showcase-left-center valuebox bg-primary" data-bslib-card-init="" data-require-bs-caller="card()">
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="html-fill-container bslib-card card cell bslib-value-box showcase-left-center valuebox bg-primary" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="html-fill-container html-fill-item card-body">
 <div data-icon="diagram-3" class="html-fill-container html-fill-item value-box-grid">
 <div class="html-fill-container html-fill-item value-box-showcase">
@@ -218,7 +204,7 @@ OpenAlex Findable
 Dimensions Findable
 </p>
 <p class="value-box-value">
-45 (81.8%)
+81.8%
 </p>
 </div>
 </div>
@@ -245,12 +231,12 @@ OpenAlex Outputs
 <div class="html-fill-container bslib-card card tabset" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="bslib-navs-card-title card-header dashboard-card-no-title">
 
-<ul class="card-header-tabs nav nav-tabs" role="tablist" data-tabsetid="card-tabset-6"><li class="nav-item" role="presentation"><a href="#card-tabset-6-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="TOBI Findability" aria-selected="true" class="nav-link active">TOBI Findability</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-6-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="TOBI Outputs (2012-2022)" aria-selected="false" class="nav-link">TOBI Outputs (2012-2022)</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-6-3" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="All Institutions (TOBI)" aria-selected="false" class="nav-link">All Institutions (TOBI)</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-6-4" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Data sources and credits" aria-selected="false" class="nav-link">Data sources and credits</a></li></ul></div>
+<ul class="card-header-tabs nav nav-tabs" role="tablist" data-tabsetid="card-tabset-5"><li class="nav-item" role="presentation"><a href="#card-tabset-5-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="TOBI Findability" aria-selected="true" class="nav-link active">TOBI Findability</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="TOBI Outputs (2012-2022)" aria-selected="false" class="nav-link">TOBI Outputs (2012-2022)</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-3" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="All Institutions (TOBI)" aria-selected="false" class="nav-link">All Institutions (TOBI)</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-4" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Data sources and credits" aria-selected="false" class="nav-link">Data sources and credits</a></li></ul></div>
 
 
 
 
-<div class="html-fill-container html-fill-item tab-content" data-tabset-id="card-tabset-6"><div class="html-fill-container html-fill-item tab-pane active show" role="tabpanel" id="card-tabset-6-1"><div class="html-fill-container html-fill-item card-body" data-title="TOBI Findability">
+<div class="html-fill-container html-fill-item tab-content" data-tabset-id="card-tabset-5"><div class="html-fill-container html-fill-item tab-pane active show" role="tabpanel" id="card-tabset-5-1"><div class="html-fill-container html-fill-item card-body" data-title="TOBI Findability">
 <div class="html-fill-container html-fill-item bslib-grid" style="grid-template-rows:minmax(3em,1fr) minmax(3em,1fr);grid-auto-columns:minmax(0,1fr);display:grid">
 <div class="html-fill-container html-fill-item bslib-card card cell" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="html-fill-container html-fill-item card-body">
@@ -447,7 +433,7 @@ OpenAlex Outputs
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-</div></div><div class="html-fill-container html-fill-item tab-pane" role="tabpanel" id="card-tabset-6-2"><div class="html-fill-container html-fill-item card-body" data-title="TOBI Outputs (2012-2022)">
+</div></div><div class="html-fill-container html-fill-item tab-pane" role="tabpanel" id="card-tabset-5-2"><div class="html-fill-container html-fill-item card-body" data-title="TOBI Outputs (2012-2022)">
 <div class="html-fill-container html-fill-item bslib-grid" style="grid-template-rows:minmax(3em,1fr) minmax(3em,1fr);grid-auto-columns:minmax(0,1fr);display:grid">
 <div class="html-fill-container html-fill-item bslib-card card cell" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="html-fill-container html-fill-item card-body">
@@ -715,7 +701,7 @@ OpenAlex Outputs
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-</div></div><div class="html-fill-container html-fill-item tab-pane" role="tabpanel" id="card-tabset-6-3"><div class="html-fill-container html-fill-item card-body" data-title="All Institutions (TOBI)">
+</div></div><div class="html-fill-container html-fill-item tab-pane" role="tabpanel" id="card-tabset-5-3"><div class="html-fill-container html-fill-item card-body" data-title="All Institutions (TOBI)">
 <div class="html-fill-container html-fill-item bslib-grid" style="grid-template-rows:minmax(3em,1fr);grid-auto-columns:minmax(0,1fr);display:grid">
 <div class="html-fill-container html-fill-item bslib-card card cell" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="html-fill-container html-fill-item card-body">
@@ -1577,11 +1563,11 @@ OpenAlex Outputs
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-</div></div><div class="html-fill-container html-fill-item tab-pane" role="tabpanel" id="card-tabset-6-4"><div class="html-fill-container html-fill-item card-body" data-title="Data sources and credits">
+</div></div><div class="html-fill-container html-fill-item tab-pane" role="tabpanel" id="card-tabset-5-4"><div class="html-fill-container html-fill-item card-body" data-title="Data sources and credits">
 <div class="html-fill-container html-fill-item bslib-grid" style="grid-template-rows:minmax(3em,max-content);grid-auto-columns:minmax(0,1fr);display:grid">
 <div class="html-fill-container html-fill-item bslib-card card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="html-fill-container html-fill-item card-body">
-<p>This dashboard reuses TOBI project data on Swiss higher education institutions and presents it in a compact NAIF format.</p>
+<p>This dashboard reuses TOBI project data on Swiss Higher Education Institutions and presents it in a compact NAIF format.</p>
 <ul>
 <li>Data basis and methodology: Dederke, J., Koch, M., &amp; Willemin, S. (2024). <em>The Representation of Swiss Higher Education Institutions in Five Bibliometric Databases</em>. <a href="https://doi.org/10.3929/ethz-b-000726102" class="uri">https://doi.org/10.3929/ethz-b-000726102</a></li>
 <li>Project context: TOBI (Towards Open Bibliometric Indicators), ETH Library. <a href="https://eth-library.github.io/tobi/" class="uri">https://eth-library.github.io/tobi/</a></li>
@@ -1625,7 +1611,7 @@ OpenAlex Outputs
  © ETH Library · Powered by Quarto
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/eth-library/naif/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/maehr/naif/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
