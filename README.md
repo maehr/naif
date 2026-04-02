@@ -102,6 +102,10 @@ npm run validate
 | `npm run lychee-check`          | `lychee`                                                         | Check for broken links in source `.md` and `.qmd` files |
 | `npm run lychee-check:rendered` | `lychee --offline`                                               | Check internal links in rendered `_site/**/*.html`      |
 
+This fork intentionally tracks `_quarto.yml.local` to override the upstream website URLs with
+`https://maehr.github.io/naif/` and the fork repository links. Edit `_quarto.yml.local` directly if
+the fork deployment target changes.
+
 #### Screenshots
 
 | Script                                | Command                             | Description                                         |
