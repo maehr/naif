@@ -18,4 +18,3 @@ htmlcov/
 .lycheecache
 
 /_*.local
-!/_quarto.yml.local
