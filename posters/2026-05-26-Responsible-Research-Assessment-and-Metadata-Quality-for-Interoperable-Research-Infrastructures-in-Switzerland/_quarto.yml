@@ -1,0 +1,10 @@
+project:
+  title: "DARIAH poster"
+  type: docposter
+  post-render:
+    - _extensions/bbucior/docposter/R/chrome_pdf.R
+
+format:
+  docposter-html:
+    fill-page: true
+    embed-resources: true

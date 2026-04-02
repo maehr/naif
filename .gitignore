@@ -10,7 +10,11 @@ __pycache__/
 .coverage
 htmlcov/
 .ipynb_checkpoints/
+.env
 
 **/*.quarto_ipynb
+**/*.quarto_ipynb_*
 .jampack/
 .lycheecache
+
+/_*.local

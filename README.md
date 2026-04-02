@@ -102,6 +102,31 @@ npm run validate
 | `npm run lychee-check`          | `lychee`                                                         | Check for broken links in source `.md` and `.qmd` files |
 | `npm run lychee-check:rendered` | `lychee --offline`                                               | Check internal links in rendered `_site/**/*.html`      |
 
+This fork intentionally tracks `_quarto.yml.local` to override the upstream website URLs with
+`https://maehr.github.io/naif/` and the fork repository links. Edit `_quarto.yml.local` directly if
+the fork deployment target changes.
+
+#### Fork workflow with `_quarto.yml.local`
+
+Quarto automatically merges `_quarto.yml.local` into `_quarto.yml` when it is present. In this fork,
+that file is used only for fork-specific website settings:
+
+- `site-url`: points rendered canonical links and cards at the fork preview site
+- `repo-url`: points the website repo links at the fork repository
+- `issue-url`: stays on the upstream issue tracker
+
+Use this workflow when working from a fork:
+
+1. Keep all shared project configuration in `_quarto.yml`.
+2. Put fork-only overrides in `_quarto.yml.local`.
+3. Run `uv run quarto preview` for local development.
+4. Run `uv run quarto render` before pushing when you want to verify the full site build.
+5. Push your branch to the fork and use the fork Pages site, here `https://maehr.github.io/naif/`,
+   as the remote preview.
+6. Open the pull request against `eth-library/naif` from your fork branch.
+
+This keeps upstream configuration clean while letting a fork publish correct preview URLs.
+
 #### Screenshots
 
 | Script                                | Command                             | Description                                         |

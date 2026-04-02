@@ -16,7 +16,7 @@
     "lychee-check:rendered": "lychee --offline --config .lycheerc.toml './_site/**/*.html'",
     "prepare": "prek install",
     "preview": "uv run quarto preview",
-    "publish": "PREK_ALLOW_NO_CONFIG=1 quarto publish gh-pages --no-render",
+    "publish": "PREK_ALLOW_NO_CONFIG=1 uv run quarto publish gh-pages --no-render",
     "render": "uv run quarto render",
     "screenshot:clean": "node scripts/screenshot-clean.mjs",
     "screenshot:install-browsers": "npx playwright install chromium",

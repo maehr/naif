@@ -1,0 +1,24 @@
+---
+title: "Posters"
+subtitle: "NAIF posters and poster-style research outputs"
+description: "Browse NAIF posters and poster-style research outputs."
+toc: false
+show-page-image: false
+listing:
+  id: posters
+  type: grid
+  contents:
+    - "*/poster.qmd"
+  sort: "title"
+  filter-ui:
+    - search
+  max-items: 1000
+  page-size: 1000
+  fields:
+    - image
+    - title
+    - author
+---
+
+::: {#posters}
+:::

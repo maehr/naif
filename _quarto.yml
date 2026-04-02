@@ -6,6 +6,8 @@ project:
     - "dashboards/**/index.qmd"
     - "posts/index.qmd"
     - "posts/**/index.qmd"
+    - "posters/index.qmd"
+    - "posters/**/poster.qmd"
     - "events/**/index.qmd"
     - "!posts/_template-*/**"
     - "!events/_template-*/**"
