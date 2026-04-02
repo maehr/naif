@@ -1,5 +1,7 @@
 ---
 title: "Responsible Research Assessment and Metadata Quality for Interoperable Research Infrastructures in Switzerland"
+image: poster.pdf.png
+image-alt: "Poster preview for responsible research assessment and metadata quality for interoperable research infrastructures in Switzerland"
 author:
   - name: "<span class=\"presenter\">Dr Moritz Mähr</span>"
     affiliations:

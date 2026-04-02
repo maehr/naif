@@ -1,5 +1,7 @@
 ---
 title: "On the Current and Future Uses of Quantitative Scientometric Indicators (QSI) in Swiss Higher Education Institutions"
+image: poster.pdf.png
+image-alt: "Poster preview for On the Current and Future Uses of Quantitative Scientometric Indicators in Swiss higher education institutions"
 author:
   - name: "<span class=\"presenter\">Dr. Moritz Mähr</span>"
     affiliations:

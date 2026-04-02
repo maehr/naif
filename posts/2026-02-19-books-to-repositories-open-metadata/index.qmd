@@ -16,7 +16,7 @@ tags:
 proofread: false
 image: "images/thoth-report-page.png"
 image-alt: "Screenshot of the Thoth Open Metadata blog page announcing the 2026 international metadata recommendations report"
-image-caption: "Thoth Open Metadata blog announcement for the report DOI 10.70950/phru7413. Source: https://thoth.pub/blog/10.70950/phru7413. Rights: Thoth Open Metadata (CC BY 4.0 where indicated)."
+image-caption: "Thoth Open Metadata report DOI 10.70950/phru7413. Source: https://doi.org/10.5281/zenodo.18173982. Rights: Thoth Open Metadata (CC BY 4.0 where indicated)."
 toc: true
 draft: true
 ---
@@ -124,7 +124,7 @@ In that sense, Thoth and NAIF are not parallel stories. They are complementary p
 
 ## Sources
 
-- Thoth Open Metadata blog announcement: <https://thoth.pub/blog/10.70950/phru7413>
+- Thoth Open Metadata report landing page: <https://doi.org/10.5281/zenodo.18173982>
 - Steiner, T., Arias, J., Bennett, M., Booth, E., Edmunds, J., Gatti, R., Higman, R., Hillen, H., Laakso, M., Nason, M., O'Connell, B., Pogačnik, A., Rabar, U., Ramalho, A., Stone, G., van Gerven Oei, V. W. J., & Wake Hyde, Z. (2026). *International Metadata Recommendations, and Platform-Specific Requirements for Open Access Books and Chapters* (1.0). Thoth Open Metadata. <https://doi.org/10.5281/zenodo.18173982>
 - NAIF project website (About): <https://eth-library.github.io/naif/about.html>
 - Thoth Open Metadata platform: <https://thoth.pub>
