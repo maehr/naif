@@ -1,1 +1,1457 @@
-const kQueryArg="q",kResultsArg="show-results",kItemTypeMoreHref="0767FDFD-0422-4E5A-BC8A-3BE11E5BBA05",currentUrl=new URL(window.location),kQuery=currentUrl.searchParams.get(kQueryArg);if(kQuery){const e=new URL(window.location);e.searchParams.delete(kQueryArg),window.history.replaceState({},"",e)}window.document.addEventListener("DOMContentLoaded",function(e){var t=window.document.getElementById("quarto-search");if(!t)return;const{autocomplete:n}=window["@algolia/autocomplete-js"];let o={},s={};const r=window.document.getElementById("quarto-search-options");if(r){const a=r.textContent;o=JSON.parse(a),s=o.language}o.type==="overlay"?t.classList.add("type-overlay"):t.classList.add("type-textbox");const i=kQuery,u=currentUrl.searchParams.get(kResultsArg),c=window.document.querySelector("main");i&&c&&(highlight(i,c),window.addEventListener("pageshow",function(a){if(!a.persisted){for(const f of c.querySelectorAll("mark"))openAllTabsetsContainingEl(f);currentUrl.hash||requestAnimationFrame(()=>scrollToFirstVisibleMatch(c))}},{once:!0}));let g=!0;const w=a=>{c&&g&&i&&a!==i&&(clearHighlight(i,c),g=!1)},p=o.type==="overlay"?"all":"(max-width: 991px)",E=configurePlugins(o);let d=null;const{setIsOpen:b,setQuery:x,setCollections:I}=n({container:t,detachedMediaQuery:p,defaultActiveItemId:0,panelContainer:"#quarto-search-results",panelPlacement:o["panel-placement"],debug:!1,openOnFocus:!0,plugins:E,classNames:{form:"d-flex"},placeholder:s["search-text-placeholder"],translations:{clearButtonTitle:s["search-clear-button-title"],detachedCancelButtonText:s["search-detached-cancel-button-title"],submitButtonTitle:s["search-submit-button-title"]},initialState:{query:i},getItemUrl({item:a}){return a.href},onStateChange({state:a}){w(a.query),a.isOpen&&d&&!d.isOpen&&setTimeout(()=>{positionPanel(o["panel-placement"])},150),showCopyLink(a.query,o),d=a},reshape({sources:a,state:f}){return a.map(y=>{try{const k=y.getItems();validateItems(k);const l=new Map;k.forEach(m=>{const v=m.href.split("#"),P=v[0],T=v.length===1,M=l.get(P);M?(T?M.unshift(m):M.push(m),l.set(P,M)):l.set(P,[m])});const h=[];let S=1;for(const[m,v]of l){const P=v[0];h.push({...P,type:kItemTypeDoc});const T=o["collapse-after"],M=typeof T=="number"?T:1;if(v.length>1){const q=`search-more-${S}`,N=f.context.expanded&&f.context.expanded.includes(q),A=v.length-M;for(let L=1;L<v.length;L++)T&&L===M&&h.push({target:q,title:N?s["search-hide-matches-text"]:A===1?`${A} ${s["search-more-match-text"]}`:`${A} ${s["search-more-matches-text"]}`,type:kItemTypeMore,href:kItemTypeMoreHref}),(N||!T||L<M)&&h.push({...v[L],type:kItemTypeItem,target:q})}S+=1}return{...y,getItems(){return h}}}catch(k){return{...y,getItems(){return[{title:k.name||"An Error Occurred While Searching",text:k.message||"An unknown error occurred while attempting to perform the requested search.",type:kItemTypeError}]}}}})},navigator:{navigate({itemUrl:a}){a!==offsetURL(kItemTypeMoreHref)&&window.location.assign(a)},navigateNewTab({itemUrl:a}){if(a!==offsetURL(kItemTypeMoreHref)){const f=window.open(a,"_blank","noopener");f&&f.focus()}},navigateNewWindow({itemUrl:a}){a!==offsetURL(kItemTypeMoreHref)&&window.open(a,"_blank","noopener")}},getSources({state:a,setContext:f,setActiveItemId:y,refresh:k}){return[{sourceId:"documents",getItemUrl({item:l}){if(l.href)return offsetURL(l.href)},onSelect({item:l,state:h,setContext:S,setIsOpen:m,setActiveItemId:v,refresh:P}){l.type===kItemTypeMore&&(toggleExpanded(l,h,S,v,P),m(!0))},getItems({query:l}){if(l===null||l==="")return[];const h=o.limit;if(o.algolia)return algoliaSearch(l,h,o.algolia);{const S={isCaseSensitive:!1,shouldSort:!0,minMatchCharLength:2,limit:h};return readSearchData().then(function(m){return fuseSearch(l,m,S)})}},templates:{noResults({createElement:l}){const h=d.query;return l("div",{class:`quarto-search-no-results${h?"":" no-query"}`},s["search-no-results-text"])},header({items:l,createElement:h}){const S=l.filter(m=>m.type===kItemTypeDoc).length;return S>0?h("div",{class:"search-result-header"},`${S} ${s["search-matching-documents-text"]}`):h("div",{class:"search-result-header-no-results"},"")},footer({_items:l,createElement:h}){if(o.algolia&&o.algolia["show-logo"]){const S=o.algolia.libDir,m=h("img",{src:offsetURL(`${S}/quarto-search/search-by-algolia.svg`),class:"algolia-search-logo"});return h("a",{href:"http://www.algolia.com/"},m)}},item({item:l,createElement:h}){if(l.text&&l.href&&!l.href.includes("?q=")){const[S,m]=l.href.split("#"),v=m?"#"+m:"";l.href=S+"?q="+encodeURIComponent(a.query)+v}return renderItem(l,h,a,y,f,k,o)}}}]}});if(window.quartoOpenSearch=()=>{b(!1),b(!0),focusSearchInput()},document.addEventListener("keyup",a=>{const{key:f}=a,y=o["keyboard-shortcut"],k=document.activeElement,l=["input","select","textarea","button","option"].find(h=>k.tagName.toLowerCase()===h);y&&y.includes(f)&&!l&&!document.activeElement.isContentEditable&&(a.preventDefault(),window.quartoOpenSearch())}),o.type==="overlay"){const a=window.document.querySelector("#quarto-search .aa-Autocomplete");a&&a.removeAttribute("aria-labelledby")}function C(a,f){let y=!1;return function(){y||(a.apply(this,arguments),y=!0,setTimeout(function(){y=!1},f))}}window.document.body.onscroll=C(()=>{window.matchMedia(p).matches||b(!1)},50),u&&(b(!0),focusSearchInput())});function configurePlugins(e){const t=[],n=e.algolia;if(n&&n["analytics-events"]&&n["search-only-api-key"]&&n["application-id"]){const o=n["search-only-api-key"],s=n["application-id"],r=deferredLoadPlugin(()=>{if(window.aa&&window["@algolia/autocomplete-plugin-algolia-insights"]){const i=n["cookie-consent-enabled"]||!1,u=i?void 0:Array.from(Array(20),()=>Math.floor(Math.random()*36).toString(36)).join("");window.aa("init",{appId:s,apiKey:o,useCookie:i,userToken:u});const{createAlgoliaInsightsPlugin:c}=window["@algolia/autocomplete-plugin-algolia-insights"];return c({insightsClient:window.aa,onItemsChange({insights:w,insightsEvents:p}){const E=p.flatMap(d=>{const x=[],I=d.items;for(let a=0;a<I.length;a+=20)x.push(I.slice(a,a+20));return x.map(a=>({...d,items:a}))});for(const d of E)w.viewedObjectIDs(d)}})}});return t.push(r),t}}function deferredLoadPlugin(e){let t,n;const o=()=>(!t&&n&&(t=e(),t&&t.subscribe&&t.subscribe(n)),t);return{subscribe:s=>{n=s},onStateChange:s=>{const r=o();r&&r.onStateChange&&r.onStateChange(s)},onSubmit:s=>{const r=o();r&&r.onSubmit&&r.onSubmit(s)},onReset:s=>{const r=o();r&&r.onReset&&r.onReset(s)},getSources:s=>{const r=o();return r&&r.getSources?r.getSources(s):Promise.resolve([])},data:s=>{const r=o();r&&r.data&&r.data(s)}}}function validateItems(e){if(e.length>0){const t=e[0],n=[];if(t.href==null&&n.push("href"),!t.title==null&&n.push("title"),!t.text==null&&n.push("text"),n.length===1)throw{name:`Error: Search index is missing the <code>${n[0]}</code> field.`,message:`The items being returned for this search do not include all the required fields. Please ensure that your index items include the <code>${n[0]}</code> field or use <code>index-fields</code> in your <code>_quarto.yml</code> file to specify the field names.`};if(n.length>1){const o=n.map(s=>`<code>${s}</code>`).join(", ");throw{name:`Error: Search index is missing the following fields: ${o}.`,message:`The items being returned for this search do not include all the required fields. Please ensure that your index items includes the following fields: ${o}, or use <code>index-fields</code> in your <code>_quarto.yml</code> file to specify the field names.`}}}}let lastQuery=null;function showCopyLink(e,t){const n=t.language;lastQuery=e;const o=window.document.body.querySelector(".aa-Form .aa-InputWrapperSuffix");if(o){let s=window.document.body.querySelector(".aa-Form .aa-InputWrapperSuffix .aa-CopyButton");if(s===null){s=window.document.createElement("button"),s.setAttribute("class","aa-CopyButton"),s.setAttribute("type","button"),s.setAttribute("title",n["search-copy-link-title"]),s.onmousedown=g=>{g.preventDefault(),g.stopPropagation()};const r="bi-clipboard",i="bi-check2",u=window.document.createElement("i");u.setAttribute("class",`bi ${r}`),s.appendChild(u),o.prepend(s),new window.ClipboardJS(".aa-CopyButton",{text:function(g){const w=new URL(window.location);return w.searchParams.set(kQueryArg,lastQuery),w.searchParams.set(kResultsArg,"1"),w.toString()}}).on("success",function(g){const p=g.trigger.querySelector("i.bi");p.classList.add(i),p.classList.remove(r),setTimeout(function(){p.classList.remove(i),p.classList.add(r)},1e3)})}s&&(lastQuery&&t["copy-button"]?s.style.display="flex":s.style.display="none")}}var fuseIndex=void 0,shownWarning=!1;const kFuseIndexOptions={keys:[{name:"title",weight:20},{name:"section",weight:20},{name:"text",weight:10}],ignoreLocation:!0,threshold:.1};async function readSearchData(){if(fuseIndex===void 0){if(window.location.protocol==="file:"&&!shownWarning){window.alert("Search requires JavaScript features disabled when running in file://... URLs. In order to use search, please run this document in a web server."),shownWarning=!0;return}const e=new window.Fuse([],kFuseIndexOptions),t=await fetch(offsetURL("search.json"));return t.status==200?t.json().then(function(n){return n.forEach(function(o){e.add(o)}),fuseIndex=e,fuseIndex}):Promise.reject(new Error("Unexpected status from search index request: "+t.status))}return fuseIndex}function inputElement(){return window.document.body.querySelector(".aa-Form .aa-Input")}function focusSearchInput(){setTimeout(()=>{const e=inputElement();e&&e.focus()},50)}const kItemTypeDoc="document",kItemTypeMore="document-more",kItemTypeItem="document-item",kItemTypeError="error";function renderItem(e,t,n,o,s,r,i){switch(e.type){case kItemTypeDoc:return createDocumentCard(t,"file-richtext",e.title,e.section,e.text,e.href,e.crumbs,i);case kItemTypeMore:return createMoreCard(t,e,n,o,s,r);case kItemTypeItem:return createSectionCard(t,e.section,e.text,e.href);case kItemTypeError:return createErrorCard(t,e.title,e.text);default:return}}function createDocumentCard(e,t,n,o,s,r,i,u){const c=e("i",{class:`bi bi-${t} search-result-icon`}),g=e("p",{class:"search-result-title"},n),w=[c,g],p=u["show-item-context"];if(i&&p){let f;const y=["search-result-crumbs"];p==="root"?f=i.length>1?i[0]:void 0:p==="parent"?f=i.length>1?i[i.length-2]:void 0:(f=i.length>1?i.join(" > "):void 0,y.push("search-result-crumbs-wrap"));const k=e("p",{class:y.join(" ")},f);w.push(k)}const E=e("div",{class:"search-result-title-container"},w),d=[];if(o){const f=e("p",{class:"search-result-section"},o);d.push(f)}const b=e("p",{class:"search-result-text",dangerouslySetInnerHTML:{__html:s}});d.push(b);const x=e("div",{class:"search-result-text-container"},d),I=e("div",{class:"search-result-container"},[E,x]),C=e("a",{href:offsetURL(r),class:"search-result-link"},I),a=["search-result-doc","search-item"];return o||a.push("document-selectable"),e("div",{class:a.join(" ")},C)}function createMoreCard(e,t,n,o,s,r){return e("div",{class:"search-result-more search-item",onClick:u=>{toggleExpanded(t,n,s,o,r),u.stopPropagation()}},t.title)}function toggleExpanded(e,t,n,o,s){const r=t.context.expanded||[];r.includes(e.target)?n({expanded:r.filter(i=>i!==e.target)}):n({expanded:[...r,e.target]}),s(),o(e.__autocomplete_id)}function createSectionCard(e,t,n,o){const s=createSection(e,t,n,o);return e("div",{class:"search-result-doc-section search-item"},s)}function createSection(e,t,n,o){const s=e("p",{class:"search-result-text",dangerouslySetInnerHTML:{__html:n}}),r=e("p",{class:"search-result-section"},t);return e("a",{href:offsetURL(o),class:"search-result-link"},[r,s])}function createErrorCard(e,t,n){const o=e("p",{class:"search-error-text",dangerouslySetInnerHTML:{__html:n}}),s=e("p",{class:"search-error-title",dangerouslySetInnerHTML:{__html:`<i class="bi bi-exclamation-circle search-error-icon"></i> ${t}`}});return e("div",{class:"search-error"},[s,o])}function positionPanel(e){const t=window.document.querySelector("#quarto-search-results .aa-Panel"),n=window.document.querySelector("#quarto-search .aa-Autocomplete");t&&n&&(t.style.top=`${Math.round(t.offsetTop)}px`,e==="start"?t.style.left=`${Math.round(n.left)}px`:t.style.right=`${Math.round(n.offsetRight)}px`)}function highlightMatch(e,t){if(t){const n=t.toLowerCase().indexOf(e.toLowerCase());if(n!==-1){const o="<mark class='search-match'>",s="</mark>",r=n+e.length;t=t.slice(0,n)+o+t.slice(n,r)+s+t.slice(r);const i=clipStart(t,n),u=clipEnd(t,i.position+o.length+s.length);return t=i.prefix+t.slice(i.position,u.position)+u.suffix,t}else return t}else return t}function clipStart(e,t){return t-50<0?{position:0,prefix:""}:{position:findSpace(e,t,-1).position,prefix:""}}function clipEnd(e,t){const n=t+200;if(n>e.length)return{position:e.length,suffix:""};{const o=findSpace(e,n,1);return{position:o.position,suffix:o.clipped?"\u2026":""}}}function findSpace(e,t,n){let o=t;for(;o>-1&&o<e.length;){const s=e[o];if(s===" "||s===","||s===":")return{position:n===1?o:o-n,clipped:o>1&&o<e.length};o=o+n}return{position:o-n,clipped:!1}}function clearHighlight(e,t){const n=t.childNodes;for(let o=n.length-1;o>=0;o--){const s=n[o];s.nodeType===Node.ELEMENT_NODE&&(s.tagName==="MARK"&&s.innerText.toLowerCase()===e.toLowerCase()?t.replaceChild(document.createTextNode(s.innerText),s):clearHighlight(e,s))}}function getLeafNodes(e){let t=[];function n(o){o.childNodes.length===0?t.push(o):o.childNodes.forEach(n)}return n(e),t}const markEl=e=>{const t=document.createElement("mark");return t.appendChild(document.createTextNode(e)),t},matchAncestors=(e,t)=>{let n=[];for(;e;)e.matches?.(t)&&n.push(e),e=e.parentNode;return n},isWhitespace=e=>e.trim().length===0,initMatch=()=>({i:0,lohisByNode:new Map}),advanceMatch=(e,t,n)=>{n.i++;const o=n.lohisByNode.get(e);n.lohisByNode.set(e,{lo:o?.lo??t,hi:t})};function searchMatches(e,t){const n=e.toLowerCase().replace(/\s+/g," "),o=getLeafNodes(t),s=[];let r=initMatch();for(const i of o){const u=i.textContent.toLowerCase();for(let c=0;c<u.length;c++)isWhitespace(u[c])?isWhitespace(n[r.i])&&advanceMatch(i,c,r):n[r.i]===u[c]?advanceMatch(i,c,r):(r=initMatch(),n[r.i]===u[c]&&advanceMatch(i,c,r)),r.i===n.length&&(s.push(r.lohisByNode),r=initMatch())}return s}function markMatches(e,t){const n=e.nodeValue,o=document.createDocumentFragment();let s=0;for(const[i,u]of t)o.append(document.createTextNode(n.slice(s,i)),markEl(n.slice(i,u+1))),s=u+1;o.append(document.createTextNode(n.slice(s,n.length)));const r=e.parentElement;return r?.replaceChild(o,e),r}function openAllTabsetsContainingEl(e){for(const t of matchAncestors(e,".tab-pane")){const n=t.closest(".tab-content");if(!n||n.querySelector(":scope > .tab-pane.active")?.querySelector("mark"))continue;const s=document.querySelector(`[data-bs-target="#${t.id}"]`);s&&new bootstrap.Tab(s).show()}}function scrollToFirstVisibleMatch(e){for(const t of e.querySelectorAll("mark"))if(matchAncestors(t,".tab-pane").every(o=>o.classList.contains("active"))){t.scrollIntoView({behavior:"smooth",block:"center"});return}}const arrayMapPush=(e,t,n)=>{e.has(t)||e.set(t,[]),e.set(t,[...e.get(t),n])};function highlight(e,t){const n=searchMatches(e,t),o=new Map;for(const s of n)for(const[r,{lo:i,hi:u}]of s)arrayMapPush(o,r,[i,u]);for(const[s,r]of o)markMatches(s,r)}function offsetURL(e){var t=getMeta("quarto:offset");return t?t+e:e}function getMeta(e){var t=window.document.getElementsByTagName("meta");for(let n=0;n<t.length;n++)if(t[n].getAttribute("name")===e)return t[n].getAttribute("content");return""}function algoliaSearch(e,t,n){const{getAlgoliaResults:o}=window["@algolia/autocomplete-preset-algolia"],s=n["application-id"],r=n["search-only-api-key"],i=n["index-name"],u=n["index-fields"],c=window.algoliasearch(s,r),g=n.params,w=!!n["analytics-events"];return o({searchClient:c,queries:[{indexName:i,query:e,params:{hitsPerPage:t,clickAnalytics:w,...g}}],transformResponse:p=>u?p.hits.map(d=>d.map(b=>{const x={...b};return["href","section","title","text","crumbs"].forEach(I=>{const C=u[I];C&&b[C]!==void 0&&C!==I&&(x[I]=b[C],delete x[C])}),x.text=highlightMatch(e,x.text),x})):p.hits.map(E=>E.map(d=>({...d,text:highlightMatch(e,d.text)})))})}let subSearchTerm,subSearchFuse;const kFuseMaxWait=125;async function fuseSearch(e,t,n){let o=t;subSearchFuse!==void 0&&e.startsWith(subSearchTerm)?o=subSearchFuse:subSearchFuse!==void 0&&(subSearchFuse=void 0,subSearchTerm=void 0);const s=performance.now(),r=await o.search(e,n),i=performance.now(),u=r.map(c=>{const g=(w,p,E)=>{const d=w.split("#"),b=d[0],x=b.search("\\?")>0?"&":"?";return d[0]=b+x+p+"="+E,d.join("#")};return{title:c.item.title,section:c.item.section,href:g(c.item.href,kQueryArg,e),text:highlightMatch(e,c.item.text),crumbs:c.item.crumbs}});return i-s>kFuseMaxWait&&subSearchFuse===void 0&&r.length<n.limit&&(subSearchTerm=e,subSearchFuse=new window.Fuse([],kFuseIndexOptions),r.forEach(c=>{subSearchFuse.add(c.item)})),u}
+const kQueryArg = "q";
+const kResultsArg = "show-results";
+
+// If items don't provide a URL, then both the navigator and the onSelect
+// function aren't called (and therefore, the default implementation is used)
+//
+// We're using this sentinel URL to signal to those handlers that this
+// item is a more item (along with the type) and can be handled appropriately
+const kItemTypeMoreHref = "0767FDFD-0422-4E5A-BC8A-3BE11E5BBA05";
+
+// Capture search params and clean ?q= from URL at module load time, before
+// any DOMContentLoaded handlers run. quarto-nav.js resolves all <a> hrefs
+// against window.location during DOMContentLoaded — if ?q= is still present,
+// every link on the page gets the query param baked into its href.
+const currentUrl = new URL(window.location);
+const kQuery = currentUrl.searchParams.get(kQueryArg);
+if (kQuery) {
+  const replacementUrl = new URL(window.location);
+  replacementUrl.searchParams.delete(kQueryArg);
+  window.history.replaceState({}, "", replacementUrl);
+}
+
+window.document.addEventListener("DOMContentLoaded", function (_event) {
+  // Ensure that search is available on this page. If it isn't,
+  // should return early and not do anything
+  var searchEl = window.document.getElementById("quarto-search");
+  if (!searchEl) return;
+
+  const { autocomplete } = window["@algolia/autocomplete-js"];
+
+  let quartoSearchOptions = {};
+  let language = {};
+  const searchOptionEl = window.document.getElementById(
+    "quarto-search-options"
+  );
+  if (searchOptionEl) {
+    const jsonStr = searchOptionEl.textContent;
+    quartoSearchOptions = JSON.parse(jsonStr);
+    language = quartoSearchOptions.language;
+  }
+
+  // note the search mode
+  if (quartoSearchOptions.type === "overlay") {
+    searchEl.classList.add("type-overlay");
+  } else {
+    searchEl.classList.add("type-textbox");
+  }
+
+  // Used to determine highlighting behavior for this page
+  // A `q` query param is expected when the user follows a search
+  // to this page
+  const query = kQuery;
+  const showSearchResults = currentUrl.searchParams.get(kResultsArg);
+  const mainEl = window.document.querySelector("main");
+
+  // highlight matches on the page
+  if (query && mainEl) {
+    highlight(query, mainEl);
+
+    // Activate tabs on pageshow — after tabsets.js restores localStorage state.
+    // tabsets.js registers its pageshow handler during module execution (before
+    // DOMContentLoaded). By registering ours during DOMContentLoaded, listener
+    // ordering guarantees we run after tabsets.js — so search activation wins.
+    window.addEventListener("pageshow", function (event) {
+      if (!event.persisted) {
+        for (const mark of mainEl.querySelectorAll("mark")) {
+          openAllTabsetsContainingEl(mark);
+        }
+        // Only scroll to first match when there's no hash fragment.
+        // With a hash, the browser already scrolled to the target section.
+        if (!currentUrl.hash) {
+          requestAnimationFrame(() => scrollToFirstVisibleMatch(mainEl));
+        }
+      }
+    }, { once: true });
+  }
+
+  // function to clear highlighting on the page when the search query changes
+  // (e.g. if the user edits the query or clears it)
+  let highlighting = true;
+  const resetHighlighting = (searchTerm) => {
+    if (mainEl && highlighting && query && searchTerm !== query) {
+      clearHighlight(query, mainEl);
+      highlighting = false;
+    }
+  };
+
+  // Responsively switch to overlay mode if the search is present on the navbar
+  // Note that switching the sidebar to overlay mode requires more coordinate (not just
+  // the media query since we generate different HTML for sidebar overlays than we do
+  // for sidebar input UI)
+  const detachedMediaQuery =
+    quartoSearchOptions.type === "overlay" ? "all" : "(max-width: 991px)";
+
+  // If configured, include the analytics client to send insights
+  const plugins = configurePlugins(quartoSearchOptions);
+
+  let lastState = null;
+  const { setIsOpen, setQuery, setCollections } = autocomplete({
+    container: searchEl,
+    detachedMediaQuery: detachedMediaQuery,
+    defaultActiveItemId: 0,
+    panelContainer: "#quarto-search-results",
+    panelPlacement: quartoSearchOptions["panel-placement"],
+    debug: false,
+    openOnFocus: true,
+    plugins,
+    classNames: {
+      form: "d-flex",
+    },
+    placeholder: language["search-text-placeholder"],
+    translations: {
+      clearButtonTitle: language["search-clear-button-title"],
+      detachedCancelButtonText: language["search-detached-cancel-button-title"],
+      submitButtonTitle: language["search-submit-button-title"],
+    },
+    initialState: {
+      query,
+    },
+    getItemUrl({ item }) {
+      return item.href;
+    },
+    onStateChange({ state }) {
+      // If this is a file URL, note that
+
+      // Perhaps reset highlighting
+      resetHighlighting(state.query);
+
+      // If the panel just opened, ensure the panel is positioned properly
+      if (state.isOpen) {
+        if (lastState && !lastState.isOpen) {
+          setTimeout(() => {
+            positionPanel(quartoSearchOptions["panel-placement"]);
+          }, 150);
+        }
+      }
+
+      // Perhaps show the copy link
+      showCopyLink(state.query, quartoSearchOptions);
+
+      lastState = state;
+    },
+    reshape({ sources, state }) {
+      return sources.map((source) => {
+        try {
+          const items = source.getItems();
+
+          // Validate the items
+          validateItems(items);
+
+          // group the items by document
+          const groupedItems = new Map();
+          items.forEach((item) => {
+            const hrefParts = item.href.split("#");
+            const baseHref = hrefParts[0];
+            const isDocumentItem = hrefParts.length === 1;
+
+            const items = groupedItems.get(baseHref);
+            if (!items) {
+              groupedItems.set(baseHref, [item]);
+            } else {
+              // If the href for this item matches the document
+              // exactly, place this item first as it is the item that represents
+              // the document itself
+              if (isDocumentItem) {
+                items.unshift(item);
+              } else {
+                items.push(item);
+              }
+              groupedItems.set(baseHref, items);
+            }
+          });
+
+          const reshapedItems = [];
+          let count = 1;
+          for (const [_key, value] of groupedItems) {
+            const firstItem = value[0];
+            reshapedItems.push({
+              ...firstItem,
+              type: kItemTypeDoc,
+            });
+
+            const collapseMatches = quartoSearchOptions["collapse-after"];
+            const collapseCount =
+              typeof collapseMatches === "number" ? collapseMatches : 1;
+
+            if (value.length > 1) {
+              const target = `search-more-${count}`;
+              const isExpanded =
+                state.context.expanded &&
+                state.context.expanded.includes(target);
+
+              const remainingCount = value.length - collapseCount;
+
+              for (let i = 1; i < value.length; i++) {
+                if (collapseMatches && i === collapseCount) {
+                  reshapedItems.push({
+                    target,
+                    title: isExpanded
+                      ? language["search-hide-matches-text"]
+                      : remainingCount === 1
+                        ? `${remainingCount} ${language["search-more-match-text"]}`
+                        : `${remainingCount} ${language["search-more-matches-text"]}`,
+                    type: kItemTypeMore,
+                    href: kItemTypeMoreHref,
+                  });
+                }
+
+                if (isExpanded || !collapseMatches || i < collapseCount) {
+                  reshapedItems.push({
+                    ...value[i],
+                    type: kItemTypeItem,
+                    target,
+                  });
+                }
+              }
+            }
+            count += 1;
+          }
+
+          return {
+            ...source,
+            getItems() {
+              return reshapedItems;
+            },
+          };
+        } catch (error) {
+          // Some form of error occurred
+          return {
+            ...source,
+            getItems() {
+              return [
+                {
+                  title: error.name || "An Error Occurred While Searching",
+                  text:
+                    error.message ||
+                    "An unknown error occurred while attempting to perform the requested search.",
+                  type: kItemTypeError,
+                },
+              ];
+            },
+          };
+        }
+      });
+    },
+    navigator: {
+      navigate({ itemUrl }) {
+        if (itemUrl !== offsetURL(kItemTypeMoreHref)) {
+          window.location.assign(itemUrl);
+        }
+      },
+      navigateNewTab({ itemUrl }) {
+        if (itemUrl !== offsetURL(kItemTypeMoreHref)) {
+          const windowReference = window.open(itemUrl, "_blank", "noopener");
+          if (windowReference) {
+            windowReference.focus();
+          }
+        }
+      },
+      navigateNewWindow({ itemUrl }) {
+        if (itemUrl !== offsetURL(kItemTypeMoreHref)) {
+          window.open(itemUrl, "_blank", "noopener");
+        }
+      },
+    },
+    getSources({ state, setContext, setActiveItemId, refresh }) {
+      return [
+        {
+          sourceId: "documents",
+          getItemUrl({ item }) {
+            if (item.href) {
+              return offsetURL(item.href);
+            } else {
+              return undefined;
+            }
+          },
+          onSelect({
+            item,
+            state,
+            setContext,
+            setIsOpen,
+            setActiveItemId,
+            refresh,
+          }) {
+            if (item.type === kItemTypeMore) {
+              toggleExpanded(item, state, setContext, setActiveItemId, refresh);
+
+              // Toggle more
+              setIsOpen(true);
+            }
+          },
+          getItems({ query }) {
+            if (query === null || query === "") {
+              return [];
+            }
+
+            const limit = quartoSearchOptions.limit;
+            if (quartoSearchOptions.algolia) {
+              return algoliaSearch(query, limit, quartoSearchOptions.algolia);
+            } else {
+              // Fuse search options
+              const fuseSearchOptions = {
+                isCaseSensitive: false,
+                shouldSort: true,
+                minMatchCharLength: 2,
+                limit: limit,
+              };
+
+              return readSearchData().then(function (fuse) {
+                return fuseSearch(query, fuse, fuseSearchOptions);
+              });
+            }
+          },
+          templates: {
+            noResults({ createElement }) {
+              const hasQuery = lastState.query;
+
+              return createElement(
+                "div",
+                {
+                  class: `quarto-search-no-results${hasQuery ? "" : " no-query"
+                    }`,
+                },
+                language["search-no-results-text"]
+              );
+            },
+            header({ items, createElement }) {
+              // count the documents
+              const count = items.filter((item) => {
+                return item.type === kItemTypeDoc;
+              }).length;
+
+              if (count > 0) {
+                return createElement(
+                  "div",
+                  { class: "search-result-header" },
+                  `${count} ${language["search-matching-documents-text"]}`
+                );
+              } else {
+                return createElement(
+                  "div",
+                  { class: "search-result-header-no-results" },
+                  ``
+                );
+              }
+            },
+            footer({ _items, createElement }) {
+              if (
+                quartoSearchOptions.algolia &&
+                quartoSearchOptions.algolia["show-logo"]
+              ) {
+                const libDir = quartoSearchOptions.algolia["libDir"];
+                const logo = createElement("img", {
+                  src: offsetURL(
+                    `${libDir}/quarto-search/search-by-algolia.svg`
+                  ),
+                  class: "algolia-search-logo",
+                });
+                return createElement(
+                  "a",
+                  { href: "http://www.algolia.com/" },
+                  logo
+                );
+              }
+            },
+
+            item({ item, createElement }) {
+              if (item.text && item.href && !item.href.includes('?q=')) {
+                const [main, hash] = item.href.split('#')
+                const hashAppend = hash ? '#' + hash : ''
+                item.href = main + '?q=' + encodeURIComponent(state.query) + hashAppend
+              }
+
+              return renderItem(
+                item,
+                createElement,
+                state,
+                setActiveItemId,
+                setContext,
+                refresh,
+                quartoSearchOptions
+              );
+            },
+          },
+        },
+      ];
+    },
+  });
+
+  window.quartoOpenSearch = () => {
+    setIsOpen(false);
+    setIsOpen(true);
+    focusSearchInput();
+  };
+
+  document.addEventListener("keyup", (event) => {
+    const { key } = event;
+    const kbds = quartoSearchOptions["keyboard-shortcut"];
+    const focusedEl = document.activeElement;
+
+    const isFormElFocused = [
+      "input",
+      "select",
+      "textarea",
+      "button",
+      "option",
+    ].find((tag) => {
+      return focusedEl.tagName.toLowerCase() === tag;
+    });
+
+    if (
+      kbds &&
+      kbds.includes(key) &&
+      !isFormElFocused &&
+      !document.activeElement.isContentEditable
+    ) {
+      event.preventDefault();
+      window.quartoOpenSearch();
+    }
+  });
+
+  // Remove the labeleledby attribute since it is pointing
+  // to a non-existent label
+  if (quartoSearchOptions.type === "overlay") {
+    const inputEl = window.document.querySelector(
+      "#quarto-search .aa-Autocomplete"
+    );
+    if (inputEl) {
+      inputEl.removeAttribute("aria-labelledby");
+    }
+  }
+
+  function throttle(func, wait) {
+    let waiting = false;
+    return function () {
+      if (!waiting) {
+        func.apply(this, arguments);
+        waiting = true;
+        setTimeout(function () {
+          waiting = false;
+        }, wait);
+      }
+    };
+  }
+
+  // If the main document scrolls dismiss the search results
+  // (otherwise, since they're floating in the document they can scroll with the document)
+  window.document.body.onscroll = throttle(() => {
+    // Only do this if we're not detached
+    // Bug #7117
+    // This will happen when the keyboard is shown on ios (resulting in a scroll)
+    // which then closed the search UI
+    if (!window.matchMedia(detachedMediaQuery).matches) {
+      setIsOpen(false);
+    }
+  }, 50);
+
+  if (showSearchResults) {
+    setIsOpen(true);
+    focusSearchInput();
+  }
+});
+
+function configurePlugins(quartoSearchOptions) {
+  const autocompletePlugins = [];
+  const algoliaOptions = quartoSearchOptions.algolia;
+  if (
+    algoliaOptions &&
+    algoliaOptions["analytics-events"] &&
+    algoliaOptions["search-only-api-key"] &&
+    algoliaOptions["application-id"]
+  ) {
+    const apiKey = algoliaOptions["search-only-api-key"];
+    const appId = algoliaOptions["application-id"];
+
+    // Aloglia insights may not be loaded because they require cookie consent
+    // Use deferred loading so events will start being recorded when/if consent
+    // is granted.
+    const algoliaInsightsDeferredPlugin = deferredLoadPlugin(() => {
+      if (
+        window.aa &&
+        window["@algolia/autocomplete-plugin-algolia-insights"]
+      ) {
+        // Check if cookie consent is enabled from search options
+        const cookieConsentEnabled = algoliaOptions["cookie-consent-enabled"] || false;
+
+        // Generate random session token only when cookies are disabled
+        const userToken = cookieConsentEnabled ? undefined : Array.from(Array(20), () =>
+          Math.floor(Math.random() * 36).toString(36)
+        ).join("");
+
+        window.aa("init", {
+          appId,
+          apiKey,
+          useCookie: cookieConsentEnabled,
+          userToken: userToken,
+        });
+
+        const { createAlgoliaInsightsPlugin } =
+          window["@algolia/autocomplete-plugin-algolia-insights"];
+        // Register the insights client
+        const algoliaInsightsPlugin = createAlgoliaInsightsPlugin({
+          insightsClient: window.aa,
+          onItemsChange({ insights, insightsEvents }) {
+            const events = insightsEvents.flatMap((event) => {
+              // This API limits the number of items per event to 20
+              const chunkSize = 20;
+              const itemChunks = [];
+              const eventItems = event.items;
+              for (let i = 0; i < eventItems.length; i += chunkSize) {
+                itemChunks.push(eventItems.slice(i, i + chunkSize));
+              }
+              // Split the items into multiple events that can be sent
+              const events = itemChunks.map((items) => {
+                return {
+                  ...event,
+                  items,
+                };
+              });
+              return events;
+            });
+
+            for (const event of events) {
+              insights.viewedObjectIDs(event);
+            }
+          },
+        });
+        return algoliaInsightsPlugin;
+      }
+    });
+
+    // Add the plugin
+    autocompletePlugins.push(algoliaInsightsDeferredPlugin);
+    return autocompletePlugins;
+  }
+}
+
+// For plugins that may not load immediately, create a wrapper
+// plugin and forward events and plugin data once the plugin
+// is initialized. This is useful for cases like cookie consent
+// which may prevent the analytics insights event plugin from initializing
+// immediately.
+function deferredLoadPlugin(createPlugin) {
+  let plugin = undefined;
+  let subscribeObj = undefined;
+  const wrappedPlugin = () => {
+    if (!plugin && subscribeObj) {
+      plugin = createPlugin();
+      if (plugin && plugin.subscribe) {
+        plugin.subscribe(subscribeObj);
+      }
+    }
+    return plugin;
+  };
+
+  return {
+    subscribe: (obj) => {
+      subscribeObj = obj;
+    },
+    onStateChange: (obj) => {
+      const plugin = wrappedPlugin();
+      if (plugin && plugin.onStateChange) {
+        plugin.onStateChange(obj);
+      }
+    },
+    onSubmit: (obj) => {
+      const plugin = wrappedPlugin();
+      if (plugin && plugin.onSubmit) {
+        plugin.onSubmit(obj);
+      }
+    },
+    onReset: (obj) => {
+      const plugin = wrappedPlugin();
+      if (plugin && plugin.onReset) {
+        plugin.onReset(obj);
+      }
+    },
+    getSources: (obj) => {
+      const plugin = wrappedPlugin();
+      if (plugin && plugin.getSources) {
+        return plugin.getSources(obj);
+      } else {
+        return Promise.resolve([]);
+      }
+    },
+    data: (obj) => {
+      const plugin = wrappedPlugin();
+      if (plugin && plugin.data) {
+        plugin.data(obj);
+      }
+    },
+  };
+}
+
+function validateItems(items) {
+  // Validate the first item
+  if (items.length > 0) {
+    const item = items[0];
+    const missingFields = [];
+    if (item.href == undefined) {
+      missingFields.push("href");
+    }
+    if (!item.title == undefined) {
+      missingFields.push("title");
+    }
+    if (!item.text == undefined) {
+      missingFields.push("text");
+    }
+
+    if (missingFields.length === 1) {
+      throw {
+        name: `Error: Search index is missing the <code>${missingFields[0]}</code> field.`,
+        message: `The items being returned for this search do not include all the required fields. Please ensure that your index items include the <code>${missingFields[0]}</code> field or use <code>index-fields</code> in your <code>_quarto.yml</code> file to specify the field names.`,
+      };
+    } else if (missingFields.length > 1) {
+      const missingFieldList = missingFields
+        .map((field) => {
+          return `<code>${field}</code>`;
+        })
+        .join(", ");
+
+      throw {
+        name: `Error: Search index is missing the following fields: ${missingFieldList}.`,
+        message: `The items being returned for this search do not include all the required fields. Please ensure that your index items includes the following fields: ${missingFieldList}, or use <code>index-fields</code> in your <code>_quarto.yml</code> file to specify the field names.`,
+      };
+    }
+  }
+}
+
+let lastQuery = null;
+function showCopyLink(query, options) {
+  const language = options.language;
+  lastQuery = query;
+  // Insert share icon
+  const inputSuffixEl = window.document.body.querySelector(
+    ".aa-Form .aa-InputWrapperSuffix"
+  );
+
+  if (inputSuffixEl) {
+    let copyButtonEl = window.document.body.querySelector(
+      ".aa-Form .aa-InputWrapperSuffix .aa-CopyButton"
+    );
+
+    if (copyButtonEl === null) {
+      copyButtonEl = window.document.createElement("button");
+      copyButtonEl.setAttribute("class", "aa-CopyButton");
+      copyButtonEl.setAttribute("type", "button");
+      copyButtonEl.setAttribute("title", language["search-copy-link-title"]);
+      copyButtonEl.onmousedown = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+      };
+
+      const linkIcon = "bi-clipboard";
+      const checkIcon = "bi-check2";
+
+      const shareIconEl = window.document.createElement("i");
+      shareIconEl.setAttribute("class", `bi ${linkIcon}`);
+      copyButtonEl.appendChild(shareIconEl);
+      inputSuffixEl.prepend(copyButtonEl);
+
+      const clipboard = new window.ClipboardJS(".aa-CopyButton", {
+        text: function (_trigger) {
+          const copyUrl = new URL(window.location);
+          copyUrl.searchParams.set(kQueryArg, lastQuery);
+          copyUrl.searchParams.set(kResultsArg, "1");
+          return copyUrl.toString();
+        },
+      });
+      clipboard.on("success", function (e) {
+        // Focus the input
+
+        // button target
+        const button = e.trigger;
+        const icon = button.querySelector("i.bi");
+
+        // flash "checked"
+        icon.classList.add(checkIcon);
+        icon.classList.remove(linkIcon);
+        setTimeout(function () {
+          icon.classList.remove(checkIcon);
+          icon.classList.add(linkIcon);
+        }, 1000);
+      });
+    }
+
+    // If there is a query, show the link icon
+    if (copyButtonEl) {
+      if (lastQuery && options["copy-button"]) {
+        copyButtonEl.style.display = "flex";
+      } else {
+        copyButtonEl.style.display = "none";
+      }
+    }
+  }
+}
+
+/* Search Index Handling */
+// create the index
+var fuseIndex = undefined;
+var shownWarning = false;
+
+// fuse index options
+const kFuseIndexOptions = {
+  keys: [
+    { name: "title", weight: 20 },
+    { name: "section", weight: 20 },
+    { name: "text", weight: 10 },
+  ],
+  ignoreLocation: true,
+  threshold: 0.1,
+};
+
+async function readSearchData() {
+  // Initialize the search index on demand
+  if (fuseIndex === undefined) {
+    if (window.location.protocol === "file:" && !shownWarning) {
+      window.alert(
+        "Search requires JavaScript features disabled when running in file://... URLs. In order to use search, please run this document in a web server."
+      );
+      shownWarning = true;
+      return;
+    }
+    const fuse = new window.Fuse([], kFuseIndexOptions);
+
+    // fetch the main search.json
+    const response = await fetch(offsetURL("search.json"));
+    if (response.status == 200) {
+      return response.json().then(function (searchDocs) {
+        searchDocs.forEach(function (searchDoc) {
+          fuse.add(searchDoc);
+        });
+        fuseIndex = fuse;
+        return fuseIndex;
+      });
+    } else {
+      return Promise.reject(
+        new Error(
+          "Unexpected status from search index request: " + response.status
+        )
+      );
+    }
+  }
+
+  return fuseIndex;
+}
+
+function inputElement() {
+  return window.document.body.querySelector(".aa-Form .aa-Input");
+}
+
+function focusSearchInput() {
+  setTimeout(() => {
+    const inputEl = inputElement();
+    if (inputEl) {
+      inputEl.focus();
+    }
+  }, 50);
+}
+
+/* Panels */
+const kItemTypeDoc = "document";
+const kItemTypeMore = "document-more";
+const kItemTypeItem = "document-item";
+const kItemTypeError = "error";
+
+function renderItem(
+  item,
+  createElement,
+  state,
+  setActiveItemId,
+  setContext,
+  refresh,
+  quartoSearchOptions
+) {
+  switch (item.type) {
+    case kItemTypeDoc:
+      return createDocumentCard(
+        createElement,
+        "file-richtext",
+        item.title,
+        item.section,
+        item.text,
+        item.href,
+        item.crumbs,
+        quartoSearchOptions
+      );
+    case kItemTypeMore:
+      return createMoreCard(
+        createElement,
+        item,
+        state,
+        setActiveItemId,
+        setContext,
+        refresh
+      );
+    case kItemTypeItem:
+      return createSectionCard(
+        createElement,
+        item.section,
+        item.text,
+        item.href
+      );
+    case kItemTypeError:
+      return createErrorCard(createElement, item.title, item.text);
+    default:
+      return undefined;
+  }
+}
+
+function createDocumentCard(
+  createElement,
+  icon,
+  title,
+  section,
+  text,
+  href,
+  crumbs,
+  quartoSearchOptions
+) {
+  const iconEl = createElement("i", {
+    class: `bi bi-${icon} search-result-icon`,
+  });
+  const titleEl = createElement("p", { class: "search-result-title" }, title);
+  const titleContents = [iconEl, titleEl];
+  const showParent = quartoSearchOptions["show-item-context"];
+  if (crumbs && showParent) {
+    let crumbsOut = undefined;
+    const crumbClz = ["search-result-crumbs"];
+    if (showParent === "root") {
+      crumbsOut = crumbs.length > 1 ? crumbs[0] : undefined;
+    } else if (showParent === "parent") {
+      crumbsOut = crumbs.length > 1 ? crumbs[crumbs.length - 2] : undefined;
+    } else {
+      crumbsOut = crumbs.length > 1 ? crumbs.join(" > ") : undefined;
+      crumbClz.push("search-result-crumbs-wrap");
+    }
+
+    const crumbEl = createElement(
+      "p",
+      { class: crumbClz.join(" ") },
+      crumbsOut
+    );
+    titleContents.push(crumbEl);
+  }
+
+  const titleContainerEl = createElement(
+    "div",
+    { class: "search-result-title-container" },
+    titleContents
+  );
+
+  const textEls = [];
+  if (section) {
+    const sectionEl = createElement(
+      "p",
+      { class: "search-result-section" },
+      section
+    );
+    textEls.push(sectionEl);
+  }
+  const descEl = createElement("p", {
+    class: "search-result-text",
+    dangerouslySetInnerHTML: {
+      __html: text,
+    },
+  });
+  textEls.push(descEl);
+
+  const textContainerEl = createElement(
+    "div",
+    { class: "search-result-text-container" },
+    textEls
+  );
+
+  const containerEl = createElement(
+    "div",
+    {
+      class: "search-result-container",
+    },
+    [titleContainerEl, textContainerEl]
+  );
+
+  const linkEl = createElement(
+    "a",
+    {
+      href: offsetURL(href),
+      class: "search-result-link",
+    },
+    containerEl
+  );
+
+  const classes = ["search-result-doc", "search-item"];
+  if (!section) {
+    classes.push("document-selectable");
+  }
+
+  return createElement(
+    "div",
+    {
+      class: classes.join(" "),
+    },
+    linkEl
+  );
+}
+
+function createMoreCard(
+  createElement,
+  item,
+  state,
+  setActiveItemId,
+  setContext,
+  refresh
+) {
+  const moreCardEl = createElement(
+    "div",
+    {
+      class: "search-result-more search-item",
+      onClick: (e) => {
+        // Handle expanding the sections by adding the expanded
+        // section to the list of expanded sections
+        toggleExpanded(item, state, setContext, setActiveItemId, refresh);
+        e.stopPropagation();
+      },
+    },
+    item.title
+  );
+
+  return moreCardEl;
+}
+
+function toggleExpanded(item, state, setContext, setActiveItemId, refresh) {
+  const expanded = state.context.expanded || [];
+  if (expanded.includes(item.target)) {
+    setContext({
+      expanded: expanded.filter((target) => target !== item.target),
+    });
+  } else {
+    setContext({ expanded: [...expanded, item.target] });
+  }
+
+  refresh();
+  setActiveItemId(item.__autocomplete_id);
+}
+
+function createSectionCard(createElement, section, text, href) {
+  const sectionEl = createSection(createElement, section, text, href);
+  return createElement(
+    "div",
+    {
+      class: "search-result-doc-section search-item",
+    },
+    sectionEl
+  );
+}
+
+function createSection(createElement, title, text, href) {
+  const descEl = createElement("p", {
+    class: "search-result-text",
+    dangerouslySetInnerHTML: {
+      __html: text,
+    },
+  });
+
+  const titleEl = createElement("p", { class: "search-result-section" }, title);
+  const linkEl = createElement(
+    "a",
+    {
+      href: offsetURL(href),
+      class: "search-result-link",
+    },
+    [titleEl, descEl]
+  );
+  return linkEl;
+}
+
+function createErrorCard(createElement, title, text) {
+  const descEl = createElement("p", {
+    class: "search-error-text",
+    dangerouslySetInnerHTML: {
+      __html: text,
+    },
+  });
+
+  const titleEl = createElement("p", {
+    class: "search-error-title",
+    dangerouslySetInnerHTML: {
+      __html: `<i class="bi bi-exclamation-circle search-error-icon"></i> ${title}`,
+    },
+  });
+  const errorEl = createElement("div", { class: "search-error" }, [
+    titleEl,
+    descEl,
+  ]);
+  return errorEl;
+}
+
+function positionPanel(pos) {
+  const panelEl = window.document.querySelector(
+    "#quarto-search-results .aa-Panel"
+  );
+  const inputEl = window.document.querySelector(
+    "#quarto-search .aa-Autocomplete"
+  );
+
+  if (panelEl && inputEl) {
+    panelEl.style.top = `${Math.round(panelEl.offsetTop)}px`;
+    if (pos === "start") {
+      panelEl.style.left = `${Math.round(inputEl.left)}px`;
+    } else {
+      panelEl.style.right = `${Math.round(inputEl.offsetRight)}px`;
+    }
+  }
+}
+
+/* Highlighting */
+// highlighting functions
+function highlightMatch(query, text) {
+  if (text) {
+    const start = text.toLowerCase().indexOf(query.toLowerCase());
+    if (start !== -1) {
+      const startMark = "<mark class='search-match'>";
+      const endMark = "</mark>";
+
+      const end = start + query.length;
+      text =
+        text.slice(0, start) +
+        startMark +
+        text.slice(start, end) +
+        endMark +
+        text.slice(end);
+      const startInfo = clipStart(text, start);
+      const endInfo = clipEnd(
+        text,
+        startInfo.position + startMark.length + endMark.length
+      );
+      text =
+        startInfo.prefix +
+        text.slice(startInfo.position, endInfo.position) +
+        endInfo.suffix;
+
+      return text;
+    } else {
+      return text;
+    }
+  } else {
+    return text;
+  }
+}
+
+function clipStart(text, pos) {
+  const clipStart = pos - 50;
+  if (clipStart < 0) {
+    // This will just return the start of the string
+    return {
+      position: 0,
+      prefix: "",
+    };
+  } else {
+    // We're clipping before the start of the string, walk backwards to the first space.
+    const spacePos = findSpace(text, pos, -1);
+    return {
+      position: spacePos.position,
+      prefix: "",
+    };
+  }
+}
+
+function clipEnd(text, pos) {
+  const clipEnd = pos + 200;
+  if (clipEnd > text.length) {
+    return {
+      position: text.length,
+      suffix: "",
+    };
+  } else {
+    const spacePos = findSpace(text, clipEnd, 1);
+    return {
+      position: spacePos.position,
+      suffix: spacePos.clipped ? "…" : "",
+    };
+  }
+}
+
+function findSpace(text, start, step) {
+  let stepPos = start;
+  while (stepPos > -1 && stepPos < text.length) {
+    const char = text[stepPos];
+    if (char === " " || char === "," || char === ":") {
+      return {
+        position: step === 1 ? stepPos : stepPos - step,
+        clipped: stepPos > 1 && stepPos < text.length,
+      };
+    }
+    stepPos = stepPos + step;
+  }
+
+  return {
+    position: stepPos - step,
+    clipped: false,
+  };
+}
+
+// removes highlighting as implemented by the mark tag
+function clearHighlight(searchterm, el) {
+  const childNodes = el.childNodes;
+  for (let i = childNodes.length - 1; i >= 0; i--) {
+    const node = childNodes[i];
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      if (
+        node.tagName === "MARK" &&
+        node.innerText.toLowerCase() === searchterm.toLowerCase()
+      ) {
+        el.replaceChild(document.createTextNode(node.innerText), node);
+      } else {
+        clearHighlight(searchterm, node);
+      }
+    }
+  }
+}
+
+/** Get all html nodes under the given `root` that don't have children. */
+function getLeafNodes(root) {
+  let leaves = [];
+
+  function traverse(node) {
+    if (node.childNodes.length === 0) {
+      leaves.push(node);
+    } else {
+      node.childNodes.forEach(traverse);
+    }
+  }
+
+  traverse(root);
+  return leaves;
+}
+/** create and return `<mark>${txt}</mark>` */
+const markEl = txt => {
+  const el = document.createElement("mark");
+  el.appendChild(document.createTextNode(txt));
+  return el
+}
+/** get all ancestors of an element matching the given css selector */
+const matchAncestors = (el, selector) => {
+  let ancestors = [];
+  while (el) {
+    if (el.matches?.(selector)) ancestors.push(el);
+    el = el.parentNode;
+  }
+  return ancestors;
+};
+
+const isWhitespace = s => s.trim().length === 0
+// =================
+// MATCHING CODE
+// =================
+const initMatch = () => ({
+  i: 0,
+  lohisByNode: new Map()
+})
+/** 
+ * keeps track of the start (lo) and end (hi) index of the match per node (leaf)
+ * note: mutates the contents of `matchContext`
+ */
+const advanceMatch = (leaf, leafi, matchContext) => {
+  matchContext.i++
+
+  const curLoHi = matchContext.lohisByNode.get(leaf)
+
+  matchContext.lohisByNode.set(leaf, { lo: curLoHi?.lo ?? leafi, hi: leafi })
+}
+/**
+ * Finds all non-overlapping matches for a search string in the document. 
+ * The search string may be split between multiple consecutive leaf nodes.
+ * 
+ * Whitespace in the search string must be present in the document to match, but
+ * there may be addititional whitespace in the document that is ignored.
+ * 
+ * e.g. searching for `dogs rock` would match `dogs  \n <span> rock</span>`,
+ * and would contribute the match 
+ * `{ i:9, els: new Map([[textNode, {lo:0, hi:8}],[spanNode,{lo:0,hi:5}]]) }`
+ * 
+ * @returns {Map<HTMLElement,{lo:number,hi:number}>[]}
+ */
+function searchMatches(inSearch, el) {
+  // searchText has all sequences of whitespace replaced by a single space
+  const searchText = inSearch.toLowerCase().replace(/\s+/g, ' ')
+  const leafNodes = getLeafNodes(el)
+
+  /** @type {Map<HTMLElement,{lo:number,hi:number}>[]} */
+  const matches = []
+  /** @type {{i:number; els:Map<HTMLElement,{lo:number,hi:number}>}[]} */
+  let curMatchContext = initMatch()
+
+  for (const leaf of leafNodes) {
+    const leafStr = leaf.textContent.toLowerCase()
+    // for each character in this leaf's text:
+    for (let leafi = 0; leafi < leafStr.length; leafi++) {
+
+      if (isWhitespace(leafStr[leafi])) {
+        // if there is at least one whitespace in the document
+        // we advance over a search text whitespace.
+        if (isWhitespace(searchText[curMatchContext.i])) advanceMatch(leaf, leafi, curMatchContext)
+        // all sequences of whitespace are otherwise ignored.
+      } else {
+        if (searchText[curMatchContext.i] === leafStr[leafi]) {
+          advanceMatch(leaf, leafi, curMatchContext)
+        } else {
+          curMatchContext = initMatch()
+          // if current character in the document did not match at i in the search text,
+          // reset the search and see if that character matches at 0 in the search text.
+          if (searchText[curMatchContext.i] === leafStr[leafi]) advanceMatch(leaf, leafi, curMatchContext)
+        }
+      }
+
+      const isMatchComplete = curMatchContext.i === searchText.length
+      if (isMatchComplete) {
+        matches.push(curMatchContext.lohisByNode)
+        curMatchContext = initMatch()
+      }
+    }
+  }
+
+  return matches
+}
+
+/** 
+ * e.g. `markMatches(myTextNode, [[0,5],[12,15]])` would wrap the
+ * character sequences in myTextNode from 0-5 and 12-15 in marks.
+ * Its important to mark all sequences in a text node at once
+ * because this function replaces the entire text node; so any
+ * other references to that text node will no longer be in the DOM.
+ */
+function markMatches(node, lohis) {
+  const text = node.nodeValue
+
+  const markFragment = document.createDocumentFragment();
+
+  let prevHi = 0
+  for (const [lo, hi] of lohis) {
+    markFragment.append(
+      document.createTextNode(text.slice(prevHi, lo)),
+      markEl(text.slice(lo, hi + 1))
+    )
+    prevHi = hi + 1
+  }
+  markFragment.append(
+    document.createTextNode(text.slice(prevHi, text.length))
+  )
+
+  const parent = node.parentElement
+  parent?.replaceChild(markFragment, node)
+  return parent
+}
+
+// Activate ancestor tabs so a search match inside an inactive pane becomes visible.
+// When multiple panes in the same tabset contain matches, avoid switching away from
+// the currently active pane — the user already sees a match there.
+function openAllTabsetsContainingEl(el) {
+  for (const pane of matchAncestors(el, '.tab-pane')) {
+    const tabContent = pane.closest('.tab-content');
+    if (!tabContent) continue;
+    const activePane = tabContent.querySelector(':scope > .tab-pane.active');
+    if (activePane?.querySelector('mark')) continue;
+    const tabButton = document.querySelector(`[data-bs-target="#${pane.id}"]`);
+    if (tabButton) new bootstrap.Tab(tabButton).show();
+  }
+}
+
+function scrollToFirstVisibleMatch(mainEl) {
+  for (const mark of mainEl.querySelectorAll("mark")) {
+    const isMarkVisible = matchAncestors(mark, '.tab-pane').every(markTabPane =>
+      markTabPane.classList.contains("active")
+    )
+    if (isMarkVisible) {
+      mark.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+  }
+}
+
+/**
+ * e.g.
+ * ```js
+ * const m = new Map()
+ *
+ * arrayMapPush(m, 'dog', 'Max')
+ * console.log(m) // Map { dog->['Max'] }
+ * 
+ * arrayMapPush(m, 'dog', 'Samba')
+ * arrayMapPush(m, 'cat', 'Scruffle')
+ * console.log(m) // Map { dog->['Max', 'Samba'], cat->['Scruffle'] }
+ * ```
+ */
+const arrayMapPush = (map, key, item) => {
+  if (!map.has(key)) map.set(key, [])
+  map.set(key, [...map.get(key), item])
+}
+
+// copy&paste any string from a quarto page and
+// this should find that string in the page and highlight it.
+// exception: text that starts outside/inside a tabset and ends
+// inside/outside that tabset. 
+function highlight(searchStr, el) {
+  const matches = searchMatches(searchStr, el);
+
+  const matchesGroupedByNode = new Map()
+  for (const match of matches) {
+    for (const [mel, { lo, hi }] of match) {
+      arrayMapPush(matchesGroupedByNode, mel, [lo, hi])
+    }
+  }
+
+  for (const [node, lohis] of matchesGroupedByNode) {
+    markMatches(node, lohis)
+  }
+}
+
+/* Link Handling */
+// get the offset from this page for a given site root relative url
+function offsetURL(url) {
+  var offset = getMeta("quarto:offset");
+  return offset ? offset + url : url;
+}
+
+// read a meta tag value
+function getMeta(metaName) {
+  var metas = window.document.getElementsByTagName("meta");
+  for (let i = 0; i < metas.length; i++) {
+    if (metas[i].getAttribute("name") === metaName) {
+      return metas[i].getAttribute("content");
+    }
+  }
+  return "";
+}
+
+function algoliaSearch(query, limit, algoliaOptions) {
+  const { getAlgoliaResults } = window["@algolia/autocomplete-preset-algolia"];
+
+  const applicationId = algoliaOptions["application-id"];
+  const searchOnlyApiKey = algoliaOptions["search-only-api-key"];
+  const indexName = algoliaOptions["index-name"];
+  const indexFields = algoliaOptions["index-fields"];
+  const searchClient = window.algoliasearch(applicationId, searchOnlyApiKey);
+  const searchParams = algoliaOptions["params"];
+  const searchAnalytics = !!algoliaOptions["analytics-events"];
+
+  return getAlgoliaResults({
+    searchClient,
+    queries: [
+      {
+        indexName: indexName,
+        query,
+        params: {
+          hitsPerPage: limit,
+          clickAnalytics: searchAnalytics,
+          ...searchParams,
+        },
+      },
+    ],
+    transformResponse: (response) => {
+      if (!indexFields) {
+        return response.hits.map((hit) => {
+          return hit.map((item) => {
+            return {
+              ...item,
+              text: highlightMatch(query, item.text),
+            };
+          });
+        });
+      } else {
+        const remappedHits = response.hits.map((hit) => {
+          return hit.map((item) => {
+            const newItem = { ...item };
+            ["href", "section", "title", "text", "crumbs"].forEach(
+              (keyName) => {
+                const mappedName = indexFields[keyName];
+                if (
+                  mappedName &&
+                  item[mappedName] !== undefined &&
+                  mappedName !== keyName
+                ) {
+                  newItem[keyName] = item[mappedName];
+                  delete newItem[mappedName];
+                }
+              }
+            );
+            newItem.text = highlightMatch(query, newItem.text);
+            return newItem;
+          });
+        });
+        return remappedHits;
+      }
+    },
+  });
+}
+
+let subSearchTerm = undefined;
+let subSearchFuse = undefined;
+const kFuseMaxWait = 125;
+
+async function fuseSearch(query, fuse, fuseOptions) {
+  let index = fuse;
+  // Fuse.js using the Bitap algorithm for text matching which runs in
+  // O(nm) time (no matter the structure of the text). In our case this
+  // means that long search terms mixed with large index gets very slow
+  //
+  // This injects a subIndex that will be used once the terms get long enough
+  // Usually making this subindex is cheap since there will typically be
+  // a subset of results matching the existing query
+  if (subSearchFuse !== undefined && query.startsWith(subSearchTerm)) {
+    // Use the existing subSearchFuse
+    index = subSearchFuse;
+  } else if (subSearchFuse !== undefined) {
+    // The term changed, discard the existing fuse
+    subSearchFuse = undefined;
+    subSearchTerm = undefined;
+  }
+
+  // Search using the active fuse
+  const then = performance.now();
+  const resultsRaw = await index.search(query, fuseOptions);
+  const now = performance.now();
+
+  const results = resultsRaw.map((result) => {
+    const addParam = (url, name, value) => {
+      const anchorParts = url.split("#");
+      const baseUrl = anchorParts[0];
+      const sep = baseUrl.search("\\?") > 0 ? "&" : "?";
+      anchorParts[0] = baseUrl + sep + name + "=" + value;
+      return anchorParts.join("#");
+    };
+
+    return {
+      title: result.item.title,
+      section: result.item.section,
+      href: addParam(result.item.href, kQueryArg, query),
+      text: highlightMatch(query, result.item.text),
+      crumbs: result.item.crumbs,
+    };
+  });
+
+  // If we don't have a subfuse and the query is long enough, go ahead
+  // and create a subfuse to use for subsequent queries
+  if (
+    now - then > kFuseMaxWait &&
+    subSearchFuse === undefined &&
+    resultsRaw.length < fuseOptions.limit
+  ) {
+    subSearchTerm = query;
+    subSearchFuse = new window.Fuse([], kFuseIndexOptions);
+    resultsRaw.forEach((rr) => {
+      subSearchFuse.add(rr.item);
+    });
+  }
+  return results;
+}

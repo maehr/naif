@@ -1,14 +1,30 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK"><head><meta charset="utf-8"><style>@layer __jampack__{:where(img[jampack-sized]){max-width:100%;height:auto}}</style>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK"><head>
 
-
+<meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.36">
 
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="NAIF news posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results.">
 
 <title>News – NAIF</title>
-<style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}</style>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -60,45 +76,95 @@
     "search-label": "Search"
   }
 }</script>
-<script>window.document.addEventListener("DOMContentLoaded",function(t){if(!window.document.querySelector("#listing-posts .list"))return;const i={valueNames:["listing-image","listing-title","listing-date","listing-author","listing-description","listing-categories",{data:["index"]},{data:["categories"]},{data:["listing-date-sort"]},{data:["listing-file-modified-sort"]}],searchColumns:["listing-categories","listing-search"]};window["quarto-listings"]=window["quarto-listings"]||{},window["quarto-listings"]["listing-posts"]=new List("listing-posts",i),window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()}),window.addEventListener("hashchange",()=>{window["quarto-listing-loaded"]&&window["quarto-listing-loaded"]()});
-</script>
-<style>html{scroll-behavior:smooth}</style>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-date','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-categories","listing-search"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posts'] = new List('listing-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">const typesetMath=s=>{if(window.MathJax)window.MathJax.typeset([s]);else if(window.katex)for(var r=s.getElementsByClassName("math"),d=[],a=0;a<r.length;a++){var o=r[a].firstChild;r[a].tagName=="SPAN"&&o&&o.data&&window.katex.render(o.data,r[a],{displayMode:r[a].classList.contains("display"),throwOnError:!1,macros:d,fleqn:!1})}};window.Quarto={typesetMath};
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
 </script>
 
 <link rel="alternate" type="application/rss+xml" title="NAIF news" href="index.xml" data-external="1"><meta property="og:title" content="News – NAIF">
 <meta property="og:description" content="NAIF news posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results.">
-<meta property="og:image" content="https://maehr.github.io/naif//images/logos/all-logos.jpg">
+<meta property="og:image" content="https://eth-library.github.io/naif//images/logos/all-logos.jpg">
 <meta property="og:site_name" content="NAIF">
 <meta name="twitter:title" content="News – NAIF">
 <meta name="twitter:description" content="NAIF news posts: updates, progress reports, findings, and opinion pieces on interoperability and findable research results.">
-<meta name="twitter:image" content="https://maehr.github.io/naif//images/logos/all-logos.jpg">
+<meta name="twitter:image" content="https://eth-library.github.io/naif//images/logos/all-logos.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://maehr.github.io/naif/posts/">
+<link rel="canonical" href="https://eth-library.github.io/naif/posts/">
 </head>
 
-<body class="fullcontent nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="fixed-top headroom">
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-      <div class="container-fluid navbar-container">
-      <div class="mx-auto navbar-brand-container">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">NAIF</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
-">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="me-auto navbar-nav navbar-nav-scroll">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="../posts/index.html" aria-current="page"> 
 <span class="menu-text">News</span></a>
@@ -123,17 +189,17 @@
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="page-columns page-layout-article page-navbar page-rows-contents quarto-container">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="default quarto-title-block">
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">News</h1>
-<p class="lead subtitle">Browse NAIF updates, progress reports, findings, and opinion pieces</p>
+<p class="subtitle lead">Browse NAIF updates, progress reports, findings, and opinion pieces</p>
 </div>
 
 <div>
@@ -157,31 +223,60 @@
 
 
 
-<div id="posts-category-filters" class="d-flex align-items-center flex-wrap gap-2 mb-3" role="group" aria-label="Filter posts by category" data-listing-filter-buttons="true" data-listing-id="posts">
+<div id="posts-category-filters" class="d-flex flex-wrap align-items-center gap-2 mb-3" role="group" aria-label="Filter posts by category" data-listing-filter-buttons="true" data-listing-id="posts">
 
 </div>
 <div id="listing-posts" class="quarto-listing quarto-listing-container-default">
 <div class="listing-actions-group">
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="form-control search" placeholder="Filter">
+      <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="image-right quarto-post" data-index="0" data-categories="VHJhY2slMjAz" data-listing-date-sort="1775080800000" data-listing-file-modified-sort="1775034505355" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523">
-<div class="thumbnail"><a href="../posts/2026-04-02-first-insights-swiss-repository-survey/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="0" data-categories="R2VuZXJhbA==" data-listing-date-sort="1775599200000" data-listing-file-modified-sort="1775635710693" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="889">
+<div class="thumbnail"><a href="../posts/2026-04-08-swiss-science-council-report-and-naif/index.html" class="no-external">
 
-<img src="../posts/2026-04-02-first-insights-swiss-repository-survey/images/repository-survey-hero.webp" class="thumbnail-image" alt="Stylised illustration of Switzerland with linked repository nodes" fetchpriority="high" decoding="async" width="1385" height="923" jampack-sized="true" srcset="../posts/2026-04-02-first-insights-swiss-repository-survey/images/repository-survey-hero.webp 1385w, ../posts/2026-04-02-first-insights-swiss-repository-survey/images/repository-survey-hero@1085w.webp 1085w, ../posts/2026-04-02-first-insights-swiss-repository-survey/images/repository-survey-hero@785w.webp 785w" sizes="100vw">
+<img loading="lazy" src="../posts/2026-04-08-swiss-science-council-report-and-naif/images/swr-report-page.png" class="thumbnail-image" alt="Screenshot of the federal press release page announcing the Swiss Science Council report Research Libraries as Data Hubs">
 
 </a></div>
 <div class="body">
-<h3 class="listing-title no-anchor">
+<h3 class="no-anchor listing-title">
+<a href="../posts/2026-04-08-swiss-science-council-report-and-naif/index.html" class="no-external">How the Swiss Science Council report aligns with NAIF</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2VuZXJhbA=='); return false;">General</div>
+
+</div>
+<div class="delink listing-description"><a href="../posts/2026-04-08-swiss-science-council-report-and-naif/index.html" class="no-external">
+<p>The Swiss Science Council’s report ‘Research Libraries as Data Hubs’ highlights governance, interoperability, and sustainability questions that map closely onto NAIF’s current tracks and planned national working group.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../posts/2026-04-08-swiss-science-council-report-and-naif/index.html" class="no-external">
+<div class="listing-date">
+Apr 8, 2026
+</div>
+<div class="listing-author">
+Dr Moritz Mähr
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="VHJhY2slMjAz" data-listing-date-sort="1775080800000" data-listing-file-modified-sort="1775133592285" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523">
+<div class="thumbnail"><a href="../posts/2026-04-02-first-insights-swiss-repository-survey/index.html" class="no-external">
+
+<img loading="lazy" src="../posts/2026-04-02-first-insights-swiss-repository-survey/images/repository-survey-hero.jpeg" class="thumbnail-image" alt="Stylised illustration of Switzerland with linked repository nodes">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
 <a href="../posts/2026-04-02-first-insights-swiss-repository-survey/index.html" class="no-external">First insights from the Swiss institutional repository survey</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick='return window.quartoListingCategory("VHJhY2slMjAz"),!1;
-'>Track 3</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VHJhY2slMjAz'); return false;">Track 3</div>
 
 </div>
 <div class="delink listing-description"><a href="../posts/2026-04-02-first-insights-swiss-repository-survey/index.html" class="no-external">
@@ -199,20 +294,19 @@ Pascale Bouton, Julien Sicot
 </a>
 </div>
 </div>
-<div class="image-right quarto-post" data-index="1" data-categories="R2VuZXJhbA==" data-listing-date-sort="1774393200000" data-listing-file-modified-sort="1774523565099" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="590">
+<div class="quarto-post image-right" data-index="2" data-categories="R2VuZXJhbA==" data-listing-date-sort="1774393200000" data-listing-file-modified-sort="1774523565099" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="590">
 <div class="thumbnail"><a href="../posts/2026-03-25-naif-continues-tobi/index.html" class="no-external">
 
-<img src="../posts/2026-03-25-naif-continues-tobi/images/tobi-homepage.webp" class="thumbnail-image" alt="Screenshot of the TOBI project homepage" fetchpriority="high" decoding="async" width="1600" height="900" jampack-sized="true">
+<img loading="lazy" src="../posts/2026-03-25-naif-continues-tobi/images/tobi-homepage.png" class="thumbnail-image" alt="Screenshot of the TOBI project homepage">
 
 </a></div>
 <div class="body">
-<h3 class="listing-title no-anchor">
+<h3 class="no-anchor listing-title">
 <a href="../posts/2026-03-25-naif-continues-tobi/index.html" class="no-external">How NAIF builds on TOBI’s results in Switzerland</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick='return window.quartoListingCategory("R2VuZXJhbA=="),!1;
-'>General</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R2VuZXJhbA=='); return false;">General</div>
 
 </div>
 <div class="delink listing-description"><a href="../posts/2026-03-25-naif-continues-tobi/index.html" class="no-external">
@@ -230,20 +324,19 @@ Dr Moritz Mähr
 </a>
 </div>
 </div>
-<div class="image-right quarto-post" data-index="2" data-categories="R2VuZXJhbA==" data-listing-date-sort="1773615600000" data-listing-file-modified-sort="1774359174197" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="671">
+<div class="quarto-post image-right" data-index="3" data-categories="R2VuZXJhbA==" data-listing-date-sort="1773615600000" data-listing-file-modified-sort="1774359174197" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="671">
 <div class="thumbnail"><a href="../posts/2026-03-16-slsp-strategy-2026-2029/index.html" class="no-external">
 
-<img src="../posts/2026-03-16-slsp-strategy-2026-2029/images/slsp-strategy-announcement.webp" class="thumbnail-image" alt="Screenshot of the SLSP Strategy 2026-2029 announcement page" fetchpriority="high" decoding="async" width="1600" height="900" jampack-sized="true" srcset="../posts/2026-03-16-slsp-strategy-2026-2029/images/slsp-strategy-announcement.webp 1600w, ../posts/2026-03-16-slsp-strategy-2026-2029/images/slsp-strategy-announcement@1000w.webp 1000w" sizes="100vw">
+<img loading="lazy" src="../posts/2026-03-16-slsp-strategy-2026-2029/images/slsp-strategy-announcement.png" class="thumbnail-image" alt="Screenshot of the SLSP Strategy 2026-2029 announcement page">
 
 </a></div>
 <div class="body">
-<h3 class="listing-title no-anchor">
+<h3 class="no-anchor listing-title">
 <a href="../posts/2026-03-16-slsp-strategy-2026-2029/index.html" class="no-external">SLSP strategy 2026–2029</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick='return window.quartoListingCategory("R2VuZXJhbA=="),!1;
-'>General</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R2VuZXJhbA=='); return false;">General</div>
 
 </div>
 <div class="delink listing-description"><a href="../posts/2026-03-16-slsp-strategy-2026-2029/index.html" class="no-external">
@@ -261,20 +354,19 @@ Dr Moritz Mähr
 </a>
 </div>
 </div>
-<div class="image-right quarto-post" data-index="3" data-categories="VHJhY2slMjAx" data-listing-date-sort="1772146800000" data-listing-file-modified-sort="1774359174195" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1797">
+<div class="quarto-post image-right" data-index="4" data-categories="VHJhY2slMjAx" data-listing-date-sort="1772146800000" data-listing-file-modified-sort="1774359174195" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1797">
 <div class="thumbnail"><a href="../posts/2026-02-27-naif-at-research-on-research/index.html" class="no-external">
 
-<img loading="lazy" src="../posts/2026-02-27-naif-at-research-on-research/images/poster.webp" class="thumbnail-image" alt="Poster summarising findings on the use of quantitative scientometric indicators in Swiss Higher Education Institutions." decoding="async" width="2383" height="3370" jampack-sized="true" srcset="../posts/2026-02-27-naif-at-research-on-research/images/poster.webp 2383w, ../posts/2026-02-27-naif-at-research-on-research/images/poster@1483w.webp 1483w, ../posts/2026-02-27-naif-at-research-on-research/images/poster@1183w.webp 1183w, ../posts/2026-02-27-naif-at-research-on-research/images/poster@883w.webp 883w" sizes="100vw">
+<img loading="lazy" src="../posts/2026-02-27-naif-at-research-on-research/images/poster.png" class="thumbnail-image" alt="Poster summarising findings on the use of quantitative scientometric indicators in Swiss Higher Education Institutions.">
 
 </a></div>
 <div class="body">
-<h3 class="listing-title no-anchor">
+<h3 class="no-anchor listing-title">
 <a href="../posts/2026-02-27-naif-at-research-on-research/index.html" class="no-external">NAIF at the Research on Research Event 2026</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick='return window.quartoListingCategory("VHJhY2slMjAx"),!1;
-'>Track 1</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VHJhY2slMjAx'); return false;">Track 1</div>
 
 </div>
 <div class="delink listing-description"><a href="../posts/2026-02-27-naif-at-research-on-research/index.html" class="no-external">
@@ -292,20 +384,19 @@ Dr Moritz Mähr
 </a>
 </div>
 </div>
-<div class="image-right quarto-post" data-index="4" data-categories="VHJhY2slMjA0" data-listing-date-sort="1765148400000" data-listing-file-modified-sort="1774359174180" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="887">
+<div class="quarto-post image-right" data-index="5" data-categories="VHJhY2slMjA0" data-listing-date-sort="1765148400000" data-listing-file-modified-sort="1774359174180" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="887">
 <div class="thumbnail"><a href="../posts/2026-02-10-track-4-workshop-2025-12-08/index.html" class="no-external">
 
-<img loading="lazy" src="../posts/2026-02-10-track-4-workshop-2025-12-08/images/trello-track4-workshop-board.webp" class="thumbnail-image" alt="NAIF Track 4 Trello board with exploratory maps and proposed actions" decoding="async" width="2314" height="979" jampack-sized="true" srcset="../posts/2026-02-10-track-4-workshop-2025-12-08/images/trello-track4-workshop-board.webp 2314w, ../posts/2026-02-10-track-4-workshop-2025-12-08/images/trello-track4-workshop-board@1714w.webp 1714w, ../posts/2026-02-10-track-4-workshop-2025-12-08/images/trello-track4-workshop-board@1414w.webp 1414w, ../posts/2026-02-10-track-4-workshop-2025-12-08/images/trello-track4-workshop-board@1114w.webp 1114w, ../posts/2026-02-10-track-4-workshop-2025-12-08/images/trello-track4-workshop-board@814w.webp 814w" sizes="100vw">
+<img loading="lazy" src="../posts/2026-02-10-track-4-workshop-2025-12-08/images/trello-track4-workshop-board.png" class="thumbnail-image" alt="NAIF Track 4 Trello board with exploratory maps and proposed actions">
 
 </a></div>
 <div class="body">
-<h3 class="listing-title no-anchor">
+<h3 class="no-anchor listing-title">
 <a href="../posts/2026-02-10-track-4-workshop-2025-12-08/index.html" class="no-external">Prioritising actions for better academic metadata</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick='return window.quartoListingCategory("VHJhY2slMjA0"),!1;
-'>Track 4</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VHJhY2slMjA0'); return false;">Track 4</div>
 
 </div>
 <div class="delink listing-description"><a href="../posts/2026-02-10-track-4-workshop-2025-12-08/index.html" class="no-external">
@@ -323,20 +414,19 @@ Dr Moritz Mähr
 </a>
 </div>
 </div>
-<div class="image-right quarto-post" data-index="5" data-categories="VHJhY2slMjAy" data-listing-date-sort="1762902000000" data-listing-file-modified-sort="1774359174171" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="992">
+<div class="quarto-post image-right" data-index="6" data-categories="VHJhY2slMjAy" data-listing-date-sort="1762902000000" data-listing-file-modified-sort="1774359174171" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="992">
 <div class="thumbnail"><a href="../posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html" class="no-external">
 
-<img loading="lazy" src="../posts/2025-11-12-what-switzerland-can-learn-from-other-countries/images/kira-michael.webp" class="thumbnail-image" alt="Michael Svendsen and Kira Stine Hansen" decoding="async" width="1600" height="1200" jampack-sized="true" srcset="../posts/2025-11-12-what-switzerland-can-learn-from-other-countries/images/kira-michael.webp 1600w, ../posts/2025-11-12-what-switzerland-can-learn-from-other-countries/images/kira-michael@1300w.webp 1300w, ../posts/2025-11-12-what-switzerland-can-learn-from-other-countries/images/kira-michael@1000w.webp 1000w" sizes="100vw">
+<img loading="lazy" src="../posts/2025-11-12-what-switzerland-can-learn-from-other-countries/images/kira-michael.jpg" class="thumbnail-image" alt="Michael Svendsen and Kira Stine Hansen">
 
 </a></div>
 <div class="body">
-<h3 class="listing-title no-anchor">
+<h3 class="no-anchor listing-title">
 <a href="../posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html" class="no-external">What Switzerland Can Learn from Other Countries: Review of the event “From Policy to Practice: Building a National Open Research Information Framework in Switzerland”</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick='return window.quartoListingCategory("VHJhY2slMjAy"),!1;
-'>Track 2</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VHJhY2slMjAy'); return false;">Track 2</div>
 
 </div>
 <div class="delink listing-description"><a href="../posts/2025-11-12-what-switzerland-can-learn-from-other-countries/index.html" class="no-external">
@@ -354,20 +444,19 @@ Dr Melanie Röthlisberger
 </a>
 </div>
 </div>
-<div class="image-right quarto-post" data-index="6" data-categories="VHJhY2slMjAz" data-listing-date-sort="1762729200000" data-listing-file-modified-sort="1774359174169" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
+<div class="quarto-post image-right" data-index="7" data-categories="VHJhY2slMjAz" data-listing-date-sort="1762729200000" data-listing-file-modified-sort="1774359174169" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
 <div class="thumbnail"><a href="../posts/2025-11-10-national-survey-swiss-institutional-repositories/index.html" class="no-external">
 
-<img loading="lazy" src="../posts/2025-11-10-national-survey-swiss-institutional-repositories/images/surveyhero-naif-survey.webp" class="thumbnail-image" alt="Survey page for the NAIF repositories survey" decoding="async" width="1600" height="900" jampack-sized="true">
+<img loading="lazy" src="../posts/2025-11-10-national-survey-swiss-institutional-repositories/images/surveyhero-naif-survey.png" class="thumbnail-image" alt="Survey page for the NAIF repositories survey">
 
 </a></div>
 <div class="body">
-<h3 class="listing-title no-anchor">
+<h3 class="no-anchor listing-title">
 <a href="../posts/2025-11-10-national-survey-swiss-institutional-repositories/index.html" class="no-external">NAIF launches a national survey on Swiss repositories</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick='return window.quartoListingCategory("VHJhY2slMjAz"),!1;
-'>Track 3</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VHJhY2slMjAz'); return false;">Track 3</div>
 
 </div>
 <div class="delink listing-description"><a href="../posts/2025-11-10-national-survey-swiss-institutional-repositories/index.html" class="no-external">
@@ -385,20 +474,19 @@ Julien Sicot, Simon Willemin
 </a>
 </div>
 </div>
-<div class="image-right quarto-post" data-index="7" data-categories="VHJhY2slMjAx" data-listing-date-sort="1761865200000" data-listing-file-modified-sort="1774359174168" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="782">
+<div class="quarto-post image-right" data-index="8" data-categories="VHJhY2slMjAx" data-listing-date-sort="1761865200000" data-listing-file-modified-sort="1774359174168" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="782">
 <div class="thumbnail"><a href="../posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html" class="no-external">
 
-<img loading="lazy" src="../posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/images/IMG_8727modified.webp" class="thumbnail-image" alt="Participants discussing in groups at the 6th SYoS workshop" decoding="async" width="2048" height="1182" jampack-sized="true" srcset="../posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/images/IMG_8727modified.webp 2048w, ../posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/images/IMG_8727modified@1748w.webp 1748w, ../posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/images/IMG_8727modified@1448w.webp 1448w, ../posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/images/IMG_8727modified@1148w.webp 1148w, ../posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/images/IMG_8727modified@848w.webp 848w" sizes="100vw">
+<img loading="lazy" src="../posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/images/IMG_8727modified.jpeg" class="thumbnail-image" alt="Participants discussing in groups at the 6th SYoS workshop">
 
 </a></div>
 <div class="body">
-<h3 class="listing-title no-anchor">
+<h3 class="no-anchor listing-title">
 <a href="../posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html" class="no-external">Responsible Use of Quantitative Scientometric Indicators: Insights from the 6th SYoS Workshop</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick='return window.quartoListingCategory("VHJhY2slMjAx"),!1;
-'>Track 1</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VHJhY2slMjAx'); return false;">Track 1</div>
 
 </div>
 <div class="delink listing-description"><a href="../posts/2025-10-31-responsible-use-of-quantitative-scientometric-indicators/index.html" class="no-external">
@@ -416,20 +504,19 @@ Dr Martin Jaekel
 </a>
 </div>
 </div>
-<div class="image-right quarto-post" data-index="8" data-categories="VHJhY2slMjA0" data-listing-date-sort="1758837600000" data-listing-file-modified-sort="1774359174160" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="307">
+<div class="quarto-post image-right" data-index="9" data-categories="VHJhY2slMjA0" data-listing-date-sort="1758837600000" data-listing-file-modified-sort="1774359174160" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="307">
 <div class="thumbnail"><a href="../posts/2025-09-26-naif-at-soad-day/index.html" class="no-external">
 
-<img loading="lazy" src="../posts/2025-09-26-naif-at-soad-day/images/soad-website.webp" class="thumbnail-image" alt="ETH Zurich Staffnet article about Swiss Open Academic Data Day (SOAD)" decoding="async" width="1600" height="900" jampack-sized="true" srcset="../posts/2025-09-26-naif-at-soad-day/images/soad-website.webp 1600w, ../posts/2025-09-26-naif-at-soad-day/images/soad-website@1300w.webp 1300w, ../posts/2025-09-26-naif-at-soad-day/images/soad-website@1000w.webp 1000w" sizes="100vw">
+<img loading="lazy" src="../posts/2025-09-26-naif-at-soad-day/images/soad-website.png" class="thumbnail-image" alt="ETH Zurich Staffnet article about Swiss Open Academic Data Day (SOAD)">
 
 </a></div>
 <div class="body">
-<h3 class="listing-title no-anchor">
+<h3 class="no-anchor listing-title">
 <a href="../posts/2025-09-26-naif-at-soad-day/index.html" class="no-external">Enhancing open academic data through NAIF Track 4</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick='return window.quartoListingCategory("VHJhY2slMjA0"),!1;
-'>Track 4</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VHJhY2slMjA0'); return false;">Track 4</div>
 
 </div>
 <div class="delink listing-description"><a href="../posts/2025-09-26-naif-at-soad-day/index.html" class="no-external">
@@ -447,20 +534,19 @@ Dr Moritz Mähr
 </a>
 </div>
 </div>
-<div class="image-right quarto-post" data-index="9" data-categories="R2VuZXJhbA==" data-listing-date-sort="1756332000000" data-listing-file-modified-sort="1774359174156" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="397">
+<div class="quarto-post image-right" data-index="10" data-categories="R2VuZXJhbA==" data-listing-date-sort="1756332000000" data-listing-file-modified-sort="1774359174156" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="397">
 <div class="thumbnail"><a href="../posts/2025-08-28-naif-information-event/index.html" class="no-external">
 
-<img loading="lazy" src="../posts/2025-08-28-naif-information-event/images/eth-news-naif-info-event.webp" class="thumbnail-image" alt="ETH Zurich Staffnet news page about the NAIF information event" decoding="async" width="1600" height="900" jampack-sized="true" srcset="../posts/2025-08-28-naif-information-event/images/eth-news-naif-info-event.webp 1600w, ../posts/2025-08-28-naif-information-event/images/eth-news-naif-info-event@1300w.webp 1300w, ../posts/2025-08-28-naif-information-event/images/eth-news-naif-info-event@1000w.webp 1000w" sizes="100vw">
+<img loading="lazy" src="../posts/2025-08-28-naif-information-event/images/eth-news-naif-info-event.png" class="thumbnail-image" alt="ETH Zurich Staffnet news page about the NAIF information event">
 
 </a></div>
 <div class="body">
-<h3 class="listing-title no-anchor">
+<h3 class="no-anchor listing-title">
 <a href="../posts/2025-08-28-naif-information-event/index.html" class="no-external">Launching NAIF: a look back at the information event</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick='return window.quartoListingCategory("R2VuZXJhbA=="),!1;
-'>General</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R2VuZXJhbA=='); return false;">General</div>
 
 </div>
 <div class="delink listing-description"><a href="../posts/2025-08-28-naif-information-event/index.html" class="no-external">
@@ -478,20 +564,19 @@ Dr David Johann, Simon Willemin
 </a>
 </div>
 </div>
-<div class="image-right quarto-post" data-index="10" data-categories="R2VuZXJhbA==" data-listing-date-sort="1751320800000" data-listing-file-modified-sort="1774359174155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="220">
+<div class="quarto-post image-right" data-index="11" data-categories="R2VuZXJhbA==" data-listing-date-sort="1751320800000" data-listing-file-modified-sort="1774359174155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="220">
 <div class="thumbnail"><a href="../posts/2025-07-01-project-start/index.html" class="no-external">
 
-<img loading="lazy" src="../posts/2025-07-01-project-start/images/naif-homepage.webp" class="thumbnail-image" alt="NAIF project website homepage" decoding="async" width="1600" height="900" jampack-sized="true" srcset="../posts/2025-07-01-project-start/images/naif-homepage.webp 1600w, ../posts/2025-07-01-project-start/images/naif-homepage@1300w.webp 1300w, ../posts/2025-07-01-project-start/images/naif-homepage@1000w.webp 1000w" sizes="100vw">
+<img loading="lazy" src="../posts/2025-07-01-project-start/images/naif-homepage.png" class="thumbnail-image" alt="NAIF project website homepage">
 
 </a></div>
 <div class="body">
-<h3 class="listing-title no-anchor">
+<h3 class="no-anchor listing-title">
 <a href="../posts/2025-07-01-project-start/index.html" class="no-external">Project start</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick='return window.quartoListingCategory("R2VuZXJhbA=="),!1;
-'>General</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R2VuZXJhbA=='); return false;">General</div>
 
 </div>
 <div class="delink listing-description"><a href="../posts/2025-07-01-project-start/index.html" class="no-external">
@@ -510,11 +595,11 @@ Dr David Johann, Simon Willemin
 </div>
 </div>
 </div>
-<div class="d-none listing-no-matching">No matching items</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 <p>Looking for event announcements and event pages? See: <a href="../events/index.html">Events</a></p>
-<div class="callout callout-note callout-style-default callout-titled">
-<div class="d-flex align-content-center callout-header">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -522,7 +607,7 @@ Dr David Johann, Simon Willemin
 Note
 </div>
 </div>
-<div class="callout-body callout-body-container">
+<div class="callout-body-container callout-body">
 <p>Reposts are clearly marked and link back to their original publication.</p>
 </div>
 </div>
@@ -532,7 +617,18 @@ Note
 
 </main> <!-- /main -->
 <!-- Matomo -->
-<script>var _paq=window._paq=window._paq||[];_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){var a="https://library-ethz.opsone-analytics.ch/";_paq.push(["setTrackerUrl",a+"matomo.php"]),_paq.push(["setSiteId","81"]);var t=document,e=t.createElement("script"),r=t.getElementsByTagName("script")[0];e.async=!0,e.src=a+"matomo.js",r.parentNode.insertBefore(e,r)}();
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://library-ethz.opsone-analytics.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '81']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
 <!-- End Matomo Code -->
 <div class="naif-cta" role="complementary" aria-label="Get involved" data-naif-cta="">
@@ -544,19 +640,547 @@ Note
     <div class="naif-cta__title">Join NAIF</div>
     <div class="naif-cta__body">Interested in contributing to the project or staying in touch?</div>
     <div class="naif-cta__actions">
-      <a class="btn naif-cta__button naif-cta__button--secondary" href="mailto:naif@library.ethz.ch">
+      <a class="naif-cta__button naif-cta__button--secondary btn" href="mailto:naif@library.ethz.ch">
         Contact us
       </a>
     </div>
   </div>
 </div>
 
-<script>(function(){var t="naif_cta_closed",e=document.querySelector("[data-naif-cta]");if(!e)return;try{if(window.localStorage&&window.localStorage.getItem(t)==="1"){e.style.display="none";return}}catch{}var a=e.querySelector("[data-naif-cta-close]");if(!a)return;function c(){e.style.display="none";try{window.localStorage&&window.localStorage.setItem(t,"1")}catch{}}a.addEventListener("click",c)})();
+<script>
+  (function () {
+    var KEY = "naif_cta_closed";
+    var cta = document.querySelector("[data-naif-cta]");
+    if (!cta) return;
+
+    try {
+      if (window.localStorage && window.localStorage.getItem(KEY) === "1") {
+        cta.style.display = "none";
+        return;
+      }
+    } catch (e) {}
+
+    var close = cta.querySelector("[data-naif-cta-close]");
+    if (!close) return;
+
+    function closeCta() {
+      cta.style.display = "none";
+      try {
+        if (window.localStorage) window.localStorage.setItem(KEY, "1");
+      } catch (e) {}
+    }
+
+    close.addEventListener("click", closeCta);
+  })();
 </script>
-<script>window.document.addEventListener("DOMContentLoaded",function(){const s=Array.from(window.document.querySelectorAll("[data-listing-filter-buttons='true']"));if(s.length===0)return;const g=t=>window.btoa(window.encodeURIComponent(t)),w=()=>{const t=window.location.hash.startsWith("#")?window.location.hash.slice(1):window.location.hash;return t&&new window.URLSearchParams(t).get("category")||""},c=(t,e,a)=>{const n=window.document.createElement("button");return n.type="button",n.className="btn btn-sm btn-outline-secondary",e&&n.classList.add("active"),n.setAttribute("data-category",t),n.setAttribute("aria-pressed",String(e)),n.textContent=t||a,n},d=[];for(const t of s){const e=t.dataset.listingId||"";if(!e)continue;const a=t.dataset.allLabel||"All categories",n=o=>{const i=t.querySelectorAll("button[data-category]");for(const r of i){const l=(r.getAttribute("data-category")||"")===o;r.classList.toggle("active",l),r.setAttribute("aria-pressed",String(l))}};t.appendChild(c("",!0,a));const f=Array.from(window.document.querySelectorAll(`#listing-${e} .listing-category`)).map(o=>o.textContent?o.textContent.trim():"").filter(o=>o.length>0),y=Array.from(new Set(f)).sort((o,i)=>o.localeCompare(i));for(const o of y)t.appendChild(c(o,!1,a));t.addEventListener("click",function(o){const i=o.target;if(!(i instanceof window.HTMLButtonElement))return;const r=i.getAttribute("data-category")||"";typeof window.quartoListingCategory=="function"&&window.quartoListingCategory(g(r))}),d.push({setActiveButton:n})}const u=t=>{for(const e of d)e.setActiveButton(t)};if(typeof window.quartoListingCategory=="function"&&!window.__naifCategoryButtonsPatched){const t=window.quartoListingCategory;window.quartoListingCategory=function(e){t(e);let a="";try{a=window.decodeURIComponent(window.atob(e||""))}catch{a=""}u(a)},window.__naifCategoryButtonsPatched=!0}u(w())});
+<script>
+window.document.addEventListener("DOMContentLoaded", function () {
+  const filterContainers = Array.from(
+    window.document.querySelectorAll("[data-listing-filter-buttons='true']")
+  );
+  if (filterContainers.length === 0) {
+    return;
+  }
+
+  const encodeCategory = (category) => window.btoa(window.encodeURIComponent(category));
+
+  const getCategoryFromHash = () => {
+    const rawHash = window.location.hash.startsWith("#")
+      ? window.location.hash.slice(1)
+      : window.location.hash;
+    if (!rawHash) {
+      return "";
+    }
+    const params = new window.URLSearchParams(rawHash);
+    return params.get("category") || "";
+  };
+
+  const createCategoryButton = (category, isActive, allLabel) => {
+    const button = window.document.createElement("button");
+    button.type = "button";
+    button.className = "btn btn-sm btn-outline-secondary";
+    if (isActive) {
+      button.classList.add("active");
+    }
+    button.setAttribute("data-category", category);
+    button.setAttribute("aria-pressed", String(isActive));
+    button.textContent = category || allLabel;
+    return button;
+  };
+
+  const filterGroups = [];
+
+  for (const filterContainer of filterContainers) {
+    const listingId = filterContainer.dataset.listingId || "";
+    if (!listingId) {
+      continue;
+    }
+
+    const allLabel = filterContainer.dataset.allLabel || "All categories";
+
+    const setActiveButton = (category) => {
+      const buttons = filterContainer.querySelectorAll("button[data-category]");
+      for (const button of buttons) {
+        const isActive = (button.getAttribute("data-category") || "") === category;
+        button.classList.toggle("active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      }
+    };
+
+    filterContainer.appendChild(createCategoryButton("", true, allLabel));
+
+    const listingCategories = Array.from(
+      window.document.querySelectorAll(`#listing-${listingId} .listing-category`)
+    )
+      .map((el) => (el.textContent ? el.textContent.trim() : ""))
+      .filter((value) => value.length > 0);
+
+    const uniqueCategories = Array.from(new Set(listingCategories)).sort((a, b) =>
+      a.localeCompare(b)
+    );
+
+    for (const category of uniqueCategories) {
+      filterContainer.appendChild(createCategoryButton(category, false, allLabel));
+    }
+
+    filterContainer.addEventListener("click", function (event) {
+      const target = event.target;
+      if (!(target instanceof window.HTMLButtonElement)) {
+        return;
+      }
+      const category = target.getAttribute("data-category") || "";
+      if (typeof window.quartoListingCategory === "function") {
+        window.quartoListingCategory(encodeCategory(category));
+      }
+    });
+
+    filterGroups.push({ setActiveButton });
+  }
+
+  const setAllActiveButtons = (category) => {
+    for (const group of filterGroups) {
+      group.setActiveButton(category);
+    }
+  };
+
+  if (typeof window.quartoListingCategory === "function" && !window.__naifCategoryButtonsPatched) {
+    const originalQuartoListingCategory = window.quartoListingCategory;
+    window.quartoListingCategory = function (encodedCategory) {
+      originalQuartoListingCategory(encodedCategory);
+      let decodedCategory = "";
+      try {
+        decodedCategory = window.decodeURIComponent(window.atob(encodedCategory || ""));
+      } catch (_error) {
+        decodedCategory = "";
+      }
+      setAllActiveButtons(decodedCategory);
+    };
+    window.__naifCategoryButtonsPatched = true;
+  }
+
+  setAllActiveButtons(getCategoryFromHash());
+});
 </script>
-<script id="quarto-html-after-body" type="application/javascript">window.document.addEventListener("DOMContentLoaded",function(D){const S=o=>{for(const t of o.classList)if(t.startsWith("code-annotation-"))return!0;return!1},w=function(o){const t=o.trigger;t.blur(),t.classList.add("code-copy-button-checked");var e=t.getAttribute("title");t.setAttribute("title","Copied!");let n;window.bootstrap&&(t.setAttribute("data-bs-toggle","tooltip"),t.setAttribute("data-bs-placement","left"),t.setAttribute("data-bs-title","Copied!"),n=new bootstrap.Tooltip(t,{trigger:"manual",customClass:"code-copy-button-tooltip",offset:[0,-8]}),n.show()),setTimeout(function(){n&&(n.hide(),t.removeAttribute("data-bs-title"),t.removeAttribute("data-bs-toggle"),t.removeAttribute("data-bs-placement")),t.setAttribute("title",e),t.classList.remove("code-copy-button-checked")},1e3),o.clearSelection()},b=function(o){const e=o.parentElement.cloneNode(!0).querySelector("code");for(const n of e.children)S(n)&&n.remove();return e.innerText};new window.ClipboardJS(".code-copy-button:not([data-in-quarto-modal])",{text:b}).on("success",w),window.document.getElementById("quarto-embedded-source-code-modal")&&new window.ClipboardJS(".code-copy-button[data-in-quarto-modal]",{text:b,container:window.document.getElementById("quarto-embedded-source-code-modal")}).on("success",w);for(var T=new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//),M=new RegExp(/^mailto:/),q=new RegExp("https://maehr.github.io/naif/"),I=o=>q.test(o)||T.test(o)||M.test(o),y=window.document.querySelectorAll("a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)"),r=0;r<y.length;r++){const o=y[r];I(o.href)||(o.dataset.originalHref!==void 0&&(o.href=o.dataset.originalHref),o.setAttribute("target","_blank"),o.getAttribute("rel")===null&&o.setAttribute("rel","noopener"),o.classList.add("external"))}function p(o,t,e,n){const i={allowHTML:!0,maxWidth:500,delay:100,arrow:!1,appendTo:function(l){return l.parentElement},interactive:!0,interactiveBorder:10,theme:"quarto",placement:"bottom-start"};t&&(i.content=t),e&&(i.onTrigger=e),n&&(i.onUntrigger=n),window.tippy(o,i)}const v=window.document.querySelectorAll('a[role="doc-noteref"]');for(var r=0;r<v.length;r++){const t=v[r];p(t,function(){let e=t.getAttribute("data-footnote-href")||t.getAttribute("href");try{e=new URL(e).hash}catch{}const n=e.replace(/^#\/?/,""),i=window.document.getElementById(n);return i?i.innerHTML:""})}const E=window.document.querySelectorAll("a.quarto-xref"),g=(o,t)=>{const e=n=>{if(n.classList.remove("page-full","page-columns"),n.children)for(const i of n.children)e(i)};if(e(t),o===null||o.startsWith("sec-")){const n=document.createElement("div");if(t.children&&t.children.length>2){n.appendChild(t.children[0].cloneNode(!0));for(let i=1;i<t.children.length;i++){const l=t.children[i];if(!(l.tagName==="P"&&l.innerText==="")){n.appendChild(l.cloneNode(!0));break}}return window.Quarto?.typesetMath&&window.Quarto.typesetMath(n),n.innerHTML}else return window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.innerHTML}else{const n=t.querySelector("a.anchorjs-link");return n&&n.remove(),window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.classList.contains("callout")?t.outerHTML:t.innerHTML}};for(var r=0;r<E.length;r++){const t=E[r];p(t,void 0,function(e){e.disable();let n=t.getAttribute("href"),i;if(n.startsWith("#"))i=n;else try{i=new URL(n).hash}catch{}if(i){const l=i.replace(/^#\/?/,""),c=window.document.getElementById(l);if(c!==null)try{const s=g(l,c.cloneNode(!0));e.setContent(s)}finally{e.enable(),e.show()}else fetch(n.split("#")[0]).then(s=>s.text()).then(s=>{const u=new DOMParser().parseFromString(s,"text/html").getElementById(l);if(u!==null){const a=g(l,u);e.setContent(a)}}).finally(()=>{e.enable(),e.show()})}else fetch(n).then(l=>l.text()).then(l=>{const d=new DOMParser().parseFromString(l,"text/html").querySelector("main.content");if(d!==null){d.children.length>0&&d.children[0].tagName==="HEADER"&&d.children[0].remove();const h=g(null,d);e.setContent(h)}}).finally(()=>{e.enable(),e.show()})},function(e){})}let m;const H=(o,t)=>{let e='data-code-cell="'+o+'"',n='data-code-annotation="'+t+'"';return"span["+e+"]["+n+"]"},A=o=>{const t=window.document,e=o.getAttribute("data-target-cell"),n=o.getAttribute("data-target-annotation"),c=window.document.querySelector(H(e,n)).getAttribute("data-code-lines").split(",").map(u=>e+"-"+u);let s=null,d=null,h=null;if(c.length>0){const u=window.document.getElementById(c[0]);if(s=u.offsetTop,d=u.offsetHeight,h=u.parentElement.parentElement,c.length>1){const a=window.document.getElementById(c[c.length-1]);d=a.offsetTop+a.offsetHeight-s}if(s!==null&&d!==null&&h!==null){let a=window.document.getElementById("code-annotation-line-highlight");a===null&&(a=window.document.createElement("div"),a.setAttribute("id","code-annotation-line-highlight"),a.style.position="absolute",h.appendChild(a)),a.style.top=s-2+"px",a.style.height=d+4+"px",a.style.left=0;let f=window.document.getElementById("code-annotation-line-highlight-gutter");f===null&&(f=window.document.createElement("div"),f.setAttribute("id","code-annotation-line-highlight-gutter"),f.style.position="absolute",window.document.getElementById(e).querySelector(".code-annotation-gutter").appendChild(f)),f.style.top=s-2+"px",f.style.height=d+4+"px"}m=o}},L=()=>{["code-annotation-line-highlight","code-annotation-line-highlight-gutter"].forEach(t=>{const e=window.document.getElementById(t);e&&e.remove()}),m=void 0};window.addEventListener("resize",k(()=>{elRect=void 0,m&&A(m)},10));function k(o,t){let e=!1,n;return(...i)=>{e?(n&&clearTimeout(n),n=setTimeout(()=>{o.apply(this,i),n=e=!1},t)):(o.apply(this,i),e=!0)}}const B=window.document.querySelectorAll("dt[data-target-cell]");for(const o of B)o.addEventListener("click",t=>{const e=t.target;if(e!==m){L();const n=window.document.querySelector("dt[data-target-cell].code-annotation-active");n&&n.classList.remove("code-annotation-active"),A(e),e.classList.add("code-annotation-active")}else L(),e.classList.remove("code-annotation-active")});const x=o=>{const t=o.parentElement;if(t){const e=t.dataset.cites;return e?{el:o,cites:e.split(" ")}:x(o.parentElement)}else return};for(var C=window.document.querySelectorAll('a[role="doc-biblioref"]'),r=0;r<C.length;r++){const t=C[r],e=x(t);e&&p(e.el,function(){var n=window.document.createElement("div");return e.cites.forEach(function(i){var l=window.document.createElement("div");l.classList.add("hanging-indent"),l.classList.add("csl-entry");var c=window.document.getElementById("ref-"+i);c&&(l.innerHTML=c.innerHTML),n.appendChild(l)}),n.innerHTML})}});
-</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/eth-library\.github\.io\/naif\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -569,7 +1193,7 @@ Note
  © ETH Library · Powered by Quarto
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/maehr/naif/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/eth-library/naif/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

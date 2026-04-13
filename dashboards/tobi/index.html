@@ -1,16 +1,32 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK"><head><meta charset="utf-8"><style>@layer __jampack__{:where(img[jampack-sized]){max-width:100%;height:auto}}</style>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK"><head>
 
-
+<meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.36">
 
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr Moritz Mähr">
-<meta name="dcterms.date" content="2026-04-01">
-<meta name="description" content="TOBI findability and output coverage for Swiss Higher Education Institutions.">
+<meta name="dcterms.date" content="2026-04-13">
+<meta name="description" content="Findability and output coverage of Swiss Higher Education Institutions in five bibliometric databases, based on TOBI project data.">
 
-<title>TOBI data dashboard – NAIF</title>
-<style>code{white-space:pre-wrap}span.smallcaps{font-variant:small-caps}div.columns{gap:min(4vw,1.5em);display:flex}div.column{flex:auto;overflow-x:auto}div.hanging-indent{text-indent:-1.5em;margin-left:1.5em}ul.task-list{list-style:none}ul.task-list li input[type=checkbox]{vertical-align:middle;width:.8em;margin:0 .8em .2em -1em}</style>
+<title>Findability and publication count of Swiss HEIs as found in TOBI project – NAIF</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
 
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -71,46 +87,44 @@
 }</script>
 <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
 
-<script type="application/javascript">define("jquery",[],function(){return window.jQuery});
-</script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../dashboard-common.css">
-<meta property="og:title" content="TOBI data dashboard – NAIF">
-<meta property="og:description" content="TOBI findability and output coverage for Swiss Higher Education Institutions.">
-<meta property="og:image" content="https://maehr.github.io/naif/dashboards/tobi/images/dashboard-screenshot.png">
+<meta property="og:title" content="Findability and publication count of Swiss HEIs as found in TOBI project – NAIF">
+<meta property="og:description" content="Findability and output coverage of Swiss Higher Education Institutions in five bibliometric databases, based on TOBI project data.">
+<meta property="og:image" content="https://eth-library.github.io/naif/dashboards/tobi/images/dashboard-screenshot.png">
 <meta property="og:site_name" content="NAIF">
 <meta property="og:image:height" content="768">
 <meta property="og:image:width" content="1366">
 <meta property="og:image:alt" content="Screenshot of the TOBI dashboard with value boxes and summary tables">
-<meta name="twitter:title" content="TOBI data dashboard – NAIF">
-<meta name="twitter:description" content="TOBI findability and output coverage for Swiss Higher Education Institutions.">
-<meta name="twitter:image" content="https://maehr.github.io/naif/dashboards/tobi/images/dashboard-screenshot.png">
+<meta name="twitter:title" content="Findability and publication count of Swiss HEIs as found in TOBI project – NAIF">
+<meta name="twitter:description" content="Findability and output coverage of Swiss Higher Education Institutions in five bibliometric databases, based on TOBI project data.">
+<meta name="twitter:image" content="https://eth-library.github.io/naif/dashboards/tobi/images/dashboard-screenshot.png">
 <meta name="twitter:image-height" content="768">
 <meta name="twitter:image-width" content="1366">
 <meta name="twitter:image:alt" content="Screenshot of the TOBI dashboard with value boxes and summary tables">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="dashboard-fill fullcontent nav-fixed quarto-dashboard quarto-light">
+<body class="quarto-dashboard nav-fixed dashboard-fill fullcontent quarto-light">
 
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="fixed-top headroom">
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-      <div class="container-fluid navbar-container">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">NAIF</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="window.quartoToggleHeadroom&&window.quartoToggleHeadroom();
-">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="me-auto navbar-nav navbar-nav-scroll">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../posts/index.html"> 
 <span class="menu-text">News</span></a>
@@ -135,7 +149,7 @@
     </nav>
 <header id="quarto-dashboard-header">
 <nav class="navbar navbar-expand-md slim" data-bs-theme="dark">
-  <div class="container-fluid navbar-container">
+  <div class="navbar-container container-fluid">
     <button class="navbar-toggler hidden" type="button" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-controls="dashboard-collapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>    
@@ -145,7 +159,7 @@
 
 
       <div class="navbar-title">
-        <div class="navbar-title-text"><a href="#">TOBI data dashboard</a></div>
+        <div class="navbar-title-text"><a href="#">Findability and publication count of Swiss HEIs as found in TOBI project</a></div>
         
         <div class="navbar-author">Dr Moritz Mähr</div>
       </div>
@@ -154,17 +168,18 @@
 </nav>
 </header></header>
 <!-- content -->
-<div id="quarto-content" class="html-fill-container bslib-gap-spacing bslib-page-fill page-layout-custom page-navbar quarto-container quarto-dashboard-content">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill">
 <!-- sidebar -->
 <!-- margin-sidebar -->
 <!-- main -->
 
-<div class="html-fill-item bslib-grid bslib-grid-item" data-layout="fill" style="grid-template-rows:minmax(3em,12fr) minmax(3em,88fr);grid-auto-columns:minmax(0,1fr);display:grid">
-<div class="bslib-grid" style="grid-template-columns:minmax(3em,1fr) minmax(3em,1fr) minmax(3em,1fr) minmax(3em,1fr);grid-auto-rows:minmax(0,1fr);display:grid">
-<div class="html-fill-container bslib-card card cell bslib-value-box showcase-left-center valuebox bg-warning" data-bslib-card-init="" data-require-bs-caller="card()">
-<div class="html-fill-container html-fill-item card-body">
-<div data-icon="database" class="html-fill-container html-fill-item value-box-grid">
-<div class="html-fill-container html-fill-item value-box-showcase">
+<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="fill" style="display: grid; grid-template-rows: minmax(3em, max-content) minmax(3em, 100fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card valuebox cell bslib-card html-fill-container bslib-value-box bg-light showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
+<div class="card-body html-fill-item html-fill-container">
+<div data-icon="database" class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
 
 <i class="bi bi-database"></i></div>
 <div class="value-box-area">
@@ -177,15 +192,15 @@ HEIs with TOBI data
 </div>
 </div>
 </div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="html-fill-container bslib-card card cell bslib-value-box showcase-left-center valuebox bg-info" data-bslib-card-init="" data-require-bs-caller="card()">
-<div class="html-fill-container html-fill-item card-body">
-<div data-icon="search" class="html-fill-container html-fill-item value-box-grid">
-<div class="html-fill-container html-fill-item value-box-showcase">
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card valuebox cell bslib-card html-fill-container bslib-value-box bg-light showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
+<div class="card-body html-fill-item html-fill-container">
+<div data-icon="search" class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
 
 <i class="bi bi-search"></i></div>
 <div class="value-box-area">
 <p class="value-box-title">
-OpenAlex Findable
+OpenAlex findable
 </p>
 <p class="value-box-value">
 81.8%
@@ -193,15 +208,15 @@ OpenAlex Findable
 </div>
 </div>
 </div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="html-fill-container bslib-card card cell bslib-value-box showcase-left-center valuebox bg-primary" data-bslib-card-init="" data-require-bs-caller="card()">
-<div class="html-fill-container html-fill-item card-body">
-<div data-icon="diagram-3" class="html-fill-container html-fill-item value-box-grid">
-<div class="html-fill-container html-fill-item value-box-showcase">
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card valuebox cell bslib-card html-fill-container bslib-value-box bg-light showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
+<div class="card-body html-fill-item html-fill-container">
+<div data-icon="diagram-3" class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
 
 <i class="bi bi-diagram-3"></i></div>
 <div class="value-box-area">
 <p class="value-box-title">
-Dimensions Findable
+Dimensions findable
 </p>
 <p class="value-box-value">
 81.8%
@@ -209,15 +224,15 @@ Dimensions Findable
 </div>
 </div>
 </div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="html-fill-container bslib-card card cell bslib-value-box showcase-left-center valuebox bg-success" data-bslib-card-init="" data-require-bs-caller="card()">
-<div class="html-fill-container html-fill-item card-body">
-<div data-icon="bar-chart" class="html-fill-container html-fill-item value-box-grid">
-<div class="html-fill-container html-fill-item value-box-showcase">
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card valuebox cell bslib-card html-fill-container bslib-value-box bg-light showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
+<div class="card-body html-fill-item html-fill-container">
+<div data-icon="bar-chart" class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
 
 <i class="bi bi-bar-chart"></i></div>
 <div class="value-box-area">
 <p class="value-box-title">
-OpenAlex Outputs
+OpenAlex outputs
 </p>
 <p class="value-box-value">
 518,396
@@ -227,27 +242,107 @@ OpenAlex Outputs
 </div>
 <script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-<div class="bslib-grid" style="grid-template-columns:minmax(3em,1fr);grid-auto-rows:minmax(0,1fr);display:grid">
-<div class="html-fill-container bslib-card card tabset" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="bslib-navs-card-title card-header dashboard-card-no-title">
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card tabset bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header dashboard-card-no-title bslib-navs-card-title">
 
-<ul class="card-header-tabs nav nav-tabs" role="tablist" data-tabsetid="card-tabset-5"><li class="nav-item" role="presentation"><a href="#card-tabset-5-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="TOBI Findability" aria-selected="true" class="nav-link active">TOBI Findability</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="TOBI Outputs (2012-2022)" aria-selected="false" class="nav-link">TOBI Outputs (2012-2022)</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-3" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="All Institutions (TOBI)" aria-selected="false" class="nav-link">All Institutions (TOBI)</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-4" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Data sources and credits" aria-selected="false" class="nav-link">Data sources and credits</a></li></ul></div>
-
-
-
-
-<div class="html-fill-container html-fill-item tab-content" data-tabset-id="card-tabset-5"><div class="html-fill-container html-fill-item tab-pane active show" role="tabpanel" id="card-tabset-5-1"><div class="html-fill-container html-fill-item card-body" data-title="TOBI Findability">
-<div class="html-fill-container html-fill-item bslib-grid" style="grid-template-rows:minmax(3em,1fr) minmax(3em,1fr);grid-auto-columns:minmax(0,1fr);display:grid">
-<div class="html-fill-container html-fill-item bslib-card card cell" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="html-fill-container html-fill-item card-body">
-<div class="html-fill-container html-fill-item cell-output cell-output-display">
-<div class="html-fill-container html-fill-item">
+<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-5"><li class="nav-item" role="presentation"><a href="#card-tabset-5-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Introduction" aria-selected="true" class="nav-link active">Introduction</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Findability of institutions" aria-selected="false" class="nav-link">Findability of institutions</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-3" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Publication counts (2012–2022)" aria-selected="false" class="nav-link">Publication counts (2012–2022)</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-4" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="List of institutions" aria-selected="false" class="nav-link">List of institutions</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-5" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Data sources and credits" aria-selected="false" class="nav-link">Data sources and credits</a></li></ul></div>
 
 
-<table class="caption-top dataframe small table table-sm table-striped" data-border="1">
+
+
+
+<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-5"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-1"><div class="card-body html-fill-item html-fill-container" data-title="Introduction">
+<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="dashboard-about html-fill-item html-fill-container">
+  <p>
+    This dashboard presents data from the
+    <strong><a href="https://eth-library.github.io/tobi/" target="_blank" rel="noopener noreferrer">TOBI project</a></strong>
+    (Towards Open Bibliometric Indicators) on the findability and publication output of
+    <strong>55</strong> Swiss Higher Education Institutions (HEIs) in five bibliometric
+    databases: Dimensions, Scopus, Web of Science, OpenAIRE, and OpenAlex.
+  </p>
+  <p>
+    The TOBI project, conducted at ETH Library, investigated how well Swiss HEIs are
+    represented in commercial and open bibliometric databases. Its findings are particularly
+    relevant for research assessment and the development of open bibliometric indicators.
+  </p>
+
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Institution types</h5>
+  
+<table class="table table-sm caption-top table-striped small">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Abbreviation</th>
+<th data-quarto-table-cell-role="th">Full name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>University</strong></td>
+<td>Cantonal universities and federal institutes of technology</td>
+</tr>
+<tr class="even">
+<td><strong>Univ.&nbsp;Inst.</strong></td>
+<td>University institutes</td>
+</tr>
+<tr class="odd">
+<td><strong>UAS</strong></td>
+<td>Universities of applied sciences</td>
+</tr>
+<tr class="even">
+<td><strong>UAS&nbsp;Inst.</strong></td>
+<td>UAS institutes</td>
+</tr>
+<tr class="odd">
+<td><strong>UTE</strong></td>
+<td>Teacher education institutions</td>
+</tr>
+</tbody>
+</table>
+
+
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Further reading</h5>
+  <ul>
+    <li>
+      <a href="https://syos.ch/exploring-swiss-higher-education-institutions-in-commercial-and-open-bibliometric-databases/" target="_blank" rel="noopener noreferrer">
+        Exploring Swiss Higher Education Institutions in Commercial and Open Bibliometric Databases
+      </a> – Swiss Year of Scientometrics (SYoS)
+    </li>
+    <li>
+      <a href="../../posts/2026-03-25-naif-continues-tobi/">
+        How NAIF builds on TOBI's results in Switzerland
+      </a> – NAIF blog
+    </li>
+    <li>
+      Dederke, J., Koch, M., &amp; Willemin, S. (2024).
+      <em>The Representation of Swiss Higher Education Institutions in Five Bibliometric Databases</em>.
+      <a href="https://doi.org/10.3929/ethz-b-000726102" target="_blank" rel="noopener noreferrer">https://doi.org/10.3929/ethz-b-000726102</a>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-2"><div class="card-body html-fill-item html-fill-container" data-title="Findability of institutions">
+<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="dashboard-table-wrap html-fill-item html-fill-container">
+<table class="dataframe table table-sm table-striped align-middle caption-top small">
+<thead>
+<tr class="header">
 <th data-quarto-table-cell-role="th">Source</th>
 <th data-quarto-table-cell-role="th">Findable</th>
 <th data-quarto-table-cell-role="th">Not findable</th>
@@ -259,77 +354,68 @@ OpenAlex Outputs
 </thead>
 <tbody>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">0</th>
-<td>Dimensions</td>
+<td><a href="https://www.dimensions.ai/" target="_blank" rel="noopener noreferrer">Dimensions</a></td>
 <td>45</td>
 <td>6</td>
 <td>4</td>
-<td>81.8%</td>
-<td>88.2%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#d3f7cb; white-space:nowrap;">81.8%</span></td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#caf7cc; white-space:nowrap;">88.2%</span></td>
 <td>2024-01-19</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">1</th>
-<td>Scopus</td>
+<td><a href="https://www.scopus.com/" target="_blank" rel="noopener noreferrer">Scopus</a></td>
 <td>26</td>
 <td>25</td>
 <td>4</td>
-<td>47.3%</td>
-<td>51.0%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fef6c3; white-space:nowrap;">47.3%</span></td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fcf8c3; white-space:nowrap;">51.0%</span></td>
 <td>2023-11-06</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">2</th>
-<td>Web of Science</td>
+<td><a href="https://www.webofscience.com/" target="_blank" rel="noopener noreferrer">Web of Science</a></td>
 <td>17</td>
 <td>34</td>
 <td>4</td>
-<td>30.9%</td>
-<td>33.3%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fee7c5; white-space:nowrap;">30.9%</span></td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fee9c5; white-space:nowrap;">33.3%</span></td>
 <td>2023-12-13</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">3</th>
-<td>OpenAIRE</td>
+<td><a href="https://www.openaire.eu/" target="_blank" rel="noopener noreferrer">OpenAIRE</a></td>
 <td>41</td>
 <td>10</td>
 <td>4</td>
-<td>74.5%</td>
-<td>80.4%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#ddf8c9; white-space:nowrap;">74.5%</span></td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#d5f7ca; white-space:nowrap;">80.4%</span></td>
 <td>2024-07-30</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">4</th>
-<td>OpenAlex</td>
+<td><a href="https://openalex.org/" target="_blank" rel="noopener noreferrer">OpenAlex</a></td>
 <td>45</td>
 <td>6</td>
 <td>4</td>
-<td>81.8%</td>
-<td>88.2%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#d3f7cb; white-space:nowrap;">81.8%</span></td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#caf7cc; white-space:nowrap;">88.2%</span></td>
 <td>2024-07-30</td>
 </tr>
 </tbody>
 </table>
-
 </div>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
-    <span class="badge bslib-full-screen-enter rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:1em;height:1em" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-<div class="html-fill-container html-fill-item bslib-card card cell" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="html-fill-container html-fill-item card-body">
-<div class="html-fill-container html-fill-item cell-output cell-output-display">
-<div class="html-fill-container html-fill-item">
-
-
-<table class="caption-top dataframe small table table-sm table-striped" data-border="1">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="dashboard-table-wrap html-fill-item html-fill-container">
+<table class="dataframe table table-sm table-striped align-middle caption-top small">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
 <th data-quarto-table-cell-role="th">Type</th>
 <th data-quarto-table-cell-role="th">Institutions</th>
 <th data-quarto-table-cell-role="th">Dimensions findable</th>
@@ -346,105 +432,96 @@ OpenAlex Outputs
 </thead>
 <tbody>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">0</th>
-<td>UTE</td>
-<td>18</td>
-<td>16</td>
-<td>88.9%</td>
-<td>2</td>
-<td>11.1%</td>
-<td>0</td>
-<td>0.0%</td>
-<td>13</td>
-<td>72.2%</td>
-<td>16</td>
-<td>88.9%</td>
+<td>Universities</td>
+<td>12</td>
+<td>12</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#bbf7d0; white-space:nowrap;">100.0%</span></td>
+<td>12</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#bbf7d0; white-space:nowrap;">100.0%</span></td>
+<td>12</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#bbf7d0; white-space:nowrap;">100.0%</span></td>
+<td>12</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#bbf7d0; white-space:nowrap;">100.0%</span></td>
+<td>12</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#bbf7d0; white-space:nowrap;">100.0%</span></td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">1</th>
-<td>University</td>
-<td>12</td>
-<td>12</td>
-<td>100.0%</td>
-<td>12</td>
-<td>100.0%</td>
-<td>12</td>
-<td>100.0%</td>
-<td>12</td>
-<td>100.0%</td>
-<td>12</td>
-<td>100.0%</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">2</th>
-<td>UAS</td>
-<td>10</td>
-<td>10</td>
-<td>100.0%</td>
-<td>8</td>
-<td>80.0%</td>
-<td>3</td>
-<td>30.0%</td>
-<td>10</td>
-<td>100.0%</td>
-<td>10</td>
-<td>100.0%</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">3</th>
-<td>Univ. Inst.</td>
+<td>University institutes</td>
 <td>8</td>
 <td>5</td>
-<td>62.5%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#edf8c6; white-space:nowrap;">62.5%</span></td>
 <td>2</td>
-<td>25.0%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fee1c6; white-space:nowrap;">25.0%</span></td>
 <td>1</td>
-<td>12.5%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fed5c8; white-space:nowrap;">12.5%</span></td>
 <td>4</td>
-<td>50.0%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fef9c3; white-space:nowrap;">50.0%</span></td>
 <td>5</td>
-<td>62.5%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#edf8c6; white-space:nowrap;">62.5%</span></td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">4</th>
-<td>UAS Inst.</td>
+<td>Universities of applied sciences (UAS)</td>
+<td>10</td>
+<td>10</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#bbf7d0; white-space:nowrap;">100.0%</span></td>
+<td>8</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#d5f7ca; white-space:nowrap;">80.0%</span></td>
+<td>3</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fee6c5; white-space:nowrap;">30.0%</span></td>
+<td>10</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#bbf7d0; white-space:nowrap;">100.0%</span></td>
+<td>10</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#bbf7d0; white-space:nowrap;">100.0%</span></td>
+</tr>
+<tr class="even">
+<td>UAS institutes</td>
 <td>7</td>
 <td>2</td>
-<td>28.6%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fee4c6; white-space:nowrap;">28.6%</span></td>
 <td>2</td>
-<td>28.6%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fee4c6; white-space:nowrap;">28.6%</span></td>
 <td>1</td>
-<td>14.3%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fed7c8; white-space:nowrap;">14.3%</span></td>
 <td>2</td>
-<td>28.6%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fee4c6; white-space:nowrap;">28.6%</span></td>
 <td>2</td>
-<td>28.6%</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fee4c6; white-space:nowrap;">28.6%</span></td>
+</tr>
+<tr class="odd">
+<td>Teacher education institutions (UTE)</td>
+<td>18</td>
+<td>16</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#c9f7cd; white-space:nowrap;">88.9%</span></td>
+<td>2</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fed4c8; white-space:nowrap;">11.1%</span></td>
+<td>0</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#fecaca; white-space:nowrap;">0.0%</span></td>
+<td>13</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#e0f8c8; white-space:nowrap;">72.2%</span></td>
+<td>16</td>
+<td><span style="display:inline-block; padding:2px 8px; border-radius:4px; background:#c9f7cd; white-space:nowrap;">88.9%</span></td>
 </tr>
 </tbody>
 </table>
-
 </div>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
-    <span class="badge bslib-full-screen-enter rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:1em;height:1em" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-</div></div><div class="html-fill-container html-fill-item tab-pane" role="tabpanel" id="card-tabset-5-2"><div class="html-fill-container html-fill-item card-body" data-title="TOBI Outputs (2012-2022)">
-<div class="html-fill-container html-fill-item bslib-grid" style="grid-template-rows:minmax(3em,1fr) minmax(3em,1fr);grid-auto-columns:minmax(0,1fr);display:grid">
-<div class="html-fill-container html-fill-item bslib-card card cell" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="html-fill-container html-fill-item card-body">
-<div class="html-fill-container html-fill-item cell-output cell-output-display">
-<div class="html-fill-container html-fill-item">
-
-
-<table class="caption-top dataframe small table table-sm table-striped" data-border="1">
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-3"><div class="card-body html-fill-item html-fill-container" data-title="Publication counts (2012–2022)">
+<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="dashboard-table-wrap html-fill-item html-fill-container">
+<table class="dataframe table table-sm table-striped align-middle caption-top small">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
 <th data-quarto-table-cell-role="th">Source</th>
 <th data-quarto-table-cell-role="th">HEIs with output data</th>
 <th data-quarto-table-cell-role="th">Total outputs</th>
@@ -454,62 +531,56 @@ OpenAlex Outputs
 </thead>
 <tbody>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">0</th>
-<td>Dimensions</td>
+<td><a href="https://www.dimensions.ai/" target="_blank" rel="noopener noreferrer">Dimensions</a></td>
 <td>45</td>
-<td>461650</td>
+<td>461,650</td>
 <td>272</td>
 <td>2024-01-19</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">1</th>
-<td>Scopus</td>
+<td><a href="https://www.scopus.com/" target="_blank" rel="noopener noreferrer">Scopus</a></td>
 <td>26</td>
-<td>420588</td>
-<td>3733</td>
+<td>420,588</td>
+<td>3,733</td>
 <td>2023-11-06</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">2</th>
-<td>Web of Science</td>
+<td><a href="https://www.webofscience.com/" target="_blank" rel="noopener noreferrer">Web of Science</a></td>
 <td>17</td>
-<td>384425</td>
-<td>5935</td>
+<td>384,425</td>
+<td>5,935</td>
 <td>2023-12-13</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">3</th>
-<td>OpenAIRE</td>
+<td><a href="https://www.openaire.eu/" target="_blank" rel="noopener noreferrer">OpenAIRE</a></td>
 <td>41</td>
-<td>515779</td>
+<td>515,779</td>
 <td>295</td>
 <td>2024-07-30</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">4</th>
-<td>OpenAlex</td>
+<td><a href="https://openalex.org/" target="_blank" rel="noopener noreferrer">OpenAlex</a></td>
 <td>45</td>
-<td>518396</td>
+<td>518,396</td>
 <td>594</td>
 <td>2024-07-30</td>
 </tr>
 </tbody>
 </table>
-
 </div>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
-    <span class="badge bslib-full-screen-enter rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:1em;height:1em" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-<div class="html-fill-container html-fill-item bslib-card card cell" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="html-fill-container html-fill-item card-body">
-<div class="html-fill-container html-fill-item cell-output cell-output-display">
-<div class="html-fill-container html-fill-item dashboard-table-wrap">
-<table class="caption-top dataframe small table table-sm table-striped" data-border="1">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="dashboard-table-wrap html-fill-item html-fill-container">
+<table class="dataframe table table-sm table-striped align-middle caption-top small">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th">Institution</th>
@@ -527,7 +598,7 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of Zurich</td>
 <td>UZH</td>
-<td>University</td>
+<td>Universities</td>
 <td>82,997</td>
 <td>69,365</td>
 <td>64,645</td>
@@ -538,7 +609,7 @@ OpenAlex Outputs
 <tr class="even">
 <td>Swiss Federal Institute of Technology Zurich</td>
 <td>ETHZ</td>
-<td>University</td>
+<td>Universities</td>
 <td>79,732</td>
 <td>84,586</td>
 <td>78,034</td>
@@ -549,7 +620,7 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of Geneva</td>
 <td>UNIGE</td>
-<td>University</td>
+<td>Universities</td>
 <td>54,909</td>
 <td>44,842</td>
 <td>44,808</td>
@@ -560,7 +631,7 @@ OpenAlex Outputs
 <tr class="even">
 <td>University of Bern</td>
 <td>UniBE</td>
-<td>University</td>
+<td>Universities</td>
 <td>57,337</td>
 <td>50,595</td>
 <td>47,300</td>
@@ -571,7 +642,7 @@ OpenAlex Outputs
 <tr class="odd">
 <td>Swiss Federal Institute of Technology Lausanne</td>
 <td>EPFL</td>
-<td>University</td>
+<td>Universities</td>
 <td>46,681</td>
 <td>50,221</td>
 <td>46,152</td>
@@ -582,7 +653,7 @@ OpenAlex Outputs
 <tr class="even">
 <td>University of Basel</td>
 <td>UNIBAS</td>
-<td>University</td>
+<td>Universities</td>
 <td>48,629</td>
 <td>37,779</td>
 <td>37,174</td>
@@ -593,7 +664,7 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of Lausanne</td>
 <td>UNIL</td>
-<td>University</td>
+<td>Universities</td>
 <td>40,168</td>
 <td>35,356</td>
 <td>31,320</td>
@@ -604,7 +675,7 @@ OpenAlex Outputs
 <tr class="even">
 <td>University of Fribourg</td>
 <td>UniFr</td>
-<td>University</td>
+<td>Universities</td>
 <td>11,010</td>
 <td>9,728</td>
 <td>9,645</td>
@@ -615,7 +686,7 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of St. Gallen</td>
 <td>HSG</td>
-<td>University</td>
+<td>Universities</td>
 <td>4,791</td>
 <td>4,428</td>
 <td>3,797</td>
@@ -626,7 +697,7 @@ OpenAlex Outputs
 <tr class="even">
 <td>Zurich University of Applied Sciences</td>
 <td>ZHAW</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>4,428</td>
 <td>4,231</td>
 <td>3,171</td>
@@ -637,7 +708,7 @@ OpenAlex Outputs
 <tr class="odd">
 <td>Università della Svizzera italiana</td>
 <td>USI</td>
-<td>University</td>
+<td>Universities</td>
 <td>6,079</td>
 <td>6,640</td>
 <td>5,935</td>
@@ -648,7 +719,7 @@ OpenAlex Outputs
 <tr class="even">
 <td>HES-SO University of Applied Sciences and Arts Western Switzerland</td>
 <td>HES-SO</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>4,027</td>
 <td>4,402</td>
 <td>2,655</td>
@@ -659,7 +730,7 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of Neuchâtel</td>
 <td>UniNE</td>
-<td>University</td>
+<td>Universities</td>
 <td>5,159</td>
 <td>5,534</td>
 <td>5,178</td>
@@ -670,7 +741,7 @@ OpenAlex Outputs
 <tr class="even">
 <td>University of Applied Sciences Northwestern Switzerland</td>
 <td>FHNW</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>3,302</td>
 <td>3,236</td>
 <td>2,768</td>
@@ -681,7 +752,7 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of Lucerne</td>
 <td>UniLu</td>
-<td>University</td>
+<td>Universities</td>
 <td>1,743</td>
 <td>1,307</td>
 <td>1,381</td>
@@ -696,44 +767,281 @@ OpenAlex Outputs
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
-    <span class="badge bslib-full-screen-enter rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:1em;height:1em" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-</div></div><div class="html-fill-container html-fill-item tab-pane" role="tabpanel" id="card-tabset-5-3"><div class="html-fill-container html-fill-item card-body" data-title="All Institutions (TOBI)">
-<div class="html-fill-container html-fill-item bslib-grid" style="grid-template-rows:minmax(3em,1fr);grid-auto-columns:minmax(0,1fr);display:grid">
-<div class="html-fill-container html-fill-item bslib-card card cell" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="html-fill-container html-fill-item card-body">
-<div class="html-fill-container html-fill-item cell-output cell-output-display">
-<div class="html-fill-container html-fill-item dashboard-table-wrap">
-<table class="caption-top dataframe small table table-sm table-striped" data-border="1">
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-4"><div class="card-body html-fill-item html-fill-container" data-title="List of institutions">
+<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<h5 class="dashboard-subheading">Overview</h5>
+</div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="dashboard-table-wrap html-fill-item html-fill-container">
+<table class="dataframe table table-sm table-striped align-middle caption-top small">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th">Institution</th>
 <th data-quarto-table-cell-role="th">Short</th>
 <th data-quarto-table-cell-role="th">Type</th>
 <th data-quarto-table-cell-role="th">Town</th>
-<th data-quarto-table-cell-role="th">swissuniversities name</th>
-<th data-quarto-table-cell-role="th">OpenAlex IDs</th>
-<th data-quarto-table-cell-role="th">OpenOrgs IDs</th>
-<th data-quarto-table-cell-role="th">Dimensions</th>
+<th data-quarto-table-cell-role="th">Dim.</th>
 <th data-quarto-table-cell-role="th">Scopus</th>
-<th data-quarto-table-cell-role="th">Web of Science</th>
+<th data-quarto-table-cell-role="th">WoS</th>
 <th data-quarto-table-cell-role="th">OpenAIRE</th>
 <th data-quarto-table-cell-role="th">OpenAlex</th>
-<th data-quarto-table-cell-role="th">OpenAlex outputs (2012-2022)</th>
+<th data-quarto-table-cell-role="th">OpenAlex outputs (2012–2022)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td>University of Basel</td>
+<td>UNIBAS</td>
+<td>Universities</td>
+<td>Basel</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>50,670</td>
+</tr>
+<tr class="even">
+<td>University of Bern</td>
+<td>UniBE</td>
+<td>Universities</td>
+<td>Bern</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>60,356</td>
+</tr>
+<tr class="odd">
+<td>University of Fribourg</td>
+<td>UniFr</td>
+<td>Universities</td>
+<td>Fribourg</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>13,209</td>
+</tr>
+<tr class="even">
+<td>University of Geneva</td>
+<td>UNIGE</td>
+<td>Universities</td>
+<td>Geneva</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>53,490</td>
+</tr>
+<tr class="odd">
+<td>Swiss Federal Institute of Technology Lausanne</td>
+<td>EPFL</td>
+<td>Universities</td>
+<td>Lausanne</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>57,628</td>
+</tr>
+<tr class="even">
+<td>University of Lausanne</td>
+<td>UNIL</td>
+<td>Universities</td>
+<td>Lausanne</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>47,105</td>
+</tr>
+<tr class="odd">
+<td>University of Lucerne</td>
+<td>UniLu</td>
+<td>Universities</td>
+<td>Lucerne</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>3,490</td>
+</tr>
+<tr class="even">
+<td>Università della Svizzera italiana</td>
+<td>USI</td>
+<td>Universities</td>
+<td>Lugano</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>8,045</td>
+</tr>
+<tr class="odd">
+<td>University of Neuchâtel</td>
+<td>UniNE</td>
+<td>Universities</td>
+<td>Neuchâtel</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>6,712</td>
+</tr>
+<tr class="even">
+<td>University of St. Gallen</td>
+<td>HSG</td>
+<td>Universities</td>
+<td>Saint Gallen</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>10,543</td>
+</tr>
+<tr class="odd">
+<td>Swiss Federal Institute of Technology Zurich</td>
+<td>ETHZ</td>
+<td>Universities</td>
+<td>Zurich</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>83,827</td>
+</tr>
+<tr class="even">
+<td>University of Zurich</td>
+<td>UZH</td>
+<td>Universities</td>
+<td>Zurich</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>87,453</td>
+</tr>
+<tr class="odd">
+<td>Schweizerisches Universitäres Institut für Traditionelle Chinesische Medizin</td>
+<td>TCM UNI</td>
+<td>University institutes</td>
+<td>Bad Zurzach</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Distance Learning University Switzerland</td>
+<td>FernUni</td>
+<td>University institutes</td>
+<td>Brig</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>Theologische Hochschule Chur</td>
+<td>THC</td>
+<td>University institutes</td>
+<td>Chur</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td>Graduate Institute of International and Development Studies</td>
+<td>IHEID</td>
+<td>University institutes</td>
+<td>Geneva</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>2,380</td>
+</tr>
+<tr class="odd">
+<td>International Institute for Management Development</td>
+<td>IMD</td>
+<td>University institutes</td>
+<td>Lausanne</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>527</td>
+</tr>
+<tr class="even">
+<td>Staatsunabhängige Theologische Hochschule Basel</td>
+<td>STH Basel</td>
+<td>University institutes</td>
+<td>Riehen</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>17</td>
+</tr>
+<tr class="odd">
+<td>Hochschulinstitut Schaffhausen</td>
+<td>HSSH</td>
+<td>University institutes</td>
+<td>Schaffhausen</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Franklin University Institute Switzerland</td>
+<td>FUS</td>
+<td>University institutes</td>
+<td>Sorengo</td>
+<td>Unknown</td>
+<td>Unknown</td>
+<td>Unknown</td>
+<td>Unknown</td>
+<td>Unknown</td>
+<td>-</td>
+</tr>
+<tr class="odd">
 <td>Bern University of Applied Sciences</td>
 <td>BFH</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>Bern</td>
-<td>Berner Fachhochschule BFH</td>
-<td>I130692619</td>
-<td>openorgs____::0000015426</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>No</td>
@@ -744,11 +1052,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>University of Applied Sciences and Arts of Southern Switzerland</td>
 <td>SUPSI</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>Bioggio</td>
-<td>Scuola universitaria professionale della Svizzera italiana SUPSI</td>
-<td>I15196421|I2614128279|I4210116528</td>
-<td>openorgs____::0000000542|openorgs____::0000044325|openorgs____::0000059721</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>No</td>
@@ -759,11 +1064,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of Applied Sciences of the Grisons</td>
 <td>FHGR</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>Chur</td>
-<td>Fachhochschule Graubünden FHGR</td>
-<td>I4210120439</td>
-<td>openorgs____::0000050055</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -774,11 +1076,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>HES-SO University of Applied Sciences and Arts Western Switzerland</td>
 <td>HES-SO</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>Delémont</td>
-<td>Haute école spécialisée de Suisse occidentale HES-SO</td>
-<td>I173439891|I4210088449|I4210109379|I4210119508|I4210129267|I4210160903</td>
-<td>openorgs____::0000072872|openorgs____::0000072873|openorgs____::0000097733|openorgs____::061b1c3fe4a28f3f1bc097f8b0678a80|openorgs____::fabc66f620b7e6ec0cf9e0d6881c7fa2</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -789,11 +1088,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>Lucerne University of Applied Sciences and Arts</td>
 <td>HSLU</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>Lucerne</td>
-<td>Hochschule Luzern HSLU</td>
-<td>I81007117</td>
-<td>openorgs____::0000016348</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>No</td>
@@ -804,11 +1100,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>OST - Eastern Switzerland University of Applied Sciences</td>
 <td>OST</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>Rapperswil</td>
-<td>OST - Ostschweizer Fachhochschule</td>
-<td>I4210127453|I4210129390|I4210143180|I4210145378</td>
-<td>openorgs____::0000096681|openorgs____::0000096682|openorgs____::0000096683|openorgs____::5e1ff4b25339b85b35dccf232595c841</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -819,11 +1112,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of Applied Sciences Northwestern Switzerland</td>
 <td>FHNW</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>Windisch</td>
-<td>Fachhochschule Nordwestschweiz FHNW</td>
-<td>I2801068065|I2972652528</td>
-<td>openorgs____::0000003136|openorgs____::0000049249</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -834,11 +1124,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>Zurich University of Applied Sciences</td>
 <td>ZHAW</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>Winterthur</td>
-<td>Zürcher Hochschule für angewandte Wissenschaften ZHAW</td>
-<td>I858936495</td>
-<td>openorgs____::0000000750</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -849,11 +1136,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>Kalaidos University of Applied Sciences</td>
 <td>Kalaidos</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>Zurich</td>
-<td>Kalaidos Fachhochschule</td>
-<td>I3132934759</td>
-<td>openorgs____::0000039714</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>No</td>
@@ -864,11 +1148,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>Zurich University of the Arts</td>
 <td>ZHdK</td>
-<td>UAS</td>
+<td>Universities of applied sciences (UAS)</td>
 <td>Zurich</td>
-<td>Zürcher Hochschule der Künste ZHdk</td>
-<td>I64152125</td>
-<td>openorgs____::0000040062</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>No</td>
@@ -879,11 +1160,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>Swiss UMEF</td>
 <td>SUMEF</td>
-<td>UAS Inst.</td>
+<td>UAS institutes</td>
 <td>Aïre</td>
-<td>Swiss UMEF</td>
-<td>I4399657977</td>
-<td>openorgs____::73bfaf94abdefe88a3374cf0983b935e</td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -894,11 +1172,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>Les Roches Global Hospitality Education</td>
 <td>LRGHE</td>
-<td>UAS Inst.</td>
+<td>UAS institutes</td>
 <td>Bluche</td>
-<td>Les Roches Global Hospitality Education</td>
-<td>NaN</td>
-<td>NaN</td>
 <td>Unknown</td>
 <td>Unknown</td>
 <td>Unknown</td>
@@ -909,11 +1184,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>Glion Institute of Higher Education</td>
 <td>GIHE</td>
-<td>UAS Inst.</td>
+<td>UAS institutes</td>
 <td>Glion-sur-Montreux</td>
-<td>Glion Institute of Higher Education</td>
-<td>I2802806793</td>
-<td>NaN</td>
 <td>Unknown</td>
 <td>Unknown</td>
 <td>Unknown</td>
@@ -924,11 +1196,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>SBS Swiss Business School</td>
 <td>SBS</td>
-<td>UAS Inst.</td>
+<td>UAS institutes</td>
 <td>Kloten</td>
-<td>Swiss Business School SBS</td>
-<td>I4399598389</td>
-<td>openorgs____::0de33f5fa55f31cb73fb43e84ba2616a</td>
 <td>No</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -939,11 +1208,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>César Ritz Colleges Switzerland</td>
 <td>CRCS</td>
-<td>UAS Inst.</td>
+<td>UAS institutes</td>
 <td>Le Bouveret</td>
-<td>César Ritz Colleges Switzerland</td>
-<td>NaN</td>
-<td>NaN</td>
 <td>Unknown</td>
 <td>Unknown</td>
 <td>Unknown</td>
@@ -954,11 +1220,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>Swiss Federal Institute of Sport Magglingen SFISM</td>
 <td>SFISM</td>
-<td>UAS Inst.</td>
+<td>UAS institutes</td>
 <td>Magglingen</td>
-<td>Swiss Federal Institute of Sport Magglingen SFISM</td>
-<td>I4210097597</td>
-<td>openorgs____::0000072893</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>No</td>
@@ -969,11 +1232,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>HWZ University of Applied Sciences in Business Administration</td>
 <td>HWZ</td>
-<td>UAS Inst.</td>
+<td>UAS institutes</td>
 <td>Zurich</td>
-<td>Hochschule für Wirtschaft Zürich HWZ</td>
-<td>I197141962</td>
-<td>openorgs____::0000040059</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -984,11 +1244,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>Institute of Teacher Education PH NMS Bern</td>
 <td>PH NMS Bern</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Bern</td>
-<td>Pädagogisches Hochschulinstitut NMS Bern (formerly IVP NMS)</td>
-<td>I4210143584</td>
-<td>openorgs____::0000073006</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -999,11 +1256,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of Teacher Education Bern</td>
 <td>PHBern</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Bern</td>
-<td>Pädagogische Hochschule Bern PH Bern</td>
-<td>I4210160491</td>
-<td>openorgs____::0000044391</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>No</td>
@@ -1014,11 +1268,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>University of Teacher Education Valais</td>
 <td>HEP-VS</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Brig</td>
-<td>Haute école pédagogique du Valais | Pädagogische Hochschule Wallis HEP-VS | PH-VS</td>
-<td>I4210141884</td>
-<td>openorgs____::0000056054</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1029,11 +1280,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of Teacher Education Graubünden</td>
 <td>PHGR</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Chur</td>
-<td>Pädagogische Hochschule Graubünden | Alta scuola pedagogica dei Grigioni | Scola auta da pedagogia dal Grischun PHGR</td>
-<td>I4210117930</td>
-<td>openorgs____::0000059258</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1044,11 +1292,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>University of Teacher Education Schwyz</td>
 <td>PHSZ</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Goldau</td>
-<td>Pädagogische Hochschule Schwyz PHSZ</td>
-<td>I4210095907</td>
-<td>openorgs____::0000056007</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1059,11 +1304,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>Thurgau University of Teacher Education</td>
 <td>PHTG</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Kreuzlingen</td>
-<td>Pädagogische Hochschule Thurgau PHTG</td>
-<td>I4210138261</td>
-<td>openorgs____::0000056157</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1074,11 +1316,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>University of Teacher Education Vaud</td>
 <td>HEP Vaud</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Lausanne</td>
-<td>Haute école pédagogique du canton de Vaud HEP Vaud</td>
-<td>I4210106586</td>
-<td>openorgs____::0000056062</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1089,11 +1328,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>SUPSI - Dipartimento formazione e apprendimento SUPSI-DFA</td>
 <td>SUPSI-DFA</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Locarno</td>
-<td>SUPSI - Dipartimento formazione e apprendimento SUPSI-DFA</td>
-<td>NaN</td>
-<td>openorgs____::bbf28dbc8406d6baf3bda78834504d9f</td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -1104,11 +1340,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>University of Teacher Education Lucerne</td>
 <td>PH Luzern</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Lucerne</td>
-<td>Pädagogische Hochschule Luzern PH Luzern</td>
-<td>I4210112078</td>
-<td>openorgs____::0000055803</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1119,11 +1352,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>Haute école pédagogique - BEJUNE</td>
 <td>HEP-BEJUNE</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Porrentruy</td>
-<td>Haute école pédagogique des cantons de Berne, du Jura et de Neuchâtel HEP-BEJUNE</td>
-<td>I4210101117</td>
-<td>openorgs____::0000059229</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1134,11 +1364,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>St.Gallen University of Teacher Education</td>
 <td>PHSG</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Saint Gallen</td>
-<td>Pädagogische Hochschule St. Gallen PHSG</td>
-<td>I4210158813</td>
-<td>openorgs____::0000056046</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>No</td>
@@ -1149,11 +1376,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of Speech Therapy Eastern Switzerland</td>
 <td>hlo</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Saint Gallen</td>
-<td>Hochschule für Logopädie Ostschweiz hlo</td>
-<td>I4210146015</td>
-<td>openorgs____::0000059271</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1164,11 +1388,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>University of Teacher Education Schaffhausen</td>
 <td>PHSH</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Schaffhausen</td>
-<td>Pädagogische Hochschule Schaffhausen PHSH</td>
-<td>I4210139224</td>
-<td>openorgs____::0000055972</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1179,11 +1400,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>Pädagogische Hochschule FHNW</td>
 <td>PH FHNW</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Windisch</td>
-<td>Pädagogische Hochschule Nordwestschweiz PH FHNW</td>
-<td>I4399598484</td>
-<td>openorgs____::9735c613fb47ef36274499e863c71624</td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -1194,11 +1412,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>Swiss Federal University for Vocational Education and Training</td>
 <td>SFUVET</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Zollikofen</td>
-<td>Eidgenössische Hochschule für Berufsbildung, EHB</td>
-<td>I4210097053</td>
-<td>openorgs____::0000056011</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1209,11 +1424,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of Teacher Education Zug</td>
 <td>PH Zug</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Zug</td>
-<td>Pädagogische Hochschule Zug PH Zug</td>
-<td>I4210146564</td>
-<td>openorgs____::0000056109</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1224,11 +1436,8 @@ OpenAlex Outputs
 <tr class="even">
 <td>University of Teacher Education Zurich</td>
 <td>PH Zurich</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Zurich</td>
-<td>Pädagogische Hochschule Zürich PH Zürich</td>
-<td>I4210111868</td>
-<td>openorgs____::0000072626</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1239,11 +1448,8 @@ OpenAlex Outputs
 <tr class="odd">
 <td>University of Teacher Education in Special Needs</td>
 <td>HfH</td>
-<td>UTE</td>
+<td>Teacher education institutions (UTE)</td>
 <td>Zurich</td>
-<td>Interkantonale Hochschule für Heilpädagogik Zürich HfH</td>
-<td>I4210086400</td>
-<td>openorgs____::0000056114</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -1251,305 +1457,410 @@ OpenAlex Outputs
 <td>Yes</td>
 <td>265</td>
 </tr>
-<tr class="even">
-<td>Schweizerisches Universitäres Institut für Traditionelle Chinesische Medizin</td>
-<td>TCM UNI</td>
-<td>Univ. Inst.</td>
-<td>Bad Zurzach</td>
-<td>Schweizerisches universitäres Institut für traditionelle chinesische Medizin SWISS TCM UNI</td>
-<td>I4399598368</td>
-<td>openorgs____::51e8a672e8dd17dbfc6eff42b2ebed5a</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>-</td>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<h5 class="dashboard-subheading">Identifiers</h5>
+</div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="dashboard-table-wrap html-fill-item html-fill-container">
+<table class="dataframe table table-sm table-striped align-middle caption-top small">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Institution</th>
+<th data-quarto-table-cell-role="th">Type</th>
+<th data-quarto-table-cell-role="th">swissuniversities</th>
+<th data-quarto-table-cell-role="th">OpenAlex IDs</th>
+<th data-quarto-table-cell-role="th">OpenOrgs IDs</th>
 </tr>
+</thead>
+<tbody>
 <tr class="odd">
-<td>Distance Learning University Switzerland</td>
-<td>FernUni</td>
-<td>Univ. Inst.</td>
-<td>Brig</td>
-<td>Stiftung Universitäre Fernstudien Schweiz, Brig</td>
-<td>I4210139595</td>
-<td>openorgs____::1ee37347adef16924686f4e7c015741c</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Yes</td>
-<td>4</td>
-</tr>
-<tr class="even">
-<td>Theologische Hochschule Chur</td>
-<td>THC</td>
-<td>Univ. Inst.</td>
-<td>Chur</td>
-<td>Theologische Hochschule Chur</td>
-<td>I4210136385</td>
-<td>openorgs____::0000073244</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>20</td>
-</tr>
-<tr class="odd">
-<td>Graduate Institute of International and Development Studies</td>
-<td>IHEID</td>
-<td>Univ. Inst.</td>
-<td>Geneva</td>
-<td>Institut de hautes études internationales et du développement, Genève, IHEID</td>
-<td>I951315</td>
-<td>openorgs____::0000015739</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>2,380</td>
-</tr>
-<tr class="even">
-<td>International Institute for Management Development</td>
-<td>IMD</td>
-<td>Univ. Inst.</td>
-<td>Lausanne</td>
-<td>IMD - International Institute for Management Development</td>
-<td>I130154697</td>
-<td>openorgs____::0000052317</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>527</td>
-</tr>
-<tr class="odd">
-<td>Staatsunabhängige Theologische Hochschule Basel</td>
-<td>STH Basel</td>
-<td>Univ. Inst.</td>
-<td>Riehen</td>
-<td>Universitäre Theologische Hochschule Basel STH Basel</td>
-<td>I4210116588</td>
-<td>openorgs____::0000059267</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>17</td>
-</tr>
-<tr class="even">
-<td>Hochschulinstitut Schaffhausen</td>
-<td>HSSH</td>
-<td>Univ. Inst.</td>
-<td>Schaffhausen</td>
-<td>Hochschulinstitut Schaffhausen HSSH</td>
-<td>I4399598448</td>
-<td>openorgs____::abaf4ad58425ff3a7c3938b6479efc17</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>Franklin University Institute Switzerland</td>
-<td>FUS</td>
-<td>Univ. Inst.</td>
-<td>Sorengo</td>
-<td>Franklin University Institute Switzerland</td>
-<td>I903955410</td>
-<td>NaN</td>
-<td>Unknown</td>
-<td>Unknown</td>
-<td>Unknown</td>
-<td>Unknown</td>
-<td>Unknown</td>
-<td>-</td>
-</tr>
-<tr class="even">
 <td>University of Basel</td>
-<td>UNIBAS</td>
-<td>University</td>
-<td>Basel</td>
+<td>Universities</td>
 <td>Universität Basel</td>
-<td>I158937107|I1850255|I2802542264|I4210126115|I4210166749|I860889466</td>
-<td>openorgs____::0000003279|openorgs____::0000004780|openorgs____::0000004962|openorgs____::0000008787|openorgs____::0000071837|openorgs____::0000097873</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>50,670</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I158937107</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I1850255</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I2802542264</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210126115</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210166749</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I860889466</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000003279</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000004780</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000004962</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000008787</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000071837</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000097873</span></span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>University of Bern</td>
-<td>UniBE</td>
-<td>University</td>
-<td>Bern</td>
+<td>Universities</td>
 <td>Universität Bern UniBE</td>
-<td>I118564535|I2801112126|I4210087665</td>
-<td>openorgs____::0000004168|openorgs____::0000073267|openorgs____::0000097739</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>60,356</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I118564535</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I2801112126</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210087665</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000004168</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000073267</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000097739</span></span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>University of Fribourg</td>
-<td>UniFr</td>
-<td>University</td>
-<td>Fribourg</td>
+<td>Universities</td>
 <td>Université de Fribourg Unifr</td>
-<td>I154338468|I4210093738|I4210110454</td>
-<td>openorgs____::0000005675|openorgs____::0000067954|openorgs____::0000098195</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>13,209</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I154338468</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210093738</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210110454</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000005675</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000067954</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000098195</span></span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>University of Geneva</td>
-<td>UNIGE</td>
-<td>University</td>
-<td>Geneva</td>
+<td>Universities</td>
 <td>Université de Genève UNIGE</td>
-<td>I114457229|I4210106256|I4210129591|I4210149244|I7495430</td>
-<td>openorgs____::0000000467|openorgs____::0000071845|openorgs____::0000098203|openorgs____::664fcd1baf49e13486b9515738e6165e</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>53,490</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I114457229</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210106256</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210129591</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210149244</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I7495430</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000000467</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000071845</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000098203</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::664fcd1baf49e13486b9515738e6165e</span></span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Swiss Federal Institute of Technology Lausanne</td>
-<td>EPFL</td>
-<td>University</td>
-<td>Lausanne</td>
+<td>Universities</td>
 <td>Ecole polytechnique fédérale de Lausanne EPFL</td>
-<td>I4210100659|I4210122261|I4210129591|I4210132519|I4210140175|I5124864|I7495430</td>
-<td>openorgs____::0000057917|openorgs____::0000071845|openorgs____::0000072945|openorgs____::0000096663|openorgs____::0000097652|openorgs____::0f0744ada95d4305e7b5addb2105973f</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>57,628</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210100659</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210122261</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210129591</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210132519</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210140175</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I5124864</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I7495430</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000057917</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000071845</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000072945</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000096663</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000097652</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0f0744ada95d4305e7b5addb2105973f</span></span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>University of Lausanne</td>
-<td>UNIL</td>
-<td>University</td>
-<td>Lausanne</td>
+<td>Universities</td>
 <td>Université de Lausanne UNIL</td>
-<td>I2802229882|I4210100035|I4210100659|I4210101498|I4210135124|I4210149244|I97565354</td>
-<td>openorgs____::0000072539|openorgs____::0000072945|openorgs____::0000096669|openorgs____::0000098193|openorgs____::0000098313|openorgs____::664fcd1baf49e13486b9515738e6165e</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>47,105</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I2802229882</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210100035</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210100659</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210101498</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210135124</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210149244</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I97565354</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000072539</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000072945</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000096669</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000098193</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000098313</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::664fcd1baf49e13486b9515738e6165e</span></span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>University of Lucerne</td>
-<td>UniLu</td>
-<td>University</td>
-<td>Lucerne</td>
+<td>Universities</td>
 <td>Universität Luzern Unilu</td>
-<td>I161941770</td>
-<td>openorgs____::0000040003</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>3,490</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I161941770</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000040003</span></span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Università della Svizzera italiana</td>
-<td>USI</td>
-<td>University</td>
-<td>Lugano</td>
+<td>Universities</td>
 <td>Università della Svizzera italiana USI</td>
-<td>I2614128279|I57201433</td>
-<td>openorgs____::0000002708|openorgs____::0000059721</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>8,045</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I2614128279</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I57201433</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000002708</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000059721</span></span></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>University of Neuchâtel</td>
-<td>UniNE</td>
-<td>University</td>
-<td>Neuchâtel</td>
+<td>Universities</td>
 <td>Université de Neuchâtel UniNE</td>
-<td>I4210126212|I57825437</td>
-<td>openorgs____::0000000117|openorgs____::0000072662</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>6,712</td>
-</tr>
-<tr class="odd">
-<td>University of St. Gallen</td>
-<td>HSG</td>
-<td>University</td>
-<td>Saint Gallen</td>
-<td>Universität St. Gallen HSG</td>
-<td>I202963720</td>
-<td>openorgs____::0000000522</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>10,543</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210126212</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I57825437</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000000117</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000072662</span></span></td>
 </tr>
 <tr class="even">
-<td>Swiss Federal Institute of Technology Zurich</td>
-<td>ETHZ</td>
-<td>University</td>
-<td>Zurich</td>
-<td>Eidgenössische Technische Hochschule Zürich ETH</td>
-<td>I35440088|I4210090941|I4210122261|I4210127086</td>
-<td>openorgs____::0000071878|openorgs____::0000097748|openorgs____::0f0744ada95d4305e7b5addb2105973f</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>83,827</td>
+<td>University of St. Gallen</td>
+<td>Universities</td>
+<td>Universität St. Gallen HSG</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I202963720</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000000522</span></span></td>
 </tr>
 <tr class="odd">
+<td>Swiss Federal Institute of Technology Zurich</td>
+<td>Universities</td>
+<td>Eidgenössische Technische Hochschule Zürich ETH</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I35440088</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210090941</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210122261</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210127086</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000071878</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000097748</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0f0744ada95d4305e7b5addb2105973f</span></span></td>
+</tr>
+<tr class="even">
 <td>University of Zurich</td>
-<td>UZH</td>
-<td>University</td>
-<td>Zurich</td>
+<td>Universities</td>
 <td>Universität Zürich UZH</td>
-<td>I202697423|I4210090941|I4210100468|I4210115727|I4210128593|I4210164351</td>
-<td>openorgs____::0000004466|openorgs____::0000004775|openorgs____::0000071878|openorgs____::0000073409|openorgs____::0000074032|openorgs____::0000097991</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>87,453</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I202697423</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210090941</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210100468</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210115727</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210128593</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210164351</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000004466</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000004775</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000071878</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000073409</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000074032</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000097991</span></span></td>
+</tr>
+<tr class="odd">
+<td>Schweizerisches Universitäres Institut für Traditionelle Chinesische Medizin</td>
+<td>University institutes</td>
+<td>Schweizerisches universitäres Institut für traditionelle chinesische Medizin SWISS TCM UNI</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4399598368</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::51e8a672e8dd17dbfc6eff42b2ebed5a</span></span></td>
+</tr>
+<tr class="even">
+<td>Distance Learning University Switzerland</td>
+<td>University institutes</td>
+<td>Stiftung Universitäre Fernstudien Schweiz, Brig</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210139595</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::1ee37347adef16924686f4e7c015741c</span></span></td>
+</tr>
+<tr class="odd">
+<td>Theologische Hochschule Chur</td>
+<td>University institutes</td>
+<td>Theologische Hochschule Chur</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210136385</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000073244</span></span></td>
+</tr>
+<tr class="even">
+<td>Graduate Institute of International and Development Studies</td>
+<td>University institutes</td>
+<td>Institut de hautes études internationales et du développement, Genève, IHEID</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I951315</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000015739</span></span></td>
+</tr>
+<tr class="odd">
+<td>International Institute for Management Development</td>
+<td>University institutes</td>
+<td>IMD - International Institute for Management Development</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I130154697</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000052317</span></span></td>
+</tr>
+<tr class="even">
+<td>Staatsunabhängige Theologische Hochschule Basel</td>
+<td>University institutes</td>
+<td>Universitäre Theologische Hochschule Basel STH Basel</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210116588</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000059267</span></span></td>
+</tr>
+<tr class="odd">
+<td>Hochschulinstitut Schaffhausen</td>
+<td>University institutes</td>
+<td>Hochschulinstitut Schaffhausen HSSH</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4399598448</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::abaf4ad58425ff3a7c3938b6479efc17</span></span></td>
+</tr>
+<tr class="even">
+<td>Franklin University Institute Switzerland</td>
+<td>University institutes</td>
+<td>Franklin University Institute Switzerland</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I903955410</span></span></td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>Bern University of Applied Sciences</td>
+<td>Universities of applied sciences (UAS)</td>
+<td>Berner Fachhochschule BFH</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I130692619</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000015426</span></span></td>
+</tr>
+<tr class="even">
+<td>University of Applied Sciences and Arts of Southern Switzerland</td>
+<td>Universities of applied sciences (UAS)</td>
+<td>Scuola universitaria professionale della Svizzera italiana SUPSI</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I15196421</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I2614128279</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210116528</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000000542</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000044325</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000059721</span></span></td>
+</tr>
+<tr class="odd">
+<td>University of Applied Sciences of the Grisons</td>
+<td>Universities of applied sciences (UAS)</td>
+<td>Fachhochschule Graubünden FHGR</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210120439</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000050055</span></span></td>
+</tr>
+<tr class="even">
+<td>HES-SO University of Applied Sciences and Arts Western Switzerland</td>
+<td>Universities of applied sciences (UAS)</td>
+<td>Haute école spécialisée de Suisse occidentale HES-SO</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I173439891</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210088449</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210109379</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210119508</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210129267</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210160903</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000072872</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000072873</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000097733</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::061b1c3fe4a28f3f1bc097f8b0678a80</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::fabc66f620b7e6ec0cf9e0d6881c7fa2</span></span></td>
+</tr>
+<tr class="odd">
+<td>Lucerne University of Applied Sciences and Arts</td>
+<td>Universities of applied sciences (UAS)</td>
+<td>Hochschule Luzern HSLU</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I81007117</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000016348</span></span></td>
+</tr>
+<tr class="even">
+<td>OST - Eastern Switzerland University of Applied Sciences</td>
+<td>Universities of applied sciences (UAS)</td>
+<td>OST - Ostschweizer Fachhochschule</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210127453</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210129390</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210143180</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210145378</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000096681</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000096682</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000096683</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::5e1ff4b25339b85b35dccf232595c841</span></span></td>
+</tr>
+<tr class="odd">
+<td>University of Applied Sciences Northwestern Switzerland</td>
+<td>Universities of applied sciences (UAS)</td>
+<td>Fachhochschule Nordwestschweiz FHNW</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I2801068065</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I2972652528</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000003136</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000049249</span></span></td>
+</tr>
+<tr class="even">
+<td>Zurich University of Applied Sciences</td>
+<td>Universities of applied sciences (UAS)</td>
+<td>Zürcher Hochschule für angewandte Wissenschaften ZHAW</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I858936495</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000000750</span></span></td>
+</tr>
+<tr class="odd">
+<td>Kalaidos University of Applied Sciences</td>
+<td>Universities of applied sciences (UAS)</td>
+<td>Kalaidos Fachhochschule</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I3132934759</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000039714</span></span></td>
+</tr>
+<tr class="even">
+<td>Zurich University of the Arts</td>
+<td>Universities of applied sciences (UAS)</td>
+<td>Zürcher Hochschule der Künste ZHdk</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I64152125</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000040062</span></span></td>
+</tr>
+<tr class="odd">
+<td>Swiss UMEF</td>
+<td>UAS institutes</td>
+<td>Swiss UMEF</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4399657977</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::73bfaf94abdefe88a3374cf0983b935e</span></span></td>
+</tr>
+<tr class="even">
+<td>Les Roches Global Hospitality Education</td>
+<td>UAS institutes</td>
+<td>Les Roches Global Hospitality Education</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>Glion Institute of Higher Education</td>
+<td>UAS institutes</td>
+<td>Glion Institute of Higher Education</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I2802806793</span></span></td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>SBS Swiss Business School</td>
+<td>UAS institutes</td>
+<td>Swiss Business School SBS</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4399598389</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0de33f5fa55f31cb73fb43e84ba2616a</span></span></td>
+</tr>
+<tr class="odd">
+<td>César Ritz Colleges Switzerland</td>
+<td>UAS institutes</td>
+<td>César Ritz Colleges Switzerland</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Swiss Federal Institute of Sport Magglingen SFISM</td>
+<td>UAS institutes</td>
+<td>Swiss Federal Institute of Sport Magglingen SFISM</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210097597</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000072893</span></span></td>
+</tr>
+<tr class="odd">
+<td>HWZ University of Applied Sciences in Business Administration</td>
+<td>UAS institutes</td>
+<td>Hochschule für Wirtschaft Zürich HWZ</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I197141962</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000040059</span></span></td>
+</tr>
+<tr class="even">
+<td>Institute of Teacher Education PH NMS Bern</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Pädagogisches Hochschulinstitut NMS Bern (formerly IVP NMS)</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210143584</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000073006</span></span></td>
+</tr>
+<tr class="odd">
+<td>University of Teacher Education Bern</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Pädagogische Hochschule Bern PH Bern</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210160491</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000044391</span></span></td>
+</tr>
+<tr class="even">
+<td>University of Teacher Education Valais</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Haute école pédagogique du Valais | Pädagogische Hochschule Wallis HEP-VS | PH-VS</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210141884</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056054</span></span></td>
+</tr>
+<tr class="odd">
+<td>University of Teacher Education Graubünden</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Pädagogische Hochschule Graubünden | Alta scuola pedagogica dei Grigioni | Scola auta da pedagogia dal Grischun PHGR</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210117930</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000059258</span></span></td>
+</tr>
+<tr class="even">
+<td>University of Teacher Education Schwyz</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Pädagogische Hochschule Schwyz PHSZ</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210095907</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056007</span></span></td>
+</tr>
+<tr class="odd">
+<td>Thurgau University of Teacher Education</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Pädagogische Hochschule Thurgau PHTG</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210138261</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056157</span></span></td>
+</tr>
+<tr class="even">
+<td>University of Teacher Education Vaud</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Haute école pédagogique du canton de Vaud HEP Vaud</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210106586</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056062</span></span></td>
+</tr>
+<tr class="odd">
+<td>SUPSI - Dipartimento formazione e apprendimento SUPSI-DFA</td>
+<td>Teacher education institutions (UTE)</td>
+<td>SUPSI - Dipartimento formazione e apprendimento SUPSI-DFA</td>
+<td>-</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::bbf28dbc8406d6baf3bda78834504d9f</span></span></td>
+</tr>
+<tr class="even">
+<td>University of Teacher Education Lucerne</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Pädagogische Hochschule Luzern PH Luzern</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210112078</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000055803</span></span></td>
+</tr>
+<tr class="odd">
+<td>Haute école pédagogique - BEJUNE</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Haute école pédagogique des cantons de Berne, du Jura et de Neuchâtel HEP-BEJUNE</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210101117</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000059229</span></span></td>
+</tr>
+<tr class="even">
+<td>St.Gallen University of Teacher Education</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Pädagogische Hochschule St. Gallen PHSG</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210158813</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056046</span></span></td>
+</tr>
+<tr class="odd">
+<td>University of Speech Therapy Eastern Switzerland</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Hochschule für Logopädie Ostschweiz hlo</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210146015</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000059271</span></span></td>
+</tr>
+<tr class="even">
+<td>University of Teacher Education Schaffhausen</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Pädagogische Hochschule Schaffhausen PHSH</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210139224</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000055972</span></span></td>
+</tr>
+<tr class="odd">
+<td>Pädagogische Hochschule FHNW</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Pädagogische Hochschule Nordwestschweiz PH FHNW</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4399598484</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::9735c613fb47ef36274499e863c71624</span></span></td>
+</tr>
+<tr class="even">
+<td>Swiss Federal University for Vocational Education and Training</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Eidgenössische Hochschule für Berufsbildung, EHB</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210097053</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056011</span></span></td>
+</tr>
+<tr class="odd">
+<td>University of Teacher Education Zug</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Pädagogische Hochschule Zug PH Zug</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210146564</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056109</span></span></td>
+</tr>
+<tr class="even">
+<td>University of Teacher Education Zurich</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Pädagogische Hochschule Zürich PH Zürich</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210111868</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000072626</span></span></td>
+</tr>
+<tr class="odd">
+<td>University of Teacher Education in Special Needs</td>
+<td>Teacher education institutions (UTE)</td>
+<td>Interkantonale Hochschule für Heilpädagogik Zürich HfH</td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210086400</span></span></td>
+<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056114</span></span></td>
 </tr>
 </tbody>
 </table>
@@ -1558,47 +1869,475 @@ OpenAlex Outputs
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
-    <span class="badge bslib-full-screen-enter rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:1em;height:1em" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-</div></div><div class="html-fill-container html-fill-item tab-pane" role="tabpanel" id="card-tabset-5-4"><div class="html-fill-container html-fill-item card-body" data-title="Data sources and credits">
-<div class="html-fill-container html-fill-item bslib-grid" style="grid-template-rows:minmax(3em,max-content);grid-auto-columns:minmax(0,1fr);display:grid">
-<div class="html-fill-container html-fill-item bslib-card card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="html-fill-container html-fill-item card-body">
-<p>This dashboard reuses TOBI project data on Swiss Higher Education Institutions and presents it in a compact NAIF format.</p>
-<ul>
-<li>Data basis and methodology: Dederke, J., Koch, M., &amp; Willemin, S. (2024). <em>The Representation of Swiss Higher Education Institutions in Five Bibliometric Databases</em>. <a href="https://doi.org/10.3929/ethz-b-000726102" class="uri">https://doi.org/10.3929/ethz-b-000726102</a></li>
-<li>Project context: TOBI (Towards Open Bibliometric Indicators), ETH Library. <a href="https://eth-library.github.io/tobi/" class="uri">https://eth-library.github.io/tobi/</a></li>
-<li>Data providers represented in this dashboard: Dimensions, Scopus, Web of Science, OpenAIRE, and OpenAlex.</li>
-<li>Dashboard adaptation and maintenance: Dr Moritz Mähr (NAIF project).</li>
-</ul>
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-5"><div class="card-body html-fill-item html-fill-container" data-title="Data sources and credits">
+<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+
+<div class="dashboard-about html-fill-item html-fill-container">
+  <p>
+    This dashboard reuses TOBI project data on Swiss Higher Education Institutions and
+    presents it in a compact NAIF format.
+  </p>
+
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Data basis</h5>
+  <ul>
+    <li>
+      Dederke, J., Koch, M., &amp; Willemin, S. (2024).
+      <em>The Representation of Swiss Higher Education Institutions in Five Bibliometric Databases</em>.
+      <a href="https://doi.org/10.3929/ethz-b-000726102" target="_blank" rel="noopener noreferrer">https://doi.org/10.3929/ethz-b-000726102</a>
+    </li>
+    <li>
+      Project context: TOBI (Towards Open Bibliometric Indicators), ETH Library.
+      <a href="https://eth-library.github.io/tobi/" target="_blank" rel="noopener noreferrer">https://eth-library.github.io/tobi/</a>
+    </li>
+  </ul>
+
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Data providers</h5>
+  <ul>
+    <li><a href="https://www.dimensions.ai/" target="_blank" rel="noopener noreferrer">Dimensions</a> (Digital Science)</li>
+    <li><a href="https://www.scopus.com/" target="_blank" rel="noopener noreferrer">Scopus</a> (Elsevier)</li>
+    <li><a href="https://www.webofscience.com/" target="_blank" rel="noopener noreferrer">Web of Science</a> (Clarivate)</li>
+    <li><a href="https://www.openaire.eu/" target="_blank" rel="noopener noreferrer">OpenAIRE</a></li>
+    <li><a href="https://openalex.org/" target="_blank" rel="noopener noreferrer">OpenAlex</a> (OurResearch)</li>
+  </ul>
+
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Dashboard</h5>
+  <p>
+    Adaptation and maintenance: Dr Moritz Mähr
+    (<a href="https://eth-library.github.io/naif/" target="_blank" rel="noopener noreferrer">NAIF project</a>).
+  </p>
+</div>
+</div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
-    <span class="badge bslib-full-screen-enter rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:1em;height:1em" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 
 
-<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="html-fill-container html-fill-item hidden">
+<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
 
 </div>
 </div>
 </div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
-    <span class="badge bslib-full-screen-enter rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:1em;height:1em" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
 </div>
 
 
-<script id="quarto-html-after-body" type="application/javascript">window.document.addEventListener("DOMContentLoaded",function(N){const T="\uE9CB",w=new window.AnchorJS;w.options={placement:"right",icon:T},w.add(".anchored");const M=o=>{for(const t of o.classList)if(t.startsWith("code-annotation-"))return!0;return!1},b=function(o){const t=o.trigger;t.blur(),t.classList.add("code-copy-button-checked");var e=t.getAttribute("title");t.setAttribute("title","Copied!");let n;window.bootstrap&&(t.setAttribute("data-bs-toggle","tooltip"),t.setAttribute("data-bs-placement","left"),t.setAttribute("data-bs-title","Copied!"),n=new bootstrap.Tooltip(t,{trigger:"manual",customClass:"code-copy-button-tooltip",offset:[0,-8]}),n.show()),setTimeout(function(){n&&(n.hide(),t.removeAttribute("data-bs-title"),t.removeAttribute("data-bs-toggle"),t.removeAttribute("data-bs-placement")),t.setAttribute("title",e),t.classList.remove("code-copy-button-checked")},1e3),o.clearSelection()},y=function(o){const e=o.parentElement.cloneNode(!0).querySelector("code");for(const n of e.children)M(n)&&n.remove();return e.innerText};new window.ClipboardJS(".code-copy-button:not([data-in-quarto-modal])",{text:y}).on("success",b),window.document.getElementById("quarto-embedded-source-code-modal")&&new window.ClipboardJS(".code-copy-button[data-in-quarto-modal]",{text:y,container:window.document.getElementById("quarto-embedded-source-code-modal")}).on("success",b);for(var q=new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//),I=new RegExp(/^mailto:/),H=new RegExp("https://maehr.github.io/naif/"),k=o=>H.test(o)||q.test(o)||I.test(o),v=window.document.querySelectorAll("a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)"),r=0;r<v.length;r++){const o=v[r];k(o.href)||o.dataset.originalHref!==void 0&&(o.href=o.dataset.originalHref)}function p(o,t,e,n){const i={allowHTML:!0,maxWidth:500,delay:100,arrow:!1,appendTo:function(l){return l.parentElement},interactive:!0,interactiveBorder:10,theme:"quarto",placement:"bottom-start"};t&&(i.content=t),e&&(i.onTrigger=e),n&&(i.onUntrigger=n),window.tippy(o,i)}const E=window.document.querySelectorAll('a[role="doc-noteref"]');for(var r=0;r<E.length;r++){const t=E[r];p(t,function(){let e=t.getAttribute("data-footnote-href")||t.getAttribute("href");try{e=new URL(e).hash}catch{}const n=e.replace(/^#\/?/,""),i=window.document.getElementById(n);return i?i.innerHTML:""})}const A=window.document.querySelectorAll("a.quarto-xref"),g=(o,t)=>{const e=n=>{if(n.classList.remove("page-full","page-columns"),n.children)for(const i of n.children)e(i)};if(e(t),o===null||o.startsWith("sec-")){const n=document.createElement("div");if(t.children&&t.children.length>2){n.appendChild(t.children[0].cloneNode(!0));for(let i=1;i<t.children.length;i++){const l=t.children[i];if(!(l.tagName==="P"&&l.innerText==="")){n.appendChild(l.cloneNode(!0));break}}return window.Quarto?.typesetMath&&window.Quarto.typesetMath(n),n.innerHTML}else return window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.innerHTML}else{const n=t.querySelector("a.anchorjs-link");return n&&n.remove(),window.Quarto?.typesetMath&&window.Quarto.typesetMath(t),t.classList.contains("callout")?t.outerHTML:t.innerHTML}};for(var r=0;r<A.length;r++){const t=A[r];p(t,void 0,function(e){e.disable();let n=t.getAttribute("href"),i;if(n.startsWith("#"))i=n;else try{i=new URL(n).hash}catch{}if(i){const l=i.replace(/^#\/?/,""),c=window.document.getElementById(l);if(c!==null)try{const d=g(l,c.cloneNode(!0));e.setContent(d)}finally{e.enable(),e.show()}else fetch(n.split("#")[0]).then(d=>d.text()).then(d=>{const u=new DOMParser().parseFromString(d,"text/html").getElementById(l);if(u!==null){const a=g(l,u);e.setContent(a)}}).finally(()=>{e.enable(),e.show()})}else fetch(n).then(l=>l.text()).then(l=>{const s=new DOMParser().parseFromString(l,"text/html").querySelector("main.content");if(s!==null){s.children.length>0&&s.children[0].tagName==="HEADER"&&s.children[0].remove();const h=g(null,s);e.setContent(h)}}).finally(()=>{e.enable(),e.show()})},function(e){})}let m;const B=(o,t)=>{let e='data-code-cell="'+o+'"',n='data-code-annotation="'+t+'"';return"span["+e+"]["+n+"]"},L=o=>{const t=window.document,e=o.getAttribute("data-target-cell"),n=o.getAttribute("data-target-annotation"),c=window.document.querySelector(B(e,n)).getAttribute("data-code-lines").split(",").map(u=>e+"-"+u);let d=null,s=null,h=null;if(c.length>0){const u=window.document.getElementById(c[0]);if(d=u.offsetTop,s=u.offsetHeight,h=u.parentElement.parentElement,c.length>1){const a=window.document.getElementById(c[c.length-1]);s=a.offsetTop+a.offsetHeight-d}if(d!==null&&s!==null&&h!==null){let a=window.document.getElementById("code-annotation-line-highlight");a===null&&(a=window.document.createElement("div"),a.setAttribute("id","code-annotation-line-highlight"),a.style.position="absolute",h.appendChild(a)),a.style.top=d-2+"px",a.style.height=s+4+"px",a.style.left=0;let f=window.document.getElementById("code-annotation-line-highlight-gutter");f===null&&(f=window.document.createElement("div"),f.setAttribute("id","code-annotation-line-highlight-gutter"),f.style.position="absolute",window.document.getElementById(e).querySelector(".code-annotation-gutter").appendChild(f)),f.style.top=d-2+"px",f.style.height=s+4+"px"}m=o}},C=()=>{["code-annotation-line-highlight","code-annotation-line-highlight-gutter"].forEach(t=>{const e=window.document.getElementById(t);e&&e.remove()}),m=void 0};window.addEventListener("resize",D(()=>{elRect=void 0,m&&L(m)},10));function D(o,t){let e=!1,n;return(...i)=>{e?(n&&clearTimeout(n),n=setTimeout(()=>{o.apply(this,i),n=e=!1},t)):(o.apply(this,i),e=!0)}}const R=window.document.querySelectorAll("dt[data-target-cell]");for(const o of R)o.addEventListener("click",t=>{const e=t.target;if(e!==m){C();const n=window.document.querySelector("dt[data-target-cell].code-annotation-active");n&&n.classList.remove("code-annotation-active"),L(e),e.classList.add("code-annotation-active")}else C(),e.classList.remove("code-annotation-active")});const x=o=>{const t=o.parentElement;if(t){const e=t.dataset.cites;return e?{el:o,cites:e.split(" ")}:x(o.parentElement)}else return};for(var S=window.document.querySelectorAll('a[role="doc-biblioref"]'),r=0;r<S.length;r++){const t=S[r],e=x(t);e&&p(e.el,function(){var n=window.document.createElement("div");return e.cites.forEach(function(i){var l=window.document.createElement("div");l.classList.add("hanging-indent"),l.classList.add("csl-entry");var c=window.document.getElementById("ref-"+i);c&&(l.innerHTML=c.innerHTML),n.appendChild(l)}),n.innerHTML})}});
-</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/eth-library\.github\.io\/naif\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1611,7 +2350,7 @@ OpenAlex Outputs
  © ETH Library · Powered by Quarto
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/maehr/naif/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/eth-library/naif/issues/new/choose" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
@@ -1624,7 +2363,12 @@ OpenAlex Outputs
   </div>
 </footer>
 
-<script type="application/javascript">window.document.addEventListener("DOMContentLoaded",function(i){window.bslib.Card&&window.bslib.Card.initializeAllCards()});
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (_event) {
+  if (window.bslib.Card) {
+    window.bslib.Card.initializeAllCards();
+  }
+}); 
 </script>
   
 

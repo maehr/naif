@@ -2,6 +2,7 @@
   {
     "listing": "/posts/index.html",
     "items": [
+      "/posts/2026-04-08-swiss-science-council-report-and-naif/index.html",
       "/posts/2026-04-02-first-insights-swiss-repository-survey/index.html",
       "/posts/2026-03-25-naif-continues-tobi/index.html",
       "/posts/2026-03-16-slsp-strategy-2026-2029/index.html",
@@ -38,6 +39,7 @@
       "/events/2025-10-15-improving-academic-metadata-neuchatel/index.html",
       "/events/2025-09-10-soad-day/index.html",
       "/events/2025-08-28-information-event/index.html",
+      "/posts/2026-04-08-swiss-science-council-report-and-naif/index.html",
       "/posts/2026-04-02-first-insights-swiss-repository-survey/index.html",
       "/posts/2026-03-25-naif-continues-tobi/index.html",
       "/posts/2026-03-16-slsp-strategy-2026-2029/index.html",
@@ -81,6 +83,12 @@
       "/events/2025-10-15-improving-academic-metadata-neuchatel/index.html",
       "/events/2025-09-10-soad-day/index.html",
       "/events/2025-08-28-information-event/index.html"
+    ]
+  },
+  {
+    "listing": "/posters/index.html",
+    "items": [
+      "/posters/2026-01-29-On-the-Current-and-Future-Uses-of-QSI/poster.html"
     ]
   }
 ]
