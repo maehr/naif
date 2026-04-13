@@ -413,6 +413,72 @@ dict(icon="person-check", color="light", value=coara_member_count)
 
 ### Column {.tabset}
 
+#### About
+
+```{python}
+#| echo: false
+about_html = f"""
+<div class="dashboard-about">
+  <p>
+    This dashboard was prepared by <strong>Dr Moritz Mähr</strong> for the
+    <strong><a href="https://eth-library.github.io/naif/" target="_blank" rel="noopener noreferrer">NAIF project</a></strong>
+    (Narratives and Institutions of Academic Freedom). It brings together
+    <strong>{total}</strong> Swiss Higher Education Institutions and shows how many have
+    signed the <strong>San Francisco Declaration on Research Assessment</strong>
+    (<a href="https://sfdora.org/" target="_blank" rel="noopener noreferrer">DORA</a>) and the
+    <strong>Agreement on Reforming Research Assessment</strong>
+    (<a href="https://coara.eu/" target="_blank" rel="noopener noreferrer">CoARA</a>).
+  </p>
+  <p>
+    Included institution groups are universities, university institutes, universities of applied
+    sciences (UAS), UAS institutes, and teacher education institutions. Hover over a marker to
+    see the full institution name, then click for more detail.
+  </p>
+  <p>
+    On the CoARA map, a <strong>black centre dot</strong> marks institutions that are
+    <strong>CoARA members</strong> (a step beyond signing). The current dataset includes
+    <strong>{dora_count}</strong> DORA signatories, <strong>{coara_count}</strong> CoARA
+    signatories, and <strong>{coara_member_count}</strong> CoARA members.
+  </p>
+  <p>
+    The source data used in this dashboard is available from the download tab.
+  </p>
+
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Institution types</h5>
+  <table class="table table-sm" style="max-width: 52ch;">
+    <thead><tr><th>Abbreviation</th><th>Full name</th></tr></thead>
+    <tbody>
+      <tr><td><strong>University</strong></td><td>Cantonal universities and federal institutes of technology</td></tr>
+      <tr><td><strong>Univ.&nbsp;Inst.</strong></td><td>University institutes</td></tr>
+      <tr><td><strong>UAS</strong></td><td>Universities of applied sciences</td></tr>
+      <tr><td><strong>UAS&nbsp;Inst.</strong></td><td>UAS institutes</td></tr>
+      <tr><td><strong>UTE</strong></td><td>Teacher education institutions</td></tr>
+    </tbody>
+  </table>
+
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Further reading</h5>
+  <ul>
+    <li>
+      <a href="https://sfdora.org/" target="_blank" rel="noopener noreferrer">
+        San Francisco Declaration on Research Assessment (DORA)
+      </a>
+    </li>
+    <li>
+      <a href="https://coara.eu/" target="_blank" rel="noopener noreferrer">
+        Coalition for Advancing Research Assessment (CoARA)
+      </a>
+    </li>
+    <li>
+      <a href="../../posts/2026-03-25-naif-continues-tobi/">
+        How NAIF builds on TOBI&rsquo;s results in Switzerland
+      </a> &ndash; NAIF blog
+    </li>
+  </ul>
+</div>
+"""
+display(HTML(about_html))
+```
+
 #### DORA Signatories
 
 ```{python}
@@ -513,35 +579,6 @@ add_type_legend(
 )
 
 display(m)
-```
-
-#### About this dashboard
-
-```{python}
-#| echo: false
-about_html = f"""
-<div class=\"dashboard-about\">
-  <p>
-    This dashboard was prepared by <strong>Dr Moritz Mähr</strong> for NAIF. It brings together
-    <strong>{total}</strong> Swiss higher education institutions and shows how many are DORA
-    signatories, CoARA signatories, or CoARA members.
-  </p>
-  <p>
-    Included institution groups are universities, university institutes, universities of applied
-    sciences (UAS), UAS institutes, and teacher education institutions. Hover over a marker to
-    see the full institution name, then click for more detail.
-  </p>
-  <p>
-    On the CoARA map, a <strong>black centre dot</strong> marks CoARA members. The current dataset
-    includes <strong>{dora_count}</strong> DORA signatories, <strong>{coara_count}</strong> CoARA
-    signatories, and <strong>{coara_member_count}</strong> CoARA members.
-  </p>
-  <p>
-    The source data used in this dashboard is available from the download tab.
-  </p>
-</div>
-"""
-display(HTML(about_html))
 ```
 
 #### All Institutions

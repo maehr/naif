@@ -1,0 +1,84 @@
+---
+title: "How the Swiss Science Council report aligns with NAIF"
+subtitle: "The data hubs report offers a useful strategic lens on work already underway across the NAIF project."
+date: 2026-04-08
+lang: en-UK
+author:
+  - name: "Dr Moritz Mähr"
+    orcid: "0000-0002-1367-1618"
+    affiliation: "ETH Zurich"
+description: "The Swiss Science Council's report 'Research Libraries as Data Hubs' highlights governance, interoperability, and sustainability questions that map closely onto NAIF's current tracks and planned national working group."
+categories:
+  - "General"
+tags:
+  - "Research libraries"
+  - "Interoperability"
+  - "Governance"
+proofread: false
+image: "images/swr-report-page.png"
+image-alt: "Screenshot of the federal press release page announcing the Swiss Science Council report Research Libraries as Data Hubs"
+image-caption: "Screenshot of the federal press release page for the Swiss Science Council report 'Research Libraries as Data Hubs'. Source: https://www.geo.admin.ch/en/newnsb/IKzegebj8OYzThf7MEq3E. Rights: Swiss federal authorities / Swiss Science Council."
+toc: true
+draft: false
+---
+
+## Why it matters
+
+In December 2025, the Swiss Science Council published the report [*Research Libraries as Data Hubs*](https://cms.news.admin.ch/dam/en/swr/7gwxr5zJzfbC/2025_12_swr_research_libraries_as_data_hubs.pdf). The report argues that research libraries must be understood not only as service points for access to literature, but as strategic infrastructures that curate, connect, and preserve reliable knowledge in increasingly digital environments.
+
+NAIF operates at a more specific level. The project focuses on interoperability, metadata quality, findability, and the national coordination of Swiss institutional repositories. Even so, the overlap is striking. Many of the report's recommendations describe challenges that NAIF is already addressing in practical terms.
+
+## What we compared
+
+For this post, we compared the Swiss Science Council report with NAIF's public [project description](https://eth-library.github.io/naif/about.html) and track structure. The aim was not to claim that both initiatives are identical. The report has a broader scope: it also addresses training, preservation, AI, visibility, and the strategic role of research libraries beyond repositories.
+
+The comparison is still useful because it shows where NAIF can already be read as one concrete implementation pathway within the wider agenda set out by the report.
+
+## What aligns most clearly
+
+### Interoperability and FAIR data practices
+
+One of the report's clearest messages is that research libraries should manage digital assets and metadata according to FAIR principles and strengthen interoperability across the Swiss information space. This is also the core problem NAIF starts from: Swiss Higher Education Institutions operate repositories with different systems, metadata practices, and levels of standardisation, which makes national discovery and reuse harder than it should be.
+
+This is where **Track 3** and **Track 4** align most directly with the report.
+
+- **Track 3** analyses Swiss repositories, evaluates metadata quality against international practices such as OpenAIRE, Dublin Core, and DataCite, and identifies barriers to seamless data exchange.
+- **Track 4** focuses on enrichment data that make repository records more reusable across systems, including ORCID, ROR, funding data, and Open Access metadata.
+
+Taken together, these tracks do not yet create a national data hub on their own. They do, however, address the technical and semantic conditions without which such a hub would remain aspirational.
+
+### Governance in a decentralised system
+
+The report places strong emphasis on Switzerland's multi-level governance context. Research libraries operate across different institutional types, political levels, and language regions, which makes strategic coordination difficult. The report therefore argues for stronger national collaboration and clearer governance structures.
+
+This is closely reflected in **Track 2**, which examines national scenarios for Switzerland, compares governance and sustainability models, and gathers requirements from Swiss stakeholders. NAIF's purpose here is not to impose a single solution prematurely, but to clarify what forms of coordination are realistic, useful, and legitimate in a decentralised landscape.
+
+The strongest convergence lies in NAIF's planned **national working group** as the unified outcome across tracks. That working group is intended to define organisational form, representativeness, and shared strategic goals for dissemination and findability. In other words, NAIF is not only diagnosing fragmentation; it is also preparing a governance mechanism through which coordination could continue after the project ends.
+
+### Sustainability beyond project funding
+
+The report is especially clear about the limits of short-term project funding. If cooperation depends only on temporary funding calls, progress can stall once the project period closes. This concern is highly relevant for NAIF itself, which is also a time-limited initiative.
+
+Here again, the project design shows a notable degree of alignment with the report. NAIF's working-group model is meant to preserve momentum beyond December 2026 by creating a shared structure for continued exchange and prioritisation. That is an important step, because interoperability work rarely succeeds as a one-off intervention.
+
+At the same time, the report's warning should be taken seriously: a working group is not the same thing as long-term funding. NAIF can help define the governance and coordination model, but durable national progress will still depend on institutional commitment and sustained support after the project phase.
+
+### Responsible reuse of metadata and indicators
+
+The report frames research libraries as guardians of reliable knowledge in a changing information environment. For NAIF, this has a further implication that extends beyond discovery alone: if metadata becomes more complete, consistent, and interoperable, it can also support more responsible monitoring and assessment.
+
+That is where **Track 1** adds an important NAIF-specific dimension. By linking repository interoperability with the responsible use of quantitative indicators and with the principles of DORA and CoARA, NAIF connects technical metadata work to broader questions of interpretation, evaluation, and research policy.
+
+## What's next
+
+The Swiss Science Council report does not provide an operational blueprint for every aspect of NAIF, and NAIF does not cover every concern raised in the report. The two operate at different levels. The report defines a strategic case for research libraries as data hubs; NAIF works on a narrower but highly practical subset of that agenda in the repository domain.
+
+That is precisely why the comparison matters. The report offers an external policy frame that helps explain why repository interoperability, metadata harmonisation, and cross-institutional coordination deserve sustained attention. NAIF, in turn, shows what those ambitions look like when translated into concrete tracks, deliverables, and a post-project governance model.
+
+As the project moves forward, the report can serve as a useful reference point for discussions about sustainability, collaboration, and the long-term place of repositories within the Swiss information landscape.
+
+## Sources
+
+- Swiss Science Council. (2025). *Research Libraries as Data Hubs*. <https://cms.news.admin.ch/dam/en/swr/7gwxr5zJzfbC/2025_12_swr_research_libraries_as_data_hubs.pdf>
+- Swiss federal authorities. (2025). *Research Libraries as Data Hubs - New Report from the Swiss Science Council SSC*. <https://www.geo.admin.ch/en/newnsb/IKzegebj8OYzThf7MEq3E>
+- NAIF project website: *About*. <https://eth-library.github.io/naif/about.html>

@@ -224,7 +224,9 @@ dimensions_findable = int(df["tobi_findable_dim"].eq("Yes").sum())
 openalex_outputs = int(df["tobi_total_outputs_openalex_2012_2022"].fillna(0).sum())
 ```
 
-## Row
+## Row {height=100%}
+
+### Column {width=28%}
 
 ```{python}
 #| content: valuebox
@@ -250,11 +252,9 @@ dict(icon="diagram-3", color="light", value=pct(dimensions_findable, total))
 dict(icon="bar-chart", color="light", value=f"{openalex_outputs:,}")
 ```
 
-## Row {height=100%}
-
 ### Column {.tabset}
 
-#### Introduction
+#### About
 
 ```{python}
 #| echo: false
