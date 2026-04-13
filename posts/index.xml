@@ -15,7 +15,18 @@
 <link>https://eth-library.github.io/naif/posts/</link>
 </image>
 <generator>quarto-1.9.36</generator>
-<lastBuildDate>Tue, 07 Apr 2026 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 31 Dec 2098 23:00:00 GMT</lastBuildDate>
+<item>
+  <title></title>
+  <dc:creator>Dr David Johann</dc:creator>
+  <dc:creator>Dr Moritz Mähr</dc:creator>
+  <link>https://eth-library.github.io/naif/posts/2099-01-01-demo-draft-post/</link>
+  <description><![CDATA[ undefined ]]></description>
+  <category>General</category>
+  <guid>https://eth-library.github.io/naif/posts/2099-01-01-demo-draft-post/</guid>
+  <pubDate>Wed, 31 Dec 2098 23:00:00 GMT</pubDate>
+  <media:content url="https://eth-library.github.io/naif/images/logos/all-logos.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>How the Swiss Science Council report aligns with NAIF</title>
   <dc:creator>Dr Moritz Mähr</dc:creator>
@@ -66,6 +77,16 @@
   <guid>https://eth-library.github.io/naif/posts/2026-02-27-naif-at-research-on-research/</guid>
   <pubDate>Thu, 26 Feb 2026 23:00:00 GMT</pubDate>
   <media:content url="https://eth-library.github.io/naif/posts/2026-02-27-naif-at-research-on-research/images/poster.png" medium="image" type="image/png" height="204" width="144"/>
+</item>
+<item>
+  <title></title>
+  <dc:creator>Dr Moritz Mähr</dc:creator>
+  <link>https://eth-library.github.io/naif/posts/2026-02-19-books-to-repositories-open-metadata/</link>
+  <description><![CDATA[ undefined ]]></description>
+  <category>General</category>
+  <guid>https://eth-library.github.io/naif/posts/2026-02-19-books-to-repositories-open-metadata/</guid>
+  <pubDate>Wed, 18 Feb 2026 23:00:00 GMT</pubDate>
+  <media:content url="https://eth-library.github.io/naif/posts/2026-02-19-books-to-repositories-open-metadata/images/thoth-report-page.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Prioritising actions for better academic metadata</title>
