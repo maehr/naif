@@ -16,6 +16,11 @@ exclude = [
   "https://ema.uzh.ch/",
   "https://ethz.zoom.us/meeting/register/",
   "https://epfl.zoom.us/meeting/register/",
+  # Python f-string URL templates in dashboard code (contain {identifier} placeholders)
+  "https://www.wikidata.org/wiki/",
+  "https://api.crossref.org/funders/",
+  "https://www.geonames.org/",
+  "https://isni.org/isni/",
 ]
 
 exclude_path = [

@@ -3,6 +3,7 @@ title: "Findability and publication count of Swiss HEIs from the TOBI project"
 format:
   dashboard:
     css: ../dashboard-common.css
+    expandable: false
 author: "Dr Moritz Mähr"
 description: "Findability and output coverage of Swiss Higher Education Institutions in five bibliometric databases, based on TOBI project data."
 image: images/dashboard-screenshot.png
@@ -107,23 +108,6 @@ def format_plain_text(value: object) -> str:
     return text if text else "-"
 
 
-def format_identifier_list(value: object) -> str:
-    """Render pipe-separated identifier lists with soft wrap points."""
-    text = format_identifier(value)
-    if not text:
-        return "-"
-    parts = [html.escape(part.strip()) for part in text.split("|") if part.strip()]
-    if not parts:
-        return "-"
-    return (
-        '<span class="dashboard-id-list">'
-        + '<wbr><span class="dashboard-id-sep">|</span><wbr>'.join(
-            f'<span class="dashboard-id-token">{part}</span>' for part in parts
-        )
-        + "</span>"
-    )
-
-
 def format_type_label(value: object) -> str:
     """Return the full label for an institution type."""
     text = format_identifier(value)
@@ -226,32 +210,6 @@ openalex_outputs = int(df["tobi_total_outputs_openalex_2012_2022"].fillna(0).sum
 
 ## Row {height=100%}
 
-### Column {width=28%}
-
-```{python}
-#| content: valuebox
-#| title: "HEIs with TOBI data"
-dict(icon="database", color="light", value=pct(any_tobi, total))
-```
-
-```{python}
-#| content: valuebox
-#| title: "OpenAlex findable"
-dict(icon="search", color="light", value=pct(openalex_findable, total))
-```
-
-```{python}
-#| content: valuebox
-#| title: "Dimensions findable"
-dict(icon="diagram-3", color="light", value=pct(dimensions_findable, total))
-```
-
-```{python}
-#| content: valuebox
-#| title: "OpenAlex outputs"
-dict(icon="bar-chart", color="light", value=f"{openalex_outputs:,}")
-```
-
 ### Column {.tabset}
 
 #### About
@@ -260,17 +218,31 @@ dict(icon="bar-chart", color="light", value=f"{openalex_outputs:,}")
 #| echo: false
 intro_html = f"""
 <div class="dashboard-about">
+  <div class="dashboard-metrics">
+    <div class="dashboard-metric">
+      <div class="dashboard-metric-value">{pct(any_tobi, total)}</div>
+      <div class="dashboard-metric-label">HEIs with TOBI data</div>
+    </div>
+    <div class="dashboard-metric">
+      <div class="dashboard-metric-value">{pct(openalex_findable, total)}</div>
+      <div class="dashboard-metric-label">OpenAlex findable</div>
+    </div>
+    <div class="dashboard-metric">
+      <div class="dashboard-metric-value">{pct(dimensions_findable, total)}</div>
+      <div class="dashboard-metric-label">Dimensions findable</div>
+    </div>
+    <div class="dashboard-metric">
+      <div class="dashboard-metric-value">{openalex_outputs:,}</div>
+      <div class="dashboard-metric-label">OpenAlex outputs</div>
+    </div>
+  </div>
+
   <p>
-    This dashboard presents data from the
-    <strong><a href="https://eth-library.github.io/tobi/" target="_blank" rel="noopener noreferrer">TOBI project</a></strong>
+    Data from the
+    <a href="https://eth-library.github.io/tobi/" target="_blank" rel="noopener noreferrer">TOBI project</a>
     (Towards Open Bibliometric Indicators) on the findability and publication output of
-    <strong>{total}</strong> Swiss Higher Education Institutions (HEIs) in five bibliometric
-    databases: Dimensions, Scopus, Web of Science, OpenAIRE, and OpenAlex.
-  </p>
-  <p>
-    The TOBI project, conducted at ETH Library, investigated how well Swiss HEIs are
-    represented in commercial and open bibliometric databases. Its findings are particularly
-    relevant for research assessment and the development of open bibliometric indicators.
+    <strong>{total}</strong> Swiss HEIs in five bibliometric databases:
+    Dimensions, Scopus, Web of Science, OpenAIRE, and OpenAlex.
   </p>
 
   <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Institution types</h5>
@@ -285,16 +257,13 @@ intro_html = f"""
     </tbody>
   </table>
 
-  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Further reading</h5>
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">See also</h5>
   <ul>
-    <li>
-      <a href="https://yearofscientometrics.ethz.ch/exploring-swiss-higher-education-institutions-in-commercial-and-open-bibliometric-databases/" target="_blank" rel="noopener noreferrer">
-        Exploring Swiss Higher Education Institutions in Commercial and Open Bibliometric Databases
-      </a> &ndash; Swiss Year of Scientometrics (SYoS)
-    </li>
+    <li><a href="../naif/">NAIF Dashboard</a> &ndash; DORA &amp; CoARA adoption</li>
+    <li><a href="../swiss-hei-open-data/">Swiss HEI Open Data Dashboard</a> &ndash; institutional identifiers</li>
     <li>
       <a href="../../posts/2026-03-25-naif-continues-tobi/">
-        How NAIF builds on TOBI's results in Switzerland
+        How NAIF builds on TOBI&rsquo;s results
       </a> &ndash; NAIF blog
     </li>
     <li>
@@ -308,7 +277,7 @@ intro_html = f"""
 display(HTML(intro_html))
 ```
 
-#### Findability of institutions
+#### Findability
 
 ```{python}
 #| echo: false
@@ -348,11 +317,10 @@ findability_summary = pd.DataFrame(
         "Latest retrieval",
     ],
 )
-display_html_table(findability_summary)
-```
 
-```{python}
-#| echo: false
+display(HTML('<h5 class="dashboard-subheading">By source</h5>'))
+display_html_table(findability_summary)
+
 type_findability_rows = []
 for institution_type in TYPE_ORDER:
     group = df[df["type"] == institution_type]
@@ -383,6 +351,12 @@ for institution_type, group in df.groupby("type", dropna=False):
     type_findability_rows.append(row)
 
 type_findability = pd.DataFrame(type_findability_rows)
+
+display(
+    HTML(
+        '<h5 class="dashboard-subheading" style="margin-top: 1.5rem;">By institution type</h5>'
+    )
+)
 display_html_table(type_findability.reset_index(drop=True))
 ```
 
@@ -422,11 +396,10 @@ output_summary = pd.DataFrame(
         "Latest retrieval",
     ],
 )
-display_html_table(output_summary)
-```
 
-```{python}
-#| echo: false
+display(HTML('<h5 class="dashboard-subheading">By source</h5>'))
+display_html_table(output_summary)
+
 output_column_names = [output_column for _, _, output_column, _, _ in TOBI_SOURCES]
 output_rename = {
     "tobi_total_outputs_dim_2012_2022": "Dimensions",
@@ -464,10 +437,16 @@ for column in [
         lambda value: f"{int(value):,}" if pd.notna(value) else "-"
     )
 
+display(
+    HTML(
+        '<h5 class="dashboard-subheading" style="margin-top: 1.5rem;">'
+        "Top 15 institutions by largest source count</h5>"
+    )
+)
 display_html_table(top_outputs.reset_index(drop=True))
 ```
 
-#### List of institutions
+#### List of Institutions
 
 ```{python}
 #| echo: false
@@ -477,9 +456,6 @@ all_institutions = df[
         "short_name",
         "type",
         "town",
-        "swissuniversities_name",
-        "openalex_ids",
-        "openorgs_ids",
         "tobi_findable_dim",
         "tobi_findable_scopus",
         "tobi_findable_wos",
@@ -491,15 +467,6 @@ all_institutions = df[
 
 all_institutions["type"] = all_institutions["type"].apply(format_type_label)
 all_institutions["town"] = all_institutions["town"].apply(format_plain_text)
-all_institutions["swissuniversities_name"] = all_institutions["swissuniversities_name"].apply(
-    format_plain_text
-)
-all_institutions["openalex_ids"] = all_institutions["openalex_ids"].apply(
-    format_identifier_list
-)
-all_institutions["openorgs_ids"] = all_institutions["openorgs_ids"].apply(
-    format_identifier_list
-)
 
 all_institutions["tobi_total_outputs_openalex_2012_2022"] = all_institutions[
     "tobi_total_outputs_openalex_2012_2022"
@@ -513,9 +480,6 @@ all_institutions = all_institutions.rename(
         "short_name": "Short",
         "type": "Type",
         "town": "Town",
-        "swissuniversities_name": "swissuniversities",
-        "openalex_ids": "OpenAlex IDs",
-        "openorgs_ids": "OpenOrgs IDs",
         "tobi_findable_dim": "Dim.",
         "tobi_findable_scopus": "Scopus",
         "tobi_findable_wos": "WoS",
@@ -529,7 +493,7 @@ all_institutions = all_institutions.sort_values(
     ["type_order", "Town", "Institution"]
 ).reset_index(drop=True)
 
-all_institutions_overview = all_institutions[
+all_institutions = all_institutions[
     [
         "Institution",
         "Short",
@@ -542,36 +506,26 @@ all_institutions_overview = all_institutions[
         "OpenAlex",
         "OpenAlex outputs (2012–2022)",
     ]
-].copy()
+]
 
-all_institutions_identifiers = all_institutions[
-    [
-        "Institution",
-        "Type",
-        "swissuniversities",
-        "OpenAlex IDs",
-        "OpenOrgs IDs",
-    ]
-].copy()
-
-display(HTML('<h5 class="dashboard-subheading">Overview</h5>'))
-display_html_table(all_institutions_overview)
-display(HTML('<h5 class="dashboard-subheading">Identifiers</h5>'))
-display_html_table(all_institutions_identifiers)
+display(
+    HTML(
+        '<p class="dashboard-download-note">'
+        "For open data identifiers (OpenAlex, OpenOrgs, etc.), "
+        'see the <a href="../swiss-hei-open-data/">Swiss HEI Open Data Dashboard</a>.'
+        "</p>"
+    )
+)
+display_html_table(all_institutions)
 ```
 
-#### Data sources and credits
+#### Data Sources
 
 ```{python}
 #| echo: false
 credits_html = """
 <div class="dashboard-about">
-  <p>
-    This dashboard reuses TOBI project data on Swiss Higher Education Institutions and
-    presents it in a compact NAIF format.
-  </p>
-
-  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Data basis</h5>
+  <h5 class="dashboard-subheading">Data basis</h5>
   <ul>
     <li>
       Dederke, J., Koch, M., &amp; Willemin, S. (2024).
@@ -579,7 +533,7 @@ credits_html = """
       <a href="https://doi.org/10.3929/ethz-b-000726102" target="_blank" rel="noopener noreferrer">https://doi.org/10.3929/ethz-b-000726102</a>
     </li>
     <li>
-      Project context: TOBI (Towards Open Bibliometric Indicators), ETH Library.
+      TOBI (Towards Open Bibliometric Indicators), ETH Library.
       <a href="https://eth-library.github.io/tobi/" target="_blank" rel="noopener noreferrer">https://eth-library.github.io/tobi/</a>
     </li>
   </ul>

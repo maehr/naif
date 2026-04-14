@@ -41,12 +41,14 @@ website:
         href: about.qmd
       - text: Docs
         href: https://zenodo.org/communities/naif
-      # - text: Data
-      #   menu:
-      #    - text: NAIF
-      #      href: dashboards/naif/index.qmd
-      #    - text: TOBI
-      #      href: dashboards/tobi/index.qmd
+      - text: Dashboards
+        menu:
+          - text: NAIF
+            href: dashboards/naif/index.qmd
+          - text: TOBI
+            href: dashboards/tobi/index.qmd
+          - text: Swiss HEI Open Data
+            href: dashboards/swiss-hei-open-data/index.qmd
     pinned: true
   page-footer:
     center:
