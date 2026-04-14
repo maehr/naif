@@ -5,7 +5,7 @@ author: "BiblioCon 2026 Organising Committee"
 author-title: "Organizer"
 description: "BiblioCon 2026 in Berlin (19-22 May 2026), where NAIF contributes a poster on interoperability and academic metadata."
 categories:
-  - "Participation by NAIF"
+  - "Related Topic"
 tags:
   - "BiblioCon"
   - "Poster"

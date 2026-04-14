@@ -15,6 +15,12 @@ exclude = [
   # Disabled registration links for past events (rendered as strikethrough)
   "https://ema.uzh.ch/",
   "https://ethz.zoom.us/meeting/register/",
+  "https://epfl.zoom.us/meeting/register/",
+  # Python f-string URL templates in dashboard code (contain {identifier} placeholders)
+  "https://www.wikidata.org/wiki/",
+  "https://api.crossref.org/funders/",
+  "https://www.geonames.org/",
+  "https://isni.org/isni/",
 ]
 
 exclude_path = [
@@ -29,4 +35,4 @@ cache = true
 max_cache_age = "7d"
 insecure = true
 # DOI resolvers occasionally time out on CI even when the target record resolves.
-accept = ["100..=103", "200..=299", "403", "408", "429", "503", "521", "522", "524"]
+accept = ["100..=103", "200..=299", "301..=303", "307..=308", "403", "408", "429", "503", "521", "522", "524"]

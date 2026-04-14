@@ -1,0 +1,16 @@
+/* TOBI dashboard colour overrides — warm cream rgb(254, 247, 230) */
+
+.quarto-dashboard {
+  --dashboard-surface: #fef7e6;
+  --dashboard-surface-strong: #f7ecd4;
+  --dashboard-border: #e0d4b0;
+}
+
+.quarto-dashboard #quarto-dashboard-header .navbar {
+  background: linear-gradient(180deg, #fef7e6 0%, #f7ecd4 100%) !important;
+  border-bottom: 1px solid var(--dashboard-border);
+}
+
+.quarto-dashboard .dashboard-table-wrap thead th {
+  background: #fffbf2;
+}

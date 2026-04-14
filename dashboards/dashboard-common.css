@@ -130,3 +130,31 @@
   max-width: 60ch;
   color: var(--dashboard-muted);
 }
+
+.quarto-dashboard .dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.quarto-dashboard .dashboard-metric {
+  background: var(--dashboard-surface);
+  border: 1px solid var(--dashboard-border);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.quarto-dashboard .dashboard-metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dashboard-text);
+  line-height: 1.2;
+}
+
+.quarto-dashboard .dashboard-metric-label {
+  font-size: 0.85rem;
+  color: var(--dashboard-muted);
+  margin-top: 0.25rem;
+}

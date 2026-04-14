@@ -1,7 +1,7 @@
 ---
 title: "Dashboards"
-subtitle: "Interactive NAIF data views"
-description: "Explore NAIF dashboards on interoperable repositories and findable research results."
+subtitle: "Interactive data views on Swiss higher education"
+description: "Explore dashboards on DORA and CoARA adoption, bibliometric findability, and institutional open data identifiers."
 toc: false
 show-page-image: false
 listing:

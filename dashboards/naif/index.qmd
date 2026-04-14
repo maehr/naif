@@ -2,12 +2,15 @@
 title: "DORA & CoARA in Swiss Higher Education"
 format:
   dashboard:
-    css: ../dashboard-common.css
-author: "Dr. Moritz Mähr"
+    css:
+      - ../dashboard-common.css
+      - dashboard-naif.css
+    expandable: false
+author: "Dr Moritz Mähr"
 description: "An interactive dashboard showcasing the adoption of DORA and CoARA among Swiss Higher Education Institutions."
 image: images/dashboard-screenshot.png
-image-alt: "Screenshot of the DORA and CoARA dashboard with value boxes and an interactive map"
-image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-03-04."
+image-alt: "Screenshot of the DORA and CoARA dashboard with key figures and an interactive map"
+image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-04-14."
 date: today
 draft: false
 resources:
@@ -66,12 +69,6 @@ LEGEND_MEMBER_DOT_STYLE = (
     "position: absolute; width: 4px; height: 4px; border-radius: 999px; background: #111827; "
     "top: 50%; left: 50%; transform: translate(-50%, -50%);"
 )
-WIKIDATA_BASE = "https://www.wikidata.org"
-WIKIDATA_PATH = "/wiki/"
-CROSSREF_BASE = "https://api.crossref.org"
-CROSSREF_FUNDER_PATH = "/funders/"
-GEONAMES_BASE = "https://www.geonames.org"
-GEONAMES_PATH = "/"
 
 
 def normalise_yes_no(value: object) -> str:
@@ -110,25 +107,6 @@ def format_plain_text(value: object) -> str:
     """Return plain text values with a fallback dash."""
     text = format_identifier(value)
     return text if text else "-"
-
-
-def format_identifier_list(value: object) -> str:
-    """Render pipe-separated identifier lists with soft wrap points."""
-    text = format_identifier(value)
-    if not text:
-        return "-"
-
-    parts = [html.escape(part.strip()) for part in text.split("|") if part.strip()]
-    if not parts:
-        return "-"
-
-    return (
-        '<span class="dashboard-id-list">'
-        + '<wbr><span class="dashboard-id-sep">|</span><wbr>'.join(
-            f'<span class="dashboard-id-token">{part}</span>' for part in parts
-        )
-        + "</span>"
-    )
 
 
 def format_type_label(value: object) -> str:
@@ -179,52 +157,6 @@ def make_link(url: str, label: str) -> str:
     return f'<a href="{url}" target="_blank" rel="noopener noreferrer">{html.escape(label)}</a>'
 
 
-def link_ror(value: object) -> str:
-    """Link a ROR identifier."""
-    identifier = format_identifier(value)
-    if not identifier:
-        return "-"
-    return make_link(identifier, identifier)
-
-
-def link_wikidata(value: object) -> str:
-    """Link a Wikidata identifier."""
-    identifier = format_identifier(value)
-    if not identifier:
-        return "-"
-    if not identifier.startswith("Q"):
-        identifier = f"Q{identifier}"
-    url = f"{WIKIDATA_BASE}{WIKIDATA_PATH}{identifier}"
-    return make_link(url, identifier)
-
-
-def link_isni(value: object) -> str:
-    """Link an ISNI identifier."""
-    identifier = format_identifier(value)
-    if not identifier:
-        return "-"
-    compact = identifier.replace(" ", "")
-    return make_link(f"https://isni.org/isni/{compact}", identifier)
-
-
-def link_crossref_funder(value: object) -> str:
-    """Link a Crossref funder identifier."""
-    identifier = format_identifier(value)
-    if not identifier:
-        return "-"
-    url = f"{CROSSREF_BASE}{CROSSREF_FUNDER_PATH}{identifier}"
-    return make_link(url, identifier)
-
-
-def link_geonames(value: object) -> str:
-    """Link a GeoNames identifier."""
-    identifier = format_identifier(value)
-    if not identifier:
-        return "-"
-    url = f"{GEONAMES_BASE}{GEONAMES_PATH}{identifier}"
-    return make_link(url, identifier)
-
-
 def make_legend_symbol(colour: str, show_member_dot: bool = False) -> str:
     """Build the HTML swatch used in the map legend."""
     member_dot_html = (
@@ -265,15 +197,14 @@ def add_type_legend(
     _ = map_obj.get_root().html.add_child(folium.Element(legend_html))
 
 
-def display_html_table(dataframe: pd.DataFrame) -> None:
-    """Render a dataframe in a scrollable table container."""
-    table_html = dataframe.to_html(
+def render_table(dataframe: pd.DataFrame) -> str:
+    """Return a dataframe as an HTML table string."""
+    return dataframe.to_html(
         escape=False,
         index=False,
         classes="table table-sm table-striped align-middle",
         border=0,
     )
-    display(HTML(f'<div class="dashboard-table-wrap">{table_html}</div>'))
 
 
 def make_tooltip(label: object) -> folium.Tooltip:
@@ -385,35 +316,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ## Row {height=100%}
 
-### Column {width=28%}
-
-```{python}
-#| content: valuebox
-#| title: "Total HEIs"
-dict(icon="building", color="light", value=total)
-```
-
-```{python}
-#| content: valuebox
-#| title: "DORA Signatories"
-dict(icon="pen", color="light", value=dora_count)
-```
-
-```{python}
-#| content: valuebox
-#| title: "CoARA Signatories"
-dict(icon="pen-fill", color="light", value=coara_count)
-```
-
-```{python}
-#| content: valuebox
-#| title: "CoARA Members"
-dict(icon="person-check", color="light", value=coara_member_count)
-```
-
 ### Column {.tabset}
 
-#### DORA Signatories
+#### About
+
+```{python}
+#| echo: false
+about_html = f"""
+<div class="dashboard-about">
+  <h5 class="dashboard-subheading">Key figures</h5>
+  <table class="table table-sm" style="max-width: 52ch;">
+    <thead><tr><th>Metric</th><th>Count</th><th>Share</th></tr></thead>
+    <tbody>
+      <tr><td>Total HEIs</td><td>{total}</td><td>&ndash;</td></tr>
+      <tr><td>DORA signatories</td><td>{dora_count}</td><td>{pct(dora_count, total)}</td></tr>
+      <tr><td>CoARA signatories</td><td>{coara_count}</td><td>{pct(coara_count, total)}</td></tr>
+      <tr><td>CoARA members</td><td>{coara_member_count}</td><td>{pct(coara_member_count, total)}</td></tr>
+    </tbody>
+  </table>
+
+  <p>
+    This dashboard covers <strong>{total}</strong> Swiss Higher Education Institutions
+    and tracks adoption of the
+    <a href="https://sfdora.org/" target="_blank" rel="noopener noreferrer">San Francisco Declaration on Research Assessment</a>
+    (DORA) and the
+    <a href="https://coara.eu/" target="_blank" rel="noopener noreferrer">Agreement on Reforming Research Assessment</a>
+    (CoARA). On the CoARA map, a <strong>black centre dot</strong> marks CoARA members.
+  </p>
+
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Institution types</h5>
+  <table class="table table-sm" style="max-width: 52ch;">
+    <thead><tr><th>Abbreviation</th><th>Full name</th></tr></thead>
+    <tbody>
+      <tr><td><strong>University</strong></td><td>Cantonal universities and federal institutes of technology</td></tr>
+      <tr><td><strong>Univ.&nbsp;Inst.</strong></td><td>University institutes</td></tr>
+      <tr><td><strong>UAS</strong></td><td>Universities of applied sciences</td></tr>
+      <tr><td><strong>UAS&nbsp;Inst.</strong></td><td>UAS institutes</td></tr>
+      <tr><td><strong>UTE</strong></td><td>Teacher education institutions</td></tr>
+    </tbody>
+  </table>
+
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">See also</h5>
+  <ul>
+    <li><a href="../tobi/">TOBI Dashboard</a> &ndash; findability and publication counts</li>
+    <li><a href="../swiss-hei-open-data/">Swiss HEI Open Data Dashboard</a> &ndash; institutional identifiers</li>
+    <li>
+      <a href="../../posts/2026-03-25-naif-continues-tobi/">
+        How NAIF builds on TOBI&rsquo;s results
+      </a> &ndash; NAIF blog
+    </li>
+  </ul>
+</div>
+"""
+display(HTML(about_html))
+```
+
+#### DORA
 
 ```{python}
 #| echo: false
@@ -459,7 +417,7 @@ add_type_legend(m, set(dora_df["type"].dropna().tolist()))
 display(m)
 ```
 
-#### CoARA Signatories
+#### CoARA
 
 ```{python}
 #| echo: false
@@ -515,137 +473,7 @@ add_type_legend(
 display(m)
 ```
 
-#### About this dashboard
-
-```{python}
-#| echo: false
-about_html = f"""
-<div class=\"dashboard-about\">
-  <p>
-    This dashboard was prepared by <strong>Dr Moritz Mähr</strong> for NAIF. It brings together
-    <strong>{total}</strong> Swiss higher education institutions and shows how many are DORA
-    signatories, CoARA signatories, or CoARA members.
-  </p>
-  <p>
-    Included institution groups are universities, university institutes, universities of applied
-    sciences (UAS), UAS institutes, and teacher education institutions. Hover over a marker to
-    see the full institution name, then click for more detail.
-  </p>
-  <p>
-    On the CoARA map, a <strong>black centre dot</strong> marks CoARA members. The current dataset
-    includes <strong>{dora_count}</strong> DORA signatories, <strong>{coara_count}</strong> CoARA
-    signatories, and <strong>{coara_member_count}</strong> CoARA members.
-  </p>
-  <p>
-    The source data used in this dashboard is available from the download tab.
-  </p>
-</div>
-"""
-display(HTML(about_html))
-```
-
-#### All Institutions
-
-```{python}
-#| echo: false
-all_institutions = df[
-    [
-        "name",
-        "short_name",
-        "type",
-        "town",
-        "dora_signatory",
-        "coara_signatory",
-        "coara_member",
-        "swissuniversities_name",
-        "openalex_ids",
-        "openorgs_ids",
-        "ror_id",
-        "wikidata_id",
-        "isni_id",
-        "crossref_funder_id",
-        "geonames_id",
-    ]
-].copy()
-
-all_institutions["short_name"] = all_institutions["short_name"].apply(format_plain_text)
-all_institutions["type"] = all_institutions["type"].apply(format_type_label)
-all_institutions["town"] = all_institutions["town"].apply(format_plain_text)
-all_institutions["swissuniversities_name"] = all_institutions["swissuniversities_name"].apply(
-    format_plain_text
-)
-all_institutions["openalex_ids"] = all_institutions["openalex_ids"].apply(
-    format_identifier_list
-)
-all_institutions["openorgs_ids"] = all_institutions["openorgs_ids"].apply(
-    format_identifier_list
-)
-all_institutions["ror_id"] = all_institutions["ror_id"].apply(link_ror)
-all_institutions["wikidata_id"] = all_institutions["wikidata_id"].apply(link_wikidata)
-all_institutions["isni_id"] = all_institutions["isni_id"].apply(link_isni)
-all_institutions["crossref_funder_id"] = all_institutions["crossref_funder_id"].apply(
-    link_crossref_funder
-)
-all_institutions["geonames_id"] = all_institutions["geonames_id"].apply(link_geonames)
-all_institutions["type_order"] = df["type"].apply(type_order_key)
-
-all_institutions = all_institutions.rename(
-    columns={
-        "name": "Institution",
-        "short_name": "Short",
-        "type": "Type",
-        "town": "Town",
-        "dora_signatory": "DORA",
-        "coara_signatory": "CoARA sig.",
-        "coara_member": "CoARA member",
-        "swissuniversities_name": "swissuniversities",
-        "openalex_ids": "OpenAlex",
-        "openorgs_ids": "OpenOrgs",
-        "ror_id": "ROR",
-        "wikidata_id": "Wikidata",
-        "isni_id": "ISNI",
-        "crossref_funder_id": "Crossref",
-        "geonames_id": "GeoNames",
-    }
-)
-
-all_institutions = all_institutions.sort_values(
-    ["type_order", "Town", "Institution"]
-).reset_index(drop=True)
-
-all_institutions_overview = all_institutions[
-    [
-        "Institution",
-        "Short",
-        "Type",
-        "Town",
-        "DORA",
-        "CoARA sig.",
-        "CoARA member",
-        "swissuniversities",
-    ]
-].copy()
-
-all_institutions_identifiers = all_institutions[
-    [
-        "Institution",
-        "OpenAlex",
-        "OpenOrgs",
-        "ROR",
-        "Wikidata",
-        "ISNI",
-        "Crossref",
-        "GeoNames",
-    ]
-].copy()
-
-display(HTML('<h5 class="dashboard-subheading">Overview</h5>'))
-display_html_table(all_institutions_overview)
-display(HTML('<h5 class="dashboard-subheading">Identifiers</h5>'))
-display_html_table(all_institutions_identifiers)
-```
-
-#### Statistics
+#### Stats
 
 ```{python}
 #| echo: false
@@ -661,11 +489,7 @@ stats_df = pd.DataFrame(
     ],
     columns=["Metric", "Count", "Share"],
 )
-display_html_table(stats_df)
-```
 
-```{python}
-#| echo: false
 type_stats = (
     df.assign(type_order=df["type"].apply(type_order_key))
     .groupby("type", dropna=False)
@@ -712,25 +536,94 @@ type_stats = (
     .reset_index(drop=True)
 )
 
-display_html_table(type_stats)
+display(HTML(
+    '<div class="dashboard-about">'
+    '<h5 class="dashboard-subheading">Summary</h5>'
+    f"{render_table(stats_df)}"
+    '<h5 class="dashboard-subheading" style="margin-top: 1.5rem;">By institution type</h5>'
+    f"{render_table(type_stats)}"
+    "</div>"
+))
 ```
 
-#### Download Data
+#### List of Institutions
+
+```{python}
+#| echo: false
+all_institutions = df[
+    [
+        "name",
+        "short_name",
+        "type",
+        "town",
+        "dora_signatory",
+        "coara_signatory",
+        "coara_member",
+        "swissuniversities_name",
+    ]
+].copy()
+
+all_institutions["short_name"] = all_institutions["short_name"].apply(format_plain_text)
+all_institutions["type"] = all_institutions["type"].apply(format_type_label)
+all_institutions["town"] = all_institutions["town"].apply(format_plain_text)
+all_institutions["swissuniversities_name"] = all_institutions[
+    "swissuniversities_name"
+].apply(format_plain_text)
+all_institutions["type_order"] = all_institutions["type"].apply(type_order_key)
+
+all_institutions = all_institutions.rename(
+    columns={
+        "name": "Institution",
+        "short_name": "Short",
+        "type": "Type",
+        "town": "Town",
+        "dora_signatory": "DORA",
+        "coara_signatory": "CoARA sig.",
+        "coara_member": "CoARA member",
+        "swissuniversities_name": "swissuniversities",
+    }
+)
+
+all_institutions = all_institutions.sort_values(
+    ["type_order", "Town", "Institution"]
+).reset_index(drop=True)
+
+all_institutions = all_institutions[
+    [
+        "Institution",
+        "Short",
+        "Type",
+        "Town",
+        "DORA",
+        "CoARA sig.",
+        "CoARA member",
+        "swissuniversities",
+    ]
+]
+
+display(
+    HTML(
+        '<p class="dashboard-download-note">'
+        "For open data identifiers (ROR, OpenAlex, Wikidata, etc.), "
+        'see the <a href="../swiss-hei-open-data/">Swiss HEI Open Data Dashboard</a>.'
+        "</p>"
+    )
+)
+display(HTML(f'<div class="dashboard-table-wrap">{render_table(all_institutions)}</div>'))
+```
+
+#### Data Download
 
 ```{python}
 #| echo: false
 download_html = """
 <div class="dashboard-download">
-  <p>Download the full dataset used in this dashboard.</p>
   <div class="dashboard-download-actions">
     <a class="btn btn-primary" href="hei.csv" download="hei.csv">Download CSV</a>
     <a class="btn btn-secondary" href="hei.xlsx" download="hei.xlsx">
       Download Excel (.xlsx)
     </a>
   </div>
-  <p class="dashboard-download-note">
-    The Excel download is a real workbook export of the same dataset.
-  </p>
 </div>
 """
 display(HTML(download_html))

@@ -1,0 +1,301 @@
+---
+title: "Swiss HEI Open Data Dashboard"
+format:
+  dashboard:
+    css: ../dashboard-common.css
+    expandable: false
+author: "Dr Moritz Mähr"
+description: "Open data identifiers for Swiss Higher Education Institutions: ROR, OpenAlex, Wikidata, ISNI and more."
+image: images/dashboard-screenshot.png
+image-alt: "Screenshot of the Swiss HEI Open Data Dashboard with identifier coverage table"
+image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-04-14."
+date: today
+draft: false
+---
+
+```{python}
+#| echo: false
+import html
+
+import pandas as pd
+from IPython.display import HTML, display
+
+df = pd.read_csv("../naif/hei.csv")
+
+TYPE_ORDER = ["University", "Univ. Inst.", "UAS", "UAS Inst.", "UTE"]
+TYPE_LABELS = {
+    "University": "Universities",
+    "Univ. Inst.": "University institutes",
+    "UAS": "Universities of applied sciences (UAS)",
+    "UAS Inst.": "UAS institutes",
+    "UTE": "Teacher education institutions",
+}
+
+
+def format_identifier(value: object) -> str:
+    """Convert IDs to stable strings and remove float artefacts."""
+    if pd.isna(value):
+        return ""
+    text = str(value).strip()
+    if not text:
+        return ""
+    if text.endswith(".0"):
+        try:
+            numeric_value = float(text)
+            if numeric_value.is_integer():
+                return str(int(numeric_value))
+        except ValueError:
+            return text
+    return text
+
+
+def format_plain_text(value: object) -> str:
+    """Return plain text values with a fallback dash."""
+    text = format_identifier(value)
+    return text if text else "-"
+
+
+def format_identifier_list(value: object) -> str:
+    """Render pipe-separated identifier lists with soft wrap points."""
+    text = format_identifier(value)
+    if not text:
+        return "-"
+    parts = [html.escape(part.strip()) for part in text.split("|") if part.strip()]
+    if not parts:
+        return "-"
+    return (
+        '<span class="dashboard-id-list">'
+        + '<wbr><span class="dashboard-id-sep">|</span><wbr>'.join(
+            f'<span class="dashboard-id-token">{part}</span>' for part in parts
+        )
+        + "</span>"
+    )
+
+
+def format_type_label(value: object) -> str:
+    """Return the full label for an institution type."""
+    text = format_identifier(value)
+    if not text:
+        return "Unknown"
+    return TYPE_LABELS.get(text, text)
+
+
+def type_order_key(value: object) -> int:
+    """Return a stable sort key for institution types."""
+    text = format_identifier(value)
+    try:
+        return TYPE_ORDER.index(text)
+    except ValueError:
+        return len(TYPE_ORDER)
+
+
+def make_link(url: str, label: str) -> str:
+    """Create a safe external link."""
+    return f'<a href="{url}" target="_blank" rel="noopener noreferrer">{html.escape(label)}</a>'
+
+
+def link_ror(value: object) -> str:
+    """Link a ROR identifier."""
+    identifier = format_identifier(value)
+    if not identifier:
+        return "-"
+    return make_link(identifier, identifier)
+
+
+def link_wikidata(value: object) -> str:
+    """Link a Wikidata identifier."""
+    identifier = format_identifier(value)
+    if not identifier:
+        return "-"
+    if not identifier.startswith("Q"):
+        identifier = f"Q{identifier}"
+    url = f"https://www.wikidata.org/wiki/{identifier}"
+    return make_link(url, identifier)
+
+
+def link_isni(value: object) -> str:
+    """Link an ISNI identifier."""
+    identifier = format_identifier(value)
+    if not identifier:
+        return "-"
+    compact = identifier.replace(" ", "")
+    return make_link(f"https://isni.org/isni/{compact}", identifier)
+
+
+def link_crossref_funder(value: object) -> str:
+    """Link a Crossref funder identifier."""
+    identifier = format_identifier(value)
+    if not identifier:
+        return "-"
+    url = f"https://api.crossref.org/funders/{identifier}"
+    return make_link(url, identifier)
+
+
+def link_geonames(value: object) -> str:
+    """Link a GeoNames identifier."""
+    identifier = format_identifier(value)
+    if not identifier:
+        return "-"
+    url = f"https://www.geonames.org/{identifier}"
+    return make_link(url, identifier)
+
+
+def render_table(dataframe: pd.DataFrame) -> str:
+    """Return a dataframe as an HTML table string."""
+    return dataframe.to_html(
+        escape=False,
+        index=False,
+        classes="table table-sm table-striped align-middle",
+        border=0,
+    )
+
+
+def pct(value: int, denominator: int) -> str:
+    """Format a value as a percentage string."""
+    if denominator == 0:
+        return "0.0%"
+    return f"{(100 * value / denominator):.1f}%"
+
+
+total = len(df)
+has_ror = int(df["ror_id"].notna().sum())
+has_openalex = int(
+    df["openalex_ids"].apply(lambda v: bool(format_identifier(v))).sum()
+)
+has_wikidata = int(df["wikidata_id"].notna().sum())
+has_isni = int(df["isni_id"].notna().sum())
+has_crossref = int(df["crossref_funder_id"].notna().sum())
+has_geonames = int(df["geonames_id"].notna().sum())
+```
+
+## Row {height=100%}
+
+### Column {.tabset}
+
+#### About
+
+```{python}
+#| echo: false
+about_html = f"""
+<div class="dashboard-about">
+  <h5 class="dashboard-subheading">Key figures</h5>
+  <table class="table table-sm" style="max-width: 52ch;">
+    <thead><tr><th>Identifier</th><th>HEIs covered</th><th>Share</th></tr></thead>
+    <tbody>
+      <tr><td>Total HEIs</td><td>{total}</td><td>&ndash;</td></tr>
+      <tr><td>ROR</td><td>{has_ror}</td><td>{pct(has_ror, total)}</td></tr>
+      <tr><td>OpenAlex</td><td>{has_openalex}</td><td>{pct(has_openalex, total)}</td></tr>
+      <tr><td>Wikidata</td><td>{has_wikidata}</td><td>{pct(has_wikidata, total)}</td></tr>
+      <tr><td>ISNI</td><td>{has_isni}</td><td>{pct(has_isni, total)}</td></tr>
+      <tr><td>Crossref Funder</td><td>{has_crossref}</td><td>{pct(has_crossref, total)}</td></tr>
+      <tr><td>GeoNames</td><td>{has_geonames}</td><td>{pct(has_geonames, total)}</td></tr>
+    </tbody>
+  </table>
+
+  <p>
+    Open data identifiers for <strong>{total}</strong> Swiss Higher Education Institutions.
+    These identifiers link institutions to external registries and databases such as
+    <a href="https://ror.org/" target="_blank" rel="noopener noreferrer">ROR</a>,
+    <a href="https://openalex.org/" target="_blank" rel="noopener noreferrer">OpenAlex</a>,
+    <a href="https://www.wikidata.org/" target="_blank" rel="noopener noreferrer">Wikidata</a>,
+    <a href="https://isni.org/" target="_blank" rel="noopener noreferrer">ISNI</a>,
+    <a href="https://www.crossref.org/" target="_blank" rel="noopener noreferrer">Crossref</a>, and
+    <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames</a>.
+  </p>
+
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">See also</h5>
+  <ul>
+    <li><a href="../naif/">NAIF Dashboard</a> &ndash; DORA &amp; CoARA adoption</li>
+    <li><a href="../tobi/">TOBI Dashboard</a> &ndash; findability and publication counts</li>
+  </ul>
+</div>
+"""
+display(HTML(about_html))
+```
+
+#### Identifiers
+
+```{python}
+#| echo: false
+id_df = df[
+    [
+        "name",
+        "short_name",
+        "type",
+        "town",
+        "openalex_ids",
+        "openorgs_ids",
+        "ror_id",
+        "wikidata_id",
+        "isni_id",
+        "crossref_funder_id",
+        "geonames_id",
+    ]
+].copy()
+
+id_df["short_name"] = id_df["short_name"].apply(format_plain_text)
+id_df["type"] = id_df["type"].apply(format_type_label)
+id_df["town"] = id_df["town"].apply(format_plain_text)
+id_df["openalex_ids"] = id_df["openalex_ids"].apply(format_identifier_list)
+id_df["openorgs_ids"] = id_df["openorgs_ids"].apply(format_identifier_list)
+id_df["ror_id"] = id_df["ror_id"].apply(link_ror)
+id_df["wikidata_id"] = id_df["wikidata_id"].apply(link_wikidata)
+id_df["isni_id"] = id_df["isni_id"].apply(link_isni)
+id_df["crossref_funder_id"] = id_df["crossref_funder_id"].apply(link_crossref_funder)
+id_df["geonames_id"] = id_df["geonames_id"].apply(link_geonames)
+id_df["type_order"] = id_df["type"].apply(type_order_key)
+
+id_df = id_df.rename(
+    columns={
+        "name": "Institution",
+        "short_name": "Short",
+        "type": "Type",
+        "town": "Town",
+        "openalex_ids": "OpenAlex",
+        "openorgs_ids": "OpenOrgs",
+        "ror_id": "ROR",
+        "wikidata_id": "Wikidata",
+        "isni_id": "ISNI",
+        "crossref_funder_id": "Crossref",
+        "geonames_id": "GeoNames",
+    }
+)
+
+id_df = id_df.sort_values(["type_order", "Town", "Institution"]).reset_index(drop=True)
+
+id_df = id_df[
+    [
+        "Institution",
+        "Short",
+        "Type",
+        "Town",
+        "OpenAlex",
+        "OpenOrgs",
+        "ROR",
+        "Wikidata",
+        "ISNI",
+        "Crossref",
+        "GeoNames",
+    ]
+]
+
+display(HTML(f'<div class="dashboard-table-wrap">{render_table(id_df)}</div>'))
+```
+
+#### Data Download
+
+```{python}
+#| echo: false
+download_html = """
+<div class="dashboard-download">
+  <p>The dataset is maintained in the NAIF Dashboard.</p>
+  <div class="dashboard-download-actions">
+    <a class="btn btn-primary" href="../naif/hei.csv" download="hei.csv">Download CSV</a>
+    <a class="btn btn-secondary" href="../naif/hei.xlsx" download="hei.xlsx">
+      Download Excel (.xlsx)
+    </a>
+  </div>
+</div>
+"""
+display(HTML(download_html))
+```

@@ -41,12 +41,8 @@ website:
         href: about.qmd
       - text: Docs
         href: https://zenodo.org/communities/naif
-      # - text: Data
-      #   menu:
-      #    - text: NAIF
-      #      href: dashboards/naif/index.qmd
-      #    - text: TOBI
-      #      href: dashboards/tobi/index.qmd
+      - text: Dashboards
+        href: dashboards/index.qmd
     pinned: true
   page-footer:
     center:
