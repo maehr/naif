@@ -37,6 +37,16 @@
   <media:content url="https://eth-library.github.io/naif/events/2026-09-09-sti-enid-2026/images/sti-enid-2026-homepage.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
+  <title>Swiss Open Academic Data Day (SOAD Day) 2026</title>
+  <dc:creator>Swiss Open Academic Data (SOAD)</dc:creator>
+  <link>https://eth-library.github.io/naif/events/2026-09-02-soad-day/</link>
+  <description><![CDATA[ Second Swiss Open Academic Data Day at EPFL on 2 September 2026, with a call for lightning talks and posters open until 18 May 2026. ]]></description>
+  <category>Related Topic</category>
+  <guid>https://eth-library.github.io/naif/events/2026-09-02-soad-day/</guid>
+  <pubDate>Tue, 01 Sep 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://eth-library.github.io/naif/events/2026-09-02-soad-day/images/soad-day-2026.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
   <title>DARIAH Annual Event 2026</title>
   <dc:creator>DARIAH ERIC</dc:creator>
   <link>https://eth-library.github.io/naif/events/2026-05-26-dariah-annual-event-2026/</link>
