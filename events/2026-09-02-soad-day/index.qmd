@@ -1,0 +1,38 @@
+---
+title: "Swiss Open Academic Data Day (SOAD Day) 2026"
+date: 2026-09-02
+author: "Swiss Open Academic Data (SOAD)"
+author-title: "Organizer"
+description: "Second Swiss Open Academic Data Day at EPFL on 2 September 2026, with a call for lightning talks and posters open until 18 May 2026."
+categories:
+  - "Related Topic"
+tags:
+  - "SOAD Day"
+  - "open academic data"
+  - "call for contributions"
+proofread: false
+image: "images/soad-day-2026.png"
+image-alt: "SOAD Day 2026 event page on the SOAD website"
+image-caption: "Screenshot of the SOAD Day 2026 event page. Source: https://soad.ch/soad-day/. Rights: SOAD."
+toc: true
+---
+
+<!-- Sources: <https://soad.ch/soad-day/>; contribution form: <https://docs.google.com/forms/d/e/1FAIpQLSey_Ifryj9aFNGExjjVPSDy4w4IB0lMCwljzeMnWsoUZm1jRg/viewform> -->
+
+## Details
+
+- Date: Wednesday, 2 September 2026
+- Location: EPFL, Lausanne
+- Registration: To be announced
+- Call for contributions: <https://docs.google.com/forms/d/e/1FAIpQLSey_Ifryj9aFNGExjjVPSDy4w4IB0lMCwljzeMnWsoUZm1jRg/viewform>
+- Submission deadline: Sunday, 18 May 2026
+- Event page: <https://soad.ch/soad-day/>
+- Contact: <mailto:info@soad.ch>
+
+## About
+
+The second Swiss Open Academic Data (SOAD) Day will bring together researchers and practitioners in Switzerland to explore how Open Academic Data can be used, shared, and improved across institutions and infrastructures.
+
+According to the organisers, the morning programme will include a keynote, lightning talks, and a poster session focused on tools, projects, results, and initiatives around Open Academic Data. The afternoon will be dedicated to a hackathon. The call for contributions invites proposals for lightning talks and posters related to research information and metadata sources such as OpenAlex, OpenAIRE, ORCID, Crossref, and ETER.
+
+The topic is closely related to NAIF's work on improving the visibility, quality, and interoperability of academic metadata in Switzerland.
