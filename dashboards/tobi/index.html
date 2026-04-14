@@ -91,19 +91,20 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../dashboard-common.css">
+<link rel="stylesheet" href="dashboard-tobi.css">
 <meta property="og:title" content="Findability and publication count of Swiss HEIs from the TOBI project – NAIF">
 <meta property="og:description" content="Findability and output coverage of Swiss Higher Education Institutions in five bibliometric databases, based on TOBI project data.">
 <meta property="og:image" content="https://eth-library.github.io/naif/dashboards/tobi/images/dashboard-screenshot.png">
 <meta property="og:site_name" content="NAIF">
 <meta property="og:image:height" content="900">
 <meta property="og:image:width" content="1600">
-<meta property="og:image:alt" content="Screenshot of the TOBI dashboard with value boxes and summary tables">
+<meta property="og:image:alt" content="Screenshot of the TOBI dashboard with key figures and summary tables">
 <meta name="twitter:title" content="Findability and publication count of Swiss HEIs from the TOBI project – NAIF">
 <meta name="twitter:description" content="Findability and output coverage of Swiss Higher Education Institutions in five bibliometric databases, based on TOBI project data.">
 <meta name="twitter:image" content="https://eth-library.github.io/naif/dashboards/tobi/images/dashboard-screenshot.png">
 <meta name="twitter:image-height" content="900">
 <meta name="twitter:image-width" content="1600">
-<meta name="twitter:image:alt" content="Screenshot of the TOBI dashboard with value boxes and summary tables">
+<meta name="twitter:image:alt" content="Screenshot of the TOBI dashboard with key figures and summary tables">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -141,6 +142,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="https://zenodo.org/communities/naif"> 
 <span class="menu-text">Docs</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../dashboards/index.html"> 
+<span class="menu-text">Dashboards</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -174,104 +179,59 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 
 <div class="bslib-grid-item html-fill-item bslib-grid" data-layout="fill" style="display: grid; grid-template-rows: minmax(3em, 100fr); grid-auto-columns: minmax(0, 1fr);">
-<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 28fr) minmax(3em, 72fr);
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
-<div class="card valuebox cell bslib-card html-fill-container bslib-value-box bg-light showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
-<div class="card-body html-fill-item html-fill-container">
-<div data-icon="database" class="html-fill-item html-fill-container value-box-grid">
-<div class="value-box-showcase html-fill-item html-fill-container">
-
-<i class="bi bi-database"></i></div>
-<div class="value-box-area">
-<p class="value-box-title">
-HEIs with TOBI data
-</p>
-<p class="value-box-value">
-92.7%
-</p>
-</div>
-</div>
-</div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-<div class="card valuebox cell bslib-card html-fill-container bslib-value-box bg-light showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
-<div class="card-body html-fill-item html-fill-container">
-<div data-icon="search" class="html-fill-item html-fill-container value-box-grid">
-<div class="value-box-showcase html-fill-item html-fill-container">
-
-<i class="bi bi-search"></i></div>
-<div class="value-box-area">
-<p class="value-box-title">
-OpenAlex findable
-</p>
-<p class="value-box-value">
-81.8%
-</p>
-</div>
-</div>
-</div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-<div class="card valuebox cell bslib-card html-fill-container bslib-value-box bg-light showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
-<div class="card-body html-fill-item html-fill-container">
-<div data-icon="diagram-3" class="html-fill-item html-fill-container value-box-grid">
-<div class="value-box-showcase html-fill-item html-fill-container">
-
-<i class="bi bi-diagram-3"></i></div>
-<div class="value-box-area">
-<p class="value-box-title">
-Dimensions findable
-</p>
-<p class="value-box-value">
-81.8%
-</p>
-</div>
-</div>
-</div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-<div class="card valuebox cell bslib-card html-fill-container bslib-value-box bg-light showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
-<div class="card-body html-fill-item html-fill-container">
-<div data-icon="bar-chart" class="html-fill-item html-fill-container value-box-grid">
-<div class="value-box-showcase html-fill-item html-fill-container">
-
-<i class="bi bi-bar-chart"></i></div>
-<div class="value-box-area">
-<p class="value-box-title">
-OpenAlex outputs
-</p>
-<p class="value-box-value">
-518,396
-</p>
-</div>
-</div>
-</div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-</div><div class="card tabset bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card tabset bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-header dashboard-card-no-title bslib-navs-card-title">
 
-<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-5"><li class="nav-item" role="presentation"><a href="#card-tabset-5-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="About" aria-selected="true" class="nav-link active">About</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Findability of institutions" aria-selected="false" class="nav-link">Findability of institutions</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-3" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Publication counts (2012–2022)" aria-selected="false" class="nav-link">Publication counts (2012–2022)</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-4" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="List of institutions" aria-selected="false" class="nav-link">List of institutions</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-5-5" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Data sources and credits" aria-selected="false" class="nav-link">Data sources and credits</a></li></ul></div>
+<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-1"><li class="nav-item" role="presentation"><a href="#card-tabset-1-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="About" aria-selected="true" class="nav-link active">About</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-1-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Findability" aria-selected="false" class="nav-link">Findability</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-1-3" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Publication counts (2012–2022)" aria-selected="false" class="nav-link">Publication counts (2012–2022)</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-1-4" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="List of Institutions" aria-selected="false" class="nav-link">List of Institutions</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-1-5" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Data Sources" aria-selected="false" class="nav-link">Data Sources</a></li></ul></div>
 
 
 
 
 
-<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-5"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-1"><div class="card-body html-fill-item html-fill-container" data-title="About">
-<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-columns: minmax(3em, 1fr);
-grid-auto-rows: minmax(0, 1fr);">
-<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-1"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-1-1"><div class="card-body html-fill-item html-fill-container" data-title="About">
+<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <div class="dashboard-about html-fill-item html-fill-container">
+  <h5 class="dashboard-subheading">Key figures</h5>
+  
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Metric</th>
+<th data-quarto-table-cell-role="th">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HEIs with TOBI data</td>
+<td>51 of 55 (92.7%)</td>
+</tr>
+<tr class="even">
+<td>OpenAlex findable</td>
+<td>45 of 55 (81.8%)</td>
+</tr>
+<tr class="odd">
+<td>Dimensions findable</td>
+<td>45 of 55 (81.8%)</td>
+</tr>
+<tr class="even">
+<td>OpenAlex outputs (2012–2022)</td>
+<td>518,396</td>
+</tr>
+</tbody>
+</table>
+
+
   <p>
-    This dashboard presents data from the
-    <strong><a href="https://eth-library.github.io/tobi/" target="_blank" rel="noopener noreferrer">TOBI project</a></strong>
+    Data from the
+    <a href="https://eth-library.github.io/tobi/" target="_blank" rel="noopener noreferrer">TOBI project</a>
     (Towards Open Bibliometric Indicators) on the findability and publication output of
-    <strong>55</strong> Swiss Higher Education Institutions (HEIs) in five bibliometric
-    databases: Dimensions, Scopus, Web of Science, OpenAIRE, and OpenAlex.
-  </p>
-  <p>
-    The TOBI project, conducted at ETH Library, investigated how well Swiss HEIs are
-    represented in commercial and open bibliometric databases. Its findings are particularly
-    relevant for research assessment and the development of open bibliometric indicators.
+    <strong>55</strong> Swiss HEIs in five bibliometric databases:
+    Dimensions, Scopus, Web of Science, OpenAIRE, and OpenAlex.
   </p>
 
   <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Institution types</h5>
@@ -308,16 +268,13 @@ grid-auto-rows: minmax(0, 1fr);">
 </table>
 
 
-  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Further reading</h5>
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">See also</h5>
   <ul>
-    <li>
-      <a href="https://yearofscientometrics.ethz.ch/exploring-swiss-higher-education-institutions-in-commercial-and-open-bibliometric-databases/" target="_blank" rel="noopener noreferrer">
-        Exploring Swiss Higher Education Institutions in Commercial and Open Bibliometric Databases
-      </a> – Swiss Year of Scientometrics (SYoS)
-    </li>
+    <li><a href="../naif/">NAIF Dashboard</a> – DORA &amp; CoARA adoption</li>
+    <li><a href="../swiss-hei-open-data/">Swiss HEI Open Data Dashboard</a> – institutional identifiers</li>
     <li>
       <a href="../../posts/2026-03-25-naif-continues-tobi/">
-        How NAIF builds on TOBI's results in Switzerland
+        How NAIF builds on TOBI’s results
       </a> – NAIF blog
     </li>
     <li>
@@ -329,20 +286,14 @@ grid-auto-rows: minmax(0, 1fr);">
 </div>
 </div>
 </div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-2"><div class="card-body html-fill-item html-fill-container" data-title="Findability of institutions">
-<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
-grid-auto-rows: minmax(0, 1fr);">
-<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-1-2"><div class="card-body html-fill-item html-fill-container" data-title="Findability">
+<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<div class="dashboard-table-wrap html-fill-item html-fill-container">
+<div class="dashboard-about html-fill-item html-fill-container"><h5 class="dashboard-subheading">By source</h5>
 <table class="dataframe table table-sm table-striped align-middle caption-top small">
 <thead>
 <tr class="header">
@@ -403,18 +354,7 @@ grid-auto-rows: minmax(0, 1fr);">
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-body html-fill-item html-fill-container">
-<div class="cell-output cell-output-display html-fill-item html-fill-container">
-<div class="dashboard-table-wrap html-fill-item html-fill-container">
+<h5 class="dashboard-subheading" style="margin-top: 1.5rem;">By institution type</h5>
 <table class="dataframe table table-sm table-striped align-middle caption-top small">
 <thead>
 <tr class="header">
@@ -508,20 +448,14 @@ grid-auto-rows: minmax(0, 1fr);">
 </div>
 </div>
 </div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-3"><div class="card-body html-fill-item html-fill-container" data-title="Publication counts (2012–2022)">
-<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
-grid-auto-rows: minmax(0, 1fr);">
-<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-1-3"><div class="card-body html-fill-item html-fill-container" data-title="Publication counts (2012–2022)">
+<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<div class="dashboard-table-wrap html-fill-item html-fill-container">
+<div class="dashboard-about html-fill-item html-fill-container"><h5 class="dashboard-subheading">By source</h5>
 <table class="dataframe table table-sm table-striped align-middle caption-top small">
 <thead>
 <tr class="header">
@@ -570,18 +504,7 @@ grid-auto-rows: minmax(0, 1fr);">
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-body html-fill-item html-fill-container">
-<div class="cell-output cell-output-display html-fill-item html-fill-container">
-<div class="dashboard-table-wrap html-fill-item html-fill-container">
+<h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Top 15 institutions by largest source count</h5>
 <table class="dataframe table table-sm table-striped align-middle caption-top small">
 <thead>
 <tr class="header">
@@ -767,20 +690,14 @@ grid-auto-rows: minmax(0, 1fr);">
 </div>
 </div>
 </div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-4"><div class="card-body html-fill-item html-fill-container" data-title="List of institutions">
-<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-columns: minmax(3em, 1fr);
-grid-auto-rows: minmax(0, 1fr);">
-<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-1-4"><div class="card-body html-fill-item html-fill-container" data-title="List of Institutions">
+<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<h5 class="dashboard-subheading">Overview</h5>
+<p class="dashboard-download-note">For open data identifiers (OpenAlex, OpenOrgs, etc.), see the <a href="../swiss-hei-open-data/">Swiss HEI Open Data Dashboard</a>.</p>
 </div>
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <div class="dashboard-table-wrap html-fill-item html-fill-container">
@@ -1464,433 +1381,17 @@ grid-auto-rows: minmax(0, 1fr);">
 </table>
 </div>
 </div>
-<div class="cell-output cell-output-display html-fill-item html-fill-container">
-<h5 class="dashboard-subheading">Identifiers</h5>
 </div>
-<div class="cell-output cell-output-display html-fill-item html-fill-container">
-<div class="dashboard-table-wrap html-fill-item html-fill-container">
-<table class="dataframe table table-sm table-striped align-middle caption-top small">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Institution</th>
-<th data-quarto-table-cell-role="th">Type</th>
-<th data-quarto-table-cell-role="th">swissuniversities</th>
-<th data-quarto-table-cell-role="th">OpenAlex IDs</th>
-<th data-quarto-table-cell-role="th">OpenOrgs IDs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Swiss UMEF</td>
-<td>UAS institutes</td>
-<td>Swiss UMEF</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4399657977</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::73bfaf94abdefe88a3374cf0983b935e</span></span></td>
-</tr>
-<tr class="even">
-<td>Schweizerisches Universitäres Institut für Traditionelle Chinesische Medizin</td>
-<td>University institutes</td>
-<td>Schweizerisches universitäres Institut für traditionelle chinesische Medizin SWISS TCM UNI</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4399598368</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::51e8a672e8dd17dbfc6eff42b2ebed5a</span></span></td>
-</tr>
-<tr class="odd">
-<td>University of Basel</td>
-<td>Universities</td>
-<td>Universität Basel</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I158937107</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I1850255</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I2802542264</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210126115</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210166749</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I860889466</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000003279</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000004780</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000004962</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000008787</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000071837</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000097873</span></span></td>
-</tr>
-<tr class="even">
-<td>Bern University of Applied Sciences</td>
-<td>Universities of applied sciences (UAS)</td>
-<td>Berner Fachhochschule BFH</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I130692619</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000015426</span></span></td>
-</tr>
-<tr class="odd">
-<td>Institute of Teacher Education PH NMS Bern</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Pädagogisches Hochschulinstitut NMS Bern (formerly IVP NMS)</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210143584</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000073006</span></span></td>
-</tr>
-<tr class="even">
-<td>University of Bern</td>
-<td>Universities</td>
-<td>Universität Bern UniBE</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I118564535</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I2801112126</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210087665</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000004168</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000073267</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000097739</span></span></td>
-</tr>
-<tr class="odd">
-<td>University of Teacher Education Bern</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Pädagogische Hochschule Bern PH Bern</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210160491</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000044391</span></span></td>
-</tr>
-<tr class="even">
-<td>University of Applied Sciences and Arts of Southern Switzerland</td>
-<td>Universities of applied sciences (UAS)</td>
-<td>Scuola universitaria professionale della Svizzera italiana SUPSI</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I15196421</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I2614128279</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210116528</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000000542</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000044325</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000059721</span></span></td>
-</tr>
-<tr class="odd">
-<td>Les Roches Global Hospitality Education</td>
-<td>UAS institutes</td>
-<td>Les Roches Global Hospitality Education</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>Distance Learning University Switzerland</td>
-<td>University institutes</td>
-<td>Stiftung Universitäre Fernstudien Schweiz, Brig</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210139595</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::1ee37347adef16924686f4e7c015741c</span></span></td>
-</tr>
-<tr class="odd">
-<td>University of Teacher Education Valais</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Haute école pédagogique du Valais | Pädagogische Hochschule Wallis HEP-VS | PH-VS</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210141884</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056054</span></span></td>
-</tr>
-<tr class="even">
-<td>Theologische Hochschule Chur</td>
-<td>University institutes</td>
-<td>Theologische Hochschule Chur</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210136385</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000073244</span></span></td>
-</tr>
-<tr class="odd">
-<td>University of Applied Sciences of the Grisons</td>
-<td>Universities of applied sciences (UAS)</td>
-<td>Fachhochschule Graubünden FHGR</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210120439</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000050055</span></span></td>
-</tr>
-<tr class="even">
-<td>University of Teacher Education Graubünden</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Pädagogische Hochschule Graubünden | Alta scuola pedagogica dei Grigioni | Scola auta da pedagogia dal Grischun PHGR</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210117930</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000059258</span></span></td>
-</tr>
-<tr class="odd">
-<td>HES-SO University of Applied Sciences and Arts Western Switzerland</td>
-<td>Universities of applied sciences (UAS)</td>
-<td>Haute école spécialisée de Suisse occidentale HES-SO</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I173439891</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210088449</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210109379</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210119508</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210129267</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210160903</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000072872</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000072873</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000097733</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::061b1c3fe4a28f3f1bc097f8b0678a80</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::fabc66f620b7e6ec0cf9e0d6881c7fa2</span></span></td>
-</tr>
-<tr class="even">
-<td>University of Fribourg</td>
-<td>Universities</td>
-<td>Université de Fribourg Unifr</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I154338468</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210093738</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210110454</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000005675</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000067954</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000098195</span></span></td>
-</tr>
-<tr class="odd">
-<td>Graduate Institute of International and Development Studies</td>
-<td>University institutes</td>
-<td>Institut de hautes études internationales et du développement, Genève, IHEID</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I951315</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000015739</span></span></td>
-</tr>
-<tr class="even">
-<td>University of Geneva</td>
-<td>Universities</td>
-<td>Université de Genève UNIGE</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I114457229</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210106256</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210129591</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210149244</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I7495430</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000000467</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000071845</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000098203</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::664fcd1baf49e13486b9515738e6165e</span></span></td>
-</tr>
-<tr class="odd">
-<td>Glion Institute of Higher Education</td>
-<td>UAS institutes</td>
-<td>Glion Institute of Higher Education</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I2802806793</span></span></td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>University of Teacher Education Schwyz</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Pädagogische Hochschule Schwyz PHSZ</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210095907</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056007</span></span></td>
-</tr>
-<tr class="odd">
-<td>SBS Swiss Business School</td>
-<td>UAS institutes</td>
-<td>Swiss Business School SBS</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4399598389</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0de33f5fa55f31cb73fb43e84ba2616a</span></span></td>
-</tr>
-<tr class="even">
-<td>Thurgau University of Teacher Education</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Pädagogische Hochschule Thurgau PHTG</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210138261</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056157</span></span></td>
-</tr>
-<tr class="odd">
-<td>International Institute for Management Development</td>
-<td>University institutes</td>
-<td>IMD - International Institute for Management Development</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I130154697</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000052317</span></span></td>
-</tr>
-<tr class="even">
-<td>Swiss Federal Institute of Technology Lausanne</td>
-<td>Universities</td>
-<td>Ecole polytechnique fédérale de Lausanne EPFL</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210100659</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210122261</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210129591</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210132519</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210140175</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I5124864</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I7495430</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000057917</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000071845</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000072945</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000096663</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000097652</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0f0744ada95d4305e7b5addb2105973f</span></span></td>
-</tr>
-<tr class="odd">
-<td>University of Lausanne</td>
-<td>Universities</td>
-<td>Université de Lausanne UNIL</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I2802229882</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210100035</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210100659</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210101498</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210135124</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210149244</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I97565354</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000072539</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000072945</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000096669</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000098193</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000098313</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::664fcd1baf49e13486b9515738e6165e</span></span></td>
-</tr>
-<tr class="even">
-<td>University of Teacher Education Vaud</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Haute école pédagogique du canton de Vaud HEP Vaud</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210106586</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056062</span></span></td>
-</tr>
-<tr class="odd">
-<td>César Ritz Colleges Switzerland</td>
-<td>UAS institutes</td>
-<td>César Ritz Colleges Switzerland</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>SUPSI - Dipartimento formazione e apprendimento SUPSI-DFA</td>
-<td>Teacher education institutions (UTE)</td>
-<td>SUPSI - Dipartimento formazione e apprendimento SUPSI-DFA</td>
-<td>-</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::bbf28dbc8406d6baf3bda78834504d9f</span></span></td>
-</tr>
-<tr class="odd">
-<td>Lucerne University of Applied Sciences and Arts</td>
-<td>Universities of applied sciences (UAS)</td>
-<td>Hochschule Luzern HSLU</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I81007117</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000016348</span></span></td>
-</tr>
-<tr class="even">
-<td>University of Lucerne</td>
-<td>Universities</td>
-<td>Universität Luzern Unilu</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I161941770</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000040003</span></span></td>
-</tr>
-<tr class="odd">
-<td>University of Teacher Education Lucerne</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Pädagogische Hochschule Luzern PH Luzern</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210112078</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000055803</span></span></td>
-</tr>
-<tr class="even">
-<td>Università della Svizzera italiana</td>
-<td>Universities</td>
-<td>Università della Svizzera italiana USI</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I2614128279</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I57201433</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000002708</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000059721</span></span></td>
-</tr>
-<tr class="odd">
-<td>Swiss Federal Institute of Sport Magglingen SFISM</td>
-<td>UAS institutes</td>
-<td>Swiss Federal Institute of Sport Magglingen SFISM</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210097597</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000072893</span></span></td>
-</tr>
-<tr class="even">
-<td>University of Neuchâtel</td>
-<td>Universities</td>
-<td>Université de Neuchâtel UniNE</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210126212</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I57825437</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000000117</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000072662</span></span></td>
-</tr>
-<tr class="odd">
-<td>Haute école pédagogique - BEJUNE</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Haute école pédagogique des cantons de Berne, du Jura et de Neuchâtel HEP-BEJUNE</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210101117</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000059229</span></span></td>
-</tr>
-<tr class="even">
-<td>OST - Eastern Switzerland University of Applied Sciences</td>
-<td>Universities of applied sciences (UAS)</td>
-<td>OST - Ostschweizer Fachhochschule</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210127453</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210129390</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210143180</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210145378</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000096681</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000096682</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000096683</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::5e1ff4b25339b85b35dccf232595c841</span></span></td>
-</tr>
-<tr class="odd">
-<td>Staatsunabhängige Theologische Hochschule Basel</td>
-<td>University institutes</td>
-<td>Universitäre Theologische Hochschule Basel STH Basel</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210116588</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000059267</span></span></td>
-</tr>
-<tr class="even">
-<td>St.Gallen University of Teacher Education</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Pädagogische Hochschule St. Gallen PHSG</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210158813</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056046</span></span></td>
-</tr>
-<tr class="odd">
-<td>University of Speech Therapy Eastern Switzerland</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Hochschule für Logopädie Ostschweiz hlo</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210146015</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000059271</span></span></td>
-</tr>
-<tr class="even">
-<td>University of St. Gallen</td>
-<td>Universities</td>
-<td>Universität St. Gallen HSG</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I202963720</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000000522</span></span></td>
-</tr>
-<tr class="odd">
-<td>Hochschulinstitut Schaffhausen</td>
-<td>University institutes</td>
-<td>Hochschulinstitut Schaffhausen HSSH</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4399598448</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::abaf4ad58425ff3a7c3938b6479efc17</span></span></td>
-</tr>
-<tr class="even">
-<td>University of Teacher Education Schaffhausen</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Pädagogische Hochschule Schaffhausen PHSH</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210139224</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000055972</span></span></td>
-</tr>
-<tr class="odd">
-<td>Franklin University Institute Switzerland</td>
-<td>University institutes</td>
-<td>Franklin University Institute Switzerland</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I903955410</span></span></td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>Pädagogische Hochschule FHNW</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Pädagogische Hochschule Nordwestschweiz PH FHNW</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4399598484</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::9735c613fb47ef36274499e863c71624</span></span></td>
-</tr>
-<tr class="odd">
-<td>University of Applied Sciences Northwestern Switzerland</td>
-<td>Universities of applied sciences (UAS)</td>
-<td>Fachhochschule Nordwestschweiz FHNW</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I2801068065</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I2972652528</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000003136</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000049249</span></span></td>
-</tr>
-<tr class="even">
-<td>Zurich University of Applied Sciences</td>
-<td>Universities of applied sciences (UAS)</td>
-<td>Zürcher Hochschule für angewandte Wissenschaften ZHAW</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I858936495</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000000750</span></span></td>
-</tr>
-<tr class="odd">
-<td>Swiss Federal University for Vocational Education and Training</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Eidgenössische Hochschule für Berufsbildung, EHB</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210097053</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056011</span></span></td>
-</tr>
-<tr class="even">
-<td>University of Teacher Education Zug</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Pädagogische Hochschule Zug PH Zug</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210146564</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056109</span></span></td>
-</tr>
-<tr class="odd">
-<td>HWZ University of Applied Sciences in Business Administration</td>
-<td>UAS institutes</td>
-<td>Hochschule für Wirtschaft Zürich HWZ</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I197141962</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000040059</span></span></td>
-</tr>
-<tr class="even">
-<td>Kalaidos University of Applied Sciences</td>
-<td>Universities of applied sciences (UAS)</td>
-<td>Kalaidos Fachhochschule</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I3132934759</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000039714</span></span></td>
-</tr>
-<tr class="odd">
-<td>Swiss Federal Institute of Technology Zurich</td>
-<td>Universities</td>
-<td>Eidgenössische Technische Hochschule Zürich ETH</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I35440088</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210090941</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210122261</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210127086</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000071878</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000097748</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0f0744ada95d4305e7b5addb2105973f</span></span></td>
-</tr>
-<tr class="even">
-<td>University of Teacher Education Zurich</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Pädagogische Hochschule Zürich PH Zürich</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210111868</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000072626</span></span></td>
-</tr>
-<tr class="odd">
-<td>University of Teacher Education in Special Needs</td>
-<td>Teacher education institutions (UTE)</td>
-<td>Interkantonale Hochschule für Heilpädagogik Zürich HfH</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I4210086400</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000056114</span></span></td>
-</tr>
-<tr class="even">
-<td>University of Zurich</td>
-<td>Universities</td>
-<td>Universität Zürich UZH</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I202697423</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210090941</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210100468</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210115727</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210128593</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">I4210164351</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000004466</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000004775</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000071878</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000073409</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000074032</span><wbr><span class="dashboard-id-sep">|</span><wbr><span class="dashboard-id-token">openorgs____::0000097991</span></span></td>
-</tr>
-<tr class="odd">
-<td>Zurich University of the Arts</td>
-<td>Universities of applied sciences (UAS)</td>
-<td>Zürcher Hochschule der Künste ZHdk</td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">I64152125</span></span></td>
-<td><span class="dashboard-id-list"><span class="dashboard-id-token">openorgs____::0000040062</span></span></td>
-</tr>
-</tbody>
-</table>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-</div>
-</div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-</div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-5-5"><div class="card-body html-fill-item html-fill-container" data-title="Data sources and credits">
-<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-columns: minmax(3em, 1fr);
-grid-auto-rows: minmax(0, 1fr);">
-<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-1-5"><div class="card-body html-fill-item html-fill-container" data-title="Data Sources">
+<div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 
 <div class="dashboard-about html-fill-item html-fill-container">
-  <p>
-    This dashboard reuses TOBI project data on Swiss Higher Education Institutions and
-    presents it in a compact NAIF format.
-  </p>
-
-  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Data basis</h5>
+  <h5 class="dashboard-subheading">Data basis</h5>
   <ul>
     <li>
       Dederke, J., Koch, M., &amp; Willemin, S. (2024).
@@ -1898,7 +1399,7 @@ grid-auto-rows: minmax(0, 1fr);">
       <a href="https://doi.org/10.3929/ethz-b-000726102" target="_blank" rel="noopener noreferrer">https://doi.org/10.3929/ethz-b-000726102</a>
     </li>
     <li>
-      Project context: TOBI (Towards Open Bibliometric Indicators), ETH Library.
+      TOBI (Towards Open Bibliometric Indicators), ETH Library.
       <a href="https://eth-library.github.io/tobi/" target="_blank" rel="noopener noreferrer">https://eth-library.github.io/tobi/</a>
     </li>
   </ul>
@@ -1920,21 +1421,14 @@ grid-auto-rows: minmax(0, 1fr);">
 </div>
 </div>
 </div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+
+
+<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
 
 </div>
 </div>
-</div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div></div></div><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
 </div>
 

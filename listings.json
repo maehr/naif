@@ -56,7 +56,8 @@
     "listing": "/dashboards/index.html",
     "items": [
       "/dashboards/naif/index.html",
-      "/dashboards/tobi/index.html"
+      "/dashboards/tobi/index.html",
+      "/dashboards/swiss-hei-open-data/index.html"
     ]
   },
   {
