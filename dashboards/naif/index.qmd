@@ -2,13 +2,15 @@
 title: "DORA & CoARA in Swiss Higher Education"
 format:
   dashboard:
-    css: ../dashboard-common.css
+    css:
+      - ../dashboard-common.css
+      - dashboard-naif.css
     expandable: false
 author: "Dr Moritz Mähr"
 description: "An interactive dashboard showcasing the adoption of DORA and CoARA among Swiss Higher Education Institutions."
 image: images/dashboard-screenshot.png
-image-alt: "Screenshot of the DORA and CoARA dashboard with value boxes and an interactive map"
-image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-03-04."
+image-alt: "Screenshot of the DORA and CoARA dashboard with key figures and an interactive map"
+image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-04-14."
 date: today
 draft: false
 resources:
@@ -195,15 +197,14 @@ def add_type_legend(
     _ = map_obj.get_root().html.add_child(folium.Element(legend_html))
 
 
-def display_html_table(dataframe: pd.DataFrame) -> None:
-    """Render a dataframe in a scrollable table container."""
-    table_html = dataframe.to_html(
+def render_table(dataframe: pd.DataFrame) -> str:
+    """Return a dataframe as an HTML table string."""
+    return dataframe.to_html(
         escape=False,
         index=False,
         classes="table table-sm table-striped align-middle",
         border=0,
     )
-    display(HTML(f'<div class="dashboard-table-wrap">{table_html}</div>'))
 
 
 def make_tooltip(label: object) -> folium.Tooltip:
@@ -323,24 +324,16 @@ document.addEventListener("DOMContentLoaded", () => {
 #| echo: false
 about_html = f"""
 <div class="dashboard-about">
-  <div class="dashboard-metrics">
-    <div class="dashboard-metric">
-      <div class="dashboard-metric-value">{total}</div>
-      <div class="dashboard-metric-label">Total HEIs</div>
-    </div>
-    <div class="dashboard-metric">
-      <div class="dashboard-metric-value">{dora_count}</div>
-      <div class="dashboard-metric-label">DORA signatories</div>
-    </div>
-    <div class="dashboard-metric">
-      <div class="dashboard-metric-value">{coara_count}</div>
-      <div class="dashboard-metric-label">CoARA signatories</div>
-    </div>
-    <div class="dashboard-metric">
-      <div class="dashboard-metric-value">{coara_member_count}</div>
-      <div class="dashboard-metric-label">CoARA members</div>
-    </div>
-  </div>
+  <h5 class="dashboard-subheading">Key figures</h5>
+  <table class="table table-sm" style="max-width: 52ch;">
+    <thead><tr><th>Metric</th><th>Count</th><th>Share</th></tr></thead>
+    <tbody>
+      <tr><td>Total HEIs</td><td>{total}</td><td>&ndash;</td></tr>
+      <tr><td>DORA signatories</td><td>{dora_count}</td><td>{pct(dora_count, total)}</td></tr>
+      <tr><td>CoARA signatories</td><td>{coara_count}</td><td>{pct(coara_count, total)}</td></tr>
+      <tr><td>CoARA members</td><td>{coara_member_count}</td><td>{pct(coara_member_count, total)}</td></tr>
+    </tbody>
+  </table>
 
   <p>
     This dashboard covers <strong>{total}</strong> Swiss Higher Education Institutions
@@ -497,9 +490,6 @@ stats_df = pd.DataFrame(
     columns=["Metric", "Count", "Share"],
 )
 
-display(HTML('<h5 class="dashboard-subheading">Summary</h5>'))
-display_html_table(stats_df)
-
 type_stats = (
     df.assign(type_order=df["type"].apply(type_order_key))
     .groupby("type", dropna=False)
@@ -546,12 +536,14 @@ type_stats = (
     .reset_index(drop=True)
 )
 
-display(
-    HTML(
-        '<h5 class="dashboard-subheading" style="margin-top: 1.5rem;">By institution type</h5>'
-    )
-)
-display_html_table(type_stats)
+display(HTML(
+    '<div class="dashboard-about">'
+    '<h5 class="dashboard-subheading">Summary</h5>'
+    f"{render_table(stats_df)}"
+    '<h5 class="dashboard-subheading" style="margin-top: 1.5rem;">By institution type</h5>'
+    f"{render_table(type_stats)}"
+    "</div>"
+))
 ```
 
 #### List of Institutions
@@ -617,7 +609,7 @@ display(
         "</p>"
     )
 )
-display_html_table(all_institutions)
+display(HTML(f'<div class="dashboard-table-wrap">{render_table(all_institutions)}</div>'))
 ```
 
 #### Data Download

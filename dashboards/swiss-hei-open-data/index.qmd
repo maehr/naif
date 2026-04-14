@@ -6,6 +6,9 @@ format:
     expandable: false
 author: "Dr Moritz Mähr"
 description: "Open data identifiers for Swiss Higher Education Institutions: ROR, OpenAlex, Wikidata, ISNI and more."
+image: images/dashboard-screenshot.png
+image-alt: "Screenshot of the Swiss HEI Open Data Dashboard with identifier coverage table"
+image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-04-14."
 date: today
 draft: false
 ---
@@ -137,15 +140,21 @@ def link_geonames(value: object) -> str:
     return make_link(url, identifier)
 
 
-def display_html_table(dataframe: pd.DataFrame) -> None:
-    """Render a dataframe in a scrollable table container."""
-    table_html = dataframe.to_html(
+def render_table(dataframe: pd.DataFrame) -> str:
+    """Return a dataframe as an HTML table string."""
+    return dataframe.to_html(
         escape=False,
         index=False,
         classes="table table-sm table-striped align-middle",
         border=0,
     )
-    display(HTML(f'<div class="dashboard-table-wrap">{table_html}</div>'))
+
+
+def pct(value: int, denominator: int) -> str:
+    """Format a value as a percentage string."""
+    if denominator == 0:
+        return "0.0%"
+    return f"{(100 * value / denominator):.1f}%"
 
 
 total = len(df)
@@ -154,6 +163,9 @@ has_openalex = int(
     df["openalex_ids"].apply(lambda v: bool(format_identifier(v))).sum()
 )
 has_wikidata = int(df["wikidata_id"].notna().sum())
+has_isni = int(df["isni_id"].notna().sum())
+has_crossref = int(df["crossref_funder_id"].notna().sum())
+has_geonames = int(df["geonames_id"].notna().sum())
 ```
 
 ## Row {height=100%}
@@ -166,24 +178,19 @@ has_wikidata = int(df["wikidata_id"].notna().sum())
 #| echo: false
 about_html = f"""
 <div class="dashboard-about">
-  <div class="dashboard-metrics">
-    <div class="dashboard-metric">
-      <div class="dashboard-metric-value">{total}</div>
-      <div class="dashboard-metric-label">Total HEIs</div>
-    </div>
-    <div class="dashboard-metric">
-      <div class="dashboard-metric-value">{has_ror}</div>
-      <div class="dashboard-metric-label">With ROR ID</div>
-    </div>
-    <div class="dashboard-metric">
-      <div class="dashboard-metric-value">{has_openalex}</div>
-      <div class="dashboard-metric-label">With OpenAlex ID</div>
-    </div>
-    <div class="dashboard-metric">
-      <div class="dashboard-metric-value">{has_wikidata}</div>
-      <div class="dashboard-metric-label">With Wikidata ID</div>
-    </div>
-  </div>
+  <h5 class="dashboard-subheading">Key figures</h5>
+  <table class="table table-sm" style="max-width: 52ch;">
+    <thead><tr><th>Identifier</th><th>HEIs covered</th><th>Share</th></tr></thead>
+    <tbody>
+      <tr><td>Total HEIs</td><td>{total}</td><td>&ndash;</td></tr>
+      <tr><td>ROR</td><td>{has_ror}</td><td>{pct(has_ror, total)}</td></tr>
+      <tr><td>OpenAlex</td><td>{has_openalex}</td><td>{pct(has_openalex, total)}</td></tr>
+      <tr><td>Wikidata</td><td>{has_wikidata}</td><td>{pct(has_wikidata, total)}</td></tr>
+      <tr><td>ISNI</td><td>{has_isni}</td><td>{pct(has_isni, total)}</td></tr>
+      <tr><td>Crossref Funder</td><td>{has_crossref}</td><td>{pct(has_crossref, total)}</td></tr>
+      <tr><td>GeoNames</td><td>{has_geonames}</td><td>{pct(has_geonames, total)}</td></tr>
+    </tbody>
+  </table>
 
   <p>
     Open data identifiers for <strong>{total}</strong> Swiss Higher Education Institutions.
@@ -272,7 +279,7 @@ id_df = id_df[
     ]
 ]
 
-display_html_table(id_df)
+display(HTML(f'<div class="dashboard-table-wrap">{render_table(id_df)}</div>'))
 ```
 
 #### Data Download

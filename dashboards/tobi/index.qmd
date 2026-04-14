@@ -2,13 +2,15 @@
 title: "Findability and publication count of Swiss HEIs from the TOBI project"
 format:
   dashboard:
-    css: ../dashboard-common.css
+    css:
+      - ../dashboard-common.css
+      - dashboard-tobi.css
     expandable: false
 author: "Dr Moritz Mähr"
 description: "Findability and output coverage of Swiss Higher Education Institutions in five bibliometric databases, based on TOBI project data."
 image: images/dashboard-screenshot.png
-image-alt: "Screenshot of the TOBI dashboard with value boxes and summary tables"
-image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-03-04."
+image-alt: "Screenshot of the TOBI dashboard with key figures and summary tables"
+image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-04-14."
 date: today
 draft: false
 resources:
@@ -175,15 +177,14 @@ def make_link(url: str, label: str) -> str:
     return f'<a href="{url}" target="_blank" rel="noopener noreferrer">{html.escape(label)}</a>'
 
 
-def display_html_table(dataframe: pd.DataFrame) -> None:
-    """Render a dataframe in a scrollable table container."""
-    table_html = dataframe.to_html(
+def render_table(dataframe: pd.DataFrame) -> str:
+    """Return a dataframe as an HTML table string."""
+    return dataframe.to_html(
         escape=False,
         index=False,
         classes="table table-sm table-striped align-middle",
         border=0,
     )
-    display(HTML(f'<div class="dashboard-table-wrap">{table_html}</div>'))
 
 
 for _, findability_column, output_column, _, _ in TOBI_SOURCES:
@@ -218,24 +219,16 @@ openalex_outputs = int(df["tobi_total_outputs_openalex_2012_2022"].fillna(0).sum
 #| echo: false
 intro_html = f"""
 <div class="dashboard-about">
-  <div class="dashboard-metrics">
-    <div class="dashboard-metric">
-      <div class="dashboard-metric-value">{pct(any_tobi, total)}</div>
-      <div class="dashboard-metric-label">HEIs with TOBI data</div>
-    </div>
-    <div class="dashboard-metric">
-      <div class="dashboard-metric-value">{pct(openalex_findable, total)}</div>
-      <div class="dashboard-metric-label">OpenAlex findable</div>
-    </div>
-    <div class="dashboard-metric">
-      <div class="dashboard-metric-value">{pct(dimensions_findable, total)}</div>
-      <div class="dashboard-metric-label">Dimensions findable</div>
-    </div>
-    <div class="dashboard-metric">
-      <div class="dashboard-metric-value">{openalex_outputs:,}</div>
-      <div class="dashboard-metric-label">OpenAlex outputs</div>
-    </div>
-  </div>
+  <h5 class="dashboard-subheading">Key figures</h5>
+  <table class="table table-sm" style="max-width: 52ch;">
+    <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+    <tbody>
+      <tr><td>HEIs with TOBI data</td><td>{any_tobi} of {total} ({pct(any_tobi, total)})</td></tr>
+      <tr><td>OpenAlex findable</td><td>{openalex_findable} of {total} ({pct(openalex_findable, total)})</td></tr>
+      <tr><td>Dimensions findable</td><td>{dimensions_findable} of {total} ({pct(dimensions_findable, total)})</td></tr>
+      <tr><td>OpenAlex outputs (2012&ndash;2022)</td><td>{openalex_outputs:,}</td></tr>
+    </tbody>
+  </table>
 
   <p>
     Data from the
@@ -318,9 +311,6 @@ findability_summary = pd.DataFrame(
     ],
 )
 
-display(HTML('<h5 class="dashboard-subheading">By source</h5>'))
-display_html_table(findability_summary)
-
 type_findability_rows = []
 for institution_type in TYPE_ORDER:
     group = df[df["type"] == institution_type]
@@ -352,12 +342,14 @@ for institution_type, group in df.groupby("type", dropna=False):
 
 type_findability = pd.DataFrame(type_findability_rows)
 
-display(
-    HTML(
-        '<h5 class="dashboard-subheading" style="margin-top: 1.5rem;">By institution type</h5>'
-    )
-)
-display_html_table(type_findability.reset_index(drop=True))
+display(HTML(
+    '<div class="dashboard-about">'
+    '<h5 class="dashboard-subheading">By source</h5>'
+    f"{render_table(findability_summary)}"
+    '<h5 class="dashboard-subheading" style="margin-top: 1.5rem;">By institution type</h5>'
+    f"{render_table(type_findability.reset_index(drop=True))}"
+    "</div>"
+))
 ```
 
 #### Publication counts (2012–2022)
@@ -397,9 +389,6 @@ output_summary = pd.DataFrame(
     ],
 )
 
-display(HTML('<h5 class="dashboard-subheading">By source</h5>'))
-display_html_table(output_summary)
-
 output_column_names = [output_column for _, _, output_column, _, _ in TOBI_SOURCES]
 output_rename = {
     "tobi_total_outputs_dim_2012_2022": "Dimensions",
@@ -437,13 +426,15 @@ for column in [
         lambda value: f"{int(value):,}" if pd.notna(value) else "-"
     )
 
-display(
-    HTML(
-        '<h5 class="dashboard-subheading" style="margin-top: 1.5rem;">'
-        "Top 15 institutions by largest source count</h5>"
-    )
-)
-display_html_table(top_outputs.reset_index(drop=True))
+display(HTML(
+    '<div class="dashboard-about">'
+    '<h5 class="dashboard-subheading">By source</h5>'
+    f"{render_table(output_summary)}"
+    '<h5 class="dashboard-subheading" style="margin-top: 1.5rem;">'
+    "Top 15 institutions by largest source count</h5>"
+    f"{render_table(top_outputs.reset_index(drop=True))}"
+    "</div>"
+))
 ```
 
 #### List of Institutions
@@ -516,7 +507,7 @@ display(
         "</p>"
     )
 )
-display_html_table(all_institutions)
+display(HTML(f'<div class="dashboard-table-wrap">{render_table(all_institutions)}</div>'))
 ```
 
 #### Data Sources

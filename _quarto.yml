@@ -42,13 +42,7 @@ website:
       - text: Docs
         href: https://zenodo.org/communities/naif
       - text: Dashboards
-        menu:
-          - text: NAIF
-            href: dashboards/naif/index.qmd
-          - text: TOBI
-            href: dashboards/tobi/index.qmd
-          - text: Swiss HEI Open Data
-            href: dashboards/swiss-hei-open-data/index.qmd
+        href: dashboards/index.qmd
     pinned: true
   page-footer:
     center:

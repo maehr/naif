@@ -1,0 +1,16 @@
+/* NAIF dashboard colour overrides — warm beige rgb(232, 225, 208) */
+
+.quarto-dashboard {
+  --dashboard-surface: #e8e1d0;
+  --dashboard-surface-strong: #ddd5c2;
+  --dashboard-border: #c4b89e;
+}
+
+.quarto-dashboard #quarto-dashboard-header .navbar {
+  background: linear-gradient(180deg, #e8e1d0 0%, #ddd5c2 100%) !important;
+  border-bottom: 1px solid var(--dashboard-border);
+}
+
+.quarto-dashboard .dashboard-table-wrap thead th {
+  background: #f2ede3;
+}
