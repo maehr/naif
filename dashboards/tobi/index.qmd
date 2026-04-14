@@ -1,5 +1,5 @@
 ---
-title: "Findability and publication count of Swiss HEIs as found in TOBI project"
+title: "Findability and publication count of Swiss HEIs from the TOBI project"
 format:
   dashboard:
     css: ../dashboard-common.css
@@ -505,7 +505,7 @@ all_institutions["tobi_total_outputs_openalex_2012_2022"] = all_institutions[
     "tobi_total_outputs_openalex_2012_2022"
 ].map(lambda value: f"{int(value):,}" if pd.notna(value) else "-")
 
-all_institutions["type_order"] = df["type"].apply(type_order_key)
+all_institutions["type_order"] = all_institutions["type"].apply(type_order_key)
 
 all_institutions = all_institutions.rename(
     columns={

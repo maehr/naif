@@ -422,7 +422,7 @@ about_html = f"""
   <p>
     This dashboard was prepared by <strong>Dr Moritz Mähr</strong> for the
     <strong><a href="https://eth-library.github.io/naif/" target="_blank" rel="noopener noreferrer">NAIF project</a></strong>
-    (Narratives and Institutions of Academic Freedom). It brings together
+    (National Approach for Interoperable repositories and Findable research results). It brings together
     <strong>{total}</strong> Swiss Higher Education Institutions and shows how many have
     signed the <strong>San Francisco Declaration on Research Assessment</strong>
     (<a href="https://sfdora.org/" target="_blank" rel="noopener noreferrer">DORA</a>) and the
@@ -624,7 +624,7 @@ all_institutions["crossref_funder_id"] = all_institutions["crossref_funder_id"].
     link_crossref_funder
 )
 all_institutions["geonames_id"] = all_institutions["geonames_id"].apply(link_geonames)
-all_institutions["type_order"] = df["type"].apply(type_order_key)
+all_institutions["type_order"] = all_institutions["type"].apply(type_order_key)
 
 all_institutions = all_institutions.rename(
     columns={
