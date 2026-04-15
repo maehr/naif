@@ -55,6 +55,40 @@ def format_identifier_list(value: object) -> str:
     )
 
 
+def link_openalex_list(value: object) -> str:
+    """Render pipe-separated OpenAlex IDs as linked, one per line."""
+    text = format_identifier(value)
+    if not text:
+        return "-"
+    parts = [part.strip() for part in text.split("|") if part.strip()]
+    if not parts:
+        return "-"
+    links = [
+        make_link(f"https://openalex.org/institutions/{html.escape(pid)}", pid)
+        for pid in parts
+    ]
+    return '<span class="dashboard-id-list">' + "<br>".join(links) + "</span>"
+
+
+def link_openorgs_list(value: object) -> str:
+    """Render pipe-separated OpenOrgs IDs as linked, one per line."""
+    text = format_identifier(value)
+    if not text:
+        return "-"
+    parts = [part.strip() for part in text.split("|") if part.strip()]
+    if not parts:
+        return "-"
+    explore_base = "https://explore.openaire.eu/search/organization?organizationId="
+    links = [
+        make_link(
+            f"{explore_base}{html.escape(pid)}",
+            pid.replace("openorgs____::", ""),
+        )
+        for pid in parts
+    ]
+    return '<span class="dashboard-id-list">' + "<br>".join(links) + "</span>"
+
+
 def link_ror(value: object) -> str:
     """Link a ROR identifier."""
     identifier = format_identifier(value)
@@ -147,6 +181,10 @@ about_html = f"""
     <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames</a>.
   </p>
 
+  <p style="margin-top: 1.5rem; color: var(--dashboard-muted); font-size: 0.9rem;">
+    Data last updated: 3 March 2026.
+  </p>
+
   <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">See also</h5>
   <ul>
     <li><a href="../naif/">NAIF Dashboard</a> &ndash; DORA &amp; CoARA adoption</li>
@@ -181,8 +219,8 @@ id_df["type_order"] = id_df["type"].apply(type_order_key)
 id_df["short_name"] = id_df["short_name"].apply(format_plain_text)
 id_df["type"] = id_df["type"].apply(format_type_label)
 id_df["town"] = id_df["town"].apply(format_plain_text)
-id_df["openalex_ids"] = id_df["openalex_ids"].apply(format_identifier_list)
-id_df["openorgs_ids"] = id_df["openorgs_ids"].apply(format_identifier_list)
+id_df["openalex_ids"] = id_df["openalex_ids"].apply(link_openalex_list)
+id_df["openorgs_ids"] = id_df["openorgs_ids"].apply(link_openorgs_list)
 id_df["ror_id"] = id_df["ror_id"].apply(link_ror)
 id_df["wikidata_id"] = id_df["wikidata_id"].apply(link_wikidata)
 id_df["isni_id"] = id_df["isni_id"].apply(link_isni)

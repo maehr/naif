@@ -440,14 +440,6 @@ all_institutions = all_institutions[
     ]
 ]
 
-display(
-    HTML(
-        '<p class="dashboard-download-note">'
-        "For open data identifiers (OpenAlex, OpenOrgs, etc.), "
-        'see the <a href="../swiss-hei-open-data/">Swiss HEI Open Data Dashboard</a>.'
-        "</p>"
-    )
-)
 display(HTML(f'<div class="dashboard-table-wrap">{render_table(all_institutions)}</div>'))
 ```
 
