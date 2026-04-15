@@ -1,5 +1,60 @@
 <script>
 window.document.addEventListener("DOMContentLoaded", function () {
+  const markPastEventListings = () => {
+    const now = new Date();
+    const startOfTodayUtc = Date.UTC(
+      now.getUTCFullYear(),
+      now.getUTCMonth(),
+      now.getUTCDate()
+    );
+
+    const listingCards = Array.from(
+      window.document.querySelectorAll(".quarto-listing .quarto-post[data-listing-date-sort]")
+    );
+
+    for (const card of listingCards) {
+      const listingLink = card.querySelector(".listing-title a[href], .thumbnail a[href]");
+      if (!(listingLink instanceof window.HTMLAnchorElement)) {
+        continue;
+      }
+
+      let listingPath = "";
+      try {
+        listingPath = new window.URL(listingLink.href, window.location.href).pathname;
+      } catch (_error) {
+        continue;
+      }
+
+      if (!listingPath.includes("/events/")) {
+        continue;
+      }
+
+      const listingDateSort = Number(card.dataset.listingDateSort || "");
+      if (!Number.isFinite(listingDateSort) || listingDateSort >= startOfTodayUtc) {
+        continue;
+      }
+
+      card.setAttribute("data-event-state", "past");
+
+      const listingDate = card.querySelector(".listing-date");
+      if (!(listingDate instanceof window.HTMLElement)) {
+        continue;
+      }
+
+      if (listingDate.querySelector(".naif-event-state-badge")) {
+        continue;
+      }
+
+      const badge = window.document.createElement("span");
+      badge.className = "badge rounded-pill text-bg-secondary naif-event-state-badge";
+      badge.textContent = "Past event";
+      listingDate.appendChild(window.document.createTextNode(" "));
+      listingDate.appendChild(badge);
+    }
+  };
+
+  markPastEventListings();
+
   const filterContainers = Array.from(
     window.document.querySelectorAll("[data-listing-filter-buttons='true']")
   );

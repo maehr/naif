@@ -89,6 +89,27 @@ figcaption,
     flex-grow: 1;
     text-align: center;
 }
+
+.quarto-post[data-event-state="past"] .thumbnail-image {
+  filter: grayscale(0.55);
+  opacity: 0.72;
+}
+
+.quarto-post[data-event-state="past"] .listing-title {
+  opacity: 0.88;
+}
+
+.quarto-post[data-event-state="past"] .listing-description,
+.quarto-post[data-event-state="past"] .listing-author,
+.quarto-post[data-event-state="past"] .listing-categories {
+  opacity: 0.78;
+}
+
+.naif-event-state-badge {
+  margin-left: 0.4rem;
+  vertical-align: text-top;
+}
+
 // --- NAIF sidebar CTA --------------------------------------------------------
 // Injected via `includes/get-involved.html`.
 
