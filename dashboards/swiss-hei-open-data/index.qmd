@@ -233,6 +233,7 @@ id_df = df[
     ]
 ].copy()
 
+id_df["type_order"] = id_df["type"].apply(type_order_key)
 id_df["short_name"] = id_df["short_name"].apply(format_plain_text)
 id_df["type"] = id_df["type"].apply(format_type_label)
 id_df["town"] = id_df["town"].apply(format_plain_text)
@@ -243,7 +244,6 @@ id_df["wikidata_id"] = id_df["wikidata_id"].apply(link_wikidata)
 id_df["isni_id"] = id_df["isni_id"].apply(link_isni)
 id_df["crossref_funder_id"] = id_df["crossref_funder_id"].apply(link_crossref_funder)
 id_df["geonames_id"] = id_df["geonames_id"].apply(link_geonames)
-id_df["type_order"] = id_df["type"].apply(type_order_key)
 
 id_df = id_df.rename(
     columns={

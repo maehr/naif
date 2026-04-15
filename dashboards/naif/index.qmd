@@ -563,13 +563,13 @@ all_institutions = df[
     ]
 ].copy()
 
+all_institutions["type_order"] = all_institutions["type"].apply(type_order_key)
 all_institutions["short_name"] = all_institutions["short_name"].apply(format_plain_text)
 all_institutions["type"] = all_institutions["type"].apply(format_type_label)
 all_institutions["town"] = all_institutions["town"].apply(format_plain_text)
 all_institutions["swissuniversities_name"] = all_institutions[
     "swissuniversities_name"
 ].apply(format_plain_text)
-all_institutions["type_order"] = all_institutions["type"].apply(type_order_key)
 
 all_institutions = all_institutions.rename(
     columns={

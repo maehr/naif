@@ -456,14 +456,13 @@ all_institutions = df[
     ]
 ].copy()
 
+all_institutions["type_order"] = all_institutions["type"].apply(type_order_key)
 all_institutions["type"] = all_institutions["type"].apply(format_type_label)
 all_institutions["town"] = all_institutions["town"].apply(format_plain_text)
 
 all_institutions["tobi_total_outputs_openalex_2012_2022"] = all_institutions[
     "tobi_total_outputs_openalex_2012_2022"
 ].map(lambda value: f"{int(value):,}" if pd.notna(value) else "-")
-
-all_institutions["type_order"] = all_institutions["type"].apply(type_order_key)
 
 all_institutions = all_institutions.rename(
     columns={
