@@ -7,28 +7,17 @@ window.document.addEventListener("DOMContentLoaded", function () {
       now.getUTCMonth(),
       now.getUTCDate()
     );
+    const eventListingSelector = [
+      "#listing-events .quarto-post[data-listing-date-sort]",
+      "#listing-home-events .quarto-post[data-listing-date-sort]",
+    ].join(", ");
 
-    const listingCards = Array.from(
-      window.document.querySelectorAll(".quarto-listing .quarto-post[data-listing-date-sort]")
-    );
+    const listingCards = Array.from(window.document.querySelectorAll(eventListingSelector));
+    if (listingCards.length === 0) {
+      return;
+    }
 
     for (const card of listingCards) {
-      const listingLink = card.querySelector(".listing-title a[href], .thumbnail a[href]");
-      if (!(listingLink instanceof window.HTMLAnchorElement)) {
-        continue;
-      }
-
-      let listingPath = "";
-      try {
-        listingPath = new window.URL(listingLink.href, window.location.href).pathname;
-      } catch (_error) {
-        continue;
-      }
-
-      if (!listingPath.includes("/events/")) {
-        continue;
-      }
-
       const listingDateSort = Number(card.dataset.listingDateSort || "");
       if (!Number.isFinite(listingDateSort) || listingDateSort >= startOfTodayUtc) {
         continue;
