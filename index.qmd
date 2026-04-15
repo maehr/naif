@@ -6,7 +6,6 @@ listing:
     contents: events/*/index.qmd
     sort: "date desc"
     max-items: 3
-    page-size: 3
     fields: [image, title, date, description]
     sort-ui: false
     filter-ui: false
@@ -14,7 +13,6 @@ listing:
     contents: posts/*/index.qmd
     sort: "date desc"
     max-items: 3
-    page-size: 3
     fields: [image, title, date, description]
     sort-ui: false
     filter-ui: false
