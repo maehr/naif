@@ -12,6 +12,14 @@ DATA_DIR = Path(__file__).resolve().parent.parent / "dashboards" / "_data"
 
 VALID_TYPES = {"University", "Univ. Inst.", "UAS", "UAS Inst.", "UTE"}
 
+
+def required_text_cell(value: object) -> str:
+    """Normalise required text cells so missing values fail validation."""
+    if pd.isna(value):
+        return ""
+    return str(value)
+
+
 # ---------------------------------------------------------------------------
 # HEI schema
 # ---------------------------------------------------------------------------
@@ -146,10 +154,10 @@ class TestHEIData:
         for idx, row in hei_df.iterrows():
             try:
                 HEIRecord(
-                    name=str(row["name"]),
-                    short_name=str(row["short_name"]),
-                    type=str(row["type"]),
-                    town=str(row["town"]),
+                    name=required_text_cell(row["name"]),
+                    short_name=required_text_cell(row["short_name"]),
+                    type=required_text_cell(row["type"]),
+                    town=required_text_cell(row["town"]),
                     lat=row["lat"] if pd.notna(row["lat"]) else None,
                     lon=row["lon"] if pd.notna(row["lon"]) else None,
                 )
@@ -199,10 +207,10 @@ class TestTOBIData:
         for idx, row in tobi_df.iterrows():
             try:
                 TOBIRecord(
-                    name=str(row["name"]),
-                    short_name=str(row["short_name"]),
-                    type=str(row["type"]),
-                    town=str(row["town"]),
+                    name=required_text_cell(row["name"]),
+                    short_name=required_text_cell(row["short_name"]),
+                    type=required_text_cell(row["type"]),
+                    town=required_text_cell(row["town"]),
                 )
             except Exception as exc:
                 errors.append(f"Row {idx} ({row.get('name', '?')}): {exc}")

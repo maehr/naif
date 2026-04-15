@@ -9,8 +9,8 @@ import pandas as pd
 
 # -- Data directory ------------------------------------------------------------
 
+# Absolute path to the shared ``_data/`` directory.
 DATA_DIR: Path = Path(__file__).resolve().parent / "_data"
-"""Absolute path to the shared ``_data/`` directory."""
 
 # -- Institution type constants ------------------------------------------------
 

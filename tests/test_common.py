@@ -2,29 +2,30 @@
 
 from __future__ import annotations
 
-import sys
+import importlib.util
 from pathlib import Path
 
 import pandas as pd
 import pytest
 
-# Add dashboards/ to the Python path so _common can be imported directly.
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "dashboards"))
+COMMON_PATH = Path(__file__).resolve().parent.parent / "dashboards" / "_common.py"
+COMMON_SPEC = importlib.util.spec_from_file_location("dashboards_common", COMMON_PATH)
+assert COMMON_SPEC is not None and COMMON_SPEC.loader is not None
+common = importlib.util.module_from_spec(COMMON_SPEC)
+COMMON_SPEC.loader.exec_module(common)
 
-from _common import (
-    DATA_DIR,
-    TYPE_LABELS,
-    TYPE_ORDER,
-    format_identifier,
-    format_plain_text,
-    format_type_label,
-    make_link,
-    normalise_yes_no,
-    pct,
-    render_table,
-    type_order_key,
-    write_dataframe_xlsx,
-)
+DATA_DIR = common.DATA_DIR
+TYPE_LABELS = common.TYPE_LABELS
+TYPE_ORDER = common.TYPE_ORDER
+format_identifier = common.format_identifier
+format_plain_text = common.format_plain_text
+format_type_label = common.format_type_label
+make_link = common.make_link
+normalise_yes_no = common.normalise_yes_no
+pct = common.pct
+render_table = common.render_table
+type_order_key = common.type_order_key
+write_dataframe_xlsx = common.write_dataframe_xlsx
 
 
 # ---------------------------------------------------------------------------
