@@ -15,44 +15,27 @@ draft: false
 
 ```{python}
 #| echo: false
+import sys
+
+sys.path.insert(0, "..")
+
 import html
 
 import pandas as pd
 from IPython.display import HTML, display
 
-df = pd.read_csv("../naif/hei.csv")
+from _common import (
+    DATA_DIR,
+    format_identifier,
+    format_plain_text,
+    format_type_label,
+    make_link,
+    pct,
+    render_table,
+    type_order_key,
+)
 
-TYPE_ORDER = ["University", "Univ. Inst.", "UAS", "UAS Inst.", "UTE"]
-TYPE_LABELS = {
-    "University": "Universities",
-    "Univ. Inst.": "University institutes",
-    "UAS": "Universities of applied sciences (UAS)",
-    "UAS Inst.": "UAS institutes",
-    "UTE": "Teacher education institutions",
-}
-
-
-def format_identifier(value: object) -> str:
-    """Convert IDs to stable strings and remove float artefacts."""
-    if pd.isna(value):
-        return ""
-    text = str(value).strip()
-    if not text:
-        return ""
-    if text.endswith(".0"):
-        try:
-            numeric_value = float(text)
-            if numeric_value.is_integer():
-                return str(int(numeric_value))
-        except ValueError:
-            return text
-    return text
-
-
-def format_plain_text(value: object) -> str:
-    """Return plain text values with a fallback dash."""
-    text = format_identifier(value)
-    return text if text else "-"
+df = pd.read_csv(DATA_DIR / "hei.csv")
 
 
 def format_identifier_list(value: object) -> str:
@@ -70,28 +53,6 @@ def format_identifier_list(value: object) -> str:
         )
         + "</span>"
     )
-
-
-def format_type_label(value: object) -> str:
-    """Return the full label for an institution type."""
-    text = format_identifier(value)
-    if not text:
-        return "Unknown"
-    return TYPE_LABELS.get(text, text)
-
-
-def type_order_key(value: object) -> int:
-    """Return a stable sort key for institution types."""
-    text = format_identifier(value)
-    try:
-        return TYPE_ORDER.index(text)
-    except ValueError:
-        return len(TYPE_ORDER)
-
-
-def make_link(url: str, label: str) -> str:
-    """Create a safe external link."""
-    return f'<a href="{url}" target="_blank" rel="noopener noreferrer">{html.escape(label)}</a>'
 
 
 def link_ror(value: object) -> str:
@@ -138,23 +99,6 @@ def link_geonames(value: object) -> str:
         return "-"
     url = f"https://www.geonames.org/{identifier}"
     return make_link(url, identifier)
-
-
-def render_table(dataframe: pd.DataFrame) -> str:
-    """Return a dataframe as an HTML table string."""
-    return dataframe.to_html(
-        escape=False,
-        index=False,
-        classes="table table-sm table-striped align-middle",
-        border=0,
-    )
-
-
-def pct(value: int, denominator: int) -> str:
-    """Format a value as a percentage string."""
-    if denominator == 0:
-        return "0.0%"
-    return f"{(100 * value / denominator):.1f}%"
 
 
 total = len(df)
@@ -290,8 +234,8 @@ download_html = """
 <div class="dashboard-download">
   <p>The dataset is maintained in the NAIF Dashboard.</p>
   <div class="dashboard-download-actions">
-    <a class="btn btn-primary" href="../naif/hei.csv" download="hei.csv">Download CSV</a>
-    <a class="btn btn-secondary" href="../naif/hei.xlsx" download="hei.xlsx">
+    <a class="btn btn-primary" href="../_data/hei.csv" download="hei.csv">Download CSV</a>
+    <a class="btn btn-secondary" href="../_data/hei.xlsx" download="hei.xlsx">
       Download Excel (.xlsx)
     </a>
   </div>

@@ -13,38 +13,46 @@ image-alt: "Screenshot of the DORA and CoARA dashboard with key figures and an i
 image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-04-14."
 date: today
 draft: false
-resources:
-  - hei.csv
-  - hei.xlsx
 ---
 
 ```{python}
 #| echo: false
+import sys
+
+sys.path.insert(0, "..")
+
 import html
 
 import folium
 import pandas as pd
 from IPython.display import HTML, display
 
-df = pd.read_csv("hei.csv")
-excel_df = pd.read_csv("hei.csv", dtype=str).fillna("")
+from _common import (
+    DATA_DIR,
+    TYPE_LABELS,
+    TYPE_ORDER,
+    format_identifier,
+    format_plain_text,
+    format_type_label,
+    make_link,
+    normalise_yes_no,
+    pct,
+    render_table,
+    type_order_key,
+    write_dataframe_xlsx,
+)
 
-EXCEL_EXPORT_FILENAME = "hei.xlsx"
+df = pd.read_csv(DATA_DIR / "hei.csv")
+excel_df = pd.read_csv(DATA_DIR / "hei.csv", dtype=str).fillna("")
 
-TYPE_ORDER = ["University", "Univ. Inst.", "UAS", "UAS Inst.", "UTE"]
+write_dataframe_xlsx(excel_df, DATA_DIR / "hei.xlsx", sheet_name="Swiss HEIs")
+
 TYPE_COLOURS = {
     "University": "#2563EB",
     "Univ. Inst.": "#7C3AED",
     "UAS": "#F59E0B",
     "UAS Inst.": "#DB2777",
     "UTE": "#0F766E",
-}
-TYPE_LABELS = {
-    "University": "Universities",
-    "Univ. Inst.": "University institutes",
-    "UAS": "Universities of applied sciences (UAS)",
-    "UAS Inst.": "UAS institutes",
-    "UTE": "Teacher education institutions",
 }
 
 DEFAULT_TYPE_COLOUR = "#64748B"
@@ -69,92 +77,6 @@ LEGEND_MEMBER_DOT_STYLE = (
     "position: absolute; width: 4px; height: 4px; border-radius: 999px; background: #111827; "
     "top: 50%; left: 50%; transform: translate(-50%, -50%);"
 )
-
-
-def normalise_yes_no(value: object) -> str:
-    """Normalise status values to Yes/No/Unknown."""
-    if pd.isna(value):
-        return "Unknown"
-    text = str(value).strip().lower()
-    if text in {"yes", "true", "1"}:
-        return "Yes"
-    if text in {"no", "false", "0"}:
-        return "No"
-    return "Unknown"
-
-
-def format_identifier(value: object) -> str:
-    """Convert IDs to stable strings and remove float artefacts."""
-    if pd.isna(value):
-        return ""
-
-    text = str(value).strip()
-    if not text:
-        return ""
-
-    if text.endswith(".0"):
-        try:
-            numeric_value = float(text)
-            if numeric_value.is_integer():
-                return str(int(numeric_value))
-        except ValueError:
-            return text
-
-    return text
-
-
-def format_plain_text(value: object) -> str:
-    """Return plain text values with a fallback dash."""
-    text = format_identifier(value)
-    return text if text else "-"
-
-
-def format_type_label(value: object) -> str:
-    """Return the full label for an institution type."""
-    text = format_identifier(value)
-    if not text:
-        return "Unknown"
-    return TYPE_LABELS.get(text, text)
-
-
-def type_order_key(value: object) -> int:
-    """Return a stable sort key for institution types."""
-    text = format_identifier(value)
-    try:
-        return TYPE_ORDER.index(text)
-    except ValueError:
-        return len(TYPE_ORDER)
-
-
-def pct(value: int, denominator: int) -> str:
-    """Format a value as a percentage string."""
-    if denominator == 0:
-        return "0.0%"
-    return f"{(100 * value / denominator):.1f}%"
-
-
-def write_dataframe_xlsx(
-    dataframe: pd.DataFrame, output_path: str, sheet_name: str = "Institutions"
-) -> None:
-    """Write the dashboard dataset as a native XLSX workbook."""
-    with pd.ExcelWriter(output_path, engine="xlsxwriter") as writer:
-        dataframe.to_excel(writer, sheet_name=sheet_name, index=False)
-        worksheet = writer.sheets[sheet_name]
-        worksheet.freeze_panes(1, 0)
-        worksheet.autofilter(0, 0, len(dataframe), len(dataframe.columns) - 1)
-
-        for column_index, column_name in enumerate(dataframe.columns):
-            values = dataframe[column_name].astype(str)
-            max_length = max(len(column_name), *(len(value) for value in values))
-            worksheet.set_column(column_index, column_index, min(max_length + 2, 40))
-
-
-write_dataframe_xlsx(excel_df, EXCEL_EXPORT_FILENAME, sheet_name="Swiss HEIs")
-
-
-def make_link(url: str, label: str) -> str:
-    """Create a safe external link."""
-    return f'<a href="{url}" target="_blank" rel="noopener noreferrer">{html.escape(label)}</a>'
 
 
 def make_legend_symbol(colour: str, show_member_dot: bool = False) -> str:
@@ -195,16 +117,6 @@ def add_type_legend(
 
     legend_html += "</div>"
     _ = map_obj.get_root().html.add_child(folium.Element(legend_html))
-
-
-def render_table(dataframe: pd.DataFrame) -> str:
-    """Return a dataframe as an HTML table string."""
-    return dataframe.to_html(
-        escape=False,
-        index=False,
-        classes="table table-sm table-striped align-middle",
-        border=0,
-    )
 
 
 def make_tooltip(label: object) -> folium.Tooltip:
@@ -619,8 +531,8 @@ display(HTML(f'<div class="dashboard-table-wrap">{render_table(all_institutions)
 download_html = """
 <div class="dashboard-download">
   <div class="dashboard-download-actions">
-    <a class="btn btn-primary" href="hei.csv" download="hei.csv">Download CSV</a>
-    <a class="btn btn-secondary" href="hei.xlsx" download="hei.xlsx">
+    <a class="btn btn-primary" href="../_data/hei.csv" download="hei.csv">Download CSV</a>
+    <a class="btn btn-secondary" href="../_data/hei.xlsx" download="hei.xlsx">
       Download Excel (.xlsx)
     </a>
   </div>

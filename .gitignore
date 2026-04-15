@@ -18,3 +18,9 @@ htmlcov/
 .lycheecache
 
 /_*.local
+
+# Generated dashboard download artefacts
+/dashboards/_data/*.xlsx
+
+# Fork-specific Quarto overrides (personal, not shared)
+_quarto-fork.yml

@@ -17,6 +17,7 @@
     "prepare": "prek install",
     "preview": "uv run quarto preview",
     "publish": "PREK_ALLOW_NO_CONFIG=1 uv run quarto publish gh-pages --no-render",
+    "publish:fork": "PREK_ALLOW_NO_CONFIG=1 uv run quarto publish gh-pages --no-render --profile fork",
     "render": "uv run quarto render",
     "screenshot:clean": "node scripts/screenshot-clean.mjs",
     "screenshot:install-browsers": "npx playwright install chromium",
