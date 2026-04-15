@@ -35,21 +35,6 @@ window.document.addEventListener("DOMContentLoaded", function () {
       }
 
       card.setAttribute("data-event-state", "past");
-
-      const listingDate = card.querySelector(".listing-date");
-      if (!(listingDate instanceof window.HTMLElement)) {
-        continue;
-      }
-
-      if (listingDate.querySelector(".naif-event-state-badge")) {
-        continue;
-      }
-
-      const badge = window.document.createElement("span");
-      badge.className = "badge rounded-pill text-bg-secondary naif-event-state-badge";
-      badge.textContent = "Past event";
-      listingDate.appendChild(window.document.createTextNode(" "));
-      listingDate.appendChild(badge);
     }
   };
 
