@@ -218,14 +218,9 @@ async def fetch_openalex_record(
 
 
 def _oa_primary_id(row: pd.Series) -> str | None:
-    """Return the primary OpenAlex ID from the openalex_url column."""
-    url = _clean_float(row.get("openalex_url", ""))
-    if url:
-        # https://openalex.org/institutions/I5124864 → I5124864
-        return url.rstrip("/").rsplit("/", 1)[-1]
-    # Fallback: first ID in the pipe-separated list.
-    ids = csv_set(row.get("openalex_ids", ""))
-    return sorted(ids)[0] if ids else None
+    """Return the primary OpenAlex ID used for direct API lookups."""
+    primary_id = _clean_float(row.get("openalex_primary_id", ""))
+    return primary_id or None
 
 
 # ---------------------------------------------------------------------------

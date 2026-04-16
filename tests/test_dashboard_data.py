@@ -20,6 +20,14 @@ def required_text_cell(value: object) -> str:
     return str(value)
 
 
+def split_identifier_cell(value: object) -> set[str]:
+    """Split a pipe-separated identifier cell into unique values."""
+    text = required_text_cell(value).strip()
+    if not text:
+        return set()
+    return {part.strip() for part in text.split("|") if part.strip()}
+
+
 # ---------------------------------------------------------------------------
 # HEI schema
 # ---------------------------------------------------------------------------
@@ -36,6 +44,7 @@ HEI_REQUIRED_COLUMNS = [
     "coara_signatory",
     "dora_signatory",
     "coara_member",
+    "openalex_primary_id",
     "openalex_ids",
     "openorgs_ids",
 ]
@@ -171,6 +180,29 @@ class TestHEIData:
             values = set(hei_df[col].dropna().unique())
             invalid = values - allowed
             assert not invalid, f"{col} has invalid values: {invalid}"
+
+    def test_openalex_primary_ids_align_with_aliases(
+        self,
+        hei_df: pd.DataFrame,
+    ) -> None:
+        errors: list[str] = []
+        for idx, row in hei_df.iterrows():
+            primary_id = required_text_cell(row.get("openalex_primary_id", "")).strip()
+            openalex_ids = split_identifier_cell(row.get("openalex_ids", ""))
+
+            if primary_id and primary_id not in openalex_ids:
+                errors.append(
+                    f"Row {idx} ({row.get('name', '?')}): openalex_primary_id '{primary_id}' "
+                    "must be included in openalex_ids"
+                )
+
+            if openalex_ids and not primary_id:
+                errors.append(
+                    f"Row {idx} ({row.get('name', '?')}): missing openalex_primary_id "
+                    "for row with openalex_ids"
+                )
+
+        assert not errors, "\n".join(errors)
 
 
 # ---------------------------------------------------------------------------
