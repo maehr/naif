@@ -24,7 +24,7 @@ exclude = [
 ]
 
 exclude_path = [
-  "dashboards/naif/hei.csv"
+  "dashboards/_data/"
 ]
 
 timeout = 20

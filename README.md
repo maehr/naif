@@ -67,11 +67,13 @@ npm run validate
 
 #### Quarto
 
-| Script            | Command                               | Description                        |
-| ----------------- | ------------------------------------- | ---------------------------------- |
-| `npm run render`  | `uv run quarto render`                | Render the full site into `_site/` |
-| `npm run preview` | `uv run quarto preview`               | Local dev server with live reload  |
-| `npm run docx`    | `uv run quarto render --profile docx` | Export site to a single DOCX       |
+| Script                 | Command                                | Description                             |
+| ---------------------- | -------------------------------------- | --------------------------------------- |
+| `npm run render`       | `uv run quarto render`                 | Render the full site into `_site/`      |
+| `npm run render:fork`  | `uv run quarto render --profile fork`  | Render the site with fork-specific URLs |
+| `npm run preview`      | `uv run quarto preview`                | Local dev server with live reload       |
+| `npm run preview:fork` | `uv run quarto preview --profile fork` | Preview locally with fork-specific URLs |
+| `npm run docx`         | `uv run quarto render --profile docx`  | Export site to a single DOCX            |
 
 #### Code quality
 
@@ -97,32 +99,31 @@ npm run validate
 | `npm run sync`                  | `uv sync`                                                        | Install/sync Python dependencies                        |
 | `npm run validate`              | check + lint + typecheck + test + render + lychee-check:rendered | Full pre-PR validation                                  |
 | `npm run deploy`                | render + jampack + publish                                       | Build, optimise, and deploy to GitHub Pages             |
+| `npm run publish:fork`          | `uv run quarto publish gh-pages --no-render --profile fork`      | Publish a fork build to the fork's GitHub Pages site    |
 | `npm run changelog`             | `git-cliff`                                                      | Generate CHANGELOG from commits                         |
 | `npm run commit`                | `cz`                                                             | Commitizen guided commit                                |
 | `npm run lychee-check`          | `lychee`                                                         | Check for broken links in source `.md` and `.qmd` files |
 | `npm run lychee-check:rendered` | `lychee --offline`                                               | Check internal links in rendered `_site/**/*.html`      |
 
-This fork intentionally tracks `_quarto.yml.local` to override the upstream website URLs with
-`https://maehr.github.io/naif/` and the fork repository links. Edit `_quarto.yml.local` directly if
-the fork deployment target changes.
+Use the tracked example file `_quarto-fork.yml.example` as the template for local fork overrides.
+Copy it to `_quarto-fork.yml`, keep that file untracked, and update the URLs to match your fork.
 
-#### Fork workflow with `_quarto.yml.local`
+#### Fork workflow with `_quarto-fork.yml`
 
-Quarto automatically merges `_quarto.yml.local` into `_quarto.yml` when it is present. In this fork,
-that file is used only for fork-specific website settings:
+Quarto automatically merges `_quarto-fork.yml` into `_quarto.yml` when you run a command with
+`--profile fork`. Use that local file only for fork-specific website settings:
 
 - `site-url`: points rendered canonical links and cards at the fork preview site
 - `repo-url`: points the website repo links at the fork repository
-- `issue-url`: stays on the upstream issue tracker
+- `issue-url`: points the website issue links at the fork repository
 
 Use this workflow when working from a fork:
 
 1. Keep all shared project configuration in `_quarto.yml`.
-2. Put fork-only overrides in `_quarto.yml.local`.
-3. Run `uv run quarto preview` for local development.
-4. Run `uv run quarto render` before pushing when you want to verify the full site build.
-5. Push your branch to the fork and use the fork Pages site, here `https://maehr.github.io/naif/`,
-   as the remote preview.
+2. Copy `_quarto-fork.yml.example` to `_quarto-fork.yml` and set your fork URLs there.
+3. Run `npm run preview:fork` for local development with fork URLs.
+4. Run `npm run render:fork` before pushing when you want to verify the full fork build.
+5. Run `npm run publish:fork` when you want to publish the branch to your fork's Pages site.
 6. Open the pull request against `eth-library/naif` from your fork branch.
 
 This keeps upstream configuration clean while letting a fork publish correct preview URLs.

@@ -89,6 +89,13 @@ figcaption,
     flex-grow: 1;
     text-align: center;
 }
+
+.quarto-post[data-event-state="past"] .listing-date {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.08em;
+  text-decoration-skip-ink: none;
+}
+
 // --- NAIF sidebar CTA --------------------------------------------------------
 // Injected via `includes/get-involved.html`.
 

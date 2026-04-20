@@ -1,5 +1,34 @@
 <script>
 window.document.addEventListener("DOMContentLoaded", function () {
+  const markPastEventListings = () => {
+    const now = new Date();
+    const startOfTodayUtc = Date.UTC(
+      now.getUTCFullYear(),
+      now.getUTCMonth(),
+      now.getUTCDate()
+    );
+    const eventListingSelector = [
+      "#listing-events .quarto-post[data-listing-date-sort]",
+      "#listing-home-events .quarto-post[data-listing-date-sort]",
+    ].join(", ");
+
+    const listingCards = Array.from(window.document.querySelectorAll(eventListingSelector));
+    if (listingCards.length === 0) {
+      return;
+    }
+
+    for (const card of listingCards) {
+      const listingDateSort = Number(card.dataset.listingDateSort || "");
+      if (!Number.isFinite(listingDateSort) || listingDateSort >= startOfTodayUtc) {
+        continue;
+      }
+
+      card.setAttribute("data-event-state", "past");
+    }
+  };
+
+  markPastEventListings();
+
   const filterContainers = Array.from(
     window.document.querySelectorAll("[data-listing-filter-buttons='true']")
   );

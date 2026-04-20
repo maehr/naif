@@ -15,6 +15,10 @@ project:
     - robots.txt
     - site.webmanifest
     - llms.txt
+    - dashboards/_data/hei.csv
+    - dashboards/_data/hei.xlsx
+    - dashboards/_data/tobi.csv
+    - dashboards/_data/tobi.xlsx
 
 lang: en-UK
 

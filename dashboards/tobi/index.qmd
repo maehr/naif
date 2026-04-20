@@ -13,18 +13,38 @@ image-alt: "Screenshot of the TOBI dashboard with key figures and summary tables
 image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-04-14."
 date: today
 draft: false
-resources:
-  - tobi.csv
 ---
 
 ```{python}
 #| echo: false
+import sys
+
+sys.path.insert(0, "..")
+
 import html
 
 import pandas as pd
 from IPython.display import HTML, display
 
-df = pd.read_csv("tobi.csv")
+from _common import (
+    DATA_DIR,
+    TYPE_LABELS as _BASE_TYPE_LABELS,
+    TYPE_ORDER,
+    format_identifier,
+    format_plain_text,
+    format_type_label,
+    make_link,
+    normalise_yes_no,
+    pct,
+    render_table,
+    type_order_key,
+    write_dataframe_xlsx,
+)
+
+df = pd.read_csv(DATA_DIR / "tobi.csv")
+excel_df = pd.read_csv(DATA_DIR / "tobi.csv", dtype=str).fillna("")
+
+write_dataframe_xlsx(excel_df, DATA_DIR / "tobi.xlsx", sheet_name="Swiss HEIs TOBI")
 
 TOBI_SOURCES = [
     (
@@ -64,74 +84,7 @@ TOBI_SOURCES = [
     ),
 ]
 
-TYPE_LABELS = {
-    "University": "Universities",
-    "Univ. Inst.": "University institutes",
-    "UAS": "Universities of applied sciences (UAS)",
-    "UAS Inst.": "UAS institutes",
-    "UTE": "Teacher education institutions (UTE)",
-}
-
-TYPE_ORDER = ["University", "Univ. Inst.", "UAS", "UAS Inst.", "UTE"]
-
-
-def normalise_yes_no(value: object) -> str:
-    """Normalise status values to Yes/No/Unknown."""
-    if pd.isna(value):
-        return "Unknown"
-    text = str(value).strip().lower()
-    if text in {"yes", "true", "1"}:
-        return "Yes"
-    if text in {"no", "false", "0"}:
-        return "No"
-    return "Unknown"
-
-
-def format_identifier(value: object) -> str:
-    """Convert IDs to stable strings and remove float artefacts."""
-    if pd.isna(value):
-        return ""
-    text = str(value).strip()
-    if not text:
-        return ""
-    if text.endswith(".0"):
-        try:
-            numeric_value = float(text)
-            if numeric_value.is_integer():
-                return str(int(numeric_value))
-        except ValueError:
-            return text
-    return text
-
-
-def format_plain_text(value: object) -> str:
-    """Return plain text values with a fallback dash."""
-    text = format_identifier(value)
-    return text if text else "-"
-
-
-def format_type_label(value: object) -> str:
-    """Return the full label for an institution type."""
-    text = format_identifier(value)
-    if not text:
-        return "Unknown"
-    return TYPE_LABELS.get(text, text)
-
-
-def type_order_key(value: object) -> int:
-    """Return a stable sort key for institution types."""
-    text = format_identifier(value)
-    try:
-        return TYPE_ORDER.index(text)
-    except ValueError:
-        return len(TYPE_ORDER)
-
-
-def pct(value: int, denominator: int) -> str:
-    """Format a value as a percentage string."""
-    if denominator == 0:
-        return "0.0%"
-    return f"{(100 * value / denominator):.1f}%"
+TYPE_LABELS = {**_BASE_TYPE_LABELS, "UTE": "Teacher education institutions (UTE)"}
 
 
 def pct_float(value: int, denominator: int) -> float:
@@ -169,21 +122,6 @@ def pct_cell(value: int, denominator: int) -> str:
     return (
         f'<span style="display:inline-block; padding:2px 8px; border-radius:4px; '
         f'background:{colour}; white-space:nowrap;">{text}</span>'
-    )
-
-
-def make_link(url: str, label: str) -> str:
-    """Create a safe external link."""
-    return f'<a href="{url}" target="_blank" rel="noopener noreferrer">{html.escape(label)}</a>'
-
-
-def render_table(dataframe: pd.DataFrame) -> str:
-    """Return a dataframe as an HTML table string."""
-    return dataframe.to_html(
-        escape=False,
-        index=False,
-        classes="table table-sm table-striped align-middle",
-        border=0,
     )
 
 
@@ -317,7 +255,7 @@ for institution_type in TYPE_ORDER:
     if group.empty:
         continue
     row: dict[str, object] = {
-        "Type": format_type_label(institution_type),
+        "Type": format_type_label(institution_type, labels=TYPE_LABELS),
         "Institutions": len(group),
     }
     for source, findability_column, _, _, _ in TOBI_SOURCES:
@@ -331,7 +269,7 @@ for institution_type, group in df.groupby("type", dropna=False):
     if institution_type in TYPE_ORDER:
         continue
     row = {
-        "Type": format_type_label(institution_type),
+        "Type": format_type_label(institution_type, labels=TYPE_LABELS),
         "Institutions": len(group),
     }
     for source, findability_column, _, _, _ in TOBI_SOURCES:
@@ -404,7 +342,9 @@ top_outputs["Largest source count"] = top_outputs[output_column_names].max(
 )
 top_outputs = top_outputs[top_outputs["Largest source count"].notna()]
 top_outputs = top_outputs.sort_values("Largest source count", ascending=False).head(15)
-top_outputs["type"] = top_outputs["type"].apply(format_type_label)
+top_outputs["type"] = top_outputs["type"].apply(
+    lambda v: format_type_label(v, labels=TYPE_LABELS)
+)
 top_outputs = top_outputs.rename(
     columns={
         "name": "Institution",
@@ -456,14 +396,15 @@ all_institutions = df[
     ]
 ].copy()
 
-all_institutions["type"] = all_institutions["type"].apply(format_type_label)
+all_institutions["type_order"] = all_institutions["type"].apply(type_order_key)
+all_institutions["type"] = all_institutions["type"].apply(
+    lambda v: format_type_label(v, labels=TYPE_LABELS)
+)
 all_institutions["town"] = all_institutions["town"].apply(format_plain_text)
 
 all_institutions["tobi_total_outputs_openalex_2012_2022"] = all_institutions[
     "tobi_total_outputs_openalex_2012_2022"
 ].map(lambda value: f"{int(value):,}" if pd.notna(value) else "-")
-
-all_institutions["type_order"] = all_institutions["type"].apply(type_order_key)
 
 all_institutions = all_institutions.rename(
     columns={
@@ -499,14 +440,6 @@ all_institutions = all_institutions[
     ]
 ]
 
-display(
-    HTML(
-        '<p class="dashboard-download-note">'
-        "For open data identifiers (OpenAlex, OpenOrgs, etc.), "
-        'see the <a href="../swiss-hei-open-data/">Swiss HEI Open Data Dashboard</a>.'
-        "</p>"
-    )
-)
 display(HTML(f'<div class="dashboard-table-wrap">{render_table(all_institutions)}</div>'))
 ```
 
@@ -546,4 +479,21 @@ credits_html = """
 </div>
 """
 display(HTML(credits_html))
+```
+
+#### Data Download
+
+```{python}
+#| echo: false
+download_html = """
+<div class="dashboard-download">
+  <div class="dashboard-download-actions">
+    <a class="btn btn-primary" href="../_data/tobi.csv" download="tobi.csv">Download CSV</a>
+    <a class="btn btn-secondary" href="../_data/tobi.xlsx" download="tobi.xlsx">
+      Download Excel (.xlsx)
+    </a>
+  </div>
+</div>
+"""
+display(HTML(download_html))
 ```
