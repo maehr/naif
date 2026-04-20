@@ -144,3 +144,29 @@ def write_dataframe_xlsx(
             values = dataframe[column_name].astype(str)
             max_length = max(len(column_name), *(len(value) for value in values))
             worksheet.set_column(column_index, column_index, min(max_length + 2, 40))
+
+
+def ensure_csv_xlsx_export(
+    csv_path: str | Path,
+    xlsx_path: str | Path,
+    sheet_name: str = "Institutions",
+) -> Path:
+    """Generate an XLSX export from CSV when the workbook is missing or stale."""
+    source_path = Path(csv_path)
+    output_path = Path(xlsx_path)
+
+    if output_path.exists() and output_path.stat().st_mtime >= source_path.stat().st_mtime:
+        return output_path
+
+    dataframe = pd.read_csv(source_path, dtype=str).fillna("")
+    write_dataframe_xlsx(dataframe, output_path, sheet_name=sheet_name)
+    return output_path
+
+
+def ensure_hei_xlsx_export() -> Path:
+    """Generate the shared Swiss HEI XLSX download from ``hei.csv`` when needed."""
+    return ensure_csv_xlsx_export(
+        DATA_DIR / "hei.csv",
+        DATA_DIR / "hei.xlsx",
+        sheet_name="Swiss HEIs",
+    )

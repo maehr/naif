@@ -31,21 +31,17 @@ from _common import (
     DATA_DIR,
     TYPE_LABELS,
     TYPE_ORDER,
-    format_identifier,
+    ensure_hei_xlsx_export,
     format_plain_text,
     format_type_label,
-    make_link,
     normalise_yes_no,
     pct,
     render_table,
     type_order_key,
-    write_dataframe_xlsx,
 )
 
 df = pd.read_csv(DATA_DIR / "hei.csv")
-excel_df = pd.read_csv(DATA_DIR / "hei.csv", dtype=str).fillna("")
-
-write_dataframe_xlsx(excel_df, DATA_DIR / "hei.xlsx", sheet_name="Swiss HEIs")
+ensure_hei_xlsx_export()
 
 TYPE_COLOURS = {
     "University": "#2563EB",

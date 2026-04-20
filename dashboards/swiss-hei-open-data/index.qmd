@@ -26,6 +26,7 @@ from IPython.display import HTML, display
 
 from _common import (
     DATA_DIR,
+    ensure_hei_xlsx_export,
     format_identifier,
     format_plain_text,
     format_type_label,
@@ -36,6 +37,7 @@ from _common import (
 )
 
 df = pd.read_csv(DATA_DIR / "hei.csv")
+ensure_hei_xlsx_export()
 
 
 def format_identifier_list(value: object) -> str:

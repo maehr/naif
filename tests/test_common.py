@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import importlib.util
+import os
+import zipfile
 from pathlib import Path
 
 import pandas as pd
@@ -25,6 +27,8 @@ normalise_yes_no = common.normalise_yes_no
 pct = common.pct
 render_table = common.render_table
 type_order_key = common.type_order_key
+ensure_csv_xlsx_export = common.ensure_csv_xlsx_export
+ensure_hei_xlsx_export = common.ensure_hei_xlsx_export
 write_dataframe_xlsx = common.write_dataframe_xlsx
 
 
@@ -183,3 +187,44 @@ def test_write_dataframe_xlsx(tmp_path: Path) -> None:
     write_dataframe_xlsx(df, out, sheet_name="Sheet")
     assert out.exists()
     assert out.stat().st_size > 0
+
+
+def test_ensure_csv_xlsx_export_creates_missing_workbook(tmp_path: Path) -> None:
+    csv_path = tmp_path / "source.csv"
+    xlsx_path = tmp_path / "source.xlsx"
+    pd.DataFrame({"name": ["A"], "value": ["1"]}).to_csv(csv_path, index=False)
+
+    result = ensure_csv_xlsx_export(csv_path, xlsx_path, sheet_name="Sheet")
+
+    assert result == xlsx_path
+    assert xlsx_path.exists()
+    with zipfile.ZipFile(xlsx_path) as workbook:
+        shared_strings = workbook.read("xl/sharedStrings.xml").decode("utf-8")
+    assert "name" in shared_strings
+    assert "value" in shared_strings
+    assert ">A<" in shared_strings
+    assert ">1<" in shared_strings
+
+
+def test_ensure_csv_xlsx_export_refreshes_stale_workbook(tmp_path: Path) -> None:
+    csv_path = tmp_path / "source.csv"
+    xlsx_path = tmp_path / "source.xlsx"
+    pd.DataFrame({"name": ["Original"]}).to_csv(csv_path, index=False)
+    write_dataframe_xlsx(pd.DataFrame({"name": ["Stale"]}), xlsx_path, sheet_name="Sheet")
+
+    pd.DataFrame({"name": ["Fresh"]}).to_csv(csv_path, index=False)
+    stale_time = csv_path.stat().st_mtime - 10
+    os.utime(xlsx_path, (stale_time, stale_time))
+    previous_mtime = xlsx_path.stat().st_mtime
+
+    ensure_csv_xlsx_export(csv_path, xlsx_path, sheet_name="Sheet")
+
+    assert xlsx_path.stat().st_mtime > previous_mtime
+    with zipfile.ZipFile(xlsx_path) as workbook:
+        shared_strings = workbook.read("xl/sharedStrings.xml").decode("utf-8")
+    assert ">Fresh<" in shared_strings
+    assert "Stale" not in shared_strings
+
+
+def test_ensure_hei_xlsx_export_returns_expected_path() -> None:
+    assert ensure_hei_xlsx_export() == DATA_DIR / "hei.xlsx"
