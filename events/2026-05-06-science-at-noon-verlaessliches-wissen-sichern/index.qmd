@@ -1,0 +1,37 @@
+---
+title: "Science@Noon: Verlässliches Wissen sichern"
+date: 2026-05-06
+author: "Akademien der Wissenschaften Schweiz"
+author-title: "Organizer"
+description: "Science@Noon panel in Bern on reliable knowledge, research infrastructures, repositories, and libraries in the context of generative AI and disinformation."
+categories:
+  - "Related Topic"
+tags:
+  - "Research infrastructures"
+  - "Repositories"
+  - "Science@Noon"
+proofread: false
+image: "images/science-at-noon-verlaessliches-wissen-sichern.png"
+image-alt: "Promotional visual for the Science@Noon event on reliable knowledge and research infrastructures"
+image-caption: "Promotional visual for the Science@Noon event \"Verlässliches Wissen sichern\". Source: https://akademien-schweiz.ch/agenda/science-at-noon-verlaessliches-wissen-sichern-forschungsinfrastrukturen-in-zeiten-von-ki-und-desinformation. Rights: Akademien der Wissenschaften Schweiz."
+toc: true
+---
+
+<!-- Source: <https://akademien-schweiz.ch/agenda/science-at-noon-verlaessliches-wissen-sichern-forschungsinfrastrukturen-in-zeiten-von-ki-und-desinformation> -->
+
+## Details
+
+- Date: Wednesday, 6 May 2026
+- Time: 13:15-14:15
+- Location: Haus der Akademien, Raum Eiger, first floor, Laupenstrasse 7, 3008 Bern
+- Language: German
+- Registration: <https://akademien-schweiz.ch/agenda/science-at-noon-verlaessliches-wissen-sichern-forschungsinfrastrukturen-in-zeiten-von-ki-und-desinformation> (via the embedded registration form on the event page)
+- Event page: <https://akademien-schweiz.ch/agenda/science-at-noon-verlaessliches-wissen-sichern-forschungsinfrastrukturen-in-zeiten-von-ki-und-desinformation>
+
+## About
+
+This Science@Noon panel addresses how reliable knowledge can be prepared, preserved, and made accessible in an information environment shaped by generative AI and disinformation. It also asks how cooperation between relevant actors can be improved within a multi-level governance system and what funding measures are needed.
+
+The discussion is especially relevant to NAIF because it focuses on research infrastructures such as repositories and academic libraries. The organisers also frame the event in relation to the Swiss Science Council report "Research Libraries as Data Hubs".
+
+The panel is organised in collaboration with the Swiss Science Council (SWR). Speakers include Rita Gautschy, Beat Immenhauser, Gabriela Lüthi, and Sabine Süsstrunk.
