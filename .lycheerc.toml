@@ -18,6 +18,8 @@ exclude = [
   "https://epfl.zoom.us/meeting/register/",
   # Python f-string URL templates in dashboard code (contain {identifier} placeholders)
   "https://www.wikidata.org/wiki/",
+  # Wikidata SPARQL intermittently returns 502/504 during automated checks
+  "https://query.wikidata.org/sparql",
   "https://api.crossref.org/funders/",
   "https://www.geonames.org/",
   "https://isni.org/isni/",
