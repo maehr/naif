@@ -28,6 +28,8 @@ from IPython.display import HTML, display
 
 from _common import (
     DATA_DIR,
+    dashboard_download_html,
+    dashboard_table_html,
     ensure_hei_xlsx_export,
     format_identifier,
     format_plain_text,
@@ -285,22 +287,13 @@ id_df = id_df[
     ]
 ]
 
-display(HTML(f'<div class="dashboard-table-wrap">{render_table(id_df)}</div>'))
+display(HTML(dashboard_table_html(id_df)))
 ```
 
 #### Data Download
 
 ```{python}
 #| echo: false
-download_html = """
-<div class="dashboard-download">
-  <div class="dashboard-download-actions">
-    <a class="btn btn-primary" href="../_data/hei.csv" download="hei.csv">Download CSV</a>
-    <a class="btn btn-secondary" href="../_data/hei.xlsx" download="hei.xlsx">
-      Download Excel (.xlsx)
-    </a>
-  </div>
-</div>
-"""
+download_html = dashboard_download_html("../_data/hei.csv", "../_data/hei.xlsx")
 display(HTML(download_html))
 ```
