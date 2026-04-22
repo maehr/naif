@@ -19,12 +19,16 @@ toc: true
 
 <!-- Sources: <https://datacite.zoom.us/meeting/register/B5KGjV5QQQO2-p8WtSNzQw#/registration>, <https://www.cometadata.org/> -->
 
+::: {.callout-note}
+This event has already taken place. Any registration information has been disabled and is shown for reference only.
+:::
+
 ## Details
 
 - Date: Wednesday, 22 April 2026
 - Time: 17:00 (Zurich, CEST)
 - Location: Online
-- Registration: <https://datacite.zoom.us/meeting/register/B5KGjV5QQQO2-p8WtSNzQw#/registration>
+- Registration: ~~`https://datacite.zoom.us/meeting/register/B5KGjV5QQQO2-p8WtSNzQw#/registration`~~
 - Event page: <https://www.cometadata.org/>
 
 ## About
