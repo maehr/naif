@@ -1,0 +1,75 @@
+---
+title: "NAIF elsewhere"
+subtitle: "Brief mentions of the project outside this website"
+description: "A small archive of brief NAIF mentions in newsletters, internal blogs, and other channels outside the project website."
+aliases:
+  - mentions.html
+  - /mentions.html
+other-links:
+  - text: "About"
+    href: ../about.html
+  - text: "News"
+    href: ../posts/
+listing:
+  id: mentions-listing
+  contents: items.yml
+  type: table
+  sort: false
+  sort-ui: false
+  filter-ui: false
+  page-size: 1000
+  max-items: 1000
+  fields: [when, title, format, mention, related]
+  field-display-names:
+    when: "When"
+    title: "Outlet"
+    format: "Format"
+    mention: "Mention"
+    related: "Related NAIF pages"
+  field-links: [title]
+toc: false
+show-page-image: false
+---
+
+This page records short mentions of NAIF outside the project website. Full reposts with permission remain regular [News](../posts/) posts and link back to their original publication.
+
+::: {#mentions-listing}
+:::
+
+<style>
+#listing-mentions-listing .mentions-related-links {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+#listing-mentions-listing .mentions-related-links li {
+  margin: 0;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const relatedCells = document.querySelectorAll(
+    "#listing-mentions-listing .listing-related",
+  );
+
+  for (const cell of relatedCells) {
+    const links = Array.from(cell.querySelectorAll("a"));
+
+    if (links.length === 0) {
+      continue;
+    }
+
+    const list = document.createElement("ul");
+    list.className = "mentions-related-links";
+
+    for (const link of links) {
+      const item = document.createElement("li");
+      item.append(link.cloneNode(true));
+      list.append(item);
+    }
+
+    cell.replaceChildren(list);
+  }
+});
+</script>

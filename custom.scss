@@ -90,10 +90,20 @@ figcaption,
     text-align: center;
 }
 
-.quarto-post[data-event-state="past"] .listing-date {
-  text-decoration: line-through;
-  text-decoration-thickness: 0.08em;
-  text-decoration-skip-ink: none;
+.naif-event-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.naif-event-group-heading {
+  margin: 1.5rem 0 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 0.12rem solid $strong-highlight;
+  font-size: 1.35rem;
+}
+
+.naif-event-group-heading[data-event-group="upcoming"] {
+  margin-top: 0;
 }
 
 // --- NAIF sidebar CTA --------------------------------------------------------

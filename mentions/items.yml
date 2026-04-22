@@ -1,0 +1,56 @@
+- title: "LinkedIn"
+  path: "https://www.linkedin.com/posts/epfllibrary_first-insights-from-the-swiss-institutional-activity-7447558080118145024-5nYR/"
+  when: "April 2026"
+  format: "Social media"
+  mention: >-
+    Post by Bibliotheque de l'EPFL highlighting the first Track 3 survey results on Swiss
+    institutional repositories, including repository platforms, interoperability foundations,
+    staffing levels, and metadata challenges.
+  related:
+    - "[First insights from the Swiss institutional repository
+      survey](../posts/2026-04-02-first-insights-swiss-repository-survey/)"
+- title: "LinkedIn"
+  path: "https://www.linkedin.com/feed/update/urn:li:activity:7447552767222689792/?originTrackingId=0XAXH6ufXAXfcQi0ztVS6g%3D%3D"
+  when: "April 2026"
+  format: "Social media"
+  mention: >-
+    Post by Pascale Bouton sharing the first insights from the national survey of Swiss higher
+    education repositories and calling for wider discussion of harmonisation and data quality.
+  related:
+    - "[First insights from the Swiss institutional repository
+      survey](../posts/2026-04-02-first-insights-swiss-repository-survey/)"
+- title: "ETH Library KiK internal blog"
+  when: "27 March 2026"
+  format: "Internal blog"
+  mention: >-
+    German-language KiK magazine article marking the project's halfway point, summarising all four
+    NAIF tracks and directing readers to the NAIF website, the SLSP strategy update, the Research on
+    Research poster post, and the earlier information event announcement.
+  related:
+    - "[Project start](../posts/2025-07-01-project-start/)"
+    - "[SLSP strategy 2026-2029](../posts/2026-03-16-slsp-strategy-2026-2029/)"
+    - "[NAIF at the Research on Research Event
+      2026](../posts/2026-02-27-naif-at-research-on-research/)"
+    - "[Launching NAIF: a look back at the information
+      event](../posts/2025-08-28-naif-information-event/)"
+- title: "ETH Library website"
+  path: "https://library.ethz.ch/ueber-uns-und-standorte/news/news-beitraege/2025/08/naif-informationsevent-die-sichtbarkeit-der-schweizer-forschung-erhoehen.html"
+  when: "11 August 2025"
+  format: "News"
+  mention: >-
+    Public ETH Library news item announcing the NAIF information event, outlining the project's
+    goals and inviting registrations for the August 2025 session.
+  related:
+    - "[NAIF information event](../events/2025-08-28-information-event/)"
+    - "[Launching NAIF: a look back at the information
+      event](../posts/2025-08-28-naif-information-event/)"
+- title: "ETH Library KiK internal blog"
+  when: "11 August 2025"
+  format: "Internal blog"
+  mention: >-
+    Short KiK post by Simon Willemin reposting the ETH Library information event announcement and
+    directing internal readers to the full public news item.
+  related:
+    - "[NAIF information event](../events/2025-08-28-information-event/)"
+    - "[Launching NAIF: a look back at the information
+      event](../posts/2025-08-28-naif-information-event/)"

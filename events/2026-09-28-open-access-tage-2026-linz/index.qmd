@@ -1,0 +1,37 @@
+---
+title: "Open Access Days 2026 (Linz)"
+date: 2026-09-28
+author: "Johannes Kepler University Linz"
+author-title: "Organizer"
+description: "Open Access Days 2026 will take place in Linz from 28 to 30 September 2026, bringing together the German-speaking open access community around scholarly publishing and open science."
+categories:
+  - "Related Topic"
+tags:
+  - "Open access"
+  - "Conference"
+  - "Scholarly publishing"
+proofread: false
+image: "images/open-access-tage-2026-linz.png"
+image-alt: "Open Access Days 2026 event page with the Linz edition branding"
+image-caption: "Screenshot of the Open Access Days 2026 event page. Source: https://open-access-days.de/open-access-days-2026-linz. Rights: Open-Access-Tage / open-access.net and Johannes Kepler University Linz."
+toc: true
+---
+
+<!-- Sources: <https://open-access-tage.de/open-access-tage-2026-linz>; <https://open-access-days.de/open-access-days-2026-linz> -->
+
+## Details
+
+- Date: Monday, 28 September 2026 to Wednesday, 30 September 2026
+- Location: Johannes Kepler University Linz, Austria
+- Registration: To be announced
+- Call for proposals: <https://open-access-days.de/open-access-days-2026-linz/call-for-proposals-eng>
+- Event page: <https://open-access-days.de/open-access-days-2026-linz>
+- Contact: <mailto:oat2026@jku.at>
+
+## About
+
+Open Access Days 2026 is the 20th edition of the central annual conference on open access in the German-speaking region. It is aimed at researchers, libraries, research infrastructure providers, research administration, and publishers who work on the conditions, practices, and future development of scholarly publishing.
+
+The 2026 edition will be hosted by Johannes Kepler University Linz, which presents the event as a meeting point for exchange on open science in a setting shaped by innovation and interdisciplinarity. The conference website currently highlights the campus location in Linz, travel information, and the ongoing call for proposals.
+
+The topic is relevant to NAIF because it connects directly to open scholarly communication, interoperable research infrastructure, and the visibility and quality of academic metadata.

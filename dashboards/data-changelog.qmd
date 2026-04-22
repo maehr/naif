@@ -1,0 +1,97 @@
+---
+title: "HEI and NAIF data changelog"
+description: "Reconstructed change history for the shared `hei.csv` used by the NAIF and Swiss HEI dashboards, including reversals and corrections."
+toc: false
+draft: false
+---
+
+```{python}
+#| echo: false
+#| output: false
+import sys
+import pandas as pd
+
+from IPython.display import Markdown, display
+
+sys.path.insert(0, ".")
+
+from _common import DATA_DIR, format_iso_date, latest_hei_changelog_date, load_hei_changelog
+
+entries = load_hei_changelog()
+latest_update = latest_hei_changelog_date()
+current_row_count = len(pd.read_csv(DATA_DIR / "hei.csv"))
+```
+
+This page tracks the shared `hei.csv` baseline used by:
+
+- [DORA & CoARA in Swiss Higher Education](naif/index.qmd)
+- [Swiss HEI Open Data Dashboard](swiss-hei-open-data/index.qmd)
+
+Downloads:
+
+- [CSV](_data/hei.csv)
+- [XLSX](_data/hei.xlsx)
+
+::: {.callout-note}
+This changelog is reconstructed from the git history of `dashboard/hei.csv`, `dashboards/naif/hei.csv`,
+and `dashboards/_data/hei.csv`.
+
+Several early commits, especially on 17 February 2026, used generic messages. Their summaries below are
+therefore based on row-by-row CSV diffs rather than on detailed contemporaneous notes. When a later commit
+clearly reversed or corrected an earlier change, the changelog says so explicitly.
+:::
+
+```{python}
+#| echo: false
+overview = "\n".join(
+    [
+        f"- **Latest recorded change:** {latest_update}",
+        f"- **Current published rows:** {current_row_count}",
+        f"- **Reconstructed entries:** {len(entries)}",
+    ]
+)
+display(Markdown(overview))
+```
+
+```{python}
+#| echo: false
+repo_url = "https://github.com/eth-library/naif"
+
+sections: list[str] = []
+for entry in entries:
+    sections.append(f"## {format_iso_date(entry['date'])}")
+    sections.append(f"**Scope:** {entry['scope']}")
+
+    row_count_before = entry.get("row_count_before")
+    row_count_after = entry.get("row_count_after")
+    if row_count_before is None:
+        row_count_text = f"n/a -> {row_count_after} rows"
+    else:
+        row_count_text = f"{row_count_before} -> {row_count_after} rows"
+    sections.append(f"**Row count:** {row_count_text}")
+    sections.append(f"**Summary:** {entry['title']}")
+    sections.append("")
+    sections.append(entry["summary"])
+    sections.append("")
+    sections.append("### What changed")
+    for item in entry["changes"]:
+        sections.append(f"- {item}")
+
+    corrections = entry.get("corrections", [])
+    if corrections:
+        sections.append("")
+        sections.append("### Corrections and caveats")
+        for item in corrections:
+            sections.append(f"- {item}")
+
+    sections.append("")
+    sections.append("### Git provenance")
+    for commit in entry["commits"]:
+        short_sha = commit["sha"][:7]
+        commit_url = f"{repo_url}/commit/{commit['sha']}"
+        sections.append(f"- [`{short_sha}`]({commit_url}) {commit['message']}")
+
+    sections.append("")
+
+display(Markdown("\n".join(sections)))
+```

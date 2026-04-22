@@ -100,6 +100,11 @@ Use an event page for announcements and for documenting past events.
 - Republishing material that has already appeared elsewhere requires permission from the original publisher.
 - Add a visible note near the top linking back to the original URL.
 
+## External mentions
+
+- Brief mentions of NAIF in newsletters, partner blogs, or internal channels should be added to `mentions/items.yml`.
+- Use that page for short notices and link collections. Use a full news post only when we republish the original text with permission.
+
 ## Drafts
 
 - Use `draft: true` for work in progress.

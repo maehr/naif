@@ -1,33 +1,153 @@
 <script>
 window.document.addEventListener("DOMContentLoaded", function () {
-  const markPastEventListings = () => {
+  const getStartOfTodayUtc = () => {
     const now = new Date();
-    const startOfTodayUtc = Date.UTC(
-      now.getUTCFullYear(),
-      now.getUTCMonth(),
-      now.getUTCDate()
-    );
-    const eventListingSelector = [
-      "#listing-events .quarto-post[data-listing-date-sort]",
-      "#listing-home-events .quarto-post[data-listing-date-sort]",
-    ].join(", ");
+    return Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+  };
 
-    const listingCards = Array.from(window.document.querySelectorAll(eventListingSelector));
-    if (listingCards.length === 0) {
+  const getListingCards = (listingId) =>
+    Array.from(
+      window.document.querySelectorAll(
+        `#listing-${listingId} .quarto-post[data-listing-date-sort]`
+      )
+    );
+
+  const getCardDate = (card) => {
+    const listingDateSort = Number(card.dataset.listingDateSort || "");
+    return Number.isFinite(listingDateSort) ? listingDateSort : null;
+  };
+
+  const getEventEntries = (listingId) => {
+    const startOfTodayUtc = getStartOfTodayUtc();
+    return getListingCards(listingId)
+      .map((card) => {
+        const date = getCardDate(card);
+        if (date === null) {
+          card.removeAttribute("data-event-state");
+          card.style.removeProperty("order");
+          return null;
+        }
+
+        const state = date < startOfTodayUtc ? "past" : "upcoming";
+        card.setAttribute("data-event-state", state);
+        return { card, date, state };
+      })
+      .filter((entry) => entry !== null);
+  };
+
+  const ensureGroupHeading = (listEl, group, label) => {
+    let heading = listEl.querySelector(
+      `.naif-event-group-heading[data-event-group="${group}"]`
+    );
+    if (!heading) {
+      heading = window.document.createElement("h2");
+      heading.className = "naif-event-group-heading";
+      heading.dataset.eventGroup = group;
+      heading.textContent = label;
+      listEl.appendChild(heading);
+    }
+
+    return heading;
+  };
+
+  const sortEntries = (entries, compareFn) => [...entries].sort(compareFn);
+
+  const updateHomeEventListing = () => {
+    const listEl = window.document.querySelector("#listing-home-events .list");
+    if (!listEl) {
       return;
     }
 
-    for (const card of listingCards) {
-      const listingDateSort = Number(card.dataset.listingDateSort || "");
-      if (!Number.isFinite(listingDateSort) || listingDateSort >= startOfTodayUtc) {
+    listEl.classList.add("naif-event-list");
+
+    const entries = getEventEntries("home-events");
+    const upcomingEntries = sortEntries(
+      entries.filter((entry) => entry.state === "upcoming"),
+      (left, right) => left.date - right.date
+    );
+    const visibleCards = new Set(upcomingEntries.slice(0, 3).map((entry) => entry.card));
+
+    upcomingEntries.forEach((entry, index) => {
+      entry.card.hidden = !visibleCards.has(entry.card);
+      entry.card.style.order = String(index + 1);
+    });
+
+    for (const entry of entries) {
+      if (visibleCards.has(entry.card)) {
         continue;
       }
 
-      card.setAttribute("data-event-state", "past");
+      entry.card.hidden = true;
+      entry.card.style.order = String(entries.length + 10);
     }
   };
 
-  markPastEventListings();
+  const updateEventsListing = () => {
+    const listEl = window.document.querySelector("#listing-events .list");
+    if (!listEl) {
+      return;
+    }
+
+    listEl.classList.add("naif-event-list");
+
+    const entries = getEventEntries("events");
+    if (entries.length === 0) {
+      return;
+    }
+
+    const listing = window["quarto-listings"]?.["listing-events"];
+    const visibleCards = new Set(
+      listing && Array.isArray(listing.visibleItems)
+        ? listing.visibleItems.map((item) => item.elm)
+        : entries.map((entry) => entry.card)
+    );
+
+    const upcomingEntries = sortEntries(
+      entries.filter((entry) => entry.state === "upcoming"),
+      (left, right) => left.date - right.date
+    );
+    const pastEntries = sortEntries(
+      entries.filter((entry) => entry.state === "past"),
+      (left, right) => right.date - left.date
+    );
+
+    const upcomingHeading = ensureGroupHeading(listEl, "upcoming", "Upcoming events");
+    const pastHeading = ensureGroupHeading(listEl, "past", "Past events");
+
+    let order = 0;
+    upcomingHeading.style.order = String(order);
+    order += 1;
+
+    for (const entry of upcomingEntries) {
+      entry.card.style.order = String(order);
+      order += 1;
+    }
+
+    pastHeading.style.order = String(order);
+    order += 1;
+
+    for (const entry of pastEntries) {
+      entry.card.style.order = String(order);
+      order += 1;
+    }
+
+    upcomingHeading.hidden = !upcomingEntries.some((entry) => visibleCards.has(entry.card));
+    pastHeading.hidden = !pastEntries.some((entry) => visibleCards.has(entry.card));
+  };
+
+  const bindListingUpdate = (listingId, updateFn) => {
+    const listing = window["quarto-listings"]?.[listingId];
+    if (!listing || listing.__naifEventOrderingBound) {
+      return;
+    }
+
+    listing.on("updated", updateFn);
+    listing.__naifEventOrderingBound = true;
+  };
+
+  updateHomeEventListing();
+  updateEventsListing();
+  bindListingUpdate("listing-events", updateEventsListing);
 
   const filterContainers = Array.from(
     window.document.querySelectorAll("[data-listing-filter-buttons='true']")

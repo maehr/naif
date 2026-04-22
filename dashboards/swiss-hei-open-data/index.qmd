@@ -9,12 +9,14 @@ description: "Open data identifiers for Swiss Higher Education Institutions: ROR
 image: images/dashboard-screenshot.png
 image-alt: "Screenshot of the Swiss HEI Open Data Dashboard with identifier coverage table"
 image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-04-14."
-date: today
+date: 2026-04-14
+date-modified: 2026-04-22
 draft: false
 ---
 
 ```{python}
 #| echo: false
+#| output: false
 import sys
 
 sys.path.insert(0, "..")
@@ -30,6 +32,7 @@ from _common import (
     format_identifier,
     format_plain_text,
     format_type_label,
+    latest_hei_changelog_date,
     make_link,
     pct,
     render_table,
@@ -38,6 +41,7 @@ from _common import (
 
 df = pd.read_csv(DATA_DIR / "hei.csv")
 ensure_hei_xlsx_export()
+last_updated = latest_hei_changelog_date()
 
 
 def format_identifier_list(value: object) -> str:
@@ -183,14 +187,32 @@ about_html = f"""
     <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames</a>.
   </p>
 
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">How the list was assembled</h5>
+  <p>
+    Moritz Mähr compiled this institutional baseline from the current
+    <a href="https://www.swissuniversities.ch/en/topics/studying/accredited-swiss-higher-education-institutions" target="_blank" rel="noopener noreferrer">swissuniversities list of accredited Swiss Higher Education Institutions</a>
+    and then checked public institutional sources for recent mergers, accreditations, and naming changes.
+    The goal is a current ground-truth list for the NAIF and Swiss HEI dashboards, not a list limited to
+    whatever external registries already resolve.
+  </p>
+
+  <p>
+    The column <code>swissuniversities_name</code> keeps the source label where available, while
+    <code>name</code> stores the normalised dashboard label used across NAIF.
+    If an institution has no ROR, OpenAlex, or OpenOrgs match, it still remains in the dataset;
+    missing external identifiers therefore mean "not matched in that source", not "not a Swiss HEI".
+  </p>
+
   <p style="margin-top: 1.5rem; color: var(--dashboard-muted); font-size: 0.9rem;">
-    Data last updated: 3 March 2026.
+    Data last updated: {last_updated}. See the
+    <a href="../data-changelog.html">HEI and NAIF data changelog</a>.
   </p>
 
   <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">See also</h5>
   <ul>
     <li><a href="../naif/">NAIF Dashboard</a> &ndash; DORA &amp; CoARA adoption</li>
     <li><a href="../tobi/">TOBI Dashboard</a> &ndash; findability and publication counts</li>
+    <li><a href="../data-changelog.html">HEI and NAIF data changelog</a> &ndash; reconstructed history and corrections</li>
   </ul>
 </div>
 """
@@ -272,7 +294,6 @@ display(HTML(f'<div class="dashboard-table-wrap">{render_table(id_df)}</div>'))
 #| echo: false
 download_html = """
 <div class="dashboard-download">
-  <p>The dataset is maintained in the NAIF Dashboard.</p>
   <div class="dashboard-download-actions">
     <a class="btn btn-primary" href="../_data/hei.csv" download="hei.csv">Download CSV</a>
     <a class="btn btn-secondary" href="../_data/hei.xlsx" download="hei.xlsx">
