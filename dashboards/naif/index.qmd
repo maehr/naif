@@ -17,6 +17,7 @@ draft: false
 
 ```{python}
 #| echo: false
+#| output: false
 import sys
 
 sys.path.insert(0, "..")
@@ -54,6 +55,7 @@ TYPE_COLOURS = {
 DEFAULT_TYPE_COLOUR = "#64748B"
 MARKER_STROKE_COLOUR = "#0F172A"
 MEMBER_DOT_COLOUR = "#111827"
+SIGNATORY_LEGEND_COLOUR = "#D1D5DB"
 SWITZERLAND_BOUNDS = [[45.75, 5.85], [47.95, 10.65]]
 
 LEGEND_STYLE = (
@@ -89,7 +91,10 @@ def make_legend_symbol(colour: str, show_member_dot: bool = False) -> str:
 
 
 def add_type_legend(
-    map_obj: folium.Map, visible_types: set[str], show_member_note: bool = False
+    map_obj: folium.Map,
+    visible_types: set[str],
+    show_signatory_note: bool = False,
+    show_member_note: bool = False,
 ) -> None:
     """Attach a type legend to a Folium map."""
     legend_html = f'<div style="{LEGEND_STYLE}">'
@@ -103,10 +108,18 @@ def add_type_legend(
             "</div>"
         )
 
-    if show_member_note:
+    if show_signatory_note:
         legend_html += (
             '<div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid #E5E7EB;">'
-            f'{make_legend_symbol("#D1D5DB", show_member_dot=True)}'
+            f'{make_legend_symbol(SIGNATORY_LEGEND_COLOUR)}'
+            "CoARA signatory"
+            "</div>"
+        )
+
+    if show_member_note:
+        legend_html += (
+            '<div style="margin-top: 4px;">'
+            f'{make_legend_symbol(SIGNATORY_LEGEND_COLOUR, show_member_dot=True)}'
             "CoARA member"
             "</div>"
         )
@@ -249,7 +262,14 @@ about_html = f"""
     <a href="https://sfdora.org/" target="_blank" rel="noopener noreferrer">San Francisco Declaration on Research Assessment</a>
     (DORA) and the
     <a href="https://coara.eu/" target="_blank" rel="noopener noreferrer">Agreement on Reforming Research Assessment</a>
-    (CoARA). On the CoARA map, a <strong>black centre dot</strong> marks CoARA members.
+    (CoARA). On the CoARA map, each circle marks a <strong>CoARA signatory</strong>,
+    and a <strong>black centre dot</strong> marks CoARA members.
+  </p>
+
+  <p>
+    The institutional baseline is shared with the Swiss HEI Open Data Dashboard and follows the current
+    <a href="https://www.swissuniversities.ch/en/topics/studying/accredited-swiss-higher-education-institutions" target="_blank" rel="noopener noreferrer">swissuniversities list of accredited Swiss Higher Education Institutions</a>,
+    checked against public institutional sources for recent mergers, accreditations, and naming changes.
   </p>
 
   <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Institution types</h5>
@@ -276,7 +296,7 @@ about_html = f"""
   </ul>
 
   <p style="margin-top: 1rem; color: var(--dashboard-muted); font-size: 0.9rem;">
-    Data last updated: 3 March 2026.
+    Data last updated: 22 April 2026.
   </p>
 </div>
 """
@@ -379,6 +399,7 @@ for _, r in coara_df.iterrows():
 add_type_legend(
     m,
     set(coara_df["type"].dropna().tolist()),
+    show_signatory_note=True,
     show_member_note=True,
 )
 

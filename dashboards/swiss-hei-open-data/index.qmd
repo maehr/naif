@@ -15,6 +15,7 @@ draft: false
 
 ```{python}
 #| echo: false
+#| output: false
 import sys
 
 sys.path.insert(0, "..")
@@ -183,8 +184,24 @@ about_html = f"""
     <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames</a>.
   </p>
 
+  <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">How the list was assembled</h5>
+  <p>
+    Moritz Mähr compiled this institutional baseline from the current
+    <a href="https://www.swissuniversities.ch/en/topics/studying/accredited-swiss-higher-education-institutions" target="_blank" rel="noopener noreferrer">swissuniversities list of accredited Swiss Higher Education Institutions</a>
+    and then checked public institutional sources for recent mergers, accreditations, and naming changes.
+    The goal is a current ground-truth list for the NAIF and Swiss HEI dashboards, not a list limited to
+    whatever external registries already resolve.
+  </p>
+
+  <p>
+    The column <code>swissuniversities_name</code> keeps the source label where available, while
+    <code>name</code> stores the normalised dashboard label used across NAIF.
+    If an institution has no ROR, OpenAlex, or OpenOrgs match, it still remains in the dataset;
+    missing external identifiers therefore mean "not matched in that source", not "not a Swiss HEI".
+  </p>
+
   <p style="margin-top: 1.5rem; color: var(--dashboard-muted); font-size: 0.9rem;">
-    Data last updated: 3 March 2026.
+    Data last updated: 22 April 2026.
   </p>
 
   <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">See also</h5>

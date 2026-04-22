@@ -84,6 +84,8 @@ TOBI_SOURCES = [
     ),
 ]
 
+RETRIEVAL_COLUMNS = [retrieval_column for _, _, _, retrieval_column, _ in TOBI_SOURCES]
+
 TYPE_LABELS = {**_BASE_TYPE_LABELS, "UTE": "Teacher education institutions (UTE)"}
 
 
@@ -145,6 +147,10 @@ any_tobi = int(
 openalex_findable = int(df["tobi_findable_openalex"].eq("Yes").sum())
 dimensions_findable = int(df["tobi_findable_dim"].eq("Yes").sum())
 openalex_outputs = int(df["tobi_total_outputs_openalex_2012_2022"].fillna(0).sum())
+tobi_latest_retrieval = pd.to_datetime(df[RETRIEVAL_COLUMNS].stack(), errors="coerce").max()
+tobi_latest_retrieval_text = (
+    tobi_latest_retrieval.strftime("%Y-%m-%d") if pd.notna(tobi_latest_retrieval) else "-"
+)
 ```
 
 ## Row {height=100%}
@@ -174,6 +180,14 @@ intro_html = f"""
     (Towards Open Bibliometric Indicators) on the findability and publication output of
     <strong>{total}</strong> Swiss HEIs in five bibliometric databases:
     Dimensions, Scopus, Web of Science, OpenAIRE, and OpenAlex.
+  </p>
+
+  <p>
+    This dashboard remains the TOBI project snapshot and is not updated to later mergers,
+    accreditations, or naming changes in the Swiss HEI landscape.
+    The tables below keep the original TOBI retrieval dates per source, and the latest retrieval in this
+    snapshot is <strong>{tobi_latest_retrieval_text}</strong>.
+    Later institutional changes are reflected only in the NAIF and Swiss HEI dashboards.
   </p>
 
   <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Institution types</h5>
