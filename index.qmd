@@ -5,7 +5,8 @@ listing:
   - id: home-events
     contents: events/*/index.qmd
     sort: "date desc"
-    max-items: 3
+    max-items: 1000
+    page-size: 1000
     fields: [image, title, date, description]
     sort-ui: false
     filter-ui: false

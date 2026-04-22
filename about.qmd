@@ -7,6 +7,8 @@ other-links:
     href: posts/
   - text: "Events"
     href: events/
+  - text: "NAIF elsewhere"
+    href: mentions/
   - text: "Publishing guidelines"
     href: publishing-guidelines.html
   - text: "Project documents (Zenodo)"

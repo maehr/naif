@@ -4,6 +4,7 @@ project:
     - "*.qmd"
     - "dashboards/index.qmd"
     - "dashboards/**/index.qmd"
+    - "mentions/index.qmd"
     - "posts/index.qmd"
     - "posts/**/index.qmd"
     - "posters/index.qmd"
