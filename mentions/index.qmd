@@ -7,7 +7,7 @@ aliases:
   - /mentions.html
 other-links:
   - text: "About"
-    href: ../about.qmd
+    href: ../about.html
   - text: "News"
     href: ../posts/
 listing:
