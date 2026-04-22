@@ -11,7 +11,8 @@ description: "Findability and output coverage of Swiss Higher Education Institut
 image: images/dashboard-screenshot.png
 image-alt: "Screenshot of the TOBI dashboard with key figures and summary tables"
 image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-04-14."
-date: today
+date: 2026-02-25
+date-modified: 2026-02-25
 draft: false
 ---
 

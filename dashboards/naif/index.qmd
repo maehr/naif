@@ -11,7 +11,8 @@ description: "An interactive dashboard showcasing the adoption of DORA and CoARA
 image: images/dashboard-screenshot.png
 image-alt: "Screenshot of the DORA and CoARA dashboard with key figures and an interactive map"
 image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-04-14."
-date: today
+date: 2026-02-25
+date-modified: 2026-04-22
 draft: false
 ---
 
@@ -35,6 +36,7 @@ from _common import (
     ensure_hei_xlsx_export,
     format_plain_text,
     format_type_label,
+    latest_hei_changelog_date,
     normalise_yes_no,
     pct,
     render_table,
@@ -43,6 +45,7 @@ from _common import (
 
 df = pd.read_csv(DATA_DIR / "hei.csv")
 ensure_hei_xlsx_export()
+last_updated = latest_hei_changelog_date()
 
 TYPE_COLOURS = {
     "University": "#2563EB",
@@ -288,6 +291,7 @@ about_html = f"""
   <ul>
     <li><a href="../tobi/">TOBI Dashboard</a> &ndash; findability and publication counts</li>
     <li><a href="../swiss-hei-open-data/">Swiss HEI Open Data Dashboard</a> &ndash; institutional identifiers</li>
+    <li><a href="../data-changelog.html">HEI and NAIF data changelog</a> &ndash; reconstructed history and corrections</li>
     <li>
       <a href="../../posts/2026-03-25-naif-continues-tobi/">
         How NAIF builds on TOBI&rsquo;s results
@@ -296,7 +300,8 @@ about_html = f"""
   </ul>
 
   <p style="margin-top: 1rem; color: var(--dashboard-muted); font-size: 0.9rem;">
-    Data last updated: 22 April 2026.
+    Data last updated: {last_updated}. See the
+    <a href="../data-changelog.html">HEI and NAIF data changelog</a>.
   </p>
 </div>
 """

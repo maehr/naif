@@ -1,0 +1,209 @@
+[
+  {
+    "date": "2026-02-13",
+    "scope": "HEI + NAIF",
+    "title": "Initial HEI baseline published for the research-assessment dashboard",
+    "summary": "The first public HEI dataset for the NAIF site was published alongside the DORA and CoARA dashboard.",
+    "row_count_before": null,
+    "row_count_after": 46,
+    "changes": [
+      "Published 46 institutions with core address fields, DORA / CoARA status columns, and curated registry identifiers already available at that point.",
+      "Established the first public baseline later reused by the Swiss HEI and NAIF dashboards."
+    ],
+    "corrections": [
+      "Later revisions expanded coverage, reclassified some institutions, and corrected several signatory or member flags."
+    ],
+    "commits": [
+      {
+        "sha": "f100ad570d55d63b03d1990a2825a403370b92be",
+        "message": "Add DORA & CoARA dashboard and update event categories"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-17",
+    "scope": "HEI + NAIF",
+    "title": "Rapid expansion and early curation pass",
+    "summary": "Three same-day commits expanded the baseline and mixed institution curation with TOBI linkage work.",
+    "row_count_before": 46,
+    "row_count_after": 55,
+    "changes": [
+      "Expanded the published baseline from 46 to 55 rows.",
+      "Added `swissuniversities_id`, `swissuniversities_name`, `openalex_ids`, and `openorgs_ids`.",
+      "Added exploratory TOBI findability and output columns directly to `hei.csv`.",
+      "Added rows for `HSSH`, `IMD`, `PH FHNW`, `SBS`, `SFISM`, `SUMEF`, `SUPSI-DFA`, `TCM UNI`, `CRCS`, `GIHE`, and `LRGHE`, while `FTL` and `HEP | PH FR` dropped out during the same revision series.",
+      "Corrected ROR / GRID mappings for `FernUni` and `PH NMS Bern`, and filled missing metadata for `FUS`, `CRCS`, `GIHE`, and `LRGHE`."
+    ],
+    "corrections": [
+      "The 17 February commit messages were generic, so this summary is reconstructed from CSV snapshots rather than from detailed contemporaneous notes.",
+      "Later revisions split TOBI back out of the HEI baseline and revisited several classifications from this pass."
+    ],
+    "commits": [
+      {
+        "sha": "9058d27fe2595fc0c915edb7fe22a2da624af57f",
+        "message": "Update dashboard/hei.csv"
+      },
+      {
+        "sha": "aded14b7976dc306ec86571c6aed23165cd34113",
+        "message": "Update dashboard/hei.csv"
+      },
+      {
+        "sha": "fc1cd47bfb61d80b7333ebe624082bc4059901de",
+        "message": "feat: improve hei data"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-18",
+    "scope": "HEI + NAIF",
+    "title": "TOBI metrics moved out of the HEI baseline",
+    "summary": "The shared HEI list stopped carrying TOBI metric columns and instead kept direct links to source systems.",
+    "row_count_before": 55,
+    "row_count_after": 55,
+    "changes": [
+      "Removed TOBI findability, output, and retrieval-date columns from `hei.csv`.",
+      "Added direct `openalex_url`, `openaire_url`, and `dimensions_url` columns plus a single `openaire_id` field.",
+      "Backfilled street and postcode data for ten institutions including `GIHE`, `IMD`, `PH FHNW`, `SBS`, `SFISM`, `SUMEF`, `SUPSI-DFA`, and `TCM UNI`."
+    ],
+    "corrections": [
+      "Keeping TOBI metrics inside `hei.csv` turned out to be awkward; later revisions also removed the remaining dashboard-specific URL columns."
+    ],
+    "commits": [
+      {
+        "sha": "9b668cc6cd5700f0497c039dc11a631c72ae2bcf",
+        "message": "Add new content for NAIF project and TOBI data dashboard"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-03",
+    "scope": "HEI + NAIF",
+    "title": "Institution review corrected status flags and restored rows",
+    "summary": "A broader review corrected several institution mappings, restored dropped rows, and updated CoARA membership flags.",
+    "row_count_before": 55,
+    "row_count_after": 57,
+    "changes": [
+      "Reintroduced `FTL` and `HEP | PH FR`, taking the baseline to 57 rows.",
+      "Corrected CoARA member flags for `EPFL`, `PHSG`, `PHSZ`, `PHBern`, and `HEP Vaud`.",
+      "Corrected `FernUni` ROR, GRID, and coordinate data, and updated the `PH NMS Bern` ROR mapping.",
+      "Restored `Franklin University Switzerland` and `Faculty of Theology of Lugano`, and filled missing data for `CRCS`.",
+      "Reclassified `HWZ` from `UAS Inst.` to `UAS`."
+    ],
+    "corrections": [
+      "Not all March choices held up: `HWZ` moved back to `UAS Inst.` on 22 April, and `FTL` / `HEP | PH FR` were later removed again."
+    ],
+    "commits": [
+      {
+        "sha": "b44a405e362c52765154cf5788968f3ceb729ca4",
+        "message": "fix: Update institution details in hei.csv for accuracy and consistency; add missing entries and correct URLs"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-15",
+    "scope": "HEI + NAIF",
+    "title": "Shared HEI data path introduced",
+    "summary": "The dataset was moved to a shared location so both dashboards could use the same CSV and XLSX export.",
+    "row_count_before": 57,
+    "row_count_after": 57,
+    "changes": [
+      "Moved the baseline from `dashboards/naif/hei.csv` to `dashboards/_data/hei.csv`.",
+      "Added shared helper code and tests so the NAIF and Swiss HEI dashboards now reuse the same download files."
+    ],
+    "corrections": ["This was a packaging change rather than a row-level content change."],
+    "commits": [
+      {
+        "sha": "ff6fc275a2324f02cf57dcce5445e52016d03c24",
+        "message": "refactor: extract shared dashboard code into _common module and centralise data"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-15",
+    "scope": "HEI + NAIF",
+    "title": "OpenOrgs and OpenAIRE links refreshed across most rows",
+    "summary": "A large identifier-maintenance pass replaced many legacy OpenOrgs or OpenAIRE values with newer hashed identifiers.",
+    "row_count_before": 57,
+    "row_count_after": 57,
+    "changes": [
+      "Updated `openorgs_ids`, `openaire_id`, and derived URLs for 48 rows.",
+      "Replaced many older numeric OpenAIRE organisation identifiers with hashed values now used in the dashboard links.",
+      "Added OpenAlex or OpenOrgs coverage for `HEP | PH FR` and dropped unresolved OpenOrgs links from a smaller set of rows such as `HEP-BEJUNE`, `PH NMS Bern`, `SHLR`, `IMD`, `STH Basel`, and `THC`."
+    ],
+    "corrections": [
+      "Most rows changed only in derived identifier-link fields; the institution list itself stayed at 57 rows."
+    ],
+    "commits": [
+      {
+        "sha": "4e0a30a72f01d3c1f81682ce3c79e5488b60a77f",
+        "message": "Enhance dashboards with updated data notes and identifier linking"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-16",
+    "scope": "HEI + NAIF",
+    "title": "Missing Wikidata and location fields were backfilled",
+    "summary": "A cleanup pass filled identifier gaps left by the earlier expansion work.",
+    "row_count_before": 57,
+    "row_count_after": 57,
+    "changes": [
+      "Added missing Wikidata IDs for 17 rows, including `OST`, `FHNW`, `HEP-BEJUNE`, `PHBern`, `PH Luzern`, `PH Zug`, `PH Zurich`, `FTL`, `SUMEF`, and `HSSH`.",
+      "Added coordinates plus a Wikidata ID for `SUPSI-DFA`.",
+      "Added a missing ISNI for `Les Roches Global Hospitality Education`."
+    ],
+    "corrections": [
+      "This commit cleaned up gaps left from the February and March expansion passes."
+    ],
+    "commits": [
+      {
+        "sha": "38719689637f8fa55f6ecf974bb3193d9b018dda",
+        "message": "fix: data updated"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-16",
+    "scope": "HEI + NAIF",
+    "title": "Primary OpenAlex IDs became explicit",
+    "summary": "The shared baseline was simplified by removing dashboard-specific URL columns and recording a canonical OpenAlex ID per row.",
+    "row_count_before": 57,
+    "row_count_after": 57,
+    "changes": [
+      "Removed `openalex_url`, `openaire_id`, `openaire_url`, and `dimensions_url` from `hei.csv`.",
+      "Added `openalex_primary_id` while keeping the full alias list in `openalex_ids`.",
+      "Added validation so the primary OpenAlex ID must also appear in the alias list."
+    ],
+    "corrections": [
+      "This intentionally made `hei.csv` less dashboard-specific and easier to reuse as a shared baseline."
+    ],
+    "commits": [
+      {
+        "sha": "6102233b3ab7d764b24f07dc320a010026352962",
+        "message": "Refactor OpenAlex ID handling in cross_check_hei.py and add validation tests"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-22",
+    "scope": "HEI + NAIF",
+    "title": "Issue-driven cleanup removed two rows and reversed one classification",
+    "summary": "The latest published cleanup trimmed the baseline and explicitly reverted part of the March revision.",
+    "row_count_before": 57,
+    "row_count_after": 55,
+    "changes": [
+      "Removed `FTL` and `HEP | PH FR`, taking the published baseline from 57 to 55 rows.",
+      "Restored `HWZ` from `UAS` to `UAS Inst.`.",
+      "Filled the previously empty `swissuniversities_name` for `CRCS`."
+    ],
+    "corrections": [
+      "The commit references issues `#15` and `#17`, but their text is not available in this environment, so this summary is based on the CSV diff itself."
+    ],
+    "commits": [
+      {
+        "sha": "e66e17cdab71f4679da890b80ed25a7f36f6da62",
+        "message": "fix: fix #17 and #15"
+      }
+    ]
+  }
+]

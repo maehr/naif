@@ -8,7 +8,7 @@ listing:
   id: dashboards
   contents:
     - "*/index.qmd"
-  sort: "title"
+  sort: "date-modified desc"
   filter-ui:
     - search
   max-items: 1000
@@ -16,7 +16,7 @@ listing:
   fields:
     - image
     - title
-    - date
+    - date-modified
     - author
     - description
 ---
@@ -26,4 +26,6 @@ listing:
 
 ::: {.callout-note}
 Dashboard data are updated as source data and project outputs evolve.
+Changes to the institutional data behind the NAIF and Swiss HEI dashboards are
+documented in the [data changelog](data-changelog.qmd).
 :::

@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import html
+import json
+from datetime import date
 from pathlib import Path
 
 import pandas as pd
@@ -11,6 +13,7 @@ import pandas as pd
 
 # Absolute path to the shared ``_data/`` directory.
 DATA_DIR: Path = Path(__file__).resolve().parent / "_data"
+HEI_CHANGELOG_PATH: Path = DATA_DIR / "hei-changelog.json"
 
 # -- Institution type constants ------------------------------------------------
 
@@ -123,6 +126,33 @@ def render_table(dataframe: pd.DataFrame) -> str:
         classes="table table-sm table-striped align-middle",
         border=0,
     )
+
+
+def load_hei_changelog() -> list[dict[str, object]]:
+    """Load the shared HEI / NAIF data changelog."""
+    with HEI_CHANGELOG_PATH.open(encoding="utf-8") as handle:
+        data = json.load(handle)
+
+    if not isinstance(data, list):
+        raise ValueError("HEI changelog must be a list of entries")
+
+    return data
+
+
+def format_iso_date(value: str) -> str:
+    """Format an ISO date string as ``D Month YYYY``."""
+    parsed = date.fromisoformat(value)
+    return f"{parsed.day} {parsed.strftime('%B %Y')}"
+
+
+def latest_hei_changelog_date() -> str:
+    """Return the latest recorded HEI changelog date."""
+    entries = load_hei_changelog()
+    if not entries:
+        return "Unknown"
+
+    latest_date = max(str(entry["date"]) for entry in entries if "date" in entry)
+    return format_iso_date(latest_date)
 
 
 # -- Excel export --------------------------------------------------------------

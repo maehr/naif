@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import json
+from datetime import date
 from pathlib import Path
 
 import pandas as pd
@@ -9,6 +11,7 @@ import pytest
 from pydantic import BaseModel, field_validator
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "dashboards" / "_data"
+HEI_CHANGELOG_PATH = DATA_DIR / "hei-changelog.json"
 
 VALID_TYPES = {"University", "Univ. Inst.", "UAS", "UAS Inst.", "UTE"}
 
@@ -130,6 +133,83 @@ class TOBIRecord(BaseModel):
 
 
 # ---------------------------------------------------------------------------
+# HEI changelog schema
+# ---------------------------------------------------------------------------
+
+
+class HEIChangelogCommit(BaseModel):
+    """Schema for a single git reference in the HEI changelog."""
+
+    sha: str
+    message: str
+
+    @field_validator("sha")
+    @classmethod
+    def sha_looks_like_commit(cls, v: str) -> str:
+        text = v.strip()
+        if len(text) < 7 or any(ch not in "0123456789abcdef" for ch in text.lower()):
+            raise ValueError("commit sha must be a hexadecimal git hash")
+        return text
+
+    @field_validator("message")
+    @classmethod
+    def message_not_empty(cls, v: str) -> str:
+        if not v or not v.strip():
+            raise ValueError("commit message must not be empty")
+        return v
+
+
+class HEIChangelogEntry(BaseModel):
+    """Schema for a single entry in hei-changelog.json."""
+
+    date: str
+    scope: str
+    title: str
+    summary: str
+    row_count_before: int | None = None
+    row_count_after: int
+    changes: list[str]
+    corrections: list[str]
+    commits: list[HEIChangelogCommit]
+
+    @field_validator("date")
+    @classmethod
+    def date_must_be_iso(cls, v: str) -> str:
+        date.fromisoformat(v)
+        return v
+
+    @field_validator("scope", "title", "summary")
+    @classmethod
+    def required_text(cls, v: str) -> str:
+        if not v or not v.strip():
+            raise ValueError("must not be empty")
+        return v
+
+    @field_validator("row_count_before", "row_count_after")
+    @classmethod
+    def row_count_must_be_positive(cls, v: int | None) -> int | None:
+        if v is not None and v <= 0:
+            raise ValueError("row count must be positive")
+        return v
+
+    @field_validator("changes", "corrections")
+    @classmethod
+    def text_lists_must_not_be_empty(cls, v: list[str]) -> list[str]:
+        if not v:
+            raise ValueError("list must contain at least one entry")
+        if any(not item or not item.strip() for item in v):
+            raise ValueError("list items must not be empty")
+        return v
+
+    @field_validator("commits")
+    @classmethod
+    def commits_must_not_be_empty(cls, v: list[HEIChangelogCommit]) -> list[HEIChangelogCommit]:
+        if not v:
+            raise ValueError("entry must include at least one commit")
+        return v
+
+
+# ---------------------------------------------------------------------------
 # Tests – hei.csv
 # ---------------------------------------------------------------------------
 
@@ -203,6 +283,37 @@ class TestHEIData:
                 )
 
         assert not errors, "\n".join(errors)
+
+
+class TestHEIChangelog:
+    """Validate dashboards/_data/hei-changelog.json."""
+
+    @pytest.fixture(scope="class")
+    def hei_changelog(self) -> list[dict[str, object]]:
+        assert HEI_CHANGELOG_PATH.exists(), (
+            f"hei-changelog.json not found at {HEI_CHANGELOG_PATH}"
+        )
+        with HEI_CHANGELOG_PATH.open(encoding="utf-8") as handle:
+            return json.load(handle)
+
+    def test_not_empty(self, hei_changelog: list[dict[str, object]]) -> None:
+        assert hei_changelog, "hei-changelog.json must contain at least one entry"
+
+    def test_each_entry_validates(self, hei_changelog: list[dict[str, object]]) -> None:
+        errors: list[str] = []
+        for idx, entry in enumerate(hei_changelog):
+            try:
+                HEIChangelogEntry.model_validate(entry)
+            except Exception as exc:
+                errors.append(f"Entry {idx}: {exc}")
+        assert not errors, "\n".join(errors)
+
+    def test_entries_are_sorted_by_date(
+        self,
+        hei_changelog: list[dict[str, object]],
+    ) -> None:
+        dates = [str(entry["date"]) for entry in hei_changelog]
+        assert dates == sorted(dates), "HEI changelog entries must be date-sorted"
 
 
 # ---------------------------------------------------------------------------

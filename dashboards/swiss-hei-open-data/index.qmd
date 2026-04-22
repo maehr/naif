@@ -9,7 +9,8 @@ description: "Open data identifiers for Swiss Higher Education Institutions: ROR
 image: images/dashboard-screenshot.png
 image-alt: "Screenshot of the Swiss HEI Open Data Dashboard with identifier coverage table"
 image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-04-14."
-date: today
+date: 2026-04-14
+date-modified: 2026-04-22
 draft: false
 ---
 
@@ -31,6 +32,7 @@ from _common import (
     format_identifier,
     format_plain_text,
     format_type_label,
+    latest_hei_changelog_date,
     make_link,
     pct,
     render_table,
@@ -39,6 +41,7 @@ from _common import (
 
 df = pd.read_csv(DATA_DIR / "hei.csv")
 ensure_hei_xlsx_export()
+last_updated = latest_hei_changelog_date()
 
 
 def format_identifier_list(value: object) -> str:
@@ -201,13 +204,15 @@ about_html = f"""
   </p>
 
   <p style="margin-top: 1.5rem; color: var(--dashboard-muted); font-size: 0.9rem;">
-    Data last updated: 22 April 2026.
+    Data last updated: {last_updated}. See the
+    <a href="../data-changelog.html">HEI and NAIF data changelog</a>.
   </p>
 
   <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">See also</h5>
   <ul>
     <li><a href="../naif/">NAIF Dashboard</a> &ndash; DORA &amp; CoARA adoption</li>
     <li><a href="../tobi/">TOBI Dashboard</a> &ndash; findability and publication counts</li>
+    <li><a href="../data-changelog.html">HEI and NAIF data changelog</a> &ndash; reconstructed history and corrections</li>
   </ul>
 </div>
 """
@@ -289,7 +294,6 @@ display(HTML(f'<div class="dashboard-table-wrap">{render_table(id_df)}</div>'))
 #| echo: false
 download_html = """
 <div class="dashboard-download">
-  <p>The dataset is maintained in the NAIF Dashboard.</p>
   <div class="dashboard-download-actions">
     <a class="btn btn-primary" href="../_data/hei.csv" download="hei.csv">Download CSV</a>
     <a class="btn btn-secondary" href="../_data/hei.xlsx" download="hei.xlsx">

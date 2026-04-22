@@ -20,8 +20,11 @@ DATA_DIR = common.DATA_DIR
 TYPE_LABELS = common.TYPE_LABELS
 TYPE_ORDER = common.TYPE_ORDER
 format_identifier = common.format_identifier
+format_iso_date = common.format_iso_date
 format_plain_text = common.format_plain_text
 format_type_label = common.format_type_label
+load_hei_changelog = common.load_hei_changelog
+latest_hei_changelog_date = common.latest_hei_changelog_date
 make_link = common.make_link
 normalise_yes_no = common.normalise_yes_no
 pct = common.pct
@@ -87,6 +90,10 @@ def test_normalise_yes_no(raw: object, expected: str) -> None:
 )
 def test_format_identifier(raw: object, expected: str) -> None:
     assert format_identifier(raw) == expected
+
+
+def test_format_iso_date() -> None:
+    assert format_iso_date("2026-04-22") == "22 April 2026"
 
 
 # ---------------------------------------------------------------------------
@@ -174,6 +181,16 @@ def test_render_table_html() -> None:
     html_str = render_table(df)
     assert "<table" in html_str
     assert "table-sm" in html_str
+
+
+def test_load_hei_changelog_not_empty() -> None:
+    entries = load_hei_changelog()
+    assert isinstance(entries, list)
+    assert entries, "Expected at least one HEI changelog entry"
+
+
+def test_latest_hei_changelog_date() -> None:
+    assert latest_hei_changelog_date() == "22 April 2026"
 
 
 # ---------------------------------------------------------------------------
