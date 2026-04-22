@@ -7,6 +7,8 @@ other-links:
     href: posts/
   - text: "Events"
     href: events/
+  - text: "Posters"
+    href: posters/
   - text: "NAIF elsewhere"
     href: mentions/
   - text: "Publishing guidelines"
@@ -131,6 +133,10 @@ Findings across all tracks feed into a shared national working group model.
 ## Open peer review
 
 The abstract and review of the NAIF project proposal are available on the [swissuniversities website](https://www.swissuniversities.ch/en/topics/open-science/open-science-programme).
+
+## Posters
+
+NAIF posters and poster-style research outputs are collected on the [posters page](posters/).
 
 ## Publishing guidelines
 
