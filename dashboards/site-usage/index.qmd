@@ -46,13 +46,18 @@ def format_iso_timestamp(value: str | None) -> str:
         return "-"
 
     normalised = value.replace("Z", "+00:00")
-    parsed = datetime.fromisoformat(normalised)
+    try:
+        parsed = datetime.fromisoformat(normalised)
+    except ValueError:
+        return "-"
     return f"{parsed.day} {parsed.strftime('%B %Y, %H:%M UTC')}"
 
 
 def make_bar_cell(value: int, max_value: int) -> str:
     """Render a horizontal bar with a numeric label."""
-    width = 0 if max_value <= 0 else max(4.0, (100.0 * value) / max_value)
+    width = 0.0
+    if max_value > 0 and value > 0:
+        width = max(4.0, (100.0 * value) / max_value)
     return (
         '<div class="usage-bar">'
         '<div class="usage-bar-track">'

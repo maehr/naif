@@ -161,7 +161,9 @@ def _coerce_int(value: Any) -> int:
     """Return API values as integers, falling back to ``0``."""
     try:
         return int(float(value))
-    except TypeError, ValueError:
+    except TypeError:
+        return 0
+    except ValueError:
         return 0
 
 

@@ -25,6 +25,7 @@ format_month_label = matomo_usage.format_month_label
 load_matomo_config = matomo_usage.load_matomo_config
 make_placeholder_snapshot = matomo_usage.make_placeholder_snapshot
 normalise_page_path = matomo_usage.normalise_page_path
+_coerce_int = matomo_usage._coerce_int
 
 DEFAULT_MATOMO_BASE_URL = matomo_usage.DEFAULT_MATOMO_BASE_URL
 DEFAULT_MATOMO_SITE_ID = matomo_usage.DEFAULT_MATOMO_SITE_ID
@@ -68,6 +69,11 @@ def test_format_duration_handles_hours_minutes_and_seconds() -> None:
 
 def test_format_month_label() -> None:
     assert format_month_label("2025-07") == "Jul 2025"
+
+
+def test_coerce_int_returns_zero_for_parse_failures() -> None:
+    assert _coerce_int(None) == 0
+    assert _coerce_int("not-a-number") == 0
 
 
 def test_make_placeholder_snapshot_marks_missing_config() -> None:
