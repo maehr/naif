@@ -165,10 +165,13 @@ def _ror_name_en(data: dict) -> str:
 
 async def fetch_openalex_record(
     client: httpx.AsyncClient,
-    oa_id: str,
+    oa_id: str | None,
     sem: asyncio.Semaphore,
 ) -> dict | None:
     """Fetch a single OpenAlex institution record."""
+    if not oa_id:
+        return None
+
     url = f"{OPENALEX_API_BASE}/{oa_id}"
     params = {
         "select": "id,display_name,ror,ids,country_code,type,lineage",
