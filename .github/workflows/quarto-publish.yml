@@ -6,6 +6,8 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "23 5 * * *"
 
 permissions:
   contents: read
@@ -80,11 +82,25 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render Quarto project
-        run: uv run quarto render
+      - name: Install lychee
+        uses: taiki-e/install-action@v2
+        with:
+          tool: lychee
+
+      - name: Fetch Matomo usage snapshot
+        env:
+          MATOMO_TOKEN_AUTH: ${{ secrets.MATOMO_TOKEN_AUTH }}
+          MATOMO_BASE_URL: ${{ vars.MATOMO_BASE_URL }}
+          MATOMO_SITE_ID: ${{ vars.MATOMO_SITE_ID }}
+          MATOMO_PUBLIC_SITE_URL: ${{ vars.MATOMO_PUBLIC_SITE_URL }}
+          MATOMO_REPORT_START_DATE: ${{ vars.MATOMO_REPORT_START_DATE }}
+        run: uv run python scripts/fetch_matomo_usage.py
+
+      - name: Run validation suite
+        run: npm run validate
 
       - name: JamPack optimization
-        run: npx @divriots/jampack ./_site
+        run: npm run jampack
 
       - name: Upload built site artifact
         uses: actions/upload-artifact@v4
