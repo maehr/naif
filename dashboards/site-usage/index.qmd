@@ -1,0 +1,259 @@
+---
+title: "Site usage"
+format:
+  dashboard:
+    css:
+      - ../dashboard-common.css
+      - dashboard-site-usage.css
+    expandable: false
+author: "NAIF"
+description: "Historic Matomo usage summary for the NAIF website."
+date: 2026-04-22
+date-modified: 2026-04-22
+draft: false
+---
+
+```{python}
+#| echo: false
+import json
+import sys
+from datetime import datetime
+from html import escape
+
+import pandas as pd
+from IPython.display import HTML, display
+
+sys.path.insert(0, "..")
+
+from _common import render_table
+from _matomo_usage import SNAPSHOT_PATH, format_duration, format_month_label
+
+
+def format_number(value: object) -> str:
+    """Format integer-like values for display."""
+    try:
+        return f"{int(value):,}"
+    except (TypeError, ValueError):
+        return "-"
+
+
+def format_iso_timestamp(value: str | None) -> str:
+    """Format an ISO timestamp as ``D Month YYYY, HH:MM UTC``."""
+    if not value:
+        return "-"
+
+    normalised = value.replace("Z", "+00:00")
+    parsed = datetime.fromisoformat(normalised)
+    return f"{parsed.day} {parsed.strftime('%B %Y, %H:%M UTC')}"
+
+
+def make_bar_cell(value: int, max_value: int) -> str:
+    """Render a horizontal bar with a numeric label."""
+    width = 0 if max_value <= 0 else max(4.0, (100.0 * value) / max_value)
+    return (
+        '<div class="usage-bar">'
+        '<div class="usage-bar-track">'
+        f'<span class="usage-bar-fill" style="width:{width:.1f}%"></span>'
+        "</div>"
+        f'<span class="usage-bar-label">{format_number(value)}</span>'
+        "</div>"
+    )
+
+
+if SNAPSHOT_PATH.exists():
+    snapshot = json.loads(SNAPSHOT_PATH.read_text(encoding="utf-8"))
+else:
+    snapshot = {
+        "status": "missing_config",
+        "message": "Usage data snapshot not found.",
+        "generated_at": None,
+        "report_start_date": None,
+        "report_end_date": None,
+        "totals": None,
+        "traffic_sources": [],
+        "history": [],
+        "top_pages": [],
+    }
+
+status = snapshot.get("status", "missing_config")
+message = snapshot.get("message") or ""
+totals = snapshot.get("totals") or {}
+traffic_sources = snapshot.get("traffic_sources") or []
+history = snapshot.get("history") or []
+top_pages = snapshot.get("top_pages") or []
+report_start_date = snapshot.get("report_start_date") or "-"
+report_end_date = snapshot.get("report_end_date") or "-"
+generated_at = format_iso_timestamp(snapshot.get("generated_at"))
+
+overview_intro = (
+    "This dashboard summarises Matomo usage for the NAIF website across the full "
+    "available reporting window. It focuses on visits, page views, traffic sources, "
+    "top pages, and month-by-month history."
+)
+
+if status == "ok" and totals:
+    metrics_html = f"""
+    <div class="dashboard-metrics">
+      <div class="dashboard-metric">
+        <div class="dashboard-metric-value">{format_number(totals.get('visits'))}</div>
+        <div class="dashboard-metric-label">Visits</div>
+      </div>
+      <div class="dashboard-metric">
+        <div class="dashboard-metric-value">{format_number(totals.get('pageviews'))}</div>
+        <div class="dashboard-metric-label">Page views</div>
+      </div>
+      <div class="dashboard-metric">
+        <div class="dashboard-metric-value">{format_number(totals.get('outlinks'))}</div>
+        <div class="dashboard-metric-label">Outbound clicks</div>
+      </div>
+      <div class="dashboard-metric">
+        <div class="dashboard-metric-value">{escape(format_duration(int(totals.get('avg_time_on_site_seconds', 0))))}</div>
+        <div class="dashboard-metric-label">Average time on site</div>
+      </div>
+      <div class="dashboard-metric">
+        <div class="dashboard-metric-value">{escape(str(totals.get('bounce_rate', '-')))}</div>
+        <div class="dashboard-metric-label">Bounce rate</div>
+      </div>
+    </div>
+    """
+    state_html = (
+        '<div class="dashboard-note">'
+        f"Reporting window: <strong>{escape(report_start_date)}</strong> to "
+        f"<strong>{escape(report_end_date)}</strong>. Snapshot refreshed on "
+        f"<strong>{escape(generated_at)}</strong>."
+        "</div>"
+    )
+else:
+    metrics_html = ""
+    empty_message = message or "Usage data are not available in this build."
+    state_html = (
+        '<div class="dashboard-note dashboard-note-warning">'
+        f"{escape(empty_message)}"
+        "</div>"
+    )
+
+overview_html = f"""
+<div class="dashboard-about">
+  <p>{escape(overview_intro)}</p>
+  <p>
+    The reporting window currently starts on <strong>{escape(report_start_date)}</strong>.
+    A monthly breakdown is included below so longer-term changes remain visible instead of
+    collapsing into a short rolling window.
+  </p>
+  <p>
+    Matomo does not provide exact all-time unique visitor counts for arbitrary date ranges,
+    so this dashboard emphasises metrics that remain reliable across the full reporting range.
+  </p>
+  {metrics_html}
+  {state_html}
+</div>
+"""
+
+if traffic_sources:
+    max_source_visits = max(int(item.get("visits", 0)) for item in traffic_sources)
+    traffic_source_rows = [
+        {
+            "Source": escape(str(item.get("label", "-"))),
+            "Visits": make_bar_cell(int(item.get("visits", 0)), max_source_visits),
+            "Share": escape(str(item.get("share", "-"))),
+        }
+        for item in traffic_sources
+    ]
+    traffic_sources_html = render_table(pd.DataFrame(traffic_source_rows))
+else:
+    traffic_sources_html = (
+        '<p class="dashboard-empty-state">No traffic-source data are available in this build.</p>'
+    )
+
+if top_pages:
+    max_pageviews = max(int(item.get("pageviews", 0)) for item in top_pages)
+    top_page_rows = [
+        {
+            "Page": f'<a href="{escape(str(item.get("href", "/")))}">{escape(str(item.get("path", "/")))}</a>',
+            "Page views": make_bar_cell(int(item.get("pageviews", 0)), max_pageviews),
+            "Visits": format_number(item.get("visits", 0)),
+            "Avg time on page": format_duration(int(item.get("avg_time_on_page_seconds", 0))),
+            "Bounce rate": escape(str(item.get("bounce_rate", "-"))),
+        }
+        for item in top_pages
+    ]
+    top_pages_html = render_table(pd.DataFrame(top_page_rows))
+else:
+    top_pages_html = (
+        '<p class="dashboard-empty-state">No page-level usage data are available in this build.</p>'
+    )
+
+if history:
+    max_monthly_visits = max(int(item.get("visits", 0)) for item in history)
+    monthly_rows = [
+        {
+            "Month": escape(format_month_label(str(item.get("month", "1970-01")))),
+            "Visits": make_bar_cell(int(item.get("visits", 0)), max_monthly_visits),
+            "Page views": format_number(item.get("pageviews", 0)),
+            "Downloads": format_number(item.get("downloads", 0)),
+            "Outbound clicks": format_number(item.get("outlinks", 0)),
+            "Avg time on site": format_duration(int(item.get("avg_time_on_site_seconds", 0))),
+            "Bounce rate": escape(str(item.get("bounce_rate", "-"))),
+        }
+        for item in history
+    ]
+    history_html = render_table(pd.DataFrame(monthly_rows))
+else:
+    history_html = (
+        '<p class="dashboard-empty-state">No historic usage data are available in this build.</p>'
+    )
+```
+
+## Row {height=100%}
+
+### Column {.tabset}
+
+#### Overview
+
+```{python}
+#| echo: false
+display(HTML(overview_html))
+```
+
+```{=html}
+<div class="dashboard-table-wrap">
+```
+
+```{python}
+#| echo: false
+display(HTML(traffic_sources_html))
+```
+
+```{=html}
+</div>
+```
+
+#### Top pages
+
+```{=html}
+<div class="dashboard-table-wrap">
+```
+
+```{python}
+#| echo: false
+display(HTML(top_pages_html))
+```
+
+```{=html}
+</div>
+```
+
+#### Monthly history
+
+```{=html}
+<div class="dashboard-table-wrap">
+```
+
+```{python}
+#| echo: false
+display(HTML(history_html))
+```
+
+```{=html}
+</div>
+```
