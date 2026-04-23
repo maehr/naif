@@ -1,0 +1,11 @@
+{
+  "status": "missing_config",
+  "message": "Usage data are populated during CI deployments when Matomo API credentials are available.",
+  "generated_at": null,
+  "report_start_date": "2025-07-01",
+  "report_end_date": null,
+  "totals": null,
+  "traffic_sources": [],
+  "history": [],
+  "top_pages": []
+}
