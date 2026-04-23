@@ -6,10 +6,13 @@ format:
       - ../dashboard-common.css
       - dashboard-site-usage.css
     expandable: false
-author: "NAIF"
+author: "Dr Moritz Mähr"
 description: "Historic Matomo usage summary for the NAIF website."
+image: images/dashboard-screenshot.png
+image-alt: "Screenshot of the site usage dashboard with overview metrics and traffic source table"
+image-caption: "Dashboard screenshot from the NAIF website, captured on 2026-04-23."
 date: 2026-04-22
-date-modified: 2026-04-22
+date-modified: 2026-04-23
 draft: false
 ---
 
@@ -133,7 +136,7 @@ else:
     )
 
 overview_html = f"""
-<div class="dashboard-about">
+<div class="dashboard-about dashboard-static">
   <p>{escape(overview_intro)}</p>
   <p>
     The reporting window currently starts on <strong>{escape(report_start_date)}</strong>.
@@ -204,7 +207,7 @@ else:
     )
 ```
 
-## Row {height=100%}
+## Row
 
 ### Column {.tabset}
 

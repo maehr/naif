@@ -1,3 +1,33 @@
+.quarto-dashboard .dashboard-static,
+.quarto-dashboard .dashboard-static.html-fill-item,
+.quarto-dashboard .dashboard-static .html-fill-item,
+.quarto-dashboard .dashboard-static .html-fill-container {
+  height: auto !important;
+  min-height: 0 !important;
+  flex: 0 0 auto !important;
+}
+
+.quarto-dashboard .dashboard-static {
+  display: block;
+}
+
+.quarto-dashboard .dashboard-static .dashboard-metrics {
+  display: grid !important;
+}
+
+.quarto-dashboard .dashboard-static .dashboard-metric {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 4.5rem;
+}
+
+.quarto-dashboard .dashboard-static .dashboard-metric-value,
+.quarto-dashboard .dashboard-static .dashboard-metric-label,
+.quarto-dashboard .dashboard-static .dashboard-note {
+  display: block !important;
+}
+
 .quarto-dashboard .dashboard-note {
   margin: 1rem 0 0;
   padding: 0.85rem 1rem;
