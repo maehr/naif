@@ -1,6 +1,6 @@
 # NAIF Typst report template
 
-This directory contains a reusable Typst report template for NAIF PDFs. It follows the website branding from `_brand.yml`, `base_colors.scss`, and `custom.scss`:
+This directory contains a reusable Typst report template package for NAIF PDFs. It follows the website branding from `_brand.yml`, `base_colors.scss`, and `custom.scss`:
 
 - Font family: `Barlow`, with common sans-serif fallbacks for local compilation.
 - Primary colour: `#A1AB71`.
@@ -13,7 +13,7 @@ This directory contains a reusable Typst report template for NAIF PDFs. It follo
 Create a report next to the template or import it with a relative path:
 
 ```typst
-#import "naif-report.typ": naif-report, naif-callout, naif-stat
+#import "lib.typ": naif-report, naif-callout, naif-stat
 
 #show: naif-report.with(
   doc-category: [NAIF report],
@@ -36,6 +36,12 @@ Create a report next to the template or import it with a relative path:
 ```
 
 Then write the report body with regular Typst markup.
+
+## Package layout
+
+- `lib.typ`: Typst package entrypoint.
+- `example.typ`: starter document referenced by `typst.toml` and used for quick compilation checks.
+- `typst.toml`: package metadata and template declaration.
 
 ## Options
 
@@ -73,7 +79,7 @@ brew install --cask font-barlow
 You can also override the font stack explicitly:
 
 ```typst
-#import "naif-report.typ": naif-report, naif-barlow-font-stack
+#import "lib.typ": naif-report, naif-barlow-font-stack
 
 #show: naif-report.with(
   title: [Repository metadata quality in Switzerland],

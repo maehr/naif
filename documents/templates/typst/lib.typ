@@ -1,4 +1,4 @@
-// Reusable Typst report template for NAIF documents.
+// Reusable Typst report template package for NAIF documents.
 // Brand source: ../../../_brand.yml and ../../../base_colors.scss.
 
 #let naif-primary = rgb("#A1AB71")

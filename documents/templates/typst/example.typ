@@ -1,4 +1,4 @@
-#import "naif-report.typ": naif-report, naif-callout, naif-stat
+#import "lib.typ": naif-report, naif-callout, naif-stat
 
 #show: naif-report.with(
   doc-category: [NAIF report],
