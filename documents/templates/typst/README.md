@@ -59,6 +59,7 @@ The main template function is `naif-report`. It accepts these common options:
 - `show-outline`: show a contents page after the title page, default `true`.
 - `compact-mode`: put the title metadata on the first content page instead of creating a separate title page, default `false`.
 - `number-headings`: number headings, default `true`.
+- `heading-numbering`: Typst heading numbering pattern, default `"1."`.
 - `font-stack`: body and heading font stack, default `("Barlow", "Inter", "Arial", "Helvetica")`.
 - `mono-font-stack`: monospace font stack, default `("Menlo", "DejaVu Sans Mono")`.
 
@@ -69,6 +70,8 @@ Use Quarto's bundled Typst CLI in this repository:
 ```bash
 uv run quarto typst compile documents/templates/typst/example.typ documents/templates/typst/example.pdf
 ```
+
+For reports authored in Quarto, use the repository extension format `naif-report-typst`. See `documents/templates/quarto/naif-report-example.qmd` for a starter document.
 
 The website uses Barlow from Google Fonts, but Typst does not load web fonts from the website CSS. Install Barlow locally before compiling if Typst reports `unknown font family: barlow`:
 
