@@ -1,6 +1,7 @@
 # NAIF Typst report template
 
-This directory contains a reusable Typst report template package for NAIF PDFs. It follows the website branding from `_brand.yml`, `base_colors.scss`, and `custom.scss`:
+This directory contains a reusable Typst report template package for NAIF PDFs. It follows the
+website branding from `_brand.yml`, `base_colors.scss`, and `custom.scss`:
 
 - Font family: `Barlow`, with common sans-serif fallbacks for local compilation.
 - Primary colour: `#A1AB71`.
@@ -57,7 +58,8 @@ The main template function is `naif-report`. It accepts these common options:
 - `keywords`: array of keyword strings.
 - `logo`: optional Typst image, for example `image("path/to/logo.svg", width: 25mm)`.
 - `show-outline`: show a contents page after the title page, default `true`.
-- `compact-mode`: put the title metadata on the first content page instead of creating a separate title page, default `false`.
+- `compact-mode`: put the title metadata on the first content page instead of creating a separate
+  title page, default `false`.
 - `number-headings`: number headings, default `true`.
 - `heading-numbering`: Typst heading numbering pattern, default `"1."`.
 - `font-stack`: body and heading font stack, default `("Barlow", "Inter", "Arial", "Helvetica")`.
@@ -68,12 +70,14 @@ The main template function is `naif-report`. It accepts these common options:
 Use Quarto's bundled Typst CLI in this repository:
 
 ```bash
-uv run quarto typst compile documents/templates/typst/example.typ documents/templates/typst/example.pdf
+uv run quarto typst compile reports/templates/typst/example.typ reports/templates/typst/example.pdf
 ```
 
-For reports authored in Quarto, use the repository extension format `naif-report-typst`. See `documents/templates/quarto/naif-report-example.qmd` for a starter document.
+For reports authored in Quarto, use the repository extension format `naif-report-typst`. See
+`reports/templates/quarto/naif-report-example.qmd` for a starter document.
 
-The website uses Barlow from Google Fonts, but Typst does not load web fonts from the website CSS. Install Barlow locally before compiling if Typst reports `unknown font family: barlow`:
+The website uses Barlow from Google Fonts, but Typst does not load web fonts from the website CSS.
+Install Barlow locally before compiling if Typst reports `unknown font family: barlow`:
 
 ```bash
 brew install --cask font-barlow
@@ -90,8 +94,9 @@ You can also override the font stack explicitly:
 )
 ```
 
-Compile with an explicit font path if the Barlow font files are not installed system-wide or through Homebrew:
+Compile with an explicit font path if the Barlow font files are not installed system-wide or through
+Homebrew:
 
 ```bash
-uv run quarto typst compile --font-path path/to/fonts documents/templates/typst/example.typ documents/templates/typst/example.pdf
+uv run quarto typst compile --font-path path/to/fonts reports/templates/typst/example.typ reports/templates/typst/example.pdf
 ```
