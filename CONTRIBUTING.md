@@ -14,13 +14,15 @@ Thanks for considering a contribution.
 3. Run:
 
    ```bash
-   npm install
-   uv sync
-   npm run format
-   uv run quarto render
+    npm install
+    uv sync
+    npm run validate
    ```
 
 4. Open a pull request.
+
+For tagged releases, also run `npm run release:prepare -- --tag vX.Y.Z` and commit the generated
+archive before publishing the release so Zenodo captures the rendered site snapshot.
 
 ## Content contributions
 

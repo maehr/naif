@@ -31,9 +31,12 @@ from _common import (
     DATA_DIR,
     TYPE_LABELS as _BASE_TYPE_LABELS,
     TYPE_ORDER,
+    dashboard_download_html,
+    dashboard_table_html,
     format_identifier,
     format_plain_text,
     format_type_label,
+    institution_type_table_html,
     make_link,
     normalise_yes_no,
     pct,
@@ -192,16 +195,7 @@ intro_html = f"""
   </p>
 
   <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">Institution types</h5>
-  <table class="table table-sm" style="max-width: 52ch;">
-    <thead><tr><th>Abbreviation</th><th>Full name</th></tr></thead>
-    <tbody>
-      <tr><td><strong>University</strong></td><td>Cantonal universities and federal institutes of technology</td></tr>
-      <tr><td><strong>Univ.&nbsp;Inst.</strong></td><td>University institutes</td></tr>
-      <tr><td><strong>UAS</strong></td><td>Universities of applied sciences</td></tr>
-      <tr><td><strong>UAS&nbsp;Inst.</strong></td><td>UAS institutes</td></tr>
-      <tr><td><strong>UTE</strong></td><td>Teacher education institutions</td></tr>
-    </tbody>
-  </table>
+  {institution_type_table_html()}
 
   <h5 class="dashboard-subheading" style="margin-top: 1.5rem;">See also</h5>
   <ul>
@@ -455,7 +449,7 @@ all_institutions = all_institutions[
     ]
 ]
 
-display(HTML(f'<div class="dashboard-table-wrap">{render_table(all_institutions)}</div>'))
+display(HTML(dashboard_table_html(all_institutions)))
 ```
 
 #### Data Sources
@@ -500,15 +494,6 @@ display(HTML(credits_html))
 
 ```{python}
 #| echo: false
-download_html = """
-<div class="dashboard-download">
-  <div class="dashboard-download-actions">
-    <a class="btn btn-primary" href="../_data/tobi.csv" download="tobi.csv">Download CSV</a>
-    <a class="btn btn-secondary" href="../_data/tobi.xlsx" download="tobi.xlsx">
-      Download Excel (.xlsx)
-    </a>
-  </div>
-</div>
-"""
+download_html = dashboard_download_html("../_data/tobi.csv", "../_data/tobi.xlsx")
 display(HTML(download_html))
 ```

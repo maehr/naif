@@ -22,6 +22,7 @@ This repository contains the source for the NAIF project website, built with
 - Node.js (for formatting Markdown with Prettier)
 - Python 3.14
 - uv
+- Lychee (for local link checks in `npm run validate`)
 
 ### Install
 
@@ -29,6 +30,8 @@ This repository contains the source for the NAIF project website, built with
 npm install
 uv sync
 ```
+
+The Git hooks managed by `prek` are installed automatically via npm's `prepare` script.
 
 ### Format and build
 
@@ -57,11 +60,31 @@ Output file:
 
 ### Validate before opening a PR
 
-Run all checks (formatting, linting, type checking, tests, render) in one go:
+Run all checks (formatting, linting, type checking, tests, render, rendered link checks) in one go:
 
 ```bash
 npm run validate
 ```
+
+If `lychee` is not available locally yet:
+
+- macOS: `brew install lychee`
+- Other platforms: see https://lychee.cli.rs/
+
+GitHub Actions runs the same validation suite before building and deploying the site.
+
+### Prepare a release archive for Zenodo
+
+Create a release-ready snapshot of the rendered site and stage it for commit before tagging a
+release:
+
+```bash
+npm run release:prepare -- --tag v1.0.0
+```
+
+This creates `release-artifacts/site-v1.0.0.zip` and stages it for commit. Commit the archive before
+publishing the GitHub release so the tagged repository snapshot contains the rendered site that
+Zenodo will archive.
 
 ### npm scripts reference
 
@@ -74,6 +97,7 @@ npm run validate
 | `npm run preview`      | `uv run quarto preview`                | Local dev server with live reload       |
 | `npm run preview:fork` | `uv run quarto preview --profile fork` | Preview locally with fork-specific URLs |
 | `npm run docx`         | `uv run quarto render --profile docx`  | Export site to a single DOCX            |
+| `npm run site:build`   | `render` + `jampack`                   | Build the optimised release site        |
 
 #### Code quality
 
@@ -98,8 +122,10 @@ npm run validate
 | ------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------- |
 | `npm run sync`                  | `uv sync`                                                        | Install/sync Python dependencies                        |
 | `npm run validate`              | check + lint + typecheck + test + render + lychee-check:rendered | Full pre-PR validation                                  |
-| `npm run deploy`                | render + jampack + publish                                       | Build, optimise, and deploy to GitHub Pages             |
+| `npm run deploy`                | site:build + publish                                             | Build, optimise, and deploy to GitHub Pages             |
 | `npm run publish:fork`          | `uv run quarto publish gh-pages --no-render --profile fork`      | Publish a fork build to the fork's GitHub Pages site    |
+| `npm run site:archive`          | `uv run python scripts/release_site_archive.py`                  | Create a versioned ZIP of the rendered site             |
+| `npm run release:prepare`       | site:build + site:archive --stage                                | Build and stage the Zenodo-ready release archive        |
 | `npm run changelog`             | `git-cliff`                                                      | Generate CHANGELOG from commits                         |
 | `npm run commit`                | `cz`                                                             | Commitizen guided commit                                |
 | `npm run lychee-check`          | `lychee`                                                         | Check for broken links in source `.md` and `.qmd` files |
