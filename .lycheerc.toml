@@ -23,6 +23,9 @@ exclude = [
   "https://api.crossref.org/funders/",
   "https://www.geonames.org/",
   "https://isni.org/isni/",
+  # Quarto's site intermittently refuses lychee connections on GitHub runners.
+  "https://quarto.org/",
+  "https://quarto.org/docs/reference/projects/websites.html",
 ]
 
 exclude_path = [
