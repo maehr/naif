@@ -6,6 +6,25 @@ repos:
         entry: npm run check
         language: system
         stages: [pre-commit]
+      - id: ruff-format
+        name: Ruff format
+        entry: uv run ruff format
+        language: system
+        types: [python]
+        stages: [pre-commit]
+      - id: ruff-check
+        name: Ruff lint
+        entry: uv run ruff check
+        language: system
+        types: [python]
+        stages: [pre-commit]
+      - id: ty-check
+        name: Ty check
+        entry: uv run ty check
+        language: system
+        types: [python]
+        pass_filenames: false
+        stages: [pre-commit]
       - id: lychee-check
         name: Lychee link check
         entry: npm run lychee-check

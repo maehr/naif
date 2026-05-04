@@ -1,0 +1,216 @@
+{
+  "status": "ok",
+  "message": null,
+  "generated_at": "2026-04-23T05:05:57.060456Z",
+  "report_start_date": "2025-07-01",
+  "report_end_date": "2026-04-23",
+  "totals": {
+    "visits": 1361,
+    "pageviews": 3215,
+    "downloads": 52,
+    "outlinks": 241,
+    "avg_time_on_site_seconds": 133,
+    "bounce_rate": "52%"
+  },
+  "traffic_sources": [
+    {
+      "label": "Search engines",
+      "visits": 220,
+      "share": "16%"
+    },
+    {
+      "label": "Social networks",
+      "visits": 44,
+      "share": "3%"
+    },
+    {
+      "label": "Websites",
+      "visits": 160,
+      "share": "12%"
+    },
+    {
+      "label": "Direct entry",
+      "visits": 936,
+      "share": "69%"
+    },
+    {
+      "label": "AI assistants",
+      "visits": 1,
+      "share": "0%"
+    }
+  ],
+  "history": [
+    {
+      "month": "2025-07",
+      "visits": 24,
+      "pageviews": 62,
+      "downloads": 0,
+      "outlinks": 1,
+      "avg_time_on_site_seconds": 70,
+      "bounce_rate": "46%"
+    },
+    {
+      "month": "2025-08",
+      "visits": 139,
+      "pageviews": 371,
+      "downloads": 0,
+      "outlinks": 21,
+      "avg_time_on_site_seconds": 157,
+      "bounce_rate": "49%"
+    },
+    {
+      "month": "2025-09",
+      "visits": 195,
+      "pageviews": 530,
+      "downloads": 25,
+      "outlinks": 37,
+      "avg_time_on_site_seconds": 133,
+      "bounce_rate": "50%"
+    },
+    {
+      "month": "2025-10",
+      "visits": 133,
+      "pageviews": 365,
+      "downloads": 13,
+      "outlinks": 21,
+      "avg_time_on_site_seconds": 145,
+      "bounce_rate": "49%"
+    },
+    {
+      "month": "2025-11",
+      "visits": 157,
+      "pageviews": 372,
+      "downloads": 8,
+      "outlinks": 18,
+      "avg_time_on_site_seconds": 133,
+      "bounce_rate": "56%"
+    },
+    {
+      "month": "2025-12",
+      "visits": 77,
+      "pageviews": 189,
+      "downloads": 3,
+      "outlinks": 9,
+      "avg_time_on_site_seconds": 125,
+      "bounce_rate": "57%"
+    },
+    {
+      "month": "2026-01",
+      "visits": 90,
+      "pageviews": 174,
+      "downloads": 0,
+      "outlinks": 4,
+      "avg_time_on_site_seconds": 74,
+      "bounce_rate": "60%"
+    },
+    {
+      "month": "2026-02",
+      "visits": 98,
+      "pageviews": 233,
+      "downloads": 3,
+      "outlinks": 10,
+      "avg_time_on_site_seconds": 80,
+      "bounce_rate": "55%"
+    },
+    {
+      "month": "2026-03",
+      "visits": 235,
+      "pageviews": 527,
+      "downloads": 0,
+      "outlinks": 66,
+      "avg_time_on_site_seconds": 169,
+      "bounce_rate": "49%"
+    },
+    {
+      "month": "2026-04",
+      "visits": 213,
+      "pageviews": 392,
+      "downloads": 0,
+      "outlinks": 54,
+      "avg_time_on_site_seconds": 131,
+      "bounce_rate": "52%"
+    }
+  ],
+  "top_pages": [
+    {
+      "path": "/",
+      "href": "https://eth-library.github.io/naif/",
+      "pageviews": 1082,
+      "visits": 851,
+      "avg_time_on_page_seconds": 47,
+      "bounce_rate": "44%"
+    },
+    {
+      "path": "/about/",
+      "href": "https://eth-library.github.io/naif/about/",
+      "pageviews": 552,
+      "visits": 440,
+      "avg_time_on_page_seconds": 67,
+      "bounce_rate": "71%"
+    },
+    {
+      "path": "/news/",
+      "href": "https://eth-library.github.io/naif/news/",
+      "pageviews": 341,
+      "visits": 277,
+      "avg_time_on_page_seconds": 67,
+      "bounce_rate": "49%"
+    },
+    {
+      "path": "/team/",
+      "href": "https://eth-library.github.io/naif/team/",
+      "pageviews": 269,
+      "visits": 210,
+      "avg_time_on_page_seconds": 45,
+      "bounce_rate": "52%"
+    },
+    {
+      "path": "/resources/",
+      "href": "https://eth-library.github.io/naif/resources/",
+      "pageviews": 209,
+      "visits": 161,
+      "avg_time_on_page_seconds": 44,
+      "bounce_rate": "27%"
+    },
+    {
+      "path": "/posts/2026-04-02-first-insights-swiss-repository-survey/",
+      "href": "https://eth-library.github.io/naif/posts/2026-04-02-first-insights-swiss-repository-survey/",
+      "pageviews": 126,
+      "visits": 112,
+      "avg_time_on_page_seconds": 122,
+      "bounce_rate": "57%"
+    },
+    {
+      "path": "/posts/",
+      "href": "https://eth-library.github.io/naif/posts/",
+      "pageviews": 118,
+      "visits": 87,
+      "avg_time_on_page_seconds": 21,
+      "bounce_rate": "67%"
+    },
+    {
+      "path": "/join/",
+      "href": "https://eth-library.github.io/naif/join/",
+      "pageviews": 112,
+      "visits": 97,
+      "avg_time_on_page_seconds": 23,
+      "bounce_rate": "95%"
+    },
+    {
+      "path": "/contact/",
+      "href": "https://eth-library.github.io/naif/contact/",
+      "pageviews": 62,
+      "visits": 55,
+      "avg_time_on_page_seconds": 13,
+      "bounce_rate": "50%"
+    },
+    {
+      "path": "/posts/2026-03-16-slsp-strategy-2026-2029/",
+      "href": "https://eth-library.github.io/naif/posts/2026-03-16-slsp-strategy-2026-2029/",
+      "pageviews": 56,
+      "visits": 48,
+      "avg_time_on_page_seconds": 107,
+      "bounce_rate": "58%"
+    }
+  ]
+}

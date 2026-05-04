@@ -1,0 +1,43 @@
+---
+title: "Economic impact of research access and reuse options"
+date: 2026-05-13
+author: "Directorate-General for Research and Innovation"
+author-title: "Organizer"
+description: "European Commission online workshop on the economic impact of policy options for improving access to and reuse of research results, publications, and data."
+categories:
+  - "Related Topic"
+tags:
+  - "Open science"
+  - "Research policy"
+  - "Copyright"
+proofread: false
+image: "images/european-commission-event.png"
+image-alt: "European Commission event page for the workshop on the economic impact of research access and reuse options"
+image-caption: "Screenshot of the European Commission event page for the workshop on the economic impact of options for improving access to and reuse of research results, publications, and data. Source: https://research-and-innovation.ec.europa.eu/events/upcoming-events/economic-impact-options-improving-access-and-reuse-research-results-publications-and-data-scientific-2026-05-13_en. Rights: European Commission."
+toc: true
+---
+
+<!-- Source: <https://research-and-innovation.ec.europa.eu/events/upcoming-events/economic-impact-options-improving-access-and-reuse-research-results-publications-and-data-scientific-2026-05-13_en> -->
+
+## Details
+
+- Date: Wednesday, 13 May 2026
+- Time: 13:00-15:30 CEST
+- Location: Online only
+- Language: English
+- Registration: <https://ec.europa.eu/eusurvey/runner/RegistrationWorkshopEconomicStudy2026>
+- Event page: <https://research-and-innovation.ec.europa.eu/events/upcoming-events/economic-impact-options-improving-access-and-reuse-research-results-publications-and-data-scientific-2026-05-13_en>
+- Livestream: <https://ecconf.webex.com/ecconf/j.php?MTID=md169002913156aa41072f286e25f746b>
+
+## About
+
+The European Commission's Directorate-General for Research and Innovation is hosting an online workshop on the economic impact of policy options for improving access to and reuse of research results, publications, and data for scientific purposes.
+
+The workshop presents findings from an economic study launched in the context of structural policy 1 of the European Research Area Policy Agenda 2025-2027. The study complements the 2024 report [*Improving access to and reuse of research results, publications and data for scientific purposes*](https://op.europa.eu/en/publication-detail/-/publication/77395a15-133b-11ef-a251-01aa75ed71a1/language-en) and analyses the economic impact of policy measures related to an EU-wide secondary publication right and a harmonised research exception to EU copyright rules.
+
+The programme includes an introduction by Jean-David Malo, Acting Director at DG RTD, a presentation and Q&A with the study team, and concluding remarks by Fabian Kreuzer, Deputy Head of Unit for Open Science and Research Infrastructures at DG RTD. The topic is relevant to NAIF because it connects open science policy, research infrastructure, rights frameworks, and the practical reuse of research outputs.
+
+## Further reading
+
+- [Economic study published on 30 April 2026](https://op.europa.eu/en/publication-detail/-/publication/21f59332-443a-11f1-8095-01aa75ed71a1/language-en)
+- [2024 study on improving access to and reuse of research results, publications and data](https://op.europa.eu/en/publication-detail/-/publication/77395a15-133b-11ef-a251-01aa75ed71a1/language-en)

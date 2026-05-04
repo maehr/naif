@@ -1,0 +1,70 @@
+name: Attach Rendered Site to Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-attach:
+    name: Build site and upload release asset
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.1.0
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install R dependencies
+        run: Rscript -e 'install.packages("processx")'
+
+      - name: Set up Chrome
+        id: setup-chrome
+        uses: browser-actions/setup-chrome@v2
+
+      - name: Expose Chrome as google-chrome
+        run: sudo ln -s "${{ steps.setup-chrome.outputs.chrome-path }}" /usr/local/bin/google-chrome
+
+      - name: Sync Python environment
+        run: uv sync
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Fetch Matomo usage snapshot
+        env:
+          MATOMO_TOKEN_AUTH: ${{ secrets.MATOMO_TOKEN_AUTH }}
+          MATOMO_BASE_URL: ${{ vars.MATOMO_BASE_URL }}
+          MATOMO_SITE_ID: ${{ vars.MATOMO_SITE_ID }}
+          MATOMO_PUBLIC_SITE_URL: ${{ vars.MATOMO_PUBLIC_SITE_URL }}
+          MATOMO_REPORT_START_DATE: ${{ vars.MATOMO_REPORT_START_DATE }}
+        run: uv run python scripts/fetch_matomo_usage.py
+
+      - name: Build release archive
+        run:
+          npm run site:build && npm run site:archive -- --tag "${{ github.event.release.tag_name }}"
+
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v3
+        with:
+          files: release-artifacts/site-${{ github.event.release.tag_name }}.zip

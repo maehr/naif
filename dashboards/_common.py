@@ -27,6 +27,14 @@ TYPE_LABELS: dict[str, str] = {
     "UTE": "Teacher education institutions",
 }
 
+INSTITUTION_TYPE_ROWS: list[tuple[str, str]] = [
+    ("University", "Cantonal universities and federal institutes of technology"),
+    ("Univ.&nbsp;Inst.", "University institutes"),
+    ("UAS", "Universities of applied sciences"),
+    ("UAS&nbsp;Inst.", "UAS institutes"),
+    ("UTE", "Teacher education institutions"),
+]
+
 # -- Formatting helpers --------------------------------------------------------
 
 
@@ -118,6 +126,23 @@ def make_link(url: str, label: str) -> str:
     )
 
 
+def institution_type_table_html() -> str:
+    """Return the shared institution type reference table as HTML."""
+    rows = "".join(
+        (
+            f"<tr><td><strong>{abbreviation}</strong></td>"
+            f"<td>{description}</td></tr>"
+        )
+        for abbreviation, description in INSTITUTION_TYPE_ROWS
+    )
+    return (
+        '<table class="table table-sm" style="max-width: 52ch;">'
+        "<thead><tr><th>Abbreviation</th><th>Full name</th></tr></thead>"
+        f"<tbody>{rows}</tbody>"
+        "</table>"
+    )
+
+
 def render_table(dataframe: pd.DataFrame) -> str:
     """Return a dataframe as an HTML table string."""
     return dataframe.to_html(
@@ -126,6 +151,25 @@ def render_table(dataframe: pd.DataFrame) -> str:
         classes="table table-sm table-striped align-middle",
         border=0,
     )
+
+
+def dashboard_table_html(dataframe: pd.DataFrame) -> str:
+    """Wrap a rendered dashboard table in the shared container."""
+    return f'<div class="dashboard-table-wrap">{render_table(dataframe)}</div>'
+
+
+def dashboard_download_html(csv_href: str, xlsx_href: str) -> str:
+    """Return the shared dashboard download button block."""
+    return f"""
+<div class="dashboard-download">
+  <div class="dashboard-download-actions">
+    <a class="btn btn-primary" href="{csv_href}" download="{Path(csv_href).name}">Download CSV</a>
+    <a class="btn btn-secondary" href="{xlsx_href}" download="{Path(xlsx_href).name}">
+      Download Excel (.xlsx)
+    </a>
+  </div>
+</div>
+"""
 
 
 def load_hei_changelog() -> list[dict[str, object]]:
